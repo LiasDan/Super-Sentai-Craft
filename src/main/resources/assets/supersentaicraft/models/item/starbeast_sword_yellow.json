@@ -1,0 +1,17 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:items/starbeast_sword_yellow"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/flashing_starbeast_sword"
+        }
+    ]
+  }
+}

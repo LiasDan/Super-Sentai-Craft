@@ -1,0 +1,17 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:items/five_laser_green"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/five_laser_gun_green"
+        }
+    ]
+  }
+}

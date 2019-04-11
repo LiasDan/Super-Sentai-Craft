@@ -1,0 +1,17 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:items/lupin_x_changer"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/patran_x_changer"
+        }
+    ]
+  }
+}

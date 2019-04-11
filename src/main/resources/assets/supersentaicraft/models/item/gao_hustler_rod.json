@@ -1,0 +1,17 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:items/gao_hustler_rod"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/gao_hustler_rod_sniper"
+        }
+    ]
+  }
+}

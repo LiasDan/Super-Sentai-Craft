@@ -1,0 +1,17 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:items/x_rod_sword"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/x_rod_sword_rod"
+        }
+    ]
+  }
+}

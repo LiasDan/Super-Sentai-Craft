@@ -1,0 +1,23 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:items/ninja_ichibantou"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/aka_ninja_ichibantou"
+        },
+        {
+            "predicate": {
+                "pull": 6
+            },
+            "model": "supersentaicraft:item/chouzetsu_ninja_ichibantou"
+        }
+    ]
+  }
+}
