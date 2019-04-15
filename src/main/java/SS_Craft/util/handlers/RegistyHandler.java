@@ -41,11 +41,10 @@ import static net.minecraftforge.items.CapabilityItemHandler.ITEM_HANDLER_CAPABI
 public class RegistyHandler {
 
 	@SubscribeEvent
-	public static void onFly(TickEvent.PlayerTickEvent event) 
-	{
+	public static void onFly(TickEvent.PlayerTickEvent event) {
 		boolean fly = false;
 		//if(event.player.isPotionActive(PotionCore.FLY_POTION)) fly = true;
-		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation(Refercence.MODID+ ":" + "fly"))) fly = true;
+		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("tokuPotions"+ ":" + "fly"))) fly = true;
 		if(fly || event.player.isCreative() || event.player.isSpectator()) {
 			event.player.capabilities.allowFlying = true;
 			event.player.fallDistance = 0.0f;

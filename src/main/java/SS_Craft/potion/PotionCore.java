@@ -10,17 +10,17 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class PotionCore {
 
 	private static final Potion SS_FLY= new PotionFly();
-	public static final Potion A_FLY = FLY_POTION();
+	public static final Potion SS_FLY_POTION  = SS_FLY_POTION();
 	public static final Potion SS_FIRE_PUNCH = new PotionFirePunch();
 	public static final Potion SS_PUNCH_BOOST = new PotionPunchBoost();
 	public static final Potion SS_BIG = new PotionBig();
 	public static final Potion SS_SLASH_BOOST = new PotionSlashBoost();
 	
-	private static Potion FLY_POTION()
+	private static Potion SS_FLY_POTION()
 	{
-		if (Potion.getPotionFromResourceLocation(Refercence.MODID+ ":" + "fly")!=null)
+		if (Potion.getPotionFromResourceLocation("tokuPotions:" + "fly")!=null)
 		{
-			return Potion.getPotionFromResourceLocation(Refercence.MODID+ ":" + "fly");
+			return Potion.getPotionFromResourceLocation("tokuPotions:" + "fly");
 		}
 		else
 		{
