@@ -23,6 +23,10 @@ import SS_Craft.item.boukenger.item_boukenger_armor2;
 import SS_Craft.item.carranger.item_accel_changer;
 import SS_Craft.item.carranger.item_carranger_armor;
 import SS_Craft.item.carranger.item_carranger_armor2;
+import SS_Craft.item.denziman.item_denzi_punch;
+import SS_Craft.item.denziman.item_denzi_ring;
+import SS_Craft.item.denziman.item_denziman_armor;
+import SS_Craft.item.denziman.item_denziman_armor2;
 import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gaoranger.item_gaoranger_armor;
 import SS_Craft.item.gaoranger.item_gaoranger_armor2;
@@ -265,6 +269,39 @@ public class RiderItems
 	public static Item france_fencing_sword = new ItemBaseSword("france_fencing_sword", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	public static Item kenya_whip = new ItemBaseSword("kenya_whip", Tabs.whip).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	public static Item america_throwing_knife = new ItemBaseSword("america_throwing_knife", Tabs.throwable).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
+	
+	//04 Denshi Sentai Denziman
+	public static Item empty_denzi_ring = new Item_ore("empty_denzi_ring").setCreativeTab(Tabs.tabDenziman);
+	public static Block denziman_ore = new ore_block("denziman_ore", Material.ROCK, empty_denzi_ring, 2).setHardness(9.9F).setCreativeTab(Tabs.tabDenziman);
+	
+	public static Item denziman_head = new item_denziman_armor("denziman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item denziman_torso = new item_denziman_armor2("denziman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item denziman_legs = new item_denziman_armor2("denziman_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	
+	public static Item red_denzi_ring = new item_denzi_ring("red_denzi_ring", ArmorMaterial.DIAMOND, 4, "denzi_red").setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item blue_denzi_ring = new item_denzi_ring("blue_denzi_ring", ArmorMaterial.DIAMOND, 4, "denzi_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item yellow_denzi_ring = new item_denzi_ring("yellow_denzi_ring", ArmorMaterial.DIAMOND, 4, "denzi_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item green_denzi_ring = new item_denzi_ring("green_denzi_ring", ArmorMaterial.DIAMOND, 4, "denzi_green").setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item pink_denzi_ring = new item_denzi_ring("pink_denzi_ring", ArmorMaterial.DIAMOND, 4, "denzi_pink").setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	
+	public static Item denzi_red_belt = new Item_ore("denzi_red_belt");
+	public static Item denzi_blue_belt = new Item_ore("denzi_blue_belt");
+	public static Item denzi_yellow_belt = new Item_ore("denzi_yellow_belt");
+	public static Item denzi_green_belt = new Item_ore("denzi_green_belt");
+	public static Item denzi_pink_belt = new Item_ore("denzi_pink_belt");
+	
+	public static Item red_denzi_gem = new Item_ore("red_denzi_gem").setCreativeTab(Tabs.tabDenziman);
+	public static Item blue_denzi_gem = new Item_ore("blue_denzi_gem").setCreativeTab(Tabs.tabDenziman);
+	public static Item yellow_denzi_gem = new Item_ore("yellow_denzi_gem").setCreativeTab(Tabs.tabDenziman);
+	public static Item green_denzi_gem = new Item_ore("green_denzi_gem").setCreativeTab(Tabs.tabDenziman);
+	public static Item pink_denzi_gem = new Item_ore("pink_denzi_gem").setCreativeTab(Tabs.tabDenziman);
+	
+	public static Item red_denzi_stick = new ItemBaseSword("red_denzi_stick", Tabs.sword).setCreativeTab(Tabs.tabDenziman);
+	public static Item blue_denzi_stick = new ItemBaseSword("blue_denzi_stick", Tabs.sword).setCreativeTab(Tabs.tabDenziman);
+	public static Item yellow_denzi_stick = new ItemBaseSword("yellow_denzi_stick", Tabs.sword).setCreativeTab(Tabs.tabDenziman);
+	public static Item green_denzi_stick = new ItemBaseSword("green_denzi_stick", Tabs.sword).setCreativeTab(Tabs.tabDenziman);
+	public static Item pink_denzi_stick = new ItemBaseSword("pink_denzi_stick", Tabs.sword).setCreativeTab(Tabs.tabDenziman);
+	public static Item denzi_punch = new item_denzi_punch(1, "denzi_punch").setCreativeTab(Tabs.tabDenziman);
 	
 	//05 Taiyo Sentai Sun Vulcan
 	public static Item sun_vulcan_logo = new Item_ore("sun_vulcan_logo").setCreativeTab(Tabs.tabSunVulcan);

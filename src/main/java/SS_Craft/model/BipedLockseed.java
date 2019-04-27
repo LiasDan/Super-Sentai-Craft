@@ -10,6 +10,7 @@ import org.lwjgl.opengl.GL11;
 
 import SS_Craft.RiderItems;
 import SS_Craft.item.boukenger.item_accellular;
+import SS_Craft.item.denziman.item_denzi_ring;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.go_busters.item_morphin_brace;
 import SS_Craft.item.gokaiger.item_mobirates;
@@ -211,7 +212,11 @@ public class BipedLockseed extends ModelBiped
 			
 			if (stack!=null)
 			{
-				if (stack.getItem() instanceof item_ginga_brace)
+				if (stack.getItem() instanceof item_denzi_ring)
+				{
+					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_denzi_ring.get_lock(stack) +".png"));
+				}
+				else if (stack.getItem() instanceof item_ginga_brace)
 				{	
 					String rider = ((item_ginga_brace)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 			

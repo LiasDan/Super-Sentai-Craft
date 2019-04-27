@@ -85,6 +85,34 @@ item.france_fencing_sword.name=Fencing Sword (Battle France)
 item.kenya_whip.name=Whip (Battle Kenya)
 item.america_throwing_knife.name=Throwing Knife (Miss America)
 
+//04 Denziman
+itemGroup.tabDenziman=Denshi Sentai Denziman
+
+item.empty_denzi_ring.name=Empty Denzi Ring
+tile.denziman_ore.name=Denziman Ore
+
+item.denziman_head.name=Denziman Helmet
+item.denziman_torso.name=Denziman Chestplate
+item.denziman_legs.name=Denziman Leggings
+
+item.red_denzi_ring.name=Denzi Ring (DenziRed)
+item.blue_denzi_ring.name=Denzi Ring (DenziBlue)
+item.yellow_denzi_ring.name=Denzi Ring (DenziYellow)
+item.green_denzi_ring.name=Denzi Ring (DenziGreen)
+item.pink_denzi_ring.name=Denzi Ring (DenziPink)
+item.red_denzi_gem.name=Red Denzi Gem
+item.blue_denzi_gem.name=Blue Denzi Gem
+item.yellow_denzi_gem.name=Yellow Denzi Gem
+item.green_denzi_gem.name=Green Denzi Gem
+item.pink_denzi_gem.name=Pink Denzi Gem
+
+item.red_denzi_stick.name=Denzi Stick (DenziRed)
+item.blue_denzi_stick.name=Denzi Stick (DenziBlue)
+item.yellow_denzi_stick.name=Denzi Stick (DenziYellow)
+item.green_denzi_stick.name=Denzi Stick (DenziGreen)
+item.pink_denzi_stick.name=Denzi Stick (DenziPink)
+item.denzi_punch.name=Denzi Punch
+
 //05 Sun Vulcan
 itemGroup.tabSunVulcan=Taiyo Sentai Sun Vulcan
 

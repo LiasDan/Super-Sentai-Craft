@@ -52,6 +52,14 @@ public class Tabs
 			return new ItemStack(RiderItems.battle_fever_head);
 		}
 	};
+	//04
+	public static CreativeTabs tabDenziman= new CreativeTabs("tabDenziman")
+	{
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(RiderItems.denziman_head);
+		}
+	};
 	//05
 	public static CreativeTabs tabSunVulcan= new CreativeTabs("tabSunVulcan")
 	{

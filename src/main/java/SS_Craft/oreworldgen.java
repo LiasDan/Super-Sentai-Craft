@@ -79,7 +79,7 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.jakq_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
-		//02 Battle Fever
+		//03 Battle Fever
 		for (int i = 0; i < 4; i++)
 		{
 			//16x16 area up to y = 64
@@ -89,6 +89,17 @@ public class oreworldgen implements IWorldGenerator
 			// 10 blocks per vein
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.battle_fever_ore.getDefaultState(), 10)).generate(world, rand,position);
+		}
+		//04 Denziman
+		for (int i = 0; i < 4; i++)
+		{
+			//16x16 area up to y = 64
+			int randPosX = chunkX + rand.nextInt(16);
+			int randPosY = rand.nextInt(60);
+			int randPosZ = chunkZ + rand.nextInt(16);
+			// 10 blocks per vein
+			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(RiderItems.denziman_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
 		//05 Sun Vulcan
 		for (int i = 0; i < 4; i++)

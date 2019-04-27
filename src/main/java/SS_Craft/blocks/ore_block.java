@@ -126,6 +126,34 @@ public class ore_block extends Block implements IHasModel
 				return CRYSTAL;
 			}
 		}
+		//04 Denziman
+		if (CRYSTAL==RiderItems.empty_denzi_ring)
+		{
+			int rand = generator.nextInt(250);
+			if (rand<25)
+			{
+				return RiderItems.red_denzi_gem;
+			}
+			else if (rand<50)
+			{
+				return RiderItems.blue_denzi_gem;
+			}
+			else if (rand<75)
+			{
+				return RiderItems.yellow_denzi_gem;
+			}
+			else if (rand<100)
+			{
+				return RiderItems.green_denzi_gem;
+			}
+			else if (rand<125)
+			{
+				return RiderItems.pink_denzi_gem;
+			}
+			{
+				return CRYSTAL;
+			}
+		}
 		//05 Sun Vulcan
 		if (CRYSTAL==RiderItems.sun_vulcan_logo)
 		{
