@@ -13,11 +13,13 @@ tile.goranger_ore.name=Goranger Ore
 item.goranger_head.name=Goranger Helmet
 item.goranger_torso.name=Goranger Chestplate
 item.goranger_legs.name=Goranger Leggings
+
 item.akaranger_belt.name=Akaranger Belt
 item.aoranger_belt.name=Aoranger Belt
 item.kiranger_belt.name=Kiranger Belt
 item.momoranger_belt.name=Momoranger Belt
 item.midoranger_belt.name=Midoranger Belt
+
 item.aka_star.name=Aka Star
 item.ao_star.name=Ao Star
 item.ki_star.name=Ki Star
@@ -41,11 +43,13 @@ tile.jakq_ore.name=J.A.K.Q. Ore
 item.jakq_head.name=J.A.K.Q. Helmet
 item.jakq_torso.name=J.A.K.Q. Chestplate
 item.jakq_legs.name=J.A.K.Q. Leggings
+
 item.ace_powered_capsule.name=Powered Capsule (Spade Ace)
 item.jack_powered_capsule.name=Powered Capsule (Dia Jack)
 item.queen_powered_capsule.name=Powered Capsule (Heart Queen)
 item.king_powered_capsule.name=Powered Capsule (Clover King)
 item.big_one_red_rose.name=Red Rose (Big One)
+
 item.ace_card.name=Ace Card
 item.jack_card.name=Jack Card
 item.queen_card.name=Queen Card
@@ -73,6 +77,7 @@ item.cossack_battleceiver.name=Battleceiver (Battle Cossack)
 item.france_battleceiver.name=Battleceiver (Battle France)
 item.kenya_battleceiver.name=Battleceiver (Battle Kenya)
 item.america_battleceiver.name=Battleceiver (Miss America)
+
 item.japan_badge.name=Japan Badge
 item.cossack_badge.name=Cossack Badge
 item.france_badge.name=France Badge
@@ -100,6 +105,7 @@ item.blue_denzi_ring.name=Denzi Ring (DenziBlue)
 item.yellow_denzi_ring.name=Denzi Ring (DenziYellow)
 item.green_denzi_ring.name=Denzi Ring (DenziGreen)
 item.pink_denzi_ring.name=Denzi Ring (DenziPink)
+
 item.red_denzi_gem.name=Red Denzi Gem
 item.blue_denzi_gem.name=Blue Denzi Gem
 item.yellow_denzi_gem.name=Yellow Denzi Gem
@@ -126,6 +132,7 @@ item.sun_vulcan_legs.name=Sun Vulcan Leggings
 item.eagle_vulcan_brace.name=Vulcan Brace (VulEagle)
 item.shark_vulcan_brace.name=Vulcan Brace (VulShark)
 item.panther_vulcan_brace.name=Vulcan Brace (VulPanther)
+
 item.vul_eagle_medal.name=VulEagle Medal
 item.vul_shark_medal.name=VulShark Medal
 item.vul_panther_medal.name=VulPanther Medal
@@ -142,11 +149,13 @@ tile.maskman_ore.name=Maskman Ore
 item.maskman_head.name=Maskman Helmet
 item.maskman_torso.name=Maskman Chestplate
 item.maskman_legs.name=Maskman Leggings
+
 item.red_masking_brace.name=Masking Brace (Red Mask)
 item.black_masking_brace.name=Masking Brace (Black Mask)
 item.blue_masking_brace.name=Masking Brace (Blue Mask)
 item.yellow_masking_brace.name=Masking Brace (Yellow Mask)
 item.pink_masking_brace.name=Masking Brace (Pink Mask)
+
 item.red_aura_power.name=Red Aura Power
 item.black_aura_power.name=Black Aura Power
 item.blue_aura_power.name=Blue Aura Power
@@ -176,6 +185,7 @@ item.black_turbo_brace.name=Turbo Brace (Black Turbo)
 item.blue_turbo_brace.name=Turbo Brace (Blue Turbo)
 item.yellow_turbo_brace.name=Turbo Brace (Yellow Turbo)
 item.pink_turbo_brace.name=Turbo Brace (Pink Turbo)
+
 item.red_turbo_logo.name=Red Turbo Logo
 item.black_turbo_logo.name=Black Turbo Logo
 item.blue_turbo_logo.name=Blue Turbo Logo
@@ -201,11 +211,13 @@ tile.carranger_ore.name=Carranger Ore
 item.carranger_head.name=Carranger Helmet
 item.carranger_torso.name=Carranger Chestplate
 item.carranger_legs.name=Carranger Leggings
+
 item.red_accel_changer.name=Accel Changer (Red Racer)
 item.blue_accel_changer.name=Accel Changer (Blue Racer)
 item.green_accel_changer.name=Accel Changer (Green Racer)
 item.yellow_accel_changer.name=Accel Changer (Yellow Racer)
 item.pink_accel_changer.name=Accel Changer (Pink Racer)
+
 item.white_racer_changer.name=White Racer Changer
 item.red_racer_badge.name=Red Racer Badge
 item.blue_racer_badge.name=Blue Racer Badge
@@ -225,6 +237,47 @@ item.bumper_bow.name=Bumper Bow
 item.navic_shot.name=Navic Shot
 item.navic_blaster.name=Navic Blaster
 
+//21 Megaranger
+itemGroup.tabMegaranger=Denji Sentai Megaranger
+
+item.megaranger_logo.name=Megaranger Logo
+tile.megaranger_ore.name=Megaranger Ore
+
+item.megaranger_head.name=Megaranger Helmet
+item.megaranger_torso.name=Megaranger Chestplate
+item.megaranger_legs.name=Megaranger Leggings
+
+item.red_digitaizer.name=Digitaizer (MegaRed)
+item.black_digitaizer.name=Digitaizer (MegaBlack)
+item.blue_digitaizer.name=Digitaizer (MegaBlue)
+item.yellow_digitaizer.name=Digitaizer (MegaYellow)
+item.pink_digitaizer.name=Digitaizer (MegaPink)
+item.keitaizer.name=Keitaizer (MegaSilver)
+
+item.mega_red_disk.name=MegaRed Disk
+item.mega_black_disk.name=MegaBlack Disk
+item.mega_blue_disk.name=MegaBlue Disk
+item.mega_yellow_disk.name=MegaYellow Disk
+item.mega_pink_disk.name=MegaPink Disk
+item.mega_silver_disk.name=MegaSilver Disk
+item.mega_tector_disk.name=Mega Tector Disk
+item.battleraizer.name=Battleraizer
+
+item.mega_magnum.name=Mega Magnum
+item.mega_shot.name=Mega Shot
+item.mega_sniper.name=Mega Sniper
+item.drill_saber.name=Drill Saber
+item.mega_rod.name=MegaRod
+item.mega_tomahawk.name=MegaTomahawk
+item.mega_sling.name=MegaSling
+item.mega_capture.name=MegaCapture
+item.silver_blazer.name=Silver Blazer
+item.drill_sniper.name=Drill Sniper
+item.rod_sniper.name=Rod Sniper
+item.tomahawk_sniper.name=Tomahawk Sniper
+item.sling_sniper.name=Sling Sniper
+item.capture_sniper.name=Capture Sniper
+
 //22 Gingaman
 itemGroup.tabGingaman=Seijuu Sentai Gingaman
 
@@ -234,11 +287,13 @@ tile.gingaman_ore.name=Gingaman Ore
 item.gingaman_head.name=Gingaman Helmet
 item.gingaman_torso.name=Gingaman Chestplate
 item.gingaman_legs.name=Gingaman Leggings
+
 item.red_ginga_brace.name=Ginga Brace (GingaRed)
 item.green_ginga_brace.name=Ginga Brace (GingaGreen)
 item.blue_ginga_brace.name=Ginga Brace (GingaBlue)
 item.yellow_ginga_brace.name=Ginga Brace (GingaYellow)
 item.pink_ginga_brace.name=Ginga Brace (GingaPink)
+
 item.red_ginga_medal.name=Red Ginga Medal
 item.green_ginga_medal.name=Green Ginga Medal
 item.blue_ginga_medal.name=Blue Ginga Medal
@@ -284,6 +339,7 @@ item.green_gogo_brace.name=GoGo Brace (GoGreen)
 item.yellow_gogo_brace.name=GoGo Brace (GoYellow)
 item.pink_gogo_brace.name=GoGo Brace (GoPink)
 item.red_kyoko_gogo_brace.name=GoGo Brace (GoRed Kyoko's Dream)
+
 item.go_red_badge.name=GoRed Badge
 item.go_blue_badge.name=GoBlue Badge
 item.go_green_badge.name=GoGreen Badge
@@ -329,12 +385,14 @@ tile.gaoranger_ore.name=Gaoranger Ore
 item.gaoranger_head.name=Gaoranger Helmet
 item.gaoranger_torso.name=Gaoranger Chestplate
 item.gaoranger_legs.name=Gaoranger Leggings
+
 item.red_g_phone.name=G-Phone (GaoRed)
 item.yellow_g_phone.name=G-Phone (GaoYellow)
 item.blue_g_phone.name=G-Phone (GaoBlue)
 item.black_g_phone.name=G-Phone (GaoBlack)
 item.white_g_phone.name=G-Phone (GaoWhite)
 item.g_brace_phone.name=G-Brace Phone (GaoSilver)
+
 item.gao_lion_jewel.name=GaoLion Jewel
 item.gao_eagle_jewel.name=GaoEagle Jewel
 item.gao_shark_jewel.name=GaoShark Jewel
@@ -369,12 +427,14 @@ tile.boukenger_ore.name=Boukenger Ore
 item.boukenger_head.name=Boukenger Helmet
 item.boukenger_torso.name=Boukenger Chestplate
 item.boukenger_legs.name=Boukenger Leggings
+
 item.red_accellular.name=Accellular (Bouken Red)
 item.black_accellular.name=Accellular (Bouken Black)
 item.blue_accellular.name=Accellular (Bouken Blue)
 item.yellow_accellular.name=Accellular (Bouken Yellow)
 item.pink_accellular.name=Accellular (Bouken Pink)
 item.gogo_changer.name=GoGo Changer (Bouken Silver)
+
 item.bouken_red_logo.name=Bouken Red Logo
 item.bouken_black_logo.name=Bouken Black Logo
 item.bouken_blue_logo.name=Bouken Blue Logo
@@ -403,6 +463,7 @@ tile.shinkenger_ore.name=Shinkenger Ore
 item.shinkenger_head.name=Shinkenger Helmet
 item.shinkenger_torso.name=Shinkenger Chestplate
 item.shinkenger_legs.name=Shinkenger Leggings
+
 item.red_shodophone.name=ShodoPhone (Shinken Red)
 item.blue_shodophone.name=ShodoPhone (Shinken Blue)
 item.pink_shodophone.name=ShodoPhone (Shinken Pink)
@@ -410,6 +471,7 @@ item.green_shodophone.name=ShodoPhone (Shinken Green)
 item.yellow_shodophone.name=ShodoPhone (Shinken Yellow)
 item.sushi_changer.name=Sushi Changer (Shinken Gold)
 item.princess_red_shodophone.name=ShodoPhone (Princess Shinken Red)
+
 item.shishi_disk.name=Shishi Disk
 item.ryuu_disk.name=Ryuu Disk
 item.kame_disk.name=Kame Disk
@@ -490,30 +552,40 @@ tile.vs_vehicle_ore.name=Lupinranger VS Patranger Ore
 item.lupat_head.name=Lupinranger VS Patranger Helmet
 item.lupat_torso.name=Lupinranger VS Patranger Chestplate
 item.lupat_legs.name=Lupinranger VS Patranger Leggings
+
 item.red_vs_changer.name=VS Changer (Lupin Red)
 item.blue_vs_changer.name=VS Changer (Lupin Blue)
 item.yellow_vs_changer.name=VS Changer (Lupin Yellow)
+
 item.ichigou_vs_changer.name=VS Changer (Patren 1gou)
 item.nigou_vs_changer.name=VS Changer (Patren 2gou)
 item.sangou_vs_changer.name=VS Changer (Patren 3gou)
+
 item.lupin_x_changer.name=X Changer (Lupin X)
 item.patran_x_changer.name=X Changer (Patren X)
+
 item.ichigou_girl_vs_changer.name=VS Changer (Patren 1gou Girl)
 item.nigou_girl_vs_changer.name=VS Changer (Patren 2gou Girl)
 item.sangou_guy_vs_changer.name=VS Changer (Patren 3gou Guy)
+
 item.red_dial_fighter.name=Red Dial Fighter
 item.blue_dial_fighter.name=Blue Dial Fighter
 item.yellow_dial_fighter.name=Yellow Dial Fighter
+
 item.ichigou_trigger_machine.name=Trigger Machine 1gou
 item.nigou_trigger_machine.name=Trigger Machine 2gou
 item.sangou_trigger_machine.name=Trigger Machine 3gou
+
 item.silver_x_train.name=X Train Silver
 item.gold_x_train.name=X Train Gold
+
 item.good_striker.name=Good Striker
 item.jackpot_striker.name=Jackpot Striker
+
 item.scissor_dial_fighter.name=Scissor Dial Fighter
 item.magic_dial_fighter.name=Magic Dial Fighter
 item.victory_striker.name=Victory Striker
+
 item.crane_trigger_machine.name=Trigger Machine Crane
 item.splash_trigger_machine.name=Trigger Machine Splash
 item.siren_striker.name=Siren Striker
@@ -537,11 +609,13 @@ tile.ryusoulger_ore.name=Ryusoulger Ore
 item.ryusoulger_head.name=Ryusoulger Helmet
 item.ryusoulger_torso.name=Ryusoulger Chestplate
 item.ryusoulger_legs.name=Ryusoulger Leggings
+
 item.red_ryusoul_changer.name=Ryusoul Changer (RyusoulRed)
 item.blue_ryusoul_changer.name=Ryusoul Changer (RyusoulBlue)
 item.pink_ryusoul_changer.name=Ryusoul Changer (RyusoulPink)
 item.green_ryusoul_changer.name=Ryusoul Changer (RyusoulGreen)
 item.black_ryusoul_changer.name=Ryusoul Changer (RyusoulBlack)
+
 item.red_ryusoul.name=Red RyuSoul
 item.blue_ryusoul.name=Blue RyuSoul
 item.pink_ryusoul.name=Pink RyuSoul

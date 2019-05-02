@@ -262,6 +262,42 @@ public class ore_block extends Block implements IHasModel
 				return CRYSTAL;
 			}
 		}
+		//21 Megaranger
+		if (CRYSTAL==RiderItems.megaranger_logo)
+		{
+			int rand = generator.nextInt(300);
+			if (rand<25)
+			{
+				return RiderItems.mega_red_disk;
+			}
+			else if (rand<50)
+			{
+				return RiderItems.mega_black_disk;
+			}
+			else if (rand<75)
+			{
+				return RiderItems.mega_blue_disk;
+			}
+			else if (rand<100)
+			{
+				return RiderItems.mega_yellow_disk;
+			}
+			else if (rand<125)
+			{
+				return RiderItems.mega_pink_disk;
+			}
+			else if (rand<145)
+			{
+				return RiderItems.mega_silver_disk;
+			}
+			else if (rand<150)
+			{
+				return RiderItems.mega_tector_disk;
+			}
+			{
+				return CRYSTAL;
+			}
+		}
 		//22 Gingaman
 		if (CRYSTAL==RiderItems.gingaman_logo)
 		{
@@ -357,7 +393,7 @@ public class ore_block extends Block implements IHasModel
 		//30 Boukenger
 		if (CRYSTAL==RiderItems.boukenger_logo)
 		{
-			int rand = generator.nextInt(292);
+			int rand = generator.nextInt(310);
 			if (rand<25)
 			{
 				return RiderItems.bouken_red_logo;
@@ -382,7 +418,7 @@ public class ore_block extends Block implements IHasModel
 			{
 				return RiderItems.bouken_silver_logo;
 			}
-			else if (rand<146)
+			else if (rand<155)
 			{
 				return RiderItems.scale_of_the_salamander;
 			}
@@ -393,7 +429,7 @@ public class ore_block extends Block implements IHasModel
 		//33 Shinkenger
 		if (CRYSTAL==RiderItems.common_disk)
 		{
-			int rand = generator.nextInt(314);
+			int rand = generator.nextInt(330);
 			if (rand<25)
 			{
 				return RiderItems.shishi_disk;
@@ -422,11 +458,11 @@ public class ore_block extends Block implements IHasModel
 			{
 				return RiderItems.super_disk;
 			}
-			else if (rand<156)
+			else if (rand<160)
 			{
 				return RiderItems.hyper_disk;
 			}
-			else if (rand<157)
+			else if (rand<165)
 			{
 				return RiderItems.gedou_disk;
 			}
@@ -437,7 +473,7 @@ public class ore_block extends Block implements IHasModel
 		//36 Go-Busters
 		if (CRYSTAL==RiderItems.enetron)
 		{
-			int rand = generator.nextInt(232);
+			int rand = generator.nextInt(240);
 			if (rand<25)
 			{
 				return RiderItems.red_enetron;
@@ -458,14 +494,14 @@ public class ore_block extends Block implements IHasModel
 			{
 				return RiderItems.silver_enetron;
 			}
-			if (rand<116)
+			if (rand<120)
 			{
 				return RiderItems.custom_visor;
 			}
 		}
 		if (CRYSTAL==RiderItems.blank_animal_disk)
 		{
-			int rand = generator.nextInt(332);
+			int rand = generator.nextInt(340);
 			if (rand<25)
 			{
 				return RiderItems.cheetah_animal_disk;
@@ -494,7 +530,7 @@ public class ore_block extends Block implements IHasModel
 			{
 				return RiderItems.puma_animal_disk;
 			}
-			if (rand<166)
+			if (rand<170)
 			{
 				return RiderItems.custom_visor;
 			}
@@ -502,7 +538,7 @@ public class ore_block extends Block implements IHasModel
 		//42-43 Lupinranger VS Patranger
 		if (CRYSTAL==RiderItems.blank_striker)
 		{
-			int rand = generator.nextInt(484);
+			int rand = generator.nextInt(560);
 			if (rand<25)
 			{
 				return RiderItems.red_dial_fighter;
@@ -535,35 +571,35 @@ public class ore_block extends Block implements IHasModel
 			{
 				return RiderItems.gold_x_train;
 			}
-			if (rand<200)
+			if (rand<205)
 			{
 				return RiderItems.scissor_dial_fighter;
 			}
-			if (rand<210)
+			if (rand<220)
 			{
 				return RiderItems.crane_trigger_machine;
 			}
-			if (rand<220)
+			if (rand<235)
 			{
 				return RiderItems.magic_dial_fighter;
 			}
-			if (rand<230)
+			if (rand<250)
 			{
 				return RiderItems.splash_trigger_machine;
 			}
-			if (rand<235)
+			if (rand<260)
 			{
 				return RiderItems.good_striker;
 			}
-			if (rand<240)
+			if (rand<270)
 			{
 				return RiderItems.jackpot_striker;
 			}
-			if (rand<241)
+			if (rand<277)
 			{
 				return RiderItems.victory_striker;
 			}
-			if (rand<242)
+			if (rand<284)
 			{
 				return RiderItems.siren_striker;
 			}

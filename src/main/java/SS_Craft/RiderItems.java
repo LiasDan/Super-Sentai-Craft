@@ -61,6 +61,11 @@ import SS_Craft.item.lupatranger.item_vs_vehicle;
 import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.maskman.item_maskman_armor;
 import SS_Craft.item.maskman.item_maskman_armor2;
+import SS_Craft.item.megaranger.item_battleraizer;
+import SS_Craft.item.megaranger.item_digitaizer;
+import SS_Craft.item.megaranger.item_mega_disk;
+import SS_Craft.item.megaranger.item_megaranger_armor;
+import SS_Craft.item.megaranger.item_megaranger_armor2;
 import SS_Craft.item.ninninger.item_nin_shuriken;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul;
@@ -424,6 +429,46 @@ public class RiderItems
 	public static Item bumper_bow = new Item_gun("bumper_bow", Tabs.bow).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
 	public static Item navic_shot = new Item_gun("navic_shot", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
 	public static Item navic_blaster = new Item_gun("navic_blaster", Tabs.hyper_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
+	
+	//21 Denji Sentai Megaranger
+	public static Item megaranger_logo = new Item_ore("megaranger_logo").setCreativeTab(Tabs.tabMegaranger);
+	public static Block megaranger_ore = new ore_block("megaranger_ore", Material.ROCK, megaranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabMegaranger);
+	
+	public static Item megaranger_head = new item_megaranger_armor("megaranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item megaranger_torso = new item_megaranger_armor2("megaranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item megaranger_legs = new item_megaranger_armor2("megaranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	
+	public static Item red_digitaizer = new item_digitaizer("red_digitaizer", ArmorMaterial.DIAMOND, 4, "mega_red").setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item black_digitaizer = new item_digitaizer("black_digitaizer", ArmorMaterial.DIAMOND, 4, "mega_black").setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item blue_digitaizer = new item_digitaizer("blue_digitaizer", ArmorMaterial.DIAMOND, 4, "mega_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item yellow_digitaizer = new item_digitaizer("yellow_digitaizer", ArmorMaterial.DIAMOND, 4, "mega_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item pink_digitaizer = new item_digitaizer("pink_digitaizer", ArmorMaterial.DIAMOND, 4, "mega_pink").setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item keitaizer = new item_digitaizer("keitaizer", ArmorMaterial.DIAMOND, 4, "mega_silver").setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	
+	public static Item mega_red_disk = new item_mega_disk(0, "mega_red_disk").setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_black_disk = new item_mega_disk(0, "mega_black_disk").setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_blue_disk = new item_mega_disk(0, "mega_blue_disk").setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_yellow_disk = new item_mega_disk(0, "mega_yellow_disk").setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_pink_disk = new item_mega_disk(0, "mega_pink_disk").setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_silver_disk = new item_mega_disk(0, "mega_silver_disk").setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_tector_disk = new item_mega_disk(1, "mega_tector_disk").setCreativeTab(Tabs.tabMegaranger);
+	
+	public static Item battleraizer = new item_battleraizer("battleraizer").setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	
+	public static Item mega_magnum = new Item_gun("mega_magnum", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_shot = new Item_gun("mega_shot", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_sniper = new Item_gun("mega_sniper", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item drill_saber = new ItemBaseSword("drill_saber", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_rod = new ItemBaseSword("mega_rod", Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_tomahawk = new ItemBaseSword("mega_tomahawk", Tabs.axe).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_sling = new Item_gun("mega_sling", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item mega_capture = new Item_gun("mega_capture", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item silver_blazer = new Item_sword_gun("silver_blazer", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item drill_sniper = new Item_gun("drill_sniper", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item rod_sniper = new Item_gun("rod_sniper", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item tomahawk_sniper = new Item_gun("tomahawk_sniper", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item sling_sniper = new Item_gun("sling_sniper", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item capture_sniper = new Item_gun("capture_sniper", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
 	
 	//22 Seijuu Sentai Gingaman
 	public static Item gingaman_logo = new Item_ore("gingaman_logo").setCreativeTab(Tabs.tabGingaman);

@@ -16,6 +16,7 @@ import SS_Craft.item.go_busters.item_morphin_brace;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.lupatranger.item_vs_changer;
+import SS_Craft.item.megaranger.item_digitaizer;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
@@ -215,6 +216,10 @@ public class BipedLockseed extends ModelBiped
 				if (stack.getItem() instanceof item_denzi_ring)
 				{
 					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_denzi_ring.get_lock(stack) +".png"));
+				}
+				else if (stack.getItem() instanceof item_digitaizer)
+				{
+					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_digitaizer.get_lock(stack) +"_2.png"));
 				}
 				else if (stack.getItem() instanceof item_ginga_brace)
 				{	

@@ -92,6 +92,14 @@ public class Tabs
 			return new ItemStack(RiderItems.carranger_head);
 		}
 	};
+	//21
+	public static CreativeTabs tabMegaranger= new CreativeTabs("tabMegaranger")
+	{
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(RiderItems.megaranger_head);
+		}
+	};
 	//22
 	public static CreativeTabs tabGingaman= new CreativeTabs("tabGingaman")
 	{
