@@ -454,6 +454,48 @@ item.sagaspear.name=Sagasniper
 item.dual_crusher_mixer.name=Dual Crusher (Mixer Head)
 item.dual_crusher_drill.name=Dual Crusher (Drill Head)
 
+//32 Go-Onger
+itemGroup.tabGoOnger=Engine Sentai Go-Onger
+
+item.blank_engine_soul.name=Blank Engine Soul
+tile.go_onger_ore.name=Go-Onger Ore
+
+item.go_onger_head.name=Go-Onger Helmet
+item.go_onger_torso.name=Go-Onger Chestplate
+item.go_onger_legs.name=Go-Onger Leggings
+
+item.red_go_phone.name=Go-Phone (Go-On Red)
+item.blue_go_phone.name=Go-Phone (Go-On Blue)
+item.yellow_go_phone.name=Go-Phone (Go-On Yellow)
+item.green_shift_changer.name=Shift Changer (Go-On Green)
+item.black_shift_changer.name=Shift Changer (Go-On Black)
+item.gold_wing_trigger.name=Wing Trigger (Go-On Gold)
+item.silver_wing_trigger.name=Wing Trigger (Go-On Silver)
+item.kega_go_phone.name=Go-Phone (Kega Yellow)
+
+item.speedor_soul.name=Speedor Engine Soul
+item.buson_soul.name=Buson Engine Soul
+item.bear_rv_soul.name=BearRV Engine Soul
+item.birca_soul.name=Birca Engine Soul
+item.gunpherd_soul.name=Gunpherd Engine Soul
+item.carrigator_soul.name=Carrigator Engine Soul
+item.toripter_soul.name=Toripter Engine Soul
+item.jetras_soul.name=Jetras Engine Soul
+item.jumbowhale_soul.name=Jumbowhale Engine Soul
+item.kishamoth_soul.name=Kishamoth Engine Soul
+item.t_line_soul.name=T-line Engine Soul
+item.k_line_soul.name=K-line Engine Soul
+
+item.mantan_sword.name=Mantan Gun
+item.road_sabre.name=Road Sabre
+item.garage_launcher.name=Garage Launcher
+item.bridge_axe.name=Bridge Axe
+item.cowl_laser.name=Cowl Laser
+item.rocket_dagger.name=Rocket Dagger
+item.wing_booster.name=Wing Booster
+item.kankanbar.name=Kankanbar
+item.kankan_mantan_gun.name=Kankan Mantan Gun
+
 //33 Shinkenger
 itemGroup.tabShinkenger=Samurai Sentai Shinkenger
 

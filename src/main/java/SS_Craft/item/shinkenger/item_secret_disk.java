@@ -3,6 +3,7 @@ package SS_Craft.item.shinkenger;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.go_onger.item_go_phone;
 import SS_Craft.util.IHasModel;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
@@ -126,6 +127,17 @@ public class item_secret_disk extends Item implements IHasModel
 				else
 				{
 					item_shodophone.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+				}
+			}
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==RiderItems.red_go_phone)
+			{
+				if (num==2)
+				{
+					item_go_phone.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+				}
+				else if (item_go_phone.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="shinken_hyper_mode")
+				{
+					item_go_phone.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 				}
 			}
 		}

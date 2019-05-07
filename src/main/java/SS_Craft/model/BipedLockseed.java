@@ -13,6 +13,7 @@ import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.denziman.item_denzi_ring;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.go_busters.item_morphin_brace;
+import SS_Craft.item.go_onger.item_go_phone;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.lupatranger.item_vs_changer;
@@ -237,6 +238,17 @@ public class BipedLockseed extends ModelBiped
 				else if (stack.getItem() instanceof item_accellular)
 				{
 					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_accellular.get_lock(stack) +"_2.png"));
+				}
+				else if (stack.getItem() instanceof item_go_phone)
+				{
+					if (item_go_phone.get_lock(stack)=="shinken_hyper_mode")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/go_on_hyper_2.png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
 				}
 				else if (stack.getItem() instanceof item_shodophone)
 				{

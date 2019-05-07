@@ -426,6 +426,59 @@ public class ore_block extends Block implements IHasModel
 				return CRYSTAL;
 			}
 		}
+		//32 Go-Onger
+		if (CRYSTAL==RiderItems.blank_engine_soul)
+		{
+			int rand = generator.nextInt(356);
+			if (rand<25)
+			{
+				return RiderItems.speedor_soul;
+			}
+			else if (rand<50)
+			{
+				return RiderItems.buson_soul;
+			}
+			else if (rand<75)
+			{
+				return RiderItems.bear_rv_soul;
+			}
+			else if (rand<95)
+			{
+				return RiderItems.birca_soul;
+			}
+			else if (rand<115)
+			{
+				return RiderItems.gunpherd_soul;
+			}
+			else if (rand<116)
+			{
+				return RiderItems.carrigator_soul;
+			}
+			else if (rand<136)
+			{
+				return RiderItems.toripter_soul;
+			}
+			else if (rand<156)
+			{
+				return RiderItems.jetras_soul;
+			}
+			else if (rand<166)
+			{
+				return RiderItems.jumbowhale_soul;
+			}
+			else if (rand<176)
+			{
+				return RiderItems.kishamoth_soul;
+			}
+			else if (rand<177)
+			{
+				return RiderItems.t_line_soul;
+			}
+			else if (rand<178)
+			{
+				return RiderItems.k_line_soul;
+			}
+		}
 		//33 Shinkenger
 		if (CRYSTAL==RiderItems.common_disk)
 		{

@@ -132,6 +132,14 @@ public class Tabs
 			return new ItemStack(RiderItems.boukenger_head);
 		}
 	};
+	//32
+	public static CreativeTabs tabGoOnger= new CreativeTabs("tabGoOnger")
+	{
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(RiderItems.go_onger_head);
+		}
+	};
 	//33
 	public static CreativeTabs tabShinkenger= new CreativeTabs("tabShinkenger")
 	{

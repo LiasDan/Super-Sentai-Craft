@@ -38,6 +38,9 @@ import SS_Craft.item.go_busters.item_enetron;
 import SS_Craft.item.go_busters.item_go_busters_armor;
 import SS_Craft.item.go_busters.item_go_busters_armor2;
 import SS_Craft.item.go_busters.item_morphin_brace;
+import SS_Craft.item.go_onger.item_go_onger_armor;
+import SS_Craft.item.go_onger.item_go_onger_armor2;
+import SS_Craft.item.go_onger.item_go_phone;
 import SS_Craft.item.gogo_v.item_gogo_brace;
 import SS_Craft.item.gogo_v.item_gogo_v_armor;
 import SS_Craft.item.gogo_v.item_gogo_v_armor2;
@@ -640,6 +643,50 @@ public class RiderItems
 	public static Item dual_crusher_mixer = new Item_gun("dual_crusher_mixer",Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
 	public static Item dual_crusher_drill = new Item_gun("dual_crusher_drill",Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
 	
+	//32 Engine Sentai Go-Onger
+	public static Item blank_engine_soul = new Item_ore("blank_engine_soul").setCreativeTab(Tabs.tabGoOnger);
+	public static Block go_onger_ore = new ore_block("go_onger_ore", Material.ROCK, blank_engine_soul, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoOnger);
+	
+	public static Item go_onger_head = new item_go_onger_armor("go_onger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item go_onger_torso = new item_go_onger_armor2("go_onger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item go_onger_legs = new item_go_onger_armor2("go_onger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	
+	public static Item red_go_phone = new item_go_phone("red_go_phone", ArmorMaterial.DIAMOND, 4, "go_on_red").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item blue_go_phone = new item_go_phone("blue_go_phone", ArmorMaterial.DIAMOND, 4, "go_on_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item yellow_go_phone = new item_go_phone("yellow_go_phone", ArmorMaterial.DIAMOND, 4, "go_on_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item green_shift_changer = new item_go_phone("green_shift_changer", ArmorMaterial.DIAMOND, 4, "go_on_green").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item black_shift_changer = new item_go_phone("black_shift_changer", ArmorMaterial.DIAMOND, 4, "go_on_black").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item gold_wing_trigger = new item_go_phone("gold_wing_trigger", ArmorMaterial.DIAMOND, 4, "go_on_gold").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item silver_wing_trigger = new item_go_phone("silver_wing_trigger", ArmorMaterial.DIAMOND, 4, "go_on_silver").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item kega_go_phone = new item_go_phone("kega_go_phone", ArmorMaterial.DIAMOND, 4, "kega_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	
+	public static Item go_onger_belt = new Item_ore("go_onger_belt");
+	public static Item go_on_gold_belt = new Item_ore("go_on_gold_belt");
+	public static Item go_on_silver_belt = new Item_ore("go_on_silver_belt");
+	
+	public static Item speedor_soul = new Item_ore("speedor_soul").setCreativeTab(Tabs.tabGoOnger);
+	public static Item buson_soul = new Item_ore("buson_soul").setCreativeTab(Tabs.tabGoOnger);
+	public static Item bear_rv_soul = new Item_ore("bear_rv_soul").setCreativeTab(Tabs.tabGoOnger);
+	public static Item birca_soul = new Item_ore("birca_soul").setCreativeTab(Tabs.tabGoOnger);
+	public static Item gunpherd_soul = new Item_ore("gunpherd_soul").setCreativeTab(Tabs.tabGoOnger);
+	public static Item carrigator_soul = new Item_ore("carrigator_soul").setCreativeTab(Tabs.tabGoOnger);//collectible
+	public static Item toripter_soul = new Item_ore("toripter_soul").setCreativeTab(Tabs.tabGoOnger);
+	public static Item jetras_soul = new Item_ore("jetras_soul").setCreativeTab(Tabs.tabGoOnger);
+	public static Item jumbowhale_soul = new Item_ore("jumbowhale_soul").setCreativeTab(Tabs.tabGoOnger);//rocket_dagger
+	public static Item kishamoth_soul = new Item_ore("kishamoth_soul").setCreativeTab(Tabs.tabGoOnger);//kankanbar
+	public static Item t_line_soul = new Item_ore("t_line_soul").setCreativeTab(Tabs.tabGoOnger);//collectible
+	public static Item k_line_soul = new Item_ore("k_line_soul").setCreativeTab(Tabs.tabGoOnger);//collectible
+	
+	public static Item mantan_sword = new Item_sword_gun("mantan_sword", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item road_sabre = new ItemBaseSword("road_sabre", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item garage_launcher = new Item_gun("garage_launcher", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item bridge_axe = new ItemBaseSword("bridge_axe", Tabs.axe).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item cowl_laser = new Item_gun("cowl_laser", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item rocket_dagger = new ItemBaseSword("rocket_dagger", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item wing_booster = new Item_gun("wing_booster", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item kankanbar = new ItemBaseSword("kankanbar", Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item kankan_mantan_gun = new Item_gun("kankan_mantan_gun", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	
 	//33 Samurai Sentai Shinkenger
 	public static Item common_disk = new Item_ore("common_disk").setCreativeTab(Tabs.tabShinkenger);
 	public static Block shinkenger_ore = new ore_block("shinkenger_ore", Material.ROCK, common_disk, 2).setHardness(9.9F).setCreativeTab(Tabs.tabShinkenger);
@@ -729,6 +776,9 @@ public class RiderItems
 	public static Item ichigan_buster_special = new Item_gun("ichigan_buster_special",Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
 	public static Item dri_blade = new ItemBaseSword("dri_blade",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
 	public static Item lio_attache = new Item_gun("lio_attache",Tabs.hyper_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
+	
+	//40 Doubutsu Sentai Zyuohger
+	
 	
 	//42-43 Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger
 	public static Item blank_striker = new Item_ore("blank_striker").setCreativeTab(Tabs.tabLupat);
