@@ -71,15 +71,48 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				armorModel.belt=new ItemStack(RiderItems.zyuohger_belt);
-				
-				if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==0)
+				if (this == RiderItems.zyuoh_the_light)
 				{
-					armorModel.wings=new ItemStack(RiderItems.zyuoh_eagle_wing);
+					armorModel.belt=new ItemStack(RiderItems.zyuoh_the_world_belt);
 				}
-				else if(this.get_core(stack)==2)
+				else
 				{
-					armorModel.wings=new ItemStack(RiderItems.zyuoh_eagle_wing);
+					armorModel.belt=new ItemStack(RiderItems.zyuohger_belt);
+				}
+				
+				if (this == RiderItems.eagle_zyuoh_changer)
+				{
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==0)
+					{
+						armorModel.wings=new ItemStack(RiderItems.zyuoh_eagle_wing);
+					}
+					else if(this.get_core(stack)==2)
+					{
+						armorModel.wings=new ItemStack(RiderItems.zyuoh_eagle_wing);
+					}
+					else if((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==3)
+					{
+						armorModel.wings=new ItemStack(RiderItems.zyuoh_condor_wing);
+					}
+					else
+					{
+						armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+					}
+				}
+				else if (this == RiderItems.zyuoh_changer_final)
+				{
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==0)
+					{
+						armorModel.wings=new ItemStack(RiderItems.zyuoh_bird_wing);
+					}
+					else if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==1)
+					{
+						armorModel.wings=new ItemStack(RiderItems.zyuoh_condor_wing);
+					}
+					else
+					{
+						armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+					}
 				}
 				else
 				{
@@ -142,11 +175,11 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.kawarimono_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.zyuohger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.kawarimono_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.zyuohger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.kawarimono_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.zyuohger_head)
 								{
 									Potion FLY = Potion.getPotionFromResourceLocation("tokuPotions"+ ":" + "fly");
 									
@@ -186,6 +219,14 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 												}
 											}
 										}
+										else if (this.get_core(armor)==3)
+										{
+											player.removePotionEffect(MobEffects.STRENGTH);
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zyuoh_whale_change_gun)
 									{
@@ -203,6 +244,83 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 											player.motionY=look.y/2;
 											player.motionZ=look.z/2;
 											}
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.shark_zyuoh_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
+										if (player.isInWater())
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											
+											if (player.isSneaking())
+											{
+											Vec3d look = player.getLookVec();
+											player.motionX=look.x/2;
+											player.motionY=look.y/2;
+											player.motionZ=look.z/2;
+											}
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.lion_zyuoh_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.elephant_zyuoh_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.tiger_zyuoh_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zyuoh_the_light)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										
+										if (this.get_core(armor)==0)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+										}
+										else if (this.get_core(armor)==2)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										else if (this.get_core(armor)==1)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zyuoh_changer_final)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										
+										if (this.get_core(armor)==0)
+										{
+											player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										}
+										else if (this.get_core(armor)==1)
+										{
+											player.removePotionEffect(MobEffects.STRENGTH);
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										}
 									}
 								}

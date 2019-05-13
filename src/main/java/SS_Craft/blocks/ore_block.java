@@ -551,6 +551,9 @@ public class ore_block extends Block implements IHasModel
 			{
 				return RiderItems.custom_visor;
 			}
+			{
+				return CRYSTAL;
+			}
 		}
 		if (CRYSTAL==RiderItems.blank_animal_disk)
 		{
@@ -586,6 +589,65 @@ public class ore_block extends Block implements IHasModel
 			if (rand<170)
 			{
 				return RiderItems.custom_visor;
+			}
+			{
+				return CRYSTAL;
+			}
+		}
+		//40 Zyuohger
+		if (CRYSTAL==RiderItems.king_s_credential)
+		{
+			int rand = generator.nextInt(440);
+			if (rand<25)
+			{
+				return RiderItems.eagle_cube;
+			}
+			else if (rand<50)
+			{
+				return RiderItems.shark_cube;
+			}
+			else if (rand<75)
+			{
+				return RiderItems.lion_cube;
+			}
+			else if (rand<100)
+			{
+				return RiderItems.elephant_cube;
+			}
+			else if (rand<125)
+			{
+				return RiderItems.tiger_cube;
+			}
+			else if (rand<135)
+			{
+				return RiderItems.gorilla_cube;
+			}
+			else if (rand<155)
+			{
+				return RiderItems.crocodile_cube;
+			}
+			else if (rand<175)
+			{
+				return RiderItems.wolf_cube;
+			}
+			else if (rand<195)
+			{
+				return RiderItems.rhinos_cube;
+			}
+			else if (rand<200)
+			{
+				return RiderItems.whale_cube;
+			}
+			else if (rand<215)
+			{
+				return RiderItems.bud_king_s_credential;
+			}
+			else if (rand<220)
+			{
+				return RiderItems.condor_cube;
+			}
+			{
+				return CRYSTAL;
 			}
 		}
 		//42-43 Lupinranger VS Patranger

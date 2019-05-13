@@ -60,6 +60,32 @@ public class item_zyuoh_cube extends Item implements IHasModel
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
+					else if (this == RiderItems.condor_cube)
+					{
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3);
+					}
+					else
+					{
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+					}
+				}
+				else if (belt == RiderItems.zyuoh_the_light)
+				{
+					if (this == RiderItems.crocodile_cube || this == RiderItems.wolf_cube)
+					{
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+					}
+					else
+					{
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+					}
+				}
+				else if (belt == RiderItems.zyuoh_changer_final)
+				{
+					if (this == RiderItems.condor_cube)
+					{
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+					}
 					else
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);

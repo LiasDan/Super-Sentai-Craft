@@ -233,6 +233,17 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.go_busters_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
+		//40 Zyuohger
+		for (int i = 0; i < 4; i++)
+		{
+			//16x16 area up to y = 64
+			int randPosX = chunkX + rand.nextInt(16);
+			int randPosY = rand.nextInt(60);
+			int randPosZ = chunkZ + rand.nextInt(16);
+			// 10 blocks per vein
+			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(RiderItems.zyuohger_ore.getDefaultState(), 10)).generate(world, rand,position);
+		}
 		//42-43 Lupinranger VS Patranger
 		for (int i = 0; i < 4; i++)
 		{

@@ -89,6 +89,8 @@ import SS_Craft.item.turboranger.item_turboranger_armor;
 import SS_Craft.item.turboranger.item_turboranger_armor2;
 import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.item.zyuohger.item_zyuoh_cube;
+import SS_Craft.item.zyuohger.item_zyuohger_armor;
+import SS_Craft.item.zyuohger.item_zyuohger_armor2;
 import SS_Craft.potion.PotionCore;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -123,9 +125,6 @@ public class RiderItems
 	public static Item kawarimono_torso = new item_kawarimono_armor2("kawarimono_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	public static Item kawarimono_legs = new item_kawarimono_armor2("kawarimono_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	
-	public static Item eagle_zyuoh_changer = new item_zyuoh_changer("eagle_zyuoh_changer", ArmorMaterial.DIAMOND, 4, "zyuoh_eagle").setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
-	public static Item zyuoh_whale_change_gun = new item_zyuoh_changer("zyuoh_whale_change_gun", ArmorMaterial.DIAMOND, 4, "zyuoh_whale").setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
-	
 	public static Item red_mobirates = new item_mobirates("red_mobirates", ArmorMaterial.DIAMOND, 4, "gokai_red").setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	
 	public static Item aka_ninja_ichibantou = new item_ninja_ichibantou("aka_ninja_ichibantou", ArmorMaterial.DIAMOND, 4, "aka_ninger").setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
@@ -134,18 +133,11 @@ public class RiderItems
 	
 	public static Item gogou_toq_changer = new item_toq_changer("gogou_toq_changer", ArmorMaterial.DIAMOND, 4,"toq_5gou").setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	
-	public static Item zyuohger_belt = new Item_ore("zyuohger_belt");
-	public static Item zyuoh_eagle_wing = new Item_ore("zyuoh_eagle_wing");
-	
 	public static Item gokaiger_belt = new Item_ore("gokaiger_belt");
 	
 	public static Item kyu_buckle = new Item_ore("kyu_buckle");
 	
 	public static Item toq_buckle = new Item_ore("toq_buckle");
-	
-	public static Item eagle_cube = new item_zyuoh_cube(0, "eagle_cube").setCreativeTab(Tabs.tabKawarimono);
-	public static Item gorilla_cube = new item_zyuoh_cube(1, "gorilla_cube").setCreativeTab(Tabs.tabKawarimono);
-	public static Item whale_cube = new item_zyuoh_cube(2, "whale_cube").setCreativeTab(Tabs.tabKawarimono);
 	
 	public static Item gokai_red_key = new item_ranger_key(0, "gokai_red_key").setCreativeTab(Tabs.tabKawarimono);
 	public static Item akaranger_key = new item_ranger_key(1, "akaranger_key").setCreativeTab(Tabs.tabKawarimono);
@@ -167,10 +159,6 @@ public class RiderItems
 	
 	public static Item pink_ressha = new item_toq_ressha(0, "pink_ressha").setCreativeTab(Tabs.tabKawarimono);
 	public static Item hyper_ressha = new item_toq_ressha(1, "hyper_ressha").setCreativeTab(Tabs.tabKawarimono);
-	
-	public static Item whale_change_gun = new item_gun_changer("whale_change_gun", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
-	public static Item eag_riser = new ItemBaseSword("eag_riser", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
-	public static Item zyuoh_buster = new Item_sword_gun("zyuoh_buster", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	
 	public static Item gokai_saber = new ItemBaseSword("gokai_saber", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	public static Item gokai_gun = new Item_gun("gokai_gun", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
@@ -778,7 +766,46 @@ public class RiderItems
 	public static Item lio_attache = new Item_gun("lio_attache",Tabs.hyper_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
 	
 	//40 Doubutsu Sentai Zyuohger
+	public static Item king_s_credential = new Item_ore("king_s_credential").setCreativeTab(Tabs.tabZyuohger);
+	public static Block zyuohger_ore = new ore_block("zyuohger_ore", Material.ROCK, king_s_credential, 2).setHardness(9.9F).setCreativeTab(Tabs.tabZyuohger);
 	
+	public static Item zyuohger_head = new item_zyuohger_armor("zyuohger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuohger_torso = new item_zyuohger_armor2("zyuohger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuohger_legs = new item_zyuohger_armor2("zyuohger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+
+	public static Item eagle_zyuoh_changer = new item_zyuoh_changer("eagle_zyuoh_changer", ArmorMaterial.DIAMOND, 4, "zyuoh_eagle").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuoh_whale_change_gun = new item_zyuoh_changer("zyuoh_whale_change_gun", ArmorMaterial.DIAMOND, 4, "zyuoh_whale").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item shark_zyuoh_changer = new item_zyuoh_changer("shark_zyuoh_changer", ArmorMaterial.DIAMOND, 4, "zyuoh_shark").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item lion_zyuoh_changer = new item_zyuoh_changer("lion_zyuoh_changer", ArmorMaterial.DIAMOND, 4, "zyuoh_lion").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item elephant_zyuoh_changer = new item_zyuoh_changer("elephant_zyuoh_changer", ArmorMaterial.DIAMOND, 4, "zyuoh_elephant").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item tiger_zyuoh_changer = new item_zyuoh_changer("tiger_zyuoh_changer", ArmorMaterial.DIAMOND, 4, "zyuoh_tiger").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuoh_the_light = new item_zyuoh_changer("zyuoh_the_light", ArmorMaterial.DIAMOND, 4, "zyuoh_the_world").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuoh_changer_final = new item_zyuoh_changer("zyuoh_changer_final", ArmorMaterial.DIAMOND, 4, "zyuoh_bird").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	
+	public static Item zyuohger_belt = new Item_ore("zyuohger_belt");
+	public static Item zyuoh_the_world_belt = new Item_ore("zyuoh_the_world_belt");
+	public static Item zyuoh_eagle_wing = new Item_ore("zyuoh_eagle_wing");
+	public static Item zyuoh_bird_wing = new Item_ore("zyuoh_bird_wing");
+	public static Item zyuoh_condor_wing = new Item_ore("zyuoh_condor_wing");
+
+	public static Item condor_cube = new item_zyuoh_cube(1, "condor_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item eagle_cube = new item_zyuoh_cube(0, "eagle_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item shark_cube = new item_zyuoh_cube(0, "shark_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item lion_cube = new item_zyuoh_cube(0, "lion_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item elephant_cube = new item_zyuoh_cube(0, "elephant_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item tiger_cube = new item_zyuoh_cube(0, "tiger_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item gorilla_cube = new item_zyuoh_cube(1, "gorilla_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item crocodile_cube = new item_zyuoh_cube(1, "crocodile_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item wolf_cube = new item_zyuoh_cube(2, "wolf_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item rhinos_cube = new item_zyuoh_cube(0, "rhinos_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item whale_cube = new item_zyuoh_cube(2, "whale_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item bud_king_s_credential = new item_zyuoh_cube(0, "bud_king_s_credential").setCreativeTab(Tabs.tabZyuohger);
+	
+	public static Item whale_change_gun = new item_gun_changer("whale_change_gun", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item eag_riser = new ItemBaseSword("eag_riser", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item condor_eag_riser = new ItemBaseSword("condor_eag_riser", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuoh_buster = new Item_sword_gun("zyuoh_buster", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuoh_the_rod = new Item_sword_gun("zyuoh_the_rod", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
 	
 	//42-43 Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger
 	public static Item blank_striker = new Item_ore("blank_striker").setCreativeTab(Tabs.tabLupat);

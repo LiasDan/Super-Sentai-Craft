@@ -585,6 +585,44 @@ item.ichigan_buster_special.name=Ichigan Buster Special Buster Mode
 item.dri_blade.name=DriBlade
 item.lio_attache.name=Lio Attaché
 
+//40 Zyuohger
+itemGroup.tabZyuohger=Doubutsu Sentai Zyuohger
+
+item.king_s_credential.name=King's Credential
+tile.zyuohger_ore.name=Zyuohger Ore
+
+item.zyuohger_head.name=Zyuohger Helmet
+item.zyuohger_torso.name=Zyuohger Chestplate
+item.zyuohger_legs.name=Zyuohger Leggings
+
+item.eagle_zyuoh_changer.name=Zyuoh Changer (Zyuoh Eagle)
+item.zyuoh_whale_change_gun.name=Whale Change Gun (Zyuoh Whale)
+item.shark_zyuoh_changer.name=Zyuoh Changer (Zyuoh Shark)
+item.lion_zyuoh_changer.name=Zyuoh Changer (Zyuoh Lion)
+item.elephant_zyuoh_changer.name=Zyuoh Changer (Zyuoh Elephant)
+item.tiger_zyuoh_changer.name=Zyuoh Changer (Zyuoh Tiger)
+item.zyuoh_the_light.name=Zyuoh The Light (Zyuoh The World)
+item.zyuoh_changer_final.name=Zyuoh Changer Final (Zyuoh Bird)
+
+item.condor_cube.name=Cube Condor
+item.eagle_cube.name=Cube Eagle
+item.shark_cube.name=Cube Shark
+item.lion_cube.name=Cube Lion
+item.elephant_cube.name=Cube Elephant
+item.tiger_cube.name=Cube Tiger
+item.gorilla_cube.name=Cube Gorilla
+item.crocodile_cube.name=Cube Crocodile
+item.wolf_cube.name=Cube Wolf
+item.rhinos_cube.name=Cube Rhinos
+item.whale_cube.name=Cube Whale
+item.bud_king_s_credential.name=King's Credential (Bud)
+
+item.whale_change_gun.name=Whale Change Gun
+item.eag_riser.name=EagRiser
+item.condor_eag_riser.name=EagRiser (Zyuoh Condor)
+item.zyuoh_buster.name=Zyuoh Buster
+item.zyuoh_the_rod.name=Zyuoh The GunRod
+
 //42-43 Lupinranger VS Patranger
 itemGroup.tabLupat=Lupinranger VS Patranger
 
@@ -678,16 +716,11 @@ item.kawarimono_head.name=Kawarimono Helmet
 item.kawarimono_torso.name=Kawarimono Chestplate
 item.kawarimono_legs.name=Kawarimono Leggings
 
-item.eagle_zyuoh_changer.name=Zyuoh Changer (Zyuoh Eagle)
-item.zyuoh_whale_change_gun.name=Whale Change Gun (Zyuoh Whale)
 item.red_mobirates.name=Mobirates (Gokai Red)
 item.aka_ninja_ichibantou.name=Ninja Ichibantou (AkaNinger)
 item.orange_seiza_blaster.name=Seiza Blaster (Sasori Orange)
 item.gogou_toq_changer.name=ToQ Changer (ToQ 5gou)
 
-item.eagle_cube.name=Cube Eagle
-item.gorilla_cube.name=Cube Gorilla
-item.whale_cube.name=Cube Whale
 item.gokai_red_key.name=Gokai Red Key
 item.akaranger_key.name=Akaranger Key
 item.spade_ace_key.name=Spade Ace Key
@@ -706,9 +739,6 @@ item.ikkakuju_kyutama.name=Ikkakuju Kyutama
 item.pink_ressha.name=Pink Ressha
 item.hyper_ressha.name=Hyper Ressha
 
-item.whale_change_gun.name=Whale Change Gun
-item.eag_riser.name=EagRiser
-item.zyuoh_buster.name=Zyuoh Buster
 item.gokai_saber.name=Gokai Saber
 item.gokai_gun.name=Gokai Gun
 item.gokai_spear_anchor.name=Gokai Spear (Anchor Mode)

@@ -156,6 +156,14 @@ public class Tabs
 			return new ItemStack(RiderItems.go_busters_head);
 		}
 	};
+	//40
+	public static CreativeTabs tabZyuohger= new CreativeTabs("tabZyuohger")
+	{
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(RiderItems.zyuohger_head);
+		}
+	};
 	//42-43
 	public static CreativeTabs tabLupat= new CreativeTabs("tabLupat")
 	{
