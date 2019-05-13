@@ -177,6 +177,17 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 					}
 				}
 			}
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_ginga_brace)
+			{
+				if (this==RiderItems.bull_riot)
+				{
+					if (playerIn.isSneaking())
+					{
+						playerIn.inventory.clearMatchingItems(RiderItems.bull_riot, 0, 1, null);
+						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.bull_riot_gun));
+					}
+				}
+			}
 			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_g_phone)
 			{
 				if (this==RiderItems.evil_crushing_hundred_beast_sword)

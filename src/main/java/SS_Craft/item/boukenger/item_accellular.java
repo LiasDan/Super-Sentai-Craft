@@ -73,6 +73,10 @@ public class item_accellular extends ItemArmor implements IHasModel
 				{
 					armorModel.belt=new ItemStack(RiderItems.bouken_silver_belt);
 				}
+				else if (this==RiderItems.zubaan)
+				{
+					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				}
 				else
 				{
 					armorModel.belt=new ItemStack(RiderItems.boukenger_belt);
@@ -202,6 +206,14 @@ public class item_accellular extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zubaan)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 									}
 									if (this.get_lock(armor)=="accel_tector")
 									{

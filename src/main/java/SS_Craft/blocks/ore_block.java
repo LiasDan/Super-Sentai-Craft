@@ -177,7 +177,7 @@ public class ore_block extends Block implements IHasModel
 		//11 Maskman
 		if (CRYSTAL==RiderItems.maskman_logo)
 		{
-			int rand = generator.nextInt(250);
+			int rand = generator.nextInt(270);
 			if (rand<25)
 			{
 				return RiderItems.red_aura_power;
@@ -197,6 +197,10 @@ public class ore_block extends Block implements IHasModel
 			else if (rand<125)
 			{
 				return RiderItems.pink_aura_power;
+			}
+			else if (rand<135)
+			{
+				return RiderItems.x1_aura_power;
 			}
 			{
 				return CRYSTAL;
@@ -233,7 +237,7 @@ public class ore_block extends Block implements IHasModel
 		//20 Carranger
 		if (CRYSTAL==RiderItems.carranger_logo)
 		{
-			int rand = generator.nextInt(270);
+			int rand = generator.nextInt(290);
 			if (rand<25)
 			{
 				return RiderItems.red_racer_badge;
@@ -257,6 +261,10 @@ public class ore_block extends Block implements IHasModel
 			else if (rand<135)
 			{
 				return RiderItems.white_racer_badge;
+			}
+			else if (rand<145)
+			{
+				return RiderItems.signalman_badge;
 			}
 			{
 				return CRYSTAL;
@@ -301,7 +309,7 @@ public class ore_block extends Block implements IHasModel
 		//22 Gingaman
 		if (CRYSTAL==RiderItems.gingaman_logo)
 		{
-			int rand = generator.nextInt(270);
+			int rand = generator.nextInt(290);
 			if (rand<25)
 			{
 				return RiderItems.red_ginga_medal;
@@ -326,6 +334,10 @@ public class ore_block extends Block implements IHasModel
 			{
 				return RiderItems.lights_of_ginga;
 			}
+			else if (rand<145)
+			{
+				return RiderItems.black_knight_core;
+			}
 			{
 				return CRYSTAL;
 			}
@@ -333,7 +345,7 @@ public class ore_block extends Block implements IHasModel
 		//23 GoGo-V
 		if (CRYSTAL==RiderItems.gogo_v_logo)
 		{
-			int rand = generator.nextInt(250);
+			int rand = generator.nextInt(270);
 			if (rand<25)
 			{
 				return RiderItems.go_red_badge;
@@ -353,6 +365,10 @@ public class ore_block extends Block implements IHasModel
 			else if (rand<125)
 			{
 				return RiderItems.go_pink_badge;
+			}
+			else if (rand<135)
+			{
+				return RiderItems.zeek_fragment;
 			}
 			{
 				return CRYSTAL;
@@ -393,7 +409,7 @@ public class ore_block extends Block implements IHasModel
 		//30 Boukenger
 		if (CRYSTAL==RiderItems.boukenger_logo)
 		{
-			int rand = generator.nextInt(310);
+			int rand = generator.nextInt(330);
 			if (rand<25)
 			{
 				return RiderItems.bouken_red_logo;
@@ -421,6 +437,10 @@ public class ore_block extends Block implements IHasModel
 			else if (rand<155)
 			{
 				return RiderItems.scale_of_the_salamander;
+			}
+			else if (rand<165)
+			{
+				return RiderItems.zubaan_crystal;
 			}
 			{
 				return CRYSTAL;

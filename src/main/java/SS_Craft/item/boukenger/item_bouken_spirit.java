@@ -50,7 +50,14 @@ public class item_bouken_spirit extends Item implements IHasModel
 			{
 				item_accellular belt = (item_accellular) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
-				item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+				if (belt == RiderItems.zubaan)
+				{
+					item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+				}
+				else
+				{
+					item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+				}
 			}
 		}
 		

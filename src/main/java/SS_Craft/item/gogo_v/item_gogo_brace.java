@@ -69,7 +69,14 @@ public class item_gogo_brace extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				armorModel.belt=new ItemStack(RiderItems.gogo_v_logo);
+				if (this==RiderItems.zeek_crystal || this==RiderItems.jeanne_crystal)
+				{
+					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				}
+				else
+				{
+					armorModel.belt=new ItemStack(RiderItems.gogo_v_logo);
+				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -168,6 +175,24 @@ public class item_gogo_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zeek_crystal)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.jeanne_crystal)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 									}
 								}
 							}

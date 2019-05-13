@@ -73,6 +73,10 @@ public class item_ginga_brace extends ItemArmor implements IHasModel
 				{
 					armorModel.belt=new ItemStack(RiderItems.beast_armor_shine_belt);
 				}
+				else if (this==RiderItems.black_knight_bull_riot)
+				{
+					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				}
 				else
 				{
 					armorModel.belt=new ItemStack(RiderItems.gingaman_logo);
@@ -191,6 +195,14 @@ public class item_ginga_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_knight_bull_riot)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 									}
 									if (this.get_lock(armor)=="beast_armor_shine")
 									{

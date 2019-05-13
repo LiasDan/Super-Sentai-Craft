@@ -155,12 +155,14 @@ item.black_masking_brace.name=Masking Brace (Black Mask)
 item.blue_masking_brace.name=Masking Brace (Blue Mask)
 item.yellow_masking_brace.name=Masking Brace (Yellow Mask)
 item.pink_masking_brace.name=Masking Brace (Pink Mask)
+item.x1_masking_brace.name=Masking Brace (X1 Mask)
 
 item.red_aura_power.name=Red Aura Power
 item.black_aura_power.name=Black Aura Power
 item.blue_aura_power.name=Blue Aura Power
 item.yellow_aura_power.name=Yellow Aura Power
 item.pink_aura_power.name=Pink Aura Power
+item.x1_aura_power.name=X1 Aura Power
 
 item.laser_magnum_sword.name=Laser Magnum (Sword)
 item.laser_magnum_gun.name=Laser Magnum (Gun)
@@ -217,6 +219,7 @@ item.blue_accel_changer.name=Accel Changer (Blue Racer)
 item.green_accel_changer.name=Accel Changer (Green Racer)
 item.yellow_accel_changer.name=Accel Changer (Yellow Racer)
 item.pink_accel_changer.name=Accel Changer (Pink Racer)
+item.signal_whistle.name=Signal Whistle (Signalman)
 
 item.white_racer_changer.name=White Racer Changer
 item.red_racer_badge.name=Red Racer Badge
@@ -225,6 +228,7 @@ item.green_racer_badge.name=Green Racer Badge
 item.yellow_racer_badge.name=Yellow Racer Badge
 item.pink_racer_badge.name=Pink Racer Badge
 item.white_racer_badge.name=White Racer Badge
+item.signalman_badge.name=Signalman Badge
 
 item.auto_blaster.name=Auto Blaster
 item.auto_punisher.name=Auto Punisher
@@ -236,6 +240,7 @@ item.side_knuckle.name=Side Knuckle
 item.bumper_bow.name=Bumper Bow
 item.navic_shot.name=Navic Shot
 item.navic_blaster.name=Navic Blaster
+item.signaizer.name=Signaizer
 
 //21 Megaranger
 itemGroup.tabMegaranger=Denji Sentai Megaranger
@@ -293,6 +298,7 @@ item.green_ginga_brace.name=Ginga Brace (GingaGreen)
 item.blue_ginga_brace.name=Ginga Brace (GingaBlue)
 item.yellow_ginga_brace.name=Ginga Brace (GingaYellow)
 item.pink_ginga_brace.name=Ginga Brace (GingaPink)
+item.black_knight_bull_riot.name=Bull Riot (Black Knight)
 
 item.red_ginga_medal.name=Red Ginga Medal
 item.green_ginga_medal.name=Green Ginga Medal
@@ -300,6 +306,7 @@ item.blue_ginga_medal.name=Blue Ginga Medal
 item.yellow_ginga_medal.name=Yellow Ginga Medal
 item.pink_ginga_medal.name=Pink Ginga Medal
 item.lights_of_ginga.name=Lights of Ginga
+item.black_knight_core.name=Black Knight Core
 
 item.starbeast_sword_red.name=Starbeast Sword (GingaRed)
 item.starbeast_sword_green.name=Starbeast Sword (GingaGreen)
@@ -322,6 +329,8 @@ item.flashing_beast_attack_rod_green.name=Flashing Beast Attack Rod (GingaGreen)
 item.flashing_beast_attack_rod_blue.name=Flashing Beast Attack Rod (GingaBlue)
 item.flashing_beast_attack_rod_yellow.name=Flashing Beast Attack Rod (GingaYellow)
 item.flashing_beast_attack_rod_pink.name=Flashing Beast Attack Rod (GingaPink)
+item.bull_riot.name=Bull Riot (Sword Mode)
+item.bull_riot_gun.name=Bull Riot (Gun Mode)
 
 //23 GoGo-V
 itemGroup.tabGogoV=Kyukyu Sentai GoGo-V
@@ -339,12 +348,15 @@ item.green_gogo_brace.name=GoGo Brace (GoGreen)
 item.yellow_gogo_brace.name=GoGo Brace (GoYellow)
 item.pink_gogo_brace.name=GoGo Brace (GoPink)
 item.red_kyoko_gogo_brace.name=GoGo Brace (GoRed Kyoko's Dream)
+item.zeek_crystal.name=Zeek Crystal (Beast-Demon Hunter Zeek)
+item.jeanne_crystal.name=Zeek Crystal (Zeek-Jeanne)
 
 item.go_red_badge.name=GoRed Badge
 item.go_blue_badge.name=GoBlue Badge
 item.go_green_badge.name=GoGreen Badge
 item.go_yellow_badge.name=GoYellow Badge
 item.go_pink_badge.name=GoPink Badge
+item.zeek_fragment.name=Zeek Crystal's Fragment
 
 item.v_mode_brace.name=V-Mode Brace
 
@@ -375,6 +387,9 @@ item.v_machine_gun_yellow.name=V-Machine Gun (GoYellow)
 item.v_machine_gun_pink.name=V-Machine Gun (GoPink)
 item.go_blaster.name=Go Blaster
 item.go_blaster_hyper.name=Go Blaster (Hyper Mode)
+item.zeek_sword.name=Zeek Sword
+item.zeek_shot.name=Zeek Shot
+item.zeek_blaster.name=Zeek Blaster
 
 //25 Gaoranger
 itemGroup.tabGaoranger=Hyakujuu Sentai Gaoranger
@@ -434,6 +449,7 @@ item.blue_accellular.name=Accellular (Bouken Blue)
 item.yellow_accellular.name=Accellular (Bouken Yellow)
 item.pink_accellular.name=Accellular (Bouken Pink)
 item.gogo_changer.name=GoGo Changer (Bouken Silver)
+item.zubaan.name=Zubaan Chest (Zubaan)
 
 item.bouken_red_logo.name=Bouken Red Logo
 item.bouken_black_logo.name=Bouken Black Logo
@@ -443,6 +459,7 @@ item.bouken_pink_logo.name=Bouken Pink Logo
 item.bouken_silver_logo.name=Bouken Silver Logo
 item.scale_of_the_salamander.name=Scale of the Salamander
 item.accel_tector.name=Accel Tector
+item.zubaan_crystal.name=Zubaan Chest Crystal
 
 item.survi_blade.name=Survi-Buster
 item.bouken_bo.name=Bouken Bo

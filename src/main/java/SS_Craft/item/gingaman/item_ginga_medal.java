@@ -50,7 +50,14 @@ public class item_ginga_medal extends Item implements IHasModel
 			{
 				item_ginga_brace belt = (item_ginga_brace) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
-				item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+				if (belt==RiderItems.black_knight_bull_riot)
+				{
+					item_ginga_brace.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+				}
+				else
+				{
+					item_ginga_brace.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+				}
 			}
 		}
 		

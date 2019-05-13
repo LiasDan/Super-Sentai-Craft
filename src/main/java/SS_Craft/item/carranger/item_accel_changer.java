@@ -69,7 +69,14 @@ public class item_accel_changer extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				armorModel.belt=new ItemStack(RiderItems.carranger_belt);
+				if (this==RiderItems.signal_whistle)
+				{
+					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				}
+				else
+				{
+					armorModel.belt=new ItemStack(RiderItems.carranger_belt);
+				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -175,7 +182,13 @@ public class item_accel_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
 									}
-									
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.signal_whistle)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
+									}
 								}
 							}
 						}
