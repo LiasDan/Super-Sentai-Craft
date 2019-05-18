@@ -66,14 +66,14 @@ public class item_vs_vehicle extends Item implements IHasModel
 				}
 				else if (this == RiderItems.victory_striker)
 				{
-					if (belt == RiderItems.red_vs_changer || belt == RiderItems.patran_x_changer)
+					if (belt == RiderItems.red_vs_changer || belt == RiderItems.patran_x_changer || belt == RiderItems.blue_vs_changer || belt == RiderItems.yellow_vs_changer)
 					{
 						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
 				}
 				else if (this == RiderItems.siren_striker)
 				{
-					if (belt == RiderItems.ichigou_vs_changer || belt == RiderItems.lupin_x_changer)
+					if (belt == RiderItems.ichigou_vs_changer || belt == RiderItems.lupin_x_changer || belt == RiderItems.nigou_vs_changer || belt == RiderItems.sangou_vs_changer)
 					{
 						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}

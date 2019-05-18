@@ -13,6 +13,10 @@ import SS_Craft.blocks.custom.Property;
 import SS_Craft.blocks.decor_block;
 import SS_Craft.blocks.ore_block;
 import SS_Craft.item.*;
+import SS_Craft.item.akibaranger.item_akibaranger_armor;
+import SS_Craft.item.akibaranger.item_akibaranger_armor2;
+import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
+import SS_Craft.item.akibaranger.item_munyu_munyu_zubaan;
 import SS_Craft.item.battle_fever.item_battle_fever_armor;
 import SS_Craft.item.battle_fever.item_battle_fever_armor2;
 import SS_Craft.item.battle_fever.item_battleceiver;
@@ -782,6 +786,21 @@ public class RiderItems
 	public static Item dri_blade = new ItemBaseSword("dri_blade",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
 	public static Item lio_attache = new Item_gun("lio_attache",Tabs.hyper_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
 	
+	//36-37 Hikounin Sentai Akibaranger
+	public static Item akibaranger_head = new item_akibaranger_armor("akibaranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item akibaranger_torso = new item_akibaranger_armor2("akibaranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item akibaranger_legs = new item_akibaranger_armor2("akibaranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+
+	public static Item red_moe_moe_z_cune = new item_moe_moe_z_cune("red_moe_moe_z_cune", ArmorMaterial.DIAMOND, 4, "akiba_red").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item blue_moe_moe_z_cune = new item_moe_moe_z_cune("blue_moe_moe_z_cune", ArmorMaterial.DIAMOND, 4, "akiba_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item blue_s2_moe_moe_z_cune = new item_moe_moe_z_cune("blue_s2_moe_moe_z_cune", ArmorMaterial.DIAMOND, 4, "akiba_blue_s2").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item yellow_moe_moe_z_cune = new item_moe_moe_z_cune("yellow_moe_moe_z_cune", ArmorMaterial.DIAMOND, 4, "akiba_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item yellow_s2_moe_moe_z_cune = new item_moe_moe_z_cune("yellow_s2_moe_moe_z_cune", ArmorMaterial.DIAMOND, 4, "akiba_yellow_s2").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	
+	public static Item moe_moe_z_cune = new Item_gun("moe_moe_z_cune", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item munyu_munyu_zubaan = new item_munyu_munyu_zubaan("munyu_munyu_zubaan", Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item munyu_moe_zubakyun = new Item_gun("munyu_moe_zubakyun", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	
 	//40 Doubutsu Sentai Zyuohger
 	public static Item king_s_credential = new Item_ore("king_s_credential").setCreativeTab(Tabs.tabZyuohger);
 	public static Block zyuohger_ore = new ore_block("zyuohger_ore", Material.ROCK, king_s_credential, 2).setHardness(9.9F).setCreativeTab(Tabs.tabZyuohger);
@@ -908,11 +927,29 @@ public class RiderItems
 	public static Item pink_ryusoul = new item_ryusoul(0,"pink_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item green_ryusoul = new item_ryusoul(0,"green_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item black_ryusoul = new item_ryusoul(0,"black_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
+	
 	public static Item tsuyo_soul = new item_ryusoul(1,"tsuyo_soul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item nobi_soul = new item_ryusoul(2,"nobi_soul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item omo_soul = new item_ryusoul(3,"omo_soul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item haya_soul = new item_ryusoul(4,"haya_soul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item kata_soul = new item_ryusoul(5,"kata_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item kike_soul = new item_ryusoul(6,"kike_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item kusa_soul = new item_ryusoul(7,"kusa_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item mie_soul = new item_ryusoul(8,"mie_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item mukimuki_soul = new item_ryusoul(9,"mukimuki_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item chiisa_soul = new item_ryusoul(10,"chiisa_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item mabushi_soul = new item_ryusoul(11,"mabushi_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item mist_soul = new item_ryusoul(12,"mist_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item karu_soul = new item_ryusoul(13,"karu_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item gyaku_soul = new item_ryusoul(14,"gyaku_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item kotae_soul = new item_ryusoul(15,"kotae_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item migake_soul = new item_ryusoul(16,"migake_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item kunkun_soul = new item_ryusoul(17,"kunkun_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item pukupuku_soul = new item_ryusoul(18,"pukupuku_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item kakure_soul = new item_ryusoul(19,"kakure_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item fue_soul = new item_ryusoul(20,"fue_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item nemu_soul = new item_ryusoul(21,"nemu_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item mawari_soul = new item_ryusoul(22,"mawari_soul").setCreativeTab(Tabs.tabRyusoulger);
 	
 	public static Item ryusoul_ken = new ItemBaseSword("ryusoul_ken", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	

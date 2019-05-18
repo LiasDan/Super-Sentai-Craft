@@ -602,6 +602,19 @@ item.ichigan_buster_special.name=Ichigan Buster Special Buster Mode
 item.dri_blade.name=DriBlade
 item.lio_attache.name=Lio Attaché
 
+//36-37 Akibaranger
+itemGroup.tabAkibaranger=Hikounin Sentai Akibaranger
+
+item.red_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaRed)
+item.blue_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaBlue)
+item.blue_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaBlue Season 2)
+item.yellow_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaYellow)
+item.yellow_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaYellow Season 2)
+
+item.moe_moe_z_cune.name=Moe Moe Z-Cune
+item.munyu_munyu_zubaan.name=Munyu Munyu Zubaan
+item.munyu_moe_zubakyun.name=Munyu Moe Zubakyun
+
 //40 Zyuohger
 itemGroup.tabZyuohger=Doubutsu Sentai Zyuohger
 
@@ -723,6 +736,23 @@ item.nobi_soul.name=NobiSoul
 item.omo_soul.name=OmoSoul
 item.haya_soul.name=HayaSoul
 item.kata_soul.name=KataSoul
+item.kike_soul.name=KikeSoul
+item.kusa_soul.name=KusaSoul
+item.mie_soul.name=MieSoul
+item.mukimuki_soul.name=MukimukiSoul
+item.chiisa_soul.name=ChiisaSoul
+item.mabushi_soul.name=MabushiSoul
+item.mist_soul.name=MistSoul
+item.karu_soul.name=KaruSoul
+item.gyaku_soul.name=GyakuSoul
+item.kotae_soul.name=KotaeSoul
+item.migake_soul.name=MigakeSoul
+item.kunkun_soul.name=KunkunSoul
+item.pukupuku_soul.name=PukupukuSoul
+item.kakure_soul.name=KakureSoul
+item.fue_soul.name=FueSoul
+item.nemu_soul.name=NemuSoul
+item.mawari_soul.name=MawariSoul
 
 item.ryusoul_ken.name=Ryusoul Ken
 

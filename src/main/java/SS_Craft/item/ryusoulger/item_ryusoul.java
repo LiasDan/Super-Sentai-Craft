@@ -18,7 +18,7 @@ import net.minecraft.world.World;
 public class item_ryusoul extends Item implements IHasModel
 {
 	public int num;
-	public static String[] ARMOR= new String[] {"blank","ryusoul_tsuyo_soul","ryusoul_nobi_soul","ryusoul_omo_soul","ryusoul_haya_soul","ryusoul_kata_soul"};
+	public static String[] ARMOR= new String[] {"blank","ryusoul_tsuyo_soul","ryusoul_nobi_soul","ryusoul_omo_soul","ryusoul_haya_soul","ryusoul_kata_soul","blank","ryusoul_kusa_soul","blank","ryusoul_mukimuki_soul","blank","ryusoul_mabushi_soul","ryusoul_mist_soul","ryusoul_karu_soul","ryusoul_gyaku_soul","blank","ryusoul_migake_soul","ryusoul_kunkun_soul","ryusoul_pukupuku_soul","blank","blank","ryusoul_nemu_soul","ryusoul_mawari_soul"};
 
 	public item_ryusoul(int armor,String name)
 	{

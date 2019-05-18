@@ -786,6 +786,74 @@ public class ore_block extends Block implements IHasModel
 			{
 				return RiderItems.kata_soul;
 			}
+			else if (rand<185)
+			{
+				return RiderItems.kike_soul;
+			}
+			else if (rand<195)
+			{
+				return RiderItems.kusa_soul;
+			}
+			else if (rand<205)
+			{
+				return RiderItems.mie_soul;
+			}
+			else if (rand<215)
+			{
+				return RiderItems.mukimuki_soul;
+			}
+			else if (rand<225)
+			{
+				return RiderItems.chiisa_soul;
+			}
+			else if (rand<235)
+			{
+				return RiderItems.mabushi_soul;
+			}
+			else if (rand<245)
+			{
+				return RiderItems.mist_soul;
+			}
+			else if (rand<255)
+			{
+				return RiderItems.karu_soul;
+			}
+			else if (rand<265)
+			{
+				return RiderItems.gyaku_soul;
+			}
+			else if (rand<275)
+			{
+				return RiderItems.kotae_soul;
+			}
+			else if (rand<285)
+			{
+				return RiderItems.migake_soul;
+			}
+			else if (rand<295)
+			{
+				return RiderItems.kunkun_soul;
+			}
+			else if (rand<305)
+			{
+				return RiderItems.pukupuku_soul;
+			}
+			else if (rand<315)
+			{
+				return RiderItems.kakure_soul;
+			}
+			else if (rand<325)
+			{
+				return RiderItems.fue_soul;
+			}
+			else if (rand<335)
+			{
+				return RiderItems.nemu_soul;
+			}
+			else if (rand<345)
+			{
+				return RiderItems.mawari_soul;
+			}
 			{
 				return CRYSTAL;
 			}

@@ -1,4 +1,4 @@
-package SS_Craft.item.ryusoulger;
+package SS_Craft.item.akibaranger;
 
 import javax.annotation.Nullable;
 
@@ -6,6 +6,7 @@ import org.lwjgl.opengl.GL11;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.boukenger.item_bouken_spirit;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
@@ -31,15 +32,16 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_ryusoul_changer extends ItemArmor implements IHasModel
+public class item_moe_moe_z_cune extends ItemArmor implements IHasModel
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
 	public String Rider;
+	public static String[] ARMOR= new String[] {"blank","_super"};
 
-	public item_ryusoul_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
+	public item_moe_moe_z_cune (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
 		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
 		this.material = par2EnumArmorMaterial;
@@ -69,7 +71,7 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				armorModel.belt=new ItemStack(RiderItems.ryusoul_buckle);
+				armorModel.belt=new ItemStack(RiderItems.blanknoitem);
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -115,20 +117,6 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 		}
 		itemstack.getTagCompound().setInteger("core", flag);
 	}
-	
-	public static String get_lock(ItemStack itemstack)
-	{	
-		return itemstack.hasTagCompound() ? item_ryusoul.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
-	}
-	
-	public static void set_lock(ItemStack itemstack,int flag)
-	{
-		if (!itemstack.hasTagCompound())
-		{
-			itemstack.setTagCompound(new NBTTagCompound());
-		}
-		itemstack.getTagCompound().setInteger("armor", flag);
-	}
 
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) 
@@ -141,71 +129,54 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.ryusoulger_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.akibaranger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.ryusoulger_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.akibaranger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.ryusoulger_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.akibaranger_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_moe_moe_z_cune)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_moe_moe_z_cune)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_s2_moe_moe_z_cune)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_moe_moe_z_cune)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_s2_moe_moe_z_cune)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+									}
+									if (this.get_core(armor)==1)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
-									}
-									if(this.get_lock(armor)=="ryusoul_tsuyo_soul")
-									{
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
-									}
-									if(this.get_lock(armor)=="ryusoul_nobi_soul")
-									{
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 1,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 1,true,false));
-									}
-									if(this.get_lock(armor)=="ryusoul_omo_soul")
-									{
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20 , 1,true,false));
-									}
-									if(this.get_lock(armor)=="ryusoul_haya_soul")
-									{
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 3,true,false));
-									}
-									if(this.get_lock(armor)=="ryusoul_kata_soul")
-									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 									}
 								}
 							}
 						}
 					}
 				}
-			}
-		}		
+			}		
+		}
 	}
 	
 	@Override

@@ -9,6 +9,7 @@ package SS_Craft.model;
 import org.lwjgl.opengl.GL11;
 
 import SS_Craft.RiderItems;
+import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.denziman.item_denzi_ring;
 import SS_Craft.item.gingaman.item_ginga_brace;
@@ -269,6 +270,19 @@ public class BipedLockseed extends ModelBiped
 					else if (item_morphin_brace.get_lock(stack)!="blank")
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+item_morphin_brace.get_lock(stack) +"_2.png"));
+					}
+				}
+				else if (stack.getItem() instanceof item_moe_moe_z_cune)
+				{
+					String rider = ((item_moe_moe_z_cune)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+					
+					if (item_moe_moe_z_cune.get_core(stack)==1)
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_super_2.png"));
+					}
+					else if (item_moe_moe_z_cune.get_core(stack)==0)
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 					}
 				}
 				else if (stack.getItem() instanceof item_ninja_ichibantou)
