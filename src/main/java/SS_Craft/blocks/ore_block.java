@@ -174,6 +174,34 @@ public class ore_block extends Block implements IHasModel
 				return CRYSTAL;
 			}
 		}
+		//10 Flashman
+		if (CRYSTAL==RiderItems.flashman_logo)
+		{
+			int rand = generator.nextInt(250);
+			if (rand<25)
+			{
+				return RiderItems.red_flash_prism;
+			}
+			else if (rand<50)
+			{
+				return RiderItems.green_flash_prism;
+			}
+			else if (rand<75)
+			{
+				return RiderItems.blue_flash_prism;
+			}
+			else if (rand<100)
+			{
+				return RiderItems.yellow_flash_prism;
+			}
+			else if (rand<125)
+			{
+				return RiderItems.pink_flash_prism;
+			}
+			{
+				return CRYSTAL;
+			}
+		}
 		//11 Maskman
 		if (CRYSTAL==RiderItems.maskman_logo)
 		{

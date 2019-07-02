@@ -31,6 +31,10 @@ import SS_Craft.item.denziman.item_denzi_punch;
 import SS_Craft.item.denziman.item_denzi_ring;
 import SS_Craft.item.denziman.item_denziman_armor;
 import SS_Craft.item.denziman.item_denziman_armor2;
+import SS_Craft.item.flashman.item_flashman_armor;
+import SS_Craft.item.flashman.item_flashman_armor2;
+import SS_Craft.item.flashman.item_prism_armor;
+import SS_Craft.item.flashman.item_prism_flash;
 import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gaoranger.item_gaoranger_armor;
 import SS_Craft.item.gaoranger.item_gaoranger_armor2;
@@ -325,6 +329,36 @@ public class RiderItems
 	
 	public static Item vulcan_stick = new ItemBaseSword("vulcan_stick", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 	public static Item vulcan_stick_eagle = new ItemBaseSword("vulcan_stick_eagle", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
+	
+	//10 Choushinsei Flashman
+	public static Item flashman_logo = new Item_ore("flashman_logo").setCreativeTab(Tabs.tabFlashman);
+	public static Block flashman_ore = new ore_block("flashman_ore", Material.ROCK, flashman_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabFlashman);
+	
+	public static Item flashman_head = new item_flashman_armor("flashman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item flashman_torso = new item_flashman_armor2("flashman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item flashman_legs = new item_flashman_armor2("flashman_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	
+	public static Item red_prism_flash = new item_prism_flash("red_prism_flash", ArmorMaterial.DIAMOND, 4, "red_flash").setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item green_prism_flash = new item_prism_flash("green_prism_flash", ArmorMaterial.DIAMOND, 4, "green_flash").setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item blue_prism_flash = new item_prism_flash("blue_prism_flash", ArmorMaterial.DIAMOND, 4, "blue_flash").setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item yellow_prism_flash = new item_prism_flash("yellow_prism_flash", ArmorMaterial.DIAMOND, 4, "yellow_flash").setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item pink_prism_flash = new item_prism_flash("pink_prism_flash", ArmorMaterial.DIAMOND, 4, "pink_flash").setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	
+	public static Item flashman_belt = new Item_ore("flashman_belt");
+	
+	public static Item red_flash_prism = new Item_ore("red_flash_prism").setCreativeTab(Tabs.tabFlashman);
+	public static Item green_flash_prism = new Item_ore("green_flash_prism").setCreativeTab(Tabs.tabFlashman);
+	public static Item blue_flash_prism = new Item_ore("blue_flash_prism").setCreativeTab(Tabs.tabFlashman);
+	public static Item yellow_flash_prism = new Item_ore("yellow_flash_prism").setCreativeTab(Tabs.tabFlashman);
+	public static Item pink_flash_prism = new Item_ore("pink_flash_prism").setCreativeTab(Tabs.tabFlashman);
+	
+	public static Item prism_shooter = new Item_sword_gun("prism_shooter",Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item prism_shooter_shield = new ItemBaseShield("prism_shooter_shield").setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item prism_holy_sword = new ItemBaseSword("prism_holy_sword", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item prism_kaizer = new item_prism_armor(1, "prism_kaizer").setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item star_darts = new ItemBaseSword("star_darts", Tabs.throwable).setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item prism_batons = new ItemBaseSword("prism_batons", Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
+	public static Item prism_boots = new item_prism_armor(1, "prism_boots").setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
 	
 	//11 Hikari Sentai Maskman
 	public static Item maskman_logo = new Item_ore("maskman_logo").setCreativeTab(Tabs.tabMaskman);

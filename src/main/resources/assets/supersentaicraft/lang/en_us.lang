@@ -140,6 +140,36 @@ item.vul_panther_medal.name=VulPanther Medal
 item.vulcan_stick.name=Vulcan Stick
 item.vulcan_stick_eagle.name=Vulcan Stick (VulEagle)
 
+//10 Flashman
+itemGroup.tabFlashman=Choushinsei Flashman
+
+item.flashman_logo.name=Flashman Logo
+tile.flashman_ore.name=Flashman Ore
+
+item.flashman_head.name=Flashman Helmet
+item.flashman_torso.name=Flashman Chestplate
+item.flashman_legs.name=Flashman Leggings
+
+item.red_prism_flash.name=Prism Flash (Red Flash)
+item.green_prism_flash.name=Prism Flash (Green Flash)
+item.blue_prism_flash.name=Prism Flash (Blue Flash)
+item.yellow_prism_flash.name=Prism Flash (Yellow Flash)
+item.pink_prism_flash.name=Prism Flash (Pink Flash)
+
+item.red_flash_prism.name=Red Flash Prism
+item.green_flash_prism.name=Green Flash Prism
+item.blue_flash_prism.name=Blue Flash Prism
+item.yellow_flash_prism.name=Yellow Flash Prism
+item.pink_flash_prism.name=Pink Flash Prism
+
+item.prism_shooter.name=Prism Shooter
+item.prism_shooter_shield.name=Prism Shooter (Shield)
+item.prism_holy_sword.name=Prism Holy Sword
+item.prism_kaizer.name=Prism Kaizer
+item.star_darts.name=Star Darts
+item.prism_batons.name=Prism Batons
+item.prism_boots.name=Prism Boots
+
 //11 Maskman
 itemGroup.tabMaskman=Hikari Sentai Maskman
 
