@@ -262,6 +262,34 @@ public class ore_block extends Block implements IHasModel
 				return CRYSTAL;
 			}
 		}
+		//15 Jetman
+		if (CRYSTAL==RiderItems.birdonic_wave)
+		{
+			int rand = generator.nextInt(250);
+			if (rand<25)
+			{
+				return RiderItems.hawk_birdonic_wave;
+			}
+			else if (rand<50)
+			{
+				return RiderItems.condor_birdonic_wave;
+			}
+			else if (rand<75)
+			{
+				return RiderItems.owl_birdonic_wave;
+			}
+			else if (rand<100)
+			{
+				return RiderItems.swan_birdonic_wave;
+			}
+			else if (rand<125)
+			{
+				return RiderItems.swallow_birdonic_wave;
+			}
+			{
+				return CRYSTAL;
+			}
+		}
 		//20 Carranger
 		if (CRYSTAL==RiderItems.carranger_logo)
 		{
@@ -701,7 +729,7 @@ public class ore_block extends Block implements IHasModel
 		//42-43 Lupinranger VS Patranger
 		if (CRYSTAL==RiderItems.blank_striker)
 		{
-			int rand = generator.nextInt(560);
+			int rand = generator.nextInt(568);
 			if (rand<25)
 			{
 				return RiderItems.red_dial_fighter;
@@ -773,7 +801,7 @@ public class ore_block extends Block implements IHasModel
 		//44 Ryusoulger
 		if (CRYSTAL==RiderItems.blank_ryusoul)
 		{
-			int rand = generator.nextInt(350);
+			int rand = generator.nextInt(690);
 			if (rand<25)
 			{
 				return RiderItems.red_ryusoul;

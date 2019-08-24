@@ -234,6 +234,34 @@ item.w_stick.name=W Stick
 item.turbo_laser_j.name=Turbo Laser (J Gun Combo)
 item.turbo_laser_w.name=Turbo Laser (W Stick Combo)
 
+//15 Jetman
+itemGroup.tabJetman=Choujin Sentai Jetman
+
+item.birdonic_wave.name=Birdonic Wave
+tile.jetman_ore.name=Turboranger Ore
+
+item.jetman_head.name=Jetman Helmet
+item.jetman_torso.name=Jetman Chestplate
+item.jetman_legs.name=Jetman Leggings
+
+item.red_cross_changer.name=Cross Changer (Red Hawk)
+item.black_cross_changer.name=Cross Changer (Black Condor)
+item.yellow_cross_changer.name=Cross Changer (Yellow Owl)
+item.white_cross_changer.name=Cross Changer (White Swan)
+item.blue_cross_changer.name=Cross Changer (Blue Swallow)
+
+item.hawk_birdonic_wave.name=Hawk Birdonic Wave
+item.condor_birdonic_wave.name=CondorBirdonic Wave
+item.owl_birdonic_wave.name=Owl Birdonic Wave
+item.swan_birdonic_wave.name=Swan Birdonic Wave
+item.swallow_birdonic_wave.name=Swallow Birdonic Wave
+
+item.bird_blaster.name=Bird Blaster
+item.bringer_sword.name=Bringer Sword
+item.jet_hand_cannon.name=Jet Hand Cannon
+item.beak_smasher.name=Beak Smasher
+item.smash_bomber.name=Smash Bomber
+
 //20 Carranger
 itemGroup.tabCarranger=Gekisou Sentai Carranger
 
@@ -250,8 +278,8 @@ item.green_accel_changer.name=Accel Changer (Green Racer)
 item.yellow_accel_changer.name=Accel Changer (Yellow Racer)
 item.pink_accel_changer.name=Accel Changer (Pink Racer)
 item.signal_whistle.name=Signal Whistle (Signalman)
-
 item.white_racer_changer.name=White Racer Changer
+
 item.red_racer_badge.name=Red Racer Badge
 item.blue_racer_badge.name=Blue Racer Badge
 item.green_racer_badge.name=Green Racer Badge

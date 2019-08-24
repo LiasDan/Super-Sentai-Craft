@@ -61,6 +61,9 @@ import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.item.jakq.item_jakq_armor;
 import SS_Craft.item.jakq.item_jakq_armor2;
 import SS_Craft.item.jakq.item_powered_capsule;
+import SS_Craft.item.jetman.item_cross_changer;
+import SS_Craft.item.jetman.item_jetman_armor;
+import SS_Craft.item.jetman.item_jetman_armor2;
 import SS_Craft.item.kawarimono.item_kawarimono_armor;
 import SS_Craft.item.kawarimono.item_kawarimono_armor2;
 import SS_Craft.item.kyuranger.item_kyutama;
@@ -425,6 +428,34 @@ public class RiderItems
 	public static Item w_stick = new ItemBaseSword("w_stick", Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
 	public static Item turbo_laser_j = new Item_gun("turbo_laser_j", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
 	public static Item turbo_laser_w = new Item_gun("turbo_laser_w", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
+	
+	//15 Choujin Sentai Jetman
+	public static Item birdonic_wave = new Item_ore("birdonic_wave").setCreativeTab(Tabs.tabJetman);
+	public static Block jetman_ore = new ore_block("jetman_ore", Material.ROCK, birdonic_wave, 2).setHardness(9.9F).setCreativeTab(Tabs.tabJetman);
+	
+	public static Item jetman_head = new item_jetman_armor("jetman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item jetman_torso = new item_jetman_armor2("jetman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item jetman_legs = new item_jetman_armor2("jetman_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+
+	public static Item red_cross_changer = new item_cross_changer("red_cross_changer", ArmorMaterial.DIAMOND, 4, "red_hawk").setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item black_cross_changer = new item_cross_changer("black_cross_changer", ArmorMaterial.DIAMOND, 4, "black_condor").setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item yellow_cross_changer = new item_cross_changer("yellow_cross_changer", ArmorMaterial.DIAMOND, 4, "yellow_owl").setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item white_cross_changer = new item_cross_changer("white_cross_changer", ArmorMaterial.DIAMOND, 4, "white_swan").setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item blue_cross_changer = new item_cross_changer("blue_cross_changer", ArmorMaterial.DIAMOND, 4, "blue_swallow").setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	
+	public static Item hawk_birdonic_wave = new Item_ore("hawk_birdonic_wave").setCreativeTab(Tabs.tabJetman);
+	public static Item condor_birdonic_wave = new Item_ore("condor_birdonic_wave").setCreativeTab(Tabs.tabJetman);
+	public static Item owl_birdonic_wave = new Item_ore("owl_birdonic_wave").setCreativeTab(Tabs.tabJetman);
+	public static Item swan_birdonic_wave = new Item_ore("swan_birdonic_wave").setCreativeTab(Tabs.tabJetman);
+	public static Item swallow_birdonic_wave = new Item_ore("swallow_birdonic_wave").setCreativeTab(Tabs.tabJetman);
+	
+	public static Item jetman_belt = new Item_ore("jetman_belt");
+	
+	public static Item bird_blaster = new Item_gun("bird_blaster",Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item bringer_sword = new ItemBaseSword("bringer_sword",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item jet_hand_cannon = new Item_gun("jet_hand_cannon",Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item beak_smasher = new Item_gun("beak_smasher",Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
+	public static Item smash_bomber = new Item_gun("smash_bomber",Tabs.hyper_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
 	
 	//20 Gekisou Sentai Carranger
 	public static Item carranger_logo = new Item_ore("carranger_logo").setCreativeTab(Tabs.tabCarranger);
