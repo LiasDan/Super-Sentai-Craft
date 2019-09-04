@@ -502,6 +502,58 @@ public class ore_block extends Block implements IHasModel
 				return CRYSTAL;
 			}
 		}
+		//31 Gekiranger
+		if (CRYSTAL==RiderItems.gekiranger_logo)
+		{
+			int rand = generator.nextInt(350);
+			if (rand<25)
+			{
+				return RiderItems.tiger_spirit;
+			}
+			else if (rand<50)
+			{
+				return RiderItems.cheetah_spirit;
+			}
+			else if (rand<75)
+			{
+				return RiderItems.jaguar_spirit;
+			}
+			else if (rand<95)
+			{
+				return RiderItems.wolf_spirit;
+			}
+			else if (rand<115)
+			{
+				return RiderItems.rhino_spirit;
+			}
+			else if (rand<130)
+			{
+				return RiderItems.elephant_spirit;
+			}
+			else if (rand<145)
+			{
+				return RiderItems.bat_spirit;
+			}
+			else if (rand<160)
+			{
+				return RiderItems.shark_spirit;
+			}
+			else if (rand<165)
+			{
+				return RiderItems.gorilla_spirit;
+			}
+			else if (rand<170)
+			{
+				return RiderItems.penguin_spirit;
+			}
+			else if (rand<175)
+			{
+				return RiderItems.gazelle_spirit;
+			}
+			{
+				return CRYSTAL;
+			}
+		}
 		//32 Go-Onger
 		if (CRYSTAL==RiderItems.blank_engine_soul)
 		{

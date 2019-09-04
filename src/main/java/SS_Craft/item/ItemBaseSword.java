@@ -7,6 +7,7 @@ import javax.annotation.Nullable;
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gaoranger.item_g_phone;
+import SS_Craft.item.gekiranger.item_geki_changer;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.maskman.item_masking_brace;
@@ -161,7 +162,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 				{
 					if (playerIn.isSneaking())
 					{
-						playerIn.inventory.clearMatchingItems(RiderItems.laser_magnum_sword, 0, 1, null);
+						playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.laser_magnum_sword));
 						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.laser_magnum_gun));
 					}
 				}
@@ -172,7 +173,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 				{
 					if (playerIn.isSneaking())
 					{
-						playerIn.inventory.clearMatchingItems(RiderItems.turbo_laser_sword, 0, 1, null);
+						playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.turbo_laser_sword));
 						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.turbo_laser_gun));
 					}
 				}
@@ -183,7 +184,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 				{
 					if (playerIn.isSneaking())
 					{
-						playerIn.inventory.clearMatchingItems(RiderItems.bull_riot, 0, 1, null);
+						playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.bull_riot));
 						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.bull_riot_gun));
 					}
 				}
@@ -194,7 +195,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 				{
 					if (playerIn.isSneaking())
 					{
-						playerIn.inventory.clearMatchingItems(RiderItems.evil_crushing_hundred_beast_sword, 0, 1, null);
+						playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.evil_crushing_hundred_beast_sword));
 						
 						if (!worldIn.isRemote)
 						{
@@ -222,12 +223,12 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 					{
 						if (this==RiderItems.vulcan_stick)
 						{
-							playerIn.inventory.clearMatchingItems(RiderItems.vulcan_stick, 0, 1, null);
+							playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.vulcan_stick));
 							playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.vulcan_stick_eagle));
 						}
 						if (this==RiderItems.vulcan_stick_eagle)
 						{
-							playerIn.inventory.clearMatchingItems(RiderItems.vulcan_stick, 0, 1, null);
+							playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.vulcan_stick));
 							playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.vulcan_stick));
 						}
 					}
@@ -239,7 +240,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 				{
 					if (playerIn.isSneaking())
 					{
-						playerIn.inventory.clearMatchingItems(RiderItems.lion_fang, 0, 1, null);
+						playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.lion_fang));
 						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.gao_mane_buster));
 					}
 				}
@@ -250,7 +251,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 				{
 					if (playerIn.isSneaking())
 					{
-						playerIn.inventory.clearMatchingItems(RiderItems.lupin_sword, 0, 1, null);
+						playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.lupin_sword));
 						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.lupin_sword_magic_hand));
 					}
 				}
@@ -258,8 +259,27 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 				{
 					if (playerIn.isSneaking())
 					{
-						playerIn.inventory.clearMatchingItems(RiderItems.lupin_sword_magic_hand, 0, 1, null);
+						playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.lupin_sword_magic_hand));
 						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.lupin_sword));
+					}
+				}
+			}
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_geki_changer)
+			{
+				if (this == RiderItems.geki_tonfa)
+				{
+					if (playerIn.isSneaking())
+					{
+						playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.geki_tonfa));
+						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.geki_tonfa_baton));
+					}
+				}
+				if (this == RiderItems.geki_tonfa_baton)
+				{
+					if (playerIn.isSneaking())
+					{
+						playerIn.inventory.mainInventory.remove(new ItemStack(RiderItems.geki_tonfa_baton));
+						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.geki_tonfa));
 					}
 				}
 			}

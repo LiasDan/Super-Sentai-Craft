@@ -38,6 +38,10 @@ import SS_Craft.item.flashman.item_prism_flash;
 import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gaoranger.item_gaoranger_armor;
 import SS_Craft.item.gaoranger.item_gaoranger_armor2;
+import SS_Craft.item.gekiranger.item_geki_changer;
+import SS_Craft.item.gekiranger.item_gekiranger_armor;
+import SS_Craft.item.gekiranger.item_gekiranger_armor2;
+import SS_Craft.item.gekiranger.item_super_geki_claw;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.gingaman.item_ginga_medal;
 import SS_Craft.item.gingaman.item_gingaman_armor;
@@ -716,6 +720,46 @@ public class RiderItems
 	public static Item sagaspear = new Item_sword_gun("sagaspear",Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
 	public static Item dual_crusher_mixer = new Item_gun("dual_crusher_mixer",Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
 	public static Item dual_crusher_drill = new Item_gun("dual_crusher_drill",Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
+	
+	//31 Juken Sentai Gekiranger
+	public static Item gekiranger_logo = new Item_ore("gekiranger_logo").setCreativeTab(Tabs.tabGekiranger);
+	public static Block gekiranger_ore = new ore_block("gekiranger_ore", Material.ROCK, gekiranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGekiranger);
+	
+	public static Item gekiranger_head = new item_gekiranger_armor("gekiranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item gekiranger_torso = new item_gekiranger_armor2("gekiranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item gekiranger_legs = new item_gekiranger_armor2("gekiranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	
+	public static Item red_geki_changer = new item_geki_changer("red_geki_changer", ArmorMaterial.DIAMOND, 4, "geki_red").setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item yellow_geki_changer = new item_geki_changer("yellow_geki_changer", ArmorMaterial.DIAMOND, 4, "geki_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item blue_geki_changer = new item_geki_changer("blue_geki_changer", ArmorMaterial.DIAMOND, 4, "geki_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item gong_changer = new item_geki_changer("gong_changer", ArmorMaterial.DIAMOND, 4, "geki_violet").setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item chopper_sai_blade = new item_geki_changer("chopper_sai_blade", ArmorMaterial.DIAMOND, 4, "geki_chopper").setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	
+	public static Item tiger_spirit = new Item_ore("tiger_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item cheetah_spirit = new Item_ore("cheetah_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item jaguar_spirit = new Item_ore("jaguar_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item wolf_spirit = new Item_ore("wolf_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item rhino_spirit = new Item_ore("rhino_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item elephant_spirit = new Item_ore("elephant_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item bat_spirit = new Item_ore("bat_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item shark_spirit = new Item_ore("shark_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item gorilla_spirit = new Item_ore("gorilla_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item penguin_spirit = new Item_ore("penguin_spirit").setCreativeTab(Tabs.tabGekiranger);
+	public static Item gazelle_spirit = new Item_ore("gazelle_spirit").setCreativeTab(Tabs.tabGekiranger);
+	
+	public static Item red_super_geki_claw = new item_super_geki_claw("red_super_geki_claw",Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item yellow_super_geki_claw = new item_super_geki_claw("yellow_super_geki_claw",Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item blue_super_geki_claw = new item_super_geki_claw("blue_super_geki_claw",Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item sai_blade_cutter = new item_sword_gun_changer("sai_blade_cutter",Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item geki_tonfa = new ItemBaseSword("geki_tonfa",Tabs.tonfa).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item geki_tonfa_baton = new ItemBaseSword("geki_tonfa_baton",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item geki_tonfa_long_baton = new ItemBaseSword("geki_tonfa_long_baton",Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item geki_hammer = new ItemBaseSword("geki_hammer",Tabs.megaton).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item geki_fan = new ItemBaseSword("geki_fan",Tabs.boomerang).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item geki_saber_twin_a = new ItemBaseSword("geki_saber_twin_a",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item geki_saber_twin_b = new ItemBaseSword("geki_saber_twin_b",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item geki_saber_twin_combo = new ItemBaseSword("geki_saber_twin_combo",Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
+	public static Item virtuous_beast_sword = new ItemBaseSword("virtuous_beast_sword",Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGekiranger);
 	
 	//32 Engine Sentai Go-Onger
 	public static Item blank_engine_soul = new Item_ore("blank_engine_soul").setCreativeTab(Tabs.tabGoOnger);

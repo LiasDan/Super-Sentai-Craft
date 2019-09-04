@@ -529,6 +529,48 @@ item.sagaspear.name=Sagasniper
 item.dual_crusher_mixer.name=Dual Crusher (Mixer Head)
 item.dual_crusher_drill.name=Dual Crusher (Drill Head)
 
+//31 Gekiranger
+itemGroup.tabGekiranger=Juken Sentai Gekiranger
+
+item.gekiranger_logo.name=Gekiranger Logo
+tile.gekiranger_ore.name=Gekiranger Ore
+
+item.gekiranger_head.name=Gekiranger Helmet
+item.gekiranger_torso.name=Gekiranger Chestplate
+item.gekiranger_legs.name=Gekiranger Leggings
+
+item.red_geki_changer.name=GekiChanger (GekiRed)
+item.yellow_geki_changer.name=GekiChanger (GekiYellow)
+item.blue_geki_changer.name=GekiChanger (GekiBlue)
+item.gong_changer.name=GongChanger (GekiViolet)
+item.chopper_sai_blade.name=SaiBlade (GekiChopper)
+
+item.tiger_spirit.name=Tiger Spirit
+item.cheetah_spirit.name=Cheetah Spirit
+item.jaguar_spirit.name=Jaguar Spirit
+item.wolf_spirit.name=Wolf Spirit
+item.rhino_spirit.name=Rhino Spirit
+item.elephant_spirit.name=Elephant Spirit
+item.bat_spirit.name=Bat Spirit
+item.shark_spirit.name=Shark Spirit
+item.gorilla_spirit.name=Gorilla Spirit
+item.penguin_spirit.name=Penguin Spirit
+item.gazelle_spirit.name=Gazelle Spirit
+
+item.red_super_geki_claw.name=Super GekiClaw (GekiRed)
+item.yellow_super_geki_claw.name=Super GekiClaw (GekiYellow)
+item.blue_super_geki_claw.name=Super GekiClaw (GekiBlue)
+item.sai_blade_cutter.name=SaiBlade
+item.geki_tonfa.name=GekiTonfa
+item.geki_tonfa_baton.name=GekiTonfa Baton
+item.geki_tonfa_long_baton.name=GekiTonfa Long Baton
+item.geki_hammer.name=GekiHammer
+item.geki_fan.name=GekiFan
+item.geki_saber_twin_a.name=GekiSaber (Twin Sword Mode)
+item.geki_saber_twin_b.name=GekiSaber (Twin Sword Mode)
+item.geki_saber_twin_combo.name=GekiSaber (Twin Sword Combo Mode)
+item.virtuous_beast_sword.name=Virtuous Beast Sword
+
 //32 Go-Onger
 itemGroup.tabGoOnger=Engine Sentai Go-Onger
 
