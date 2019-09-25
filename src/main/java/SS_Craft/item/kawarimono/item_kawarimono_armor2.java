@@ -32,7 +32,6 @@ public class item_kawarimono_armor2 extends ItemArmor  implements IHasModel
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 	
-	public static final String[] ZyuohEagle= new String[] {"zyuoh_eagle","zyuoh_gorilla","zyuoh_eagle_great_instinct_awakened"};
 	//                                                  {0          ,1          ,2          ,3             ,4          ,5          ,6           ,7         ,8        ,9              ,10         ,11        ,12          ,13         ,14        ,15        ,16              ,17           ,18         ,19      ,20         ,21        ,22         ,23      ,24        ,25       ,26             ,27         ,28        ,29        ,30          ,31        ,32         ,33           ,34         ,35          ,36          ,37        ,38          };
 	public static final String[] GokaiRed= new String[] {"gokai_red","akaranger","spade_ace","battle_japan","denzi_red","vul_eagle","goggle_red","dyna_red","red_one","change_dragon","red_flash","red_mask","red_falcon","red_turbo","five_red","red_hawk","tyranno_ranger","ryuu_ranger","ninja_red","oh_red","red_racer","mega_red","ginga_red","go_red","time_red","gao_red","hurricane_red","abare_red","deka_red","magi_red","bouken_red","geki_red","go_on_red","shinken_red","gosei_red","red_buster","kyoryu_red","toq_1gou","aka_ninger"};
 
@@ -58,36 +57,7 @@ public class item_kawarimono_armor2 extends ItemArmor  implements IHasModel
 
 			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 			{
-				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_zyuoh_changer)
-				{
-					String rider = ((item_zyuoh_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
-
-					if (rider == "zyuoh_eagle")
-					{
-						if ( slot == EntityEquipmentSlot.LEGS)
-						{
-							return Refercence.MODID+":textures/armor/"+ZyuohEagle[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_2.png";
-						}
-						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
-						{
-							return Refercence.MODID+":textures/armor/"+ZyuohEagle[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
-						}
-					}
-					else
-					{
-						if ( slot == EntityEquipmentSlot.LEGS)
-						{
-							return Refercence.MODID+":textures/armor/"+rider+"_2.png";
-						}
-						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
-						{
-							return Refercence.MODID+":textures/armor/"+rider+"_1.png";
-						}
-					}
-					
-					return Refercence.MODID+":textures/armor/blank.png";
-				}
-				else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_mobirates)
+				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_mobirates)
 				{
 					String rider = ((item_mobirates)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 
@@ -118,19 +88,6 @@ public class item_kawarimono_armor2 extends ItemArmor  implements IHasModel
 				else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_seiza_blaster)
 				{
 					String rider = ((item_seiza_blaster)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
-
-					if ( slot == EntityEquipmentSlot.LEGS)
-					{
-						return Refercence.MODID+":textures/armor/"+rider+"_2.png";
-					}
-					if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
-					{
-						return Refercence.MODID+":textures/armor/"+rider+"_1.png";
-					}
-				}
-				else if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_toq_changer)
-				{
-					String rider = ((item_toq_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 
 					if ( slot == EntityEquipmentSlot.LEGS)
 					{

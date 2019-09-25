@@ -41,6 +41,7 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 	public ArmorMaterial material;
 
 	public String Rider;
+	int Gender;
 
 	public item_toq_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
@@ -50,6 +51,20 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		TokuCraft_core.ITEMS.add(this);
+	}
+	
+	public item_toq_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, int gender)
+	{
+		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		this.material = par2EnumArmorMaterial;
+		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
+		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
+		this.maxStackSize = 1;
+		Rider=rider;
+		Gender=gender;
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
@@ -144,12 +159,108 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.kawarimono_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.toqger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.kawarimono_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.toqger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.kawarimono_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.toqger_head)
 								{
+									Potion FLY = Potion.getPotionFromResourceLocation("tokuPotions"+ ":" + "fly");
+									
+									if (this.get_core(armor)==8)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 20, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, 20, 1,true,false));
+										player.removePotionEffect(MobEffects.STRENGTH);
+										player.removePotionEffect(MobEffects.SPEED);
+										player.removePotionEffect(MobEffects.RESISTANCE);
+										player.removePotionEffect(MobEffects.JUMP_BOOST);
+										player.removePotionEffect(MobEffects.HASTE);
+									}
+									if (this.get_lock(armor)=="toq_hyper")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.ichigou_toq_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										
+										if (this.get_core(armor)==9)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										}
+										if (this.get_core(armor)==10)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20, 0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.WITHER, 20, 0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 5,true,false));
+										}
+										if (this.get_core(armor)==11)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.nigou_toq_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										
+										if (this.get_core(armor)==9)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(FLY,20, 3,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.sangou_toq_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										
+										if (this.get_core(armor)==9)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yongou_toq_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										
+										if (this.get_core(armor)==9)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										}
+									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gogou_toq_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
@@ -157,12 +268,30 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										
+										if (this.get_core(armor)==9)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
+											player.removePotionEffect(MobEffects.SPEED);
+										}
 									}
-									if (this.get_lock(armor)=="toq_hyper")
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.rokugou_appli_changer)
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.nanagou_appli_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 1,true,false));
 									}
 								}
 							}

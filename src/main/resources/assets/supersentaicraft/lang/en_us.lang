@@ -715,6 +715,49 @@ item.moe_moe_z_cune.name=Moe Moe Z-Cune
 item.munyu_munyu_zubaan.name=Munyu Munyu Zubaan
 item.munyu_moe_zubakyun.name=Munyu Moe Zubakyun
 
+//38 ToQger
+itemGroup.tabToQger=Ressha Sentai ToQger
+
+item.blank_ressha.name=Blank Ressha
+tile.toqger_ore.name=ToQger Ore
+
+item.toqger_head.name=ToQger Helmet
+item.toqger_torso.name=ToQger Chestplate
+item.toqger_legs.name=ToQger Leggings
+
+item.ichigou_toq_changer.name=ToQ Changer (ToQ 1gou)
+item.nigou_toq_changer.name=ToQ Changer (ToQ 2gou)
+item.sangou_toq_changer.name=ToQ Changer (ToQ 3gou)
+item.yongou_toq_changer.name=ToQ Changer (ToQ 4gou)
+item.gogou_toq_changer.name=ToQ Changer (ToQ 5gou)
+item.rokugou_appli_changer.name=Applichanger (ToQ 6gou)
+item.nanagou_appli_changer.name=Applichanger (ToQ 7gou)
+
+item.red_ressha.name=Red Ressha
+item.blue_ressha.name=Blue Ressha
+item.yellow_ressha.name=Yellow Ressha
+item.green_ressha.name=Green Ressha
+item.pink_ressha.name=Pink Ressha
+item.build_ressha.name=Build Ressha
+item.violet_ressha.name=Violet Ressha
+item.hyper_ressha.name=Hyper Ressha
+item.red_ressha_corrupted.name=Corrupted Red Ressha
+item.scope_ressha.name=Scope Ressha
+item.lion_ressha.name=Lion Ressha
+item.eagle_ressha.name=Eagle Ressha
+item.wildcat_ressha.name=Wildcat Ressha
+item.alligator_ressha.name=Alligator Ressha
+item.panda_ressha.name=Panda Ressha
+
+item.toq_blaster.name=ToQ Blaster
+item.rail_slasher.name=Rail Slasher
+item.home_trigger.name=Home Trigger
+item.shingou_hammer.name=Shingou Hammer
+item.tunnel_axe.name=Tunnel Ax
+item.tekkyou_claw.name=Tekkyou Claw
+item.yudo_breaker.name=Yudo Breaker
+item.daikaiten_cannon.name=Daikaiten Cannon
+
 //40 Zyuohger
 itemGroup.tabZyuohger=Doubutsu Sentai Zyuohger
 
@@ -866,7 +909,6 @@ item.kawarimono_legs.name=Kawarimono Leggings
 item.red_mobirates.name=Mobirates (Gokai Red)
 item.aka_ninja_ichibantou.name=Ninja Ichibantou (AkaNinger)
 item.orange_seiza_blaster.name=Seiza Blaster (Sasori Orange)
-item.gogou_toq_changer.name=ToQ Changer (ToQ 5gou)
 
 item.gokai_red_key.name=Gokai Red Key
 item.akaranger_key.name=Akaranger Key
@@ -883,8 +925,6 @@ item.aka_ninger_shuriken.name=AkaNinger Shuriken
 item.chouzetsu_shoubu_changer.name=Chouzetsu Shoubu Changer
 item.sasori_kyutama.name=Sasori Kyutama
 item.ikkakuju_kyutama.name=Ikkakuju Kyutama
-item.pink_ressha.name=Pink Ressha
-item.hyper_ressha.name=Hyper Ressha
 
 item.gokai_saber.name=Gokai Saber
 item.gokai_gun.name=Gokai Gun
@@ -896,8 +936,4 @@ item.karakuri_hengen_bow.name=Karakuri Hengen (Bow)
 item.karakuri_hengen_claw.name=Karakuri Hengen (Claw)
 item.gama_gama_gun.name=Gama Gama Gun
 item.seiza_blaster.name=Seiza Blaster
-item.toq_blaster.name=ToQ Blaster
-item.tekkyou_claw.name=Tekkyou Claw
-item.daikaiten_cannon.name=Daikaiten Cannon
-
 //item..name=

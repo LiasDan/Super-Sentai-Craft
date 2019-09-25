@@ -57,12 +57,6 @@ public class item_kawarimono_armor extends ItemArmor  implements IHasModel
 
 			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 			{
-				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_zyuoh_changer)
-				{
-					String rider = ((item_zyuoh_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
-					
-					return Refercence.MODID+":textures/armor/blank.png";
-				}
 				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_mobirates)
 				{
 					String rider = ((item_mobirates)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
@@ -87,12 +81,6 @@ public class item_kawarimono_armor extends ItemArmor  implements IHasModel
 					String rider = ((item_seiza_blaster)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 					
 					return Refercence.MODID+":textures/armor/"+item_seiza_blaster.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
-				}
-				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_toq_changer)
-				{
-					String rider = ((item_toq_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
-					
-					return Refercence.MODID+":textures/armor/"+item_toq_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
 				}
 				
 				return Refercence.MODID+":textures/armor/blank.png";

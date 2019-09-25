@@ -99,6 +99,8 @@ import SS_Craft.item.sun_vulcan.item_sun_vulcan_armor2;
 import SS_Craft.item.sun_vulcan.item_vulcan_brace;
 import SS_Craft.item.toqger.item_toq_changer;
 import SS_Craft.item.toqger.item_toq_ressha;
+import SS_Craft.item.toqger.item_toqger_armor;
+import SS_Craft.item.toqger.item_toqger_armor2;
 import SS_Craft.item.turboranger.item_turbo_brace;
 import SS_Craft.item.turboranger.item_turboranger_armor;
 import SS_Craft.item.turboranger.item_turboranger_armor2;
@@ -146,13 +148,9 @@ public class RiderItems
 	
 	public static Item orange_seiza_blaster = new item_seiza_blaster("orange_seiza_blaster", ArmorMaterial.DIAMOND, 4,"sasori_orange").setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	
-	public static Item gogou_toq_changer = new item_toq_changer("gogou_toq_changer", ArmorMaterial.DIAMOND, 4,"toq_5gou").setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
-	
 	public static Item gokaiger_belt = new Item_ore("gokaiger_belt");
 	
 	public static Item kyu_buckle = new Item_ore("kyu_buckle");
-	
-	public static Item toq_buckle = new Item_ore("toq_buckle");
 	
 	public static Item gokai_red_key = new item_ranger_key(0, "gokai_red_key").setCreativeTab(Tabs.tabKawarimono);
 	public static Item akaranger_key = new item_ranger_key(1, "akaranger_key").setCreativeTab(Tabs.tabKawarimono);
@@ -172,9 +170,6 @@ public class RiderItems
 	public static Item sasori_kyutama = new item_kyutama(0, "sasori_kyutama").setCreativeTab(Tabs.tabKawarimono);
 	public static Item ikkakuju_kyutama = new item_kyutama(1, "ikkakuju_kyutama").setCreativeTab(Tabs.tabKawarimono);
 	
-	public static Item pink_ressha = new item_toq_ressha(0, "pink_ressha").setCreativeTab(Tabs.tabKawarimono);
-	public static Item hyper_ressha = new item_toq_ressha(1, "hyper_ressha").setCreativeTab(Tabs.tabKawarimono);
-	
 	public static Item gokai_saber = new ItemBaseSword("gokai_saber", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	public static Item gokai_gun = new Item_gun("gokai_gun", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	public static Item gokai_spear_anchor = new ItemBaseSword("gokai_spear_anchor", Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
@@ -187,10 +182,6 @@ public class RiderItems
 	public static Item gama_gama_gun = new Item_gun("gama_gama_gun", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	
 	public static Item seiza_blaster = new Item_gun("seiza_blaster", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
-	
-	public static Item toq_blaster = new Item_sword_gun("toq_blaster", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
-	public static Item tekkyou_claw = new ItemBaseSword("tekkyou_claw", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
-	public static Item daikaiten_cannon = new Item_gun("daikaiten_cannon", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabKawarimono);
 	
 	//01 Himitsu Sentai Goranger
 	public static Item goranger_logo = new Item_ore("goranger_logo").setCreativeTab(Tabs.tabGoranger);
@@ -909,6 +900,49 @@ public class RiderItems
 	public static Item moe_moe_z_cune = new Item_gun("moe_moe_z_cune", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 	public static Item munyu_munyu_zubaan = new item_munyu_munyu_zubaan("munyu_munyu_zubaan", Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 	public static Item munyu_moe_zubakyun = new Item_gun("munyu_moe_zubakyun", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	
+	//38 Ressha Sentai ToQger
+	public static Item blank_ressha = new item_toq_ressha(8, 0, "blank_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Block toqger_ore = new ore_block("toqger_ore", Material.ROCK, blank_ressha, 2).setHardness(9.9F).setCreativeTab(Tabs.tabToQger);
+	
+	public static Item toqger_head = new item_toqger_armor("toqger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item toqger_torso = new item_toqger_armor2("toqger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item toqger_legs = new item_toqger_armor2("toqger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+
+	public static Item ichigou_toq_changer = new item_toq_changer("ichigou_toq_changer", ArmorMaterial.DIAMOND, 4,"toq_1gou", 0).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item nigou_toq_changer = new item_toq_changer("nigou_toq_changer", ArmorMaterial.DIAMOND, 4,"toq_2gou", 0).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item sangou_toq_changer = new item_toq_changer("sangou_toq_changer", ArmorMaterial.DIAMOND, 4,"toq_3gou", 1).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item yongou_toq_changer = new item_toq_changer("yongou_toq_changer", ArmorMaterial.DIAMOND, 4,"toq_4gou", 0).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item gogou_toq_changer = new item_toq_changer("gogou_toq_changer", ArmorMaterial.DIAMOND, 4,"toq_5gou", 1).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item rokugou_appli_changer = new item_toq_changer("rokugou_appli_changer", ArmorMaterial.DIAMOND, 4,"toq_6gou").setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item nanagou_appli_changer = new item_toq_changer("nanagou_appli_changer", ArmorMaterial.DIAMOND, 4,"toq_7gou").setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	
+	public static Item toq_buckle = new Item_ore("toq_buckle");
+
+	public static Item red_ressha = new item_toq_ressha(1, 0, "red_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item blue_ressha = new item_toq_ressha(2, 0, "blue_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item yellow_ressha = new item_toq_ressha(3, 0, "yellow_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item green_ressha = new item_toq_ressha(4, 0, "green_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item pink_ressha = new item_toq_ressha(5, 0, "pink_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item build_ressha = new item_toq_ressha(6, 0, "build_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item violet_ressha = new item_toq_ressha(7, 0, "violet_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item hyper_ressha = new item_toq_ressha(0, 1, "hyper_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item red_ressha_corrupted = new item_toq_ressha(10, 0, "red_ressha_corrupted").setCreativeTab(Tabs.tabToQger);
+	public static Item scope_ressha = new Item_ore("scope_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item lion_ressha = new item_toq_ressha(9, 0, "lion_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item eagle_ressha = new item_toq_ressha(9, 0, "eagle_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item wildcat_ressha = new item_toq_ressha(9, 0, "wildcat_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item alligator_ressha = new item_toq_ressha(9, 0, "alligator_ressha").setCreativeTab(Tabs.tabToQger);
+	public static Item panda_ressha = new item_toq_ressha(9, 0, "panda_ressha").setCreativeTab(Tabs.tabToQger);
+	
+	public static Item toq_blaster = new Item_sword_gun("toq_blaster", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item rail_slasher = new ItemBaseSword("rail_slasher", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item home_trigger = new Item_gun("home_trigger", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item shingou_hammer = new ItemBaseSword("shingou_hammer", Tabs.hammer).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item tunnel_axe = new ItemBaseSword("tunnel_axe", Tabs.axe).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item tekkyou_claw = new ItemBaseSword("tekkyou_claw", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item yudo_breaker = new ItemBaseSword("yudo_breaker", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
+	public static Item daikaiten_cannon = new Item_gun("daikaiten_cannon", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabToQger);
 	
 	//40 Doubutsu Sentai Zyuohger
 	public static Item king_s_credential = new Item_ore("king_s_credential").setCreativeTab(Tabs.tabZyuohger);
