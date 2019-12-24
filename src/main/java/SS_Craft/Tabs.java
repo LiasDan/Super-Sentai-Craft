@@ -32,7 +32,7 @@ public class Tabs
 	public static CreativeTabs tabGoranger= new CreativeTabs("tabGoranger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.goranger_head);
 		}
 	};
@@ -40,7 +40,7 @@ public class Tabs
 	public static CreativeTabs tabJakq= new CreativeTabs("tabJakq")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.jakq_head);
 		}
 	};
@@ -48,7 +48,7 @@ public class Tabs
 	public static CreativeTabs tabBattleFever= new CreativeTabs("tabBattleFever")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.battle_fever_head);
 		}
 	};
@@ -56,7 +56,7 @@ public class Tabs
 	public static CreativeTabs tabDenziman= new CreativeTabs("tabDenziman")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.denziman_head);
 		}
 	};
@@ -64,7 +64,7 @@ public class Tabs
 	public static CreativeTabs tabSunVulcan= new CreativeTabs("tabSunVulcan")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.sun_vulcan_head);
 		}
 	};
@@ -72,7 +72,7 @@ public class Tabs
 	public static CreativeTabs tabFlashman= new CreativeTabs("tabFlashman")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.flashman_head);
 		}
 	};
@@ -80,7 +80,7 @@ public class Tabs
 	public static CreativeTabs tabMaskman= new CreativeTabs("tabMaskman")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.maskman_head);
 		}
 	};
@@ -88,7 +88,7 @@ public class Tabs
 	public static CreativeTabs tabTurboranger= new CreativeTabs("tabTurboranger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.turboranger_head);
 		}
 	};
@@ -96,7 +96,7 @@ public class Tabs
 	public static CreativeTabs tabJetman= new CreativeTabs("tabJetman")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.jetman_head);
 		}
 	};
@@ -104,7 +104,7 @@ public class Tabs
 	public static CreativeTabs tabCarranger= new CreativeTabs("tabCarranger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.carranger_head);
 		}
 	};
@@ -112,7 +112,7 @@ public class Tabs
 	public static CreativeTabs tabMegaranger= new CreativeTabs("tabMegaranger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.megaranger_head);
 		}
 	};
@@ -120,7 +120,7 @@ public class Tabs
 	public static CreativeTabs tabGingaman= new CreativeTabs("tabGingaman")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.gingaman_head);
 		}
 	};
@@ -128,7 +128,7 @@ public class Tabs
 	public static CreativeTabs tabGogoV= new CreativeTabs("tabGogoV")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.gogo_v_head);
 		}
 	};
@@ -136,7 +136,7 @@ public class Tabs
 	public static CreativeTabs tabGaoranger= new CreativeTabs("tabGaoranger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.gaoranger_head);
 		}
 	};
@@ -144,7 +144,7 @@ public class Tabs
 	public static CreativeTabs tabBoukenger= new CreativeTabs("tabBoukenger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.boukenger_head);
 		}
 	};
@@ -152,7 +152,7 @@ public class Tabs
 	public static CreativeTabs tabGekiranger= new CreativeTabs("tabGekiranger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.gekiranger_head);
 		}
 	};
@@ -160,7 +160,7 @@ public class Tabs
 	public static CreativeTabs tabGoOnger= new CreativeTabs("tabGoOnger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.go_onger_head);
 		}
 	};
@@ -168,7 +168,7 @@ public class Tabs
 	public static CreativeTabs tabShinkenger= new CreativeTabs("tabShinkenger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.shinkenger_head);
 		}
 	};
@@ -176,7 +176,7 @@ public class Tabs
 	public static CreativeTabs tabGoBusters= new CreativeTabs("tabGoBusters")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.go_busters_head);
 		}
 	};
@@ -184,7 +184,7 @@ public class Tabs
 	public static CreativeTabs tabAkibaranger= new CreativeTabs("tabAkibaranger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.akibaranger_head);
 		}
 	};
@@ -192,7 +192,7 @@ public class Tabs
 	public static CreativeTabs tabToQger= new CreativeTabs("tabToQger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.toqger_head);
 		}
 	};
@@ -200,7 +200,7 @@ public class Tabs
 	public static CreativeTabs tabZyuohger= new CreativeTabs("tabZyuohger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.zyuohger_head);
 		}
 	};
@@ -208,7 +208,7 @@ public class Tabs
 	public static CreativeTabs tabLupat= new CreativeTabs("tabLupat")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.lupat_head);
 		}
 	};
@@ -216,7 +216,7 @@ public class Tabs
 	public static CreativeTabs tabRyusoulger= new CreativeTabs("tabRyusoulger")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.ryusoulger_head);
 		}
 	};
@@ -224,7 +224,7 @@ public class Tabs
 	public static CreativeTabs tabKawarimono= new CreativeTabs("tabKawarimono")
 	{
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.kawarimono_head);
 		}
 	};

@@ -4,6 +4,34 @@ effect.punch_boost=Punch Boost
 effect.big=Big
 effect.slash_boost=Slash
 
+entity.ZoldersMob.name=Zolders
+entity.CrimersMob.name=Crimers
+entity.CutmenMob.name=Cutmen
+entity.DustlersMob.name=Dustlers
+entity.MachinemenMob.name=Machinemen
+entity.ZolohsMob.name=Zolohs
+entity.UnglersMob.name=Ungler Soldiers
+entity.UlarsMob.name=Ular Soldiers
+entity.UlarCaptainMob.name=Ular Captain
+entity.GrinamsMob.name=Grinam Soldiers
+entity.WumpersBlueMob.name=Combatant Wumpers (Blue)
+entity.WumpersGreenMob.name=Combatant Wumpers (Green)
+entity.WumpersPinkMob.name=Combatant Wumpers (Pink)
+entity.WumpersWhiteMob.name=Combatant Wumpers (White)
+entity.KunekunesMob.name=Soldiers Kunekune
+entity.YartotsMob.name=Seamen Yartots
+entity.ImpsMob.name=Familiars Imps
+entity.OrgettesMob.name=Orgettes
+entity.KarthsMob.name=Combatant Karths
+entity.RinshisMob.name=Rinshi
+entity.UgatzMob.name=Barbaric Machine Soldiers Ugatz
+entity.NanashisMob.name=Nanashi Company
+entity.BuglarsMob.name=Buglars
+entity.KurosMob.name=Combatant Kuros
+entity.MoebasMob.name=Moeba
+entity.PordermenMob.name=Porderman
+entity.DrunnsMob.name=Drunn Soldiers
+
 //01 Goranger
 itemGroup.tabGoranger=Himitsu Sentai Goranger
 
@@ -868,12 +896,17 @@ item.blue_ryusoul_changer.name=Ryusoul Changer (RyusoulBlue)
 item.pink_ryusoul_changer.name=Ryusoul Changer (RyusoulPink)
 item.green_ryusoul_changer.name=Ryusoul Changer (RyusoulGreen)
 item.black_ryusoul_changer.name=Ryusoul Changer (RyusoulBlack)
+item.gold_mosa_changer.name=Mosa Changer (RyusoulGold)
+item.gaisorg_changer.name=Gaisoul Ken (Gaisorg)
 
 item.red_ryusoul.name=Red RyuSoul
 item.blue_ryusoul.name=Blue RyuSoul
 item.pink_ryusoul.name=Pink RyuSoul
 item.green_ryusoul.name=Green RyuSoul
 item.black_ryusoul.name=Black RyuSoul
+item.gold_ryusoul.name=Gold RyuSoul
+item.gai_soul.name=GaiSoul
+
 item.tsuyo_soul.name=TsuyoSoul
 item.nobi_soul.name=NobiSoul
 item.omo_soul.name=OmoSoul
@@ -896,8 +929,24 @@ item.kakure_soul.name=KakureSoul
 item.fue_soul.name=FueSoul
 item.nemu_soul.name=NemuSoul
 item.mawari_soul.name=MawariSoul
+item.kawaki_soul.name=KawakiSoul
+item.yawaraka_soul.name=YawarakaSoul
+
+item.meramera_soul.name=MeraMeraSoul
+item.biribiri_soul.name=BiriBiriSoul
+item.kurayami_soul.name=KurayamiSoul
+item.kagayaki_soul.name=KagayakiSoul
+item.cosmo_soul.name=CosmoSoul
+item.kanae_soul.name=KanaeSoul
+item.dosshin_soul.name=DosshinSoul
+item.byubyu_soul.name=ByuByuSoul
 
 item.ryusoul_ken.name=Ryusoul Ken
+item.mosa_changer.name=Mosa Changer
+item.mosa_blade.name=Mosa Blade
+item.mosa_breaker.name=Mosa Breaker
+item.gaisoul_ken.name=Gaisoul Ken
+item.gaisoul_shield.name=Gaisoul Shield
 
 //?? Kawarimono Team
 itemGroup.tabKawarimono=Kawarimono (Oddball) Team

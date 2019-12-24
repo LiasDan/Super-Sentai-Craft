@@ -28,7 +28,7 @@ public class item_v_mode_brace extends Item implements IHasModel
 		setHasSubtypes(true);
 		setMaxDamage(0);
 		maxStackSize = 1;
-	    setUnlocalizedName(name);
+	    setTranslationKey(name);
 	    setRegistryName(name);
 	    TokuCraft_core.ITEMS.add(this);
 	}

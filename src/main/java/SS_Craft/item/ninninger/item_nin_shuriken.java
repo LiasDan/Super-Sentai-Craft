@@ -30,7 +30,7 @@ public class item_nin_shuriken extends Item implements IHasModel
 
 		num=form;
 
-	    setUnlocalizedName(name);
+	    setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
 	}

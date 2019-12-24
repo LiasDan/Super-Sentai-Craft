@@ -36,7 +36,7 @@ public class item_ryusoulger_armor extends ItemArmor  implements IHasModel
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(par4));
 		this.maxStackSize = 1;
 		
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
 	}
@@ -55,7 +55,43 @@ public class item_ryusoulger_armor extends ItemArmor  implements IHasModel
 				{
 					String rider = ((item_ryusoul_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 					
-					return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+					if (rider == "ryusoul_gold")
+					{
+						if (item_ryusoul_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							return Refercence.MODID+":textures/armor/blank.png";
+						}
+						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						}
+					}
+					else if (rider == "gaisorg")
+					{
+						if (item_ryusoul_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							return Refercence.MODID+":textures/armor/blank.png";
+						}
+						else if (item_ryusoul_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							return Refercence.MODID+":textures/armor/blank.png";
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/blank.png";
+						}
+					}
+					else
+					{
+						if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+						}
+					}
 				}
 				
 				return Refercence.MODID+":textures/armor/blank.png";

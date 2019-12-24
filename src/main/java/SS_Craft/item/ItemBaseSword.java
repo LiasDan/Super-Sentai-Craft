@@ -56,7 +56,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
         this.maxStackSize = 1;
         this.setMaxDamage(par2EnumToolMaterial.getMaxUses());
 
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
         
@@ -156,6 +156,8 @@ public class ItemBaseSword extends ItemSword implements IHasModel
     {
 		if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
+			if (playerIn.getHeldItemMainhand()!=null)
+			{
 			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_masking_brace)
 			{
 				if (this==RiderItems.laser_magnum_sword)
@@ -282,6 +284,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.geki_tonfa));
 					}
 				}
+			}
 			}
 		}
 		

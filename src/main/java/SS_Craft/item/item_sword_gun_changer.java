@@ -61,7 +61,7 @@ public class item_sword_gun_changer extends ItemBow  implements IHasModel
 		 this.attackDamage = 3.0F + material.getAttackDamage();
 		this.maxStackSize = 1;
 		this.setMaxDamage(par2EnumToolMaterial.getMaxUses());
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
         this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
@@ -144,7 +144,7 @@ public class item_sword_gun_changer extends ItemBow  implements IHasModel
 					ItemArrow itemarrow = (ItemArrow) Items.ARROW;
 					EntityArrow fireball = itemarrow.createArrow(worldIn, new ItemStack(Items.ARROW), playerIn);
 
-					fireball.setPosition(playerIn.posX + look.x * 1.6,playerIn.posY + 1,playerIn.posZ + look.z * 1.6);
+					fireball.shoot(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 3.0F, 1.0F);
 
 					fireball.motionX = look.x*3;
 					fireball.motionY = look.y*3;

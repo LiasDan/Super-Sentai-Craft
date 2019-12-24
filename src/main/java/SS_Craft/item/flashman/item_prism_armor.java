@@ -29,7 +29,7 @@ public class item_prism_armor extends Item implements IHasModel
 
 		num=armor;
 
-	    setUnlocalizedName(name);
+	    setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
 	}

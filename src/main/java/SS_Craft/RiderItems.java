@@ -445,6 +445,11 @@ public class RiderItems
 	public static Item swallow_birdonic_wave = new Item_ore("swallow_birdonic_wave").setCreativeTab(Tabs.tabJetman);
 	
 	public static Item jetman_belt = new Item_ore("jetman_belt");
+	public static Item red_hawk_wing = new Item_ore("red_hawk_wing");
+	public static Item black_condor_wing = new Item_ore("black_condor_wing");
+	public static Item yellow_owl_wing = new Item_ore("yellow_owl_wing");
+	public static Item white_swan_wing = new Item_ore("white_swan_wing");
+	public static Item blue_swallow_wing = new Item_ore("blue_swallow_wing");
 	
 	public static Item bird_blaster = new Item_gun("bird_blaster",Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
 	public static Item bringer_sword = new ItemBaseSword("bringer_sword",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
@@ -977,7 +982,7 @@ public class RiderItems
 	public static Item crocodile_cube = new item_zyuoh_cube(1, "crocodile_cube").setCreativeTab(Tabs.tabZyuohger);
 	public static Item wolf_cube = new item_zyuoh_cube(2, "wolf_cube").setCreativeTab(Tabs.tabZyuohger);
 	public static Item rhinos_cube = new item_zyuoh_cube(0, "rhinos_cube").setCreativeTab(Tabs.tabZyuohger);
-	public static Item whale_cube = new item_zyuoh_cube(2, "whale_cube").setCreativeTab(Tabs.tabZyuohger);
+	public static Item whale_cube = new item_zyuoh_cube(0, "whale_cube").setCreativeTab(Tabs.tabZyuohger);
 	public static Item bud_king_s_credential = new item_zyuoh_cube(0, "bud_king_s_credential").setCreativeTab(Tabs.tabZyuohger);
 	
 	public static Item whale_change_gun = new item_gun_changer("whale_change_gun", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
@@ -1062,14 +1067,19 @@ public class RiderItems
 	public static Item pink_ryusoul_changer = new item_ryusoul_changer("pink_ryusoul_changer", ArmorMaterial.DIAMOND, 4, "ryusoul_pink").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	public static Item green_ryusoul_changer = new item_ryusoul_changer("green_ryusoul_changer", ArmorMaterial.DIAMOND, 4, "ryusoul_green").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	public static Item black_ryusoul_changer = new item_ryusoul_changer("black_ryusoul_changer", ArmorMaterial.DIAMOND, 4, "ryusoul_black").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item gold_mosa_changer = new item_ryusoul_changer("gold_mosa_changer", ArmorMaterial.DIAMOND, 4, "ryusoul_gold").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item gaisorg_changer = new item_ryusoul_changer("gaisorg_changer", ArmorMaterial.DIAMOND, 4, "gaisorg").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	
 	public static Item ryusoul_buckle = new Item_ore("ryusoul_buckle");
+	public static Item ryusoul_gold_buckle = new Item_ore("ryusoul_gold_buckle");
 	
 	public static Item red_ryusoul = new item_ryusoul(0,"red_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item blue_ryusoul = new item_ryusoul(0,"blue_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item pink_ryusoul = new item_ryusoul(0,"pink_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item green_ryusoul = new item_ryusoul(0,"green_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item black_ryusoul = new item_ryusoul(0,"black_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item gold_ryusoul = new item_ryusoul(0,"gold_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item gai_soul = new item_ryusoul(0,"gai_soul").setCreativeTab(Tabs.tabRyusoulger);
 	
 	public static Item tsuyo_soul = new item_ryusoul(1,"tsuyo_soul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item nobi_soul = new item_ryusoul(2,"nobi_soul").setCreativeTab(Tabs.tabRyusoulger);
@@ -1093,8 +1103,24 @@ public class RiderItems
 	public static Item fue_soul = new item_ryusoul(20,"fue_soul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item nemu_soul = new item_ryusoul(21,"nemu_soul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Item mawari_soul = new item_ryusoul(22,"mawari_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item kawaki_soul = new item_ryusoul(23,"kawaki_soul").setCreativeTab(Tabs.tabRyusoulger);
+	public static Item yawaraka_soul = new item_ryusoul(24,"yawaraka_soul").setCreativeTab(Tabs.tabRyusoulger);
+	
+	public static Item meramera_soul = new item_ryusoul("meramera_soul",1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item biribiri_soul = new item_ryusoul("biribiri_soul",2).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item byubyu_soul = new item_ryusoul("byubyu_soul",0).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item kurayami_soul = new item_ryusoul("kurayami_soul",3).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item kagayaki_soul = new item_ryusoul("kagayaki_soul",4).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item cosmo_soul = new item_ryusoul("cosmo_soul",5).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item kanae_soul = new item_ryusoul("kanae_soul",6).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item dosshin_soul = new item_ryusoul("dosshin_soul",7).setCreativeTab(Tabs.tabRyusoulger);
 	
 	public static Item ryusoul_ken = new ItemBaseSword("ryusoul_ken", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item mosa_changer = new Item_gun("mosa_changer", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item mosa_blade = new ItemBaseSword("mosa_blade", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item mosa_breaker = new Item_gun("mosa_breaker", Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item gaisoul_ken = new ItemBaseSword("gaisoul_ken", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item gaisoul_shield = new ItemBaseShield("gaisoul_shield").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	
 	public static void init() 
 	{

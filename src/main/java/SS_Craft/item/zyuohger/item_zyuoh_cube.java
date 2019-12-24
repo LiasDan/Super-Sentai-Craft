@@ -29,7 +29,7 @@ public class item_zyuoh_cube extends Item implements IHasModel
 
 		num=form;
 
-	    setUnlocalizedName(name);
+	    setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
 	}
@@ -52,11 +52,17 @@ public class item_zyuoh_cube extends Item implements IHasModel
 
 				if (belt == RiderItems.eagle_zyuoh_changer)
 				{
-					if (this == RiderItems.gorilla_cube)
+					if (playerIn.isSneaking()) 
 					{
-						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+						if (this==RiderItems.whale_cube)
+						{
+							if (playerIn.inventory.hasItemStack(new ItemStack(RiderItems.eagle_cube)) && playerIn.inventory.hasItemStack(new ItemStack(RiderItems.gorilla_cube)))
+							{
+								item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2);
+							}
+						}
 					}
-					else if (this == RiderItems.whale_cube && playerIn.inventory.hasItemStack(new ItemStack(RiderItems.eagle_cube)) && playerIn.inventory.hasItemStack(new ItemStack(RiderItems.gorilla_cube)))
+					else if (this == RiderItems.gorilla_cube)
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
@@ -67,6 +73,23 @@ public class item_zyuoh_cube extends Item implements IHasModel
 					else
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+					}
+				}
+				else if (belt == RiderItems.zyuoh_whale_change_gun)
+				{
+					if (playerIn.isSneaking()) 
+					{
+						if (this==RiderItems.whale_cube)
+						{
+							if (playerIn.inventory.hasItemStack(new ItemStack(RiderItems.eagle_cube)) && playerIn.inventory.hasItemStack(new ItemStack(RiderItems.gorilla_cube)))
+							{
+								item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
+							}
+						}
+					}
+					else
+					{
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 					}
 				}
 				else if (belt == RiderItems.zyuoh_the_light)

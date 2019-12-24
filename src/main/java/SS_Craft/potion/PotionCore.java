@@ -15,6 +15,8 @@ public class PotionCore {
 	public static final Potion SS_PUNCH_BOOST = new PotionPunchBoost();
 	public static final Potion SS_BIG = new PotionBig();
 	public static final Potion SS_SLASH_BOOST = new PotionSlashBoost();
+	public static final Potion SS_FIRE_SLASH = new PotionFireSlash();
+	public static final Potion SS_SHOT_BOOST = new PotionShotBoost();
 	
 	private static Potion SS_FLY_POTION()
 	{
@@ -34,6 +36,8 @@ public class PotionCore {
 		ForgeRegistries.POTIONS.register(SS_PUNCH_BOOST);
 		ForgeRegistries.POTIONS.register(SS_BIG);
 		ForgeRegistries.POTIONS.register(SS_SLASH_BOOST);
+		ForgeRegistries.POTIONS.register(SS_FIRE_SLASH);
+		ForgeRegistries.POTIONS.register(SS_SHOT_BOOST);
 	}
 	
 }

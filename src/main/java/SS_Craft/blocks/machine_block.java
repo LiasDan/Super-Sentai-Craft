@@ -28,7 +28,7 @@ public abstract class machine_block extends BlockHorizontal implements IHasModel
         this.setHarvestLevel("pickaxe", lv);
         setHardness(9.9F);
         setLightLevel(0.1f);
-        setUnlocalizedName(string);
+        setTranslationKey(string);
         setRegistryName(string);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
@@ -38,7 +38,7 @@ public abstract class machine_block extends BlockHorizontal implements IHasModel
     }
 
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing enumfacing = EnumFacing.getFront(meta);
+        EnumFacing enumfacing = EnumFacing.byIndex(meta);
 
         if (enumfacing.getAxis() == EnumFacing.Axis.Y) {
             enumfacing = EnumFacing.NORTH;

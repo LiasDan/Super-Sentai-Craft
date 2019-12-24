@@ -7,6 +7,7 @@ import org.lwjgl.opengl.GL11;
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
+import SS_Craft.model.model_belt_plus;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import SS_Craft.util.Refercence;
@@ -47,7 +48,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setUnlocalizedName(name);
+		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
 	}
@@ -67,9 +68,45 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 		{
 			if(stack.getItem() instanceof ItemArmor)
 			{
-				model_belt armorModel = new model_belt();
+				model_belt_plus armorModel = new model_belt_plus();
 				
 				armorModel.belt=new ItemStack(RiderItems.jetman_belt);
+				
+				if (this == RiderItems.red_cross_changer)
+				{
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
+					{
+						armorModel.wings=new ItemStack(RiderItems.red_hawk_wing);
+					}
+				}
+				if (this == RiderItems.black_cross_changer)
+				{
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
+					{
+						armorModel.wings=new ItemStack(RiderItems.black_condor_wing);
+					}
+				}
+				if (this == RiderItems.yellow_cross_changer)
+				{
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
+					{
+						armorModel.wings=new ItemStack(RiderItems.yellow_owl_wing);
+					}
+				}
+				if (this == RiderItems.white_cross_changer)
+				{
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
+					{
+						armorModel.wings=new ItemStack(RiderItems.white_swan_wing);
+					}
+				}
+				if (this == RiderItems.blue_cross_changer)
+				{
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
+					{
+						armorModel.wings=new ItemStack(RiderItems.blue_swallow_wing);
+					}
+				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;

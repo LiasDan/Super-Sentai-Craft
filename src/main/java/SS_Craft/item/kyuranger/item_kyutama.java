@@ -30,7 +30,7 @@ public class item_kyutama extends Item implements IHasModel
 
 		num=form;
 
-	    setUnlocalizedName(name);
+	    setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
 	}

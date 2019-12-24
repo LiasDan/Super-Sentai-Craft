@@ -26,7 +26,7 @@ public class ore_block extends Block implements IHasModel
 		this.setHarvestLevel("pickaxe", lv);
 		setHardness(9.9F);
 		setLightLevel(0.1f);
-		setUnlocalizedName(string);
+		setTranslationKey(string);
 		setRegistryName(string);
 		CRYSTAL = ore;
 
@@ -356,34 +356,47 @@ public class ore_block extends Block implements IHasModel
 		//44 Ryusoulger
 		if (CRYSTAL==RiderItems.blank_ryusoul)
 		{
-			int rand = generator.nextInt(690);
+			int rand = generator.nextInt(890);
 			if (rand<25) return RiderItems.red_ryusoul;
 			if (rand<50) return RiderItems.blue_ryusoul;
 			if (rand<75) return RiderItems.pink_ryusoul;
 			if (rand<100) return RiderItems.green_ryusoul;
 			if (rand<125) return RiderItems.black_ryusoul;
-			if (rand<135) return RiderItems.tsuyo_soul;
-			if (rand<145) return RiderItems.nobi_soul;
-			if (rand<155) return RiderItems.omo_soul;
-			if (rand<165) return RiderItems.haya_soul;
-			if (rand<175) return RiderItems.kata_soul;
-			if (rand<185) return RiderItems.kike_soul;
-			if (rand<195) return RiderItems.kusa_soul;
-			if (rand<205) return RiderItems.mie_soul;
-			if (rand<215) return RiderItems.mukimuki_soul;
-			if (rand<225) return RiderItems.chiisa_soul;
-			if (rand<235) return RiderItems.mabushi_soul;
-			if (rand<245) return RiderItems.mist_soul;
-			if (rand<255) return RiderItems.karu_soul;
-			if (rand<265) return RiderItems.gyaku_soul;
-			if (rand<275) return RiderItems.kotae_soul;
-			if (rand<285) return RiderItems.migake_soul;
-			if (rand<295) return RiderItems.kunkun_soul;
-			if (rand<305) return RiderItems.pukupuku_soul;
-			if (rand<315) return RiderItems.kakure_soul;
-			if (rand<325) return RiderItems.fue_soul;
-			if (rand<335) return RiderItems.nemu_soul;
-			if (rand<345) return RiderItems.mawari_soul;
+			if (rand<145) return RiderItems.gold_ryusoul;
+			if (rand<165) return RiderItems.gai_soul;
+			if (rand<175) return RiderItems.tsuyo_soul;
+			if (rand<185) return RiderItems.nobi_soul;
+			if (rand<195) return RiderItems.omo_soul;
+			if (rand<205) return RiderItems.haya_soul;
+			if (rand<215) return RiderItems.kata_soul;
+			if (rand<225) return RiderItems.kike_soul;
+			if (rand<235) return RiderItems.kusa_soul;
+			if (rand<245) return RiderItems.mie_soul;
+			if (rand<255) return RiderItems.mukimuki_soul;
+			if (rand<265) return RiderItems.chiisa_soul;
+			if (rand<275) return RiderItems.mabushi_soul;
+			if (rand<285) return RiderItems.mist_soul;
+			if (rand<295) return RiderItems.karu_soul;
+			if (rand<305) return RiderItems.gyaku_soul;
+			if (rand<315) return RiderItems.kotae_soul;
+			if (rand<325) return RiderItems.migake_soul;
+			if (rand<335) return RiderItems.kunkun_soul;
+			if (rand<345) return RiderItems.pukupuku_soul;
+			if (rand<355) return RiderItems.kakure_soul;
+			if (rand<365) return RiderItems.fue_soul;
+			if (rand<375) return RiderItems.nemu_soul;
+			if (rand<385) return RiderItems.mawari_soul;
+			if (rand<395) return RiderItems.kawaki_soul;
+			if (rand<405) return RiderItems.yawaraka_soul;
+			if (rand<410) return RiderItems.meramera_soul;
+			if (rand<415) return RiderItems.biribiri_soul;
+			if (rand<420) return RiderItems.byubyu_soul;
+			if (rand<425) return RiderItems.kurayami_soul;
+			if (rand<430) return RiderItems.kagayaki_soul;
+			if (rand<435) return RiderItems.cosmo_soul;
+			if (rand<440) return RiderItems.kanae_soul;
+			if (rand<445) return RiderItems.dosshin_soul;
+			
 			return CRYSTAL;
 		}
 		

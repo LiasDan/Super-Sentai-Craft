@@ -33,6 +33,7 @@ public class item_zyuohger_armor2 extends ItemArmor  implements IHasModel
 	public ArmorMaterial material;
 	
 	public static final String[] ZyuohEagle= new String[] {"zyuoh_eagle","zyuoh_gorilla","zyuoh_eagle_great_instinct_awakened","zyuoh_condor"};
+	public static final String[] ZyuohWhale= new String[] {"zyuoh_whale","zyuoh_eagle_great_instinct_awakened"};
 	public static final String[] ZyuohTheWorld= new String[] {"","_crocodile","_wolf"};
 	public static final String[] ZyuohBird= new String[] {"zyuoh_bird","zyuoh_condor"};
 	
@@ -44,7 +45,7 @@ public class item_zyuohger_armor2 extends ItemArmor  implements IHasModel
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(par4));
 		this.maxStackSize = 1;
 		
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
 	}
@@ -71,6 +72,17 @@ public class item_zyuohger_armor2 extends ItemArmor  implements IHasModel
 						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
 						{
 							return Refercence.MODID+":textures/armor/"+ZyuohEagle[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
+						}
+					}
+					else if (rider == "zyuoh_whale")
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+ZyuohWhale[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+ZyuohWhale[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
 						}
 					}
 					else if (rider == "zyuoh_the_world")

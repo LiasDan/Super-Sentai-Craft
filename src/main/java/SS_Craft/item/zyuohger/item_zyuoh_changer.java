@@ -49,7 +49,7 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setUnlocalizedName(name);
+		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
 	}
@@ -93,6 +93,17 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 					else if((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==3)
 					{
 						armorModel.wings=new ItemStack(RiderItems.zyuoh_condor_wing);
+					}
+					else
+					{
+						armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+					}
+				}
+				else if (this == RiderItems.zyuoh_whale_change_gun)
+				{
+					if(this.get_core(stack)==1)
+					{
+						armorModel.wings=new ItemStack(RiderItems.zyuoh_eagle_wing);
 					}
 					else
 					{
@@ -187,22 +198,20 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										
 										if (this.get_core(armor)==0)
 										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 										}
 										else if (this.get_core(armor)==1)
 										{
-											player.removePotionEffect(MobEffects.STRENGTH);
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 										}
 										else if (this.get_core(armor)==2)
 										{
-											player.removePotionEffect(MobEffects.STRENGTH);
 											player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
@@ -221,7 +230,6 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										}
 										else if (this.get_core(armor)==3)
 										{
-											player.removePotionEffect(MobEffects.STRENGTH);
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 											player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
@@ -232,17 +240,40 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-										if (player.isInWater())
+										
+										if (this.get_core(armor)==0)
 										{
-											if (player.isSneaking())
+											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											
+											if (player.isInWater())
 											{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/2;
-											player.motionY=look.y/2;
-											player.motionZ=look.z/2;
+												if (player.isSneaking())
+												{
+												Vec3d look = player.getLookVec();
+												player.motionX=look.x/2;
+												player.motionY=look.y/2;
+												player.motionZ=look.z/2;
+												}
+											}
+										}
+										else if (this.get_core(armor)==1)
+										{
+											player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
+											if (player.isInWater())
+											{
+												if (player.isSneaking())
+												{
+												Vec3d look = player.getLookVec();
+												player.motionX=look.x/2;
+												player.motionY=look.y/2;
+												player.motionZ=look.z/2;
+												}
 											}
 										}
 									}

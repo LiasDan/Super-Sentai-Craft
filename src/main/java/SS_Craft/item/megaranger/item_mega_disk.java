@@ -30,7 +30,7 @@ public class item_mega_disk extends Item implements IHasModel
 
 		num=armor;
 
-	    setUnlocalizedName(name);
+	    setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
 	}

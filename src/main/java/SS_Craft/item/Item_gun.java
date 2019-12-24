@@ -19,6 +19,9 @@ import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.turboranger.item_turbo_brace;
+import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
+import SS_Craft.mobs.Henchmen.entity_ular_captain;
+import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -29,6 +32,7 @@ import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
@@ -45,6 +49,7 @@ import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.stats.StatList;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
@@ -71,7 +76,7 @@ public class Item_gun extends ItemBow  implements IHasModel
 		 this.attackDamage = 3.0F + material.getAttackDamage();
 		this.maxStackSize = 1;
 		this.setMaxDamage(par2EnumToolMaterial.getMaxUses());
-		setUnlocalizedName(name);
+		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
 		
@@ -238,6 +243,8 @@ public class Item_gun extends ItemBow  implements IHasModel
 	{
 		if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
+			if (playerIn.getHeldItemMainhand()!=null)
+			{
 			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_masking_brace)
 			{
 				if (this==RiderItems.laser_magnum_gun)
@@ -344,6 +351,7 @@ public class Item_gun extends ItemBow  implements IHasModel
 					}
 				}
 			}
+			}
 		}
 		
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
@@ -378,11 +386,17 @@ public class Item_gun extends ItemBow  implements IHasModel
 					Vec3d look =  playerIn.getLookVec();
 					ItemArrow itemarrow = (ItemArrow) Items.ARROW;
 					EntityArrow fireball = itemarrow.createArrow(worldIn, new ItemStack(Items.ARROW), playerIn);
-					fireball.setPosition(playerIn.posX + look.x * 1.6,playerIn.posY + 1,playerIn.posZ + look.z * 1.6);
+					fireball.shoot(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 3.0F, 1.0F);
 					fireball.motionX = look.x*3;
 					fireball.motionY = look.y*3;
 					fireball.motionZ = look.z*3;
 					fireball.pickupStatus= EntityArrow.PickupStatus.DISALLOWED;
+					
+					if (playerIn.isPotionActive(PotionCore.SS_FIRE_SLASH))
+					{
+						fireball.setFire(100);
+					}
+					
 					worldIn.spawnEntity(fireball);
 					if (! playerIn.capabilities.isCreativeMode){
 					
@@ -400,7 +414,7 @@ public class Item_gun extends ItemBow  implements IHasModel
     {
         return this.material.getAttackDamage();
     }
-
+    
     public float getDestroySpeed(ItemStack stack, IBlockState state)
     {
         Block block = state.getBlock();

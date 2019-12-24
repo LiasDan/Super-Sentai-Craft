@@ -28,7 +28,7 @@ public class decor_block extends Block implements IHasModel
 		this.setHarvestLevel("pickaxe", lv);
 		setHardness(9.9F);
 		setLightLevel(0.1f);
-		setUnlocalizedName(string);
+		setTranslationKey(string);
 		setRegistryName(string);
 
         TokuCraft_core.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

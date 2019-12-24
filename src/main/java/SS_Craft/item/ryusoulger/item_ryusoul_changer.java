@@ -1,5 +1,7 @@
 package SS_Craft.item.ryusoulger;
 
+import java.util.Queue;
+
 import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
@@ -10,6 +12,9 @@ import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import SS_Craft.util.Refercence;
+import net.minecraft.block.BlockLiquid;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -17,7 +22,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.MobEffects;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -26,6 +33,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.Tuple;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -47,7 +60,7 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setUnlocalizedName(name);
+		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
 	}
@@ -69,7 +82,18 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				armorModel.belt=new ItemStack(RiderItems.ryusoul_buckle);
+				if (this == RiderItems.gold_mosa_changer)
+				{
+					armorModel.belt=new ItemStack(RiderItems.ryusoul_gold_buckle);
+				}
+				else if (this == RiderItems.gaisorg_changer)
+				{
+					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				}
+				else
+				{
+					armorModel.belt=new ItemStack(RiderItems.ryusoul_buckle);
+				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -128,6 +152,20 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 			itemstack.setTagCompound(new NBTTagCompound());
 		}
 		itemstack.getTagCompound().setInteger("armor", flag);
+	}
+	
+	public static String get_soul(ItemStack itemstack)
+	{	
+		return itemstack.hasTagCompound() ? item_ryusoul.SOUL[itemstack.getTagCompound().getInteger("soul")] : "blank";
+	}
+	
+	public static void set_soul(ItemStack itemstack,int flag)
+	{
+		if (!itemstack.hasTagCompound())
+		{
+			itemstack.setTagCompound(new NBTTagCompound());
+		}
+		itemstack.getTagCompound().setInteger("soul", flag);
 	}
 
 	@Override
@@ -198,6 +236,159 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 1,true,false));
+									}
+									if(this.get_lock(armor)=="ryusoul_kusa_soul")
+									{
+										player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE,player.posX,player.posY, player.posZ, 0.0D, 0.0D, 0.0D);
+										player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE,player.posX,player.posY+1, player.posZ, 0.0D, 0.0D, 0.0D);
+										player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE,player.posX,player.posY+0.5, player.posZ, 0.0D, 0.0D, 0.0D);
+									}
+									if(this.get_lock(armor)=="ryusoul_mie_soul")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 3,true,false));
+									}
+									
+									if(this.get_lock(armor)=="ryusoul_mukimuki_soul")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+									}
+									if(this.get_lock(armor)=="ryusoul_mist_soul")
+									{
+										player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE,player.posX,player.posY, player.posZ, 0.0D, 0.0D, 0.0D);
+										player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE,player.posX,player.posY+1, player.posZ, 0.0D, 0.0D, 0.0D);
+										player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE,player.posX,player.posY+0.5, player.posZ, 0.0D, 0.0D, 0.0D);
+									}
+									if(this.get_lock(armor)=="ryusoul_karu_soul")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20 , 3,true,false));
+									}
+									if(this.get_lock(armor)=="ryusoul_gyaku_soul")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 20 , 3,true,false));
+									}
+									if(this.get_lock(armor)=="ryusoul_migake_soul")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 3,true,false));
+									}
+									if(this.get_lock(armor)=="ryusoul_kunkun_soul")
+									{
+										
+									}
+									if(this.get_lock(armor)=="ryusoul_pukupuku_soul")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20 , 3,true,false));
+									}
+									if(this.get_lock(armor)=="ryusoul_kakure_soul")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20 , 3,true,false));
+									}
+									if(this.get_lock(armor)=="ryusoul_mawari_soul")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 20 , 3,true,false));
+									}
+									if(this.get_lock(armor)=="ryusoul_nemu_soul")
+									{
+										if (player.isSneaking())
+										{
+											world.setWorldTime(6000);
+										}
+									}
+									if(this.get_lock(armor)=="ryusoul_kawaki_soul")
+									{
+										if (player.onGround)
+								        {
+											BlockPos pos = player.getPosition();
+								            float f = (float)Math.min(16, 2);
+								            BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos(0, 0, 0);
+
+								            for (BlockPos.MutableBlockPos blockpos$mutableblockpos1 : BlockPos.getAllInBoxMutable(pos.add((double)(-f), -1.0D, (double)(-f)), pos.add((double)f, -1.0D, (double)f)))
+								            {
+								                if (blockpos$mutableblockpos1.distanceSqToCenter(player.posX, player.posY, player.posZ) <= (double)(f * f))
+								                {
+								                    blockpos$mutableblockpos.setPos(blockpos$mutableblockpos1.getX(), blockpos$mutableblockpos1.getY() + 1, blockpos$mutableblockpos1.getZ());
+								                    IBlockState iblockstate = world.getBlockState(blockpos$mutableblockpos);
+
+								                    if (iblockstate.getMaterial() == Material.AIR)
+								                    {
+								                        IBlockState iblockstate1 = world.getBlockState(blockpos$mutableblockpos1);
+
+								                        if (iblockstate1.getMaterial() == Material.WATER && (iblockstate1.getBlock() == net.minecraft.init.Blocks.WATER || iblockstate1.getBlock() == net.minecraft.init.Blocks.FLOWING_WATER) && ((Integer)iblockstate1.getValue(BlockLiquid.LEVEL)).intValue() == 0 && world.mayPlace(Blocks.AIR, blockpos$mutableblockpos1, false, EnumFacing.DOWN, (Entity)null))
+								                        {
+								                            world.setBlockState(blockpos$mutableblockpos1, Blocks.AIR.getDefaultState());
+								                            world.scheduleUpdate(blockpos$mutableblockpos1.toImmutable(), Blocks.AIR, MathHelper.getInt(player.getRNG(), 60, 120));
+								                        }
+								                    }
+								                }
+								            }
+								        }
+									}
+									if(this.get_soul(armor)=="ryusoul_meramera")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_SLASH, 20, 2,true,false));
+									}
+									if(this.get_soul(armor)=="ryusoul_biribiri")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_SLASH, 20, 2,true,false));
+										
+										if (this.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) > 99)
+										{
+											if (player.isSneaking())
+											{
+												world.spawnEntity(new EntityLightningBolt(world,  player.posX-3,   player.posY-1,  player.posZ+3, true));
+												world.spawnEntity(new EntityLightningBolt(world,  player.posX+3,   player.posY-1,  player.posZ+3, true));
+												world.spawnEntity(new EntityLightningBolt(world,  player.posX-3,   player.posY-1,  player.posZ-3, true));
+												world.spawnEntity(new EntityLightningBolt(world,  player.posX+3,   player.posY-1,  player.posZ-3, true));
+												this.set_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+											}
+										}
+									}
+									if(this.get_soul(armor)=="ryusoul_kurayami")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST, 20, 2,true,false));
+									}
+									if(this.get_soul(armor)=="ryusoul_kagayaki")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST, 20, 2,true,false));
+									}
+									if(this.get_soul(armor)=="ryusoul_cosmo")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST, 20, 3,true,false));
+									}
+									if(this.get_soul(armor)=="ryusoul_dosshin")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20 , 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST, 20, 3,true,false));
 									}
 								}
 							}

@@ -2,6 +2,7 @@ package SS_Craft.util.handlers;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import SS_Craft.util.Refercence;
@@ -14,9 +15,11 @@ import net.minecraft.client.renderer.color.ItemColors;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.MobEffects;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.biome.Biome;
@@ -86,10 +89,30 @@ public class RegistyHandler {
 			}
 			}	
 		}
-		if(event.player.isPotionActive(PotionCore.SS_SLASH_BOOST)){
-			if(event.player.isSwingInProgress)
+		if(event.player.isPotionActive(PotionCore.SS_SLASH_BOOST))
+		{
+			if(event.player.getHeldItemMainhand().getItem() instanceof ItemSword)
 			{
-				event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,event.player.getActivePotionEffect(PotionCore.SS_SLASH_BOOST).getAmplifier(), 4,true,false));
+				if(event.player.isSwingInProgress)
+				{
+					event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,event.player.getActivePotionEffect(PotionCore.SS_SLASH_BOOST).getAmplifier(), 4,true,false));
+				}
+			}
+		}
+		if(event.player.isPotionActive(PotionCore.SS_FIRE_SLASH))
+		{
+			if(event.player.getHeldItemMainhand().getItem() instanceof ItemSword)
+			{	
+				if(event.player.isSwingInProgress)
+				{
+					if (event.player.getLastAttackedEntity()!=null)
+					{
+						if (event.player.getAttackingEntity()==event.player.getLastAttackedEntity())
+						{
+							event.player.getLastAttackedEntity().setFire(10);
+						}
+					}
+				}
 			}
 		}
 	}
