@@ -68,6 +68,14 @@ public class Tabs
 			return new ItemStack(RiderItems.sun_vulcan_head);
 		}
 	};
+	//06
+	public static CreativeTabs tabGoggleV= new CreativeTabs("tabGoggleV")
+	{
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(RiderItems.goggle_v_head);
+		}
+	};
 	//10
 	public static CreativeTabs tabFlashman= new CreativeTabs("tabFlashman")
 	{

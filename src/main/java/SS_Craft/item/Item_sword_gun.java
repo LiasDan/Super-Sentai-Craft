@@ -8,7 +8,9 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Multimap;
 
+import SS_Craft.Tabs;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -141,7 +143,13 @@ public class Item_sword_gun extends ItemBow  implements IHasModel
 					fireball.motionZ = look.z*3;
 					fireball.pickupStatus= EntityArrow.PickupStatus.DISALLOWED;
 
-
+					if (playerIn.isPotionActive(PotionCore.SS_SHOT_BOOST))
+					{
+						fireball.setKnockbackStrength(2);
+					}
+					
+					fireball.setKnockbackStrength(0);
+					
 					worldIn.spawnEntity(fireball);
 				
 			}

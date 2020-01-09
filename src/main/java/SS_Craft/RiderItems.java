@@ -53,6 +53,9 @@ import SS_Craft.item.go_busters.item_morphin_brace;
 import SS_Craft.item.go_onger.item_go_onger_armor;
 import SS_Craft.item.go_onger.item_go_onger_armor2;
 import SS_Craft.item.go_onger.item_go_phone;
+import SS_Craft.item.goggle_v.item_goggle_brace;
+import SS_Craft.item.goggle_v.item_goggle_v_armor;
+import SS_Craft.item.goggle_v.item_goggle_v_armor2;
 import SS_Craft.item.gogo_v.item_gogo_brace;
 import SS_Craft.item.gogo_v.item_gogo_v_armor;
 import SS_Craft.item.gogo_v.item_gogo_v_armor2;
@@ -327,6 +330,38 @@ public class RiderItems
 	
 	public static Item vulcan_stick = new ItemBaseSword("vulcan_stick", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 	public static Item vulcan_stick_eagle = new ItemBaseSword("vulcan_stick_eagle", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
+	
+	//06 Dai Sentai Goggle V
+	public static Item goggle_v_logo = new Item_ore("goggle_v_logo").setCreativeTab(Tabs.tabGoggleV);
+	public static Block goggle_v_ore = new ore_block("goggle_v_ore", Material.ROCK, goggle_v_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoggleV);
+	
+	public static Item goggle_v_head = new item_goggle_v_armor("goggle_v_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item goggle_v_torso = new item_goggle_v_armor2("goggle_v_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item goggle_v_legs = new item_goggle_v_armor2("goggle_v_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+
+	public static Item red_goggle_brace = new item_goggle_brace("red_goggle_brace", ArmorMaterial.DIAMOND, 4, "goggle_red").setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item black_goggle_brace = new item_goggle_brace("black_goggle_brace", ArmorMaterial.DIAMOND, 4, "goggle_black").setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item blue_goggle_brace = new item_goggle_brace("blue_goggle_brace", ArmorMaterial.DIAMOND, 4, "goggle_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item yellow_goggle_brace = new item_goggle_brace("yellow_goggle_brace", ArmorMaterial.DIAMOND, 4, "goggle_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item pink_goggle_brace = new item_goggle_brace("pink_goggle_brace", ArmorMaterial.DIAMOND, 4, "goggle_pink").setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	
+	public static Item goggle_v_belt = new Item_ore("goggle_v_belt");
+	
+	public static Item atlantis_ruby = new Item_ore("atlantis_ruby").setCreativeTab(Tabs.tabGoggleV);
+	public static Item angkor_wat_emerald = new Item_ore("angkor_wat_emerald").setCreativeTab(Tabs.tabGoggleV);
+	public static Item egypt_saphire = new Item_ore("egypt_saphire").setCreativeTab(Tabs.tabGoggleV);
+	public static Item lemuria_opal = new Item_ore("lemuria_opal").setCreativeTab(Tabs.tabGoggleV);
+	public static Item mayan_diamond = new Item_ore("mayan_diamond").setCreativeTab(Tabs.tabGoggleV);
+	
+	public static Item goggle_sabre = new ItemBaseSword("goggle_sabre", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item goggle_golden_spear = new ItemBaseSword("goggle_golden_spear", Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item red_hammer = new ItemBaseSword("red_hammer", Tabs.hammer).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item black_club = new ItemBaseSword("black_club", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item black_emerald_nunchuck = new ItemBaseSword("black_emerald_nunchuck", Tabs.tonfa).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item black_hammer = new ItemBaseSword("black_hammer", Tabs.hammer).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item blue_hammer = new ItemBaseSword("blue_hammer", Tabs.hammer).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item yellow_hammer = new ItemBaseSword("yellow_hammer", Tabs.hammer).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
+	public static Item pink_hammer = new ItemBaseSword("pink_hammer", Tabs.hammer).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
 	
 	//10 Choushinsei Flashman
 	public static Item flashman_logo = new Item_ore("flashman_logo").setCreativeTab(Tabs.tabFlashman);

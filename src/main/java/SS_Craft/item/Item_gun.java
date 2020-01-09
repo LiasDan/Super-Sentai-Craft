@@ -396,6 +396,13 @@ public class Item_gun extends ItemBow  implements IHasModel
 					{
 						fireball.setFire(100);
 					}
+					if (playerIn.isPotionActive(PotionCore.SS_SHOT_BOOST))
+					{
+						fireball.setKnockbackStrength(3);
+					}
+					
+					int K = (int) this.attackDamage;
+					fireball.setKnockbackStrength(K);
 					
 					worldIn.spawnEntity(fireball);
 					if (! playerIn.capabilities.isCreativeMode){

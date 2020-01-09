@@ -2,13 +2,17 @@ effect.fly=Flying
 effect.fire_punch=Fire Punch
 effect.punch_boost=Punch Boost
 effect.big=Big
-effect.slash_boost=Slash
+effect.slash_boost=Slash Boost
+effect.fire_slash=Fire Slash
+effect.fire_shot=Fire Shot
+effect.shot_boost=Shot Boost
 
 entity.ZoldersMob.name=Zolders
 entity.CrimersMob.name=Crimers
 entity.CutmenMob.name=Cutmen
 entity.DustlersMob.name=Dustlers
 entity.MachinemenMob.name=Machinemen
+entity.SpotmenMob.name=Spotmen
 entity.ZolohsMob.name=Zolohs
 entity.UnglersMob.name=Ungler Soldiers
 entity.UlarsMob.name=Ular Soldiers
@@ -168,6 +172,38 @@ item.vul_panther_medal.name=VulPanther Medal
 item.vulcan_stick.name=Vulcan Stick
 item.vulcan_stick_eagle.name=Vulcan Stick (VulEagle)
 
+//06 Goggle V
+itemGroup.tabGoggleV=Dai Sentai Goggle V
+
+item.goggle_v_logo.name=Goggle V Logo
+tile.goggle_v_ore.name=Goggle V Ore
+
+item.goggle_v_head.name=Goggle V Helmet
+item.goggle_v_torso.name=Goggle V Chestplate
+item.goggle_v_legs.name=Goggle V Leggings
+
+item.red_goggle_brace.name=Goggle Brace (GoggleRed)
+item.black_goggle_brace.name=Goggle Brace (GoggleBlack)
+item.blue_goggle_brace.name=Goggle Brace (GoggleBlue)
+item.yellow_goggle_brace.name=Goggle Brace (GoggleYellow)
+item.pink_goggle_brace.name=Goggle Brace (GogglePink)
+
+item.atlantis_ruby.name=Atlantis Ruby
+item.angkor_wat_emerald.name=Angkor Wat Emerald
+item.egypt_saphire.name=Egypt Sapphire
+item.lemuria_opal.name=Lemuria Opal
+item.mayan_diamond.name=Mayan Diamond
+
+item.goggle_sabre.name=Goggle Sabre
+item.goggle_golden_spear.name=Goggle Golden Spear
+item.red_hammer.name=Red Hammer
+item.black_club.name=Black Club
+item.black_emerald_nunchuck.name=Black Emerald Nunchuck
+item.black_hammer.name=Black Hammer
+item.blue_hammer.name=Blue Hammer
+item.yellow_hammer.name=Yellow Hammer
+item.pink_hammer.name=Pink Hammer
+
 //10 Flashman
 itemGroup.tabFlashman=Choushinsei Flashman
 
@@ -266,7 +302,7 @@ item.turbo_laser_w.name=Turbo Laser (W Stick Combo)
 itemGroup.tabJetman=Choujin Sentai Jetman
 
 item.birdonic_wave.name=Birdonic Wave
-tile.jetman_ore.name=Turboranger Ore
+tile.jetman_ore.name=Jetman Ore
 
 item.jetman_head.name=Jetman Helmet
 item.jetman_torso.name=Jetman Chestplate

@@ -15,6 +15,7 @@ import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.maskman.item_masking_brace;
+import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -216,6 +217,15 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 					fireball.motionY = look.y*3;
 					fireball.motionZ = look.z*3;
 					fireball.pickupStatus= EntityArrow.PickupStatus.DISALLOWED;
+
+					if (playerIn.isPotionActive(PotionCore.SS_SHOT_BOOST))
+					{
+						fireball.setKnockbackStrength(3);
+					}
+					
+					int K = (int) this.attackDamage;
+					fireball.setKnockbackStrength(K);
+					
 					worldIn.spawnEntity(fireball);
 					if (! playerIn.capabilities.isCreativeMode){
 					

@@ -95,6 +95,17 @@ public class ore_block extends Block implements IHasModel
 			if (rand<75) return RiderItems.vul_panther_medal;
 			return CRYSTAL;
 		}
+		//06 Goggle V
+		if (CRYSTAL==RiderItems.goggle_v_logo)
+		{
+			int rand = generator.nextInt(250);
+			if (rand<25) return RiderItems.atlantis_ruby;
+			if (rand<50) return RiderItems.angkor_wat_emerald;
+			if (rand<75) return RiderItems.egypt_saphire;
+			if (rand<100) return RiderItems.lemuria_opal;
+			if (rand<125) return RiderItems.mayan_diamond;
+			return CRYSTAL;
+		}
 		//10 Flashman
 		if (CRYSTAL==RiderItems.flashman_logo)
 		{

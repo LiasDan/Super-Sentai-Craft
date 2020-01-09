@@ -8,6 +8,7 @@ import com.google.common.collect.Multimap;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -118,11 +119,9 @@ public class Item_fireball_gun extends ItemBow  implements IHasModel
 					EntityFireball fireball =  new EntitySmallFireball(worldIn, entityLiving, 5, 1 ,1);
 
 					fireball.setPosition(playerIn.posX + look.x * 1.6,playerIn.posY + 1,playerIn.posZ + look.z * 1.6);
-
 					fireball.motionX = look.x*3;
 					fireball.motionY = look.y*3;
 					fireball.motionZ = look.z*3;
-					
 
 					worldIn.spawnEntity(fireball);
 				

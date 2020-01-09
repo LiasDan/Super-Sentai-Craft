@@ -20,6 +20,7 @@ import SS_Craft.mobs.Henchmen.entity_nanashis;
 import SS_Craft.mobs.Henchmen.entity_orgettes;
 import SS_Craft.mobs.Henchmen.entity_pordermen;
 import SS_Craft.mobs.Henchmen.entity_rinshis;
+import SS_Craft.mobs.Henchmen.entity_spotmen;
 import SS_Craft.mobs.Henchmen.entity_ugatz;
 import SS_Craft.mobs.Henchmen.entity_ular_captain;
 import SS_Craft.mobs.Henchmen.entity_ulars;
@@ -62,6 +63,9 @@ public class ClientProxyRider extends CommonProxyRider
 		
 		//05 Sun Vulcan
 		RenderingRegistry.registerEntityRenderingHandler(entity_machinemen.class, new RenderRiderMob2(new tokuMobModel("machineman_2"), 0.5F,"textures/entities/machineman_1.png"));
+
+		//06 Goggle V
+		RenderingRegistry.registerEntityRenderingHandler(entity_spotmen.class, new RenderRiderMob2(new tokuMobModel("spotman_2"), 0.5F,"textures/entities/spotman_1.png"));
 			
 		//10 Flashman
 		RenderingRegistry.registerEntityRenderingHandler(entity_zolohs.class, new RenderRiderMob2(new tokuMobModel("zolohs_2"), 0.5F,"textures/entities/zolohs_1.png"));
