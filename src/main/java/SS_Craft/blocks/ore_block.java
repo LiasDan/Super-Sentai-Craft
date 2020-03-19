@@ -151,6 +151,18 @@ public class ore_block extends Block implements IHasModel
 			if (rand<125) return RiderItems.swallow_birdonic_wave;
 			return CRYSTAL; 
 		}
+		//17 Dairanger
+		if (CRYSTAL==RiderItems.dairanger_logo)
+		{
+			int rand = generator.nextInt(290);
+			if (rand<25) return RiderItems.red_lailai_jewel;
+			if (rand<50) return RiderItems.green_lailai_jewel;
+			if (rand<75) return RiderItems.blue_lailai_jewel;
+			if (rand<100) return RiderItems.yellow_lailai_jewel;
+			if (rand<125) return RiderItems.pink_lailai_jewel;
+			if (rand<145) return RiderItems.white_lailai_jewel;
+			return CRYSTAL;
+		}
 		//20 Carranger
 		if (CRYSTAL==RiderItems.carranger_logo)
 		{
@@ -212,6 +224,18 @@ public class ore_block extends Block implements IHasModel
 			if (rand<100) return RiderItems.gao_bison_jewel;
 			if (rand<125) return RiderItems.gao_tiger_jewel;
 			if (rand<145) return RiderItems.gao_wolf_jewel;
+			return CRYSTAL;
+		}
+		//27 Abaranger
+		if (CRYSTAL==RiderItems.abaranger_logo)
+		{
+			int rand = generator.nextInt(240);
+			if (rand<25) return RiderItems.tyranno_dino_guts;
+			if (rand<50) return RiderItems.tricera_dino_guts;
+			if (rand<75) return RiderItems.ptera_dino_guts;
+			if (rand<95) return RiderItems.brachio_dino_guts;
+			if (rand<115) return RiderItems.top_dino_guts;
+			if (rand<120) return RiderItems.max_tyranno_dino_guts;
 			return CRYSTAL;
 		}
 		//30 Boukenger

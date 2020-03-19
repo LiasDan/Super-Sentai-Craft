@@ -13,6 +13,11 @@ import SS_Craft.blocks.custom.Property;
 import SS_Craft.blocks.decor_block;
 import SS_Craft.blocks.ore_block;
 import SS_Craft.item.*;
+import SS_Craft.item.abaranger.item_abaranger_armor;
+import SS_Craft.item.abaranger.item_abaranger_armor2;
+import SS_Craft.item.abaranger.item_dino_brace;
+import SS_Craft.item.abaranger.item_sty_riser;
+import SS_Craft.item.abaranger.item_sty_riser_shield;
 import SS_Craft.item.akibaranger.item_akibaranger_armor;
 import SS_Craft.item.akibaranger.item_akibaranger_armor2;
 import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
@@ -27,6 +32,9 @@ import SS_Craft.item.boukenger.item_boukenger_armor2;
 import SS_Craft.item.carranger.item_accel_changer;
 import SS_Craft.item.carranger.item_carranger_armor;
 import SS_Craft.item.carranger.item_carranger_armor2;
+import SS_Craft.item.dairanger.item_aura_changer;
+import SS_Craft.item.dairanger.item_dairanger_armor;
+import SS_Craft.item.dairanger.item_dairanger_armor2;
 import SS_Craft.item.denziman.item_denzi_punch;
 import SS_Craft.item.denziman.item_denzi_ring;
 import SS_Craft.item.denziman.item_denziman_armor;
@@ -492,6 +500,46 @@ public class RiderItems
 	public static Item beak_smasher = new Item_gun("beak_smasher",Tabs.super_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
 	public static Item smash_bomber = new Item_gun("smash_bomber",Tabs.hyper_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
 	
+	//17 Gosei Sentai Dairanger
+	public static Item dairanger_logo = new Item_ore("dairanger_logo").setCreativeTab(Tabs.tabDairanger);
+	public static Block dairanger_ore = new ore_block("dairanger_ore", Material.ROCK, dairanger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabDairanger);
+	
+	public static Item dairanger_head = new item_dairanger_armor("dairanger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dairanger_torso = new item_dairanger_armor2("dairanger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dairanger_legs = new item_dairanger_armor2("dairanger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+
+	public static Item ryuu_aura_changer = new item_aura_changer("ryuu_aura_changer", ArmorMaterial.DIAMOND, 4, "ryuu_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item shishi_aura_changer = new item_aura_changer("shishi_aura_changer", ArmorMaterial.DIAMOND, 4, "shishi_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item tenma_aura_changer = new item_aura_changer("tenma_aura_changer", ArmorMaterial.DIAMOND, 4, "tenma_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item kirin_aura_changer = new item_aura_changer("kirin_aura_changer", ArmorMaterial.DIAMOND, 4, "kirin_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item houou_aura_changer = new item_aura_changer("houou_aura_changer", ArmorMaterial.DIAMOND, 4, "houou_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item kiba_changer = new item_aura_changer("kiba_changer", ArmorMaterial.DIAMOND, 4, "kiba_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	
+	public static Item red_lailai_jewel = new Item_ore("red_lailai_jewel").setCreativeTab(Tabs.tabDairanger);
+	public static Item green_lailai_jewel = new Item_ore("green_lailai_jewel").setCreativeTab(Tabs.tabDairanger);
+	public static Item blue_lailai_jewel = new Item_ore("blue_lailai_jewel").setCreativeTab(Tabs.tabDairanger);
+	public static Item yellow_lailai_jewel = new Item_ore("yellow_lailai_jewel").setCreativeTab(Tabs.tabDairanger);
+	public static Item pink_lailai_jewel = new Item_ore("pink_lailai_jewel").setCreativeTab(Tabs.tabDairanger);
+	public static Item white_lailai_jewel = new Item_ore("white_lailai_jewel").setCreativeTab(Tabs.tabDairanger);
+	
+	public static Item dairanger_belt = new Item_ore("dairanger_belt");
+	
+	public static Item star_cutter = new ItemBaseSword("star_cutter",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item star_sword = new ItemBaseSword("star_sword",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dai_buster = new Item_gun("dai_buster",Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dairen_rod_ryuu = new ItemBaseSword("dairen_rod_ryuu",Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dairen_rod_shishi = new ItemBaseSword("dairen_rod_shishi",Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dairen_rod_tenma = new ItemBaseSword("dairen_rod_tenma",Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dairen_rod_kirin = new ItemBaseSword("dairen_rod_kirin",Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dairen_rod_houou = new ItemBaseSword("dairen_rod_houou",Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dragon_sword = new ItemBaseSword("dragon_sword",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item lion_cudgel = new ItemBaseSword("lion_cudgel",Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item pegasus_nunchuck = new ItemBaseSword("pegasus_nunchuck",Tabs.tonfa).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item kirin_9_part_whip = new ItemBaseSword("kirin_9_part_whip",Tabs.whip).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item phoenix_spear = new ItemBaseSword("phoenix_spear",Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item dairinken = new ItemBaseSword("dairinken",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	public static Item byakkoshinken = new ItemBaseSword("byakkoshinken",Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
+	
 	//20 Gekisou Sentai Carranger
 	public static Item carranger_logo = new Item_ore("carranger_logo").setCreativeTab(Tabs.tabCarranger);
 	public static Block carranger_ore = new ore_block("carranger_ore", Material.ROCK, carranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabCarranger);
@@ -712,6 +760,37 @@ public class RiderItems
 	public static Item gao_hustler_rod = new Item_sword_gun("gao_hustler_rod", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item falcon_summoner = new Item_gun("falcon_summoner", Tabs.gun).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item falcon_summoner_arrow = new Item_gun("falcon_summoner_arrow", Tabs.bow).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
+	
+	//27 Bakuryu Sentai Abaranger
+	public static Item abaranger_logo = new Item_ore("abaranger_logo").setCreativeTab(Tabs.tabAbaranger);
+	public static Block abaranger_ore = new ore_block("abaranger_ore", Material.ROCK, abaranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabAbaranger);
+	
+	public static Item abaranger_head = new item_abaranger_armor("abaranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item abaranger_torso = new item_abaranger_armor2("abaranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item abaranger_legs = new item_abaranger_armor2("abaranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	
+	public static Item red_dino_brace = new item_dino_brace("red_dino_brace", ArmorMaterial.DIAMOND, 4, "aba_red").setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item blue_dino_brace = new item_dino_brace("blue_dino_brace", ArmorMaterial.DIAMOND, 4, "abare_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item yellow_dino_brace = new item_dino_brace("yellow_dino_brace", ArmorMaterial.DIAMOND, 4, "abare_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item dino_commander = new item_dino_brace("dino_commander", ArmorMaterial.DIAMOND, 4, "abare_black").setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item dino_minder = new item_dino_brace("dino_minder", ArmorMaterial.DIAMOND, 4, "abare_killer").setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	
+	public static Item tyranno_dino_guts = new Item_ore("tyranno_dino_guts").setCreativeTab(Tabs.tabAbaranger);
+	public static Item tricera_dino_guts = new Item_ore("tricera_dino_guts").setCreativeTab(Tabs.tabAbaranger);
+	public static Item ptera_dino_guts = new Item_ore("ptera_dino_guts").setCreativeTab(Tabs.tabAbaranger);
+	public static Item brachio_dino_guts = new Item_ore("brachio_dino_guts").setCreativeTab(Tabs.tabAbaranger);
+	public static Item top_dino_guts = new Item_ore("top_dino_guts").setCreativeTab(Tabs.tabAbaranger);
+	public static Item max_tyranno_dino_guts = new Item_ore("max_tyranno_dino_guts").setCreativeTab(Tabs.tabAbaranger);
+	
+	public static Item aba_laser = new Item_sword_gun("aba_laser", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item baku_laser = new Item_sword_gun("baku_laser", Tabs.sword_gun).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item tyranno_rod = new ItemBaseSword("tyranno_rod", Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item tricera_bunker = new ItemBaseSword("tricera_bunker", Tabs.hammer).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item ptera_dagger = new ItemBaseSword("ptera_dagger", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item dino_thruster = new ItemBaseSword("dino_thruster", Tabs.rod).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item wing_pentact = new ItemBaseSword("wing_pentact", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item sty_riser = new item_sty_riser("sty_riser", Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
+	public static Item sty_riser_shield = new item_sty_riser_shield("sty_riser_shield").setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
 	
 	//30 GoGo Sentai Boukenger
 	public static Item boukenger_logo = new Item_ore("boukenger_logo").setCreativeTab(Tabs.tabBoukenger);

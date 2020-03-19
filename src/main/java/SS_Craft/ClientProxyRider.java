@@ -4,7 +4,10 @@ package SS_Craft;
 import com.jcraft.jorbis.Block;
 
 import SS_Craft.mobs.RenderRiderMob2;
+import SS_Craft.mobs.Henchmen.entity_barmias_black;
+import SS_Craft.mobs.Henchmen.entity_barmias_white;
 import SS_Craft.mobs.Henchmen.entity_buglars;
+import SS_Craft.mobs.Henchmen.entity_cotpotros;
 import SS_Craft.mobs.Henchmen.entity_crimers;
 import SS_Craft.mobs.Henchmen.entity_cutmen;
 import SS_Craft.mobs.Henchmen.entity_drunns;
@@ -80,6 +83,9 @@ public class ClientProxyRider extends CommonProxyRider
 		//15 Jetman
 		RenderingRegistry.registerEntityRenderingHandler(entity_grinams.class, new RenderRiderMob2(new tokuMobModel("grinam_2"), 0.5F,"textures/entities/grinam_1.png"));
 
+		//17 Dairanger
+		RenderingRegistry.registerEntityRenderingHandler(entity_cotpotros.class, new RenderRiderMob2(new tokuMobModel("cotpotro_2"), 0.5F,"textures/entities/cotpotro_1.png"));
+
 		//20 Carranger
 		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_blue.class, new RenderRiderMob2(new tokuMobModel("wumper_blue_2"), 0.5F,"textures/entities/wumper_blue_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_pink.class, new RenderRiderMob2(new tokuMobModel("wumper_pink_2"), 0.5F,"textures/entities/wumper_pink_1.png"));
@@ -97,6 +103,10 @@ public class ClientProxyRider extends CommonProxyRider
 
 		//25 Gaoranger
 		RenderingRegistry.registerEntityRenderingHandler(entity_orgettes.class, new RenderRiderMob2(new tokuMobModel("orgettes_2"), 0.5F,"textures/entities/orgettes_1.png"));
+
+		//25 Gaoranger
+		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_black.class, new RenderRiderMob2(new tokuMobModel("barmia_black_2"), 0.5F,"textures/entities/barmia_black_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_white.class, new RenderRiderMob2(new tokuMobModel("barmia_white_2"), 0.5F,"textures/entities/barmia_white_1.png"));
 
 		//30 Boukenger
 		RenderingRegistry.registerEntityRenderingHandler(entity_karths.class, new RenderRiderMob2(new tokuMobModel("karths_2"), 0.5F,"textures/entities/karths_1.png"));

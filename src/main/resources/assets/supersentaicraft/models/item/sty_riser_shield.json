@@ -1,0 +1,50 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:items/sty_riser_shield"
+  },
+    "display": {
+"ground": {
+"rotation": [ 0, 0, 0 ],
+"translation": [ 0, 2, 0],
+"scale":[ 0.5, 0.5, 0.5 ]
+},
+"head": {
+"rotation": [ 0, 0, 0 ],
+"translation": [ 0, 13, 7],
+"scale":[ 1, 1, 1]
+},
+"thirdperson_lefthand": {    
+ "rotation": [ 0, -90, -30 ],
+           "translation": [ 4.5, 0, 2],
+            "scale": [ 1.6, 1.6, 2.2 ]
+
+},
+"thirdperson_righthand": {    
+ "rotation": [ 0, -90, -30 ],
+           "translation": [ 4.5, 0, 2 ],
+              "scale": [ 1.6, 1.6, 2.2 ]
+
+},
+"firstperson_righthand": {
+            "rotation": [ 20, -90, 10 ],
+            "translation": [ 0, 1, 3 ],
+              "scale": [ 1.6, 1.6, 1.9 ]
+},
+"firstperson_lefthand": {    
+ "rotation": [ 20, -90, 10 ],
+           "translation": [ 0, 1, 3],
+              "scale": [ 1.6, 1.6, 1.9 ]
+
+}
+},
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "supersentaicraft:item/sty_riser_shield_blocking"
+        }
+    ]
+}

@@ -18,6 +18,7 @@ entity.UnglersMob.name=Ungler Soldiers
 entity.UlarsMob.name=Ular Soldiers
 entity.UlarCaptainMob.name=Ular Captain
 entity.GrinamsMob.name=Grinam Soldiers
+entity.CotpotrosMob.name=Cotpotros
 entity.WumpersBlueMob.name=Combatant Wumpers (Blue)
 entity.WumpersGreenMob.name=Combatant Wumpers (Green)
 entity.WumpersPinkMob.name=Combatant Wumpers (Pink)
@@ -26,6 +27,8 @@ entity.KunekunesMob.name=Soldiers Kunekune
 entity.YartotsMob.name=Seamen Yartots
 entity.ImpsMob.name=Familiars Imps
 entity.OrgettesMob.name=Orgettes
+entity.BarmiasBlackMob.name=Barmia Soldiers (Black)
+entity.BarmiasWhiteMob.name=Barmia Soldiers (White)
 entity.KarthsMob.name=Combatant Karths
 entity.RinshisMob.name=Rinshi
 entity.UgatzMob.name=Barbaric Machine Soldiers Ugatz
@@ -326,6 +329,46 @@ item.jet_hand_cannon.name=Jet Hand Cannon
 item.beak_smasher.name=Beak Smasher
 item.smash_bomber.name=Smash Bomber
 
+//17 Dairanger
+itemGroup.tabDairanger=Gosei Sentai Dairanger
+
+item.dairanger_logo.name=Dairanger Logo
+tile.dairanger_ore.name=Dairanger Ore
+
+item.dairanger_head.name=Dairanger Helmet
+item.dairanger_torso.name=Dairanger Chestplate
+item.dairanger_legs.name=Dairanger Leggings
+
+item.ryuu_aura_changer.name=Aura Changer (RyuuRanger)
+item.shishi_aura_changer.name=Aura Changer (ShishiRanger)
+item.tenma_aura_changer.name=Aura Changer (TenmaRanger)
+item.kirin_aura_changer.name=Aura Changer (KirinRanger)
+item.houou_aura_changer.name=Aura Changer (HououRanger)
+item.kiba_changer.name=Kiba Changer (KibaRanger)
+
+item.red_lailai_jewel.name=Red Lai-Lai Jewel
+item.green_lailai_jewel.name=Green Lai-Lai Jewel
+item.blue_lailai_jewel.name=Blue Lai-Lai Jewel
+item.yellow_lailai_jewel.name=Yellow Lai-Lai Jewel
+item.pink_lailai_jewel.name=Pink Lai-Lai Jewel
+item.white_lailai_jewel.name=White Lai-Lai Jewel
+
+item.star_cutter.name=Star Cutter
+item.star_sword.name=Star Sword
+item.dai_buster.name=Dai Buster
+item.dairen_rod_ryuu.name=Dairen Rod (RyuuRanger)
+item.dairen_rod_shishi.name=Dairen Rod (ShishiRanger)
+item.dairen_rod_tenma.name=Dairen Rod (TenmaRanger)
+item.dairen_rod_kirin.name=Dairen Rod (KirinRanger)
+item.dairen_rod_houou.name=Dairen Rod (HououRanger)
+item.dragon_sword.name=Dragon Sword
+item.lion_cudgel.name=Lion Cudgel
+item.pegasus_nunchuck.name=Pegasus Nunchuck
+item.kirin_9_part_whip.name=Kirin 9-Part Whip
+item.phoenix_spear.name=Phoenix Spear
+item.dairinken.name=Dairinken
+item.byakkoshinken.name=Byakkoshinken
+
 //20 Carranger
 itemGroup.tabCarranger=Gekisou Sentai Carranger
 
@@ -554,6 +597,39 @@ item.tiger_baton.name=Tiger Baton
 item.gao_hustler_rod.name=Gao Hustler Rod
 item.falcon_summoner.name=Falcon Summoner
 item.falcon_summoner_arrow.name=Falcon Summoner (Arrow Mode)
+
+//27 Abaranger
+itemGroup.tabAbaranger=Bakuryu Sentai Abaranger
+
+item.abaranger_logo.name=Abaranger Logo
+tile.abaranger_ore.name=Abaranger Ore
+
+item.abaranger_head.name=Abaranger Helmet
+item.abaranger_torso.name=Abaranger Chestplate
+item.abaranger_legs.name=Abaranger Leggings
+
+item.red_dino_brace.name=Dino Brace (AbaRed)
+item.blue_dino_brace.name=Dino Brace (AbareBlue)
+item.yellow_dino_brace.name=Dino Brace (AbareYellow)
+item.dino_commander.name=Dino Commander (AbareBlack)
+item.dino_minder.name=Dino Minder (AbareKiller)
+
+item.tyranno_dino_guts.name=Tyranno Dino Guts
+item.tricera_dino_guts.name=Tricera Dino Guts
+item.ptera_dino_guts.name=Ptera Dino Guts
+item.brachio_dino_guts.name=Brachio Dino Guts
+item.top_dino_guts.name=Top Dino Guts
+item.max_tyranno_dino_guts.name=Max Tyranno Dino Guts
+
+item.aba_laser.name=Aba Laser
+item.baku_laser.name=Baku Laser
+item.tyranno_rod.name=Tyranno Rod
+item.tricera_bunker.name=Tricera Bunker
+item.ptera_dagger.name=Ptera Dagger
+item.dino_thruster.name=Dino Thruster
+item.wing_pentact.name=Wing Pentact
+item.sty_riser.name=StyRiser (Offense Mode)
+item.sty_riser_shield.name=StyRiser (Defense Mode)
 
 //30 Boukenger
 itemGroup.tabBoukenger=GoGo Sentai Boukenger

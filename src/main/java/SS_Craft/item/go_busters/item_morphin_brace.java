@@ -180,6 +180,14 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										
+										if (player.getFoodStats().getFoodLevel()<=5)
+										{
+											if (player.isCreative()==false)
+											{
+												player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 10,true,false));
+											}
+										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.beet_morphin_blaster || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.beetle_morphin_blaster || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.beet_enter_morphin_blaster)
 									{
