@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ryusoul_gold",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:mosa_breaker"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:mosa_blade"
+  }
+}

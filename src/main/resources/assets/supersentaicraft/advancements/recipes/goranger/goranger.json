@@ -2,9 +2,9 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:goranger_head",
-      "supersentaicraft:goranger_torso",
-      "supersentaicraft:goranger_legs"
+      "supersentaicraft:goranger/goranger_head",
+      "supersentaicraft:goranger/goranger_torso",
+      "supersentaicraft:goranger/goranger_legs"
     ]
   },
   "criteria": {
@@ -21,19 +21,19 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:goranger_head"
+        "recipe": "supersentaicraft:goranger/goranger_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:goranger_torso"
+        "recipe": "supersentaicraft:goranger/goranger_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:goranger_legs"
+        "recipe": "supersentaicraft:goranger/goranger_legs"
       }
     }
   },

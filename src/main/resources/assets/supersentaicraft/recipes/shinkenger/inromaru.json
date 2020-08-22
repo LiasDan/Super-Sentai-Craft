@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shinken_super",
+  "pattern": [
+    "bcd",
+    "aaa",
+	"efg"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:common_disk"
+    },
+	"b": {
+      "item": "supersentaicraft:shishi_disk"
+    },
+	"c": {
+      "item": "supersentaicraft:ryuu_disk"
+    },
+	"d": {
+      "item": "supersentaicraft:kame_disk"
+    },
+	"e": {
+      "item": "supersentaicraft:kuma_disk"
+    },
+	"f": {
+      "item": "supersentaicraft:saru_disk"
+    },
+	"g": {
+      "item": "supersentaicraft:sushi_disk"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:inromaru"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "megaranger",
+  "pattern": [
+    "aaa",
+    "acb"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:megaranger_logo"
+    },
+	"b": [ 
+	  {
+        "item": "supersentaicraft:mega_red_disk"
+      },
+	  {
+        "item": "supersentaicraft:mega_black_disk"
+      },
+	  {
+        "item": "supersentaicraft:mega_blue_disk"
+      },
+	  {
+        "item": "supersentaicraft:mega_yellow_disk"
+      },
+	  {
+        "item": "supersentaicraft:mega_pink_disk"
+      }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:mega_shot"
+  }
+}

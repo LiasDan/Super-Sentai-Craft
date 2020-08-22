@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "carranger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:auto_blaster"
+    },
+	{
+      "item": "supersentaicraft:navic_shot"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:navic_blaster"
+  }
+}

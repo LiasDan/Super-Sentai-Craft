@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ryusoulger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_ryusoul"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_ryusoul"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_ryusoul"
+	  },
+	  {
+	    "item": "supersentaicraft:pink_ryusoul"
+	  },
+	  {
+	    "item": "supersentaicraft:green_ryusoul"
+	  },
+	  {
+	    "item": "supersentaicraft:black_ryusoul"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:ryusoul_ken"
+  }
+}

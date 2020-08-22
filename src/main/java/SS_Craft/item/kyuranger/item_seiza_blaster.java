@@ -72,7 +72,38 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				armorModel.belt=new ItemStack(RiderItems.kyu_buckle);
+				if (this == RiderItems.commander_ryutsueder | (this == RiderItems.red_seiza_blaster & this.get_core(stack)==2))
+				{
+					armorModel.belt=new ItemStack(RiderItems.ryu_buckle);
+				}
+				else if (this.get_core(stack)==1)
+				{
+					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				}
+				else
+				{
+					armorModel.belt=new ItemStack(RiderItems.kyu_buckle);
+				}
+				
+				if (this == RiderItems.pink_seiza_blaster)
+				{
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) & this.get_core(stack)==0)
+					{
+						armorModel.wings=new ItemStack(RiderItems.washi_pink_wing);
+					}
+					else if (this.get_core(stack)==0)
+					{
+						armorModel.wings=new ItemStack(RiderItems.washi_pink_wing_close);
+					}
+					else
+					{
+						armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+					}
+				}
+				else
+				{
+					armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -93,7 +124,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 
 	public static int get_eftTime(ItemStack itemstack)
 	{
-		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("eftTime") : 100;
+		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("eftTime") : 1000;
 	}
 
 	public static void set_eftTime(ItemStack itemstack, int flag)
@@ -133,6 +164,20 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("armor", flag);
 	}
 	
+	public static int  get_effect(ItemStack itemstack)
+	{
+		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("effect") :0;
+	}
+
+	public static void set_effect(ItemStack itemstack, int flag)
+	{
+		if (!itemstack.hasTagCompound())
+		{
+			itemstack.setTagCompound(new NBTTagCompound());
+		}
+		itemstack.getTagCompound().setInteger("effect", flag);
+	}
+	
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) 
 	{
@@ -144,12 +189,38 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.kawarimono_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.kyuranger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.kawarimono_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.kyuranger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.kawarimono_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.kyuranger_head)
 								{
+									if(this.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))<1000){
+
+										this.set_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),this.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+1);
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_seiza_blaster)
+									{
+										if (this.get_core(armor)==2)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 4,true,false));
+										}
+										else
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.orange_seiza_blaster)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
@@ -157,9 +228,148 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_seiza_blaster)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gold_seiza_blaster)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_seiza_blaster)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.silver_seiza_blaster)
+									{
+										if (this.get_core(armor)==2)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										else
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_seiza_blaster)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_seiza_blaster)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_seiza_blaster)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.commander_ryutsueder)
+									{
+										if (this.get_core(armor)==1)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										}
+										else
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.sky_blue_seiza_blaster)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.houou_blade_shield)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.metal_dark_seiza_blaster)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+									}
 									if (this.get_lock(armor)=="kyu_ikkakuju_arm")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+									}
+									if (this.get_lock(armor)=="kyu_pegasus")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+									}
+									if (this.get_lock(armor)=="kyu_taiyou_mode")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));;
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+									}
+									if (this.get_lock(armor)=="kyu_tsuki_mode")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+									}
+									if (this.get_effect(armor)==2)
+									{
+										if (this.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) < 1000)
+										{
+											if (player.isInWater())
+											{
+												if (player.isSneaking())
+												{
+													Vec3d look = player.getLookVec();
+													player.motionX=look.x/2;
+													player.motionY=look.y/2;
+													player.motionZ=look.z/2;
+												}
+											}
+										}
+										else
+										{
+											this.set_eftTime(armor, 0);
+											this.set_effect(armor, 0);
+										}
 									}
 								}
 							}

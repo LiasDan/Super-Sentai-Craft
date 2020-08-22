@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "carranger",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:carranger_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:carranger_head"
+  }
+}

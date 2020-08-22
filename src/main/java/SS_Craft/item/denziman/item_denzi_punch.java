@@ -25,7 +25,6 @@ public class item_denzi_punch extends Item implements IHasModel
 	public item_denzi_punch(int armor,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=armor;

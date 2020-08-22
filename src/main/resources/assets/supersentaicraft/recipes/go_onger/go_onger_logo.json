@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "go_onger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_engine_soul"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:go_onger_logo"
+  }
+}

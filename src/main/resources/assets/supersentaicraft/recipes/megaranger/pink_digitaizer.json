@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mega_pink",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:megaranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:mega_pink_disk"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:pink_digitaizer"
+  }
+}

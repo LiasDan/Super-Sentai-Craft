@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shinken_pink",
+  "ingredients": [
+    {
+	  "item": "supersentaicraft:common_disk"
+	},
+	{
+      "item": "supersentaicraft:kame_disk"
+    },
+	{
+      "item": "supersentaicraft:shinkenmaru"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:heaven_fan"
+  }
+}

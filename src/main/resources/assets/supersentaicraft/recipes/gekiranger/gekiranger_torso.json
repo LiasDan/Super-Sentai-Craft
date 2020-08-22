@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gekiranger",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gekiranger_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gekiranger_torso"
+  }
+}

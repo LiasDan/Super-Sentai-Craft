@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mega_pink",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:mega_capture"
+    },
+	{
+      "item": "supersentaicraft:mega_magnum"
+    },
+	{
+      "item": "supersentaicraft:mega_shot"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:capture_sniper"
+  }
+}

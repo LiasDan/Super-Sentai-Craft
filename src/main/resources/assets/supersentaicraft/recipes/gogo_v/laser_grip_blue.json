@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "go_blue",
+  "pattern": [
+    "a",
+    "a",
+	"b"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gogo_v_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:go_blue_badge"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:laser_grip_blue"
+  }
+}

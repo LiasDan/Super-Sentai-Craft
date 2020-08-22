@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lupatranger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_striker"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_dial_fighter"
+	  },
+	  {
+	    "item": "supersentaicraft:ichigou_trigger_machine"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_dial_fighter"
+	  },
+	  {
+	    "item": "supersentaicraft:nigou_trigger_machine"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_dial_fighter"
+	  },
+	  {
+	    "item": "supersentaicraft:sangou_trigger_machine"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:vs_changer"
+  }
+}

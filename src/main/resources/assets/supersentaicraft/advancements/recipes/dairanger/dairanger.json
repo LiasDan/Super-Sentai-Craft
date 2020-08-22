@@ -2,9 +2,14 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:dairanger_head",
-      "supersentaicraft:dairanger_torso",
-      "supersentaicraft:dairanger_legs"
+      "supersentaicraft:dairanger/dairanger_head",
+      "supersentaicraft:dairanger/dairanger_torso",
+      "supersentaicraft:dairanger/dairanger_legs",
+      "supersentaicraft:dairanger/star_cutter",
+      "supersentaicraft:dairanger/star_sword",
+      "supersentaicraft:dairanger/dai_buster",
+      "supersentaicraft:dairanger/dai_buster1",
+      "supersentaicraft:dairanger/dairinken"
     ]
   },
   "criteria": {
@@ -21,19 +26,49 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:dairanger_head"
+        "recipe": "supersentaicraft:dairanger/dairanger_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:dairanger_torso"
+        "recipe": "supersentaicraft:dairanger/dairanger_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:dairanger_legs"
+        "recipe": "supersentaicraft:dairanger/dairanger_legs"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:dairanger/star_cutter"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:dairanger/star_sword"
+      }
+    },
+    "has_the_recipe5": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:dairanger/dai_buster"
+      }
+    },
+    "has_the_recipe6": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:dairanger/dai_buster1"
+      }
+    },
+    "has_the_recipe7": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:dairanger/dairinken"
       }
     }
   },
@@ -42,7 +77,12 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2"
+      "has_the_recipe2",
+      "has_the_recipe3",
+      "has_the_recipe4",
+      "has_the_recipe5",
+      "has_the_recipe6",
+      "has_the_recipe7"
     ]
   ]
 }

@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:kiranger_belt",
-      "supersentaicraft:ki_sticker"
+      "supersentaicraft:goranger/kiranger_belt",
+      "supersentaicraft:goranger/ki_sticker"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:kiranger_belt"
+        "recipe": "supersentaicraft:goranger/kiranger_belt"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:ki_sticker"
+        "recipe": "supersentaicraft:goranger/ki_sticker"
       }
     }
   },

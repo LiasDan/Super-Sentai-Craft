@@ -26,7 +26,6 @@ public class item_ranger_key extends Item implements IHasModel
 	public item_ranger_key(int form,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=form;

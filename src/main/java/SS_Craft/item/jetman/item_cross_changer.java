@@ -170,14 +170,12 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 							{
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.jetman_head)
 								{
-									Potion FLY = Potion.getPotionFromResourceLocation("tokuPotions"+ ":" + "fly");
-									
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_cross_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_cross_changer)
@@ -185,7 +183,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_cross_changer)
@@ -193,7 +191,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.white_cross_changer)
@@ -201,7 +199,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_cross_changer)
@@ -209,7 +207,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
 								}

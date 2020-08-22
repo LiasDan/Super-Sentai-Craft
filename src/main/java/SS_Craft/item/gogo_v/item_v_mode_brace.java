@@ -25,7 +25,6 @@ public class item_v_mode_brace extends Item implements IHasModel
 	public item_v_mode_brace(String name)
 	{
 		super();
-		setHasSubtypes(true);
 		setMaxDamage(0);
 		maxStackSize = 1;
 	    setTranslationKey(name);

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "goggle_black",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:goggle_v_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:angkor_wat_emerald"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:black_goggle_brace"
+  }
+}

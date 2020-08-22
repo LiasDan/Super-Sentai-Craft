@@ -2,9 +2,10 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:toqger_head",
-      "supersentaicraft:toqger_torso",
-      "supersentaicraft:toqger_legs"
+      "supersentaicraft:toqger/toqger_head",
+      "supersentaicraft:toqger/toqger_torso",
+      "supersentaicraft:toqger/toqger_legs",
+      "supersentaicraft:toqger/toqger_logo"
     ]
   },
   "criteria": {
@@ -21,19 +22,25 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:toqger_head"
+        "recipe": "supersentaicraft:toqger/toqger_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:toqger_torso"
+        "recipe": "supersentaicraft:toqger/toqger_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:toqger_legs"
+        "recipe": "supersentaicraft:toqger/toqger_legs"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:toqger/toqger_logo"
       }
     }
   },
@@ -42,7 +49,8 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2"
+      "has_the_recipe2",
+      "has_the_recipe3"
     ]
   ]
 }

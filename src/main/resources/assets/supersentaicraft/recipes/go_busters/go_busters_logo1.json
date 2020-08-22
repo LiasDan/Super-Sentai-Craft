@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "go_busters",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_animal_disk"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:go_busters_logo"
+  }
+}

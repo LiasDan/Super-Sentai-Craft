@@ -2,9 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:green_denzi_ring",
-      "supersentaicraft:green_denzi_stick",
-      "supersentaicraft:denzi_punch3"
+      "supersentaicraft:denziman/green_denzi_ring",
+      "supersentaicraft:denziman/green_denzi_stick"
     ]
   },
   "criteria": {
@@ -21,19 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:green_denzi_ring"
+        "recipe": "supersentaicraft:denziman/green_denzi_ring"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:green_denzi_stick"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:denzi_punch3"
+        "recipe": "supersentaicraft:denziman/green_denzi_stick"
       }
     }
   },
@@ -41,8 +34,7 @@
     [
       "has_item",
       "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2"
+      "has_the_recipe1"
     ]
   ]
 }

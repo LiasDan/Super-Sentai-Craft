@@ -2,12 +2,9 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:houou_aura_changer",
-      "supersentaicraft:star_cutter4",
-      "supersentaicraft:star_sword4",
-      "supersentaicraft:dairen_rod_houou",
-      "supersentaicraft:phoenix_spear",
-      "supersentaicraft:dairinken4"
+      "supersentaicraft:dairanger/houou_aura_changer",
+      "supersentaicraft:dairanger/dairen_rod_houou",
+      "supersentaicraft:dairanger/phoenix_spear"
     ]
   },
   "criteria": {
@@ -24,37 +21,19 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:houou_aura_changer"
+        "recipe": "supersentaicraft:dairanger/houou_aura_changer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:star_cutter4"
+        "recipe": "supersentaicraft:dairanger/dairen_rod_houou"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:star_sword4"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dairen_rod_houou"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:phoenix_spear"
-      }
-    },
-    "has_the_recipe5": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dairinken4"
+        "recipe": "supersentaicraft:dairanger/phoenix_spear"
       }
     }
   },
@@ -63,10 +42,7 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4",
-      "has_the_recipe5"
+      "has_the_recipe2"
     ]
   ]
 }

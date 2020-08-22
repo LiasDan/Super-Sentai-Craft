@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ryusoulger",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_ryusoul"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:ryusoulger_head"
+  }
+}

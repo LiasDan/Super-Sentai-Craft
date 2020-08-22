@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gekiranger",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:geki_tonfa_long_baton"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:geki_tonfa"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "momoranger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:goranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:momo_star"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:momoranger_belt"
+  }
+}

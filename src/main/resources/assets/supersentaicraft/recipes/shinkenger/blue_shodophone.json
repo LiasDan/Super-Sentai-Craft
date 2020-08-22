@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shinken_blue",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:common_disk"
+    },
+	"b": {
+      "item": "supersentaicraft:ryuu_disk"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:blue_shodophone"
+  }
+}

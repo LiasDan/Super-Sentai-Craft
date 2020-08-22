@@ -2,12 +2,10 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:black_goggle_brace",
-      "supersentaicraft:goggle_sabre1",
-      "supersentaicraft:goggle_golden_spear1",
-      "supersentaicraft:black_hammer",
-      "supersentaicraft:black_club",
-      "supersentaicraft:black_emerald_nunchuck"
+      "supersentaicraft:goggle_v/black_goggle_brace",
+      "supersentaicraft:goggle_v/black_hammer",
+      "supersentaicraft:goggle_v/black_club",
+      "supersentaicraft:goggle_v/black_emerald_nunchuck"
     ]
   },
   "criteria": {
@@ -24,37 +22,25 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:black_goggle_brace"
+        "recipe": "supersentaicraft:goggle_v/black_goggle_brace"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:goggle_sabre1"
+        "recipe": "supersentaicraft:goggle_v/black_hammer"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:goggle_golden_spear1"
+        "recipe": "supersentaicraft:goggle_v/black_club"
       }
     },
     "has_the_recipe3": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:black_hammer"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:black_club"
-      }
-    },
-    "has_the_recipe5": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:black_emerald_nunchuck"
+        "recipe": "supersentaicraft:goggle_v/black_emerald_nunchuck"
       }
     }
   },
@@ -64,9 +50,7 @@
       "has_the_recipe",
       "has_the_recipe1",
       "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4",
-      "has_the_recipe5"
+      "has_the_recipe3"
     ]
   ]
 }

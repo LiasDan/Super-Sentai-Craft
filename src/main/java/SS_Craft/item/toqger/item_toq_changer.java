@@ -165,8 +165,6 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 							{
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.toqger_head)
 								{
-									Potion FLY = Potion.getPotionFromResourceLocation("tokuPotions"+ ":" + "fly");
-									
 									if (this.get_core(armor)==8)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 20, 1,true,false));
@@ -230,7 +228,7 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(FLY,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 3,true,false));
 										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.sangou_toq_changer)

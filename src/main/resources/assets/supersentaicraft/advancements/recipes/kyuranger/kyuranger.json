@@ -1,0 +1,72 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:kyuranger/kyuranger_head",
+      "supersentaicraft:kyuranger/kyuranger_torso",
+      "supersentaicraft:kyuranger/kyuranger_legs",
+      "supersentaicraft:kyuranger/kyuranger_logo",
+      "supersentaicraft:kyuranger/seiza_blaster",
+      "supersentaicraft:kyuranger/kyuranger_kyutama"
+    ]
+  },
+  "criteria": {
+    "has_logo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:blank_kyutama"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:kyuranger/kyuranger_head"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:kyuranger/kyuranger_torso"
+      }
+    },
+    "has_the_recipe2": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:kyuranger/kyuranger_legs"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:kyuranger/kyuranger_logo"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:kyuranger/seiza_blaster"
+      }
+    },
+    "has_the_recipe5": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:kyuranger/kyuranger_kyutama"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_logo",
+      "has_the_recipe",
+      "has_the_recipe1",
+      "has_the_recipe2",
+      "has_the_recipe3",
+      "has_the_recipe4",
+      "has_the_recipe5"
+    ]
+  ]
+}

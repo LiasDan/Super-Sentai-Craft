@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blue_buster",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+	  "item": "supersentaicraft:enetron"
+	},
+	"b": {
+      "item": "supersentaicraft:blue_enetron"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:blue_morphin_brace"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_black",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:beast_king_sword"
+    },
+	{
+      "item": "supersentaicraft:gao_bison_jewel"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:bison_beast_king_sword"
+  }
+}

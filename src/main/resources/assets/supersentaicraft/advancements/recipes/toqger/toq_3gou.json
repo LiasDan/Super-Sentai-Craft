@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:sangou_toq_changer",
-      "supersentaicraft:shingou_hammer"
+      "supersentaicraft:toqger/sangou_toq_changer",
+      "supersentaicraft:toqger/shingou_hammer"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:sangou_toq_changer"
+        "recipe": "supersentaicraft:toqger/sangou_toq_changer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:shingou_hammer"
+        "recipe": "supersentaicraft:toqger/shingou_hammer"
       }
     }
   },

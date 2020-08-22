@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gekiranger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gekiranger_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:tiger_spirit"
+	  },
+	  {
+	    "item": "supersentaicraft:jaguar_spirit"
+	  },
+	  {
+	    "item": "supersentaicraft:cheetah_spirit"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:geki_tonfa"
+  }
+}

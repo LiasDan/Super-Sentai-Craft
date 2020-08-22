@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mega_yellow",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:mega_sling"
+    },
+	{
+      "item": "supersentaicraft:mega_magnum"
+    },
+	{
+      "item": "supersentaicraft:mega_shot"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:sling_sniper"
+  }
+}

@@ -3,5 +3,15 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:items/gao_mane_buster"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/gao_mane_buster_final"
+        }
+    ]
   }
 }

@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:dino_commander",
-      "supersentaicraft:dino_thruster"
+      "supersentaicraft:abaranger/dino_commander",
+      "supersentaicraft:abaranger/dino_thruster"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:dino_commander"
+        "recipe": "supersentaicraft:abaranger/dino_commander"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:dino_thruster"
+        "recipe": "supersentaicraft:abaranger/dino_thruster"
       }
     }
   },

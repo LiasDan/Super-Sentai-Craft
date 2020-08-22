@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dairanger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:star_cutter"
+    },
+	{
+      "item": "supersentaicraft:star_sword"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:dai_buster"
+  }
+}

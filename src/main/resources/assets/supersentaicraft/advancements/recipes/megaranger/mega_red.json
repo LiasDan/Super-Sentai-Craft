@@ -2,11 +2,10 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:red_digitaizer",
-      "supersentaicraft:mega_sniper",
-      "supersentaicraft:drill_saber",
-      "supersentaicraft:drill_sniper",
-      "supersentaicraft:drill_sniper1"
+      "supersentaicraft:megaranger/red_digitaizer",
+      "supersentaicraft:megaranger/drill_saber",
+      "supersentaicraft:megaranger/drill_sniper",
+      "supersentaicraft:megaranger/drill_sniper1"
     ]
   },
   "criteria": {
@@ -23,31 +22,25 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:red_digitaizer"
+        "recipe": "supersentaicraft:megaranger/red_digitaizer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:mega_sniper"
+        "recipe": "supersentaicraft:megaranger/drill_saber"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:drill_saber"
+        "recipe": "supersentaicraft:megaranger/drill_sniper"
       }
     },
     "has_the_recipe3": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:drill_sniper"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:drill_sniper1"
+        "recipe": "supersentaicraft:megaranger/drill_sniper1"
       }
     }
   },
@@ -57,8 +50,7 @@
       "has_the_recipe",
       "has_the_recipe1",
       "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4"
+      "has_the_recipe3"
     ]
   ]
 }

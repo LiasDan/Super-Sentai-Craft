@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "carranger",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:navic_blaster"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:auto_blaster"
+  }
+}

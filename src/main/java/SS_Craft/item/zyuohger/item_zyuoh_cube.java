@@ -24,7 +24,6 @@ public class item_zyuoh_cube extends Item implements IHasModel
 	public item_zyuoh_cube(int form,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=form;
@@ -42,23 +41,23 @@ public class item_zyuoh_cube extends Item implements IHasModel
 	/**
 	 * Called when the equipped item is right clicked.
 	 */
-    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
-    {
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
+	{
 		if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
 			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_zyuoh_changer)
 			{
 				item_zyuoh_changer belt = (item_zyuoh_changer) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
-
+	
 				if (belt == RiderItems.eagle_zyuoh_changer)
 				{
 					if (playerIn.isSneaking()) 
 					{
-						if (this==RiderItems.whale_cube)
+						if (this==RiderItems.eagle_cube)
 						{
-							if (playerIn.inventory.hasItemStack(new ItemStack(RiderItems.eagle_cube)) && playerIn.inventory.hasItemStack(new ItemStack(RiderItems.gorilla_cube)))
+							if (playerIn.inventory.hasItemStack(new ItemStack(RiderItems.whale_change_gun)) && playerIn.inventory.hasItemStack(new ItemStack(RiderItems.gorilla_cube)))
 							{
-								item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2);
+								item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3);
 							}
 						}
 					}
@@ -68,28 +67,11 @@ public class item_zyuoh_cube extends Item implements IHasModel
 					}
 					else if (this == RiderItems.condor_cube)
 					{
-						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3);
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4);
 					}
 					else
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
-					}
-				}
-				else if (belt == RiderItems.zyuoh_whale_change_gun)
-				{
-					if (playerIn.isSneaking()) 
-					{
-						if (this==RiderItems.whale_cube)
-						{
-							if (playerIn.inventory.hasItemStack(new ItemStack(RiderItems.eagle_cube)) && playerIn.inventory.hasItemStack(new ItemStack(RiderItems.gorilla_cube)))
-							{
-								item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
-							}
-						}
-					}
-					else
-					{
-						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 					}
 				}
 				else if (belt == RiderItems.zyuoh_the_light)
@@ -117,7 +99,7 @@ public class item_zyuoh_cube extends Item implements IHasModel
 			}
 		}
 		
-        playerIn.setActiveHand(handIn);
-        return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
-    }
+	    playerIn.setActiveHand(handIn);
+	    return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
+	}
 }

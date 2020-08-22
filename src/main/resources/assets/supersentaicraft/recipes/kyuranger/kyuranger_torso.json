@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kyuranger",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_kyutama"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:kyuranger_torso"
+  }
+}

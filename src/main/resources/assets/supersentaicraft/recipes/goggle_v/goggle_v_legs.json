@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "goggle_v",
+  "pattern": [
+    "aaa",
+    "a a",
+	"a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:goggle_v_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:goggle_v_legs"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shinken_super",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:inromaru"
+    },
+	{
+      "item": "supersentaicraft:shinkenmaru"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:super_shinkenmaru"
+  }
+}

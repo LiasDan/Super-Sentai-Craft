@@ -3,5 +3,15 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:items/turbo_laser_sword"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/turbo_laser_gun"
+        }
+    ]
   }
 }

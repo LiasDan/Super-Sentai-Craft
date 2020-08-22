@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "skill_kyutama",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_kyutama"
+    },
+	{
+      "item": "supersentaicraft:sasori_kyutama"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:sasori_skill_kyutama"
+  }
+}

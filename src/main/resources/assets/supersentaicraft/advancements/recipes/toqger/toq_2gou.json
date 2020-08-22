@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:nigou_toq_changer",
-      "supersentaicraft:home_trigger"
+      "supersentaicraft:toqger/nigou_toq_changer",
+      "supersentaicraft:toqger/home_trigger"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:nigou_toq_changer"
+        "recipe": "supersentaicraft:toqger/nigou_toq_changer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:home_trigger"
+        "recipe": "supersentaicraft:toqger/home_trigger"
       }
     }
   },

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "toqger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_ressha"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:toqger_logo"
+  }
+}

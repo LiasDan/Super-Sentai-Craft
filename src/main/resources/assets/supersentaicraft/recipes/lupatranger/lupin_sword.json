@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lupinranger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_striker"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_dial_fighter"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_dial_fighter"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_dial_fighter"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:lupin_sword"
+  }
+}

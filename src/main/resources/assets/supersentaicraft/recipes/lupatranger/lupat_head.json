@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lupatranger",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_striker"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:lupat_head"
+  }
+}

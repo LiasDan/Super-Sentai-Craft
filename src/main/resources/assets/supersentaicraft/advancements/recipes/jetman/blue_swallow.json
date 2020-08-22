@@ -2,10 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:blue_cross_changer",
-      "supersentaicraft:bird_blaster4",
-      "supersentaicraft:bringer_sword4",
-      "supersentaicraft:beak_smasher4"
+      "supersentaicraft:jetman/blue_cross_changer"
     ]
   },
   "criteria": {
@@ -22,35 +19,14 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:blue_cross_changer"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:bird_blaster4"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:bringer_sword4"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:beak_smasher4"
+        "recipe": "supersentaicraft:jetman/blue_cross_changer"
       }
     }
   },
   "requirements": [
     [
       "has_item",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3"
+      "has_the_recipe"
     ]
   ]
 }

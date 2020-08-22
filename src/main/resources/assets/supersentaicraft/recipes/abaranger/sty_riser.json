@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "abare_max",
+  "pattern": [
+    "aba",
+    "dae",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:abaranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:max_tyranno_dino_guts"
+    },
+	"c": {
+      "item": "minecraft:iron_sword"
+    },
+	"d": {
+      "item": "supersentaicraft:tricera_dino_guts"
+    },
+	"e": {
+      "item": "supersentaicraft:ptera_dino_guts"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:sty_riser"
+  }
+}

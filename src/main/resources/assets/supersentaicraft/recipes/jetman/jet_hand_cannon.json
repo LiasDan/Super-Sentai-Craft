@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "jetman",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:bringer_sword"
+    },
+	{
+      "item": "supersentaicraft:bird_blaster"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:jet_hand_cannon"
+  }
+}

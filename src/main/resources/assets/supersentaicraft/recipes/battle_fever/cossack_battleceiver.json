@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "battle_cossack",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:battle_fever_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:cossack_badge"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:cossack_battleceiver"
+  }
+}

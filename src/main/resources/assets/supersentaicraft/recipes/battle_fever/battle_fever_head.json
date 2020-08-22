@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "battle_fever",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:battle_fever_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:battle_fever_head"
+  }
+}

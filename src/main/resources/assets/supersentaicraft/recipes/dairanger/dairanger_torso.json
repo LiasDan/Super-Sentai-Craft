@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dairanger",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:dairanger_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:dairanger_torso"
+  }
+}

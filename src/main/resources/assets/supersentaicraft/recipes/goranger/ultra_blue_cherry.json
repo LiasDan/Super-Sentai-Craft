@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "aoranger",
+  "ingredients": [
+    {
+	  "item": "supersentaicraft:blue_cherry"
+	},
+	{
+      "item": "supersentaicraft:ao_star"
+    },
+	{
+      "item": "supersentaicraft:ao_star"
+    },
+	{
+      "item": "supersentaicraft:ao_star"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:ultra_blue_cherry"
+  }
+}

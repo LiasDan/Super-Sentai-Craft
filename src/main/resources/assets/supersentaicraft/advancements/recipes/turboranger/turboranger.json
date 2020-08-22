@@ -2,9 +2,10 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:turboranger_head",
-      "supersentaicraft:turboranger_torso",
-      "supersentaicraft:turboranger_legs"
+      "supersentaicraft:turboranger/turboranger_head",
+      "supersentaicraft:turboranger/turboranger_torso",
+      "supersentaicraft:turboranger/turboranger_legs",
+      "supersentaicraft:turboranger/turbo_laser_sword"
     ]
   },
   "criteria": {
@@ -21,19 +22,25 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:turboranger_head"
+        "recipe": "supersentaicraft:turboranger/turboranger_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:turboranger_torso"
+        "recipe": "supersentaicraft:turboranger/turboranger_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:turboranger_legs"
+        "recipe": "supersentaicraft:turboranger/turboranger_legs"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:turboranger/turbo_laser_sword"
       }
     }
   },
@@ -42,7 +49,8 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2"
+      "has_the_recipe2",
+      "has_the_recipe3"
     ]
   ]
 }

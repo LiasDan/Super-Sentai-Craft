@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "jetman",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:birdonic_wave"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:jetman_logo"
+  }
+}

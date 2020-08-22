@@ -2,9 +2,9 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:aoranger_belt",
-      "supersentaicraft:blue_cherry",
-      "supersentaicraft:ultra_blue_cherry"
+      "supersentaicraft:goranger/aoranger_belt",
+      "supersentaicraft:goranger/blue_cherry",
+      "supersentaicraft:goranger/ultra_blue_cherry"
     ]
   },
   "criteria": {
@@ -21,19 +21,19 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:aoranger_belt"
+        "recipe": "supersentaicraft:goranger/aoranger_belt"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:blue_cherry"
+        "recipe": "supersentaicraft:goranger/blue_cherry"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:ultra_blue_cherry"
+        "recipe": "supersentaicraft:goranger/ultra_blue_cherry"
       }
     }
   },

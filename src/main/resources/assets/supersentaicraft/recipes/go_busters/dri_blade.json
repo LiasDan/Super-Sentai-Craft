@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "beet_stag_buster",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": [
+	  {
+		"item": "supersentaicraft:enetron"
+	  },
+	  {
+		"item": "supersentaicraft:blank_animal_disk"
+	  }
+	],
+	"b": [
+	  {
+		"item": "supersentaicraft:gold_enetron"
+	  },
+	  {
+		"item": "supersentaicraft:silver_enetron"
+	  },
+	  {
+		"item": "supersentaicraft:beetle_animal_disk"
+	  },
+	  {
+		"item": "supersentaicraft:stag_animal_disk"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:dri_blade"
+  }
+}

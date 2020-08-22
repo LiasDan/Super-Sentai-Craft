@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "princess_shinken_red",
+  "pattern": [
+    "aba",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:common_disk"
+    },
+	"b": {
+      "item": "supersentaicraft:shishi_disk"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:princess_red_shodophone"
+  }
+}

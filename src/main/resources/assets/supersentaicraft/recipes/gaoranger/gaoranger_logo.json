@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gaoranger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:empty_gao_jewel"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gaoranger_logo"
+  }
+}

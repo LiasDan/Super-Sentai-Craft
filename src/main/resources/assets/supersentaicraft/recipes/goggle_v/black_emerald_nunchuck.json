@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "goggle_black",
+  "pattern": [
+    "aca",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:goggle_v_logo"
+    },
+	"b": {
+	   "item": "supersentaicraft:angkor_wat_emerald"
+	},
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:black_emerald_nunchuck"
+  }
+}

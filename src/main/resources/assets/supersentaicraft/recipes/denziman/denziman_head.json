@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "denziman",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:empty_denzi_ring"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:denziman_head"
+  }
+}

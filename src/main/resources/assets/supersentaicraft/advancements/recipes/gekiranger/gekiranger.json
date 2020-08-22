@@ -2,9 +2,13 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:gekiranger_head",
-      "supersentaicraft:gekiranger_torso",
-      "supersentaicraft:gekiranger_legs"
+      "supersentaicraft:gekiranger/gekiranger_head",
+      "supersentaicraft:gekiranger/gekiranger_torso",
+      "supersentaicraft:gekiranger/gekiranger_legs",
+      "supersentaicraft:gekiranger/geki_tonfa",
+      "supersentaicraft:gekiranger/geki_tonfa_baton",
+      "supersentaicraft:gekiranger/geki_tonfa_long_baton",
+      "supersentaicraft:gekiranger/geki_tonfa_long_baton1"
     ]
   },
   "criteria": {
@@ -21,19 +25,43 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:gekiranger_head"
+        "recipe": "supersentaicraft:gekiranger/gekiranger_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:gekiranger_torso"
+        "recipe": "supersentaicraft:gekiranger/gekiranger_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:gekiranger_legs"
+        "recipe": "supersentaicraft:gekiranger/gekiranger_legs"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:gekiranger/geki_tonfa"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:gekiranger/geki_tonfa_baton"
+      }
+    },
+    "has_the_recipe5": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:gekiranger/geki_tonfa_long_baton"
+      }
+    },
+    "has_the_recipe6": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:gekiranger/geki_tonfa_long_baton1"
       }
     }
   },
@@ -42,7 +70,11 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2"
+      "has_the_recipe2",
+      "has_the_recipe3",
+      "has_the_recipe4",
+      "has_the_recipe5",
+      "has_the_recipe6"
     ]
   ]
 }

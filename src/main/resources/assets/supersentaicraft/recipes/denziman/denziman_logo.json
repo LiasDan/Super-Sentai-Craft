@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "denziman",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:empty_denzi_ring"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:denziman_logo"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "flashman",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:flashman_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:flashman_torso"
+  }
+}

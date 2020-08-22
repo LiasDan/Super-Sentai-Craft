@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zyuoh_the_world",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:king_s_credential"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:rhinos_cube"
+	  },
+	  {
+	    "item": "supersentaicraft:crocodile_cube"
+	  },
+	  {
+	    "item": "supersentaicraft:wolf_cube"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:zyuoh_the_rod"
+  }
+}

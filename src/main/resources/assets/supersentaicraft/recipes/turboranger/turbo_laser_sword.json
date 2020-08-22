@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "turboranger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:turboranger_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_turbo_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:black_turbo_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_turbo_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_turbo_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:pink_turbo_logo"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:turbo_laser_sword"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boukenger",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:boukenger_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:boukenger_head"
+  }
+}

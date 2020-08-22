@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bouken_silver",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:boukenger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:bouken_silver_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gogo_changer"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "go_busters",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:ichigan_buster_special"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:sougan_blade"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bouken_blue",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:boukenger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:bouken_blue_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:blue_accellular"
+  }
+}

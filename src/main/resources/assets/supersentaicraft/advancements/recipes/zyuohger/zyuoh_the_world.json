@@ -2,10 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:zyuoh_the_light",
-      "supersentaicraft:zyuoh_the_rod",
-      "supersentaicraft:zyuoh_the_rod1",
-      "supersentaicraft:zyuoh_the_rod2"
+      "supersentaicraft:zyuohger/zyuoh_the_light",
+      "supersentaicraft:zyuohger/zyuoh_the_rod"
     ]
   },
   "criteria": {
@@ -42,25 +40,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zyuoh_the_light"
+        "recipe": "supersentaicraft:zyuohger/zyuoh_the_light"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zyuoh_the_rod"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:zyuoh_the_rod1"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:zyuoh_the_rod2"
+        "recipe": "supersentaicraft:zyuohger/zyuoh_the_rod"
       }
     }
   },
@@ -70,9 +56,7 @@
       "has_item1",
       "has_item2",
       "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3"
+      "has_the_recipe1"
     ]
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "patran_ichigou_girl",
+  "pattern": [
+    "aba",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_striker"
+    },
+	"b": {
+      "item": "supersentaicraft:ichigou_trigger_machine"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:ichigou_girl_vs_changer"
+  }
+}

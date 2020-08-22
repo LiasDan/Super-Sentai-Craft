@@ -25,7 +25,6 @@ public class item_ryusoul extends Item implements IHasModel
 	public item_ryusoul(int armor,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=armor;
@@ -38,7 +37,6 @@ public class item_ryusoul extends Item implements IHasModel
 	public item_ryusoul(String name,int soul)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num2=soul;
@@ -66,21 +64,10 @@ public class item_ryusoul extends Item implements IHasModel
 
 				if  (num >= 1)
 				{
-					if (belt == RiderItems.gold_mosa_changer)
+					if (belt == RiderItems.gold_mosa_changer | belt == RiderItems.gaisorg_changer)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()==RiderItems.mosa_changer)
-						{
-							item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
-							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-						}
-					}
-					else if (belt == RiderItems.gaisorg_changer)
-					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()==RiderItems.gaisoul_ken)
-						{
-							item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
-							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-						}
+						item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 					}
 					else
 					{
@@ -93,21 +80,10 @@ public class item_ryusoul extends Item implements IHasModel
 				}
 				if (num2 >= 1)
 				{
-					if (belt == RiderItems.gold_mosa_changer)
+					if (belt == RiderItems.gold_mosa_changer | belt == RiderItems.gaisorg_changer)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()==RiderItems.mosa_changer)
-						{
-							item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
-						}
-					}
-					else if (belt == RiderItems.gaisorg_changer)
-					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()==RiderItems.gaisoul_ken)
-						{
-							item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
-						}
+						item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 					}
 					else
 					{

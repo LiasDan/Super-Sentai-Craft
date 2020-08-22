@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:france_battleceiver",
-      "supersentaicraft:france_fencing_sword"
+      "supersentaicraft:battle_fever/france_battleceiver",
+      "supersentaicraft:battle_fever/france_fencing_sword"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:france_battleceiver"
+        "recipe": "supersentaicraft:battle_fever/france_battleceiver"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:france_fencing_sword"
+        "recipe": "supersentaicraft:battle_fever/france_fencing_sword"
       }
     }
   },

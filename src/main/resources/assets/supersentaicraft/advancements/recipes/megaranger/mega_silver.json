@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:keitaizer",
-      "supersentaicraft:silver_blazer"
+      "supersentaicraft:megaranger/keitaizer",
+      "supersentaicraft:megaranger/silver_blazer"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:keitaizer"
+        "recipe": "supersentaicraft:megaranger/keitaizer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:silver_blazer"
+        "recipe": "supersentaicraft:megaranger/silver_blazer"
       }
     }
   },

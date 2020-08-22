@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "maskman",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:maskman_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_aura_power"
+	  },
+	  {
+	    "item": "supersentaicraft:black_aura_power"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_aura_power"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_aura_power"
+	  },
+	  {
+	    "item": "supersentaicraft:pink_aura_power"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:laser_magnum_sword"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "go_red",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:v_lancer_red"
+    },
+	{
+      "item": "supersentaicraft:laser_grip_red"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:v_machine_gun_red"
+  }
+}

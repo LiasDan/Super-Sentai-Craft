@@ -24,7 +24,6 @@ public class item_prism_armor extends Item implements IHasModel
 	public item_prism_armor(int armor,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=armor;

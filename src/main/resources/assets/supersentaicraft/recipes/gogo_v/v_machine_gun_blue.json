@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "go_blue",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:v_lancer_blue"
+    },
+	{
+      "item": "supersentaicraft:laser_grip_blue"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:v_machine_gun_blue"
+  }
+}

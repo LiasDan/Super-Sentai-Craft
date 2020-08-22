@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "geki_shark",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:geki_saber_twin_a"
+    },
+	{
+      "item": "supersentaicraft:geki_saber_twin_b"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:geki_saber_twin_combo"
+  }
+}

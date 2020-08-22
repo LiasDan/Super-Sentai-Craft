@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ryusoul_green",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_ryusoul"
+    },
+	"b": {
+      "item": "supersentaicraft:green_ryusoul"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:green_ryusoul_changer"
+  }
+}

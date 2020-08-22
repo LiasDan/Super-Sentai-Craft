@@ -214,7 +214,7 @@ public class item_vs_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.patran_x_changer)
+									if (this.get_core(armor)==1)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));

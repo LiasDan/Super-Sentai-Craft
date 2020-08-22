@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "turboranger",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:turboranger_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:turboranger_head"
+  }
+}

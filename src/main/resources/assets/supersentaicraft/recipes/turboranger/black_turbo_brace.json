@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "black_turbo",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:turboranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:black_turbo_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:black_turbo_brace"
+  }
+}

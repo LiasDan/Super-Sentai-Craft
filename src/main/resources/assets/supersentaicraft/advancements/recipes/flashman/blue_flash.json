@@ -2,10 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:blue_prism_flash",
-      "supersentaicraft:prism_shooter2",
-      "supersentaicraft:prism_shooter_shield2",
-      "supersentaicraft:star_darts"
+      "supersentaicraft:flashman/blue_prism_flash",
+      "supersentaicraft:flashman/star_darts"
     ]
   },
   "criteria": {
@@ -22,25 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:blue_prism_flash"
+        "recipe": "supersentaicraft:flashman/blue_prism_flash"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:prism_shooter2"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:prism_shooter_shield2"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:star_darts"
+        "recipe": "supersentaicraft:flashman/star_darts"
       }
     }
   },
@@ -48,9 +34,7 @@
     [
       "has_logo",
       "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3"
+      "has_the_recipe1"
     ]
   ]
 }

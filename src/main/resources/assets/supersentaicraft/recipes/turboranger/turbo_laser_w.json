@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "turboranger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:w_stick"
+    },
+	{
+      "item": "supersentaicraft:turbo_laser_sword"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:turbo_laser_w"
+  }
+}

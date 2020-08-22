@@ -2,11 +2,10 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:blue_digitaizer",
-      "supersentaicraft:mega_sniper2",
-      "supersentaicraft:mega_tomahawk",
-      "supersentaicraft:tomahawk_sniper",
-      "supersentaicraft:tomahawk_sniper1"
+      "supersentaicraft:megaranger/blue_digitaizer",
+      "supersentaicraft:megaranger/mega_tomahawk",
+      "supersentaicraft:megaranger/tomahawk_sniper",
+      "supersentaicraft:megaranger/tomahawk_sniper1"
     ]
   },
   "criteria": {
@@ -23,31 +22,25 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:blue_digitaizer"
+        "recipe": "supersentaicraft:megaranger/blue_digitaizer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:mega_sniper2"
+        "recipe": "supersentaicraft:megaranger/mega_tomahawk"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:mega_tomahawk"
+        "recipe": "supersentaicraft:megaranger/tomahawk_sniper"
       }
     },
     "has_the_recipe3": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:tomahawk_sniper"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:tomahawk_sniper1"
+        "recipe": "supersentaicraft:megaranger/tomahawk_sniper1"
       }
     }
   },
@@ -57,8 +50,7 @@
       "has_the_recipe",
       "has_the_recipe1",
       "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4"
+      "has_the_recipe3"
     ]
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "black_condor",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:birdonic_wave"
+    },
+	"b": {
+      "item": "supersentaicraft:condor_birdonic_wave"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:black_cross_changer"
+  }
+}

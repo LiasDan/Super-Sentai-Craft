@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "yellow_racer",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:carranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:yellow_racer_badge"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:yellow_accel_changer"
+  }
+}

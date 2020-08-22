@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shinkenger",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:common_disk"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:shinkenger_torso"
+  }
+}

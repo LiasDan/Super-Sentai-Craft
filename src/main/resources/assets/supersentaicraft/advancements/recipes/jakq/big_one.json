@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:big_one_red_rose",
-      "supersentaicraft:big_baton"
+      "supersentaicraft:jakq/big_one_red_rose",
+      "supersentaicraft:jakq/big_baton"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:big_one_red_rose"
+        "recipe": "supersentaicraft:jakq/big_one_red_rose"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:big_baton"
+        "recipe": "supersentaicraft:jakq/big_baton"
       }
     }
   },

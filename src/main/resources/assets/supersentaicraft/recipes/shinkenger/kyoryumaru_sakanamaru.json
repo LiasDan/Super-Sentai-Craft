@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shinken_hyper",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:hyper_disk"
+    },
+	{
+      "item": "supersentaicraft:sakanamaru"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:kyoryumaru_sakanamaru"
+  }
+}

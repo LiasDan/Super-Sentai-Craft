@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dairanger",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:dai_buster"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:star_sword"
+  }
+}

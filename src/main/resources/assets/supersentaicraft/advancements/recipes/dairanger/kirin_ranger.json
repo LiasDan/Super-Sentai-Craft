@@ -2,12 +2,9 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:kirin_aura_changer",
-      "supersentaicraft:star_cutter3",
-      "supersentaicraft:star_sword3",
-      "supersentaicraft:dairen_rod_kirin",
-      "supersentaicraft:kirin_9_part_whip",
-      "supersentaicraft:dairinken3"
+      "supersentaicraft:dairanger/kirin_aura_changer",
+      "supersentaicraft:dairanger/dairen_rod_kirin",
+      "supersentaicraft:dairanger/kirin_9_part_whip"
     ]
   },
   "criteria": {
@@ -24,37 +21,19 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:kirin_aura_changer"
+        "recipe": "supersentaicraft:dairanger/kirin_aura_changer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:star_cutter3"
+        "recipe": "supersentaicraft:dairanger/dairen_rod_kirin"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:star_sword3"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dairen_rod_kirin"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kirin_9_part_whip"
-      }
-    },
-    "has_the_recipe5": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dairinken3"
+        "recipe": "supersentaicraft:dairanger/kirin_9_part_whip"
       }
     }
   },
@@ -63,10 +42,7 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4",
-      "has_the_recipe5"
+      "has_the_recipe2"
     ]
   ]
 }

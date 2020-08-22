@@ -147,8 +147,9 @@ public class Item_sword_gun extends ItemBow  implements IHasModel
 					{
 						fireball.setKnockbackStrength(2);
 					}
-					
-					fireball.setKnockbackStrength(0);
+
+					fireball.setDamage(fireball.getDamage() + (double)1 * 0.5D + 0.5D);
+					fireball.setKnockbackStrength(1);
 					
 					worldIn.spawnEntity(fireball);
 				

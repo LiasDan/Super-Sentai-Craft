@@ -5,10 +5,12 @@ import SS_Craft.util.Refercence;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.model.ModelZombie;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.RenderZombie;
+import net.minecraft.client.renderer.entity.layers.LayerBipedArmor;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.util.ResourceLocation;
@@ -24,6 +26,16 @@ public class RenderRiderMob2 extends RenderBiped
     {
         super(Minecraft.getMinecraft().getRenderManager(), par1ModelBase, 0);
         texture = new ResourceLocation( Refercence.MODID, string);
+        LayerBipedArmor layerbipedarmor = new LayerBipedArmor(this)
+        {
+            protected void initArmor()
+            {
+                this.modelLeggings = new ModelZombie(0.5F, true);
+                this.modelArmor = new ModelZombie(1.0F, true);
+            }
+        };
+        this.addLayer(layerbipedarmor);
+        ;
     }
 
 

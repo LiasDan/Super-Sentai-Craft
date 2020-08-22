@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gaisorg",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_ryusoul"
+    },
+	"b": {
+	  "item": "supersentaicraft:gai_soul"
+	},
+	"c": {
+      "item": "minecraft:shield"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gaisoul_shield"
+  }
+}

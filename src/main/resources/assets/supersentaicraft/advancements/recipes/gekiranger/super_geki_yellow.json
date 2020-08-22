@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:yellow_super_geki_claw"
+      "supersentaicraft:gekiranger/yellow_super_geki_claw"
     ]
   },
   "criteria": {
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:yellow_super_geki_claw"
+        "recipe": "supersentaicraft:gekiranger/yellow_super_geki_claw"
       }
     }
   },

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "megaranger",
+  "pattern": [
+    "aca",
+    "cbc",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:megaranger_logo"
+    },
+	"b": {
+      "item": "minecraft:diamond"
+    },
+	"c": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:battleraizer"
+  }
+}

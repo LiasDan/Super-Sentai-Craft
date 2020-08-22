@@ -21,7 +21,6 @@ public class Item_ore extends Item implements IHasModel
     public Item_ore(String name)
     {
         super();
-        this.setHasSubtypes(true);
         this.setMaxDamage(0);
         maxStackSize = 64;
         setTranslationKey(name);

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shinken_blue",
+  "ingredients": [
+    {
+	  "item": "supersentaicraft:common_disk"
+	},
+	{
+      "item": "supersentaicraft:ryuu_disk"
+    },
+	{
+      "item": "supersentaicraft:shinkenmaru"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:water_arrow"
+  }
+}

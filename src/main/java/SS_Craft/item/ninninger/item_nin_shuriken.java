@@ -25,7 +25,6 @@ public class item_nin_shuriken extends Item implements IHasModel
 	public item_nin_shuriken(int form,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=form;

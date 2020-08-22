@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "jetman",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:birdonic_wave"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:jetman_torso"
+  }
+}

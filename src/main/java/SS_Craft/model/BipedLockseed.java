@@ -298,13 +298,20 @@ public class BipedLockseed extends ModelBiped
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 					}
 				}
-				else if (stack.getItem() instanceof item_seiza_blaster)
-				{
-					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
-				}
 				else if (stack.getItem() instanceof item_toq_changer)
 				{
 					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_toq_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+				}
+				else if (stack.getItem() instanceof item_seiza_blaster)
+				{
+					if (item_seiza_blaster.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kyu_pegasus")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_seiza_blaster.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
 				}
 				else if (stack.getItem() instanceof item_vs_changer)
 				{

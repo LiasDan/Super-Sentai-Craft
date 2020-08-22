@@ -2,10 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:red_turbo_brace",
-      "supersentaicraft:turbo_laser_sword",
-	  "supersentaicraft:turbo_laser_gun",
-	  "supersentaicraft:gt_sword"
+      "supersentaicraft:turboranger/red_turbo_brace",
+	  "supersentaicraft:turboranger/gt_sword"
     ]
   },
   "criteria": {
@@ -22,25 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:red_turbo_brace"
+        "recipe": "supersentaicraft:turboranger/red_turbo_brace"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:turbo_laser_sword"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:turbo_laser_gun"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gt_sword"
+        "recipe": "supersentaicraft:turboranger/gt_sword"
       }
     }
   },
@@ -48,9 +34,7 @@
     [
       "has_item",
       "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3"
+      "has_the_recipe1"
     ]
   ]
 }

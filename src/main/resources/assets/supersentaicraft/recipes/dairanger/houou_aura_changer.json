@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "houou_ranger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:dairanger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:pink_lailai_jewel"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:houou_aura_changer"
+  }
+}

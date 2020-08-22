@@ -87,7 +87,7 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 						{
 							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_vs_changer)
 							{
-								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.patran_x_changer)
+								if (item_vs_changer.get_core(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
 								{
 									return 1;
 								}
@@ -173,39 +173,18 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 
 		    	        if (itemstack.isEmpty())
 		    	        {
-		    	        	if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gold_enetron)
+		    	        	if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.silver_enetron || playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.stag_animal_disk)
 		    	        	{
-		    	        		playerIn.inventory.offHandInventory.clear();
-		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.beet_morphin_blaster));
-		    	        	}
-		    	        	else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.silver_enetron)
-		    	        	{
-		    	        		playerIn.inventory.offHandInventory.clear();
 		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.stag_morphin_blaster));
 		    	        	}
 		    	        	else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.beetle_animal_disk)
 		    	        	{
-		    	        		playerIn.inventory.offHandInventory.clear();
 		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.beetle_morphin_blaster));
-		    	        	}
-		    	        	else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.stag_animal_disk)
-		    	        	{
-		    	        		playerIn.inventory.offHandInventory.clear();
-		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.stag_morphin_blaster));
 		    	        	}
 		    	        	else
 		    	        	{
 		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.beet_morphin_blaster));
 		    	        	}
-		    	        }
-					}
-					if (this == RiderItems.whale_change_gun)
-					{
-						ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
-
-		    	        if (itemstack.isEmpty())
-		    	        {
-		    	        	 playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.zyuoh_whale_change_gun));
 		    	        }
 					}
 				
@@ -218,12 +197,17 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 					fireball.motionZ = look.z*3;
 					fireball.pickupStatus= EntityArrow.PickupStatus.DISALLOWED;
 
+					if (playerIn.isPotionActive(PotionCore.SS_FIRE_SLASH))
+					{
+						fireball.setFire(100);
+					}
 					if (playerIn.isPotionActive(PotionCore.SS_SHOT_BOOST))
 					{
 						fireball.setKnockbackStrength(3);
 					}
 					
 					int K = (int) this.attackDamage;
+					fireball.setDamage(fireball.getDamage() + (double)K * 0.5D + 0.5D);
 					fireball.setKnockbackStrength(K);
 					
 					worldIn.spawnEntity(fireball);

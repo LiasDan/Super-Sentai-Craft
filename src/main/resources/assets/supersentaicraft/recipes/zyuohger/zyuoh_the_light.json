@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zyuoh_the_world",
+  "pattern": [
+    "aaa",
+    "cbd",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:king_s_credential"
+    },
+	"b": {
+      "item": "supersentaicraft:rhinos_cube"
+    },
+	"c": {
+      "item": "supersentaicraft:crocodile_cube"
+    },
+	"d": {
+      "item": "supersentaicraft:wolf_cube"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:zyuoh_the_light"
+  }
+}

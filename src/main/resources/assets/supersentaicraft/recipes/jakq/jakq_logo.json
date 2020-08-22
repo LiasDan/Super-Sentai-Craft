@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "jakq",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_card"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:jakq_logo"
+  }
+}

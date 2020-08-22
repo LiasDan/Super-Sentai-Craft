@@ -3,5 +3,15 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:items/falcon_summoner"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/falcon_summoner_arrow"
+        }
+    ]
   }
 }

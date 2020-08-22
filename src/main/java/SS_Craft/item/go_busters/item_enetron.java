@@ -24,7 +24,6 @@ public class item_enetron extends Item implements IHasModel
 	public item_enetron(int armor,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=armor;

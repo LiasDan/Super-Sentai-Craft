@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:ichigou_toq_changer",
-      "supersentaicraft:rail_slasher"
+      "supersentaicraft:toqger/ichigou_toq_changer",
+      "supersentaicraft:toqger/rail_slasher"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:ichigou_toq_changer"
+        "recipe": "supersentaicraft:toqger/ichigou_toq_changer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:rail_slasher"
+        "recipe": "supersentaicraft:toqger/rail_slasher"
       }
     }
   },

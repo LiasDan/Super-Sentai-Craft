@@ -2,11 +2,10 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:black_digitaizer",
-      "supersentaicraft:mega_sniper1",
-      "supersentaicraft:mega_rod",
-      "supersentaicraft:rod_sniper",
-      "supersentaicraft:rod_sniper1"
+      "supersentaicraft:megaranger/black_digitaizer",
+      "supersentaicraft:megaranger/mega_rod",
+      "supersentaicraft:megaranger/rod_sniper",
+      "supersentaicraft:megaranger/rod_sniper1"
     ]
   },
   "criteria": {
@@ -23,31 +22,25 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:black_digitaizer"
+        "recipe": "supersentaicraft:megaranger/black_digitaizer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:mega_sniper1"
+        "recipe": "supersentaicraft:megaranger/mega_rod"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:mega_rod"
+        "recipe": "supersentaicraft:megaranger/rod_sniper"
       }
     },
     "has_the_recipe3": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:rod_sniper"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:rod_sniper1"
+        "recipe": "supersentaicraft:megaranger/rod_sniper1"
       }
     }
   },
@@ -57,8 +50,7 @@
       "has_the_recipe",
       "has_the_recipe1",
       "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4"
+      "has_the_recipe3"
     ]
   ]
 }

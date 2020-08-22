@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sun_vulcan",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:sun_vulcan_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:sun_vulcan_torso"
+  }
+}

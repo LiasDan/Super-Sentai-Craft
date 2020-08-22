@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zubaan",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:boukenger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:zubaan_crystal"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:zubaan"
+  }
+}

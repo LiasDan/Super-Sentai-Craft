@@ -24,7 +24,6 @@ public class item_bouken_spirit extends Item implements IHasModel
 	public item_bouken_spirit(int armor,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=armor;

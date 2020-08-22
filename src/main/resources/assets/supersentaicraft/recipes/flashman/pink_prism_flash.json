@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pink_flash",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:flashman_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:pink_flash_prism"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:pink_prism_flash"
+  }
+}

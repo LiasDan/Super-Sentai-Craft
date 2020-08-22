@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "yellow_mask",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:maskman_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:yellow_aura_power"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:yellow_masking_brace"
+  }
+}

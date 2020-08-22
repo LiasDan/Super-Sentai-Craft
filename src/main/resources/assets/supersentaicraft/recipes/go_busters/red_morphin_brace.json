@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "red_buster",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+	  "item": "supersentaicraft:enetron"
+	},
+	"b": {
+      "item": "supersentaicraft:red_enetron"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:red_morphin_brace"
+  }
+}

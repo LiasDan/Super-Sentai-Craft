@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "geki_shark",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:geki_saber_twin_combo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:geki_saber_twin_a"
+  }
+}

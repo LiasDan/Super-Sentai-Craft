@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shinken_red",
+  "ingredients": [
+    {
+	  "item": "supersentaicraft:common_disk"
+	},
+	{
+      "item": "supersentaicraft:shishi_disk"
+    },
+	{
+      "item": "supersentaicraft:shinkenmaru"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:rekka_daizantou"
+  }
+}

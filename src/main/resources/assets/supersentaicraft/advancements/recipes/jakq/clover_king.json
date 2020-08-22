@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:king_powered_capsule",
-      "supersentaicraft:club_megaton"
+      "supersentaicraft:jakq/king_powered_capsule",
+      "supersentaicraft:jakq/club_megaton"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:king_powered_capsule"
+        "recipe": "supersentaicraft:jakq/king_powered_capsule"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:club_megaton"
+        "recipe": "supersentaicraft:jakq/club_megaton"
       }
     }
   },

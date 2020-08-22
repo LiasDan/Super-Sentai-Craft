@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zyuohger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:king_s_credential"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:eagle_cube"
+	  },
+	  {
+	    "item": "supersentaicraft:shark_cube"
+	  },
+	  {
+	    "item": "supersentaicraft:lion_cube"
+	  },
+	  {
+	    "item": "supersentaicraft:elephant_cube"
+	  },
+	  {
+	    "item": "supersentaicraft:tiger_cube"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:zyuoh_buster"
+  }
+}

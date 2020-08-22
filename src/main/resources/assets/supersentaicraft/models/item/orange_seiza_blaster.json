@@ -1,5 +1,5 @@
 {
-  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "_comment": "handheld using MiningMark48's JSON Generator.",
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:items/orange_seiza_blaster"

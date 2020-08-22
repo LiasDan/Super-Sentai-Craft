@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "toq_5gou",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_ressha"
+    },
+	"b": {
+      "item": "supersentaicraft:pink_ressha"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gogou_toq_changer"
+  }
+}

@@ -366,10 +366,86 @@ public class ore_block extends Block implements IHasModel
 			if (rand<220) return RiderItems.condor_cube;
 			return CRYSTAL;
 		}
+		//41 Kyuranger
+		if (CRYSTAL==RiderItems.blank_kyutama)
+		{
+			if (this == RiderItems.kyuranger_ore)
+			{
+				int rand = generator.nextInt(880);
+				if (rand<25) return RiderItems.shishi_kyutama;
+				if (rand<50) return RiderItems.sasori_kyutama;
+				if (rand<75) return RiderItems.ookami_kyutama;
+				if (rand<100) return RiderItems.tenbin_kyutama;
+				if (rand<125) return RiderItems.oushi_kyutama;
+				if (rand<150) return RiderItems.hebitsukai_kyutama;
+				if (rand<175) return RiderItems.chameleon_kyutama;
+				if (rand<200) return RiderItems.washi_kyutama;
+				if (rand<225) return RiderItems.kajiki_kyutama;
+				if (rand<235) return RiderItems.orion_kyutama;
+				if (rand<245) return RiderItems.hebi_kyutama;
+				if (rand<255) return RiderItems.rashinban_kyutama;
+				if (rand<265) return RiderItems.uo_kyutama;
+				if (rand<275) return RiderItems.ohitsuji_kyutama;
+				if (rand<285) return RiderItems.ikkakuju_kyutama;
+				if (rand<295) return RiderItems.yagi_kyutama;
+				if (rand<305) return RiderItems.kujaku_kyutama;
+				if (rand<315) return RiderItems.pegasus_kyutama;
+				if (rand<325) return RiderItems.ite_kyutama;
+				if (rand<335) return RiderItems.cassiopeia_kyutama;
+				if (rand<345) return RiderItems.genbikyo_kyutama;
+				if (rand<355) return RiderItems.kirin_kyutama;
+				if (rand<365) return RiderItems.jyogi_kyutama;
+				if (rand<375) return RiderItems.compass_kyutama;
+				if (rand<385) return RiderItems.ooinu_kyutama;
+				if (rand<395) return RiderItems.koto_kyutama;
+				if (rand<405) return RiderItems.hato_kyutama;
+				if (rand<415) return RiderItems.gyosha_kyutama;
+				if (rand<425) return RiderItems.koinu_kyutama;
+				if (rand<435) return RiderItems.chokokugu_kyutama;
+				if (rand<440) return RiderItems.hikari_kyutama_taiyou;
+				return CRYSTAL;
+			}
+			if (this == RiderItems.kyuranger_nether_ore)
+			{
+				int rand = generator.nextInt(700);
+				if (rand<25) return RiderItems.ryu_kyutama;
+				if (rand<50) return RiderItems.koguma_kyutama;
+				if (rand<60) return RiderItems.tokei_kyutama;
+				if (rand<70) return RiderItems.pump_kyutama;
+				if (rand<80) return RiderItems.bouenkyou_kyutama;
+				if (rand<90) return RiderItems.ooguma_kyutama;
+				if (rand<100) return RiderItems.tate_kyutama;
+				if (rand<110) return RiderItems.mizugame_kyutama;
+				if (rand<120) return RiderItems.kanmuri_kyutama;
+				if (rand<130) return RiderItems.kaminoke_kyutama;
+				if (rand<140) return RiderItems.perseus_kyutama;
+				if (rand<150) return RiderItems.tokage_kyutama;
+				if (rand<160) return RiderItems.ryoken_kyutama;
+				if (rand<170) return RiderItems.tobiuo_kyutama;
+				if (rand<180) return RiderItems.choukokushitsu_kyutama;
+				if (rand<190) return RiderItems.saidan_kyutama;
+				if (rand<200) return RiderItems.sankaku_kyutama;
+				if (rand<210) return RiderItems.hakuchou_kyutama;
+				if (rand<220) return RiderItems.gaka_kyutama;
+				if (rand<230) return RiderItems.cup_kyutama;
+				if (rand<240) return RiderItems.umihebi_kyutama;
+				if (rand<250) return RiderItems.fuuchou_kyutama;
+				if (rand<260) return RiderItems.kojishi_kyutama;
+				if (rand<270) return RiderItems.rokubungi_kyutama;
+				if (rand<280) return RiderItems.tsuru_kyutama;
+				if (rand<290) return RiderItems.ro_kyutama;
+				if (rand<300) return RiderItems.ho_kyutama;
+				if (rand<310) return RiderItems.ryukotsu_kyutama;
+				if (rand<320) return RiderItems.tomo_kyutama;
+				if (rand<325) return RiderItems.hikari_kyutama_tsuki;
+				return CRYSTAL;
+			}
+		}
+		
 		//42-43 Lupinranger VS Patranger
 		if (CRYSTAL==RiderItems.blank_striker)
 		{
-			int rand = generator.nextInt(568);
+			int rand = generator.nextInt(506);
 			if (rand<25) return RiderItems.red_dial_fighter;
 			if (rand<50) return RiderItems.ichigou_trigger_machine;
 			if (rand<75) return RiderItems.blue_dial_fighter;
@@ -380,12 +456,13 @@ public class ore_block extends Block implements IHasModel
 			if (rand<190) return RiderItems.gold_x_train;
 			if (rand<205) return RiderItems.scissor_dial_fighter;
 			if (rand<220) return RiderItems.crane_trigger_machine;
-			if (rand<235) return RiderItems.magic_dial_fighter;
-			if (rand<250) return RiderItems.splash_trigger_machine;
-			if (rand<260) return RiderItems.good_striker;
-			if (rand<270) return RiderItems.jackpot_striker;
-			if (rand<277) return RiderItems.victory_striker;
-			if (rand<284) return RiderItems.siren_striker;
+			if (rand<230) return RiderItems.magic_dial_fighter;
+			if (rand<240) return RiderItems.splash_trigger_machine;
+			if (rand<245) return RiderItems.good_striker;
+			if (rand<250) return RiderItems.jackpot_striker;
+			if (rand<251) return RiderItems.victory_striker;
+			if (rand<252) return RiderItems.siren_striker;
+			if (rand<253) return RiderItems.unfinished_lupin_magnum;
 			return CRYSTAL;
 		}
 		//44 Ryusoulger

@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:rokugou_appli_changer",
-      "supersentaicraft:yudo_breaker"
+      "supersentaicraft:toqger/rokugou_appli_changer",
+      "supersentaicraft:toqger/yudo_breaker"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:rokugou_appli_changer"
+        "recipe": "supersentaicraft:toqger/rokugou_appli_changer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:yudo_breaker"
+        "recipe": "supersentaicraft:toqger/yudo_breaker"
       }
     }
   },

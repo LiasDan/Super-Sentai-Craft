@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "goggle_v",
+  "pattern": [
+    "aba",
+    "aca",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:goggle_v_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:atlantis_ruby"
+	  },
+	  {
+	    "item": "supersentaicraft:angkor_wat_emerald"
+	  },
+	  {
+	    "item": "supersentaicraft:egypt_saphire"
+	  },
+	  {
+	    "item": "supersentaicraft:lemuria_opal"
+	  },
+	  {
+	    "item": "supersentaicraft:mayan_diamond"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:goggle_sabre"
+  }
+}

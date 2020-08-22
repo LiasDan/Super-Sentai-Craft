@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boukenger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:boukenger_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:bouken_red_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:bouken_black_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:bouken_blue_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:bouken_yellow_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:bouken_pink_logo"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:survi_blade"
+  }
+}

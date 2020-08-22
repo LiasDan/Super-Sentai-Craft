@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:yongou_toq_changer",
-      "supersentaicraft:tunnel_axe"
+      "supersentaicraft:toqger/yongou_toq_changer",
+      "supersentaicraft:toqger/tunnel_axe"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:yongou_toq_changer"
+        "recipe": "supersentaicraft:toqger/yongou_toq_changer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:tunnel_axe"
+        "recipe": "supersentaicraft:toqger/tunnel_axe"
       }
     }
   },

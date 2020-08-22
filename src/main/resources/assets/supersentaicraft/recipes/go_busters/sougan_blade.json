@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "go_busters",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": [
+	  {
+		"item": "supersentaicraft:enetron"
+	  },
+	  {
+		"item": "supersentaicraft:blank_animal_disk"
+	  }
+	],
+	"b": [
+	  {
+		"item": "supersentaicraft:red_enetron"
+	  },
+	  {
+		"item": "supersentaicraft:blue_enetron"
+	  },
+	  {
+		"item": "supersentaicraft:yellow_enetron"
+	  },
+	  {
+		"item": "supersentaicraft:cheetah_animal_disk"
+	  },
+	  {
+		"item": "supersentaicraft:gorilla_animal_disk"
+	  },
+	  {
+		"item": "supersentaicraft:rabbit_animal_disk"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:sougan_blade"
+  }
+}

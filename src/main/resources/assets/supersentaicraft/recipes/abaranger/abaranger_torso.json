@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "abaranger",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:abaranger_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:abaranger_torso"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mega_red",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:drill_saber"
+    },
+	{
+      "item": "supersentaicraft:mega_magnum"
+    },
+	{
+      "item": "supersentaicraft:mega_shot"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:drill_sniper"
+  }
+}

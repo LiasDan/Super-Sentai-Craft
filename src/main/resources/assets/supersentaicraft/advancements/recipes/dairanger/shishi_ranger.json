@@ -2,12 +2,9 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:shishi_aura_changer",
-      "supersentaicraft:star_cutter1",
-      "supersentaicraft:star_sword1",
-      "supersentaicraft:dairen_rod_shishi",
-      "supersentaicraft:lion_cudgel",
-      "supersentaicraft:dairinken1"
+      "supersentaicraft:dairanger/shishi_aura_changer",
+      "supersentaicraft:dairanger/dairen_rod_shishi",
+      "supersentaicraft:dairanger/lion_cudgel"
     ]
   },
   "criteria": {
@@ -24,37 +21,19 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:shishi_aura_changer"
+        "recipe": "supersentaicraft:dairanger/shishi_aura_changer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:star_cutter1"
+        "recipe": "supersentaicraft:dairanger/dairen_rod_shishi"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:star_sword1"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dairen_rod_shishi"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:lion_cudgel"
-      }
-    },
-    "has_the_recipe5": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dairinken1"
+        "recipe": "supersentaicraft:dairanger/lion_cudgel"
       }
     }
   },
@@ -63,10 +42,7 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4",
-      "has_the_recipe5"
+      "has_the_recipe2"
     ]
   ]
 }

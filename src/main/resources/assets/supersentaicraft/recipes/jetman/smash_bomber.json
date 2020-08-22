@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "jetman",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:bird_blaster"
+    },
+	{
+      "item": "supersentaicraft:beak_smasher"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:smash_bomber"
+  }
+}

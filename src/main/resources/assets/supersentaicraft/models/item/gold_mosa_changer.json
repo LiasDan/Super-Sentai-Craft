@@ -1,7 +1,7 @@
 {
   "_comment": "Generated using MiningMark48's JSON Generator.",
-  "parent": "item/generated",
+  "parent": "item/handheld",
   "textures": {
-    "layer0": "supersentaicraft:items/mosa_changer"
+    "layer0": "supersentaicraft:items/gold_mosa_changer"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "white_racer",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:carranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:white_racer_badge"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:white_racer_changer"
+  }
+}

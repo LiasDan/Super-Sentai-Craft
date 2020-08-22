@@ -25,7 +25,6 @@ public class item_battleraizer extends Item implements IHasModel
 	public item_battleraizer(String name)
 	{
 		super();
-		setHasSubtypes(true);
 		setMaxDamage(0);
 		maxStackSize = 1;
 	    setTranslationKey(name);

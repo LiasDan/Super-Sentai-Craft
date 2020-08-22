@@ -25,7 +25,6 @@ public class item_mega_disk extends Item implements IHasModel
 	public item_mega_disk(int armor,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=armor;

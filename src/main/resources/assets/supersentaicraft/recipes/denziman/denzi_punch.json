@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "denziman",
+  "pattern": [
+    " a ",
+    "aba",
+	" a "
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:empty_denzi_ring"
+    },
+	"b": [
+	  {
+		"item": "supersentaicraft:red_denzi_gem"
+	  },
+	  {
+		"item": "supersentaicraft:blue_denzi_gem"
+	  },
+	  {
+		"item": "supersentaicraft:yellow_denzi_gem"
+	  },
+	  {
+		"item": "supersentaicraft:green_denzi_gem"
+	  },
+	  {
+		"item": "supersentaicraft:pink_denzi_gem"
+	  }
+	]
+  },
+  "result": {
+    "item": "supersentaicraft:denzi_punch"
+  }
+}

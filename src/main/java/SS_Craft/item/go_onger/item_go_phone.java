@@ -206,6 +206,7 @@ public class item_go_phone extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+										player.fallDistance=0; 
 										
 										if (player.isSneaking())
 										{
@@ -222,6 +223,7 @@ public class item_go_phone extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+										player.fallDistance=0; 
 										
 										if (player.isSneaking())
 										{

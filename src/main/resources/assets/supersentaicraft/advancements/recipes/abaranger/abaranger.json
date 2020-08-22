@@ -2,9 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:abaranger_head",
-      "supersentaicraft:abaranger_torso",
-      "supersentaicraft:abaranger_legs"
+      "supersentaicraft:abaranger/abaranger_head",
+      "supersentaicraft:abaranger/abaranger_torso",
+      "supersentaicraft:abaranger/abaranger_legs",
+      "supersentaicraft:abaranger/aba_laser",
+      "supersentaicraft:abaranger/baku_laser"
     ]
   },
   "criteria": {
@@ -21,19 +23,31 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:abaranger_head"
+        "recipe": "supersentaicraft:abaranger/abaranger_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:abaranger_torso"
+        "recipe": "supersentaicraft:abaranger/abaranger_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:abaranger_legs"
+        "recipe": "supersentaicraft:abaranger/abaranger_legs"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:abaranger/aba_laser"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:abaranger/baku_laser"
       }
     }
   },
@@ -42,7 +56,9 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2"
+      "has_the_recipe2",
+      "has_the_recipe3",
+      "has_the_recipe4"
     ]
   ]
 }

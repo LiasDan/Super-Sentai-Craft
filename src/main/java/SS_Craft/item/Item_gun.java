@@ -18,6 +18,7 @@ import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
+import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.turboranger.item_turbo_brace;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
 import SS_Craft.mobs.Henchmen.entity_ular_captain;
@@ -85,6 +86,94 @@ public class Item_gun extends ItemBow  implements IHasModel
 			@SideOnly(Side.CLIENT)
 	           public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
 	           {
+					if (stack.getItem() == RiderItems.seiza_blaster)
+					{
+						if (entityIn == null)
+						{
+							return 0.0F;
+						}
+						else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
+						{
+							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_seiza_blaster)
+							{
+								if (item_seiza_blaster.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "kyu_ikkakuju_arm")
+									return 11;
+								if (item_seiza_blaster.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "kyu_pegasus")
+									return 12;
+								if (item_seiza_blaster.get_core(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 1)
+								{
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.commander_ryutsueder)
+										return 13;
+								}
+								if (item_seiza_blaster.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "kyu_taiyou_mode")
+									return 14;
+								if (item_seiza_blaster.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "kyu_tsuki_mode")
+									return 15;
+								if (item_seiza_blaster.get_core(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 2)
+								{
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_seiza_blaster)
+										return 16;
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.silver_seiza_blaster)
+										return 17;
+								}
+								if (item_seiza_blaster.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "blank")
+								{		
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_seiza_blaster)
+										return 1;
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.orange_seiza_blaster)
+										return 2;	
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_seiza_blaster)
+										return 3;	
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gold_seiza_blaster)
+										return 4;	
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_seiza_blaster)
+										return 5;	
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.silver_seiza_blaster)
+										return 6;	
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_seiza_blaster)
+										return 7;	
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_seiza_blaster)
+										return 8;	
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_seiza_blaster)
+										return 9;	
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.sky_blue_seiza_blaster)
+										return 10;
+								}
+								
+							}
+							else
+							{
+								return 0;
+							}
+						
+							return 0;
+						}
+					
+						return 0;
+					}
+					if (stack.getItem() == RiderItems.dark_seiza_blaster)
+					{
+						if (entityIn == null)
+						{
+							return 0.0F;
+						}
+						else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
+						{
+							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_seiza_blaster)
+							{
+								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.metal_dark_seiza_blaster)
+									return 1;
+							}
+							else
+							{
+								return 0;
+							}
+						
+							return 0;
+						}
+					
+						return 0;
+					}
 					if (stack.getItem() == RiderItems.vs_changer)
 					{
 						if (entityIn == null)
@@ -137,58 +226,30 @@ public class Item_gun extends ItemBow  implements IHasModel
 					
 						return 0;
 					}
-					if (stack.getItem() == RiderItems.seiza_blaster)
-	        		{
-
-	        			if (entityIn == null)
-		                {
-		                    return 0.0F;
-		                }
-	        			else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
-						{
-							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_seiza_blaster)
-							{
-								if (item_seiza_blaster.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "blank")
-								{	
-									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.orange_seiza_blaster)
-										return 2;
-								}
-								if (item_seiza_blaster.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "kyu_ikkakuju_arm")
-									return 11;
-							}
-							else
-							{
-								return 0;
-							}
-							
-							return 0;
-						}
-						
-						return 0;
-		            }
-	        		if (stack.getItem() == RiderItems.x_changer)
+					if (stack.getItem() == RiderItems.mosa_changer)
 					{
 						if (entityIn == null)
-		                {
-		                    return 0.0F;
-		                }
+						{
+							return 0.0F;
+						}
 						else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 						{
-							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_vs_changer)
+							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_ryusoul_changer)
 							{
-								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.patran_x_changer)
-								{
-									return 1;
-								}
+								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gold_mosa_changer)
+									if (item_ryusoul_changer.get_soul(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+										return 2;
+									else
+										return 1;
 							}
 							else
 							{
 								return 0;
 							}
-							
+						
 							return 0;
 						}
-						
+					
 						return 0;
 					}
 	        		if (stack.getItem() == RiderItems.beast_attack_rod_red || stack.getItem() == RiderItems.beast_attack_rod_blue || stack.getItem() == RiderItems.beast_attack_rod_yellow || stack.getItem() == RiderItems.beast_attack_rod_pink || stack.getItem() == RiderItems.beast_attack_rod_green)
@@ -241,119 +302,6 @@ public class Item_gun extends ItemBow  implements IHasModel
 	 */
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
 	{
-		if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
-		{
-			if (playerIn.getHeldItemMainhand()!=null)
-			{
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_masking_brace)
-			{
-				if (this==RiderItems.laser_magnum_gun)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.laser_magnum_gun, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.laser_magnum_sword));
-					}
-				}
-			}
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_turbo_brace)
-			{
-				if (this==RiderItems.turbo_laser_gun)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.turbo_laser_gun, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.turbo_laser_sword));
-					}
-				}
-			}
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_accel_changer)
-			{
-				if (this==RiderItems.auto_blaster)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.auto_blaster, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.auto_punisher));
-					}
-				}
-				else if (this==RiderItems.auto_punisher)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.auto_punisher, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.auto_blaster));
-					}
-				}
-			}
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_ginga_brace)
-			{
-				if (this==RiderItems.bull_riot_gun)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.bull_riot_gun, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.bull_riot));
-					}
-				}
-			}
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_g_phone)
-			{
-				if (this == RiderItems.gao_mane_buster)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.gao_mane_buster, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.gao_mane_buster_final));
-					}
-				}
-				else if (this == RiderItems.gao_mane_buster_final)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.gao_mane_buster_final, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.gao_mane_buster));
-					}
-				}
-				else if (this == RiderItems.falcon_summoner)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.falcon_summoner, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.falcon_summoner_arrow));
-					}
-				}
-				else if (this == RiderItems.falcon_summoner_arrow)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.falcon_summoner_arrow, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.falcon_summoner));
-					}
-				}
-			}
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_accellular)
-			{
-				if (this==RiderItems.dual_crusher_mixer)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.dual_crusher_mixer, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.dual_crusher_drill));
-					}
-				}
-				else if (this==RiderItems.dual_crusher_drill)
-				{
-					if (playerIn.isSneaking())
-					{
-						playerIn.inventory.clearMatchingItems(RiderItems.dual_crusher_drill, 0, 1, null);
-						playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(RiderItems.dual_crusher_mixer));
-					}
-				}
-			}
-			}
-		}
-		
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
 		boolean flag = true;
 
@@ -402,6 +350,7 @@ public class Item_gun extends ItemBow  implements IHasModel
 					}
 					
 					int K = (int) this.attackDamage;
+					fireball.setDamage(fireball.getDamage() + (double)K * 0.5D + 0.5D);
 					fireball.setKnockbackStrength(K);
 					
 					worldIn.spawnEntity(fireball);

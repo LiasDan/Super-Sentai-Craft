@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mega_black",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:rod_sniper"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:mega_sniper"
+  }
+}

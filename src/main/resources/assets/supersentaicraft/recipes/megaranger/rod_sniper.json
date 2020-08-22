@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mega_black",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:mega_rod"
+    },
+	{
+      "item": "supersentaicraft:mega_magnum"
+    },
+	{
+      "item": "supersentaicraft:mega_shot"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:rod_sniper"
+  }
+}

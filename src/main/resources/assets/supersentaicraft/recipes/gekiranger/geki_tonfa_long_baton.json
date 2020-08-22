@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gekiranger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:geki_tonfa"
+    },
+	{
+      "item": "supersentaicraft:geki_tonfa_baton"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:geki_tonfa_long_baton"
+  }
+}

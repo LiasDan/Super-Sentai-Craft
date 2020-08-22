@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gaoranger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:lion_fang"
+    },
+	{
+      "item": "supersentaicraft:eagle_sword"
+    },
+	{
+      "item": "supersentaicraft:shark_cutter"
+    },
+	{
+      "item": "supersentaicraft:bison_axe"
+    },
+	{
+      "item": "supersentaicraft:tiger_baton"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:evil_crushing_hundred_beast_sword"
+  }
+}

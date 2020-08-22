@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_white",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:beast_king_sword"
+    },
+	{
+      "item": "supersentaicraft:gao_tiger_jewel"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:tiger_beast_king_sword"
+  }
+}

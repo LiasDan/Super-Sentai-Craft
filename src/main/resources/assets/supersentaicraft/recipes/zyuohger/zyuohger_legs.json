@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zyuohger",
+  "pattern": [
+    "aaa",
+    "a a",
+	"a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:king_s_credential"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:zyuohger_legs"
+  }
+}

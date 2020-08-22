@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:midoranger_belt",
-      "supersentaicraft:midomerang"
+      "supersentaicraft:goranger/midoranger_belt",
+      "supersentaicraft:goranger/midomerang"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:midoranger_belt"
+        "recipe": "supersentaicraft:goranger/midoranger_belt"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:midomerang"
+        "recipe": "supersentaicraft:goranger/midomerang"
       }
     }
   },

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vul_shark",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:sun_vulcan_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:vul_shark_medal"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:shark_vulcan_brace"
+  }
+}

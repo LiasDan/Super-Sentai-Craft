@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "go_blue",
+  "pattern": [
+    "aba",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gogo_v_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:go_blue_badge"
+    },
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:v_boomerang_blue"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "red_hawk",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:birdonic_wave"
+    },
+	"b": {
+      "item": "supersentaicraft:hawk_birdonic_wave"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:red_cross_changer"
+  }
+}

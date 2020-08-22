@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "toqger",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_ressha"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:toqger_head"
+  }
+}

@@ -3,5 +3,15 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:items/bull_riot"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/bull_riot_gun"
+        }
+    ]
   }
 }

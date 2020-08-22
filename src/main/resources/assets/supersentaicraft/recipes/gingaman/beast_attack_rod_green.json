@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ginga_green",
+  "pattern": [
+    "aba",
+    "aca",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gingaman_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:green_ginga_medal"
+    },
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:beast_attack_rod_green"
+  }
+}

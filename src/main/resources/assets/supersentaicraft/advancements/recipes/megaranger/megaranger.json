@@ -2,10 +2,12 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:megaranger_head",
-      "supersentaicraft:megaranger_torso",
-      "supersentaicraft:megaranger_legs",
-      "supersentaicraft:battleraizer"
+      "supersentaicraft:megaranger/megaranger_head",
+      "supersentaicraft:megaranger/megaranger_torso",
+      "supersentaicraft:megaranger/megaranger_legs",
+      "supersentaicraft:megaranger/mega_magnum",
+      "supersentaicraft:megaranger/mega_shot",
+      "supersentaicraft:megaranger/battleraizer"
     ]
   },
   "criteria": {
@@ -22,25 +24,37 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:megaranger_head"
+        "recipe": "supersentaicraft:megaranger/megaranger_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:megaranger_torso"
+        "recipe": "supersentaicraft:megaranger/megaranger_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:megaranger_legs"
+        "recipe": "supersentaicraft:megaranger/megaranger_legs"
       }
     },
     "has_the_recipe3": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:battleraizer"
+        "recipe": "supersentaicraft:megaranger/mega_magnum"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:megaranger/mega_shot"
+      }
+    },
+    "has_the_recipe5": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:megaranger/battleraizer"
       }
     }
   },
@@ -50,7 +64,9 @@
       "has_the_recipe",
       "has_the_recipe1",
       "has_the_recipe2",
-      "has_the_recipe3"
+      "has_the_recipe3",
+      "has_the_recipe4",
+      "has_the_recipe5"
     ]
   ]
 }

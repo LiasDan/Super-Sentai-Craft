@@ -2,8 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:elephant_zyuoh_changer",
-      "supersentaicraft:zyuoh_buster3"
+      "supersentaicraft:zyuohger/elephant_zyuoh_changer"
     ]
   },
   "criteria": {
@@ -20,21 +19,14 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:elephant_zyuoh_changer"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:zyuoh_buster3"
+        "recipe": "supersentaicraft:zyuohger/elephant_zyuoh_changer"
       }
     }
   },
   "requirements": [
     [
       "has_item",
-      "has_the_recipe",
-      "has_the_recipe1"
+      "has_the_recipe"
     ]
   ]
 }

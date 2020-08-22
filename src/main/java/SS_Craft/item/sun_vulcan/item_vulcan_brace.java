@@ -144,12 +144,10 @@ public class item_vulcan_brace extends ItemArmor implements IHasModel
 							{
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.sun_vulcan_head)
 								{
-									Potion FLY = Potion.getPotionFromResourceLocation("tokuPotions"+ ":" + "fly");
-									
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.eagle_vulcan_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}

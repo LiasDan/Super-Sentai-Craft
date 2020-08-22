@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "go_onger",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_engine_soul"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:go_onger_torso"
+  }
+}

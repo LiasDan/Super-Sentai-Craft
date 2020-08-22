@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:kenya_battleceiver",
-      "supersentaicraft:kenya_whip"
+      "supersentaicraft:battle_fever/kenya_battleceiver",
+      "supersentaicraft:battle_fever/kenya_whip"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:kenya_battleceiver"
+        "recipe": "supersentaicraft:battle_fever/kenya_battleceiver"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:kenya_whip"
+        "recipe": "supersentaicraft:battle_fever/kenya_whip"
       }
     }
   },

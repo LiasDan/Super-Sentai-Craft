@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blue_turbo",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:turboranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:blue_turbo_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:blue_turbo_brace"
+  }
+}

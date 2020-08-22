@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zyuohger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:king_s_credential"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:zyuohger_logo"
+  }
+}

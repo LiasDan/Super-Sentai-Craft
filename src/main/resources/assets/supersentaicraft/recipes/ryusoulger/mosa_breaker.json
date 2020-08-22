@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ryusoul_gold",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:mosa_changer"
+    },
+	{
+      "item": "supersentaicraft:mosa_blade"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:mosa_breaker"
+  }
+}

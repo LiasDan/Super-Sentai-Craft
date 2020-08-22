@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gao_red",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:gao_mane_buster"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:lion_fang"
+  }
+}

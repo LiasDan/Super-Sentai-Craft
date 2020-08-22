@@ -2,11 +2,10 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:pink_digitaizer",
-      "supersentaicraft:mega_sniper4",
-      "supersentaicraft:mega_capture",
-      "supersentaicraft:capture_sniper",
-      "supersentaicraft:capture_sniper1"
+      "supersentaicraft:megaranger/pink_digitaizer",
+      "supersentaicraft:megaranger/mega_capture",
+      "supersentaicraft:megaranger/capture_sniper",
+      "supersentaicraft:megaranger/capture_sniper1"
     ]
   },
   "criteria": {
@@ -23,31 +22,25 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:pink_digitaizer"
+        "recipe": "supersentaicraft:megaranger/pink_digitaizer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:mega_sniper4"
+        "recipe": "supersentaicraft:megaranger/mega_capture"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:mega_capture"
+        "recipe": "supersentaicraft:megaranger/capture_sniper"
       }
     },
     "has_the_recipe3": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:capture_sniper"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:capture_sniper1"
+        "recipe": "supersentaicraft:megaranger/capture_sniper1"
       }
     }
   },
@@ -57,8 +50,7 @@
       "has_the_recipe",
       "has_the_recipe1",
       "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4"
+      "has_the_recipe3"
     ]
   ]
 }

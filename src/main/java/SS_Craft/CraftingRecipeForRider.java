@@ -14,7 +14,7 @@ public class CraftingRecipeForRider
 	{
 		//GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":"),new ResourceLocation(Refercence.MODID+":"),new ItemStack(RiderItems,1), "", "", "", '', RiderItems);
 		
-		//01 Goranger
+		/*01 Goranger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":goranger_head"), new ResourceLocation(Refercence.MODID+":goranger"),new ItemStack(RiderItems.goranger_head,1), "aaa","a a", 'a', RiderItems.goranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":goranger_torso"), new ResourceLocation(Refercence.MODID+":goranger"),new ItemStack(RiderItems.goranger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.goranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":goranger_legs"), new ResourceLocation(Refercence.MODID+":goranger"),new ItemStack(RiderItems.goranger_legs,1),"aaa", "a a","a a", 'a', RiderItems.goranger_logo);		
@@ -32,8 +32,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":ki_sticker"), new ResourceLocation(Refercence.MODID+":kiranger"),new ItemStack(RiderItems.ki_sticker,1), "aaa", "aba", "aca", 'a', RiderItems.goranger_logo, 'b', RiderItems.ki_star, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":earring_bomb"), new ResourceLocation(Refercence.MODID+":momoranger"),new ItemStack(RiderItems.earring_bomb,1), "aaa", "aba", "aca", 'a', RiderItems.goranger_logo, 'b', RiderItems.momo_star, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":midomerang"), new ResourceLocation(Refercence.MODID+":midoranger"),new ItemStack(RiderItems.midomerang,1), "aaa", "aba", "aca", 'a', RiderItems.goranger_logo, 'b', RiderItems.mido_star, 'c', Items.IRON_SWORD);
+		*/
 		
-		//02 J.A.K.Q.
+		/*02 J.A.K.Q.
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":jakq_head"), new ResourceLocation(Refercence.MODID+":jakq"),new ItemStack(RiderItems.jakq_head,1), "aaa","a a", 'a', RiderItems.blank_card);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":jakq_torso"), new ResourceLocation(Refercence.MODID+":jakq"),new ItemStack(RiderItems.jakq_torso,1),"a a", "aaa","aaa", 'a', RiderItems.blank_card);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":jakq_legs"), new ResourceLocation(Refercence.MODID+":jakq"),new ItemStack(RiderItems.jakq_legs,1),"aaa", "a a","a a", 'a', RiderItems.blank_card);		
@@ -49,8 +50,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":heart_cute"), new ResourceLocation(Refercence.MODID+":heart_queen"),new ItemStack(RiderItems.heart_cute,1), "aaa", "aba", "aca", 'a', RiderItems.blank_card, 'b', RiderItems.queen_card, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":club_megaton"), new ResourceLocation(Refercence.MODID+":clover_king"),new ItemStack(RiderItems.club_megaton,1), "aaa", "aba", "aca", 'a', RiderItems.blank_card, 'b', RiderItems.king_card, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":big_baton"), new ResourceLocation(Refercence.MODID+":big_one"),new ItemStack(RiderItems.big_baton,1), "aaa", "aba", "aca", 'a', RiderItems.blank_card, 'b', RiderItems.big_one_card, 'c', Items.IRON_SWORD);
+		*/
 		
-		//03 Battle Fever
+		/*03 Battle Fever
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":battle_fever_head"), new ResourceLocation(Refercence.MODID+":battle_fever"),new ItemStack(RiderItems.battle_fever_head,1), "aaa","a a", 'a', RiderItems.battle_fever_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":battle_fever_torso"), new ResourceLocation(Refercence.MODID+":battle_fever"),new ItemStack(RiderItems.battle_fever_torso,1),"a a", "aaa","aaa", 'a', RiderItems.battle_fever_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":battle_fever_legs"), new ResourceLocation(Refercence.MODID+":battle_fever"),new ItemStack(RiderItems.battle_fever_legs,1),"aaa", "a a","a a", 'a', RiderItems.battle_fever_logo);		
@@ -66,8 +68,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":france_fencing_sword"), new ResourceLocation(Refercence.MODID+":battle_france"),new ItemStack(RiderItems.france_fencing_sword,1), "aaa", "aba", "aca", 'a', RiderItems.battle_fever_logo, 'b', RiderItems.france_badge, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":kenya_whip"), new ResourceLocation(Refercence.MODID+":battle_kenya"),new ItemStack(RiderItems.kenya_whip,1), "aaa", "aba", "aca", 'a', RiderItems.battle_fever_logo, 'b', RiderItems.kenya_badge, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":america_throwing_knife"), new ResourceLocation(Refercence.MODID+":miss_america"),new ItemStack(RiderItems.america_throwing_knife,1), "aaa", "aba", "aca", 'a', RiderItems.battle_fever_logo, 'b', RiderItems.america_badge, 'c', Items.IRON_SWORD);
+		*/
 		
-		//04 Denziman
+		/*04 Denziman
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":denziman_head"), new ResourceLocation(Refercence.MODID+":denziman"),new ItemStack(RiderItems.denziman_head,1), "aaa","a a", 'a', RiderItems.empty_denzi_ring);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":denziman_torso"), new ResourceLocation(Refercence.MODID+":denziman"),new ItemStack(RiderItems.denziman_torso,1),"a a", "aaa","aaa", 'a', RiderItems.empty_denzi_ring);					
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":denziman_legs"), new ResourceLocation(Refercence.MODID+":denziman"),new ItemStack(RiderItems.denziman_legs,1),"aaa", "a a","a a", 'a', RiderItems.empty_denzi_ring);		
@@ -89,8 +92,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":denzi_punch2"), new ResourceLocation(Refercence.MODID+":denzi_yellow"),new ItemStack(RiderItems.denzi_punch,1), " a ", "aba", " a ", 'a', RiderItems.empty_denzi_ring, 'b', RiderItems.yellow_denzi_gem);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":denzi_punch3"), new ResourceLocation(Refercence.MODID+":denzi_green"),new ItemStack(RiderItems.denzi_punch,1), " a ", "aba", " a ", 'a', RiderItems.empty_denzi_ring, 'b', RiderItems.green_denzi_gem);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":denzi_punch4"), new ResourceLocation(Refercence.MODID+":denzi_pink"),new ItemStack(RiderItems.denzi_punch,1), " a ", "aba", " a ", 'a', RiderItems.empty_denzi_ring, 'b', RiderItems.pink_denzi_gem);
+		*/
 		
-		//05 Sun Vulcan
+		/*05 Sun Vulcan
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":sun_vulcan_head"),new ResourceLocation(Refercence.MODID+":sun_vulcan"),new ItemStack(RiderItems.sun_vulcan_head,1), "aaa", "a a", 'a', RiderItems.sun_vulcan_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":sun_vulcan_torso"),new ResourceLocation(Refercence.MODID+":sun_vulcan"),new ItemStack(RiderItems.sun_vulcan_torso,1), "a a", "aaa", "aaa", 'a', RiderItems.sun_vulcan_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":sun_vulcan_legs"),new ResourceLocation(Refercence.MODID+":sun_vulcan"),new ItemStack(RiderItems.sun_vulcan_legs,1), "aaa", "a a", "a a", 'a', RiderItems.sun_vulcan_logo);
@@ -102,8 +106,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":vulcan_stick"),new ResourceLocation(Refercence.MODID+":sun_vulcan"),new ItemStack(RiderItems.vulcan_stick,1), "aaa", "aba", "aca", 'a', RiderItems.sun_vulcan_logo, 'b', RiderItems.vul_eagle_medal, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":vulcan_stick_1"),new ResourceLocation(Refercence.MODID+":sun_vulcan"),new ItemStack(RiderItems.vulcan_stick,1), "aaa", "aba", "aca", 'a', RiderItems.sun_vulcan_logo, 'b', RiderItems.vul_shark_medal, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":vulcan_stick_2"),new ResourceLocation(Refercence.MODID+":sun_vulcan"),new ItemStack(RiderItems.vulcan_stick,1), "aaa", "aba", "aca", 'a', RiderItems.sun_vulcan_logo, 'b', RiderItems.vul_panther_medal, 'c', Items.IRON_SWORD);
-	
-		//06 Goggle V
+		*/
+		
+		/*06 Goggle V
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":goggle_v_head"),new ResourceLocation(Refercence.MODID+":goggle_v"),new ItemStack(RiderItems.goggle_v_head,1), "aaa", "a a", 'a', RiderItems.goggle_v_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":goggle_v_torso"),new ResourceLocation(Refercence.MODID+":goggle_v"),new ItemStack(RiderItems.goggle_v_torso,1), "a a", "aaa", "aaa", 'a', RiderItems.goggle_v_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":goggle_v_legs"),new ResourceLocation(Refercence.MODID+":goggle_v"),new ItemStack(RiderItems.goggle_v_legs,1), "aaa", "a a", "a a", 'a', RiderItems.goggle_v_logo);
@@ -131,8 +136,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":blue_hammer"),new ResourceLocation(Refercence.MODID+":goggle_blue"),new ItemStack(RiderItems.blue_hammer,1), "aaa", "aba", "aca", 'a', RiderItems.goggle_v_logo, 'b', RiderItems.egypt_saphire, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":yellow_hammer"),new ResourceLocation(Refercence.MODID+":goggle_yellow"),new ItemStack(RiderItems.yellow_hammer,1), "aaa", "aba", "aca", 'a', RiderItems.goggle_v_logo, 'b', RiderItems.lemuria_opal, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":pink_hammer"),new ResourceLocation(Refercence.MODID+":goggle_pink"),new ItemStack(RiderItems.pink_hammer,1), "aaa", "aba", "aca", 'a', RiderItems.goggle_v_logo, 'b', RiderItems.mayan_diamond, 'c', Items.IRON_SWORD);
+		*/		
 		
-		//10 Flashman
+		/*10 Flashman
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":flashman_head"),new ResourceLocation(Refercence.MODID+":flashman"),new ItemStack(RiderItems.flashman_head,1), "aaa", "a a", 'a', RiderItems.flashman_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":flashman_torso"),new ResourceLocation(Refercence.MODID+":flashman"),new ItemStack(RiderItems.flashman_torso,1), "a a", "aaa", "aaa", 'a', RiderItems.flashman_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":flashman_legs"),new ResourceLocation(Refercence.MODID+":flashman"),new ItemStack(RiderItems.flashman_legs,1), "aaa", "a a", "a a", 'a', RiderItems.flashman_logo);
@@ -158,8 +164,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":star_darts"),new ResourceLocation(Refercence.MODID+":blue_flash"),new ItemStack(RiderItems.star_darts,1), "aaa", "aba", "aca", 'a', RiderItems.flashman_logo, 'b', RiderItems.blue_flash_prism, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":prism_batons"),new ResourceLocation(Refercence.MODID+":yellow_flash"),new ItemStack(RiderItems.prism_batons,1), "aaa", "aba", "aca", 'a', RiderItems.flashman_logo, 'b', RiderItems.yellow_flash_prism, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":prism_boots"),new ResourceLocation(Refercence.MODID+":pink_flash"),new ItemStack(RiderItems.prism_boots,1), "aaa", "aba", "aca", 'a', RiderItems.flashman_logo, 'b', RiderItems.pink_flash_prism, 'c', Items.IRON_SWORD);
+		*/
 		
-		//11 Maskman
+		/*11 Maskman
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":maskman_head"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.maskman_head,1), "aaa","a a", 'a', RiderItems.maskman_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":maskman_torso"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.maskman_torso,1),"a a", "aaa","aaa", 'a', RiderItems.maskman_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":maskman_legs"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.maskman_legs,1),"aaa", "a a","a a", 'a', RiderItems.maskman_logo);		
@@ -172,22 +179,18 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":x1_masking_brace"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.x1_masking_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.x1_aura_power);
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_sword"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_sword,1), "aaa", "bca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.red_aura_power, 'c', Items.IRON_SWORD);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_gun"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_gun,1), "aba", "aca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.red_aura_power, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_sword_1"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_sword,1), "aaa", "bca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.black_aura_power, 'c', Items.IRON_SWORD);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_gun_1"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_gun,1), "aba", "aca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.black_aura_power, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_sword_2"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_sword,1), "aaa", "bca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.blue_aura_power, 'c', Items.IRON_SWORD);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_gun_2"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_gun,1), "aba", "aca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.blue_aura_power, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_sword_3"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_sword,1), "aaa", "bca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.yellow_aura_power, 'c', Items.IRON_SWORD);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_gun_3"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_gun,1), "aba", "aca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.yellow_aura_power, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_sword_4"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_sword,1), "aaa", "bca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.pink_aura_power, 'c', Items.IRON_SWORD);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":laser_magnum_gun_4"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.laser_magnum_gun,1), "aba", "aca", "aaa", 'a', RiderItems.maskman_logo, 'b', RiderItems.pink_aura_power, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":masky_blade"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.masky_blade,1), "aaa", "aba", "aca", 'a', RiderItems.maskman_logo, 'b', RiderItems.red_aura_power, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":masky_rod"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.masky_rod,1), "aaa", "aba", "aca", 'a', RiderItems.maskman_logo, 'b', RiderItems.black_aura_power, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":masky_tonfa"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.masky_tonfa,1), "aaa", "aba", "aca", 'a', RiderItems.maskman_logo, 'b', RiderItems.blue_aura_power, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":masky_rotor"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.masky_rotor,1), "aaa", "aba", "aca", 'a', RiderItems.maskman_logo, 'b', RiderItems.yellow_aura_power, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":masky_ribbon"), new ResourceLocation(Refercence.MODID+":maskman"),new ItemStack(RiderItems.masky_ribbon,1), "aaa", "aba", "aca", 'a', RiderItems.maskman_logo, 'b', RiderItems.pink_aura_power, 'c', Items.IRON_SWORD);
+		*/
 		
-		//13 Turboranger
+		/*13 Turboranger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":turboranger_head"),new ResourceLocation(Refercence.MODID+":turboranger"),new ItemStack(RiderItems.turboranger_head,1), "aaa", "a a", 'a', RiderItems.turboranger_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":turboranger_torso"),new ResourceLocation(Refercence.MODID+":turboranger"),new ItemStack(RiderItems.turboranger_torso,1), "a a", "aaa", "aaa", 'a', RiderItems.turboranger_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":turboranger_legs"),new ResourceLocation(Refercence.MODID+":turboranger"),new ItemStack(RiderItems.turboranger_legs,1), "aaa", "a a", "a a", 'a', RiderItems.turboranger_logo);
@@ -217,8 +220,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":turbo_laser_w"), new ResourceLocation(Refercence.MODID+":pink_turbo"),new ItemStack(RiderItems.turbo_laser_w,1), new Ingredient[]{Ingredient.fromItem(RiderItems.turbo_laser_gun),Ingredient.fromItem(RiderItems.w_stick)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":turbo_laser_j1"), new ResourceLocation(Refercence.MODID+":blue_turbo"),new ItemStack(RiderItems.j_gun,1), new Ingredient[]{Ingredient.fromItem(RiderItems.turbo_laser_j.setContainerItem(RiderItems.turbo_laser_gun))});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":turbo_laser_w1"), new ResourceLocation(Refercence.MODID+":pink_turbo"),new ItemStack(RiderItems.w_stick,1), new Ingredient[]{Ingredient.fromItem(RiderItems.turbo_laser_w.setContainerItem(RiderItems.turbo_laser_gun))});
+		*/
 		
-		//15 Jetman
+		/*15 Jetman
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":jetman_head"),new ResourceLocation(Refercence.MODID+":jetman"),new ItemStack(RiderItems.jetman_head,1), "aaa", "a a", 'a', RiderItems.birdonic_wave);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":jetman_torso"),new ResourceLocation(Refercence.MODID+":jetman"),new ItemStack(RiderItems.jetman_torso,1), "a a", "aaa", "aaa", 'a', RiderItems.birdonic_wave);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":jetman_legs"),new ResourceLocation(Refercence.MODID+":jetman"),new ItemStack(RiderItems.jetman_legs,1), "aaa", "a a", "a a", 'a', RiderItems.birdonic_wave);
@@ -248,8 +252,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":smash_bomber"), new ResourceLocation(Refercence.MODID+":jetman"),new ItemStack(RiderItems.smash_bomber,1), new Ingredient[]{Ingredient.fromItem(RiderItems.bird_blaster),Ingredient.fromItem(RiderItems.beak_smasher)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":smash_bomber1"), new ResourceLocation(Refercence.MODID+":jetman"),new ItemStack(RiderItems.bird_blaster,1), new Ingredient[]{Ingredient.fromItem(RiderItems.smash_bomber.setContainerItem(RiderItems.beak_smasher))});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":jet_hand_cannon1"), new ResourceLocation(Refercence.MODID+":jetman"),new ItemStack(RiderItems.bringer_sword,1), new Ingredient[]{Ingredient.fromItem(RiderItems.jet_hand_cannon.setContainerItem(RiderItems.bird_blaster))});
+		*/
 		
-		//17 Dairanger
+		/*17 Dairanger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":dairanger_head"),new ResourceLocation(Refercence.MODID+":dairanger"),new ItemStack(RiderItems.dairanger_head,1), "aaa", "a a", 'a', RiderItems.dairanger_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":dairanger_torso"),new ResourceLocation(Refercence.MODID+":dairanger"),new ItemStack(RiderItems.dairanger_torso,1), "a a", "aaa", "aaa", 'a', RiderItems.dairanger_logo);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":dairanger_legs"),new ResourceLocation(Refercence.MODID+":dairanger"),new ItemStack(RiderItems.dairanger_legs,1), "aaa", "a a", "a a", 'a', RiderItems.dairanger_logo);
@@ -289,8 +294,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":byakkoshinken"), new ResourceLocation(Refercence.MODID+":kiba_ranger"),new ItemStack(RiderItems.byakkoshinken,1), "aaa", "aba", "aca", 'a', RiderItems.dairanger_logo, 'b', RiderItems.white_lailai_jewel, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":dai_buster"), new ResourceLocation(Refercence.MODID+":dairanger"),new ItemStack(RiderItems.dai_buster,1), new Ingredient[]{Ingredient.fromItem(RiderItems.star_sword),Ingredient.fromItem(RiderItems.star_cutter)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":dai_buster1"), new ResourceLocation(Refercence.MODID+":dairanger"),new ItemStack(RiderItems.star_sword,1), new Ingredient[]{Ingredient.fromItem(RiderItems.dai_buster.setContainerItem(RiderItems.star_cutter))});
+		*/
 		
-		//20 Carranger
+		/*20 Carranger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":carranger_head"), new ResourceLocation(Refercence.MODID+":carranger"),new ItemStack(RiderItems.carranger_head,1), "aaa","a a", 'a', RiderItems.carranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":carranger_torso"), new ResourceLocation(Refercence.MODID+":carranger"),new ItemStack(RiderItems.carranger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.carranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":carranger_legs"), new ResourceLocation(Refercence.MODID+":carranger"),new ItemStack(RiderItems.carranger_legs,1),"aaa", "a a","a a", 'a', RiderItems.carranger_logo);		
@@ -326,8 +332,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":navic_blaster"), new ResourceLocation(Refercence.MODID+":carranger"),new ItemStack(RiderItems.navic_blaster,1), new Ingredient[]{Ingredient.fromItem(RiderItems.auto_punisher),Ingredient.fromItem(RiderItems.navic_shot)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":navic_blaster_1"), new ResourceLocation(Refercence.MODID+":carranger"),new ItemStack(RiderItems.auto_punisher,1), new Ingredient[]{Ingredient.fromItem(RiderItems.navic_blaster.setContainerItem(RiderItems.navic_shot))});
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":signaizer"), new ResourceLocation(Refercence.MODID+":carranger"),new ItemStack(RiderItems.signaizer,1), "aaa", "aba", "aca", 'a', RiderItems.carranger_logo, 'b', RiderItems.signalman_badge, 'c', Items.IRON_SWORD);
+		*/
 		
-		//21 Megaranger
+		/*21 Megaranger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":megaranger_head"), new ResourceLocation(Refercence.MODID+":megaranger"),new ItemStack(RiderItems.megaranger_head,1), "aaa","a a", 'a', RiderItems.megaranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":megaranger_torso"), new ResourceLocation(Refercence.MODID+":megaranger"),new ItemStack(RiderItems.megaranger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.megaranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":megaranger_legs"), new ResourceLocation(Refercence.MODID+":megaranger"),new ItemStack(RiderItems.megaranger_legs,1),"aaa", "a a","a a", 'a', RiderItems.megaranger_logo);		
@@ -363,14 +370,14 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":sling_sniper1"), new ResourceLocation(Refercence.MODID+":mega_yellow"),new ItemStack(RiderItems.mega_sling,1), new Ingredient[]{Ingredient.fromItem(RiderItems.sling_sniper.setContainerItem(RiderItems.mega_sniper))});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":capture_sniper1"), new ResourceLocation(Refercence.MODID+":mega_pink"),new ItemStack(RiderItems.mega_capture,1), new Ingredient[]{Ingredient.fromItem(RiderItems.capture_sniper.setContainerItem(RiderItems.mega_sniper))});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":mega_shot"), new ResourceLocation(Refercence.MODID+":megaranger"),new ItemStack(RiderItems.mega_shot,1), new Ingredient[]{Ingredient.fromItem(RiderItems.mega_sniper.setContainerItem(RiderItems.mega_magnum))});
+		*/
 		
-		//22 Gingaman
+		/*22 Gingaman
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gingaman_head"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.gingaman_head,1), "aaa","a a", 'a', RiderItems.gingaman_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gingaman_torso"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.gingaman_torso,1),"a a", "aaa","aaa", 'a', RiderItems.gingaman_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gingaman_legs"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.gingaman_legs,1),"aaa", "a a","a a", 'a', RiderItems.gingaman_logo);		
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":bull_riot"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.bull_riot,1), "aaa", "aba", "aca", 'a', RiderItems.gingaman_logo, 'b', RiderItems.black_knight_core, 'c', Items.IRON_SWORD);
-		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":bull_riot_gun"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.bull_riot_gun,1), "aaa", "aab", "aca", 'a', RiderItems.gingaman_logo, 'b', RiderItems.black_knight_core, 'c', Items.IRON_SWORD);
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":red_ginga_brace"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.red_ginga_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.gingaman_logo, 'b', RiderItems.red_ginga_medal);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":green_ginga_brace"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.green_ginga_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.gingaman_logo, 'b', RiderItems.green_ginga_medal);	
@@ -394,8 +401,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":beast_attack_rod_blue"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.beast_attack_rod_blue,1), "aba", "aca", "aaa", 'a', RiderItems.gingaman_logo, 'b', RiderItems.blue_ginga_medal, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":beast_attack_rod_yellow"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.beast_attack_rod_yellow,1), "aba", "aca", "aaa", 'a', RiderItems.gingaman_logo, 'b', RiderItems.yellow_ginga_medal, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":beast_attack_rod_pink"), new ResourceLocation(Refercence.MODID+":gingaman"),new ItemStack(RiderItems.beast_attack_rod_pink,1), "aba", "aca", "aaa", 'a', RiderItems.gingaman_logo, 'b', RiderItems.pink_ginga_medal, 'c', Items.IRON_SWORD);
+		*/
 		
-		//23 GoGo-V
+		/*23 GoGo-V
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gogo_v_head"), new ResourceLocation(Refercence.MODID+":gogo_v"),new ItemStack(RiderItems.gogo_v_head,1), "aaa","a a", 'a', RiderItems.gogo_v_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gogo_v_torso"), new ResourceLocation(Refercence.MODID+":gogo_v"),new ItemStack(RiderItems.gogo_v_torso,1),"a a", "aaa","aaa", 'a', RiderItems.gogo_v_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gogo_v_legs"), new ResourceLocation(Refercence.MODID+":gogo_v"),new ItemStack(RiderItems.gogo_v_legs,1),"aaa", "a a","a a", 'a', RiderItems.gogo_v_logo);		
@@ -450,8 +458,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zeek_sword"), new ResourceLocation(Refercence.MODID+":gogo_v"),new ItemStack(RiderItems.zeek_sword,1), "aaa", "aba", "aca", 'a', RiderItems.gogo_v_logo, 'b', RiderItems.zeek_fragment, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zeek_shot"), new ResourceLocation(Refercence.MODID+":gogo_v"),new ItemStack(RiderItems.zeek_shot,1), "aaa", "aab", "aca", 'a', RiderItems.gogo_v_logo, 'b', RiderItems.zeek_fragment, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zeek_blaster"), new ResourceLocation(Refercence.MODID+":gogo_v"),new ItemStack(RiderItems.zeek_blaster,1), "aaa", "bbb", "aca", 'a', RiderItems.gogo_v_logo, 'b', RiderItems.zeek_fragment, 'c', Items.IRON_SWORD);
+		*/
 		
-		//25 Gaoranger
+		/*25 Gaoranger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gaoranger_head"), new ResourceLocation(Refercence.MODID+":gaoranger"),new ItemStack(RiderItems.gaoranger_head,1), "aaa","a a", 'a', RiderItems.empty_gao_jewel);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gaoranger_torso"), new ResourceLocation(Refercence.MODID+":gaoranger"),new ItemStack(RiderItems.gaoranger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.empty_gao_jewel);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gaoranger_legs"), new ResourceLocation(Refercence.MODID+":gaoranger"),new ItemStack(RiderItems.gaoranger_legs,1),"aaa", "a a","a a", 'a', RiderItems.empty_gao_jewel);		
@@ -481,8 +490,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":falcon_summoner"), new ResourceLocation(Refercence.MODID+":gaoranger"),new ItemStack(RiderItems.falcon_summoner,1), "aaa", "aab", "aca", 'a', RiderItems.empty_gao_jewel, 'b', RiderItems.gao_lion_jewel, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":falcon_summoner_arrow"), new ResourceLocation(Refercence.MODID+":gaoranger"),new ItemStack(RiderItems.falcon_summoner_arrow,1), new Ingredient[] {Ingredient.fromItem(RiderItems.falcon_summoner)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":falcon_summoner_arrow1"), new ResourceLocation(Refercence.MODID+":gaoranger"),new ItemStack(RiderItems.falcon_summoner,1), new Ingredient[] {Ingredient.fromItem(RiderItems.falcon_summoner_arrow)});
+		*/
 		
-		//27 Abaranger
+		/*27 Abaranger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":abaranger_head"), new ResourceLocation(Refercence.MODID+":abaranger"),new ItemStack(RiderItems.abaranger_head,1), "aaa","a a", 'a', RiderItems.abaranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":abaranger_torso"), new ResourceLocation(Refercence.MODID+":abaranger"),new ItemStack(RiderItems.abaranger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.abaranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":abaranger_legs"), new ResourceLocation(Refercence.MODID+":abaranger"),new ItemStack(RiderItems.abaranger_legs,1),"aaa", "a a","a a", 'a', RiderItems.abaranger_logo);		
@@ -506,8 +516,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":wing_pentact"), new ResourceLocation(Refercence.MODID+":abare_killer"),new ItemStack(RiderItems.wing_pentact,1), "aaa", "aba", "aca", 'a', RiderItems.abaranger_logo, 'b', RiderItems.top_dino_guts, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":sty_riser"), new ResourceLocation(Refercence.MODID+":abare_max"),new ItemStack(RiderItems.sty_riser,1), "aba", "dae", "aca", 'a', RiderItems.abaranger_logo, 'b', RiderItems.max_tyranno_dino_guts, 'c', Items.IRON_SWORD, 'd', RiderItems.tricera_dino_guts, 'e', RiderItems.ptera_dino_guts);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":sty_riser_shield"), new ResourceLocation(Refercence.MODID+":abare_max"),new ItemStack(RiderItems.sty_riser_shield,1), "aca", "dae", "aba", 'a', RiderItems.abaranger_logo, 'b', RiderItems.max_tyranno_dino_guts, 'c', Items.IRON_SWORD, 'd', RiderItems.tricera_dino_guts, 'e', RiderItems.ptera_dino_guts);
+		*/
 		
-		//30 Boukenger
+		/*30 Boukenger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":boukenger_head"), new ResourceLocation(Refercence.MODID+":boukenger"),new ItemStack(RiderItems.boukenger_head,1), "aaa","a a", 'a', RiderItems.boukenger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":boukenger_torso"), new ResourceLocation(Refercence.MODID+":boukenger"),new ItemStack(RiderItems.boukenger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.boukenger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":boukenger_legs"), new ResourceLocation(Refercence.MODID+":boukenger"),new ItemStack(RiderItems.boukenger_legs,1),"aaa", "a a","a a", 'a', RiderItems.boukenger_logo);		
@@ -536,8 +547,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":dual_crusher_drill"), new ResourceLocation(Refercence.MODID+":boukenger"),new ItemStack(RiderItems.dual_crusher_drill,1), "aaa", "aca", "aba", 'a', RiderItems.boukenger_logo, 'b', RiderItems.scale_of_the_salamander, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":dual_crusher_mixer1"), new ResourceLocation(Refercence.MODID+":boukenger"),new ItemStack(RiderItems.dual_crusher_mixer,1), new Ingredient[] {Ingredient.fromItem(RiderItems.dual_crusher_drill)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":dual_crusher_drill1"), new ResourceLocation(Refercence.MODID+":boukenger"),new ItemStack(RiderItems.dual_crusher_drill,1), new Ingredient[] {Ingredient.fromItem(RiderItems.dual_crusher_mixer)});
+		*/
 		
-		//31 Gekiranger
+		/*31 Gekiranger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gekiranger_head"), new ResourceLocation(Refercence.MODID+":gekiranger"),new ItemStack(RiderItems.gekiranger_head,1), "aaa","a a", 'a', RiderItems.gekiranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gekiranger_torso"), new ResourceLocation(Refercence.MODID+":gekiranger"),new ItemStack(RiderItems.gekiranger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.gekiranger_logo);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gekiranger_legs"), new ResourceLocation(Refercence.MODID+":gekiranger"),new ItemStack(RiderItems.gekiranger_legs,1),"aaa", "a a","a a", 'a', RiderItems.gekiranger_logo);		
@@ -568,8 +580,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":geki_saber_twin_combo"), new ResourceLocation(Refercence.MODID+":geki_red"),new ItemStack(RiderItems.geki_saber_twin_combo,1), new Ingredient[] {Ingredient.fromItem(RiderItems.geki_saber_twin_a),Ingredient.fromItem(RiderItems.geki_saber_twin_b)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":geki_saber_twin_combo1"), new ResourceLocation(Refercence.MODID+":geki_red"),new ItemStack(RiderItems.geki_saber_twin_a,1), new Ingredient[] {Ingredient.fromItem(RiderItems.geki_saber_twin_combo.setContainerItem(RiderItems.geki_saber_twin_b))});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":geki_tonfa_long_baton1"), new ResourceLocation(Refercence.MODID+":gekiranger"),new ItemStack(RiderItems.geki_tonfa,1), new Ingredient[] {Ingredient.fromItem(RiderItems.geki_tonfa_long_baton.setContainerItem(RiderItems.geki_tonfa_baton))});
+		*/
 		
-		//32 Go-Onger
+		/*32 Go-Onger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":go_onger_head"), new ResourceLocation(Refercence.MODID+":go_onger"),new ItemStack(RiderItems.go_onger_head,1), "aaa","a a", 'a', RiderItems.blank_engine_soul);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":go_onger_torso"), new ResourceLocation(Refercence.MODID+":go_onger"),new ItemStack(RiderItems.go_onger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.blank_engine_soul);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":go_onger_legs"), new ResourceLocation(Refercence.MODID+":go_onger"),new ItemStack(RiderItems.go_onger_legs,1),"aaa", "a a","a a", 'a', RiderItems.blank_engine_soul);		
@@ -599,8 +612,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":wing_booster2"), new ResourceLocation(Refercence.MODID+":go_on_wings"),new ItemStack(RiderItems.rocket_dagger,1), new Ingredient[] {Ingredient.fromItem(RiderItems.wing_booster)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":kankan_mantan_gun"), new ResourceLocation(Refercence.MODID+":go_onger"),new ItemStack(RiderItems.kankan_mantan_gun,1), new Ingredient[] {Ingredient.fromItem(RiderItems.kankanbar),Ingredient.fromItem(RiderItems.mantan_sword)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":kankan_mantan_gun1"), new ResourceLocation(Refercence.MODID+":go_onger"),new ItemStack(RiderItems.kankanbar,1), new Ingredient[] {Ingredient.fromItem(RiderItems.kankan_mantan_gun.setContainerItem(RiderItems.mantan_sword))});
+		*/
 		
-		//33 Shinkenger
+		/*33 Shinkenger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":shinkenger_head"), new ResourceLocation(Refercence.MODID+":shinkenger"),new ItemStack(RiderItems.shinkenger_head,1), "aaa","a a", 'a', RiderItems.common_disk);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":shinkenger_torso"), new ResourceLocation(Refercence.MODID+":shinkenger"),new ItemStack(RiderItems.shinkenger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.common_disk);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":shinkenger_legs"), new ResourceLocation(Refercence.MODID+":shinkenger"),new ItemStack(RiderItems.shinkenger_legs,1),"aaa", "a a","a a", 'a', RiderItems.common_disk);		
@@ -631,8 +645,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":kyoryumaru_1"), new ResourceLocation(Refercence.MODID+":shinkenger"),new ItemStack(RiderItems.hyper_disk,1), new Ingredient[]{Ingredient.fromItem(RiderItems.kyoryumaru.setContainerItem(RiderItems.shinkenmaru))});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":kyoryumaru_sakanamaru"), new ResourceLocation(Refercence.MODID+":shinkenger"),new ItemStack(RiderItems.kyoryumaru_sakanamaru,1), new Ingredient[]{Ingredient.fromItem(RiderItems.sakanamaru),Ingredient.fromItem(RiderItems.hyper_disk)});
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":kyoryumaru_sakanamaru_1"), new ResourceLocation(Refercence.MODID+":shinkenger"),new ItemStack(RiderItems.hyper_disk,1), new Ingredient[]{Ingredient.fromItem(RiderItems.kyoryumaru_sakanamaru.setContainerItem(RiderItems.sakanamaru))});
+		*/
 
-		//36 Go-Busters
+		/*36 Go-Busters
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":go_busters_head"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.go_busters_head,1), "aaa","a a", 'a', RiderItems.enetron);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":go_busters_torso"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.go_busters_torso,1),"a a", "aaa","aaa", 'a', RiderItems.enetron);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":go_busters_legs"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.go_busters_legs,1),"aaa", "a a","a a", 'a', RiderItems.enetron);		
@@ -648,15 +663,11 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":red_morphin_brace"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.red_morphin_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.enetron, 'b', RiderItems.red_enetron);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":blue_morphin_brace"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.blue_morphin_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.enetron, 'b', RiderItems.blue_enetron);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":yellow_morphin_brace"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.yellow_morphin_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.enetron, 'b', RiderItems.yellow_enetron);
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":beet_morphin_blaster"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.beet_morphin_blaster,1), new Ingredient[]{Ingredient.fromItem(RiderItems.morphin_blaster.setContainerItem(RiderItems.morphin_blaster)),Ingredient.fromItem(RiderItems.gold_enetron)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":stag_morphin_blaster"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.stag_morphin_blaster,1), new Ingredient[]{Ingredient.fromItem(RiderItems.morphin_blaster.setContainerItem(RiderItems.morphin_blaster)),Ingredient.fromItem(RiderItems.silver_enetron)});
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":beet_enter_morphin_blaster"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.beet_enter_morphin_blaster,1), "aba", "aaa", "aaa", 'a', RiderItems.enetron, 'b', RiderItems.gold_enetron);
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":cheetah_morphin_brace"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.cheetah_morphin_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.cheetah_animal_disk);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gorilla_morphin_brace"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.gorilla_morphin_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.gorilla_animal_disk);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":rabbit_morphin_brace"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.rabbit_morphin_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.rabbit_animal_disk);
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":beetle_morphin_blaster"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.beetle_morphin_blaster,1), new Ingredient[]{Ingredient.fromItem(RiderItems.morphin_blaster.setContainerItem(RiderItems.morphin_blaster)),Ingredient.fromItem(RiderItems.beetle_animal_disk)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":stag_morphin_blaster1"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.stag_morphin_blaster,1), new Ingredient[]{Ingredient.fromItem(RiderItems.morphin_blaster.setContainerItem(RiderItems.morphin_blaster)),Ingredient.fromItem(RiderItems.stag_animal_disk)});
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":hippopotamus_morphin_brace"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.hippopotamus_morphin_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.hippopotamus_animal_disk);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":puma_morphin_brace"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.puma_morphin_brace,1), "aaa", "aba", "aaa", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.puma_animal_disk);
 		
@@ -673,15 +684,16 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":sougan_blade4"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.sougan_blade,1), "aaa", "aba", "aca", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.gorilla_animal_disk, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":sougan_blade5"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.sougan_blade,1), "aaa", "aba", "aca", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.rabbit_animal_disk, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":ichigan_buster_special"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.ichigan_buster_special,1), new Ingredient[]{Ingredient.fromItem(RiderItems.ichigan_buster),Ingredient.fromItem(RiderItems.sougan_blade)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":ichigan_buster_special1"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.sougan_blade,1), new Ingredient[]{Ingredient.fromItem(RiderItems.ichigan_buster_special.setContainerItem(RiderItems.ichigan_buster))});
+		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":ichigan_buster_special1"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.sougan_blade,1), new Ingredient[]{Ingredient.fromItem(RiderItems.ichigan_buster_special)});
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":dri_blade"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.dri_blade,1), "aba", "aca", "aaa", 'a', RiderItems.enetron, 'b', RiderItems.gold_enetron, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":dri_blade1"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.dri_blade,1), "aba", "aca", "aaa", 'a', RiderItems.enetron, 'b', RiderItems.silver_enetron, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":dri_blade2"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.dri_blade,1), "aba", "aca", "aaa", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.beetle_animal_disk, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":dri_blade3"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.dri_blade,1), "aba", "aca", "aaa", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.stag_animal_disk, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":lio_attache"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.lio_attache,1), "aaa", "aba", "aca", 'a', RiderItems.enetron, 'b', RiderItems.custom_visor, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":lio_attache1"), new ResourceLocation(Refercence.MODID+":go_busters"),new ItemStack(RiderItems.lio_attache,1), "aaa", "aba", "aca", 'a', RiderItems.blank_animal_disk, 'b', RiderItems.custom_visor, 'c', Items.IRON_SWORD);
+		*/
 		
-		//38 ToQger
+		/*38 ToQger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":toqger_head"), new ResourceLocation(Refercence.MODID+":toqger"),new ItemStack(RiderItems.toqger_head,1), "aaa","a a", 'a', RiderItems.blank_ressha);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":toqger_torso"), new ResourceLocation(Refercence.MODID+":toqger"),new ItemStack(RiderItems.toqger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.blank_ressha);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":toqger_legs"), new ResourceLocation(Refercence.MODID+":toqger"),new ItemStack(RiderItems.toqger_legs,1),"aaa", "a a","a a", 'a', RiderItems.blank_ressha);		
@@ -702,8 +714,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":tekkyou_claw"), new ResourceLocation(Refercence.MODID+":toq_5gou"),new ItemStack(RiderItems.tekkyou_claw,1), "aaa", "aba", "aca", 'a', RiderItems.blank_ressha, 'b', RiderItems.pink_ressha, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":yudo_breaker"), new ResourceLocation(Refercence.MODID+":toq_6gou"),new ItemStack(RiderItems.yudo_breaker,1), "aaa", "aba", "aca", 'a', RiderItems.blank_ressha, 'b', RiderItems.build_ressha, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":daikaiten_cannon"), new ResourceLocation(Refercence.MODID+":hyper_toqger"),new ItemStack(RiderItems.daikaiten_cannon,1), "aaa", "aba", "aca", 'a', RiderItems.blank_ressha, 'b', RiderItems.hyper_ressha, 'c', Items.IRON_SWORD);
+		*/
 		
-		//40 Zyuohger
+		/*40 Zyuohger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zyuohger_head"), new ResourceLocation(Refercence.MODID+":zyuohger"),new ItemStack(RiderItems.zyuohger_head,1), "aaa","a a", 'a', RiderItems.king_s_credential);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zyuohger_torso"), new ResourceLocation(Refercence.MODID+":zyuohger"),new ItemStack(RiderItems.zyuohger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.king_s_credential);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zyuohger_legs"), new ResourceLocation(Refercence.MODID+":zyuohger"),new ItemStack(RiderItems.zyuohger_legs,1),"aaa", "a a","a a", 'a', RiderItems.king_s_credential);		
@@ -730,8 +743,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zyuoh_the_rod"), new ResourceLocation(Refercence.MODID+":zyuoh_the_world"),new ItemStack(RiderItems.zyuoh_the_rod,1), "aaa", "aba", "aca", 'a', RiderItems.king_s_credential, 'b', RiderItems.rhinos_cube, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zyuoh_the_rod1"), new ResourceLocation(Refercence.MODID+":zyuoh_the_world"),new ItemStack(RiderItems.zyuoh_the_rod,1), "aaa", "aba", "aca", 'a', RiderItems.king_s_credential, 'b', RiderItems.crocodile_cube, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":zyuoh_the_rod2"), new ResourceLocation(Refercence.MODID+":zyuoh_the_world"),new ItemStack(RiderItems.zyuoh_the_rod,1), "aaa", "aba", "aca", 'a', RiderItems.king_s_credential, 'b', RiderItems.wolf_cube, 'c', Items.IRON_SWORD);
+		*/
 		
-		//42-43 Lupinranger VS Patranger
+		/*42-43 Lupinranger VS Patranger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":lupat_head"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.lupat_head,1), "aaa","a a", 'a', RiderItems.blank_striker);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":lupat_torso"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.lupat_torso,1),"a a", "aaa","aaa", 'a', RiderItems.blank_striker);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":lupat_legs"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.lupat_legs,1),"aaa", "a a","a a", 'a', RiderItems.blank_striker);
@@ -746,19 +760,9 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":x_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.x_changer,1), "aaa", "aba", "aca", 'a', RiderItems.blank_striker, 'b', RiderItems.silver_x_train, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":x_changer1"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.x_changer,1), "aaa", "aba", "aca", 'a', RiderItems.blank_striker, 'b', RiderItems.gold_x_train, 'c', Items.IRON_SWORD);
 		
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":red_vs_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.red_vs_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.vs_changer.setContainerItem(RiderItems.vs_changer)),Ingredient.fromItem(RiderItems.red_dial_fighter)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":blue_vs_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.blue_vs_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.vs_changer.setContainerItem(RiderItems.vs_changer)),Ingredient.fromItem(RiderItems.blue_dial_fighter)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":yellow_vs_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.yellow_vs_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.vs_changer.setContainerItem(RiderItems.vs_changer)),Ingredient.fromItem(RiderItems.yellow_dial_fighter)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":ichigou_vs_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.ichigou_vs_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.vs_changer.setContainerItem(RiderItems.vs_changer)),Ingredient.fromItem(RiderItems.ichigou_trigger_machine)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":nigou_vs_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.nigou_vs_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.vs_changer.setContainerItem(RiderItems.vs_changer)),Ingredient.fromItem(RiderItems.nigou_trigger_machine)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":sangou_vs_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.sangou_vs_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.vs_changer.setContainerItem(RiderItems.vs_changer)),Ingredient.fromItem(RiderItems.sangou_trigger_machine)});
-		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":ichigou_girl_vs_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.ichigou_girl_vs_changer,1), "aba", "aaa", "aaa", 'a', RiderItems.blank_striker, 'b', RiderItems.ichigou_trigger_machine);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":nigou_girl_vs_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.nigou_girl_vs_changer,1), "aba", "aaa", "aaa", 'a', RiderItems.blank_striker, 'b', RiderItems.nigou_trigger_machine);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":sangou_guy_vs_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.sangou_guy_vs_changer,1), "aba", "aaa", "aaa", 'a', RiderItems.blank_striker, 'b', RiderItems.sangou_trigger_machine);
-		
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":lupin_x_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.lupin_x_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.x_changer.setContainerItem(RiderItems.x_changer)),Ingredient.fromItem(RiderItems.silver_x_train)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":patran_x_changer"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.patran_x_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.x_changer.setContainerItem(RiderItems.x_changer)),Ingredient.fromItem(RiderItems.gold_x_train)});
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":lupin_sword"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.lupin_sword,1), "aaa", "acb", "aaa", 'a', RiderItems.blank_striker, 'b', RiderItems.red_dial_fighter, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":lupin_sword1"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.lupin_sword,1), "aaa", "acb", "aaa", 'a', RiderItems.blank_striker, 'b', RiderItems.blue_dial_fighter, 'c', Items.IRON_SWORD);
@@ -775,15 +779,16 @@ public class CraftingRecipeForRider
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":scissor_shield"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.scissor_shield,1), "aaa", "aba", " a ", 'a', RiderItems.blank_striker, 'b', RiderItems.scissor_dial_fighter);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":blade_boomerang"), new ResourceLocation(Refercence.MODID+":lupat"),new ItemStack(RiderItems.blade_boomerang,1), " aa", "ab ", "a  ", 'a', RiderItems.blank_striker, 'b', RiderItems.scissor_dial_fighter);
+		*/
 		
-		//44 Ryusoulger
+		/*44 Ryusoulger
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":ryusoulger_head"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.ryusoulger_head,1), "aaa","a a", 'a', RiderItems.blank_ryusoul);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":ryusoulger_torso"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.ryusoulger_torso,1),"a a", "aaa","aaa", 'a', RiderItems.blank_ryusoul);		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":ryusoulger_legs"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.ryusoulger_legs,1),"aaa", "a a","a a", 'a', RiderItems.blank_ryusoul);		
 
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":mosa_changer"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.mosa_changer,1), "aaa", "aba", "aca", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.gold_ryusoul, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":mosa_breaker"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.mosa_breaker,1), new Ingredient[]{Ingredient.fromItem(RiderItems.mosa_changer),Ingredient.fromItem(RiderItems.mosa_blade)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":mosa_breaker1"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.mosa_blade,1), new Ingredient[]{Ingredient.fromItem(RiderItems.mosa_breaker.setContainerItem(RiderItems.mosa_changer))});
+		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":mosa_breaker1"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.mosa_blade,1), new Ingredient[]{Ingredient.fromItem(RiderItems.mosa_breaker)});
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gaisoul_ken"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.gaisoul_ken,1), "aaa", "aba", "aca", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.gai_soul, 'c', Items.IRON_SWORD);
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":red_ryusoul_changer"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.red_ryusoul_changer,1), "aaa", "aba", "aaa", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.red_ryusoul);
@@ -791,8 +796,6 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":pink_ryusoul_changer"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.pink_ryusoul_changer,1), "aaa", "aba", "aaa", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.pink_ryusoul);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":green_ryusoul_changer"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.green_ryusoul_changer,1), "aaa", "aba", "aaa", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.green_ryusoul);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":black_ryusoul_changer"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.black_ryusoul_changer,1), "aaa", "aba", "aaa", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.black_ryusoul);
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":gold_mosa_changer"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.gold_mosa_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.mosa_changer.setContainerItem(RiderItems.mosa_changer)),Ingredient.fromItem(RiderItems.gold_ryusoul)});
-		GameRegistry.addShapelessRecipe(new ResourceLocation(Refercence.MODID+":gaisorg_changer"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.gaisorg_changer,1), new Ingredient[]{Ingredient.fromItem(RiderItems.gaisoul_ken.setContainerItem(RiderItems.gaisoul_ken)),Ingredient.fromItem(RiderItems.gai_soul)});
 		
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":ryusoul_ken_red"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.ryusoul_ken,1), "aaa", "aba", "aca", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.red_ryusoul, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":ryusoul_ken_blue"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.ryusoul_ken,1), "aaa", "aba", "aca", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.blue_ryusoul, 'c', Items.IRON_SWORD);
@@ -801,5 +804,8 @@ public class CraftingRecipeForRider
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":ryusoul_ken_black"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.ryusoul_ken,1), "aaa", "aba", "aca", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.black_ryusoul, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":mosa_blade"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.mosa_blade,1), "aaa", "acb", "aaa", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.gold_ryusoul, 'c', Items.IRON_SWORD);
 		GameRegistry.addShapedRecipe(new ResourceLocation(Refercence.MODID+":gaisoul_shield"), new ResourceLocation(Refercence.MODID+":ryusoulger"),new ItemStack(RiderItems.gaisoul_shield,1), "aaa", "acb", "aaa", 'a', RiderItems.blank_ryusoul, 'b', RiderItems.gai_soul, 'c', Items.IRON_SWORD);
+		*/
+		
+		GameRegistry.addSmelting(new ItemStack(RiderItems.argo_kyutama),new ItemStack(RiderItems.houou_kyutama), 1);
 	}
 }

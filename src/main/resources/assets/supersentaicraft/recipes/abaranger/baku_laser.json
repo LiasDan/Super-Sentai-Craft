@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "abaranger",
+  "pattern": [
+    "aba",
+    "aca",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:abaranger_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:tyranno_dino_guts"
+	  },
+	  {
+	    "item": "supersentaicraft:tricera_dino_guts"
+	  },
+	  {
+	    "item": "supersentaicraft:ptera_dino_guts"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:baku_laser"
+  }
+}

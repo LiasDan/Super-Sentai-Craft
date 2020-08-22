@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zeek",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gogo_v_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:zeek_fragment"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:zeek_crystal"
+  }
+}

@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:jack_powered_capsule",
-      "supersentaicraft:dia_sword"
+      "supersentaicraft:jakq/jack_powered_capsule",
+      "supersentaicraft:jakq/dia_sword"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:jack_powered_capsule"
+        "recipe": "supersentaicraft:jakq/jack_powered_capsule"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:dia_sword"
+        "recipe": "supersentaicraft:jakq/dia_sword"
       }
     }
   },

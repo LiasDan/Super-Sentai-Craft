@@ -228,6 +228,14 @@ public class Tabs
 			return new ItemStack(RiderItems.zyuohger_head);
 		}
 	};
+	//41
+	public static CreativeTabs tabKyuranger= new CreativeTabs("tabKyuranger")
+	{
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(RiderItems.kyuranger_head);
+		}
+	};
 	//42-43
 	public static CreativeTabs tabLupat= new CreativeTabs("tabLupat")
 	{
@@ -250,6 +258,14 @@ public class Tabs
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.kawarimono_head);
+		}
+	};
+	//??
+	public static CreativeTabs tabMisc= new CreativeTabs("tabMisc")
+	{
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(RiderItems.hachibungi);
 		}
 	};
 	

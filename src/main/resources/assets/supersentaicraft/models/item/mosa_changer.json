@@ -3,5 +3,21 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:items/mosa_changer"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/gold_mosa_changer"
+        },
+        {
+            "predicate": {
+                "pull": 2
+            },
+            "model": "supersentaicraft:item/mosa_changer_biribiri"
+        }
+    ]
   }
 }

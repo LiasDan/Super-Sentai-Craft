@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_blue",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:beast_king_sword"
+    },
+	{
+      "item": "supersentaicraft:gao_shark_jewel"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:shark_beast_king_sword"
+  }
+}

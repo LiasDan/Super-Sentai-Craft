@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "patran_sangou_guy",
+  "pattern": [
+    "aba",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_striker"
+    },
+	"b": {
+      "item": "supersentaicraft:sangou_trigger_machine"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:sangou_guy_vs_changer"
+  }
+}

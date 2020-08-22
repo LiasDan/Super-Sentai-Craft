@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "denzi_green",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:empty_denzi_ring"
+    },
+	"b": {
+      "item": "supersentaicraft:green_denzi_gem"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:green_denzi_ring"
+  }
+}

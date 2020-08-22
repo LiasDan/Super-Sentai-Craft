@@ -66,6 +66,12 @@ public class model_belt_plus extends ModelBiped
 				height3=2.5f;
 				height4=0.5f;
 			}
+			if(player.isPotionActive(PotionCore.SS_SMALL)){
+				height=-0.5f;
+				height2=-2f;
+				height3=-2.5f;
+				height4=-0.5f;
+			}
 		}	
 		
 

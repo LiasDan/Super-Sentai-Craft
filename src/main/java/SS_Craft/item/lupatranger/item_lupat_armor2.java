@@ -75,15 +75,26 @@ public class item_lupat_armor2 extends ItemArmor  implements IHasModel
 							return Refercence.MODID+":textures/armor/patran_ugou_1.png";
 						}
 					}
+					else if(item_vs_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+"patran_x"+"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+"patran_x"+"_1.png";
+						}
+					}
 					else
 					{
 						if ( slot == EntityEquipmentSlot.LEGS)
 						{
-							return Refercence.MODID+":textures/armor/"+rider +"_2.png";
+							return Refercence.MODID+":textures/armor/"+rider+"_2.png";
 						}
 						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
 						{
-							return Refercence.MODID+":textures/armor/"+rider +"_1.png";
+							return Refercence.MODID+":textures/armor/"+rider+"_1.png";
 						}
 					}
 					

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "carranger",
+  "pattern": [
+    "aba",
+    "aca",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:carranger_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_racer_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_racer_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:green_racer_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_racer_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:pink_racer_badge"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:auto_blaster"
+  }
+}

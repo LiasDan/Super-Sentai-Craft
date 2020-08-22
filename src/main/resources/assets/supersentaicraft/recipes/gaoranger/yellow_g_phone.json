@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gao_yellow",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:empty_gao_jewel"
+    },
+	"b": {
+      "item": "supersentaicraft:gao_eagle_jewel"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:yellow_g_phone"
+  }
+}

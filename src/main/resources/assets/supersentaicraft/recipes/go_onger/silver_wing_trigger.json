@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "go_on_silver",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_engine_soul"
+    },
+	"b": {
+      "item": "supersentaicraft:jetras_soul"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:silver_wing_trigger"
+  }
+}

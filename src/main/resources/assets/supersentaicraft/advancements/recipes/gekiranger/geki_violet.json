@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:gong_changer"
+      "supersentaicraft:gekiranger/gong_changer"
     ]
   },
   "criteria": {
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:gong_changer"
+        "recipe": "supersentaicraft:gekiranger/gong_changer"
       }
     }
   },

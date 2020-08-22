@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gogo_v",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:go_blaster"
+    },
+	{
+      "item": "supersentaicraft:v_mode_brace"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:go_blaster_hyper"
+  }
+}

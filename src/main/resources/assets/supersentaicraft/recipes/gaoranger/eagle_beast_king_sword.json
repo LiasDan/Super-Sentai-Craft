@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_yellow",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:beast_king_sword"
+    },
+	{
+      "item": "supersentaicraft:gao_eagle_jewel"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:eagle_beast_king_sword"
+  }
+}

@@ -2,9 +2,10 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:jakq_head",
-      "supersentaicraft:jakq_torso",
-      "supersentaicraft:jakq_legs"
+      "supersentaicraft:jakq/jakq_head",
+      "supersentaicraft:jakq/jakq_torso",
+      "supersentaicraft:jakq/jakq_legs",
+      "supersentaicraft:jakq/jakq_logo"
     ]
   },
   "criteria": {
@@ -21,19 +22,25 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:jakq_head"
+        "recipe": "supersentaicraft:jakq/jakq_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:jakq_torso"
+        "recipe": "supersentaicraft:jakq/jakq_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:jakq_legs"
+        "recipe": "supersentaicraft:jakq/jakq_legs"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:jakq/jakq_logo"
       }
     }
   },
@@ -42,7 +49,8 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2"
+      "has_the_recipe2",
+      "has_the_recipe3"
     ]
   ]
 }

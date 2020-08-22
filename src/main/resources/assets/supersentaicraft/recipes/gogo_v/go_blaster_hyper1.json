@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gogo_v",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:go_blaster_hyper"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:v_mode_brace"
+  }
+}

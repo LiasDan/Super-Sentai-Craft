@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:gold_wing_trigger"
+      "supersentaicraft:go_onger/gold_wing_trigger"
     ]
   },
   "criteria": {
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:gold_wing_trigger"
+        "recipe": "supersentaicraft:go_onger/gold_wing_trigger"
       }
     }
   },

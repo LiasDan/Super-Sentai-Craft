@@ -2,9 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:jetman_head",
-      "supersentaicraft:jetman_torso",
-      "supersentaicraft:jetman_legs"
+      "supersentaicraft:jetman/jetman_head",
+      "supersentaicraft:jetman/jetman_torso",
+      "supersentaicraft:jetman/jetman_legs",
+      "supersentaicraft:jetman/jetman_logo",
+      "supersentaicraft:jetman/bird_blaster",
+      "supersentaicraft:jetman/bringer_sword",
+      "supersentaicraft:jetman/beak_smasher",
+      "supersentaicraft:jetman/jet_hand_cannon",
+      "supersentaicraft:jetman/jet_hand_cannon1",
+      "supersentaicraft:jetman/smash_bomber",
+      "supersentaicraft:jetman/smash_bomber1"
     ]
   },
   "criteria": {
@@ -21,19 +29,67 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:jetman_head"
+        "recipe": "supersentaicraft:jetman/jetman_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:jetman_torso"
+        "recipe": "supersentaicraft:jetman/jetman_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:jetman_legs"
+        "recipe": "supersentaicraft:jetman/jetman_legs"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:jetman/jetman_logo"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:jetman/bird_blaster"
+      }
+    },
+    "has_the_recipe5": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:jetman/bringer_sword"
+      }
+    },
+    "has_the_recipe6": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:jetman/beak_smasher"
+      }
+    },
+    "has_the_recipe7": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:jetman/jet_hand_cannon"
+      }
+    },
+    "has_the_recipe8": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:jetman/jet_hand_cannon1"
+      }
+    },
+    "has_the_recipe9": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:jetman/smash_bomber"
+      }
+    },
+    "has_the_recipe10": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:jetman/smash_bomber1"
       }
     }
   },
@@ -42,7 +98,15 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2"
+      "has_the_recipe2",
+      "has_the_recipe3",
+      "has_the_recipe4",
+      "has_the_recipe5",
+      "has_the_recipe6",
+      "has_the_recipe7",
+      "has_the_recipe8",
+      "has_the_recipe9",
+      "has_the_recipe10"
     ]
   ]
 }

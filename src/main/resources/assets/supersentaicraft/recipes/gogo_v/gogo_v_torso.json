@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gogo_v",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gogo_v_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gogo_v_torso"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gogo_v",
+  "pattern": [
+    "aca",
+    "cbc",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gogo_v_logo"
+    },
+	"b": {
+      "item": "minecraft:diamond"
+    },
+	"c": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:v_mode_brace"
+  }
+}

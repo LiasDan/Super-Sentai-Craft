@@ -1,0 +1,1092 @@
+effect.fly=Flying
+effect.fire_punch=Fire Punch
+effect.punch_boost=Punch Boost
+effect.big=Big
+effect.slash_boost=Slash Boost
+effect.fire_slash=Fire Slash
+effect.fire_shot=Fire Shot
+effect.shot_boost=Shot Boost
+
+entity.ZoldersMob.name=Zolders
+entity.CrimersMob.name=Crimers
+entity.CutmenMob.name=Cutmen
+entity.DustlersMob.name=Dustlers
+entity.MachinemenMob.name=Machinemen
+entity.SpotmenMob.name=Spotmen
+entity.ZolohsMob.name=Zolohs
+entity.UnglersMob.name=Ungler Soldiers
+entity.UlarsMob.name=Ular Soldiers
+entity.UlarCaptainMob.name=Ular Captain
+entity.GrinamsMob.name=Grinam Soldiers
+entity.CotpotrosMob.name=Cotpotros
+entity.WumpersブルーMob.name=Combatant Wumpers (ブルー)
+entity.WumpersグリーンMob.name=Combatant Wumpers (グリーン)
+entity.WumpersピンクMob.name=Combatant Wumpers (ピンク)
+entity.WumpersホワイトMob.name=Combatant Wumpers (ホワイト)
+entity.KunekunesMob.name=Soldiers Kunekune
+entity.YartotsMob.name=Seamen Yartots
+entity.ImpsMob.name=Familiars Imps
+entity.OrgettesMob.name=Orgettes
+entity.BarmiasブラックMob.name=Barmia Soldiers (ブラック)
+entity.BarmiasホワイトMob.name=Barmia Soldiers (ホワイト)
+entity.KarthsMob.name=Combatant Karths
+entity.RinshisMob.name=Rinshi
+entity.UgatzMob.name=Barbaric Machine Soldiers Ugatz
+entity.NanashisMob.name=Nanashi Company
+entity.BuglarsMob.name=Buglars
+entity.KurosMob.name=Combatant Kuros
+entity.MoebasMob.name=Moeba
+entity.PordermenMob.name=Porderman
+entity.DrunnsMob.name=Drunn Soldiers
+
+//01 Goranger
+itemGroup.tabGoranger=秘密戦隊ゴレンジャー
+
+item.goranger_logo.name=ゴレンジャーロゴ
+tile.goranger_ore.name=ゴレンジャー鉱石
+
+item.goranger_head.name=ゴレンジャーヘルメット
+item.goranger_torso.name=ゴレンジャーチェストプレート
+item.goranger_legs.name=ゴレンジャーレギンス
+
+item.akaranger_belt.name=アカレンジャーベルト
+item.aoranger_belt.name=アオレンジャーベルト
+item.kiranger_belt.name=キレンジャーベルト
+item.momoranger_belt.name=モモレンジャーベルト
+item.midoranger_belt.name=ミドレンジャーベルト
+
+item.aka_star.name=アカスター
+item.ao_star.name=アオスター
+item.ki_star.name=キスター
+item.momo_star.name=モモスター
+item.mido_star.name=ミドスター
+
+item.red_bute.name=レッドビュート
+item.silver_shot.name=シルバーショット
+item.blue_cherry.name=ブルーチェリー
+item.ultra_blue_cherry.name=ウルトラブルーチェリー
+item.ki_sticker.name=キーステッカー
+item.earring_bomb.name=ピアス爆弾
+item.midomerang.name=ミドメラン
+
+//02 JAKQ
+itemGroup.tabJakq=J.A.K.Q. Dengekitai
+
+item.blank_card.name=Blank Card
+tile.jakq_ore.name=J.A.K.Q.鉱石
+
+item.jakq_head.name=J.A.K.Q.ヘルメット
+item.jakq_torso.name=J.A.K.Q.チェストプレート
+item.jakq_legs.name=J.A.K.Q.レギンス
+
+item.ace_powered_capsule.name=Powered Capsule (Spade Ace)
+item.jack_powered_capsule.name=Powered Capsule (Dia Jack)
+item.queen_powered_capsule.name=Powered Capsule (Heart Queen)
+item.king_powered_capsule.name=Powered Capsule (Clover King)
+item.big_one_red_rose.name=レッド Rose (Big One)
+
+item.ace_card.name=Ace Card
+item.jack_card.name=Jack Card
+item.queen_card.name=Queen Card
+item.king_card.name=King Card
+item.big_one_card.name=Big One Card
+
+item.spade_arts.name=Spade Arts
+item.dia_sword.name=Dia Sword
+item.heart_cute.name=Heart Cute
+item.club_megaton.name=Club Megaton
+item.big_baton.name=Big Baton
+
+//03 Battle Fever
+itemGroup.tabBattleFever=Battle Fever J
+
+item.battle_fever_logo.name=Battle Feverロゴ
+tile.battle_fever_ore.name=Battle Fever鉱石
+
+item.battle_fever_head.name=Battle Feverヘルメット
+item.battle_fever_torso.name=Battle Feverチェストプレート
+item.battle_fever_legs.name=Battle Feverレギンス
+
+item.japan_battleceiver.name=Battleceiver (Battle Japan)
+item.cossack_battleceiver.name=Battleceiver (Battle Cossack)
+item.france_battleceiver.name=Battleceiver (Battle France)
+item.kenya_battleceiver.name=Battleceiver (Battle Kenya)
+item.america_battleceiver.name=Battleceiver (Miss America)
+
+item.japan_badge.name=Japan Badge
+item.cossack_badge.name=Cossack Badge
+item.france_badge.name=France Badge
+item.kenya_badge.name=Kenya Badge
+item.america_badge.name=America Badge
+
+item.japan_spear.name=Spear (Battle Japan)
+item.cossack_sai.name=Sai (Battle Cossack)
+item.france_fencing_sword.name=Fencing Sword (Battle France)
+item.kenya_whip.name=Whip (Battle Kenya)
+item.america_throwing_knife.name=Throwing Knife (Miss America)
+
+//04 Denziman
+itemGroup.tabDenziman=Denshi Sentai Denziman
+
+item.empty_denzi_ring.name=Empty Denzi Ring
+tile.denziman_ore.name=Denziman鉱石
+
+item.denziman_head.name=Denzimanヘルメット
+item.denziman_torso.name=Denzimanチェストプレート
+item.denziman_legs.name=Denzimanレギンス
+
+item.red_denzi_ring.name=Denzi Ring (Denziレッド)
+item.blue_denzi_ring.name=Denzi Ring (Denziブルー)
+item.yellow_denzi_ring.name=Denzi Ring (Denziイエロー)
+item.green_denzi_ring.name=Denzi Ring (Denziグリーン)
+item.pink_denzi_ring.name=Denzi Ring (Denziピンク)
+
+item.red_denzi_gem.name=レッド Denzi Gem
+item.blue_denzi_gem.name=ブルー Denzi Gem
+item.yellow_denzi_gem.name=イエロー Denzi Gem
+item.green_denzi_gem.name=グリーン Denzi Gem
+item.pink_denzi_gem.name=ピンク Denzi Gem
+
+item.red_denzi_stick.name=Denzi Stick (Denziレッド)
+item.blue_denzi_stick.name=Denzi Stick (Denziブルー)
+item.yellow_denzi_stick.name=Denzi Stick (Denziイエロー)
+item.green_denzi_stick.name=Denzi Stick (Denziグリーン)
+item.pink_denzi_stick.name=Denzi Stick (Denziピンク)
+item.denzi_punch.name=Denzi Punch
+
+//05 Sun Vulcan
+itemGroup.tabSunVulcan=Taiyo Sentai Sun Vulcan
+
+item.sun_vulcan_logo.name=Sun Vulcanロゴ
+tile.sun_vulcan_ore.name=Sun Vulcan鉱石
+
+item.sun_vulcan_head.name=Sun Vulcanヘルメット
+item.sun_vulcan_torso.name=Sun Vulcanチェストプレート
+item.sun_vulcan_legs.name=Sun Vulcanレギンス
+
+item.eagle_vulcan_brace.name=Vulcan Brace (VulEagle)
+item.shark_vulcan_brace.name=Vulcan Brace (VulShark)
+item.panther_vulcan_brace.name=Vulcan Brace (VulPanther)
+
+item.vul_eagle_medal.name=VulEagle Medal
+item.vul_shark_medal.name=VulShark Medal
+item.vul_panther_medal.name=VulPanther Medal
+
+item.vulcan_stick.name=Vulcan Stick
+item.vulcan_stick_eagle.name=Vulcan Stick (VulEagle)
+
+//06 Goggle V
+itemGroup.tabGoggleV=Dai Sentai Goggle V
+
+item.goggle_v_logo.name=Goggle Vロゴ
+tile.goggle_v_ore.name=Goggle V鉱石
+
+item.goggle_v_head.name=Goggle Vヘルメット
+item.goggle_v_torso.name=Goggle Vチェストプレート
+item.goggle_v_legs.name=Goggle Vレギンス
+
+item.red_goggle_brace.name=Goggle Brace (Goggleレッド)
+item.black_goggle_brace.name=Goggle Brace (Goggleブラック)
+item.blue_goggle_brace.name=Goggle Brace (Goggleブルー)
+item.yellow_goggle_brace.name=Goggle Brace (Goggleイエロー)
+item.pink_goggle_brace.name=Goggle Brace (Goggleピンク)
+
+item.atlantis_ruby.name=Atlantis Ruby
+item.angkor_wat_emerald.name=Angkor Wat Emerald
+item.egypt_saphire.name=Egypt Sapphire
+item.lemuria_opal.name=Lemuria Opal
+item.mayan_diamond.name=Mayan Diamond
+
+item.goggle_sabre.name=Goggle Sabre
+item.goggle_golden_spear.name=Goggle Golden Spear
+item.red_hammer.name=レッド Hammer
+item.black_club.name=ブラック Club
+item.black_emerald_nunchuck.name=ブラック Emerald Nunchuck
+item.black_hammer.name=ブラック Hammer
+item.blue_hammer.name=ブルー Hammer
+item.yellow_hammer.name=イエロー Hammer
+item.pink_hammer.name=ピンク Hammer
+
+//10 Flashman
+itemGroup.tabFlashman=Choushinsei Flashman
+
+item.flashman_logo.name=Flashmanロゴ
+tile.flashman_ore.name=Flashman鉱石
+
+item.flashman_head.name=Flashmanヘルメット
+item.flashman_torso.name=Flashmanチェストプレート
+item.flashman_legs.name=Flashmanレギンス
+
+item.red_prism_flash.name=Prism Flash (レッド Flash)
+item.green_prism_flash.name=Prism Flash (グリーン Flash)
+item.blue_prism_flash.name=Prism Flash (ブルー Flash)
+item.yellow_prism_flash.name=Prism Flash (イエロー Flash)
+item.pink_prism_flash.name=Prism Flash (ピンク Flash)
+
+item.red_flash_prism.name=レッド Flash Prism
+item.green_flash_prism.name=グリーン Flash Prism
+item.blue_flash_prism.name=ブルー Flash Prism
+item.yellow_flash_prism.name=イエロー Flash Prism
+item.pink_flash_prism.name=ピンク Flash Prism
+
+item.prism_shooter.name=Prism Shooter
+item.prism_shooter_shield.name=Prism Shooter (Shield)
+item.prism_holy_sword.name=Prism Holy Sword
+item.prism_kaizer.name=Prism Kaizer
+item.star_darts.name=Star Darts
+item.prism_batons.name=Prism Batons
+item.prism_boots.name=Prism Boots
+
+//11 Maskman
+itemGroup.tabMaskman=光戦隊マスクマン
+
+item.maskman_logo.name=マスクマンロゴ
+tile.maskman_ore.name=マスクマン鉱石
+
+item.maskman_head.name=マスクマンヘルメット
+item.maskman_torso.name=マスクマンチェストプレート
+item.maskman_legs.name=マスクマンレギンス
+
+item.red_masking_brace.name=マスキングブレス(レッドマスク)
+item.black_masking_brace.name=マスキングブレス(ブラックマスク)
+item.blue_masking_brace.name=マスキングブレス(ブルーマスク)
+item.yellow_masking_brace.name=マスキングブレス(イエローマスク)
+item.pink_masking_brace.name=マスキングブレス(ピンクマスク)
+item.x1_masking_brace.name=マスキングブレス(X1マスク)
+
+item.red_aura_power.name=レッドオーラパワー 
+item.black_aura_power.name=ブラックオーラパワー 
+item.blue_aura_power.name=ブルーオーラパワー 
+item.yellow_aura_power.name=イエローオーラパワー 
+item.pink_aura_power.name=ピンクオーラパワー 
+item.x1_aura_power.name=X1オーラパワー 
+
+item.laser_magnum_sword.name=レーザーマグナム
+item.masky_blade.name=マスキーブレード
+item.masky_rod.name=マスキーロッド
+item.masky_tonfa.name=マスキートンファー
+item.masky_rotor.name=マスキーローター
+item.masky_ribbon.name=マスキーリボン
+
+//13 Turboranger
+itemGroup.tabTurboranger=Kousoku Sentai Turboranger
+
+item.turboranger_logo.name=Turborangerロゴ
+tile.turboranger_ore.name=Turboranger鉱石
+
+item.turboranger_head.name=Turborangerヘルメット
+item.turboranger_torso.name=Turborangerチェストプレート
+item.turboranger_legs.name=Turborangerレギンス
+
+item.red_turbo_brace.name=Turbo Brace (レッド Turbo)
+item.black_turbo_brace.name=Turbo Brace (ブラック Turbo)
+item.blue_turbo_brace.name=Turbo Brace (ブルー Turbo)
+item.yellow_turbo_brace.name=Turbo Brace (イエロー Turbo)
+item.pink_turbo_brace.name=Turbo Brace (ピンク Turbo)
+
+item.red_turbo_logo.name=レッド Turboロゴ
+item.black_turbo_logo.name=ブラック Turboロゴ
+item.blue_turbo_logo.name=ブルー Turboロゴ
+item.yellow_turbo_logo.name=イエロー Turboロゴ
+item.pink_turbo_logo.name=ピンク Turboロゴ
+
+item.turbo_laser_sword.name=Turbo Laser (Sword)
+item.turbo_laser_gun.name=Turbo Laser (Gun)
+item.gt_sword.name=GT Sword
+item.t_hammer.name=T Hammer
+item.j_gun.name=J Gun
+item.b_bowgun.name=B Bowgun
+item.w_stick.name=W Stick
+item.turbo_laser_j.name=Turbo Laser (J Gun Combo)
+item.turbo_laser_w.name=Turbo Laser (W Stick Combo)
+
+//15 Jetman
+itemGroup.tabJetman=Choujin Sentai Jetman
+
+item.birdonic_wave.name=Birdonic Wave
+tile.jetman_ore.name=Jetman鉱石
+
+item.jetman_head.name=Jetmanヘルメット
+item.jetman_torso.name=Jetmanチェストプレート
+item.jetman_legs.name=Jetmanレギンス
+
+item.red_cross_changer.name=Cross Changer (レッド Hawk)
+item.black_cross_changer.name=Cross Changer (ブラック Condor)
+item.yellow_cross_changer.name=Cross Changer (イエロー Owl)
+item.white_cross_changer.name=Cross Changer (ホワイト Swan)
+item.blue_cross_changer.name=Cross Changer (ブルー Swallow)
+
+item.hawk_birdonic_wave.name=Hawk Birdonic Wave
+item.condor_birdonic_wave.name=CondorBirdonic Wave
+item.owl_birdonic_wave.name=Owl Birdonic Wave
+item.swan_birdonic_wave.name=Swan Birdonic Wave
+item.swallow_birdonic_wave.name=Swallow Birdonic Wave
+
+item.bird_blaster.name=Bird Blaster
+item.bringer_sword.name=Bringer Sword
+item.jet_hand_cannon.name=Jet Hand Cannon
+item.beak_smasher.name=Beak Smasher
+item.smash_bomber.name=Smash Bomber
+
+//17 Dairanger
+itemGroup.tabDairanger=Gosei Sentai Dairanger
+
+item.dairanger_logo.name=Dairangerロゴ
+tile.dairanger_ore.name=Dairanger鉱石
+
+item.dairanger_head.name=Dairangerヘルメット
+item.dairanger_torso.name=Dairangerチェストプレート
+item.dairanger_legs.name=Dairangerレギンス
+
+item.ryuu_aura_changer.name=Aura Changer (RyuuRanger)
+item.shishi_aura_changer.name=Aura Changer (ShishiRanger)
+item.tenma_aura_changer.name=Aura Changer (TenmaRanger)
+item.kirin_aura_changer.name=Aura Changer (KirinRanger)
+item.houou_aura_changer.name=Aura Changer (HououRanger)
+item.kiba_changer.name=Kiba Changer (KibaRanger)
+
+item.red_lailai_jewel.name=レッド Lai-Lai Jewel
+item.green_lailai_jewel.name=グリーン Lai-Lai Jewel
+item.blue_lailai_jewel.name=ブルー Lai-Lai Jewel
+item.yellow_lailai_jewel.name=イエロー Lai-Lai Jewel
+item.pink_lailai_jewel.name=ピンク Lai-Lai Jewel
+item.white_lailai_jewel.name=ホワイト Lai-Lai Jewel
+
+item.star_cutter.name=Star Cutter
+item.star_sword.name=Star Sword
+item.dai_buster.name=Dai Buster
+item.dairen_rod_ryuu.name=Dairen Rod (RyuuRanger)
+item.dairen_rod_shishi.name=Dairen Rod (ShishiRanger)
+item.dairen_rod_tenma.name=Dairen Rod (TenmaRanger)
+item.dairen_rod_kirin.name=Dairen Rod (KirinRanger)
+item.dairen_rod_houou.name=Dairen Rod (HououRanger)
+item.dragon_sword.name=Dragon Sword
+item.lion_cudgel.name=Lion Cudgel
+item.pegasus_nunchuck.name=Pegasus Nunchuck
+item.kirin_9_part_whip.name=Kirin 9-Part Whip
+item.phoenix_spear.name=Phoenix Spear
+item.dairinken.name=Dairinken
+item.byakkoshinken.name=Byakkoshinken
+
+//20 Carranger
+itemGroup.tabCarranger=Gekisou Sentai Carranger
+
+item.carranger_logo.name=Carrangerロゴ
+tile.carranger_ore.name=Carranger鉱石
+
+item.carranger_head.name=Carrangerヘルメット
+item.carranger_torso.name=Carrangerチェストプレート
+item.carranger_legs.name=Carrangerレギンス
+
+item.red_accel_changer.name=Accel Changer (レッド Racer)
+item.blue_accel_changer.name=Accel Changer (ブルー Racer)
+item.green_accel_changer.name=Accel Changer (グリーン Racer)
+item.yellow_accel_changer.name=Accel Changer (イエロー Racer)
+item.pink_accel_changer.name=Accel Changer (ピンク Racer)
+item.signal_whistle.name=Signal Whistle (Signalman)
+item.white_racer_changer.name=ホワイト Racer Changer
+
+item.red_racer_badge.name=レッド Racer Badge
+item.blue_racer_badge.name=ブルー Racer Badge
+item.green_racer_badge.name=グリーン Racer Badge
+item.yellow_racer_badge.name=イエロー Racer Badge
+item.pink_racer_badge.name=ピンク Racer Badge
+item.white_racer_badge.name=ホワイト Racer Badge
+item.signalman_badge.name=Signalman Badge
+
+item.auto_blaster.name=Auto Blaster
+item.auto_punisher.name=Auto Punisher
+item.vi_blade.name=ViBlade
+item.fender_sword.name=Fender Sword
+item.muffler_gun.name=Muffler Gun
+item.engine_cannon.name=Engine Cannon
+item.side_knuckle.name=Side Knuckle
+item.bumper_bow.name=Bumper Bow
+item.navic_shot.name=Navic Shot
+item.navic_blaster.name=Navic Blaster
+item.signaizer.name=Signaizer
+
+//21 Megaranger
+itemGroup.tabMegaranger=Denji Sentai Megaranger
+
+item.megaranger_logo.name=Megarangerロゴ
+tile.megaranger_ore.name=Megaranger鉱石
+
+item.megaranger_head.name=Megarangerヘルメット
+item.megaranger_torso.name=Megarangerチェストプレート
+item.megaranger_legs.name=Megarangerレギンス
+
+item.red_digitaizer.name=Digitaizer (Megaレッド)
+item.black_digitaizer.name=Digitaizer (Megaブラック)
+item.blue_digitaizer.name=Digitaizer (Megaブルー)
+item.yellow_digitaizer.name=Digitaizer (Megaイエロー)
+item.pink_digitaizer.name=Digitaizer (Megaピンク)
+item.keitaizer.name=Keitaizer (MegaSilver)
+
+item.mega_red_disk.name=Megaレッド ディスク
+item.mega_black_disk.name=Megaブラック ディスク
+item.mega_blue_disk.name=Megaブルー ディスク
+item.mega_yellow_disk.name=Megaイエロー ディスク
+item.mega_pink_disk.name=Megaピンク ディスク
+item.mega_silver_disk.name=MegaSilver ディスク
+item.mega_tector_disk.name=Mega Tector ディスク
+item.battleraizer.name=Battleraizer
+
+item.mega_magnum.name=Mega Magnum
+item.mega_shot.name=Mega Shot
+item.mega_sniper.name=Mega Sniper
+item.drill_saber.name=Drill Saber
+item.mega_rod.name=MegaRod
+item.mega_tomahawk.name=MegaTomahawk
+item.mega_sling.name=MegaSling
+item.mega_capture.name=MegaCapture
+item.silver_blazer.name=Silver Blazer
+item.drill_sniper.name=Drill Sniper
+item.rod_sniper.name=Rod Sniper
+item.tomahawk_sniper.name=Tomahawk Sniper
+item.sling_sniper.name=Sling Sniper
+item.capture_sniper.name=Capture Sniper
+
+//22 Gingaman
+itemGroup.tabGingaman=星獣戦隊ギンガマン
+
+item.gingaman_logo.name=ギンガマンロゴ
+tile.gingaman_ore.name=ギンガマン鉱石
+
+item.gingaman_head.name=ギンガマンヘルメット
+item.gingaman_torso.name=ギンガマンチェストプレート
+item.gingaman_legs.name=ギンガマンレギンス
+
+item.red_ginga_brace.name=ギンガブレス(ギンガレッド)
+item.green_ginga_brace.name=ギンガブレス(ギンガグリーン)
+item.blue_ginga_brace.name=ギンガブレス(ギンガブルー)
+item.yellow_ginga_brace.name=ギンガブレス(ギンガイエロー)
+item.pink_ginga_brace.name=ギンガブレス(ギンガピンク)
+item.black_knight_bull_riot.name=ブルライアット(黒騎士)
+
+item.red_ginga_medal.name=レッドギンガメダル
+item.green_ginga_medal.name=グリーンギンガメダル
+item.blue_ginga_medal.name=ブルーギンガメダル
+item.yellow_ginga_medal.name=イエローギンガメダル
+item.pink_ginga_medal.name=ピンクギンガメダル
+item.lights_of_ginga.name=ギンガの光
+item.black_knight_core.name=黒騎士コア
+
+item.starbeast_sword_red.name=星獣剣(ギンガレッド)
+item.starbeast_sword_green.name=星獣剣(ギンガグリーン)
+item.starbeast_sword_blue.name=星獣剣(ギンガブルー)
+item.starbeast_sword_yellow.name=星獣剣(ギンガイエロー)
+item.starbeast_sword_pink.name=星獣剣(ギンガピンク)
+item.kiba_cutter.name=キバカッター
+item.kiba_shot.name=キバショット
+item.kiba_claw.name=キバクロー
+item.kiba_knife.name=キバナイフ
+item.kiba_arrow.name=キバアロー
+item.beast_attack_rod_red.name=獣撃棒(ギンガレッド)
+item.beast_attack_rod_green.name=獣撃棒(ギンガグリーン)
+item.beast_attack_rod_blue.name=獣撃棒(ギンガブルー)
+item.beast_attack_rod_yellow.name=獣撃棒(ギンガイエロー)
+item.beast_attack_rod_pink.name=獣撃棒(ギンガピンク)
+item.bull_riot.name=ブルライアット
+
+//23 GoGo-V
+itemGroup.tabGogoV=Kyukyu Sentai GoGo-V
+
+item.gogo_v_logo.name=GoGo-Vロゴ
+tile.gogo_v_ore.name=GoGo-V鉱石
+
+item.gogo_v_head.name=GoGo-Vヘルメット
+item.gogo_v_torso.name=GoGo-Vチェストプレート
+item.gogo_v_legs.name=GoGo-Vレギンス
+
+item.red_gogo_brace.name=GoGo Brace (Goレッド)
+item.blue_gogo_brace.name=GoGo Brace (Goブルー)
+item.green_gogo_brace.name=GoGo Brace (Goグリーン)
+item.yellow_gogo_brace.name=GoGo Brace (Goイエロー)
+item.pink_gogo_brace.name=GoGo Brace (Goピンク)
+item.red_kyoko_gogo_brace.name=GoGo Brace (Goレッド Kyoko's Dream)
+item.zeek_crystal.name=Zeek Crystal (Beast-Demon Hunter Zeek)
+item.jeanne_crystal.name=Zeek Crystal (Zeek-Jeanne)
+
+item.go_red_badge.name=Goレッド Badge
+item.go_blue_badge.name=Goブルー Badge
+item.go_green_badge.name=Goグリーン Badge
+item.go_yellow_badge.name=Goイエロー Badge
+item.go_pink_badge.name=Goピンク Badge
+item.zeek_fragment.name=Zeek Crystal's Fragment
+
+item.v_mode_brace.name=V-Mode Brace
+
+item.laser_grip_red.name=Laser Grip (Goレッド)
+item.laser_grip_blue.name=Laser Grip (Goブルー)
+item.laser_grip_green.name=Laser Grip (Goグリーン)
+item.laser_grip_yellow.name=Laser Grip (Goイエロー)
+item.laser_grip_pink.name=Laser Grip (Goピンク)
+item.five_laser_red.name=Five Laser (Goレッド)
+item.five_laser_blue.name=Five Laser (Goブルー)
+item.five_laser_green.name=Five Laser (Goグリーン)
+item.five_laser_yellow.name=Five Laser (Goイエロー)
+item.five_laser_pink.name=Five Laser (Goピンク)
+item.v_boomerang_red.name=V-Boomerang (Goレッド)
+item.v_boomerang_blue.name=V-Boomerang (Goブルー)
+item.v_boomerang_green.name=V-Boomerang (Goグリーン)
+item.v_boomerang_yellow.name=V-Boomerang (Goイエロー)
+item.v_boomerang_pink.name=V-Boomerang (Goピンク)
+item.v_lancer_red.name=V-Lancer (Goレッド)
+item.v_lancer_blue.name=V-Lancer (Goブルー)
+item.v_lancer_green.name=V-Lancer (Goグリーン)
+item.v_lancer_yellow.name=V-Lancer (Goイエロー)
+item.v_lancer_pink.name=V-Lancer (Goピンク)
+item.v_machine_gun_red.name=V-Machine Gun (Goレッド)
+item.v_machine_gun_blue.name=V-Machine Gun (Goブルー)
+item.v_machine_gun_green.name=V-Machine Gun (Goグリーン)
+item.v_machine_gun_yellow.name=V-Machine Gun (Goイエロー)
+item.v_machine_gun_pink.name=V-Machine Gun (Goピンク)
+item.go_blaster.name=Go Blaster
+item.go_blaster_hyper.name=Go Blaster (Hyper Mode)
+item.zeek_sword.name=Zeek Sword
+item.zeek_shot.name=Zeek Shot
+item.zeek_blaster.name=Zeek Blaster
+
+//25 Gaoranger
+itemGroup.tabGaoranger=Hyakujuu Sentai Gaoranger
+
+item.empty_gao_jewel.name=Empty Gao Jewel
+tile.gaoranger_ore.name=Gaoranger鉱石
+
+item.gaoranger_head.name=Gaorangerヘルメット
+item.gaoranger_torso.name=Gaorangerチェストプレート
+item.gaoranger_legs.name=Gaorangerレギンス
+
+item.red_g_phone.name=G-Phone (Gaoレッド)
+item.yellow_g_phone.name=G-Phone (Gaoイエロー)
+item.blue_g_phone.name=G-Phone (Gaoブルー)
+item.black_g_phone.name=G-Phone (Gaoブラック)
+item.white_g_phone.name=G-Phone (Gaoホワイト)
+item.g_brace_phone.name=G-Brace Phone (GaoSilver)
+
+item.gao_lion_jewel.name=GaoLion Jewel
+item.gao_eagle_jewel.name=GaoEagle Jewel
+item.gao_shark_jewel.name=GaoShark Jewel
+item.gao_bison_jewel.name=GaoBison Jewel
+item.gao_tiger_jewel.name=GaoTiger Jewel
+item.gao_wolf_jewel.name=GaoWolf Jewel
+
+item.beast_king_sword.name=Beast King Sword
+item.lion_beast_king_sword.name=Beast King Sword (Gaoレッド)
+item.eagle_beast_king_sword.name=Beast King Sword (Gaoイエロー)
+item.shark_beast_king_sword.name=Beast King Sword (Gaoブルー)
+item.bison_beast_king_sword.name=Beast King Sword (Gaoブラック)
+item.tiger_beast_king_sword.name=Beast King Sword (Gaoホワイト)
+item.evil_crushing_hundred_beast_sword.name=Evil-Crushing Hundred-Beast Sword
+item.lion_fang.name=Lion Fang
+item.gao_mane_buster.name=Gao Mane Buster
+item.gao_mane_buster_final.name=Gao Mane Buster (Final Mode)
+item.eagle_sword.name=Eagle Sword
+item.shark_cutter.name=Shark Cutter
+item.bison_axe.name=Bison Axe
+item.tiger_baton.name=Tiger Baton
+item.gao_hustler_rod.name=Gao Hustler Rod
+item.falcon_summoner.name=Falcon Summoner
+item.falcon_summoner_arrow.name=Falcon Summoner (Arrow Mode)
+
+//27 Abaranger
+itemGroup.tabAbaranger=Bakuryu Sentai Abaranger
+
+item.abaranger_logo.name=Abarangerロゴ
+tile.abaranger_ore.name=Abaranger鉱石
+
+item.abaranger_head.name=Abarangerヘルメット
+item.abaranger_torso.name=Abarangerチェストプレート
+item.abaranger_legs.name=Abarangerレギンス
+
+item.red_dino_brace.name=Dino Brace (Abaレッド)
+item.blue_dino_brace.name=Dino Brace (Abareブルー)
+item.yellow_dino_brace.name=Dino Brace (Abareイエロー)
+item.dino_commander.name=Dino Commander (Abareブラック)
+item.dino_minder.name=Dino Minder (AbareKiller)
+
+item.tyranno_dino_guts.name=Tyranno Dino Guts
+item.tricera_dino_guts.name=Tricera Dino Guts
+item.ptera_dino_guts.name=Ptera Dino Guts
+item.brachio_dino_guts.name=Brachio Dino Guts
+item.top_dino_guts.name=Top Dino Guts
+item.max_tyranno_dino_guts.name=Max Tyranno Dino Guts
+
+item.aba_laser.name=Aba Laser
+item.baku_laser.name=Baku Laser
+item.tyranno_rod.name=Tyranno Rod
+item.tricera_bunker.name=Tricera Bunker
+item.ptera_dagger.name=Ptera Dagger
+item.dino_thruster.name=Dino Thruster
+item.wing_pentact.name=Wing Pentact
+item.sty_riser.name=StyRiser (Offense Mode)
+item.sty_riser_shield.name=StyRiser (Defense Mode)
+
+//30 Boukenger
+itemGroup.tabBoukenger=GoGo Sentai Boukenger
+
+item.boukenger_logo.name=Boukengerロゴ
+tile.boukenger_ore.name=Boukenger鉱石
+
+item.boukenger_head.name=Boukengerヘルメット
+item.boukenger_torso.name=Boukengerチェストプレート
+item.boukenger_legs.name=Boukengerレギンス
+
+item.red_accellular.name=Accellular (Bouken レッド)
+item.black_accellular.name=Accellular (Bouken ブラック)
+item.blue_accellular.name=Accellular (Bouken ブルー)
+item.yellow_accellular.name=Accellular (Bouken イエロー)
+item.pink_accellular.name=Accellular (Bouken ピンク)
+item.gogo_changer.name=GoGo Changer (Bouken Silver)
+item.zubaan.name=Zubaan Chest (Zubaan)
+
+item.bouken_red_logo.name=Bouken レッドロゴ
+item.bouken_black_logo.name=Bouken ブラックロゴ
+item.bouken_blue_logo.name=Bouken ブルーロゴ
+item.bouken_yellow_logo.name=Bouken イエローロゴ
+item.bouken_pink_logo.name=Bouken ピンクロゴ
+item.bouken_silver_logo.name=Bouken Silverロゴ
+item.scale_of_the_salamander.name=Scale of the Salamander
+item.accel_tector.name=Accel Tector
+item.zubaan_crystal.name=Zubaan Chest Crystal
+
+item.survi_blade.name=Survi-Buster
+item.bouken_bo.name=Bouken Bo
+item.radial_hammer.name=Radial Hammer
+item.blow_knuckle.name=Blow Knuckle
+item.bucket_scooper.name=Bucket Scooper
+item.hydro_shooter.name=Hydro Shooter
+item.sagaspear.name=Sagasniper
+item.dual_crusher_mixer.name=Dual Crusher (Mixer Head)
+item.dual_crusher_drill.name=Dual Crusher (Drill Head)
+
+//31 Gekiranger
+itemGroup.tabGekiranger=Juken Sentai Gekiranger
+
+item.gekiranger_logo.name=Gekirangerロゴ
+tile.gekiranger_ore.name=Gekiranger鉱石
+
+item.gekiranger_head.name=Gekirangerヘルメット
+item.gekiranger_torso.name=Gekirangerチェストプレート
+item.gekiranger_legs.name=Gekirangerレギンス
+
+item.red_geki_changer.name=GekiChanger (Gekiレッド)
+item.yellow_geki_changer.name=GekiChanger (Gekiイエロー)
+item.blue_geki_changer.name=GekiChanger (Gekiブルー)
+item.gong_changer.name=GongChanger (GekiViolet)
+item.chopper_sai_blade.name=SaiBlade (GekiChopper)
+
+item.tiger_spirit.name=Tiger Spirit
+item.cheetah_spirit.name=Cheetah Spirit
+item.jaguar_spirit.name=Jaguar Spirit
+item.wolf_spirit.name=Wolf Spirit
+item.rhino_spirit.name=Rhino Spirit
+item.elephant_spirit.name=Elephant Spirit
+item.bat_spirit.name=Bat Spirit
+item.shark_spirit.name=Shark Spirit
+item.gorilla_spirit.name=Gorilla Spirit
+item.penguin_spirit.name=Penguin Spirit
+item.gazelle_spirit.name=Gazelle Spirit
+
+item.red_super_geki_claw.name=Super GekiClaw (Gekiレッド)
+item.yellow_super_geki_claw.name=Super GekiClaw (Gekiイエロー)
+item.blue_super_geki_claw.name=Super GekiClaw (Gekiブルー)
+item.sai_blade_cutter.name=SaiBlade
+item.geki_tonfa.name=GekiTonfa
+item.geki_tonfa_baton.name=GekiTonfa Baton
+item.geki_tonfa_long_baton.name=GekiTonfa Long Baton
+item.geki_hammer.name=GekiHammer
+item.geki_fan.name=GekiFan
+item.geki_saber_twin_a.name=GekiSaber (Twin Sword Mode)
+item.geki_saber_twin_b.name=GekiSaber (Twin Sword Mode)
+item.geki_saber_twin_combo.name=GekiSaber (Twin Sword Combo Mode)
+item.virtuous_beast_sword.name=Virtuous Beast Sword
+
+//32 Go-Onger
+itemGroup.tabGoOnger=Engine Sentai Go-Onger
+
+item.blank_engine_soul.name=Blank Engine Soul
+tile.go_onger_ore.name=Go-Onger鉱石
+
+item.go_onger_head.name=Go-Ongerヘルメット
+item.go_onger_torso.name=Go-Ongerチェストプレート
+item.go_onger_legs.name=Go-Ongerレギンス
+
+item.red_go_phone.name=Go-Phone (Go-On レッド)
+item.blue_go_phone.name=Go-Phone (Go-On ブルー)
+item.yellow_go_phone.name=Go-Phone (Go-On イエロー)
+item.green_shift_changer.name=Shift Changer (Go-On グリーン)
+item.black_shift_changer.name=Shift Changer (Go-On ブラック)
+item.gold_wing_trigger.name=Wing Trigger (Go-On Gold)
+item.silver_wing_trigger.name=Wing Trigger (Go-On Silver)
+item.kega_go_phone.name=Go-Phone (Kega イエロー)
+
+item.speedor_soul.name=Speedor Engine Soul
+item.buson_soul.name=Buson Engine Soul
+item.bear_rv_soul.name=BearRV Engine Soul
+item.birca_soul.name=Birca Engine Soul
+item.gunpherd_soul.name=Gunpherd Engine Soul
+item.carrigator_soul.name=Carrigator Engine Soul
+item.toripter_soul.name=Toripter Engine Soul
+item.jetras_soul.name=Jetras Engine Soul
+item.jumbowhale_soul.name=Jumbowhale Engine Soul
+item.kishamoth_soul.name=Kishamoth Engine Soul
+item.t_line_soul.name=T-line Engine Soul
+item.k_line_soul.name=K-line Engine Soul
+
+item.mantan_sword.name=Mantan Gun
+item.road_sabre.name=Road Sabre
+item.garage_launcher.name=Garage Launcher
+item.bridge_axe.name=Bridge Axe
+item.cowl_laser.name=Cowl Laser
+item.rocket_dagger.name=Rocket Dagger
+item.wing_booster.name=Wing Booster
+item.kankanbar.name=Kankanbar
+item.kankan_mantan_gun.name=Kankan Mantan Gun
+
+//33 Shinkenger
+itemGroup.tabShinkenger=侍戦隊シンケンジャー
+
+item.common_disk.name=共通ディスク
+tile.shinkenger_ore.name=シンケンジャー鉱石
+
+item.shinkenger_head.name=シンケンジャーヘルメット
+item.shinkenger_torso.name=シンケンジャーチェストプレート
+item.shinkenger_legs.name=シンケンジャーレギンス
+
+item.red_shodophone.name=ショドウフォン(シンケンレッド)
+item.blue_shodophone.name=ショドウフォン(シンケンブルー)
+item.pink_shodophone.name=ショドウフォン(シンケンピンク)
+item.green_shodophone.name=ショドウフォン(シンケングリーン)
+item.yellow_shodophone.name=ショドウフォン(シンケンイエロー)
+item.sushi_changer.name=スシチェンジャー(シンケンゴールド)
+item.princess_red_shodophone.name=ショドウフォン(姫シンケンレッド)
+
+item.shishi_disk.name=獅子ディスク
+item.ryuu_disk.name=龍ディスク
+item.kame_disk.name=亀ディスク
+item.kuma_disk.name=熊ディスク
+item.saru_disk.name=猿ディスク
+item.sushi_disk.name=寿司ディスク
+item.inromaru.name=インロウマル
+item.super_disk.name=スーパーディスク
+item.hyper_disk.name=恐竜ディスク
+item.gedou_disk.name=外道ディスク
+
+item.shinkenmaru.name=シンケンマル
+item.rekka_daizantou.name=烈火大斬刀
+item.water_arrow.name=ウォーターアロー
+item.heaven_fan.name=ヘブンファン
+item.wood_spear.name=ウッドスピア
+item.land_slicer.name=ランドスライサー
+item.sakanamaru.name=サカナマル
+item.super_shinkenmaru.name=スーパーシンケンマル
+item.kyoryumaru.name=キョウリュウマル
+item.kyoryumaru_sakanamaru.name=キョウリュウマル(シンケンゴールド)
+
+//36 Go-Busters
+itemGroup.tabGoBusters=Tokumei Sentai Go-Busters
+
+item.enetron.name=Enetron
+item.blank_animal_disk.name=Blank Animal ディスク
+tile.go_busters_ore.name=Go-Busters鉱石
+tile.doubutsu_go_busters_ore.name=Doubutsu Go-Busters鉱石
+
+item.go_busters_head.name=Go-Bustersヘルメット
+item.go_busters_torso.name=Go-Bustersチェストプレート
+item.go_busters_legs.name=Go-Bustersレギンス
+
+item.red_morphin_brace.name=Morphin Brace (レッド Buster)
+item.blue_morphin_brace.name=Morphin Brace (ブルー Buster)
+item.yellow_morphin_brace.name=Morphin Brace (イエロー Buster)
+item.beet_morphin_blaster.name=Morphin Blaster (Beet Buster)
+item.stag_morphin_blaster.name=Morphin Blaster (Stag Buster)
+item.beet_enter_morphin_blaster.name=Morphin Blaster (Enter's Beet Buster)
+
+item.cheetah_morphin_brace.name=Morphin Brace (レッド Cheetah)
+item.gorilla_morphin_brace.name=Morphin Brace (ブルー Gorilla)
+item.rabbit_morphin_brace.name=Morphin Brace (イエロー Rabbit)
+item.beetle_morphin_blaster.name=Morphin Blaster (ゴールド Beetle)
+item.hippopotamus_morphin_brace.name=Morphin Brace (グリーン Hippopotamus)
+item.puma_morphin_brace.name=Morphin Brace (ブラック Puma)
+
+item.red_enetron.name=レッド Enetron
+item.blue_enetron.name=ブルー Enetron
+item.yellow_enetron.name=イエロー Enetron
+item.gold_enetron.name=ゴールド Enetron
+item.silver_enetron.name=シルバー Enetron
+
+item.cheetah_animal_disk.name=Cheetah Animal ディスク
+item.gorilla_animal_disk.name=Gorilla Animal ディスク
+item.rabbit_animal_disk.name=Rabbit Animal ディスク
+item.beetle_animal_disk.name=Beetle Animal ディスク
+item.stag_animal_disk.name=Stag Animal ディスク
+item.hippopotamus_animal_disk.name=Hippopotamus Animal ディスク
+item.puma_animal_disk.name=Puma Animal ディスク
+
+item.custom_visor.name=Custom Visor
+
+item.morphin_blaster.name=Morphin Blaster
+item.ichigan_buster.name=Ichigan Buster
+item.sougan_blade.name=Sougan Blade
+item.ichigan_buster_special.name=Ichigan Buster Special Buster Mode
+item.dri_blade.name=DriBlade
+item.lio_attache.name=Lio Attaché
+
+//36-37 Akibaranger
+itemGroup.tabAkibaranger=Hikounin Sentai Akibaranger
+
+item.red_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaレッド)
+item.blue_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaブルー)
+item.blue_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaブルー Season 2)
+item.yellow_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaイエロー)
+item.yellow_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaイエロー Season 2)
+
+item.moe_moe_z_cune.name=Moe Moe Z-Cune
+item.munyu_munyu_zubaan.name=Munyu Munyu Zubaan
+item.munyu_moe_zubakyun.name=Munyu Moe Zubakyun
+
+//38 ToQger
+itemGroup.tabToQger=Ressha Sentai ToQger
+
+item.blank_ressha.name=Blank Ressha
+tile.toqger_ore.name=ToQger鉱石
+
+item.toqger_head.name=ToQgerヘルメット
+item.toqger_torso.name=ToQgerチェストプレート
+item.toqger_legs.name=ToQgerレギンス
+
+item.ichigou_toq_changer.name=ToQ Changer (ToQ 1gou)
+item.nigou_toq_changer.name=ToQ Changer (ToQ 2gou)
+item.sangou_toq_changer.name=ToQ Changer (ToQ 3gou)
+item.yongou_toq_changer.name=ToQ Changer (ToQ 4gou)
+item.gogou_toq_changer.name=ToQ Changer (ToQ 5gou)
+item.rokugou_appli_changer.name=Applichanger (ToQ 6gou)
+item.nanagou_appli_changer.name=Applichanger (ToQ 7gou)
+
+item.red_ressha.name=レッド Ressha
+item.blue_ressha.name=ブルー Ressha
+item.yellow_ressha.name=イエロー Ressha
+item.green_ressha.name=グリーン Ressha
+item.pink_ressha.name=ピンク Ressha
+item.build_ressha.name=Build Ressha
+item.violet_ressha.name=Violet Ressha
+item.hyper_ressha.name=Hyper Ressha
+item.red_ressha_corrupted.name=Corrupted レッド Ressha
+item.scope_ressha.name=Scope Ressha
+item.lion_ressha.name=Lion Ressha
+item.eagle_ressha.name=Eagle Ressha
+item.wildcat_ressha.name=Wildcat Ressha
+item.alligator_ressha.name=Alligator Ressha
+item.panda_ressha.name=Panda Ressha
+
+item.toq_blaster.name=ToQ Blaster
+item.rail_slasher.name=Rail Slasher
+item.home_trigger.name=Home Trigger
+item.shingou_hammer.name=Shingou Hammer
+item.tunnel_axe.name=Tunnel Ax
+item.tekkyou_claw.name=Tekkyou Claw
+item.yudo_breaker.name=Yudo Breaker
+item.daikaiten_cannon.name=Daikaiten Cannon
+
+//40 Zyuohger
+itemGroup.tabZyuohger=Doubutsu Sentai Zyuohger
+
+item.king_s_credential.name=King's Credential
+tile.zyuohger_ore.name=Zyuohger鉱石
+
+item.zyuohger_head.name=Zyuohgerヘルメット
+item.zyuohger_torso.name=Zyuohgerチェストプレート
+item.zyuohger_legs.name=Zyuohgerレギンス
+
+item.eagle_zyuoh_changer.name=Zyuoh Changer (Zyuoh Eagle)
+item.zyuoh_whale_change_gun.name=Whale Change Gun (Zyuoh Whale)
+item.shark_zyuoh_changer.name=Zyuoh Changer (Zyuoh Shark)
+item.lion_zyuoh_changer.name=Zyuoh Changer (Zyuoh Lion)
+item.elephant_zyuoh_changer.name=Zyuoh Changer (Zyuoh Elephant)
+item.tiger_zyuoh_changer.name=Zyuoh Changer (Zyuoh Tiger)
+item.zyuoh_the_light.name=Zyuoh The Light (Zyuoh The World)
+item.zyuoh_changer_final.name=Zyuoh Changer Final (Zyuoh Bird)
+
+item.condor_cube.name=Cube Condor
+item.eagle_cube.name=Cube Eagle
+item.shark_cube.name=Cube Shark
+item.lion_cube.name=Cube Lion
+item.elephant_cube.name=Cube Elephant
+item.tiger_cube.name=Cube Tiger
+item.gorilla_cube.name=Cube Gorilla
+item.crocodile_cube.name=Cube Crocodile
+item.wolf_cube.name=Cube Wolf
+item.rhinos_cube.name=Cube Rhinos
+item.whale_cube.name=Cube Whale
+item.bud_king_s_credential.name=King's Credential (Bud)
+
+item.whale_change_gun.name=Whale Change Gun
+item.eag_riser.name=EagRiser
+item.condor_eag_riser.name=EagRiser (Zyuoh Condor)
+item.zyuoh_buster.name=Zyuoh Buster
+item.zyuoh_the_rod.name=Zyuoh The GunRod
+
+//42-43 Lupinranger VS Patranger
+itemGroup.tabLupat=Lupinranger VS Patranger
+
+item.blank_striker.name=Blank Striker
+tile.vs_vehicle_ore.name=Lupinranger VS Patranger鉱石
+
+item.lupat_head.name=Lupinranger VS Patrangerヘルメット
+item.lupat_torso.name=Lupinranger VS Patrangerチェストプレート
+item.lupat_legs.name=Lupinranger VS Patrangerレギンス
+
+item.red_vs_changer.name=VS Changer (Lupin レッド)
+item.blue_vs_changer.name=VS Changer (Lupin ブルー)
+item.yellow_vs_changer.name=VS Changer (Lupin イエロー)
+
+item.ichigou_vs_changer.name=VS Changer (Patren 1gou)
+item.nigou_vs_changer.name=VS Changer (Patren 2gou)
+item.sangou_vs_changer.name=VS Changer (Patren 3gou)
+
+item.lupin_x_changer.name=X Changer (Lupin X)
+item.patran_x_changer.name=X Changer (Patren X)
+
+item.ichigou_girl_vs_changer.name=VS Changer (Patren 1gou Girl)
+item.nigou_girl_vs_changer.name=VS Changer (Patren 2gou Girl)
+item.sangou_guy_vs_changer.name=VS Changer (Patren 3gou Guy)
+
+item.red_dial_fighter.name=レッド Dial Fighter
+item.blue_dial_fighter.name=ブルー Dial Fighter
+item.yellow_dial_fighter.name=イエロー Dial Fighter
+
+item.ichigou_trigger_machine.name=Trigger Machine 1gou
+item.nigou_trigger_machine.name=Trigger Machine 2gou
+item.sangou_trigger_machine.name=Trigger Machine 3gou
+
+item.silver_x_train.name=X Train シルバー
+item.gold_x_train.name=X Train ゴールド
+
+item.good_striker.name=Good Striker
+item.jackpot_striker.name=Jackpot Striker
+
+item.scissor_dial_fighter.name=Scissor Dial Fighter
+item.magic_dial_fighter.name=Magic Dial Fighter
+item.victory_striker.name=Victory Striker
+
+item.crane_trigger_machine.name=Trigger Machine Crane
+item.splash_trigger_machine.name=Trigger Machine Splash
+item.siren_striker.name=Siren Striker
+
+item.vs_changer.name=VS Changer
+item.x_changer.name=X Changer
+item.lupin_sword.name=Lupin Sword
+item.lupin_sword_magic_hand.name=Lupin Sword (Magic Hand Mode)
+item.lupin_magnum.name=Lupin Magnum
+item.pat_megabo.name=Pat MegaBo
+item.x_rod_sword.name=X Rod Sword
+item.scissor_shield.name=Scissor Shield
+item.blade_boomerang.name=Blade Boomerang
+
+//44 Ryusoulger
+itemGroup.tabRyusoulger=騎士竜戦隊リュウソウジャー
+
+item.blank_ryusoul.name=ブランクリュウソウ
+tile.ryusoulger_ore.name=リュウソウジャー鉱石
+
+item.ryusoulger_head.name=リュウソウジャーヘルメット
+item.ryusoulger_torso.name=リュウソウジャーチェストプレート
+item.ryusoulger_legs.name=リュウソウジャーレギンス
+
+item.red_ryusoul_changer.name=リュウソウチェンジャー(リュウソウレッド)
+item.blue_ryusoul_changer.name=リュウソウチェンジャー(リュウソウブルー)
+item.pink_ryusoul_changer.name=リュウソウチェンジャー(リュウソウピンク)
+item.green_ryusoul_changer.name=リュウソウチェンジャー(リュウソウグリーン)
+item.black_ryusoul_changer.name=リュウソウチェンジャー(リュウソウブラック)
+item.gold_mosa_changer.name=モサチェンジャー(リュウソウゴールド)
+item.gaisorg_changer.name=ガイソーケン(ガイソーグ)
+
+item.red_ryusoul.name=レッドリュウソウル
+item.blue_ryusoul.name=ブルーリュウソウル
+item.pink_ryusoul.name=ピンクリュウソウル
+item.green_ryusoul.name=グリーンリュウソウル
+item.black_ryusoul.name=ブラックリュウソウル
+item.gold_ryusoul.name=ゴールドリュウソウル
+item.gai_soul.name=ガイソウル
+
+item.tsuyo_soul.name=ツヨソウル
+item.nobi_soul.name=ノビソウル
+item.omo_soul.name=オモソウル
+item.haya_soul.name=ハヤソウル
+item.kata_soul.name=カタソウル
+item.kike_soul.name=キケソウル
+item.kusa_soul.name=クサソウル
+item.mie_soul.name=ミエソウル
+item.mukimuki_soul.name=ムキムキソウル
+item.chiisa_soul.name=チイサソウル
+item.mabushi_soul.name=マブシソウルソウル
+item.mist_soul.name=ミストソウル
+item.karu_soul.name=カルソウル
+item.gyaku_soul.name=ギャクソウル
+item.kotae_soul.name=コタエソウル
+item.migake_soul.name=ミガケソウル
+item.kunkun_soul.name=クンクンソウル
+item.pukupuku_soul.name=プクプクソウル
+item.kakure_soul.name=カクレソウル
+item.fue_soul.name=フエソウル
+item.nemu_soul.name=ネムソウル
+item.mawari_soul.name=マワリソウル
+item.kawaki_soul.name=カワキソウル
+item.yawaraka_soul.name=ヤワラカソウル
+
+item.meramera_soul.name=メラメラソウル
+item.biribiri_soul.name=ビリビリソウル
+item.kurayami_soul.name=クラヤミソウル
+item.kagayaki_soul.name=カガヤキソウル
+item.cosmo_soul.name=コスモソウル
+item.kanae_soul.name=カナエソウル
+item.dosshin_soul.name=ドッシンソウル
+item.byubyu_soul.name=ビュービューソウル
+
+item.ryusoul_ken.name=リュウソウケン
+item.mosa_changer.name=モサチェンジャー
+item.mosa_blade.name=モサブレイド
+item.mosa_breaker.name=モサブレイカー
+item.gaisoul_ken.name=ガイソーケン
+item.gaisoul_shield.name=ガイソーシールド
+
+//?? Kawarimono Team
+itemGroup.tabKawarimono=Kawarimono (Oddball) Team
+
+item.kawarimono_head.name=Kawarimonoヘルメット
+item.kawarimono_torso.name=Kawarimonoチェストプレート
+item.kawarimono_legs.name=Kawarimonoレギンス
+
+item.red_mobirates.name=Mobirates (Gokai レッド)
+item.aka_ninja_ichibantou.name=Ninja Ichibantou (AkaNinger)
+item.orange_seiza_blaster.name=Seiza Blaster (Sasori Orange)
+
+item.gokai_red_key.name=Gokai レッド Key
+item.akaranger_key.name=Akaranger Key
+item.spade_ace_key.name=Spade Ace Key
+item.vul_eagle_key.name=VulEagle Key
+item.red_mask_key.name=レッドマスク Key
+item.red_racer_key.name=レッド Racer Key
+item.ginga_red_key.name=Gingaレッド Key
+item.gao_red_key.name=Gaoレッド Key
+item.shinken_red_key.name=シンケン レッド Key
+item.aka_ninger_key.name=AkaNinger Key
+item.gold_anchor_key.name=ゴールド Anchor Key
+item.aka_ninger_shuriken.name=AkaNinger Shuriken
+item.chouzetsu_shoubu_changer.name=Chouzetsu Shoubu Changer
+item.sasori_kyutama.name=Sasori Kyutama
+item.ikkakuju_kyutama.name=Ikkakuju Kyutama
+
+item.gokai_saber.name=Gokai Saber
+item.gokai_gun.name=Gokai Gun
+item.gokai_spear_anchor.name=Gokai Spear (Anchor Mode)
+item.ninja_ichibantou.name=Ninja Ichibantou
+item.karakuri_hengen.name=Karakuri Hengen
+item.karakuri_hengen_sword.name=Karakuri Hengen (Sword)
+item.karakuri_hengen_bow.name=Karakuri Hengen (Bow)
+item.karakuri_hengen_claw.name=Karakuri Hengen (Claw)
+item.gama_gama_gun.name=Gama Gama Gun
+item.seiza_blaster.name=Seiza Blaster
+//item..name=

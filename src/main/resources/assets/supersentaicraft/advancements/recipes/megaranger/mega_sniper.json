@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:mega_sniper5",
-      "supersentaicraft:mega_shot"
+      "supersentaicraft:megaranger/mega_sniper",
+      "supersentaicraft:megaranger/mega_sniper1"
     ]
   },
   "criteria": {
@@ -12,7 +12,17 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:mega_sniper"
+            "item": "supersentaicraft:mega_magnum"
+          }
+        ]
+      }
+    },
+    "has_item1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:mega_shot"
           }
         ]
       }
@@ -20,19 +30,20 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:mega_sniper5"
+        "recipe": "supersentaicraft:megaranger/mega_sniper"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:mega_shot"
+        "recipe": "supersentaicraft:megaranger/mega_sniper1"
       }
     }
   },
   "requirements": [
     [
       "has_item",
+      "has_item1",
       "has_the_recipe",
       "has_the_recipe1"
     ]

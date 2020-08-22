@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "go_busters",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:enetron"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:go_busters_logo"
+  }
+}

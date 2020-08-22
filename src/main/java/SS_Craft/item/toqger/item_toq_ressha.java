@@ -26,7 +26,6 @@ public class item_toq_ressha extends Item implements IHasModel
 	public item_toq_ressha(int form,int armor,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=form;

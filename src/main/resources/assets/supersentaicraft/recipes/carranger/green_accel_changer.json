@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "green_racer",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:carranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:green_racer_badge"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:green_accel_changer"
+  }
+}

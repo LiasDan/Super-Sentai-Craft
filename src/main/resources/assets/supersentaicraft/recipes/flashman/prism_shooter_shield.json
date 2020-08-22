@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "flashman",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:flashman_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_flash_prism"
+	  },
+	  {
+	    "item": "supersentaicraft:green_flash_prism"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_flash_prism"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_flash_prism"
+	  },
+	  {
+	    "item": "supersentaicraft:pink_flash_prism"
+	  }
+	],
+	"c": {
+      "item": "minecraft:shield"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:prism_shooter_shield"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kyuranger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:shishi_kyutama"
+    },
+	{
+      "item": "supersentaicraft:sasori_kyutama"
+    },
+	{
+      "item": "supersentaicraft:ookami_kyutama"
+    },
+	{
+      "item": "supersentaicraft:tenbin_kyutama"
+    },
+	{
+      "item": "supersentaicraft:oushi_kyutama"
+    },
+	{
+      "item": "supersentaicraft:hebitsukai_kyutama"
+    },
+	{
+      "item": "supersentaicraft:chameleon_kyutama"
+    },
+	{
+      "item": "supersentaicraft:washi_kyutama"
+    },
+	{
+      "item": "supersentaicraft:kajiki_kyutama"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:kyuranger_kyutama"
+  }
+}

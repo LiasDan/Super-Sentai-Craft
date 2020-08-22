@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blue_gorilla",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+	  "item": "supersentaicraft:blank_animal_disk"
+	},
+	"b": {
+      "item": "supersentaicraft:gorilla_animal_disk"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gorilla_morphin_brace"
+  }
+}

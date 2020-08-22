@@ -2,9 +2,9 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:battle_fever_head",
-      "supersentaicraft:battle_fever_torso",
-      "supersentaicraft:battle_fever_legs"
+      "supersentaicraft:battle_fever/battle_fever_head",
+      "supersentaicraft:battle_fever/battle_fever_torso",
+      "supersentaicraft:battle_fever/battle_fever_legs"
     ]
   },
   "criteria": {
@@ -21,19 +21,19 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:battle_fever_head"
+        "recipe": "supersentaicraft:battle_fever/battle_fever_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:battle_fever_torso"
+        "recipe": "supersentaicraft:battle_fever/battle_fever_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:battle_fever_legs"
+        "recipe": "supersentaicraft:battle_fever/battle_fever_legs"
       }
     }
   },

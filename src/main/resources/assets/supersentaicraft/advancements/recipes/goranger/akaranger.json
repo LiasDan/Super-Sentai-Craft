@@ -2,9 +2,9 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:akaranger_belt",
-      "supersentaicraft:red_bute",
-      "supersentaicraft:silver_shot"
+      "supersentaicraft:goranger/akaranger_belt",
+      "supersentaicraft:goranger/red_bute",
+      "supersentaicraft:goranger/silver_shot"
     ]
   },
   "criteria": {
@@ -21,19 +21,19 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:akaranger_belt"
+        "recipe": "supersentaicraft:goranger/akaranger_belt"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:red_bute"
+        "recipe": "supersentaicraft:goranger/red_bute"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:silver_shot"
+        "recipe": "supersentaicraft:goranger/silver_shot"
       }
     }
   },

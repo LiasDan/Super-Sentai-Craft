@@ -2,10 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:yellow_dino_brace",
-      "supersentaicraft:aba_laser2",
-      "supersentaicraft:baku_laser2",
-      "supersentaicraft:ptera_dagger"
+      "supersentaicraft:abaranger/yellow_dino_brace",
+      "supersentaicraft:abaranger/ptera_dagger"
     ]
   },
   "criteria": {
@@ -22,25 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:yellow_dino_brace"
+        "recipe": "supersentaicraft:abaranger/yellow_dino_brace"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:aba_laser2"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:baku_laser2"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:ptera_dagger"
+        "recipe": "supersentaicraft:abaranger/ptera_dagger"
       }
     }
   },
@@ -48,9 +34,7 @@
     [
       "has_item",
       "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3"
+      "has_the_recipe1"
     ]
   ]
 }

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gogo_v",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gogo_v_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:go_red_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:go_blue_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:go_green_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:go_yellow_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:go_pink_badge"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:go_blaster"
+  }
+}

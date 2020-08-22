@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "patranger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_striker"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:ichigou_trigger_machine"
+	  },
+	  {
+	    "item": "supersentaicraft:nigou_trigger_machine"
+	  },
+	  {
+	    "item": "supersentaicraft:sangou_trigger_machine"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:pat_megabo"
+  }
+}

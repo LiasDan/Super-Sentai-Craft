@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sun_vulcan",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:sun_vulcan_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:vul_eagle_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:vul_shark_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:vul_panther_medal"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:vulcan_stick"
+  }
+}

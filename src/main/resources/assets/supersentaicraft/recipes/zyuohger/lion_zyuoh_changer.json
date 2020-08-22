@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zyuoh_lion",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:king_s_credential"
+    },
+	"b": {
+      "item": "supersentaicraft:lion_cube"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:lion_zyuoh_changer"
+  }
+}

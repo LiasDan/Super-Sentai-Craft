@@ -140,6 +140,15 @@ public class item_sword_gun_changer extends ItemBow  implements IHasModel
 							playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.chopper_sai_blade));
 						}
 					}
+					if (this == RiderItems.bull_riot)
+					{
+						ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
+
+						if (itemstack.isEmpty())
+						{
+							playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.black_knight_bull_riot));
+						}
+					}
 				
 					Vec3d look =  playerIn.getLookVec();
 					ItemArrow itemarrow = (ItemArrow) Items.ARROW;
@@ -156,8 +165,9 @@ public class item_sword_gun_changer extends ItemBow  implements IHasModel
 					{
 						fireball.setKnockbackStrength(2);
 					}
-					
-					fireball.setKnockbackStrength(0);
+
+					fireball.setDamage(fireball.getDamage() + (double)1 * 0.5D + 0.5D);
+					fireball.setKnockbackStrength(1);
 					
 					worldIn.spawnEntity(fireball);
 				

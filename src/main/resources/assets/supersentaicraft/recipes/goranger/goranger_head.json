@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "goranger",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:goranger_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:goranger_head"
+  }
+}

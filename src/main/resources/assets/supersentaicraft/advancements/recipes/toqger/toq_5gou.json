@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:gogou_toq_changer",
-      "supersentaicraft:tekkyou_claw"
+      "supersentaicraft:toqger/gogou_toq_changer",
+      "supersentaicraft:toqger/tekkyou_claw"
     ]
   },
   "criteria": {
@@ -20,13 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:gogou_toq_changer"
+        "recipe": "supersentaicraft:toqger/gogou_toq_changer"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:tekkyou_claw"
+        "recipe": "supersentaicraft:toqger/tekkyou_claw"
       }
     }
   },

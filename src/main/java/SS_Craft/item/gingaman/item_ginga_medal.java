@@ -24,7 +24,6 @@ public class item_ginga_medal extends Item implements IHasModel
 	public item_ginga_medal(int armor,String name)
 	{
 		super();
-		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 
 		num=armor;

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "skill_kyutama",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:ho_kyutama"
+    },
+	{
+      "item": "supersentaicraft:ryukotsu_kyutama"
+    },
+	{
+      "item": "supersentaicraft:tomo_kyutama"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:argo_kyutama"
+  }
+}

@@ -46,8 +46,9 @@ public class RegistyHandler {
 	@SubscribeEvent
 	public static void onFly(TickEvent.PlayerTickEvent event) {
 		boolean fly = false;
-		//if(event.player.isPotionActive(PotionCore.FLY_POTION)) fly = true;
-		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("tokuPotions"+ ":" + "fly"))) fly = true;
+		if(event.player.isPotionActive(PotionCore.SS_FLY_POTION)) fly = true;
+		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "fly"))) fly = true;
+		
 		if(fly || event.player.isCreative() || event.player.isSpectator()) {
 			event.player.capabilities.allowFlying = true;
 			event.player.fallDistance = 0.0f;
@@ -66,12 +67,17 @@ public class RegistyHandler {
 				event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,event.player.getActivePotionEffect(PotionCore.SS_PUNCH_BOOST).getAmplifier(), 4,true,false));
 			}
 		}
-		if(event.player.isPotionActive(PotionCore.SS_BIG)){
+		
+		boolean big = false;
+		if(event.player.isPotionActive(PotionCore.SS_BIG)) big = true;
+		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "big"))) big = true;
+		
+		if(big){
 				event.player.height=4+(event.player.getDefaultEyeHeight());
 				event.player.eyeHeight=4;
 				
 				event.player.setInvisible(true);
-		}else{
+		} else{
 			event.player.height=event.player.getDefaultEyeHeight();
 			event.player.eyeHeight=event.player.getDefaultEyeHeight();
 			event.player.setInvisible(event.player.isPotionActive(MobEffects.INVISIBILITY));

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mega_blue",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:mega_tomahawk"
+    },
+	{
+      "item": "supersentaicraft:mega_magnum"
+    },
+	{
+      "item": "supersentaicraft:mega_shot"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:tomahawk_sniper"
+  }
+}

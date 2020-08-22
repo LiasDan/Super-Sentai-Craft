@@ -2,9 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:flashman_head",
-      "supersentaicraft:flashman_torso",
-      "supersentaicraft:flashman_legs"
+      "supersentaicraft:flashman/flashman_head",
+      "supersentaicraft:flashman/flashman_torso",
+      "supersentaicraft:flashman/flashman_legs",
+      "supersentaicraft:flashman/prism_shooter",
+      "supersentaicraft:flashman/prism_shooter_shield"
     ]
   },
   "criteria": {
@@ -21,19 +23,31 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:flashman_head"
+        "recipe": "supersentaicraft:flashman/flashman_head"
       }
     },
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:flashman_torso"
+        "recipe": "supersentaicraft:flashman/flashman_torso"
       }
     },
     "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:flashman_legs"
+        "recipe": "supersentaicraft:flashman/flashman_legs"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:flashman/prism_shooter"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:flashman/prism_shooter_shield"
       }
     }
   },
@@ -42,7 +56,9 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2"
+      "has_the_recipe2",
+      "has_the_recipe3",
+      "has_the_recipe4"
     ]
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gingaman",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:gingaman_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gingaman_torso"
+  }
+}
