@@ -141,7 +141,7 @@ public class entity_ex_aid extends EntityGolem
 	 */
 	protected boolean canDespawn()
 	{
-		return false;
+		return true;
 	}
 
 

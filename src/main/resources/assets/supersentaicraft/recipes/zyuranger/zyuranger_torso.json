@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zyuranger",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:zyuranger_medal"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:zyuranger_torso"
+  }
+}

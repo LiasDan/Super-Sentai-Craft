@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ryusoul_brown",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_ryusoul"
+    },
+	"b": {
+	  "item": "supersentaicraft:brown_ryusoul"
+	},
+	"c": {
+      "item": "minecraft:shield"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:brown_ryusoul_shield"
+  }
+}

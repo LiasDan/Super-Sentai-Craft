@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kirameiger",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blue_diamond"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:kirameiger_head"
+  }
+}

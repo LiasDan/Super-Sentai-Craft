@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kiramei_go",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blue_diamond"
+    },
+	"b": {
+	  "item": "supersentaicraft:energia_kanaema_stone"
+	},
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:kiraful_go_arrow"
+  }
+}

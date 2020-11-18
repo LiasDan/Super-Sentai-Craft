@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mammoth_ranger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:zyuranger_medal"
+    },
+	"b": {
+      "item": "supersentaicraft:mammoth_medal"
+    },
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:moth_breaker"
+  }
+}

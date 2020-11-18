@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ptera_ranger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:zyuranger_medal"
+    },
+	"b": {
+      "item": "supersentaicraft:ptera_medal"
+    },
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:ptera_arrow"
+  }
+}

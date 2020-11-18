@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kirameiger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blue_diamond"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:kirameiger_logo"
+  }
+}

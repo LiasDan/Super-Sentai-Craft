@@ -27,7 +27,7 @@ public class entity_indavers_white extends Entity_base_henchmen
 				EntityPlayer playerIn =	(EntityPlayer) this.getAttackTarget();
 				EntityBossBase entityboss = new entity_hebitsukai_metal(world);
 				
-				switch (this.rand.nextInt(10))
+				switch (this.rand.nextInt(5))
 				{
 				case 0:
 					playerIn.sendMessage( new TextComponentString(TextFormatting.GRAY+"Dark Kyutama! Dark Change!"));

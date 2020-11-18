@@ -16,6 +16,7 @@ import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.go_busters.item_morphin_brace;
 import SS_Craft.item.go_onger.item_go_phone;
 import SS_Craft.item.gokaiger.item_mobirates;
+import SS_Craft.item.kirameiger.item_kiramei_changer;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.megaranger.item_digitaizer;
@@ -23,6 +24,7 @@ import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
 import SS_Craft.item.toqger.item_toq_changer;
+import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.util.Refercence;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
@@ -223,6 +225,10 @@ public class BipedLockseed extends ModelBiped
 				{
 					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_digitaizer.get_lock(stack) +"_2.png"));
 				}
+				else if (stack.getItem() instanceof item_dino_buckler)
+				{
+					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_dino_buckler.get_lock(stack) +"_2.png"));
+				}
 				else if (stack.getItem() instanceof item_ginga_brace)
 				{	
 					String rider = ((item_ginga_brace)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
@@ -319,7 +325,14 @@ public class BipedLockseed extends ModelBiped
 					
 					if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
 					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						if (rider == "lupin_x")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/patran_x_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						}
+						else
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						}
 					}
 					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="pat_siren")
 					{
@@ -338,20 +351,45 @@ public class BipedLockseed extends ModelBiped
 				{
 					String rider = ((item_ryusoul_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 					
-					if (rider == "gaisorg")
+					if (rider == "gaisorg" || rider == "ryusoul_brown")
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 					}
 					else
 					{
-						if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						}
+						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="pat_siren")
 						{
 							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						}
+						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						}
+						else if (item_ryusoul_changer.get_vs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_scissor")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 						}
 						else
 						{
 							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 						}
+					}
+				}
+				else if (stack.getItem() instanceof item_kiramei_changer)
+				{
+					String rider = ((item_kiramei_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+					
+					if (item_kiramei_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_kiramei_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 					}
 				}
 			}

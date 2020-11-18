@@ -57,7 +57,14 @@ public class item_lupat_armor extends ItemArmor  implements IHasModel
 					
 					if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
 					{
-						return Refercence.MODID+":textures/armor/"+rider+"_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						if (rider == "lupin_x")
+						{
+							return Refercence.MODID+":textures/armor/patran_x_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						}
 					}
 					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="pat_siren")
 					{

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "tricera_ranger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:trice_lance_trident"
+    },
+	{
+      "item": "supersentaicraft:trice_lance_trident"
+    },
+	{
+      "item": "supersentaicraft:zyuranger_medal"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:trice_lance"
+  }
+}

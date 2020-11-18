@@ -12,6 +12,7 @@ import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
+import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
 import SS_Craft.item.sun_vulcan.item_vulcan_brace;
 import SS_Craft.item.turboranger.item_turbo_brace;
@@ -83,6 +84,31 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 							}
 							if (item_ninja_ichibantou.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "_chouzetsu")
 								return 6;
+						}
+						else
+						{
+							return 0;
+						}
+						
+						return 0;
+					}
+        		}
+        		if (stack.getItem() == RiderItems.max_ryusoul_changer)
+            	{
+
+            		if (entityIn == null)
+    	            {
+    	                return 0.0F;
+    	            }
+        			else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
+					{
+						if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_ryusoul_changer)
+						{
+							if (item_ryusoul_changer.get_core(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 1)
+							{	
+								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_ryusoul_changer)
+									return 1;
+							}
 						}
 						else
 						{

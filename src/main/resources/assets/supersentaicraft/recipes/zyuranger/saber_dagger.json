@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tiger_ranger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:zyuranger_medal"
+    },
+	"b": {
+      "item": "supersentaicraft:tiger_medal"
+    },
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:saber_dagger"
+  }
+}

@@ -91,7 +91,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 					{
 						armorModel.wings=new ItemStack(RiderItems.washi_pink_wing);
 					}
-					else if (this.get_core(stack)==0)
+					else if (this.get_core(stack)==0 | this.get_core(stack)==3)
 					{
 						armorModel.wings=new ItemStack(RiderItems.washi_pink_wing_close);
 					}

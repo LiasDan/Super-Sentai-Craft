@@ -4,6 +4,7 @@ import javax.annotation.Nullable;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.model.BipedLockseed;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
@@ -61,12 +62,16 @@ public class item_ryusoulger_armor extends ItemArmor  implements IHasModel
 						{
 							return Refercence.MODID+":textures/armor/blank.png";
 						}
+						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						}
 						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
 						{
 							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
 						}
 					}
-					else if (rider == "gaisorg")
+					else if (rider == "gaisorg" | rider == "ryusoul_brown")
 					{
 						if (item_ryusoul_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
 						{
@@ -83,9 +88,25 @@ public class item_ryusoulger_armor extends ItemArmor  implements IHasModel
 					}
 					else
 					{
-						if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						}
+						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="pat_siren")
 						{
 							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						}
+						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						}
+						else if (item_ryusoul_changer.get_vs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_scissor")
+						{
+							return Refercence.MODID+":textures/armor/blank.png";
+						}
+						else if (item_ryusoul_changer.get_vs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_vs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
 						}
 						else
 						{

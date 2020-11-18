@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ryusoul_red_max",
+  "pattern": [
+    "aaa",
+    "dbe",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_ryusoul"
+    },
+	"b": {
+	  "item": "supersentaicraft:max_ryusoul"
+	},
+	"c": {
+      "item": "minecraft:iron_sword"
+    },
+	"d": {
+	  "item": "supersentaicraft:red_ryusoul"
+	},
+	"e": {
+	  "item": "supersentaicraft:gai_soul"
+	}
+  },
+  "result": {
+    "item": "supersentaicraft:max_ryusoul_changer"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kirameiger",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blue_diamond"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:kirameiger_torso"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kyuranger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_kyutama"
+    },
+	{
+      "item": "minecraft:pumpkin",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:halloween_kyutama"
+  }
+}

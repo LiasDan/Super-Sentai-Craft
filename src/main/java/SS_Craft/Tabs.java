@@ -108,6 +108,14 @@ public class Tabs
 			return new ItemStack(RiderItems.jetman_head);
 		}
 	};
+	//16
+	public static CreativeTabs tabZyuranger= new CreativeTabs("tabZyuranger")
+	{
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(RiderItems.zyuranger_head);
+		}
+	};
 	//17
 	public static CreativeTabs tabDairanger= new CreativeTabs("tabDairanger")
 	{
@@ -250,6 +258,14 @@ public class Tabs
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.ryusoulger_head);
+		}
+	};
+	//45
+	public static CreativeTabs tabKirameiger= new CreativeTabs("tabKirameiger")
+	{
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(RiderItems.kirameiger_head);
 		}
 	};
 	//??

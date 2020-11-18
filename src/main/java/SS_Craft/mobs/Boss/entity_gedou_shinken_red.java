@@ -67,6 +67,8 @@ import net.minecraft.world.World;
 public class entity_gedou_shinken_red extends EntityBossBase
 //implements IBossDisplayData
 {
+	public static final Item[] weapon = new Item[] {RiderItems.super_shinkenmaru,RiderItems.rekka_daizantou,RiderItems.super_shinkenmaru,RiderItems.rekka_daizantou,RiderItems.super_shinkenmaru};
+	
 	public entity_gedou_shinken_red(World par1World)
 	{
 		super(par1World);
@@ -106,6 +108,7 @@ public class entity_gedou_shinken_red extends EntityBossBase
 		if (!this.world.isRemote)
 		{
 			this.dropItem(RiderItems.gedou_disk, 1);
+			this.dropItem(RiderItems.common_disk, 5);
 		}
 	}
 }

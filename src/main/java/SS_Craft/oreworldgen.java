@@ -180,6 +180,17 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.jetman_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
+		//16 Zyuranger
+		for (int i = 0; i < 4; i++)
+		{
+			//16x16 area up to y = 64
+			int randPosX = chunkX + rand.nextInt(16);
+			int randPosY = rand.nextInt(60);
+			int randPosZ = chunkZ + rand.nextInt(16);
+			// 10 blocks per vein
+			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(RiderItems.zyuranger_ore.getDefaultState(), 10)).generate(world, rand,position);
+		}
 		//17 Dairanger
 		for (int i = 0; i < 4; i++)
 		{
@@ -366,6 +377,17 @@ public class oreworldgen implements IWorldGenerator
 			// 10 blocks per vein
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.ryusoulger_ore.getDefaultState(), 10)).generate(world, rand,position);
+		}
+		//45 Kirameiger
+		for (int i = 0; i < 4; i++)
+		{
+			//16x16 area up to y = 64
+			int randPosX = chunkX + rand.nextInt(16);
+			int randPosY = rand.nextInt(60);
+			int randPosZ = chunkZ + rand.nextInt(16);
+			// 10 blocks per vein
+			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(RiderItems.kirameiger_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
 	}
 

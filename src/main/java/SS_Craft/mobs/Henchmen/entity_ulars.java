@@ -23,7 +23,7 @@ public class entity_ulars extends Entity_base_henchmen
 				 EntityPlayer playerIn=	(EntityPlayer) this.getAttackTarget();
 				 Entity_base_henchmen entitymob  = new entity_ular_captain(world);
 				
-				 switch (this.rand.nextInt(10))
+				 switch (this.rand.nextInt(5))
 				 {
 				 		case 1:
 						entitymob.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);

@@ -97,16 +97,40 @@ public class item_kyutama extends Item implements IHasModel
 							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);	
 						}
 					}
-					else
+					else if (this == RiderItems.halloween_kyutama)
 					{
-						if (belt != RiderItems.gold_seiza_blaster)
+						if (belt == RiderItems.houou_blade_shield || belt == RiderItems.red_seiza_blaster)
 						{
-							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+							if (item_seiza_blaster.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==3)
+							{
+								item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),4);
+								item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							}
+							else
+							{
+								item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+								item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							}
+						}
+						else if (belt == RiderItems.commander_ryutsueder || belt == RiderItems.sky_blue_seiza_blaster)
+						{
+							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);	
 						}
+						else
+						{
+							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
+						
+					}
+					else
+					{
+						item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+						item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 					}
 				}
-				if (num2 > 0)
+				else if (num2 > 0)
 				{
 					if (belt != RiderItems.houou_blade_shield | belt != RiderItems.commander_ryutsueder | belt != RiderItems.black_seiza_blaster)
 					{

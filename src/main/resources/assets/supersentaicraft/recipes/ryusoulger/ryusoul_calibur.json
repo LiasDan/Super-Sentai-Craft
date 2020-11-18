@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ryusoul_noblesse",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_ryusoul"
+    },
+	"b": {
+	  "item": "supersentaicraft:unfinished_ryusoul_calibur"
+	},
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:ryusoul_calibur"
+  }
+}

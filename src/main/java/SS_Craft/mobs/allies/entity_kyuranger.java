@@ -119,7 +119,7 @@ public class entity_kyuranger extends EntityGolem implements IRangedAttackMob
 		
 		if (this.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()!=null)
 		{
-		switch (this.rand.nextInt(200))
+		switch (this.rand.nextInt(9999999))
 		{
 		case 0:
 			this.replaceItemInInventory(100,new ItemStack(RiderItems.red_seiza_blaster));
@@ -242,7 +242,7 @@ public class entity_kyuranger extends EntityGolem implements IRangedAttackMob
 	 */
 	protected boolean canDespawn()
 	{
-		return false;
+		return true;
 	}
 
 

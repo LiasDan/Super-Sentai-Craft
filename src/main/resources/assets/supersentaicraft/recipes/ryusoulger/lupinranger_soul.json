@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ryusoulger",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": [
+	  {
+        "item": "supersentaicraft:red_dial_fighter"
+	  },
+	  {
+        "item": "supersentaicraft:blue_dial_fighter"
+	  },
+	  {
+        "item": "supersentaicraft:yellow_dial_fighter"
+	  }
+	],
+	"b": {
+	  "item": "supersentaicraft:blank_ryusoul"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:lupinranger_soul"
+  }
+}

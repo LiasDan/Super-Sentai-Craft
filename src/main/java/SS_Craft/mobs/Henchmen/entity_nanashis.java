@@ -28,7 +28,7 @@ public class entity_nanashis extends Entity_base_henchmen
 				EntityPlayer playerIn =	(EntityPlayer) this.getAttackTarget();
 				EntityBossBase entityboss = new entity_gedou_shinken_red(world);
 				
-				switch (this.rand.nextInt(10))
+				switch (this.rand.nextInt(5))
 				{
 				case 0:
 					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);

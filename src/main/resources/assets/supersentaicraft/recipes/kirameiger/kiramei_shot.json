@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kirameiger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blue_diamond"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_kiramei_stone"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_kiramei_stone"
+	  },
+	  {
+	    "item": "supersentaicraft:green_kiramei_stone"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_kiramei_stone"
+	  },
+	  {
+	    "item": "supersentaicraft:pink_kiramei_stone"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:kiramei_shot"
+  }
+}

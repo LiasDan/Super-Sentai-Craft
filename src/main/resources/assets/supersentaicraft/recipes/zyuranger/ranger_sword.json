@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zyuranger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:zyuranger_medal"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:tyranno_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:mammoth_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:tricera_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:tiger_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:ptera_medal"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:ranger_sword"
+  }
+}

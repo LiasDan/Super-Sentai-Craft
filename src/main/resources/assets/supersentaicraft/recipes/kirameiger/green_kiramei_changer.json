@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kiramei_green",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blue_diamond"
+    },
+	"b": {
+      "item": "supersentaicraft:green_kiramei_stone"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:green_kiramei_changer"
+  }
+}

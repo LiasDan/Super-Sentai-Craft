@@ -98,6 +98,17 @@ public class entity_hebitsukai_metal extends EntityBossBase
 		if (!this.world.isRemote)
 		{
 			this.dropItem(RiderItems.dark_kyutama, 1);
+			this.dropItem(RiderItems.blank_kyutama, 5);
+			
+			switch (this.rand.nextInt(5))
+			{   		   	    		
+			case 0:
+				this.dropItem(RiderItems.dark_kyu_sickle, 1);
+				break;	   	    		
+			case 1:
+				this.dropItem(RiderItems.dark_seiza_blaster, 1);
+				break;
+			}
 		}
 	}
 }

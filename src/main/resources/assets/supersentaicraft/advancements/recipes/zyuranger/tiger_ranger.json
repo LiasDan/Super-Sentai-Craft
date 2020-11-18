@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:zyuranger/tiger_dino_buckler",
+      "supersentaicraft:zyuranger/saber_dagger"
+    ]
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:tiger_medal"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zyuranger/tiger_dino_buckler"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zyuranger/saber_dagger"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item",
+      "has_the_recipe",
+      "has_the_recipe1"
+    ]
+  ]
+}

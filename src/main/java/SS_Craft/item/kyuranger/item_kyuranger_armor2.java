@@ -32,10 +32,10 @@ public class item_kyuranger_armor2 extends ItemArmor  implements IHasModel
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 	
-	public static final String[] Kyuranger= new String[] {"","_ya","_orion"};
-	public static final String[] OushiBlack= new String[] {"oushi_black","oushi_black_ya","yagyuu_jubee"};
-	public static final String[] HebitsukaiSilver= new String[] {"hebitsukai_silver","hebitsukai_silver_ya","hebitsukai_metal_good"};
-	public static final String[] RyuCommander= new String[] {"ryu_commander","ryu_violet"};
+	public static final String[] Kyuranger= new String[] {"","_ya","_orion","_halloween","_halloween1"};
+	public static final String[] OushiBlack= new String[] {"oushi_black","oushi_black_ya","yagyuu_jubee","oushi_black_halloween"};
+	public static final String[] HebitsukaiSilver= new String[] {"hebitsukai_silver","hebitsukai_silver_ya","hebitsukai_metal_good","hebitsukai_silver_halloween"};
+	public static final String[] RyuCommander= new String[] {"ryu_commander","ryu_commander_ya","ryu_violet"};
 		
 	public item_kyuranger_armor2 (String name,ArmorMaterial par2EnumArmorMaterial, int par3, EntityEquipmentSlot par4)
 	{

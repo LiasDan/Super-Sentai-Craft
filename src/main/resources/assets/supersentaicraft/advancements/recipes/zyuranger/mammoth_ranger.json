@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:zyuranger/mammoth_dino_buckler",
+      "supersentaicraft:zyuranger/moth_breaker"
+    ]
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:mammoth_medal"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zyuranger/mammoth_dino_buckler"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zyuranger/moth_breaker"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item",
+      "has_the_recipe",
+      "has_the_recipe1"
+    ]
+  ]
+}

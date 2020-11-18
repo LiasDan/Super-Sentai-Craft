@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "tyranno_ranger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:tyranno_dino_buckler"
+    },
+	{
+      "item": "supersentaicraft:dragon_dino_buckler"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:armed_tyranno_dino_buckler"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:zyuranger/tyranno_dino_buckler",
+      "supersentaicraft:zyuranger/armed_tyranno_dino_buckler",
+      "supersentaicraft:zyuranger/ryugekiken"
+    ]
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:tyranno_medal"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zyuranger/tyranno_dino_buckler"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zyuranger/armed_tyranno_dino_buckler"
+      }
+    },
+    "has_the_recipe2": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zyuranger/ryugekiken"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item",
+      "has_the_recipe",
+      "has_the_recipe1",
+      "has_the_recipe2"
+    ]
+  ]
+}

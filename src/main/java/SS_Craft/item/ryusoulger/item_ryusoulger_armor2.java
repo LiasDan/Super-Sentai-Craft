@@ -5,6 +5,7 @@ import javax.annotation.Nullable;
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.maskman.item_masking_brace;
+import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.model.BipedLockseed;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
@@ -26,7 +27,11 @@ public class item_ryusoulger_armor2 extends ItemArmor  implements IHasModel
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
-
+	
+	public static final String[] RyusoulRed= new String[] {"ryusoul_red","ryusoul_red_max","lupin_red"};
+	public static final String[] RyusoulBlue= new String[] {"ryusoul_blue","lupin_blue"};
+	public static final String[] RyusoulPink= new String[] {"ryusoul_pink","lupin_yellow"};
+	
 	public item_ryusoulger_armor2 (String name,ArmorMaterial par2EnumArmorMaterial, int par3, EntityEquipmentSlot par4)
 	{
 		super(par2EnumArmorMaterial, par3, par4);
@@ -53,13 +58,49 @@ public class item_ryusoulger_armor2 extends ItemArmor  implements IHasModel
 				{
 					String rider = ((item_ryusoul_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 
-					if ( slot == EntityEquipmentSlot.LEGS)
+					if (rider == "ryusoul_red")
 					{
-						return Refercence.MODID+":textures/armor/"+rider +"_2.png";
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+RyusoulRed[item_ryusoul_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+RyusoulRed[item_ryusoul_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
+						}
 					}
-					if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+					else if (rider == "ryusoul_blue")
 					{
-						return Refercence.MODID+":textures/armor/"+rider +"_1.png";
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+RyusoulBlue[item_ryusoul_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+RyusoulBlue[item_ryusoul_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
+						}
+					}
+					else if (rider == "ryusoul_pink")
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+RyusoulPink[item_ryusoul_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+RyusoulPink[item_ryusoul_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
+						}
+					}
+					else
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_1.png";
+						}
 					}
 					
 					return Refercence.MODID+":textures/armor/blank.png";

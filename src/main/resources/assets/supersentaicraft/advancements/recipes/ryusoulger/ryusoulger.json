@@ -6,7 +6,8 @@
       "supersentaicraft:ryusoulger/ryusoulger_torso",
       "supersentaicraft:ryusoulger/ryusoulger_legs",
       "supersentaicraft:ryusoulger/ryusoulger_logo",
-      "supersentaicraft:ryusoulger/ryusoul_ken"
+      "supersentaicraft:ryusoulger/ryusoul_ken",
+      "supersentaicraft:ryusoulger/lupinranger_soul"
     ]
   },
   "criteria": {
@@ -49,6 +50,12 @@
       "conditions": {
         "recipe": "supersentaicraft:ryusoulger/ryusoul_ken"
       }
+    },
+    "has_the_recipe5": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:ryusoulger/lupinranger_soul"
+      }
     }
   },
   "requirements": [
@@ -58,7 +65,8 @@
       "has_the_recipe1",
       "has_the_recipe2",
       "has_the_recipe3",
-      "has_the_recipe4"
+      "has_the_recipe4",
+      "has_the_recipe5"
     ]
   ]
 }

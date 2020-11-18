@@ -3,6 +3,7 @@ package SS_Craft.item.lupatranger;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
 import SS_Craft.util.IHasModel;
 import net.minecraft.entity.Entity;
@@ -65,9 +66,16 @@ public class item_vs_vehicle extends Item implements IHasModel
 				}
 				else if (this == RiderItems.victory_striker)
 				{
-					if (belt == RiderItems.red_vs_changer || item_vs_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1 || belt == RiderItems.blue_vs_changer || belt == RiderItems.yellow_vs_changer)
+					if (belt == RiderItems.red_vs_changer || belt == RiderItems.blue_vs_changer || belt == RiderItems.yellow_vs_changer)
 					{
 						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+					}
+					else if (belt == RiderItems.lupin_x_changer & item_vs_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.vs_changer)
+						{
+							item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+						}
 					}
 				}
 				else if (this == RiderItems.siren_striker)
@@ -75,6 +83,13 @@ public class item_vs_vehicle extends Item implements IHasModel
 					if (belt == RiderItems.ichigou_vs_changer || belt == RiderItems.lupin_x_changer || belt == RiderItems.nigou_vs_changer || belt == RiderItems.sangou_vs_changer)
 					{
 						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+					}
+					else if (belt == RiderItems.lupin_x_changer & item_vs_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0)
+					{
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.vs_changer)
+						{
+							item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+						}
 					}
 				}
 				else if (belt == RiderItems.lupin_x_changer)
@@ -93,6 +108,37 @@ public class item_vs_vehicle extends Item implements IHasModel
 				else
 				{
 					item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+				}
+			}
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_ryusoul_changer)
+			{
+				item_ryusoul_changer belt = (item_ryusoul_changer) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
+
+				if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.vs_changer)
+				{
+					if (belt != RiderItems.gaisorg_changer | belt != RiderItems.brown_changer)
+					{
+						if (this == RiderItems.victory_striker)
+						{
+							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),10);
+							item_ryusoul_changer.set_vs(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
+						else if (this == RiderItems.siren_striker)
+						{
+							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),11);
+							item_ryusoul_changer.set_vs(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
+						else if (this == RiderItems.jackpot_striker | this == RiderItems.good_striker)
+						{
+							item_ryusoul_changer.set_vs(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
+						else
+						{
+							item_ryusoul_changer.set_vs(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
+					}
 				}
 			}
 			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.vs_changer)
