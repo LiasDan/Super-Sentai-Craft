@@ -72,7 +72,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				if (this == RiderItems.commander_ryutsueder | (this == RiderItems.red_seiza_blaster & this.get_core(stack)==2))
+				if (this == RiderItems.commander_ryutsueder | (this == RiderItems.red_seiza_blaster & this.get_core(stack)==2) | (this == RiderItems.dark_red_seiza_blaster & this.get_core(stack)==1))
 				{
 					armorModel.belt=new ItemStack(RiderItems.ryu_buckle);
 				}
@@ -329,6 +329,28 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.dark_red_seiza_blaster)
+									{
+										if (this.get_core(armor)==1)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 4,true,false));
+										}
+										else
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+									}
 									if (this.get_lock(armor)=="kyu_ikkakuju_arm")
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
@@ -390,5 +412,10 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type)
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
+	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_kyutama == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

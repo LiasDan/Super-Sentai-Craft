@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_god",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gao_elephant_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_giraffe_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_bear_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_polar_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_gorilla_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_wolf_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_hammerhead_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_ligator_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_rhinos_jewel"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:unfinished_gao_god_jewel"
+  }
+}

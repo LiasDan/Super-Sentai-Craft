@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_god",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gao_leon_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_condor_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_sawshark_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_buffalo_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_jaguar_jewel"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gao_god_head"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kyoretsu_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:kishamoth_soul"
+    },
+	{
+      "item": "supersentaicraft:t_line_soul"
+    },
+	{
+      "item": "supersentaicraft:k_line_soul"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:kyoretsu_oh_head"
+  }
+}

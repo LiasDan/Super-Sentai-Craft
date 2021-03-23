@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "engine_daishogun",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:daishogun_soul"
+    },
+	{
+      "item": "supersentaicraft:daishogun_soul"
+    },
+	{
+      "item": "supersentaicraft:daishogun_soul"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:engine_daishogun_head"
+  }
+}

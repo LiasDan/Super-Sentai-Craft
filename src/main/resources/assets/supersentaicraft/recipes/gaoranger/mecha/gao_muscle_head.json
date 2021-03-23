@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_muscle",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gao_bison_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_eagle_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_bear_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_polar_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_gorilla_jewel"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gao_muscle_head"
+  }
+}

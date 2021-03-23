@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bakuren_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:carno_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:chasmo_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:bakuren_oh_head"
+  }
+}

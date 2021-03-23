@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dai_denzin",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:red_denzi_gem"
+    },
+	{
+      "item": "supersentaicraft:blue_denzi_gem"
+    },
+	{
+      "item": "supersentaicraft:yellow_denzi_gem"
+    },
+	{
+      "item": "supersentaicraft:green_denzi_gem"
+    },
+	{
+      "item": "supersentaicraft:pink_denzi_gem"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:dai_denzin_head"
+  }
+}

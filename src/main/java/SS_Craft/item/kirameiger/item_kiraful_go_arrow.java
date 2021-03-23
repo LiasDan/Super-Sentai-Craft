@@ -19,7 +19,7 @@ import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.turboranger.item_turbo_brace;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
-import SS_Craft.mobs.Henchmen.entity_ular_captain;
+import SS_Craft.mobs.mini_boss.entity_ular_captain;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
@@ -108,9 +108,15 @@ public class item_kiraful_go_arrow extends ItemBow  implements IHasModel
 			{	
 				if (this==RiderItems.kiraful_go_arrow)
 				{
+					ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
+
 					if (playerIn.isSneaking())
 					{
 						item_kiramei_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
+					}
+					else if (itemstack.isEmpty() && playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gold_kiramei_stone)
+					{
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.gold_kiraful_go_arrow));
 					}
 					else
 					{
@@ -268,9 +274,7 @@ public class item_kiraful_go_arrow extends ItemBow  implements IHasModel
      */
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
     {
-        ItemStack mat = this.material.getRepairItemStack();
-        if (!mat.isEmpty() && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, repair, false)) return true;
-        return super.getIsRepairable(toRepair, repair);
+    	return RiderItems.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
 
     /**

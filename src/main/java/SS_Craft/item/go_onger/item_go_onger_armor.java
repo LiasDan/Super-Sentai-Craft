@@ -126,4 +126,9 @@ public class item_go_onger_armor extends ItemArmor  implements IHasModel
 
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_engine_soul == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

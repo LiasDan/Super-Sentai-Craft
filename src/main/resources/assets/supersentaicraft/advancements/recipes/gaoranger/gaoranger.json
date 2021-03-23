@@ -7,7 +7,8 @@
       "supersentaicraft:gaoranger/gaoranger_legs",
       "supersentaicraft:gaoranger/gaoranger_logo",
       "supersentaicraft:gaoranger/beast_king_sword",
-      "supersentaicraft:gaoranger/evil_crushing_hundred_beast_sword"
+      "supersentaicraft:gaoranger/evil_crushing_hundred_beast_sword",
+      "supersentaicraft:gaoranger/unfinished_gao_god_jewel"
     ]
   },
   "criteria": {
@@ -56,6 +57,12 @@
       "conditions": {
         "recipe": "supersentaicraft:gaoranger/evil_crushing_hundred_beast_sword"
       }
+    },
+    "has_the_recipe6": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:gaoranger/unfinished_gao_god_jewel"
+      }
     }
   },
   "requirements": [
@@ -66,7 +73,8 @@
       "has_the_recipe2",
       "has_the_recipe3",
       "has_the_recipe4",
-      "has_the_recipe5"
+      "has_the_recipe5",
+      "has_the_recipe6"
     ]
   ]
 }

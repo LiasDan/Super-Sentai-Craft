@@ -31,7 +31,7 @@ public class entity_ugatz extends Entity_base_henchmen
 				break;
 
 			case 3:
-				switch (this.rand.nextInt(5))
+				switch (this.rand.nextInt(9))
 				{  		   	    		
 					case 0:
 						this.dropItem(RiderItems.birca_soul, 1);
@@ -46,7 +46,7 @@ public class entity_ugatz extends Entity_base_henchmen
 						break;
 						
 					case 3:
-						this.dropItem(RiderItems.jetras_soul, 2);
+						this.dropItem(RiderItems.jetras_soul, 1);
 						break;
 
 					case 4:

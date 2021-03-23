@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "max_ryuoh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:max_ohja_head"
+    },
+	{
+      "item": "supersentaicraft:bachycelo_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:dimenoko_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:parasa_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:ankylo_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:max_ryuoh_head"
+  }
+}

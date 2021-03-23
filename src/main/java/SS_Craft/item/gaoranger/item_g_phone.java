@@ -200,4 +200,9 @@ public class item_g_phone extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.empty_gao_jewel == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

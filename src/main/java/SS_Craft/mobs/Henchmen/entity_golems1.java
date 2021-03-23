@@ -4,6 +4,8 @@ import SS_Craft.RiderItems;
 import SS_Craft.mobs.Boss.EntityBossBase;
 import SS_Craft.mobs.Boss.entity_dragon_ranger;
 import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
+import SS_Craft.mobs.mini_boss.entity_dora_sphinx;
+import SS_Craft.mobs.mini_boss.entity_pumpkin_rapper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
@@ -25,16 +27,22 @@ public class entity_golems1 extends Entity_base_henchmen
 			{
 				 EntityPlayer playerIn=	(EntityPlayer) this.getAttackTarget();
 				 Entity_base_henchmen entitymob  = new entity_pumpkin_rapper(world);
+				 Entity_base_henchmen entitymob1  = new entity_dora_sphinx(world);
 				 EntityBossBase entityboss = new entity_dragon_ranger(world);
 				
 				 switch (this.rand.nextInt(5))
 				 {
-				 		case 1:
-						entitymob.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-						world.spawnEntity(entitymob);
+			 			case 1:
+			 			entitymob.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+			 			world.spawnEntity(entitymob);
+			 			break;
+			 			
+				 		case 2:
+						entitymob1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+						world.spawnEntity(entitymob1);
 						break;
 						
-				 		case 2:
+				 		case 3:
 				 		entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
 						world.spawnEntity(entityboss);
 						break;

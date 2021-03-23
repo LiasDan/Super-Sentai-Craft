@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "battle_fever_robo",
+  "pattern": [
+    "ama",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:battle_fever_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:kenya_badge"
+    },
+	"c": {
+      "item": "minecraft:diamond_sword"
+    },
+	"m": {
+      "item": "supersentaicraft:mecha_gear"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:cane_knocker"
+  }
+}

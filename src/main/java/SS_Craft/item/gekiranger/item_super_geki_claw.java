@@ -139,4 +139,9 @@ public class item_super_geki_claw extends ItemSword implements IHasModel
         playerIn.setActiveHand(handIn);
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
+    
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.gekiranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

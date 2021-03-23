@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_icarus",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gao_giraffe_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_rhinos_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_madillo_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_deers_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_falcon_jewel"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gao_icarus_head"
+  }
+}

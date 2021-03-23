@@ -201,4 +201,9 @@ public class item_geki_changer extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.gekiranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

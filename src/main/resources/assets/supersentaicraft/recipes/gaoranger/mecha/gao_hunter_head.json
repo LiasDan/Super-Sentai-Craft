@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_hunter",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gao_wolf_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_hammerhead_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_ligator_jewel"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gao_hunter_head"
+  }
+}

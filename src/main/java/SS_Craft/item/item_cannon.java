@@ -47,8 +47,9 @@ public class item_cannon extends ItemSword implements IHasModel
 
     public float ENT;
     private final ToolMaterial toolMaterial;
+	private final Item base;   
 
-    public item_cannon(String name,ToolMaterial par2EnumToolMaterial)
+    public item_cannon(String name,ToolMaterial par2EnumToolMaterial, Item item)
     {
     	
         super(par2EnumToolMaterial);
@@ -59,6 +60,7 @@ public class item_cannon extends ItemSword implements IHasModel
         setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
+        base = item;
     }
     
 	@Override
@@ -96,4 +98,10 @@ public class item_cannon extends ItemSword implements IHasModel
         playerIn.setActiveHand(handIn);
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+    	return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+    }
+
 }

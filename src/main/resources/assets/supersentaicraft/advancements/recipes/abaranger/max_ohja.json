@@ -1,0 +1,62 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:abaranger/mecha/max_ohja_head",
+      "supersentaicraft:abaranger/mecha/bakuryu_axe"
+    ]
+  },
+  "criteria": {
+    "has_logo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:max_tyranno_dino_guts"
+          }
+        ]
+      }
+    },
+    "has_logo1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:max_tricera_dino_guts"
+          }
+        ]
+      }
+    },
+    "has_logo2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:max_ptera_dino_guts"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:abaranger/mecha/max_ohja_head"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:abaranger/mecha/bakuryu_axe"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_logo",
+      "has_logo1",
+      "has_logo2",
+      "has_the_recipe",
+      "has_the_recipe1"
+    ]
+  ]
+}

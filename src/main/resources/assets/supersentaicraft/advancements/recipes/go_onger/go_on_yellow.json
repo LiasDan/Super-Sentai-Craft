@@ -2,8 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:go_onger/yellow_go_phone",
-      "supersentaicraft:go_onger/kega_go_phone"
+      "supersentaicraft:go_onger/yellow_go_phone"
     ]
   },
   "criteria": {
@@ -22,19 +21,12 @@
       "conditions": {
         "recipe": "supersentaicraft:go_onger/yellow_go_phone"
       }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:go_onger/kega_go_phone"
-      }
     }
   },
   "requirements": [
     [
       "has_logo",
-      "has_the_recipe",
-      "has_the_recipe1"
+      "has_the_recipe"
     ]
   ]
 }

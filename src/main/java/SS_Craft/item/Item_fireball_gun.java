@@ -50,8 +50,9 @@ public class Item_fireball_gun extends ItemBow  implements IHasModel
 {
 	 private final float attackDamage;
 	    private final Item.ToolMaterial material;
+		private final Item base;   
 
-	public Item_fireball_gun(String name,ToolMaterial par2EnumToolMaterial)
+	public Item_fireball_gun(String name,ToolMaterial par2EnumToolMaterial, Item item)
 	{
 		super();
 		this.material = par2EnumToolMaterial;
@@ -61,6 +62,7 @@ public class Item_fireball_gun extends ItemBow  implements IHasModel
 		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
+        base = item;
 	}
 	
 
@@ -219,9 +221,7 @@ public class Item_fireball_gun extends ItemBow  implements IHasModel
      */
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
     {
-        ItemStack mat = this.material.getRepairItemStack();
-        if (!mat.isEmpty() && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, repair, false)) return true;
-        return super.getIsRepairable(toRepair, repair);
+    	return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
 
     /**

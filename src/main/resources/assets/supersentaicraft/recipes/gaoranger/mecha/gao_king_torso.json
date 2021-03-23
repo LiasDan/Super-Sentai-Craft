@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_king",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gaoranger_torso"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gao_king_torso"
+  }
+}

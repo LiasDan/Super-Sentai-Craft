@@ -21,7 +21,7 @@ import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.turboranger.item_turbo_brace;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
-import SS_Craft.mobs.Henchmen.entity_ular_captain;
+import SS_Craft.mobs.mini_boss.entity_ular_captain;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
@@ -68,9 +68,10 @@ public class Item_gun extends ItemBow  implements IHasModel
 {
 	 private final float attackDamage;
 	    private final Item.ToolMaterial material;
+		private final Item base;   
 
 	
-	public Item_gun(String name,ToolMaterial par2EnumToolMaterial)
+	public Item_gun(String name,ToolMaterial par2EnumToolMaterial, Item item)
 	{
 		super();
 		this.material = par2EnumToolMaterial;
@@ -80,6 +81,7 @@ public class Item_gun extends ItemBow  implements IHasModel
 		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
+        base = item;
 		
 		this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
 	    {
@@ -102,6 +104,8 @@ public class Item_gun extends ItemBow  implements IHasModel
 									return 12;
 								if (item_seiza_blaster.get_core(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 1)
 								{
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.dark_red_seiza_blaster)
+										return 16;
 									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.commander_ryutsueder)
 										return 13;
 								}
@@ -138,6 +142,8 @@ public class Item_gun extends ItemBow  implements IHasModel
 										return 9;	
 									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.sky_blue_seiza_blaster)
 										return 10;
+									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.dark_red_seiza_blaster)
+										return 18;
 								}
 								
 							}
@@ -200,6 +206,8 @@ public class Item_gun extends ItemBow  implements IHasModel
 									return 13;
 								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "pat_siren")
 									return 14;
+								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "pat_gold")
+									return 15;
 								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "blank")
 								{
 									if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_vs_changer && item_vs_changer.get_lock(stack) == "blank")
@@ -450,9 +458,7 @@ public class Item_gun extends ItemBow  implements IHasModel
      */
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
     {
-        ItemStack mat = this.material.getRepairItemStack();
-        if (!mat.isEmpty() && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, repair, false)) return true;
-        return super.getIsRepairable(toRepair, repair);
+    	return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
 
     /**

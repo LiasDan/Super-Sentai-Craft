@@ -9,12 +9,15 @@ package SS_Craft.model;
 import org.lwjgl.opengl.GL11;
 
 import SS_Craft.RiderItems;
+import SS_Craft.item.abaranger.mecha.item_abaranger_mecha;
 import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.denziman.item_denzi_ring;
+import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.go_busters.item_morphin_brace;
 import SS_Craft.item.go_onger.item_go_phone;
+import SS_Craft.item.go_onger.mecha.item_go_onger_mecha;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.kirameiger.item_kiramei_changer;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
@@ -212,6 +215,7 @@ public class BipedLockseed extends ModelBiped
 		if (entity instanceof  EntityLivingBase)
 		{
 			ItemStack stack  =   ((EntityLivingBase) entity).getItemStackFromSlot(EntityEquipmentSlot.FEET);
+			ItemStack mecha  =   ((EntityLivingBase) entity).getItemStackFromSlot(EntityEquipmentSlot.HEAD);
 			
 			EntityLivingBase player = ((EntityLivingBase)entity);
 			
@@ -242,6 +246,32 @@ public class BipedLockseed extends ModelBiped
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank_2.png"));
 					}
 				}
+				else if (mecha.getItem() instanceof item_gaoranger_mecha)
+				{
+					String rider = ((item_gaoranger_mecha)player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem()).Rider;
+					
+					if (item_gaoranger_mecha.get_left(mecha)!="blank")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/mecha/"+item_gaoranger_mecha.get_left(mecha)+".png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
+				}
+				else if (mecha.getItem() instanceof item_abaranger_mecha)
+				{
+					String rider = ((item_abaranger_mecha)player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem()).Rider;
+					
+					if (item_abaranger_mecha.get_left(mecha)!="blank")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/mecha/"+item_abaranger_mecha.get_left(mecha)+".png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
+				}
 				else if (stack.getItem() instanceof item_accellular)
 				{
 					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_accellular.get_lock(stack) +"_2.png"));
@@ -251,6 +281,19 @@ public class BipedLockseed extends ModelBiped
 					if (item_go_phone.get_lock(stack)=="shinken_hyper_mode")
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/go_on_hyper_2.png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
+				}
+				else if (mecha.getItem() instanceof item_go_onger_mecha)
+				{
+					String rider = ((item_go_onger_mecha)player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem()).Rider;
+					
+					if (item_go_onger_mecha.get_left(mecha)!="blank")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/mecha/"+rider+"_"+item_go_onger_mecha.get_left(mecha)+".png"));
 					}
 					else
 					{

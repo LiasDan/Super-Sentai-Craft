@@ -17,10 +17,10 @@
       "item": "minecraft:shield"
     },
 	"d": {
-      "item": "supersentaicraft:tricera_dino_guts"
+      "item": "supersentaicraft:max_tricera_dino_guts"
     },
 	"e": {
-      "item": "supersentaicraft:ptera_dino_guts"
+      "item": "supersentaicraft:max_ptera_dino_guts"
     }
   },
   "result": {

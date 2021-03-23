@@ -19,7 +19,7 @@ import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.turboranger.item_turbo_brace;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
-import SS_Craft.mobs.Henchmen.entity_ular_captain;
+import SS_Craft.mobs.mini_boss.entity_ular_captain;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
@@ -300,12 +300,11 @@ public class item_whale_change_gun extends ItemBow  implements IHasModel
      * @param toRepair the {@code ItemStack} being repaired
      * @param repair the {@code ItemStack} being used to perform the repair
      */
-    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
-    {
-        ItemStack mat = this.material.getRepairItemStack();
-        if (!mat.isEmpty() && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, repair, false)) return true;
-        return super.getIsRepairable(toRepair, repair);
-    }
+
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.king_s_credential == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 
     /**
      * Gets a map of item attribute modifiers, used by ItemSword to increase hit damage.

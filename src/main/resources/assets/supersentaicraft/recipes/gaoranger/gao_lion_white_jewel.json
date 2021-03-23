@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_king",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gao_lion_jewel"
+    },
+	{
+	  "item": "minecraft:dye",
+	  "data": 15
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gao_lion_white_jewel"
+  }
+}

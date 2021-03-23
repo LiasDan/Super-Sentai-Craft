@@ -8,6 +8,7 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Multimap;
 
+import SS_Craft.RiderItems;
 import SS_Craft.Tabs;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.potion.PotionCore;
@@ -53,18 +54,20 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class Item_sword_gun extends ItemBow  implements IHasModel
 {
 	 private final float attackDamage;
-	    private final Item.ToolMaterial material;
+	 private final Item.ToolMaterial material;
+	private final Item base;   
 
-	public Item_sword_gun(String name,ToolMaterial par2EnumToolMaterial)
+	public Item_sword_gun(String name,ToolMaterial par2EnumToolMaterial, Item item)
 	{
 		super();
 		this.material = par2EnumToolMaterial;
-		 this.attackDamage = 3.0F + material.getAttackDamage();
+		this.attackDamage = 3.0F + material.getAttackDamage();
 		this.maxStackSize = 1;
 		this.setMaxDamage(par2EnumToolMaterial.getMaxUses());
         setTranslationKey(name);
         setRegistryName(name);
         TokuCraft_core.ITEMS.add(this);
+        base = item;
         this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
         {
             @SideOnly(Side.CLIENT)
@@ -246,9 +249,7 @@ public class Item_sword_gun extends ItemBow  implements IHasModel
      */
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
     {
-        ItemStack mat = this.material.getRepairItemStack();
-        if (!mat.isEmpty() && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, repair, false)) return true;
-        return super.getIsRepairable(toRepair, repair);
+    	return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
 
     /**

@@ -125,4 +125,9 @@ public class item_toqger_armor extends ItemArmor  implements IHasModel
 
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_ressha == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

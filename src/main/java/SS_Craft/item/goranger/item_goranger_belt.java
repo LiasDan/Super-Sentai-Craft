@@ -223,4 +223,9 @@ public class item_goranger_belt extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.goranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

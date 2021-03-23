@@ -6,10 +6,13 @@ import com.jcraft.jorbis.Block;
 import SS_Craft.mobs.RenderRiderMob;
 import SS_Craft.mobs.RenderRiderMob2;
 import SS_Craft.mobs.Boss.entity_dark_kiramei_silver;
+import SS_Craft.mobs.Boss.entity_dark_shishi_red;
 import SS_Craft.mobs.Boss.entity_dragon_ranger;
 import SS_Craft.mobs.Boss.entity_gaisorg;
 import SS_Craft.mobs.Boss.entity_gedou_shinken_red;
 import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
+import SS_Craft.mobs.Boss.entity_rouki;
+import SS_Craft.mobs.Boss.entity_yami_0gou;
 import SS_Craft.mobs.Henchmen.entity_barmias_black;
 import SS_Craft.mobs.Henchmen.entity_barmias_white;
 import SS_Craft.mobs.Henchmen.entity_bechats;
@@ -34,11 +37,9 @@ import SS_Craft.mobs.Henchmen.entity_moebas;
 import SS_Craft.mobs.Henchmen.entity_nanashis;
 import SS_Craft.mobs.Henchmen.entity_orgettes;
 import SS_Craft.mobs.Henchmen.entity_pordermen;
-import SS_Craft.mobs.Henchmen.entity_pumpkin_rapper;
 import SS_Craft.mobs.Henchmen.entity_rinshis;
 import SS_Craft.mobs.Henchmen.entity_spotmen;
 import SS_Craft.mobs.Henchmen.entity_ugatz;
-import SS_Craft.mobs.Henchmen.entity_ular_captain;
 import SS_Craft.mobs.Henchmen.entity_ulars;
 import SS_Craft.mobs.Henchmen.entity_unglers;
 import SS_Craft.mobs.Henchmen.entity_wumpers_blue;
@@ -51,6 +52,9 @@ import SS_Craft.mobs.Henchmen.entity_zolohs;
 import SS_Craft.mobs.allies.entity_ex_aid;
 import SS_Craft.mobs.allies.entity_kyuranger;
 import SS_Craft.mobs.bikes.entity_garu_bike;
+import SS_Craft.mobs.mini_boss.entity_dora_sphinx;
+import SS_Craft.mobs.mini_boss.entity_pumpkin_rapper;
+import SS_Craft.mobs.mini_boss.entity_ular_captain;
 import SS_Craft.model.MobWithBeltModel;
 import SS_Craft.model.model_garu_bike;
 import SS_Craft.model.tokuMobModel;
@@ -104,6 +108,7 @@ public class ClientProxyRider extends CommonProxyRider
 		RenderingRegistry.registerEntityRenderingHandler(entity_golems1.class, new RenderRiderMob(new tokuMobModel("golem1_2"), 0.5F,"textures/entities/golem1_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_golems2.class, new RenderRiderMob(new tokuMobModel("golem2_2"), 0.5F,"textures/entities/golem2_1.png"));
 
+		RenderingRegistry.registerEntityRenderingHandler(entity_dora_sphinx.class, new RenderRiderMob(new tokuMobModel("dora_sphinx_2"), 0.5F,"textures/entities/dora_sphinx_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_pumpkin_rapper.class, new RenderRiderMob(new tokuMobModel("pumpkin_rapper_2"), 0.5F,"textures/entities/pumpkin_rapper_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_dragon_ranger.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_dragon_ranger.png"));
 		
@@ -128,6 +133,7 @@ public class ClientProxyRider extends CommonProxyRider
 		//25 Gaoranger
 		RenderingRegistry.registerEntityRenderingHandler(entity_orgettes.class, new RenderRiderMob(new tokuMobModel("orgettes_2"), 0.5F,"textures/entities/orgettes_1.png"));
 
+		RenderingRegistry.registerEntityRenderingHandler(entity_rouki.class, new RenderRiderMob(new tokuMobModel("rouki_2"), 0.5F,"textures/entities/rouki_1.png"));
 		//25 Gaoranger
 		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_black.class, new RenderRiderMob(new tokuMobModel("barmia_black_2"), 0.5F,"textures/entities/barmia_black_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_white.class, new RenderRiderMob(new tokuMobModel("barmia_white_2"), 0.5F,"textures/entities/barmia_white_1.png"));
@@ -152,6 +158,8 @@ public class ClientProxyRider extends CommonProxyRider
 		//38 ToQger
 		RenderingRegistry.registerEntityRenderingHandler(entity_kuros.class, new RenderRiderMob(new tokuMobModel("kuros_2"), 0.5F,"textures/entities/kuros_1.png"));
 
+		RenderingRegistry.registerEntityRenderingHandler(entity_yami_0gou.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_yami_0gou.png"));
+		
 		//40 Zyuohger
 		RenderingRegistry.registerEntityRenderingHandler(entity_moebas.class, new RenderRiderMob(new tokuMobModel("moeba_2"), 0.5F,"textures/entities/moeba_1.png"));
 
@@ -161,6 +169,7 @@ public class ClientProxyRider extends CommonProxyRider
 		RenderingRegistry.registerEntityRenderingHandler(entity_indavers_white.class, new RenderRiderMob(new tokuMobModel("indaver_white_2"), 0.5F,"textures/entities/indaver_white_1.png"));
 
 		RenderingRegistry.registerEntityRenderingHandler(entity_hebitsukai_metal.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_hebitsukai_metal.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_dark_shishi_red.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_kyuranger.png"));
 		
 		RenderingRegistry.registerEntityRenderingHandler(entity_kyuranger.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_kyuranger.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_garu_bike.class, new RenderRiderMob2(new model_garu_bike(), 0.5F,"textures/entities/garu_bike.png"));

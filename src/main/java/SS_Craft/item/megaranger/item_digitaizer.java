@@ -221,4 +221,9 @@ public class item_digitaizer extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.megaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

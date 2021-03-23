@@ -126,4 +126,9 @@ public class item_gingaman_armor extends ItemArmor  implements IHasModel
 
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.gingaman_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

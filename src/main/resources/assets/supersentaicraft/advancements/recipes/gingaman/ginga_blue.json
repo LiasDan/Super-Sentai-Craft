@@ -3,7 +3,6 @@
   "rewards": {
     "recipes": [
       "supersentaicraft:gingaman/blue_ginga_brace",
-      "supersentaicraft:gingaman/starbeast_sword_blue",
       "supersentaicraft:gingaman/kiba_claw",
       "supersentaicraft:gingaman/beast_attack_rod_blue"
     ]
@@ -28,16 +27,10 @@
     "has_the_recipe1": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:gingaman/starbeast_sword_blue"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
         "recipe": "supersentaicraft:gingaman/kiba_claw"
       }
     },
-    "has_the_recipe3": {
+    "has_the_recipe2": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
         "recipe": "supersentaicraft:gingaman/beast_attack_rod_blue"
@@ -49,8 +42,7 @@
       "has_logo",
       "has_the_recipe",
       "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3"
+      "has_the_recipe2"
     ]
   ]
 }

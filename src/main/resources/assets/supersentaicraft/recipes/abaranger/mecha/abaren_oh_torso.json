@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "abaren_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:abaranger_torso"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:abaren_oh_torso"
+  }
+}

@@ -122,4 +122,9 @@ public class item_dairanger_armor extends ItemArmor  implements IHasModel
 		}
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.dairanger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

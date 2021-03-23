@@ -59,9 +59,9 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 {
 	 private final float attackDamage;
 	    private final Item.ToolMaterial material;
-
+		private final Item base;   
 	
-	public item_gun_changer(String name,ToolMaterial par2EnumToolMaterial)
+	public item_gun_changer(String name,ToolMaterial par2EnumToolMaterial, Item item)
 	{
 		super();
 		this.material = par2EnumToolMaterial;
@@ -71,6 +71,7 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
+        base = item;
 		
 		this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
 	    {
@@ -307,9 +308,7 @@ public class item_gun_changer extends ItemBow  implements IHasModel
      */
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
     {
-        ItemStack mat = this.material.getRepairItemStack();
-        if (!mat.isEmpty() && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, repair, false)) return true;
-        return super.getIsRepairable(toRepair, repair);
+    	return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
 
     /**

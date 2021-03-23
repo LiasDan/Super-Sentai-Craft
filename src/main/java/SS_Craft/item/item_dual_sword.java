@@ -34,8 +34,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class item_dual_sword extends ItemSword implements IHasModel
 {
-
-	public item_dual_sword(String name,ToolMaterial par2EnumToolMaterial)
+	private final Item base; 
+	
+	public item_dual_sword(String name,ToolMaterial par2EnumToolMaterial, Item item)
 	{
 
 		super(par2EnumToolMaterial);
@@ -46,7 +47,7 @@ public class item_dual_sword extends ItemSword implements IHasModel
 		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
-
+        base = item;
 
 		this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
 		{
@@ -115,4 +116,8 @@ public class item_dual_sword extends ItemSword implements IHasModel
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
 	}
 
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+    	return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+    }
 }

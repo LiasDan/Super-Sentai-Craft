@@ -86,4 +86,9 @@ public class item_shiny_breaker extends ItemPickaxe implements IHasModel
         playerIn.setActiveHand(handIn);
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

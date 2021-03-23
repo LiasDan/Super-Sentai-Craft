@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "abaren_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:abaren_ohji_head"
+    },
+	{
+      "item": "supersentaicraft:ptera_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:abaren_oh_head"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gao_hunter",
+  "pattern": [
+    "ama",
+    "bad",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:empty_gao_jewel"
+    },
+	"b": {
+      "item": "supersentaicraft:gao_ligator_jewel"
+    },
+	"d": {
+      "item": "supersentaicraft:gao_hammerhead_jewel"
+    },
+	"c": {
+      "item": "minecraft:diamond_sword"
+    },
+	"m": {
+      "item": "supersentaicraft:mecha_gear"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:ligator_blade"
+  }
+}

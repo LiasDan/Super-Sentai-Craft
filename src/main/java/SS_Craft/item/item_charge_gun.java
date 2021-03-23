@@ -20,7 +20,7 @@ import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.turboranger.item_turbo_brace;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
-import SS_Craft.mobs.Henchmen.entity_ular_captain;
+import SS_Craft.mobs.mini_boss.entity_ular_captain;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
@@ -67,9 +67,9 @@ public class item_charge_gun extends ItemBow  implements IHasModel
 {
 	 private final float attackDamage;
 	    private final Item.ToolMaterial material;
-
+		private final Item base;
 	
-	public item_charge_gun(String name,ToolMaterial par2EnumToolMaterial)
+	public item_charge_gun(String name,ToolMaterial par2EnumToolMaterial, Item item)
 	{
 		super();
 		this.material = par2EnumToolMaterial;
@@ -79,6 +79,7 @@ public class item_charge_gun extends ItemBow  implements IHasModel
 		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
+        base = item;
 		
 		this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter()
 		{
@@ -285,9 +286,7 @@ public class item_charge_gun extends ItemBow  implements IHasModel
      */
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
     {
-        ItemStack mat = this.material.getRepairItemStack();
-        if (!mat.isEmpty() && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, repair, false)) return true;
-        return super.getIsRepairable(toRepair, repair);
+    	return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
 
     /**

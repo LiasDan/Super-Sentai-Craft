@@ -122,4 +122,9 @@ public class item_goggle_v_armor extends ItemArmor  implements IHasModel
 		}
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.goggle_v_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

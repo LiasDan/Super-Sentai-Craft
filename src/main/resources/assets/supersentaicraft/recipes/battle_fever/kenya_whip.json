@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "0304-battle_kenya",
+  "group": "battle_kenya",
   "pattern": [
     "aaa",
     "aba",

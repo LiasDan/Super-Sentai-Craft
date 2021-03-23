@@ -240,4 +240,9 @@ public class item_accellular extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.boukenger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

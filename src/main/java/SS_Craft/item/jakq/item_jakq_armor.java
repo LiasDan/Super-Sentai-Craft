@@ -122,4 +122,9 @@ public class item_jakq_armor extends ItemArmor  implements IHasModel
 		}
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_card == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

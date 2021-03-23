@@ -122,4 +122,9 @@ public class item_battle_fever_armor extends ItemArmor  implements IHasModel
 		}
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.battle_fever_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

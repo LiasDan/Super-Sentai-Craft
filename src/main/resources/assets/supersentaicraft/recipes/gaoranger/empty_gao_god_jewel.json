@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_god",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:unfinished_gao_god_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_madillo_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_deers_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_falcon_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_kong_jewel"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:empty_gao_god_jewel"
+  }
+}

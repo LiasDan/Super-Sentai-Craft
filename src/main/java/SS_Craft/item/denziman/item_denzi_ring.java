@@ -232,4 +232,9 @@ public class item_denzi_ring extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.empty_denzi_ring == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

@@ -214,4 +214,9 @@ public class item_gogo_brace extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.gogo_v_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

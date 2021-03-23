@@ -1,0 +1,59 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:abaranger/mecha/bakuren_oh_head",
+      "supersentaicraft:abaranger/mecha/double_tall_sword_bakuren_oh",
+      "supersentaicraft:abaranger/mecha/chasmo_shield"
+    ]
+  },
+  "criteria": {
+    "has_logo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:carno_dino_guts"
+          }
+        ]
+      }
+    },
+    "has_logo1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:chasmo_dino_guts"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:abaranger/mecha/bakuren_oh_head"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:abaranger/mecha/double_tall_sword_bakuren_oh"
+      }
+    },
+    "has_the_recipe2": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:abaranger/mecha/chasmo_shield"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_logo",
+      "has_logo1",
+      "has_the_recipe",
+      "has_the_recipe1",
+      "has_the_recipe2"
+    ]
+  ]
+}

@@ -20,6 +20,7 @@ entity.UlarCaptainMob.name=Ular Captain
 entity.GrinamsMob.name=Grinam Soldiers
 entity.GolemsMob1.name=Golems
 entity.GolemsMob2.name=Golems
+entity.DoraSphinxMob.name=Dora Sphinx
 entity.PumpkinRapperMob.name=Pumpkin Rapper
 entity.DragonRangerMob.name=Dragon Ranger
 entity.CotpotrosMob.name=Cotpotros
@@ -31,6 +32,7 @@ entity.KunekunesMob.name=Soldiers Kunekune
 entity.YartotsMob.name=Seamen Yartots
 entity.ImpsMob.name=Familiars Imps
 entity.OrgettesMob.name=Orgettes
+entity.RoukiMob.name=Duke Org Rouki
 entity.BarmiasBlackMob.name=Barmia Soldiers (Black)
 entity.BarmiasWhiteMob.name=Barmia Soldiers (White)
 entity.KarthsMob.name=Combatant Karths
@@ -40,11 +42,13 @@ entity.NanashisMob.name=Nanashi Company
 entity.GedouShinkenRedMob.name=Gedou Shinken Red
 entity.BuglarsMob.name=Buglars
 entity.KurosMob.name=Combatant Kuros
+entity.Yami0gouMob.name=Yami no 0gou
 entity.MoebasMob.name=Moeba
 entity.IndaversBlueMob.name=Indaver (Blue)
 entity.IndaversGreenMob.name=Indaver (Green)
 entity.IndaversWhiteMob.name=Indaver (White)
 entity.HebitsukaiMetalMob.name=Hebitsukai Metal (Evil)
+entity.DarkShishiRedMob.name=Dark Shishi Red
 entity.KyurangersMob.name=Kyuranger (Futago Kyutama's Clone)
 entity.GaruBikeMob.name=Garu Bike
 entity.ExAidMob.name=Kamen Rider Ex-Aid
@@ -75,6 +79,8 @@ item.ao_star.name=Ao Star
 item.ki_star.name=Ki Star
 item.momo_star.name=Momo Star
 item.mido_star.name=Mido Star
+
+item.goranger_manga.name=Goranger Manga
 
 item.red_bute.name=Red Bute
 item.silver_shot.name=Silver Shot
@@ -141,6 +147,20 @@ item.france_fencing_sword.name=Fencing Sword (Battle France)
 item.kenya_whip.name=Whip (Battle Kenya)
 item.america_throwing_knife.name=Throwing Knife (Miss America)
 
+item.battle_fever_robo_head.name=Battle Fever Robo Helmet
+
+item.battle_fever_robo_torso.name=Battle Fever Robo Chestplate
+item.battle_fever_robo_legs.name=Battle Fever Robo Leggings
+item.battle_fever_robo_boots.name=Battle Fever Robo Boots
+
+item.denkouken.name=DenkouKen (Lightning Sword)
+item.sword_fever.name=Sword Fever
+item.fever_axe.name=Fever Axe
+item.stick_attacker.name=Stick Attacker
+item.attack_lancer.name=Attack Lancer
+item.cane_knocker.name=Cane Knocker
+item.battle_shield.name=Battle Shield
+
 //04 Denziman
 itemGroup.tabDenziman=Denshi Sentai Denziman
 
@@ -171,6 +191,16 @@ item.green_denzi_stick.name=Denzi Stick (DenziGreen)
 item.pink_denzi_stick.name=Denzi Stick (DenziPink)
 item.denzi_punch.name=Denzi Punch
 
+item.dai_denzin_head.name=DaiDenzin Helmet
+
+item.dai_denzin_torso.name=DaiDenzin Chestplate
+item.dai_denzin_legs.name=DaiDenzin Leggings
+item.dai_denzin_boots.name=DaiDenzin Boots
+
+item.denzi_ken.name=DenziKen (Denzi Sword)
+item.dai_denzin_boomerang.name=DaiDenzin Boomerang
+item.denzi_ball.name=Denzi Ball
+
 //05 Sun Vulcan
 itemGroup.tabSunVulcan=Taiyo Sentai Sun Vulcan
 
@@ -191,6 +221,15 @@ item.vul_panther_medal.name=VulPanther Medal
 
 item.vulcan_stick.name=Vulcan Stick
 item.vulcan_stick_eagle.name=Vulcan Stick (VulEagle)
+
+item.sun_vulcan_robo_head.name=Sun Vulcan Robo Helmet
+
+item.sun_vulcan_robo_torso.name=Sun Vulcan Robo Chestplate
+item.sun_vulcan_robo_legs.name=Sun Vulcan Robo Leggings
+item.sun_vulcan_robo_boots.name=Sun Vulcan Robo Boots
+
+item.taiyo_ken.name=Taiyou Ken (Solar Sword)
+item.vul_shield.name=Vul Shield
 
 //06 Goggle V
 itemGroup.tabGoggleV=Dai Sentai Goggle V
@@ -332,12 +371,15 @@ item.black_cross_changer.name=Cross Changer (Black Condor)
 item.yellow_cross_changer.name=Cross Changer (Yellow Owl)
 item.white_cross_changer.name=Cross Changer (White Swan)
 item.blue_cross_changer.name=Cross Changer (Blue Swallow)
+item.green_cross_changer.name=Cross Changer (Green Eagle)
 
 item.hawk_birdonic_wave.name=Hawk Birdonic Wave
 item.condor_birdonic_wave.name=Condor Birdonic Wave
 item.owl_birdonic_wave.name=Owl Birdonic Wave
 item.swan_birdonic_wave.name=Swan Birdonic Wave
 item.swallow_birdonic_wave.name=Swallow Birdonic Wave
+
+item.jetman_manga.name=Jetman Manga
 
 item.bird_blaster.name=Bird Blaster
 item.bringer_sword.name=Bringer Sword
@@ -527,11 +569,7 @@ item.pink_ginga_medal.name=Pink Ginga Medal
 item.lights_of_ginga.name=Lights of Ginga
 item.black_knight_core.name=Black Knight Core
 
-item.starbeast_sword_red.name=Starbeast Sword (GingaRed)
-item.starbeast_sword_green.name=Starbeast Sword (GingaGreen)
-item.starbeast_sword_blue.name=Starbeast Sword (GingaBlue)
-item.starbeast_sword_yellow.name=Starbeast Sword (GingaYellow)
-item.starbeast_sword_pink.name=Starbeast Sword (GingaPink)
+item.starbeast_sword.name=Starbeast Sword
 item.kiba_cutter.name=Kiba Cutter
 item.kiba_shot.name=Kiba Shot
 item.kiba_claw.name=Kiba Claw
@@ -635,6 +673,33 @@ item.gao_bison_jewel.name=GaoBison Jewel
 item.gao_tiger_jewel.name=GaoTiger Jewel
 item.gao_wolf_jewel.name=GaoWolf Jewel
 
+item.gao_elephant_jewel.name=GaoElephant Jewel
+item.gao_giraffe_jewel.name=GaoGiraffe Jewel
+item.gao_bear_jewel.name=GaoBear Jewel
+item.gao_polar_jewel.name=GaoPolar Jewel
+item.gao_gorilla_jewel.name=GaoGorilla Jewel
+item.gao_hammerhead_jewel.name=GaoHammerhead Jewel
+item.gao_ligator_jewel.name=GaoLigator Jewel
+item.gao_rhinos_jewel.name=GaoRhinos Jewel
+item.gao_madillo_jewel.name=GaoMadillo Jewel
+item.gao_deers_jewel.name=GaoDeers Jewel
+item.gao_falcon_jewel.name=GaoFalcon Jewel
+item.gao_leon_jewel.name=GaoLeon Jewel
+item.gao_condor_jewel.name=GaoCondor Jewel
+item.gao_sawshark_jewel.name=GaoSawshark Jewel
+item.gao_buffalo_jewel.name=GaoBuffalo Jewel
+item.gao_jaguar_jewel.name=GaoJaguar Jewel
+item.gao_kong_jewel.name=GaoKong Jewel
+item.gao_panda_jewel.name=GaoPanda Jewel
+
+item.gao_lion_blue_jewel.name=GaoLion Jewel (Blue)
+item.gao_lion_black_jewel.name=GaoLion Jewel (Black)
+item.gao_lion_white_jewel.name=GaoLion Jewel (White)
+item.gao_ape_jewel.name=GaoApe Jewel
+
+item.unfinished_gao_god_jewel.name=Unfinished GaoGod Jewel
+item.empty_gao_god_jewel.name=Empty GaoGod Jewel
+
 item.beast_king_sword.name=Beast King Sword
 item.lion_beast_king_sword.name=Beast King Sword (GaoRed)
 item.eagle_beast_king_sword.name=Beast King Sword (GaoYellow)
@@ -650,6 +715,28 @@ item.bison_axe.name=Bison Axe
 item.tiger_baton.name=Tiger Baton
 item.gao_hustler_rod.name=Gao Hustler Rod
 item.falcon_summoner.name=Falcon Summoner
+
+item.mikazukiken.name=Mikazukiken (Crescent Moon Blade)
+item.flute_knife.name=Flute Knife
+
+item.gao_king_head.name=GaoKing Helmet
+
+item.gao_king_torso.name=GaoKing Chestplate
+item.gao_king_legs.name=GaoKing Leggings
+item.gao_king_boots.name=GaoKing Boots
+
+item.gao_muscle_head.name=GaoMuscle Helmet
+item.gao_hunter_head.name=GaoHunter Helmet
+item.gao_hunter_blue_moon_head.name=GaoHunter Blue Moon Helmet
+item.gao_icarus_head.name=GaoIcarus Helmet
+item.gao_god_head.name=GaoGod Helmet
+item.gao_knight_head.name=GaoKnight Helmet
+
+item.fin_blade.name=Fin Blade
+item.elephant_sword.name=Elephant Sword
+item.elephant_shield.name=Elephant Shield
+item.ligator_blade.name=Ligator Blade
+item.ligator_blade_blue_moon.name=Ligator Blade (Blue Moon)
 
 //27 Abaranger
 itemGroup.tabAbaranger=Bakuryu Sentai Abaranger
@@ -672,7 +759,18 @@ item.tricera_dino_guts.name=Tricera Dino Guts
 item.ptera_dino_guts.name=Ptera Dino Guts
 item.brachio_dino_guts.name=Brachio Dino Guts
 item.top_dino_guts.name=Top Dino Guts
+
+item.bachycelo_dino_guts.name=Bachycelo Dino Guts
+item.dimenoko_dino_guts.name=Dimenoko Dino Guts
+item.stego_dino_guts.name=Stego Dino Guts
+item.parasa_dino_guts.name=Parasa Dino Guts
+item.ankylo_dino_guts.name=Ankylo Dino Guts
+item.firenoko_dino_guts.name=Firenoko Dino Guts
 item.max_tyranno_dino_guts.name=Max Tyranno Dino Guts
+item.max_tricera_dino_guts.name=Max Tricera Dino Guts
+item.max_ptera_dino_guts.name=Max Ptera Dino Guts
+item.carno_dino_guts.name=Carno Dino Guts
+item.chasmo_dino_guts.name=Chasmo Dino Guts
 
 item.aba_laser.name=Aba Laser
 item.baku_laser.name=Baku Laser
@@ -683,6 +781,27 @@ item.dino_thruster.name=Dino Thruster
 item.wing_pentact.name=Wing Pentact
 item.sty_riser.name=StyRiser (Offense Mode)
 item.sty_riser_shield.name=StyRiser (Defense Mode)
+
+item.abaren_oh_head.name=AbarenOh Helmet
+
+item.abaren_oh_torso.name=AbarenOh Chestplate
+item.abaren_oh_legs.name=AbarenOh Leggings
+item.abaren_oh_boots.name=AbarenOh Boots
+
+item.abaren_ohji_head.name=AbarenOhJi Helmet
+item.killer_oh_head.name=KillerOh Helmet
+item.max_ohja_head.name=MaxOhJa Helmet
+item.max_ryuoh_head.name=MaxRyuuOh Helmet
+item.oo_abaren_oh_head.name=OoAbarenOh Helmet
+item.bakuren_oh_head.name=BakurenOh Helmet
+
+item.double_tall_sword.name=Double Tall Sword
+item.tricera_shield.name=Tricera Shield
+item.gale_spear.name=Gale Spear
+item.bakuryu_axe.name=Bakuryuu Axe
+item.bakuryu_spear.name=Bakuryuu Spear
+item.double_tall_sword_bakuren_oh.name=Double Tall Sword (BakurenOh)
+item.chasmo_shield.name=Chasmo Shield
 
 //30 Boukenger
 itemGroup.tabBoukenger=GoGo Sentai Boukenger
@@ -796,6 +915,10 @@ item.kishamoth_soul.name=Kishamoth Engine Soul
 item.t_line_soul.name=T-line Engine Soul
 item.k_line_soul.name=K-line Engine Soul
 
+item.daishogun_soul.name=Dai-Shogun Soul
+item.skydor_soul.name=Skydor Soul
+item.kegalesia_soul.name=Kegalesia Soul
+
 item.mantan_sword.name=Mantan Gun
 item.road_sabre.name=Road Sabre
 item.garage_launcher.name=Garage Launcher
@@ -806,6 +929,25 @@ item.wing_booster.name=Wing Booster
 item.wing_booster_silver.name=Wing Booster
 item.kankanbar.name=Kankanbar
 item.kankan_mantan_gun.name=Kankan Mantan Gun
+
+item.engine_oh_head.name=Engine-Oh Helmet
+
+item.engine_oh_torso.name=Engine-Oh Chestplate
+item.engine_oh_legs.name=Engine-Oh Leggings
+item.engine_oh_boots.name=Engine-Oh Boots
+
+item.gunbir_oh_head.name=GunBir-Oh Helmet
+item.engine_oh_g6_head.name=Engine-Oh G6 Helmet
+item.seikuu_oh_head.name=Seikuu-Oh Helmet
+item.engine_oh_g9_head.name=Engine-Oh G9 Helmet
+item.kyoretsu_oh_head.name=Kyoretsu-Oh Helmet
+item.engine_oh_g12_head.name=Engine-Oh G12 Helmet
+item.engine_daishogun_head.name=Engine Dai-Shogun Helmet
+item.skydor_engine_oh_head.name=Engine-Oh Helmet (Skydor ver.)
+
+item.go_on_sword.name=Go-On Sword
+item.v_shield.name=V Shield
+item.enjin_ken.name=EnjinKen (Engine Sword)
 
 //33 Shinkenger
 itemGroup.tabShinkenger=Samurai Sentai Shinkenger
@@ -933,6 +1075,7 @@ item.yongou_toq_changer.name=ToQ Changer (ToQ 4gou)
 item.gogou_toq_changer.name=ToQ Changer (ToQ 5gou)
 item.rokugou_appli_changer.name=Applichanger (ToQ 6gou)
 item.nanagou_appli_changer.name=Applichanger (ToQ 7gou)
+item.zerogou_toq_changer.name=ToQ Changer (Yami no 0gou)
 
 item.red_ressha.name=Red Ressha
 item.blue_ressha.name=Blue Ressha
@@ -949,6 +1092,7 @@ item.eagle_ressha.name=Eagle Ressha
 item.wildcat_ressha.name=Wildcat Ressha
 item.alligator_ressha.name=Alligator Ressha
 item.panda_ressha.name=Panda Ressha
+item.zero_ressha.name=Zero Ressha
 
 item.toq_blaster.name=ToQ Blaster
 item.rail_slasher.name=Rail Slasher
@@ -1023,6 +1167,7 @@ item.commander_ryutsueder.name=Ryutsueder (Ryu Commander)
 item.sky_blue_seiza_blaster.name=Seiza Blaster (Koguma Skyblue)
 item.houou_blade_shield.name=Houou Blade & Shield (Houou Soldier)
 item.metal_dark_seiza_blaster.name=Dark Seiza Blaster (Hebitsukai Metal)
+item.dark_red_seiza_blaster.name=Seiza Blaster (Dark Shishi Red)
 
 item.shishi_kyutama.name=Shishi Kyutama
 item.sasori_kyutama.name=Sasori Kyutama
@@ -1042,6 +1187,7 @@ item.hikari_kyutama_tsuki.name=Hikari Kyutama (Tsuki Mode)
 item.saiko_kyutama.name=Saiko Kyutama
 item.yagyuu_jubee_mask.name=Yagyuu Juubee Mask
 item.dark_kyutama.name=Dark Kyutama
+item.dark_shishi_kyutama.name=Dark Shishi Kyutama
 item.kyuranger_kyutama.name=Kyuranger Kyutama
 item.ex_aid_kyutama.name=Ex-Aid Kyutama
 
@@ -1320,6 +1466,7 @@ item.blue_kiramei_changer.name=Kiramei Changer (Kiramei Blue)
 item.pink_kiramei_changer.name=Kiramei Changer (Kiramei Pink)
 item.shiny_kiramei_changer.name=Shiny Kiramei Changer (Kiramei Silver)
 item.yodon_changer.name=Yodon Changer (Dark Kiramei Silver)
+item.gold_kiraful_go_arrow.name=Kiraful Go Arrow (Kiramei Gold)
 
 item.red_kiramei_stone.name=Red Kiramei Stone
 item.yellow_kiramei_stone.name=Yellow Kiramei Stone
@@ -1328,6 +1475,7 @@ item.blue_kiramei_stone.name=Blue Kiramei Stone
 item.pink_kiramei_stone.name=Pink Kiramei Stone
 item.shiny_kiramei_stone.name=Shiny Kiramei Stone
 item.dark_kiramei_stone.name=Dark Kiramei Stone
+item.gold_kiramei_stone.name=Gold Kiramei Stone
 
 item.destoria_kanaema_stone.name=Destoria Kanaema Stone
 item.reversia_kanaema_stone.name=Reversia Kanaema Stone
@@ -1378,8 +1526,12 @@ item.gama_gama_gun.name=Gama Gama Gun
 //Misc
 itemGroup.tabMisc=Misc Sentai Items
 
+item.mecha_gear.name=Mecha Gear
+tile.mecha_ore.name=Mecha Ore
+
 item.hachibungi.name=Octant
 item.rokubungi.name=Sextant
 item.compass_kyu.name=Chalkboard Compass
 item.jyogi.name=Ruler
+
 //item..name=

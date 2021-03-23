@@ -228,25 +228,46 @@ public class ore_block extends Block implements IHasModel
 		//25 Gaoranger
 		if (CRYSTAL==RiderItems.empty_gao_jewel)
 		{
-			int rand = generator.nextInt(290);
+			int rand = generator.nextInt(466);
 			if (rand<25) return RiderItems.gao_lion_jewel;
 			if (rand<50) return RiderItems.gao_eagle_jewel;
 			if (rand<75) return RiderItems.gao_shark_jewel;
 			if (rand<100) return RiderItems.gao_bison_jewel;
 			if (rand<125) return RiderItems.gao_tiger_jewel;
-			if (rand<145) return RiderItems.gao_wolf_jewel;
+			if (rand<140) return RiderItems.gao_elephant_jewel;
+			if (rand<155) return RiderItems.gao_giraffe_jewel;
+			if (rand<170) return RiderItems.gao_bear_jewel;
+			if (rand<185) return RiderItems.gao_polar_jewel;
+			if (rand<195) return RiderItems.gao_gorilla_jewel;
+			if (rand<205) return RiderItems.gao_rhinos_jewel;
+			if (rand<215) return RiderItems.gao_madillo_jewel;
+			if (rand<225) return RiderItems.gao_deers_jewel;
+			if (rand<230) return RiderItems.gao_falcon_jewel;
+			if (rand<231) return RiderItems.gao_kong_jewel;
+			if (rand<232) return RiderItems.gao_panda_jewel;
+			if (rand<233) return RiderItems.gao_ape_jewel;
 			return CRYSTAL;
 		}
 		//27 Abaranger
 		if (CRYSTAL==RiderItems.abaranger_logo)
 		{
-			int rand = generator.nextInt(240);
+			int rand = generator.nextInt(420);
 			if (rand<25) return RiderItems.tyranno_dino_guts;
 			if (rand<50) return RiderItems.tricera_dino_guts;
 			if (rand<75) return RiderItems.ptera_dino_guts;
 			if (rand<95) return RiderItems.brachio_dino_guts;
 			if (rand<115) return RiderItems.top_dino_guts;
 			if (rand<120) return RiderItems.max_tyranno_dino_guts;
+			if (rand<135) return RiderItems.bachycelo_dino_guts;
+			if (rand<150) return RiderItems.dimenoko_dino_guts;
+			if (rand<165) return RiderItems.stego_dino_guts;
+			if (rand<180) return RiderItems.parasa_dino_guts;
+			if (rand<195) return RiderItems.ankylo_dino_guts;
+			if (rand<200) return RiderItems.firenoko_dino_guts;
+			if (rand<205) return RiderItems.carno_dino_guts;
+			if (rand<210) return RiderItems.chasmo_dino_guts;
+			if (rand<215) return RiderItems.max_tricera_dino_guts;
+			if (rand<220) return RiderItems.max_ptera_dino_guts;
 			return CRYSTAL;
 		}
 		//30 Boukenger
@@ -283,19 +304,21 @@ public class ore_block extends Block implements IHasModel
 		//32 Go-Onger
 		if (CRYSTAL==RiderItems.blank_engine_soul)
 		{
-			int rand = generator.nextInt(356);
+			int rand = generator.nextInt(402);
 			if (rand<25) return RiderItems.speedor_soul;
 			if (rand<50) return RiderItems.buson_soul;
 			if (rand<75) return RiderItems.bear_rv_soul;
 			if (rand<95) return RiderItems.birca_soul;
 			if (rand<115) return RiderItems.gunpherd_soul;
-			if (rand<116) return RiderItems.carrigator_soul;
-			if (rand<136) return RiderItems.toripter_soul;
-			if (rand<156) return RiderItems.jetras_soul;
-			if (rand<166) return RiderItems.jumbowhale_soul;
-			if (rand<176) return RiderItems.kishamoth_soul;
-			if (rand<177) return RiderItems.t_line_soul;
-			if (rand<178) return RiderItems.k_line_soul;
+			if (rand<130) return RiderItems.carrigator_soul;
+			if (rand<150) return RiderItems.toripter_soul;
+			if (rand<170) return RiderItems.jetras_soul;
+			if (rand<180) return RiderItems.jumbowhale_soul;
+			if (rand<185) return RiderItems.kishamoth_soul;
+			if (rand<190) return RiderItems.t_line_soul;
+			if (rand<195) return RiderItems.k_line_soul;
+			if (rand<200) return RiderItems.daishogun_soul;
+			if (rand<201) return RiderItems.skydor_soul;
 			return CRYSTAL;
 		}
 		//33 Shinkenger

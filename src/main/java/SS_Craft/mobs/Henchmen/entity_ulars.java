@@ -1,6 +1,7 @@
 package SS_Craft.mobs.Henchmen;
 
 import SS_Craft.RiderItems;
+import SS_Craft.mobs.mini_boss.entity_ular_captain;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;

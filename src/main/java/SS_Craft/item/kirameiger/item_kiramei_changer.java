@@ -106,6 +106,10 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 				{
 					armorModel.belt=new ItemStack(RiderItems.kiramei_silver_belt);
 				}
+				if (this == RiderItems.gold_kiraful_go_arrow)
+				{
+					armorModel.belt=new ItemStack(RiderItems.kiramei_gold_belt);
+				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -154,6 +158,12 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 	
 	public static String get_lock(ItemStack itemstack)
 	{	
+		String rider = ((item_kiramei_changer)itemstack.getItem()).Rider;
+		
+		if (rider == "kiramei_gold")
+		{
+			return "go";
+		}
 		return itemstack.hasTagCompound() ? item_kiramei_stone.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
 	}
 	
@@ -242,6 +252,15 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.WITHER,20, 2,true,false));
 									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gold_kiraful_go_arrow)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+									}
 									if (this.get_lock(armor)=="go")
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 4,true,false));
@@ -281,5 +300,10 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type)
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
+	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

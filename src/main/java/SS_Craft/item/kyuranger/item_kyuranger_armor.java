@@ -131,4 +131,9 @@ public class item_kyuranger_armor extends ItemArmor  implements IHasModel
 
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_kyutama == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

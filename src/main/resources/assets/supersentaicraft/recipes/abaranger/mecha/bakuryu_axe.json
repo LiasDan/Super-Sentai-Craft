@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "max_ohja",
+  "pattern": [
+    "ama",
+    "cbd",
+	"aea"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:abaranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:max_tyranno_dino_guts"
+    },
+	"c": {
+      "item": "supersentaicraft:max_tricera_dino_guts"
+    },
+	"d": {
+      "item": "supersentaicraft:max_ptera_dino_guts"
+    },
+	"e": {
+      "item": "minecraft:diamond_sword"
+    },
+	"m": {
+      "item": "supersentaicraft:mecha_gear"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:bakuryu_axe"
+  }
+}

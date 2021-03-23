@@ -190,4 +190,9 @@ public class item_masking_brace extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.maskman_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

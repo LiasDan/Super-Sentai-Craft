@@ -185,4 +185,9 @@ public class item_vulcan_brace extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.sun_vulcan_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

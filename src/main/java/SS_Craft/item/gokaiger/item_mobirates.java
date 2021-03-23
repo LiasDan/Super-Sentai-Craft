@@ -152,8 +152,6 @@ public class item_mobirates extends ItemArmor implements IHasModel
 							{
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.kawarimono_head)
 								{
-									Potion FLY = Potion.getPotionFromResourceLocation("tokuPotions"+ ":" + "fly");
-									
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_mobirates)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
@@ -183,7 +181,7 @@ public class item_mobirates extends ItemArmor implements IHasModel
 										}
 										else if (this.get_core(armor)==5)
 										{
-											player.addPotionEffect(new PotionEffect(FLY,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
 										}
 										else if (this.get_core(armor)==11)

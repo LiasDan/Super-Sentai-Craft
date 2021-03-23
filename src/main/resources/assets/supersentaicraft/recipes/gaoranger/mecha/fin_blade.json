@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gao_king",
+  "pattern": [
+    "ama",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:empty_gao_jewel"
+    },
+	"b": {
+      "item": "supersentaicraft:gao_shark_jewel"
+    },
+	"c": {
+      "item": "minecraft:diamond_sword"
+    },
+	"m": {
+      "item": "supersentaicraft:mecha_gear"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:fin_blade"
+  }
+}

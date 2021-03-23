@@ -151,4 +151,9 @@ public class item_flashman_armor extends ItemArmor  implements IHasModel
 		}
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.flashman_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

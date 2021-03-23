@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gunbir_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:birca_soul"
+    },
+	{
+      "item": "supersentaicraft:gunpherd_soul"
+    },
+	{
+      "item": "supersentaicraft:carrigator_soul"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gunbir_oh_head"
+  }
+}

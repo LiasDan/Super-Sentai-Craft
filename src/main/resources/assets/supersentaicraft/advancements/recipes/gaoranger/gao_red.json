@@ -5,8 +5,7 @@
       "supersentaicraft:gaoranger/red_g_phone",
       "supersentaicraft:gaoranger/lion_beast_king_sword",
       "supersentaicraft:gaoranger/lion_fang",
-      "supersentaicraft:gaoranger/gao_mane_buster",
-      "supersentaicraft:gaoranger/falcon_summoner"
+      "supersentaicraft:gaoranger/gao_mane_buster"
     ]
   },
   "criteria": {
@@ -43,12 +42,6 @@
       "conditions": {
         "recipe": "supersentaicraft:gaoranger/gao_mane_buster"
       }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gaoranger/falcon_summoner"
-      }
     }
   },
   "requirements": [
@@ -57,8 +50,7 @@
       "has_the_recipe",
       "has_the_recipe1",
       "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4"
+      "has_the_recipe3"
     ]
   ]
 }

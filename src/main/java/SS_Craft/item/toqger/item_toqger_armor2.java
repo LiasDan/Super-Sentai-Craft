@@ -63,6 +63,17 @@ public class item_toqger_armor2 extends ItemArmor  implements IHasModel
 				{
 					String rider = ((item_toq_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 
+					if (rider=="yami_0gou")
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_1.png";
+						}
+					}
 					if (rider=="toq_6gou"||rider=="toq_7gou")
 					{
 						if (item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0)
@@ -125,7 +136,7 @@ public class item_toqger_armor2 extends ItemArmor  implements IHasModel
 						}
 						else
 						{
-							if ( slot == EntityEquipmentSlot.LEGS)
+							if (slot == EntityEquipmentSlot.LEGS)
 							{
 								return Refercence.MODID+":textures/armor/"+rider+"_2.png";
 							}
@@ -196,6 +207,11 @@ public class item_toqger_armor2 extends ItemArmor  implements IHasModel
 	public void registerModels() 
 	{
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
+	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_ressha == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

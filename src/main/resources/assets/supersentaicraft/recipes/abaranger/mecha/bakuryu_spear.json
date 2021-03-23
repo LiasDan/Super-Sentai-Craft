@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "max_ryuoh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:bakuryu_axe"
+    },
+	{
+      "item": "supersentaicraft:bakuryu_axe"
+    },
+	{
+      "item": "supersentaicraft:abaranger_logo"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:bakuryu_spear"
+  }
+}

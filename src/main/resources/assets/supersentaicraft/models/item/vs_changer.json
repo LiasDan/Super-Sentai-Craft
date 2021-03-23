@@ -90,6 +90,12 @@
                 "pull": 14
             },
             "model": "supersentaicraft:item/siren_vs_changer"
+        },
+        {
+            "predicate": {
+                "pull": 15
+            },
+            "model": "supersentaicraft:item/gold_vs_changer"
         }
     ]
   }

@@ -209,4 +209,9 @@ public class item_accel_changer extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.carranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:abaranger/mecha/killer_oh_head",
+      "supersentaicraft:abaranger/mecha/gale_spear"
+    ]
+  },
+  "criteria": {
+    "has_logo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:dino_minder"
+          }
+        ]
+      }
+    },
+    "has_logo1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:stego_dino_guts"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:abaranger/mecha/killer_oh_head"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:abaranger/mecha/gale_spear"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_logo",
+      "has_logo1",
+      "has_the_recipe",
+      "has_the_recipe1"
+    ]
+  ]
+}

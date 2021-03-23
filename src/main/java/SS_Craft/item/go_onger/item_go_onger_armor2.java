@@ -125,5 +125,10 @@ public class item_go_onger_armor2 extends ItemArmor  implements IHasModel
 	{
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_engine_soul == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 
 }

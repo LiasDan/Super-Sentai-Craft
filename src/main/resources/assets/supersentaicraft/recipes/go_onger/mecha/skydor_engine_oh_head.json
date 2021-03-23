@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "skydor_engine_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:skydor_soul"
+    },
+	{
+      "item": "supersentaicraft:buson_soul"
+    },
+	{
+      "item": "supersentaicraft:bear_rv_soul"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:skydor_engine_oh_head"
+  }
+}

@@ -31,14 +31,15 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemChargeSword extends ItemSword implements IHasModel
 {
+	private final Item base;   
 
-	public ItemChargeSword(String name,ToolMaterial par2EnumToolMaterial)
+	public ItemChargeSword(String name,ToolMaterial par2EnumToolMaterial, Item item)
 	{
 
 		super(par2EnumToolMaterial);
 		this.maxStackSize = 1;
 		this.setMaxDamage(par2EnumToolMaterial.getMaxUses());
-
+		base = item;
 		// Imcharge=charge; 
 		setTranslationKey(name);
 		setRegistryName(name);
@@ -86,8 +87,6 @@ public class ItemChargeSword extends ItemSword implements IHasModel
          return true;
      }
 
-    	
-    
     public static int  get_core(ItemStack itemstack)
 	{
 		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("sword_hit") :0;
@@ -107,4 +106,8 @@ public class ItemChargeSword extends ItemSword implements IHasModel
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
 	}
 
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return base == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

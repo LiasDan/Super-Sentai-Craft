@@ -36,6 +36,7 @@ public class item_kyuranger_armor2 extends ItemArmor  implements IHasModel
 	public static final String[] OushiBlack= new String[] {"oushi_black","oushi_black_ya","yagyuu_jubee","oushi_black_halloween"};
 	public static final String[] HebitsukaiSilver= new String[] {"hebitsukai_silver","hebitsukai_silver_ya","hebitsukai_metal_good","hebitsukai_silver_halloween"};
 	public static final String[] RyuCommander= new String[] {"ryu_commander","ryu_commander_ya","ryu_violet"};
+	public static final String[] DarkShishiRed = new String[] {"","_orion"};
 		
 	public item_kyuranger_armor2 (String name,ArmorMaterial par2EnumArmorMaterial, int par3, EntityEquipmentSlot par4)
 	{
@@ -105,6 +106,17 @@ public class item_kyuranger_armor2 extends ItemArmor  implements IHasModel
 						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
 						{
 							return Refercence.MODID+":textures/armor/"+RyuCommander[item_seiza_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_1.png";
+						}
+					}
+					else if (rider == "dark_shishi_red")
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+DarkShishiRed[item_seiza_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+rider+DarkShishiRed[item_seiza_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_1.png";
 						}
 					}
 					else
@@ -179,6 +191,11 @@ public class item_kyuranger_armor2 extends ItemArmor  implements IHasModel
 	public void registerModels() 
 	{
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
+	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_kyutama == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

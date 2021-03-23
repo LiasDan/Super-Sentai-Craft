@@ -25,6 +25,8 @@ public class item_turboranger_armor extends ItemArmor  implements IHasModel
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
+	public static final String[] Turbo= new String[] {"","_powerless"};
+	
 	public item_turboranger_armor (String name,ArmorMaterial par2EnumArmorMaterial, int par3, EntityEquipmentSlot par4)
 	{
 		super(par2EnumArmorMaterial, par3, par4);
@@ -54,11 +56,11 @@ public class item_turboranger_armor extends ItemArmor  implements IHasModel
 
 					if ( slot == EntityEquipmentSlot.LEGS)
 					{
-						return Refercence.MODID+":textures/armor/"+rider +"_2.png";
+						return Refercence.MODID+":textures/armor/"+rider+Turbo[item_turbo_brace.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_2.png";
 					}
 					if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
 					{
-						return Refercence.MODID+":textures/armor/"+rider +"_1.png";
+						return Refercence.MODID+":textures/armor/"+rider+Turbo[item_turbo_brace.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
 					}
 
 					return Refercence.MODID+":textures/armor/blank.png";
@@ -121,5 +123,10 @@ public class item_turboranger_armor extends ItemArmor  implements IHasModel
 			}
 		}
 		return null;
+	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.turboranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

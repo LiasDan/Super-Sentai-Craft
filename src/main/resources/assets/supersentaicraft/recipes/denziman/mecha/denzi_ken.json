@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dai_denzin",
+  "pattern": [
+    "cma",
+    "ebf",
+	"agd"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:empty_denzi_ring"
+    },
+	"b": {
+      "item": "supersentaicraft:red_denzi_gem"
+    },
+	"c": {
+      "item": "supersentaicraft:blue_denzi_gem"
+    },
+	"d": {
+      "item": "supersentaicraft:yellow_denzi_gem"
+    },
+	"e": {
+      "item": "supersentaicraft:green_denzi_gem"
+    },
+	"f": {
+      "item": "supersentaicraft:pink_denzi_gem"
+    },
+	"g": {
+      "item": "minecraft:diamond_sword"
+    },
+	"m": {
+      "item": "supersentaicraft:mecha_gear"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:denzi_ken"
+  }
+}

@@ -122,4 +122,9 @@ public class item_sun_vulcan_armor extends ItemArmor  implements IHasModel
 		}
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.sun_vulcan_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

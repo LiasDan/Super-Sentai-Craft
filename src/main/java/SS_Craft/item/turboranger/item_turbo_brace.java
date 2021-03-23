@@ -152,6 +152,15 @@ public class item_turbo_brace extends ItemArmor implements IHasModel
 							{
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.turboranger_head)
 								{
+									if (this.get_core(armor)==1)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 20, 1,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, 20, 1,true,false));
+										player.removePotionEffect(MobEffects.RESISTANCE);
+										player.removePotionEffect(MobEffects.HASTE);
+										player.removePotionEffect(MobEffects.SPEED);
+										player.removePotionEffect(MobEffects.NIGHT_VISION);
+									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_turbo_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
@@ -206,5 +215,10 @@ public class item_turbo_brace extends ItemArmor implements IHasModel
 	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type)
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
+	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.turboranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

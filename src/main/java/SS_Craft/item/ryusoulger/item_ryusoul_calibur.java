@@ -86,4 +86,9 @@ public class item_ryusoul_calibur extends ItemSword implements IHasModel
         playerIn.setActiveHand(handIn);
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
+
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_ryusoul == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

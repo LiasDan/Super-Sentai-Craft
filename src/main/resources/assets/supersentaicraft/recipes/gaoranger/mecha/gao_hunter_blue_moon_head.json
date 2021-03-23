@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gao_hunter_blue_moon",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gao_lion_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_eagle_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_shark_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_bison_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_tiger_jewel"
+    },
+	{
+      "item": "supersentaicraft:gao_hunter_head"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gao_hunter_blue_moon_head"
+  }
+}

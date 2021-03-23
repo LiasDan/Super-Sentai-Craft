@@ -196,4 +196,9 @@ public class item_powered_capsule extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_card == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

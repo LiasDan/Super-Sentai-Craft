@@ -1,0 +1,112 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:battle_fever/mecha/attack_lancer",
+      "supersentaicraft:battle_fever/mecha/battle_fever_robo_boots",
+      "supersentaicraft:battle_fever/mecha/battle_fever_robo_head",
+      "supersentaicraft:battle_fever/mecha/battle_fever_robo_legs",
+      "supersentaicraft:battle_fever/mecha/battle_fever_robo_torso",
+      "supersentaicraft:battle_fever/mecha/battle_shield",
+      "supersentaicraft:battle_fever/mecha/cane_knocker",
+      "supersentaicraft:battle_fever/mecha/denkouken",
+      "supersentaicraft:battle_fever/mecha/fever_axe",
+      "supersentaicraft:battle_fever/mecha/stick_attacker",
+      "supersentaicraft:battle_fever/mecha/sword_fever"
+    ]
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:mecha_gear"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/attack_lancer"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/battle_fever_robo_boots"
+      }
+    },
+    "has_the_recipe2": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/battle_fever_robo_head"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/battle_fever_robo_legs"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/battle_fever_robo_torso"
+      }
+    },
+    "has_the_recipe5": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/battle_shield"
+      }
+    },
+    "has_the_recipe6": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/cane_knocker"
+      }
+    },
+    "has_the_recipe7": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/denkouken"
+      }
+    },
+    "has_the_recipe8": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/fever_axe"
+      }
+    },
+    "has_the_recipe9": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/stick_attacker"
+      }
+    },
+    "has_the_recipe10": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:battle_fever/mecha/sword_fever"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item",
+      "has_the_recipe",
+      "has_the_recipe1",
+      "has_the_recipe2",
+      "has_the_recipe3",
+      "has_the_recipe4",
+      "has_the_recipe5",
+      "has_the_recipe6",
+      "has_the_recipe7",
+      "has_the_recipe8",
+      "has_the_recipe9",
+      "has_the_recipe10"
+    ]
+  ]
+}

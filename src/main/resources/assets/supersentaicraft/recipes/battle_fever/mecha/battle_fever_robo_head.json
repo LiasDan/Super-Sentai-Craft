@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "battle_fever_robo",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:japan_badge"
+    },
+	{
+      "item": "supersentaicraft:cossack_badge"
+    },
+	{
+      "item": "supersentaicraft:france_badge"
+    },
+	{
+      "item": "supersentaicraft:kenya_badge"
+    },
+	{
+      "item": "supersentaicraft:america_badge"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:battle_fever_robo_head"
+  }
+}

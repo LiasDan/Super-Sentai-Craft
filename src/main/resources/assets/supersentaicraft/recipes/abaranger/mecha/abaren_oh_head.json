@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "abaren_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:tyranno_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:tricera_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:ptera_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:abaren_oh_head"
+  }
+}

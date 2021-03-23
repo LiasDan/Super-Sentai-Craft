@@ -210,6 +210,14 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_cross_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+									}
 								}
 							}
 						}
@@ -229,5 +237,10 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type)
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
+	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.birdonic_wave == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

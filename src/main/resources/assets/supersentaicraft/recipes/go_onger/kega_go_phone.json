@@ -3,7 +3,7 @@
   "group": "kega_yellow",
   "pattern": [
     "aba",
-    "aaa",
+    "aca",
 	"aaa"
   ],
   "key": {
@@ -12,6 +12,9 @@
     },
 	"b": {
       "item": "supersentaicraft:bear_rv_soul"
+    },
+	"c": {
+      "item": "supersentaicraft:kegalesia_soul"
     }
   },
   "result": {

@@ -80,4 +80,9 @@ public class item_sty_riser_shield extends ItemShield implements IHasModel
         playerIn.setActiveHand(handIn);
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
+    
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

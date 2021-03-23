@@ -125,5 +125,10 @@ public class item_boukenger_armor2 extends ItemArmor  implements IHasModel
 	{
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.boukenger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 
 }

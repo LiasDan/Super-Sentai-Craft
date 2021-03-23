@@ -72,6 +72,11 @@ public class item_kyutama extends Item implements IHasModel
 							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 						}
+						if (belt == RiderItems.dark_red_seiza_blaster)
+						{
+							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
+							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
 					}
 					else if (this == RiderItems.dark_kyutama)
 					{
@@ -189,6 +194,10 @@ public class item_kyutama extends Item implements IHasModel
 					if (this == RiderItems.koguma_kyutama)
 					{
 						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.sky_blue_seiza_blaster));
+					}
+					if (this == RiderItems.dark_shishi_kyutama)
+					{
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.dark_red_seiza_blaster));
 					}
 				}
 			}

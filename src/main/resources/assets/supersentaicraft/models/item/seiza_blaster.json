@@ -130,6 +130,12 @@
                 "pull": 17
             },
             "model": "supersentaicraft:item/dark_silver_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 18
+            },
+            "model": "supersentaicraft:item/dark_red_seiza_blaster"
         }
     ]
   }

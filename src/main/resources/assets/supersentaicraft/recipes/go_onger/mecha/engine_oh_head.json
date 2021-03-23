@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "engine_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:speedor_soul"
+    },
+	{
+      "item": "supersentaicraft:buson_soul"
+    },
+	{
+      "item": "supersentaicraft:bear_rv_soul"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:engine_oh_head"
+  }
+}

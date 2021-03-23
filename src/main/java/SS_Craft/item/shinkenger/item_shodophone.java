@@ -218,4 +218,9 @@ public class item_shodophone extends ItemArmor implements IHasModel
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.common_disk == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

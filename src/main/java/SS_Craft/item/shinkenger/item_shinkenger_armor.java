@@ -119,4 +119,9 @@ public class item_shinkenger_armor extends ItemArmor  implements IHasModel
 
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.common_disk == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

@@ -4,6 +4,7 @@ import javax.annotation.Nullable;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.abaranger.item_dino_brace;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
 import SS_Craft.util.Refercence;
@@ -24,6 +25,8 @@ public class item_jetman_armor2 extends ItemArmor  implements IHasModel
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
+
+	public static final String[] Manga= new String[] {"","_manga"};
 
 	public item_jetman_armor2 (String name,ArmorMaterial par2EnumArmorMaterial, int par3, EntityEquipmentSlot par4)
 	{
@@ -53,11 +56,11 @@ public class item_jetman_armor2 extends ItemArmor  implements IHasModel
 
 					if ( slot == EntityEquipmentSlot.LEGS)
 					{
-						return Refercence.MODID+":textures/armor/"+rider +"_2.png";
+						return Refercence.MODID+":textures/armor/"+rider+Manga[item_cross_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_2.png";
 					}
 					if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
 					{
-						return Refercence.MODID+":textures/armor/"+rider +"_1.png";
+						return Refercence.MODID+":textures/armor/"+rider+Manga[item_cross_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
 					}
 					
 					return Refercence.MODID+":textures/armor/blank.png";
@@ -119,6 +122,11 @@ public class item_jetman_armor2 extends ItemArmor  implements IHasModel
 	public void registerModels() 
 	{
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
+	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.birdonic_wave == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

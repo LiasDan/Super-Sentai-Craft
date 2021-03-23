@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "sun_vulcan_robo",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:vul_eagle_medal"
+    },
+	{
+      "item": "supersentaicraft:vul_shark_medal"
+    },
+	{
+      "item": "supersentaicraft:vul_panther_medal"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:sun_vulcan_robo_head"
+  }
+}

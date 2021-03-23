@@ -172,4 +172,9 @@ public class item_zyuohger_armor extends ItemArmor  implements IHasModel
 
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.king_s_credential == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

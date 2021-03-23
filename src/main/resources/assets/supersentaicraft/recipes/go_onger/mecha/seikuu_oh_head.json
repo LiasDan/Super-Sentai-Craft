@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "seikuu_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:toripter_soul"
+    },
+	{
+      "item": "supersentaicraft:jetras_soul"
+    },
+	{
+      "item": "supersentaicraft:jumbowhale_soul"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:seikuu_oh_head"
+  }
+}

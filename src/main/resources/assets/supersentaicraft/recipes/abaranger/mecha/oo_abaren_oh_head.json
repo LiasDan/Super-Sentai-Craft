@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "oo_abaren_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:abaren_oh_head"
+    },
+	{
+      "item": "supersentaicraft:killer_oh_head"
+    },
+	{
+      "item": "supersentaicraft:max_ohja_head"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:oo_abaren_oh_head"
+  }
+}

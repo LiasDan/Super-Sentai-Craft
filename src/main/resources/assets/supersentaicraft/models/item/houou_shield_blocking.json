@@ -4,15 +4,6 @@
   "textures": {
     "layer0": "supersentaicraft:items/houou_blade_shield"
   },
-    "overrides": [
-       
-        {
-            "predicate": {
-                "pull": 1
-            },
-            "model": "supersentaicraft:item/houou_blade_shield_1"
-        }
-    ],
     "display": {
 "ground": {
 "rotation": [ 0, 0, 0 ],
@@ -51,5 +42,14 @@
 "rotation": [ 0, 0, 0 ],
 "scale": [ 1, 1, 1 ]
 }
-}
+},
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/houou_blade_shield_1"
+        }
+    ]
 }

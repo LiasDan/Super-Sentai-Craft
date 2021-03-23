@@ -161,5 +161,10 @@ public class item_lupat_armor2 extends ItemArmor  implements IHasModel
 	{
 		TokuCraft_core.proxy.registerItemRender(this,0,"inventory");
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.blank_striker == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "killer_oh",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:top_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:stego_dino_guts"
+    },
+	{
+      "item": "supersentaicraft:mecha_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:killer_oh_head"
+  }
+}

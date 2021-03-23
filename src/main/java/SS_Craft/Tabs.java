@@ -1,11 +1,16 @@
 package SS_Craft;
 
+import SS_Craft.util.Refercence;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Tabs
 {
@@ -28,9 +33,17 @@ public class Tabs
 	public static ToolMaterial hammer = new EnumHelper().addToolMaterial("hammer", 10, 4000, 12.0F, 4.0F, 22);
 	public static ToolMaterial sword_gun = new EnumHelper().addToolMaterial("sword_gun", 10, 3500, 12.0F, 5.0F, 22);
 	
+	public static ArmorMaterial mecha = new EnumHelper().addArmorMaterial("mecha", "blank", 99, new int[]{9, 18, 24, 9}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0F);
+	public static ToolMaterial mecha_sword = new EnumHelper().addToolMaterial("mecha_sword", 10, 30000, 30.0F, 30.0F, 22);
+	
 	//01
 	public static CreativeTabs tabGoranger= new CreativeTabs("tabGoranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_goranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.goranger_head);
@@ -39,6 +52,11 @@ public class Tabs
 	//02
 	public static CreativeTabs tabJakq= new CreativeTabs("tabJakq")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_jakq_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.jakq_head);
@@ -47,6 +65,11 @@ public class Tabs
 	//03
 	public static CreativeTabs tabBattleFever= new CreativeTabs("tabBattleFever")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_battle_fever_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.battle_fever_head);
@@ -55,6 +78,11 @@ public class Tabs
 	//04
 	public static CreativeTabs tabDenziman= new CreativeTabs("tabDenziman")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_denziman_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.denziman_head);
@@ -63,6 +91,11 @@ public class Tabs
 	//05
 	public static CreativeTabs tabSunVulcan= new CreativeTabs("tabSunVulcan")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_sun_vulcan_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.sun_vulcan_head);
@@ -71,6 +104,11 @@ public class Tabs
 	//06
 	public static CreativeTabs tabGoggleV= new CreativeTabs("tabGoggleV")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_goggle_v_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.goggle_v_head);
@@ -199,6 +237,11 @@ public class Tabs
 	//33
 	public static CreativeTabs tabShinkenger= new CreativeTabs("tabShinkenger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_shinkenger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.shinkenger_head);
@@ -207,6 +250,11 @@ public class Tabs
 	//36
 	public static CreativeTabs tabGoBusters= new CreativeTabs("tabGoBusters")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_go_busters_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.go_busters_head);
@@ -215,6 +263,11 @@ public class Tabs
 	//??
 	public static CreativeTabs tabAkibaranger= new CreativeTabs("tabAkibaranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_akibaranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.akibaranger_head);
@@ -223,6 +276,11 @@ public class Tabs
 	//38
 	public static CreativeTabs tabToQger= new CreativeTabs("tabToQger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_toqger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.toqger_head);
@@ -231,6 +289,11 @@ public class Tabs
 	//40
 	public static CreativeTabs tabZyuohger= new CreativeTabs("tabZyuohger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_zyuohger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.zyuohger_head);
@@ -239,6 +302,11 @@ public class Tabs
 	//41
 	public static CreativeTabs tabKyuranger= new CreativeTabs("tabKyuranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_kyuranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.kyuranger_head);
@@ -247,6 +315,11 @@ public class Tabs
 	//42-43
 	public static CreativeTabs tabLupat= new CreativeTabs("tabLupat")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_lupat_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.lupat_head);
@@ -255,6 +328,11 @@ public class Tabs
 	//44
 	public static CreativeTabs tabRyusoulger= new CreativeTabs("tabRyusoulger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_ryusoulger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.ryusoulger_head);
@@ -263,17 +341,14 @@ public class Tabs
 	//45
 	public static CreativeTabs tabKirameiger= new CreativeTabs("tabKirameiger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_kirameiger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.kirameiger_head);
-		}
-	};
-	//??
-	public static CreativeTabs tabKawarimono= new CreativeTabs("tabKawarimono")
-	{
-		@Override
-		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.kawarimono_head);
 		}
 	};
 	//??
@@ -281,7 +356,7 @@ public class Tabs
 	{
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.hachibungi);
+			return new ItemStack(RiderItems.super_sentai_logo);
 		}
 	};
 	

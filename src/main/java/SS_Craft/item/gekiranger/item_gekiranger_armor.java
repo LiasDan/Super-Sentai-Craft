@@ -139,4 +139,9 @@ public class item_gekiranger_armor extends ItemArmor  implements IHasModel
 		}
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.gekiranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }

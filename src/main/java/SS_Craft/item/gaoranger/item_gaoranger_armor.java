@@ -122,4 +122,9 @@ public class item_gaoranger_armor extends ItemArmor  implements IHasModel
 		}
 		return null;
 	}
+	
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return RiderItems.empty_gao_jewel == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
 }
