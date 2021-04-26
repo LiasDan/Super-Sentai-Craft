@@ -98,5 +98,11 @@ public class entity_dark_kiramei_silver extends EntityBossBase
 			this.dropItem(RiderItems.dark_kiramei_stone, 1);
 			this.dropItem(RiderItems.blue_diamond, 5);
 		}
+		switch (this.rand.nextInt(5))
+		{   		   	    		
+		case 0:
+			this.dropItem(RiderItems.gold_kiramei_stone, 1);
+			break;
+		}
 	}
 }

@@ -82,7 +82,7 @@ public class oreworldgen implements IWorldGenerator
 
 	public void generateSurface(World world, Random rand, int chunkX, int chunkZ)
 	{
-		//01 Goranger
+/*		//01 Goranger
 		for (int i = 0; i < 4; i++)
 		{
 			//16x16 area up to y = 64
@@ -225,7 +225,7 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.carranger_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
-		//21 Megaranger
+*/		//21 Megaranger
 		for (int i = 0; i < 4; i++)
 		{
 			//16x16 area up to y = 64
@@ -247,7 +247,7 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.gingaman_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
-		//23 GoGo-V
+/*		//23 GoGo-V
 		for (int i = 0; i < 4; i++)
 		{
 			//16x16 area up to y = 64
@@ -258,7 +258,7 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.gogo_v_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
-		//25 Gaoranger
+*/		//25 Gaoranger
 		for (int i = 0; i < 4; i++)
 		{
 			//16x16 area up to y = 64

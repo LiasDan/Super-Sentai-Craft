@@ -234,17 +234,6 @@ public class item_gao_jewel extends Item implements IHasModel
 						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 					}
-					else if (this == RiderItems.flute_knife)
-					{
-						if (item_gaoranger_mecha.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD))==1)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
-						}
-					}
 					else
 					{
 						if (num2 == "right")

@@ -347,6 +347,7 @@ public class Item_gun extends ItemBow  implements IHasModel
 					fireball.motionY = look.y*3;
 					fireball.motionZ = look.z*3;
 					fireball.pickupStatus= EntityArrow.PickupStatus.DISALLOWED;
+					fireball.hasNoGravity();
 					
 					if (playerIn.isPotionActive(PotionCore.SS_FIRE_SLASH))
 					{

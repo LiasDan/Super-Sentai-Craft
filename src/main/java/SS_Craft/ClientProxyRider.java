@@ -5,6 +5,7 @@ import com.jcraft.jorbis.Block;
 
 import SS_Craft.mobs.RenderRiderMob;
 import SS_Craft.mobs.RenderRiderMob2;
+import SS_Craft.mobs.Boss.entity_bio_hunter_silva;
 import SS_Craft.mobs.Boss.entity_dark_kiramei_silver;
 import SS_Craft.mobs.Boss.entity_dark_shishi_red;
 import SS_Craft.mobs.Boss.entity_dragon_ranger;
@@ -33,6 +34,7 @@ import SS_Craft.mobs.Henchmen.entity_karths;
 import SS_Craft.mobs.Henchmen.entity_kunekunes;
 import SS_Craft.mobs.Henchmen.entity_kuros;
 import SS_Craft.mobs.Henchmen.entity_machinemen;
+import SS_Craft.mobs.Henchmen.entity_mechaclones;
 import SS_Craft.mobs.Henchmen.entity_moebas;
 import SS_Craft.mobs.Henchmen.entity_nanashis;
 import SS_Craft.mobs.Henchmen.entity_orgettes;
@@ -91,6 +93,10 @@ public class ClientProxyRider extends CommonProxyRider
 		//06 Goggle V
 		RenderingRegistry.registerEntityRenderingHandler(entity_spotmen.class, new RenderRiderMob(new tokuMobModel("spotman_2"), 0.5F,"textures/entities/spotman_1.png"));
 			
+		//08 Bioman
+		RenderingRegistry.registerEntityRenderingHandler(entity_mechaclones.class, new RenderRiderMob(new tokuMobModel("mechaclone_2"), 0.5F,"textures/entities/mechaclone_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_bio_hunter_silva.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_bio_hunter_silva.png"));
+
 		//10 Flashman
 		RenderingRegistry.registerEntityRenderingHandler(entity_zolohs.class, new RenderRiderMob(new tokuMobModel("zolohs_2"), 0.5F,"textures/entities/zolohs_1.png"));
 		

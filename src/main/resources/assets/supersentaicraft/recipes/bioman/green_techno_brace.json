@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "green_two",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:bioman_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:green_bio_particles"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:green_techno_brace"
+  }
+}

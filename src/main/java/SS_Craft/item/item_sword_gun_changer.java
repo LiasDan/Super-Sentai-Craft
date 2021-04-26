@@ -162,6 +162,7 @@ public class item_sword_gun_changer extends ItemBow  implements IHasModel
 					fireball.motionY = look.y*3;
 					fireball.motionZ = look.z*3;
 					fireball.pickupStatus= EntityArrow.PickupStatus.DISALLOWED;
+					fireball.hasNoGravity();
 
 					if (playerIn.isPotionActive(PotionCore.SS_SHOT_BOOST))
 					{

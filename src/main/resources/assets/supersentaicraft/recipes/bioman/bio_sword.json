@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "red_one",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:bioman_logo"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_bio_particles"
+	  },
+	  {
+	    "item": "supersentaicraft:green_bio_particles"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_bio_particles"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_bio_particles"
+	  },
+	  {
+	    "item": "supersentaicraft:pink_bio_particles"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:bio_sword"
+  }
+}

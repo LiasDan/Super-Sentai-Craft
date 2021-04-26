@@ -114,6 +114,14 @@ public class Tabs
 			return new ItemStack(RiderItems.goggle_v_head);
 		}
 	};
+	//08
+	public static CreativeTabs tabBioman= new CreativeTabs("tabBioman")
+	{
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(RiderItems.bioman_head);
+		}
+	};
 	//10
 	public static CreativeTabs tabFlashman= new CreativeTabs("tabFlashman")
 	{
@@ -125,6 +133,11 @@ public class Tabs
 	//11
 	public static CreativeTabs tabMaskman= new CreativeTabs("tabMaskman")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_maskman_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.maskman_head);
@@ -181,6 +194,11 @@ public class Tabs
 	//22
 	public static CreativeTabs tabGingaman= new CreativeTabs("tabGingaman")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_gingaman_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.gingaman_head);

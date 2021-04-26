@@ -12,7 +12,9 @@ entity.CrimersMob.name=Crimers
 entity.CutmenMob.name=Cutmen
 entity.DustlersMob.name=Dustlers
 entity.MachinemenMob.name=Machinemen
-entity.SpotmenMobs.name=Spotmen
+entity.SpotmenMob.name=Spotmen
+entity.MechaclonesMob.name=Mechaclones
+entity.BioHunterSilvaMob.name=Bio Hunter Silva
 entity.ZolohsMob.name=Zolohs
 entity.UnglersMob.name=Ungler Soldiers
 entity.UlarsMob.name=Ular Soldiers
@@ -262,6 +264,39 @@ item.black_hammer.name=Black Hammer
 item.blue_hammer.name=Blue Hammer
 item.yellow_hammer.name=Yellow Hammer
 item.pink_hammer.name=Pink Hammer
+
+//08 Bioman
+itemGroup.tabBioman=Choudenshi Bioman
+
+item.bioman_logo.name=Bioman Logo
+//tile.bioman_ore.name=Bioman Ore
+
+item.bioman_head.name=Bioman Helmet
+item.bioman_torso.name=Bioman Chestplate
+item.bioman_legs.name=Bioman Leggings
+
+item.red_techno_brace.name=Techno Brace (Red1)
+item.green_techno_brace.name=Techno Brace (Green2)
+item.blue_techno_brace.name=Techno Brace (Blue3)
+item.yellow_techno_brace.name=Techno Brace (Yellow4)
+item.pink_techno_brace.name=Techno Brace (Pink5)
+item.bio_hunter_silva_belt.name=Bio Hunter Silva Belt
+
+item.red_bio_particles.name=Red Bio Particles
+item.green_bio_particles.name=Green Bio Particles
+item.blue_bio_particles.name=Blue Bio Particles
+item.yellow_bio_particles.name=Yellow Bio Particles
+item.pink_bio_particles.name=Pink Bio Particles
+
+item.bio_sword.name=Bio Sword
+item.fire_sword.name=Fire Sword
+item.hurricane_sword.name=Hurricane Sword
+item.elec_sword.name=Elec Sword
+item.thunder_sword.name=Thunder Sword
+item.laser_sword.name=Laser Sword
+item.bio_arrow.name=Bio Arrow
+
+item.bi_buster.name=Bi Buster
 
 //10 Flashman
 itemGroup.tabFlashman=Choushinsei Flashman
@@ -586,8 +621,7 @@ item.flashing_beast_attack_rod_green.name=Flashing Beast Attack Rod (GingaGreen)
 item.flashing_beast_attack_rod_blue.name=Flashing Beast Attack Rod (GingaBlue)
 item.flashing_beast_attack_rod_yellow.name=Flashing Beast Attack Rod (GingaYellow)
 item.flashing_beast_attack_rod_pink.name=Flashing Beast Attack Rod (GingaPink)
-item.bull_riot.name=Bull Riot (Sword Mode)
-item.bull_riot_gun.name=Bull Riot (Gun Mode)
+item.bull_riot.name=Bull Riot
 
 //23 GoGo-V
 itemGroup.tabGogoV=Kyukyu Sentai GoGo-V

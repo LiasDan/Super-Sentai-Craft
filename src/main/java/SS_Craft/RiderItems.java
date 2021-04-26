@@ -32,6 +32,9 @@ import SS_Craft.item.battle_fever.item_battleceiver;
 import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha;
 import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha_armor;
 import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha_armor2;
+import SS_Craft.item.bioman.item_bioman_armor;
+import SS_Craft.item.bioman.item_bioman_armor2;
+import SS_Craft.item.bioman.item_techno_brace;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.boukenger.item_bouken_spirit;
 import SS_Craft.item.boukenger.item_boukenger_armor;
@@ -56,6 +59,7 @@ import SS_Craft.item.flashman.item_prism_flash;
 import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gaoranger.item_gaoranger_armor;
 import SS_Craft.item.gaoranger.item_gaoranger_armor2;
+import SS_Craft.item.gaoranger.mecha.item_flute_knife;
 import SS_Craft.item.gaoranger.mecha.item_gao_jewel;
 import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha;
 import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha_armor;
@@ -235,7 +239,7 @@ public class RiderItems
 	
 	//01 Himitsu Sentai Goranger
 	public static Item goranger_logo = new Item_ore("goranger_logo").setCreativeTab(Tabs.tabGoranger);
-	public static Block goranger_ore = new ore_block("goranger_ore", Material.ROCK, goranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoranger);
+//	public static Block goranger_ore = new ore_block("goranger_ore", Material.ROCK, goranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoranger);
 	
 	public static Item goranger_head = new item_goranger_armor("goranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
 	public static Item goranger_torso = new item_goranger_armor2("goranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
@@ -266,7 +270,7 @@ public class RiderItems
 	//02 J.A.K.Q. Dengekitai
 	public static Item jakq_logo = new Item_ore("jakq_logo").setCreativeTab(Tabs.tabJakq);
 	public static Item blank_card = new Item_ore("blank_card").setCreativeTab(Tabs.tabJakq);
-	public static Block jakq_ore = new ore_block("jakq_ore", Material.ROCK, blank_card, 2).setHardness(9.9F).setCreativeTab(Tabs.tabJakq);
+//	public static Block jakq_ore = new ore_block("jakq_ore", Material.ROCK, blank_card, 2).setHardness(9.9F).setCreativeTab(Tabs.tabJakq);
 	
 	public static Item jakq_head = new item_jakq_armor("jakq_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
 	public static Item jakq_torso = new item_jakq_armor2("jakq_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
@@ -295,7 +299,7 @@ public class RiderItems
 	
 	//03 Battle Fever J
 	public static Item battle_fever_logo = new Item_ore("battle_fever_logo").setCreativeTab(Tabs.tabBattleFever);
-	public static Block battle_fever_ore = new ore_block("battle_fever_ore", Material.ROCK, battle_fever_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabBattleFever);
+//	public static Block battle_fever_ore = new ore_block("battle_fever_ore", Material.ROCK, battle_fever_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabBattleFever);
 	
 	public static Item battle_fever_head = new item_battle_fever_armor("battle_fever_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	public static Item battle_fever_torso = new item_battle_fever_armor2("battle_fever_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
@@ -342,7 +346,7 @@ public class RiderItems
 	//04 Denshi Sentai Denziman
 	public static Item denziman_logo = new Item_ore("denziman_logo").setCreativeTab(Tabs.tabDenziman);
 	public static Item empty_denzi_ring = new Item_ore("empty_denzi_ring").setCreativeTab(Tabs.tabDenziman);
-	public static Block denziman_ore = new ore_block("denziman_ore", Material.ROCK, empty_denzi_ring, 2).setHardness(9.9F).setCreativeTab(Tabs.tabDenziman);
+//	public static Block denziman_ore = new ore_block("denziman_ore", Material.ROCK, empty_denzi_ring, 2).setHardness(9.9F).setCreativeTab(Tabs.tabDenziman);
 	
 	public static Item denziman_head = new item_denziman_armor("denziman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
 	public static Item denziman_torso = new item_denziman_armor2("denziman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
@@ -385,7 +389,7 @@ public class RiderItems
 	
 	//05 Taiyo Sentai Sun Vulcan
 	public static Item sun_vulcan_logo = new Item_ore("sun_vulcan_logo").setCreativeTab(Tabs.tabSunVulcan);
-	public static Block sun_vulcan_ore = new ore_block("sun_vulcan_ore", Material.ROCK, sun_vulcan_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabSunVulcan);
+//	public static Block sun_vulcan_ore = new ore_block("sun_vulcan_ore", Material.ROCK, sun_vulcan_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabSunVulcan);
 	
 	public static Item sun_vulcan_head = new item_sun_vulcan_armor("sun_vulcan_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 	public static Item sun_vulcan_torso = new item_sun_vulcan_armor2("sun_vulcan_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
@@ -417,7 +421,7 @@ public class RiderItems
 	
 	//06 Dai Sentai Goggle V
 	public static Item goggle_v_logo = new Item_ore("goggle_v_logo").setCreativeTab(Tabs.tabGoggleV);
-	public static Block goggle_v_ore = new ore_block("goggle_v_ore", Material.ROCK, goggle_v_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoggleV);
+//	public static Block goggle_v_ore = new ore_block("goggle_v_ore", Material.ROCK, goggle_v_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoggleV);
 	
 	public static Item goggle_v_head = new item_goggle_v_armor("goggle_v_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
 	public static Item goggle_v_torso = new item_goggle_v_armor2("goggle_v_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
@@ -447,9 +451,42 @@ public class RiderItems
 	public static Item yellow_hammer = new ItemBaseSword("yellow_hammer", Tabs.hammer,RiderItems.goggle_v_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
 	public static Item pink_hammer = new ItemBaseSword("pink_hammer", Tabs.hammer,RiderItems.goggle_v_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
 	
+	//08 Choudenshi Bioman
+	public static Item bioman_logo = new Item_ore("bioman_logo").setCreativeTab(Tabs.tabBioman);
+//  public static Block bioman_ore = new ore_block("bioman_ore", Material.ROCK, bioman_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabBioman);
+	
+	public static Item bioman_head = new item_bioman_armor("bioman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item bioman_torso = new item_bioman_armor2("bioman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item bioman_legs = new item_bioman_armor2("bioman_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	
+	public static Item red_techno_brace = new item_techno_brace("red_techno_brace", ArmorMaterial.DIAMOND, 4, "red_one").setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item green_techno_brace = new item_techno_brace("green_techno_brace", ArmorMaterial.DIAMOND, 4, "green_two").setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item blue_techno_brace = new item_techno_brace("blue_techno_brace", ArmorMaterial.DIAMOND, 4, "blue_three").setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item yellow_techno_brace = new item_techno_brace("yellow_techno_brace", ArmorMaterial.DIAMOND, 4, "yellow_four").setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item pink_techno_brace = new item_techno_brace("pink_techno_brace", ArmorMaterial.DIAMOND, 4, "pink_five").setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item bio_hunter_silva_belt = new item_techno_brace("bio_hunter_silva_belt", ArmorMaterial.DIAMOND, 4, "bio_hunter_silva").setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	
+	public static Item bioman_belt = new Item_ore("bioman_belt");
+	
+	public static Item red_bio_particles = new Item_ore("red_bio_particles").setCreativeTab(Tabs.tabBioman);
+	public static Item green_bio_particles = new Item_ore("green_bio_particles").setCreativeTab(Tabs.tabBioman);
+	public static Item blue_bio_particles = new Item_ore("blue_bio_particles").setCreativeTab(Tabs.tabBioman);
+	public static Item yellow_bio_particles = new Item_ore("yellow_bio_particles").setCreativeTab(Tabs.tabBioman);
+	public static Item pink_bio_particles = new Item_ore("pink_bio_particles").setCreativeTab(Tabs.tabBioman);
+	
+	public static Item bio_sword = new Item_sword_gun("bio_sword",Tabs.sword_gun,RiderItems.bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item fire_sword = new ItemBaseSword("fire_sword", Tabs.sword,RiderItems.bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item hurricane_sword = new ItemBaseSword("hurricane_sword", Tabs.sword,RiderItems.bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item elec_sword = new ItemBaseSword("elec_sword", Tabs.sword,RiderItems.bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item thunder_sword = new ItemBaseSword("thunder_sword", Tabs.sword,RiderItems.bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item laser_sword = new ItemBaseSword("laser_sword", Tabs.sword,RiderItems.bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item bio_arrow = new Item_gun("bio_arrow", Tabs.bow,RiderItems.bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	
+	public static Item bi_buster = new Item_gun("bi_buster",Tabs.gun,RiderItems.bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	
 	//10 Choushinsei Flashman
 	public static Item flashman_logo = new Item_ore("flashman_logo").setCreativeTab(Tabs.tabFlashman);
-	public static Block flashman_ore = new ore_block("flashman_ore", Material.ROCK, flashman_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabFlashman);
+//	public static Block flashman_ore = new ore_block("flashman_ore", Material.ROCK, flashman_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabFlashman);
 	
 	public static Item flashman_head = new item_flashman_armor("flashman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
 	public static Item flashman_torso = new item_flashman_armor2("flashman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabFlashman);
@@ -479,7 +516,7 @@ public class RiderItems
 	
 	//11 Hikari Sentai Maskman
 	public static Item maskman_logo = new Item_ore("maskman_logo").setCreativeTab(Tabs.tabMaskman);
-	public static Block maskman_ore = new ore_block("maskman_ore", Material.ROCK, maskman_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabMaskman);
+//	public static Block maskman_ore = new ore_block("maskman_ore", Material.ROCK, maskman_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabMaskman);
 	
 	public static Item maskman_head = new item_maskman_armor("maskman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);
 	public static Item maskman_torso = new item_maskman_armor2("maskman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);
@@ -508,7 +545,7 @@ public class RiderItems
 	
 	//13 Kousoku Sentai Turboranger
 	public static Item turboranger_logo = new item_fairy_power(1, "turboranger_logo").setCreativeTab(Tabs.tabTurboranger);
-	public static Block turboranger_ore = new ore_block("turboranger_ore", Material.ROCK, turboranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabTurboranger);
+//	public static Block turboranger_ore = new ore_block("turboranger_ore", Material.ROCK, turboranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabTurboranger);
 	
 	public static Item turboranger_head = new item_turboranger_armor("turboranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
 	public static Item turboranger_torso = new item_turboranger_armor2("turboranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
@@ -544,7 +581,7 @@ public class RiderItems
 	//15 Choujin Sentai Jetman
 	public static Item jetman_logo = new Item_ore("jetman_logo").setCreativeTab(Tabs.tabJetman);
 	public static Item birdonic_wave = new Item_ore("birdonic_wave").setCreativeTab(Tabs.tabJetman);
-	public static Block jetman_ore = new ore_block("jetman_ore", Material.ROCK, birdonic_wave, 2).setHardness(9.9F).setCreativeTab(Tabs.tabJetman);
+//	public static Block jetman_ore = new ore_block("jetman_ore", Material.ROCK, birdonic_wave, 2).setHardness(9.9F).setCreativeTab(Tabs.tabJetman);
 	
 	public static Item jetman_head = new item_jetman_armor("jetman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
 	public static Item jetman_torso = new item_jetman_armor2("jetman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabJetman);
@@ -580,7 +617,7 @@ public class RiderItems
 	
 	//16 Kyoryu Sentai Zyuranger
 	public static Item zyuranger_medal = new item_dino_medal(0,"zyuranger_medal").setCreativeTab(Tabs.tabZyuranger);
-	public static Block zyuranger_ore = new ore_block("zyuranger_ore", Material.ROCK, zyuranger_medal, 2).setHardness(9.9F).setCreativeTab(Tabs.tabZyuranger);
+//	public static Block zyuranger_ore = new ore_block("zyuranger_ore", Material.ROCK, zyuranger_medal, 2).setHardness(9.9F).setCreativeTab(Tabs.tabZyuranger);
 	
 	public static Item zyuranger_head = new item_zyuranger_armor("zyuranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
 	public static Item zyuranger_torso = new item_zyuranger_armor2("zyuranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
@@ -616,7 +653,7 @@ public class RiderItems
 	
 	//17 Gosei Sentai Dairanger
 	public static Item dairanger_logo = new Item_ore("dairanger_logo").setCreativeTab(Tabs.tabDairanger);
-	public static Block dairanger_ore = new ore_block("dairanger_ore", Material.ROCK, dairanger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabDairanger);
+//	public static Block dairanger_ore = new ore_block("dairanger_ore", Material.ROCK, dairanger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabDairanger);
 	
 	public static Item dairanger_head = new item_dairanger_armor("dairanger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
 	public static Item dairanger_torso = new item_dairanger_armor2("dairanger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
@@ -656,7 +693,7 @@ public class RiderItems
 	
 	//20 Gekisou Sentai Carranger
 	public static Item carranger_logo = new Item_ore("carranger_logo").setCreativeTab(Tabs.tabCarranger);
-	public static Block carranger_ore = new ore_block("carranger_ore", Material.ROCK, carranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabCarranger);
+//	public static Block carranger_ore = new ore_block("carranger_ore", Material.ROCK, carranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabCarranger);
 	
 	public static Item carranger_head = new item_carranger_armor("carranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
 	public static Item carranger_torso = new item_carranger_armor2("carranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
@@ -771,7 +808,7 @@ public class RiderItems
 	
 	//23 Kyukyu Sentai GoGo-V
 	public static Item gogo_v_logo = new Item_ore("gogo_v_logo").setCreativeTab(Tabs.tabGogoV);
-	public static Block gogo_v_ore = new ore_block("gogo_v_ore", Material.ROCK, gogo_v_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGogoV);
+//	public static Block gogo_v_ore = new ore_block("gogo_v_ore", Material.ROCK, gogo_v_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGogoV);
 	
 	public static Item gogo_v_head = new item_gogo_v_armor("gogo_v_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
 	public static Item gogo_v_torso = new item_gogo_v_armor2("gogo_v_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
@@ -896,7 +933,7 @@ public class RiderItems
 	public static Item falcon_summoner = new item_charge_gun("falcon_summoner", Tabs.gun,RiderItems.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	
 	public static Item mikazukiken = new ItemBaseSword("mikazukiken", Tabs.sword,RiderItems.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
-	public static Item flute_knife = new ItemBaseSword("flute_knife", Tabs.sword,RiderItems.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
+	public static Item flute_knife = new item_flute_knife("flute_knife", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	
 	public static Item gao_king_head = new item_gaoranger_mecha("gao_king_head", Tabs.mecha, 4, "gao_king").setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	

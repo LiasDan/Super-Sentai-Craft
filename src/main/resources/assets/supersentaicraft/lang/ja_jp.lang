@@ -7,83 +7,107 @@ effect.fire_slash=Fire Slash
 effect.fire_shot=Fire Shot
 effect.shot_boost=Shot Boost
 
-entity.ZoldersMob.name=Zolders
+entity.ZoldersMob.name=ƒ]ƒ‹ƒ_[
 entity.CrimersMob.name=Crimers
 entity.CutmenMob.name=Cutmen
 entity.DustlersMob.name=Dustlers
 entity.MachinemenMob.name=Machinemen
 entity.SpotmenMob.name=Spotmen
+entity.MechaclonesMob.name=Mechaclones
+entity.BioHunterSilvaMob.name=Bio Hunter Silva
 entity.ZolohsMob.name=Zolohs
-entity.UnglersMob.name=Ungler Soldiers
+entity.UnglersMob.name=ƒAƒ“ƒOƒ‰[•º
 entity.UlarsMob.name=Ular Soldiers
 entity.UlarCaptainMob.name=Ular Captain
 entity.GrinamsMob.name=Grinam Soldiers
+entity.GolemsMob1.name=Golems
+entity.GolemsMob2.name=Golems
+entity.DoraSphinxMob.name=Dora Sphinx
+entity.PumpkinRapperMob.name=Pumpkin Rapper
+entity.DragonRangerMob.name=Dragon Ranger
 entity.CotpotrosMob.name=Cotpotros
-entity.Wumpersãƒ–ãƒ«ãƒ¼Mob.name=Combatant Wumpers (ãƒ–ãƒ«ãƒ¼)
-entity.Wumpersã‚°ãƒªãƒ¼ãƒ³Mob.name=Combatant Wumpers (ã‚°ãƒªãƒ¼ãƒ³)
-entity.Wumpersãƒ”ãƒ³ã‚¯Mob.name=Combatant Wumpers (ãƒ”ãƒ³ã‚¯)
-entity.Wumpersãƒ›ãƒ¯ã‚¤ãƒˆMob.name=Combatant Wumpers (ãƒ›ãƒ¯ã‚¤ãƒˆ)
+entity.WumpersBlueMob.name=Combatant Wumpers (Blue)
+entity.WumpersGreenMob.name=Combatant Wumpers (Green)
+entity.WumpersPinkMob.name=Combatant Wumpers (Pink)
+entity.WumpersWhiteMob.name=Combatant Wumpers (White)
 entity.KunekunesMob.name=Soldiers Kunekune
-entity.YartotsMob.name=Seamen Yartots
+entity.YartotsMob.name=‘¯•ºƒ„[ƒgƒbƒg
 entity.ImpsMob.name=Familiars Imps
 entity.OrgettesMob.name=Orgettes
-entity.Barmiasãƒ–ãƒ©ãƒƒã‚¯Mob.name=Barmia Soldiers (ãƒ–ãƒ©ãƒƒã‚¯)
-entity.Barmiasãƒ›ãƒ¯ã‚¤ãƒˆMob.name=Barmia Soldiers (ãƒ›ãƒ¯ã‚¤ãƒˆ)
+entity.RoukiMob.name=Duke Org Rouki
+entity.BarmiasBlackMob.name=Barmia Soldiers (Black)
+entity.BarmiasWhiteMob.name=Barmia Soldiers (White)
 entity.KarthsMob.name=Combatant Karths
 entity.RinshisMob.name=Rinshi
 entity.UgatzMob.name=Barbaric Machine Soldiers Ugatz
-entity.NanashisMob.name=Nanashi Company
+entity.NanashisMob.name=–¼–³‚µ˜A’†
+entity.GedouShinkenRedMob.name=ŠO“¹ƒVƒ“ƒPƒ“ƒŒƒbƒh
 entity.BuglarsMob.name=Buglars
 entity.KurosMob.name=Combatant Kuros
+entity.Yami0gouMob.name=Yami no 0gou
 entity.MoebasMob.name=Moeba
+entity.IndaversBlueMob.name=Indaver (Blue)
+entity.IndaversGreenMob.name=Indaver (Green)
+entity.IndaversWhiteMob.name=Indaver (White)
+entity.HebitsukaiMetalMob.name=Hebitsukai Metal (Evil)
+entity.DarkShishiRedMob.name=Dark Shishi Red
+entity.KyurangersMob.name=Kyuranger (Futago Kyutama's Clone)
+entity.GaruBikeMob.name=Garu Bike
+entity.ExAidMob.name=Kamen Rider Ex-Aid
 entity.PordermenMob.name=Porderman
-entity.DrunnsMob.name=Drunn Soldiers
+entity.DrunnsMob.name=ƒhƒ‹ƒ“•º
+entity.GaisorgMob.name=ƒKƒCƒ\[ƒO
+entity.BechatsMob.name=Bechats
+entity.DarkKirameiSilverMob.name=Dark Kiramei Silver
 
 //01 Goranger
-itemGroup.tabGoranger=ç§˜å¯†æˆ¦éšŠã‚´ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼
+itemGroup.tabGoranger=”é–§í‘àƒSƒŒƒ“ƒWƒƒ[
 
-item.goranger_logo.name=ã‚´ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ­ã‚´
-tile.goranger_ore.name=ã‚´ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼é‰±çŸ³
+item.goranger_logo.name=ƒSƒŒƒ“ƒWƒƒ[ƒƒS
+tile.goranger_ore.name=ƒSƒŒƒ“ƒWƒƒ[zÎ
 
-item.goranger_head.name=ã‚´ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.goranger_torso.name=ã‚´ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼ãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.goranger_legs.name=ã‚´ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ¬ã‚®ãƒ³ã‚¹
+item.goranger_head.name=ƒSƒŒƒ“ƒWƒƒ[ƒwƒ‹ƒƒbƒg
+item.goranger_torso.name=ƒSƒŒƒ“ƒWƒƒ[ƒ`ƒFƒXƒgƒvƒŒ[ƒg
+item.goranger_legs.name=ƒSƒŒƒ“ƒWƒƒ[ƒŒƒMƒ“ƒX
 
-item.akaranger_belt.name=ã‚¢ã‚«ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ™ãƒ«ãƒˆ
-item.aoranger_belt.name=ã‚¢ã‚ªãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ™ãƒ«ãƒˆ
-item.kiranger_belt.name=ã‚­ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ™ãƒ«ãƒˆ
-item.momoranger_belt.name=ãƒ¢ãƒ¢ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ™ãƒ«ãƒˆ
-item.midoranger_belt.name=ãƒŸãƒ‰ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ™ãƒ«ãƒˆ
+item.akaranger_belt.name=ƒAƒJƒŒƒ“ƒWƒƒ[ƒxƒ‹ƒg
+item.aoranger_belt.name=ƒAƒIƒŒƒ“ƒWƒƒ[ƒxƒ‹ƒg
+item.kiranger_belt.name=ƒLƒŒƒ“ƒWƒƒ[ƒxƒ‹ƒg
+item.momoranger_belt.name=ƒ‚ƒ‚ƒŒƒ“ƒWƒƒ[ƒxƒ‹ƒg
+item.midoranger_belt.name=ƒ~ƒhƒŒƒ“ƒWƒƒ[ƒxƒ‹ƒg
 
-item.aka_star.name=ã‚¢ã‚«ã‚¹ã‚¿ãƒ¼
-item.ao_star.name=ã‚¢ã‚ªã‚¹ã‚¿ãƒ¼
-item.ki_star.name=ã‚­ã‚¹ã‚¿ãƒ¼
-item.momo_star.name=ãƒ¢ãƒ¢ã‚¹ã‚¿ãƒ¼
-item.mido_star.name=ãƒŸãƒ‰ã‚¹ã‚¿ãƒ¼
+item.aka_star.name=ƒAƒJƒXƒ^[
+item.ao_star.name=ƒAƒIƒXƒ^[
+item.ki_star.name=ƒLƒXƒ^[
+item.momo_star.name=ƒ‚ƒ‚ƒXƒ^[
+item.mido_star.name=ƒ~ƒhƒXƒ^[
 
-item.red_bute.name=ãƒ¬ãƒƒãƒ‰ãƒ“ãƒ¥ãƒ¼ãƒˆ
-item.silver_shot.name=ã‚·ãƒ«ãƒãƒ¼ã‚·ãƒ§ãƒƒãƒˆ
-item.blue_cherry.name=ãƒ–ãƒ«ãƒ¼ãƒã‚§ãƒªãƒ¼
-item.ultra_blue_cherry.name=ã‚¦ãƒ«ãƒˆãƒ©ãƒ–ãƒ«ãƒ¼ãƒã‚§ãƒªãƒ¼
-item.ki_sticker.name=ã‚­ãƒ¼ã‚¹ãƒ†ãƒƒã‚«ãƒ¼
-item.earring_bomb.name=ãƒ”ã‚¢ã‚¹çˆ†å¼¾
-item.midomerang.name=ãƒŸãƒ‰ãƒ¡ãƒ©ãƒ³
+item.goranger_manga.name=ƒSƒŒƒ“ƒWƒƒ[–Ÿ‰æ
+
+item.red_bute.name=ƒŒƒbƒhƒrƒ…[ƒg
+item.silver_shot.name=ƒVƒ‹ƒo[ƒVƒ‡ƒbƒg
+item.blue_cherry.name=ƒuƒ‹[ƒ`ƒFƒŠ[
+item.ultra_blue_cherry.name=ƒEƒ‹ƒgƒ‰ƒuƒ‹[ƒ`ƒFƒŠ[
+item.ki_sticker.name=ƒL[ƒXƒeƒbƒJ[
+item.earring_bomb.name=ƒsƒAƒX”š’e
+item.midomerang.name=ƒ~ƒhƒƒ‰ƒ“
 
 //02 JAKQ
 itemGroup.tabJakq=J.A.K.Q. Dengekitai
 
 item.blank_card.name=Blank Card
-tile.jakq_ore.name=J.A.K.Q.é‰±çŸ³
+item.jakq_logo.name=J.A.K.Q. Logo
+tile.jakq_ore.name=J.A.K.Q. Ore
 
-item.jakq_head.name=J.A.K.Q.ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.jakq_torso.name=J.A.K.Q.ãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.jakq_legs.name=J.A.K.Q.ãƒ¬ã‚®ãƒ³ã‚¹
+item.jakq_head.name=J.A.K.Q. Helmet
+item.jakq_torso.name=J.A.K.Q. Chestplate
+item.jakq_legs.name=J.A.K.Q. Leggings
 
 item.ace_powered_capsule.name=Powered Capsule (Spade Ace)
 item.jack_powered_capsule.name=Powered Capsule (Dia Jack)
 item.queen_powered_capsule.name=Powered Capsule (Heart Queen)
 item.king_powered_capsule.name=Powered Capsule (Clover King)
-item.big_one_red_rose.name=ãƒ¬ãƒƒãƒ‰ Rose (Big One)
+item.big_one_red_rose.name=Red Rose (Big One)
 
 item.ace_card.name=Ace Card
 item.jack_card.name=Jack Card
@@ -100,12 +124,12 @@ item.big_baton.name=Big Baton
 //03 Battle Fever
 itemGroup.tabBattleFever=Battle Fever J
 
-item.battle_fever_logo.name=Battle Feverãƒ­ã‚´
-tile.battle_fever_ore.name=Battle Feveré‰±çŸ³
+item.battle_fever_logo.name=Battle Fever Logo
+tile.battle_fever_ore.name=Battle Fever Ore
 
-item.battle_fever_head.name=Battle Feverãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.battle_fever_torso.name=Battle Feverãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.battle_fever_legs.name=Battle Feverãƒ¬ã‚®ãƒ³ã‚¹
+item.battle_fever_head.name=Battle Fever Helmet
+item.battle_fever_torso.name=Battle Fever Chestplate
+item.battle_fever_legs.name=Battle Fever Leggings
 
 item.japan_battleceiver.name=Battleceiver (Battle Japan)
 item.cossack_battleceiver.name=Battleceiver (Battle Cossack)
@@ -125,44 +149,69 @@ item.france_fencing_sword.name=Fencing Sword (Battle France)
 item.kenya_whip.name=Whip (Battle Kenya)
 item.america_throwing_knife.name=Throwing Knife (Miss America)
 
+item.battle_fever_robo_head.name=Battle Fever Robo Helmet
+
+item.battle_fever_robo_torso.name=Battle Fever Robo Chestplate
+item.battle_fever_robo_legs.name=Battle Fever Robo Leggings
+item.battle_fever_robo_boots.name=Battle Fever Robo Boots
+
+item.denkouken.name=DenkouKen (Lightning Sword)
+item.sword_fever.name=Sword Fever
+item.fever_axe.name=Fever Axe
+item.stick_attacker.name=Stick Attacker
+item.attack_lancer.name=Attack Lancer
+item.cane_knocker.name=Cane Knocker
+item.battle_shield.name=Battle Shield
+
 //04 Denziman
 itemGroup.tabDenziman=Denshi Sentai Denziman
 
 item.empty_denzi_ring.name=Empty Denzi Ring
-tile.denziman_ore.name=Denzimané‰±çŸ³
+item.denziman_logo.name=Denziman Logo
+tile.denziman_ore.name=Denziman Ore
 
-item.denziman_head.name=Denzimanãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.denziman_torso.name=Denzimanãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.denziman_legs.name=Denzimanãƒ¬ã‚®ãƒ³ã‚¹
+item.denziman_head.name=Denziman Helmet
+item.denziman_torso.name=Denziman Chestplate
+item.denziman_legs.name=Denziman Leggings
 
-item.red_denzi_ring.name=Denzi Ring (Denziãƒ¬ãƒƒãƒ‰)
-item.blue_denzi_ring.name=Denzi Ring (Denziãƒ–ãƒ«ãƒ¼)
-item.yellow_denzi_ring.name=Denzi Ring (Denziã‚¤ã‚¨ãƒ­ãƒ¼)
-item.green_denzi_ring.name=Denzi Ring (Denziã‚°ãƒªãƒ¼ãƒ³)
-item.pink_denzi_ring.name=Denzi Ring (Denziãƒ”ãƒ³ã‚¯)
+item.red_denzi_ring.name=Denzi Ring (DenziRed)
+item.blue_denzi_ring.name=Denzi Ring (DenziBlue)
+item.yellow_denzi_ring.name=Denzi Ring (DenziYellow)
+item.green_denzi_ring.name=Denzi Ring (DenziGreen)
+item.pink_denzi_ring.name=Denzi Ring (DenziPink)
 
-item.red_denzi_gem.name=ãƒ¬ãƒƒãƒ‰ Denzi Gem
-item.blue_denzi_gem.name=ãƒ–ãƒ«ãƒ¼ Denzi Gem
-item.yellow_denzi_gem.name=ã‚¤ã‚¨ãƒ­ãƒ¼ Denzi Gem
-item.green_denzi_gem.name=ã‚°ãƒªãƒ¼ãƒ³ Denzi Gem
-item.pink_denzi_gem.name=ãƒ”ãƒ³ã‚¯ Denzi Gem
+item.red_denzi_gem.name=Red Denzi Gem
+item.blue_denzi_gem.name=Blue Denzi Gem
+item.yellow_denzi_gem.name=Yellow Denzi Gem
+item.green_denzi_gem.name=Green Denzi Gem
+item.pink_denzi_gem.name=Pink Denzi Gem
 
-item.red_denzi_stick.name=Denzi Stick (Denziãƒ¬ãƒƒãƒ‰)
-item.blue_denzi_stick.name=Denzi Stick (Denziãƒ–ãƒ«ãƒ¼)
-item.yellow_denzi_stick.name=Denzi Stick (Denziã‚¤ã‚¨ãƒ­ãƒ¼)
-item.green_denzi_stick.name=Denzi Stick (Denziã‚°ãƒªãƒ¼ãƒ³)
-item.pink_denzi_stick.name=Denzi Stick (Denziãƒ”ãƒ³ã‚¯)
+item.red_denzi_stick.name=Denzi Stick (DenziRed)
+item.blue_denzi_stick.name=Denzi Stick (DenziBlue)
+item.yellow_denzi_stick.name=Denzi Stick (DenziYellow)
+item.green_denzi_stick.name=Denzi Stick (DenziGreen)
+item.pink_denzi_stick.name=Denzi Stick (DenziPink)
 item.denzi_punch.name=Denzi Punch
+
+item.dai_denzin_head.name=DaiDenzin Helmet
+
+item.dai_denzin_torso.name=DaiDenzin Chestplate
+item.dai_denzin_legs.name=DaiDenzin Leggings
+item.dai_denzin_boots.name=DaiDenzin Boots
+
+item.denzi_ken.name=DenziKen (Denzi Sword)
+item.dai_denzin_boomerang.name=DaiDenzin Boomerang
+item.denzi_ball.name=Denzi Ball
 
 //05 Sun Vulcan
 itemGroup.tabSunVulcan=Taiyo Sentai Sun Vulcan
 
-item.sun_vulcan_logo.name=Sun Vulcanãƒ­ã‚´
-tile.sun_vulcan_ore.name=Sun Vulcané‰±çŸ³
+item.sun_vulcan_logo.name=Sun Vulcan Logo
+tile.sun_vulcan_ore.name=Sun Vulcan Ore
 
-item.sun_vulcan_head.name=Sun Vulcanãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.sun_vulcan_torso.name=Sun Vulcanãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.sun_vulcan_legs.name=Sun Vulcanãƒ¬ã‚®ãƒ³ã‚¹
+item.sun_vulcan_head.name=Sun Vulcan Helmet
+item.sun_vulcan_torso.name=Sun Vulcan Chestplate
+item.sun_vulcan_legs.name=Sun Vulcan Leggings
 
 item.eagle_vulcan_brace.name=Vulcan Brace (VulEagle)
 item.shark_vulcan_brace.name=Vulcan Brace (VulShark)
@@ -175,21 +224,30 @@ item.vul_panther_medal.name=VulPanther Medal
 item.vulcan_stick.name=Vulcan Stick
 item.vulcan_stick_eagle.name=Vulcan Stick (VulEagle)
 
+item.sun_vulcan_robo_head.name=Sun Vulcan Robo Helmet
+
+item.sun_vulcan_robo_torso.name=Sun Vulcan Robo Chestplate
+item.sun_vulcan_robo_legs.name=Sun Vulcan Robo Leggings
+item.sun_vulcan_robo_boots.name=Sun Vulcan Robo Boots
+
+item.taiyo_ken.name=Taiyou Ken (Solar Sword)
+item.vul_shield.name=Vul Shield
+
 //06 Goggle V
 itemGroup.tabGoggleV=Dai Sentai Goggle V
 
-item.goggle_v_logo.name=Goggle Vãƒ­ã‚´
-tile.goggle_v_ore.name=Goggle Vé‰±çŸ³
+item.goggle_v_logo.name=Goggle V Logo
+tile.goggle_v_ore.name=Goggle V Ore
 
-item.goggle_v_head.name=Goggle Vãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.goggle_v_torso.name=Goggle Vãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.goggle_v_legs.name=Goggle Vãƒ¬ã‚®ãƒ³ã‚¹
+item.goggle_v_head.name=Goggle V Helmet
+item.goggle_v_torso.name=Goggle V Chestplate
+item.goggle_v_legs.name=Goggle V Leggings
 
-item.red_goggle_brace.name=Goggle Brace (Goggleãƒ¬ãƒƒãƒ‰)
-item.black_goggle_brace.name=Goggle Brace (Goggleãƒ–ãƒ©ãƒƒã‚¯)
-item.blue_goggle_brace.name=Goggle Brace (Goggleãƒ–ãƒ«ãƒ¼)
-item.yellow_goggle_brace.name=Goggle Brace (Goggleã‚¤ã‚¨ãƒ­ãƒ¼)
-item.pink_goggle_brace.name=Goggle Brace (Goggleãƒ”ãƒ³ã‚¯)
+item.red_goggle_brace.name=Goggle Brace (GoggleRed)
+item.black_goggle_brace.name=Goggle Brace (GoggleBlack)
+item.blue_goggle_brace.name=Goggle Brace (GoggleBlue)
+item.yellow_goggle_brace.name=Goggle Brace (GoggleYellow)
+item.pink_goggle_brace.name=Goggle Brace (GogglePink)
 
 item.atlantis_ruby.name=Atlantis Ruby
 item.angkor_wat_emerald.name=Angkor Wat Emerald
@@ -199,35 +257,68 @@ item.mayan_diamond.name=Mayan Diamond
 
 item.goggle_sabre.name=Goggle Sabre
 item.goggle_golden_spear.name=Goggle Golden Spear
-item.red_hammer.name=ãƒ¬ãƒƒãƒ‰ Hammer
-item.black_club.name=ãƒ–ãƒ©ãƒƒã‚¯ Club
-item.black_emerald_nunchuck.name=ãƒ–ãƒ©ãƒƒã‚¯ Emerald Nunchuck
-item.black_hammer.name=ãƒ–ãƒ©ãƒƒã‚¯ Hammer
-item.blue_hammer.name=ãƒ–ãƒ«ãƒ¼ Hammer
-item.yellow_hammer.name=ã‚¤ã‚¨ãƒ­ãƒ¼ Hammer
-item.pink_hammer.name=ãƒ”ãƒ³ã‚¯ Hammer
+item.red_hammer.name=Red Hammer
+item.black_club.name=Black Club
+item.black_emerald_nunchuck.name=Black Emerald Nunchuck
+item.black_hammer.name=Black Hammer
+item.blue_hammer.name=Blue Hammer
+item.yellow_hammer.name=Yellow Hammer
+item.pink_hammer.name=Pink Hammer
+
+//08 Bioman
+itemGroup.tabBioman=Choudenshi Bioman
+
+item.bioman_logo.name=Bioman Logo
+//tile.bioman_ore.name=Bioman Ore
+
+item.bioman_head.name=Bioman Helmet
+item.bioman_torso.name=Bioman Chestplate
+item.bioman_legs.name=Bioman Leggings
+
+item.red_techno_brace.name=Techno Brace (Red1)
+item.green_techno_brace.name=Techno Brace (Green2)
+item.blue_techno_brace.name=Techno Brace (Blue3)
+item.yellow_techno_brace.name=Techno Brace (Yellow4)
+item.pink_techno_brace.name=Techno Brace (Pink5)
+item.bio_hunter_silva_belt.name=Bio Hunter Silva Belt
+
+item.red_bio_particles.name=Red Bio Particles
+item.green_bio_particles.name=Green Bio Particles
+item.blue_bio_particles.name=Blue Bio Particles
+item.yellow_bio_particles.name=Yellow Bio Particles
+item.pink_bio_particles.name=Pink Bio Particles
+
+item.bio_sword.name=Bio Sword
+item.fire_sword.name=Fire Sword
+item.hurricane_sword.name=Hurricane Sword
+item.elec_sword.name=Elec Sword
+item.thunder_sword.name=Thunder Sword
+item.laser_sword.name=Laser Sword
+item.bio_arrow.name=Bio Arrow
+
+item.bi_buster.name=Bi Buster
 
 //10 Flashman
 itemGroup.tabFlashman=Choushinsei Flashman
 
-item.flashman_logo.name=Flashmanãƒ­ã‚´
-tile.flashman_ore.name=Flashmané‰±çŸ³
+item.flashman_logo.name=Flashman Logo
+tile.flashman_ore.name=Flashman Ore
 
-item.flashman_head.name=Flashmanãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.flashman_torso.name=Flashmanãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.flashman_legs.name=Flashmanãƒ¬ã‚®ãƒ³ã‚¹
+item.flashman_head.name=Flashman Helmet
+item.flashman_torso.name=Flashman Chestplate
+item.flashman_legs.name=Flashman Leggings
 
-item.red_prism_flash.name=Prism Flash (ãƒ¬ãƒƒãƒ‰ Flash)
-item.green_prism_flash.name=Prism Flash (ã‚°ãƒªãƒ¼ãƒ³ Flash)
-item.blue_prism_flash.name=Prism Flash (ãƒ–ãƒ«ãƒ¼ Flash)
-item.yellow_prism_flash.name=Prism Flash (ã‚¤ã‚¨ãƒ­ãƒ¼ Flash)
-item.pink_prism_flash.name=Prism Flash (ãƒ”ãƒ³ã‚¯ Flash)
+item.red_prism_flash.name=Prism Flash (Red Flash)
+item.green_prism_flash.name=Prism Flash (Green Flash)
+item.blue_prism_flash.name=Prism Flash (Blue Flash)
+item.yellow_prism_flash.name=Prism Flash (Yellow Flash)
+item.pink_prism_flash.name=Prism Flash (Pink Flash)
 
-item.red_flash_prism.name=ãƒ¬ãƒƒãƒ‰ Flash Prism
-item.green_flash_prism.name=ã‚°ãƒªãƒ¼ãƒ³ Flash Prism
-item.blue_flash_prism.name=ãƒ–ãƒ«ãƒ¼ Flash Prism
-item.yellow_flash_prism.name=ã‚¤ã‚¨ãƒ­ãƒ¼ Flash Prism
-item.pink_flash_prism.name=ãƒ”ãƒ³ã‚¯ Flash Prism
+item.red_flash_prism.name=Red Flash Prism
+item.green_flash_prism.name=Green Flash Prism
+item.blue_flash_prism.name=Blue Flash Prism
+item.yellow_flash_prism.name=Yellow Flash Prism
+item.pink_flash_prism.name=Pink Flash Prism
 
 item.prism_shooter.name=Prism Shooter
 item.prism_shooter_shield.name=Prism Shooter (Shield)
@@ -238,60 +329,59 @@ item.prism_batons.name=Prism Batons
 item.prism_boots.name=Prism Boots
 
 //11 Maskman
-itemGroup.tabMaskman=å…‰æˆ¦éšŠãƒã‚¹ã‚¯ãƒãƒ³
+itemGroup.tabMaskman=Œõí‘àƒ}ƒXƒNƒ}ƒ“
 
-item.maskman_logo.name=ãƒã‚¹ã‚¯ãƒãƒ³ãƒ­ã‚´
-tile.maskman_ore.name=ãƒã‚¹ã‚¯ãƒãƒ³é‰±çŸ³
+item.maskman_logo.name=ƒ}ƒXƒNƒ}ƒ“ƒƒS
+tile.maskman_ore.name=ƒ}ƒXƒNƒ}ƒ“zÎ
 
-item.maskman_head.name=ãƒã‚¹ã‚¯ãƒãƒ³ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.maskman_torso.name=ãƒã‚¹ã‚¯ãƒãƒ³ãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.maskman_legs.name=ãƒã‚¹ã‚¯ãƒãƒ³ãƒ¬ã‚®ãƒ³ã‚¹
+item.maskman_head.name=ƒ}ƒXƒNƒ}ƒ“ƒwƒ‹ƒƒbƒg
+item.maskman_torso.name=ƒ}ƒXƒNƒ}ƒ“ƒ`ƒFƒXƒgƒvƒŒ[ƒg
+item.maskman_legs.name=ƒ}ƒXƒNƒ}ƒ“ƒŒƒMƒ“ƒX
 
-item.red_masking_brace.name=ãƒã‚¹ã‚­ãƒ³ã‚°ãƒ–ãƒ¬ã‚¹(ãƒ¬ãƒƒãƒ‰ãƒã‚¹ã‚¯)
-item.black_masking_brace.name=ãƒã‚¹ã‚­ãƒ³ã‚°ãƒ–ãƒ¬ã‚¹(ãƒ–ãƒ©ãƒƒã‚¯ãƒã‚¹ã‚¯)
-item.blue_masking_brace.name=ãƒã‚¹ã‚­ãƒ³ã‚°ãƒ–ãƒ¬ã‚¹(ãƒ–ãƒ«ãƒ¼ãƒã‚¹ã‚¯)
-item.yellow_masking_brace.name=ãƒã‚¹ã‚­ãƒ³ã‚°ãƒ–ãƒ¬ã‚¹(ã‚¤ã‚¨ãƒ­ãƒ¼ãƒã‚¹ã‚¯)
-item.pink_masking_brace.name=ãƒã‚¹ã‚­ãƒ³ã‚°ãƒ–ãƒ¬ã‚¹(ãƒ”ãƒ³ã‚¯ãƒã‚¹ã‚¯)
-item.x1_masking_brace.name=ãƒã‚¹ã‚­ãƒ³ã‚°ãƒ–ãƒ¬ã‚¹(X1ãƒã‚¹ã‚¯)
+item.red_masking_brace.name=ƒ}ƒXƒLƒ“ƒOƒuƒŒƒX (ƒŒƒbƒhƒ}ƒXƒN)
+item.black_masking_brace.name=ƒ}ƒXƒLƒ“ƒOƒuƒŒƒX (ƒuƒ‰ƒbƒNƒ}ƒXƒN)
+item.blue_masking_brace.name=ƒ}ƒXƒLƒ“ƒOƒuƒŒƒX (ƒuƒ‹[ƒ}ƒXƒN)
+item.yellow_masking_brace.name=ƒ}ƒXƒLƒ“ƒOƒuƒŒƒX (ƒCƒGƒ[ƒ}ƒXƒN)
+item.pink_masking_brace.name=ƒ}ƒXƒLƒ“ƒOƒuƒŒƒX (ƒsƒ“ƒNƒ}ƒXƒN)
+item.x1_masking_brace.name=ƒ}ƒXƒLƒ“ƒOƒuƒŒƒX (X1ƒ}ƒXƒN)
 
-item.red_aura_power.name=ãƒ¬ãƒƒãƒ‰ã‚ªãƒ¼ãƒ©ãƒ‘ãƒ¯ãƒ¼ 
-item.black_aura_power.name=ãƒ–ãƒ©ãƒƒã‚¯ã‚ªãƒ¼ãƒ©ãƒ‘ãƒ¯ãƒ¼ 
-item.blue_aura_power.name=ãƒ–ãƒ«ãƒ¼ã‚ªãƒ¼ãƒ©ãƒ‘ãƒ¯ãƒ¼ 
-item.yellow_aura_power.name=ã‚¤ã‚¨ãƒ­ãƒ¼ã‚ªãƒ¼ãƒ©ãƒ‘ãƒ¯ãƒ¼ 
-item.pink_aura_power.name=ãƒ”ãƒ³ã‚¯ã‚ªãƒ¼ãƒ©ãƒ‘ãƒ¯ãƒ¼ 
-item.x1_aura_power.name=X1ã‚ªãƒ¼ãƒ©ãƒ‘ãƒ¯ãƒ¼ 
+item.red_aura_power.name=ƒŒƒbƒhƒI[ƒ‰ƒpƒ[
+item.black_aura_power.name=ƒuƒ‰ƒbƒNƒI[ƒ‰ƒpƒ[
+item.blue_aura_power.name=ƒuƒ‹[ƒI[ƒ‰ƒpƒ[
+item.yellow_aura_power.name=ƒCƒGƒ[ƒI[ƒ‰ƒpƒ[
+item.pink_aura_power.name=ƒsƒ“ƒNƒI[ƒ‰ƒpƒ[
+item.x1_aura_power.name=X1ƒI[ƒ‰ƒpƒ[
 
-item.laser_magnum_sword.name=ãƒ¬ãƒ¼ã‚¶ãƒ¼ãƒã‚°ãƒŠãƒ 
-item.masky_blade.name=ãƒã‚¹ã‚­ãƒ¼ãƒ–ãƒ¬ãƒ¼ãƒ‰
-item.masky_rod.name=ãƒã‚¹ã‚­ãƒ¼ãƒ­ãƒƒãƒ‰
-item.masky_tonfa.name=ãƒã‚¹ã‚­ãƒ¼ãƒˆãƒ³ãƒ•ã‚¡ãƒ¼
-item.masky_rotor.name=ãƒã‚¹ã‚­ãƒ¼ãƒ­ãƒ¼ã‚¿ãƒ¼
-item.masky_ribbon.name=ãƒã‚¹ã‚­ãƒ¼ãƒªãƒœãƒ³
+item.laser_magnum_sword.name=ƒŒ[ƒU[ƒ}ƒOƒiƒ€
+item.masky_blade.name=ƒ}ƒXƒL[ƒuƒŒ[ƒh
+item.masky_rod.name=ƒ}ƒXƒL[ƒƒbƒh
+item.masky_tonfa.name=ƒ}ƒXƒL[ƒgƒ“ƒtƒ@[
+item.masky_rotor.name=ƒ}ƒXƒL[ƒ[ƒ^[
+item.masky_ribbon.name=ƒ}ƒXƒL[ƒŠƒ{ƒ“
 
 //13 Turboranger
 itemGroup.tabTurboranger=Kousoku Sentai Turboranger
 
-item.turboranger_logo.name=Turborangerãƒ­ã‚´
-tile.turboranger_ore.name=Turborangeré‰±çŸ³
+item.turboranger_logo.name=Turboranger Logo
+tile.turboranger_ore.name=Turboranger Ore
 
-item.turboranger_head.name=Turborangerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.turboranger_torso.name=Turborangerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.turboranger_legs.name=Turborangerãƒ¬ã‚®ãƒ³ã‚¹
+item.turboranger_head.name=Turboranger Helmet
+item.turboranger_torso.name=Turboranger Chestplate
+item.turboranger_legs.name=Turboranger Leggings
 
-item.red_turbo_brace.name=Turbo Brace (ãƒ¬ãƒƒãƒ‰ Turbo)
-item.black_turbo_brace.name=Turbo Brace (ãƒ–ãƒ©ãƒƒã‚¯ Turbo)
-item.blue_turbo_brace.name=Turbo Brace (ãƒ–ãƒ«ãƒ¼ Turbo)
-item.yellow_turbo_brace.name=Turbo Brace (ã‚¤ã‚¨ãƒ­ãƒ¼ Turbo)
-item.pink_turbo_brace.name=Turbo Brace (ãƒ”ãƒ³ã‚¯ Turbo)
+item.red_turbo_brace.name=Turbo Brace (Red Turbo)
+item.black_turbo_brace.name=Turbo Brace (Black Turbo)
+item.blue_turbo_brace.name=Turbo Brace (Blue Turbo)
+item.yellow_turbo_brace.name=Turbo Brace (Yellow Turbo)
+item.pink_turbo_brace.name=Turbo Brace (Pink Turbo)
 
-item.red_turbo_logo.name=ãƒ¬ãƒƒãƒ‰ Turboãƒ­ã‚´
-item.black_turbo_logo.name=ãƒ–ãƒ©ãƒƒã‚¯ Turboãƒ­ã‚´
-item.blue_turbo_logo.name=ãƒ–ãƒ«ãƒ¼ Turboãƒ­ã‚´
-item.yellow_turbo_logo.name=ã‚¤ã‚¨ãƒ­ãƒ¼ Turboãƒ­ã‚´
-item.pink_turbo_logo.name=ãƒ”ãƒ³ã‚¯ Turboãƒ­ã‚´
+item.red_turbo_logo.name=Red Turbo Logo
+item.black_turbo_logo.name=Black Turbo Logo
+item.blue_turbo_logo.name=Blue Turbo Logo
+item.yellow_turbo_logo.name=Yellow Turbo Logo
+item.pink_turbo_logo.name=Pink Turbo Logo
 
-item.turbo_laser_sword.name=Turbo Laser (Sword)
-item.turbo_laser_gun.name=Turbo Laser (Gun)
+item.turbo_laser_sword.name=Turbo Laser
 item.gt_sword.name=GT Sword
 item.t_hammer.name=T Hammer
 item.j_gun.name=J Gun
@@ -304,23 +394,27 @@ item.turbo_laser_w.name=Turbo Laser (W Stick Combo)
 itemGroup.tabJetman=Choujin Sentai Jetman
 
 item.birdonic_wave.name=Birdonic Wave
-tile.jetman_ore.name=Jetmané‰±çŸ³
+item.jetman_logo.name=Jetman Logo
+tile.jetman_ore.name=Jetman Ore
 
-item.jetman_head.name=Jetmanãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.jetman_torso.name=Jetmanãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.jetman_legs.name=Jetmanãƒ¬ã‚®ãƒ³ã‚¹
+item.jetman_head.name=Jetman Helmet
+item.jetman_torso.name=Jetman Chestplate
+item.jetman_legs.name=Jetman Leggings
 
-item.red_cross_changer.name=Cross Changer (ãƒ¬ãƒƒãƒ‰ Hawk)
-item.black_cross_changer.name=Cross Changer (ãƒ–ãƒ©ãƒƒã‚¯ Condor)
-item.yellow_cross_changer.name=Cross Changer (ã‚¤ã‚¨ãƒ­ãƒ¼ Owl)
-item.white_cross_changer.name=Cross Changer (ãƒ›ãƒ¯ã‚¤ãƒˆ Swan)
-item.blue_cross_changer.name=Cross Changer (ãƒ–ãƒ«ãƒ¼ Swallow)
+item.red_cross_changer.name=Cross Changer (Red Hawk)
+item.black_cross_changer.name=Cross Changer (Black Condor)
+item.yellow_cross_changer.name=Cross Changer (Yellow Owl)
+item.white_cross_changer.name=Cross Changer (White Swan)
+item.blue_cross_changer.name=Cross Changer (Blue Swallow)
+item.green_cross_changer.name=Cross Changer (Green Eagle)
 
 item.hawk_birdonic_wave.name=Hawk Birdonic Wave
-item.condor_birdonic_wave.name=CondorBirdonic Wave
+item.condor_birdonic_wave.name=Condor Birdonic Wave
 item.owl_birdonic_wave.name=Owl Birdonic Wave
 item.swan_birdonic_wave.name=Swan Birdonic Wave
 item.swallow_birdonic_wave.name=Swallow Birdonic Wave
+
+item.jetman_manga.name=Jetman Manga
 
 item.bird_blaster.name=Bird Blaster
 item.bringer_sword.name=Bringer Sword
@@ -328,15 +422,53 @@ item.jet_hand_cannon.name=Jet Hand Cannon
 item.beak_smasher.name=Beak Smasher
 item.smash_bomber.name=Smash Bomber
 
+//16 Zyuranger
+itemGroup.tabZyuranger=Kyoryu Sentai Zyuranger
+
+item.zyuranger_medal.name=Zyuranger Medal
+tile.zyuranger_ore.nameZyuranger Ore
+
+item.zyuranger_head.name=Zyuranger Helmet
+item.zyuranger_torso.name=Zyuranger Chestplate
+item.zyuranger_legs.name=Zyuranger Leggings
+
+item.tyranno_dino_buckler.name=Dino Buckler (TyrannoRanger)
+item.armed_tyranno_dino_buckler.name=Dino Buckler (Armed TyrannoRanger)
+item.mammoth_dino_buckler.name=Dino Buckler (MammothRanger)
+item.tricera_dino_buckler.name=Dino Buckler (TriceraRanger)
+item.tiger_dino_buckler.name=Dino Buckler (TigerRanger)
+item.ptera_dino_buckler.name=Dino Buckler (PteraRanger)
+item.dragon_dino_buckler.name=Dino Buckler (DragonRanger)
+item.unarmed_dragon_dino_buckler.name=Dino Buckler (Unarmed DragonRanger)
+
+item.tyranno_medal.name=Tyranno Medal
+item.mammoth_medal.name=Mammoth Medal
+item.tricera_medal.name=Tricera Medal
+item.tiger_medal.name=Tiger Medal
+item.ptera_medal.name=Ptera Medal
+item.dragon_medal.name=Dragon Medal
+
+item.ranger_sword.name=Ranger Stick
+item.thunder_slinger.name=Thunder Slinger
+item.ranger_slinger.name=Ranger Slinger
+item.ryugekiken.name=Ryugekiken
+item.moth_breaker.name=MothBreaker
+item.trice_lance.name=Trice-Lance
+item.trice_lance_trident.name=Trice-Lance (Trident)
+item.saber_dagger.name=Saber Dagger
+item.ptera_arrow.name=Ptera Arrow
+item.zyusouken.name=Zyusouken
+item.hellfriede.name=Devil Sword Hellfriede
+
 //17 Dairanger
 itemGroup.tabDairanger=Gosei Sentai Dairanger
 
-item.dairanger_logo.name=Dairangerãƒ­ã‚´
-tile.dairanger_ore.name=Dairangeré‰±çŸ³
+item.dairanger_logo.name=Dairanger Logo
+tile.dairanger_ore.name=Dairanger Ore
 
-item.dairanger_head.name=Dairangerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.dairanger_torso.name=Dairangerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.dairanger_legs.name=Dairangerãƒ¬ã‚®ãƒ³ã‚¹
+item.dairanger_head.name=Dairanger Helmet
+item.dairanger_torso.name=Dairanger Chestplate
+item.dairanger_legs.name=Dairanger Leggings
 
 item.ryuu_aura_changer.name=Aura Changer (RyuuRanger)
 item.shishi_aura_changer.name=Aura Changer (ShishiRanger)
@@ -345,12 +477,12 @@ item.kirin_aura_changer.name=Aura Changer (KirinRanger)
 item.houou_aura_changer.name=Aura Changer (HououRanger)
 item.kiba_changer.name=Kiba Changer (KibaRanger)
 
-item.red_lailai_jewel.name=ãƒ¬ãƒƒãƒ‰ Lai-Lai Jewel
-item.green_lailai_jewel.name=ã‚°ãƒªãƒ¼ãƒ³ Lai-Lai Jewel
-item.blue_lailai_jewel.name=ãƒ–ãƒ«ãƒ¼ Lai-Lai Jewel
-item.yellow_lailai_jewel.name=ã‚¤ã‚¨ãƒ­ãƒ¼ Lai-Lai Jewel
-item.pink_lailai_jewel.name=ãƒ”ãƒ³ã‚¯ Lai-Lai Jewel
-item.white_lailai_jewel.name=ãƒ›ãƒ¯ã‚¤ãƒˆ Lai-Lai Jewel
+item.red_lailai_jewel.name=Red Lai-Lai Jewel
+item.green_lailai_jewel.name=Green Lai-Lai Jewel
+item.blue_lailai_jewel.name=Blue Lai-Lai Jewel
+item.yellow_lailai_jewel.name=Yellow Lai-Lai Jewel
+item.pink_lailai_jewel.name=Pink Lai-Lai Jewel
+item.white_lailai_jewel.name=White Lai-Lai Jewel
 
 item.star_cutter.name=Star Cutter
 item.star_sword.name=Star Sword
@@ -371,27 +503,27 @@ item.byakkoshinken.name=Byakkoshinken
 //20 Carranger
 itemGroup.tabCarranger=Gekisou Sentai Carranger
 
-item.carranger_logo.name=Carrangerãƒ­ã‚´
-tile.carranger_ore.name=Carrangeré‰±çŸ³
+item.carranger_logo.name=Carranger Logo
+tile.carranger_ore.name=Carranger Ore
 
-item.carranger_head.name=Carrangerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.carranger_torso.name=Carrangerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.carranger_legs.name=Carrangerãƒ¬ã‚®ãƒ³ã‚¹
+item.carranger_head.name=Carranger Helmet
+item.carranger_torso.name=Carranger Chestplate
+item.carranger_legs.name=Carranger Leggings
 
-item.red_accel_changer.name=Accel Changer (ãƒ¬ãƒƒãƒ‰ Racer)
-item.blue_accel_changer.name=Accel Changer (ãƒ–ãƒ«ãƒ¼ Racer)
-item.green_accel_changer.name=Accel Changer (ã‚°ãƒªãƒ¼ãƒ³ Racer)
-item.yellow_accel_changer.name=Accel Changer (ã‚¤ã‚¨ãƒ­ãƒ¼ Racer)
-item.pink_accel_changer.name=Accel Changer (ãƒ”ãƒ³ã‚¯ Racer)
+item.red_accel_changer.name=Accel Changer (Red Racer)
+item.blue_accel_changer.name=Accel Changer (Blue Racer)
+item.green_accel_changer.name=Accel Changer (Green Racer)
+item.yellow_accel_changer.name=Accel Changer (Yellow Racer)
+item.pink_accel_changer.name=Accel Changer (Pink Racer)
 item.signal_whistle.name=Signal Whistle (Signalman)
-item.white_racer_changer.name=ãƒ›ãƒ¯ã‚¤ãƒˆ Racer Changer
+item.white_racer_changer.name=White Racer Changer (White Racer)
 
-item.red_racer_badge.name=ãƒ¬ãƒƒãƒ‰ Racer Badge
-item.blue_racer_badge.name=ãƒ–ãƒ«ãƒ¼ Racer Badge
-item.green_racer_badge.name=ã‚°ãƒªãƒ¼ãƒ³ Racer Badge
-item.yellow_racer_badge.name=ã‚¤ã‚¨ãƒ­ãƒ¼ Racer Badge
-item.pink_racer_badge.name=ãƒ”ãƒ³ã‚¯ Racer Badge
-item.white_racer_badge.name=ãƒ›ãƒ¯ã‚¤ãƒˆ Racer Badge
+item.red_racer_badge.name=Red Racer Badge
+item.blue_racer_badge.name=Blue Racer Badge
+item.green_racer_badge.name=Green Racer Badge
+item.yellow_racer_badge.name=Yellow Racer Badge
+item.pink_racer_badge.name=Pink Racer Badge
+item.white_racer_badge.name=White Racer Badge
 item.signalman_badge.name=Signalman Badge
 
 item.auto_blaster.name=Auto Blaster
@@ -409,27 +541,27 @@ item.signaizer.name=Signaizer
 //21 Megaranger
 itemGroup.tabMegaranger=Denji Sentai Megaranger
 
-item.megaranger_logo.name=Megarangerãƒ­ã‚´
-tile.megaranger_ore.name=Megarangeré‰±çŸ³
+item.megaranger_logo.name=Megaranger Logo
+tile.megaranger_ore.name=Megaranger Ore
 
-item.megaranger_head.name=Megarangerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.megaranger_torso.name=Megarangerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.megaranger_legs.name=Megarangerãƒ¬ã‚®ãƒ³ã‚¹
+item.megaranger_head.name=Megaranger Helmet
+item.megaranger_torso.name=Megaranger Chestplate
+item.megaranger_legs.name=Megaranger Leggings
 
-item.red_digitaizer.name=Digitaizer (Megaãƒ¬ãƒƒãƒ‰)
-item.black_digitaizer.name=Digitaizer (Megaãƒ–ãƒ©ãƒƒã‚¯)
-item.blue_digitaizer.name=Digitaizer (Megaãƒ–ãƒ«ãƒ¼)
-item.yellow_digitaizer.name=Digitaizer (Megaã‚¤ã‚¨ãƒ­ãƒ¼)
-item.pink_digitaizer.name=Digitaizer (Megaãƒ”ãƒ³ã‚¯)
+item.red_digitaizer.name=Digitaizer (MegaRed)
+item.black_digitaizer.name=Digitaizer (MegaBlack)
+item.blue_digitaizer.name=Digitaizer (MegaBlue)
+item.yellow_digitaizer.name=Digitaizer (MegaYellow)
+item.pink_digitaizer.name=Digitaizer (MegaPink)
 item.keitaizer.name=Keitaizer (MegaSilver)
 
-item.mega_red_disk.name=Megaãƒ¬ãƒƒãƒ‰ ãƒ‡ã‚£ã‚¹ã‚¯
-item.mega_black_disk.name=Megaãƒ–ãƒ©ãƒƒã‚¯ ãƒ‡ã‚£ã‚¹ã‚¯
-item.mega_blue_disk.name=Megaãƒ–ãƒ«ãƒ¼ ãƒ‡ã‚£ã‚¹ã‚¯
-item.mega_yellow_disk.name=Megaã‚¤ã‚¨ãƒ­ãƒ¼ ãƒ‡ã‚£ã‚¹ã‚¯
-item.mega_pink_disk.name=Megaãƒ”ãƒ³ã‚¯ ãƒ‡ã‚£ã‚¹ã‚¯
-item.mega_silver_disk.name=MegaSilver ãƒ‡ã‚£ã‚¹ã‚¯
-item.mega_tector_disk.name=Mega Tector ãƒ‡ã‚£ã‚¹ã‚¯
+item.mega_red_disk.name=MegaRed Disk
+item.mega_black_disk.name=MegaBlack Disk
+item.mega_blue_disk.name=MegaBlue Disk
+item.mega_yellow_disk.name=MegaYellow Disk
+item.mega_pink_disk.name=MegaPink Disk
+item.mega_silver_disk.name=MegaSilver Disk
+item.mega_tector_disk.name=Mega Tector Disk
 item.battleraizer.name=Battleraizer
 
 item.mega_magnum.name=Mega Magnum
@@ -448,100 +580,96 @@ item.sling_sniper.name=Sling Sniper
 item.capture_sniper.name=Capture Sniper
 
 //22 Gingaman
-itemGroup.tabGingaman=æ˜Ÿç£æˆ¦éšŠã‚®ãƒ³ã‚¬ãƒãƒ³
+itemGroup.tabGingaman=¯bí‘àƒMƒ“ƒKƒ}ƒ“
 
-item.gingaman_logo.name=ã‚®ãƒ³ã‚¬ãƒãƒ³ãƒ­ã‚´
-tile.gingaman_ore.name=ã‚®ãƒ³ã‚¬ãƒãƒ³é‰±çŸ³
+item.gingaman_logo.name=ƒMƒ“ƒKƒ}ƒ“ƒƒS
+tile.gingaman_ore.name=ƒMƒ“ƒKƒ}ƒ“zÎ
 
-item.gingaman_head.name=ã‚®ãƒ³ã‚¬ãƒãƒ³ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.gingaman_torso.name=ã‚®ãƒ³ã‚¬ãƒãƒ³ãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.gingaman_legs.name=ã‚®ãƒ³ã‚¬ãƒãƒ³ãƒ¬ã‚®ãƒ³ã‚¹
+item.gingaman_head.name=ƒMƒ“ƒKƒ}ƒ“ƒwƒ‹ƒƒbƒg
+item.gingaman_torso.name=ƒMƒ“ƒKƒ}ƒ“ƒ`ƒFƒXƒgƒvƒŒ[ƒg
+item.gingaman_legs.name=ƒMƒ“ƒKƒ}ƒ“ƒŒƒMƒ“ƒX
 
-item.red_ginga_brace.name=ã‚®ãƒ³ã‚¬ãƒ–ãƒ¬ã‚¹(ã‚®ãƒ³ã‚¬ãƒ¬ãƒƒãƒ‰)
-item.green_ginga_brace.name=ã‚®ãƒ³ã‚¬ãƒ–ãƒ¬ã‚¹(ã‚®ãƒ³ã‚¬ã‚°ãƒªãƒ¼ãƒ³)
-item.blue_ginga_brace.name=ã‚®ãƒ³ã‚¬ãƒ–ãƒ¬ã‚¹(ã‚®ãƒ³ã‚¬ãƒ–ãƒ«ãƒ¼)
-item.yellow_ginga_brace.name=ã‚®ãƒ³ã‚¬ãƒ–ãƒ¬ã‚¹(ã‚®ãƒ³ã‚¬ã‚¤ã‚¨ãƒ­ãƒ¼)
-item.pink_ginga_brace.name=ã‚®ãƒ³ã‚¬ãƒ–ãƒ¬ã‚¹(ã‚®ãƒ³ã‚¬ãƒ”ãƒ³ã‚¯)
-item.black_knight_bull_riot.name=ãƒ–ãƒ«ãƒ©ã‚¤ã‚¢ãƒƒãƒˆ(é»’é¨å£«)
+item.red_ginga_brace.name=ƒMƒ“ƒKƒuƒŒƒX (ƒMƒ“ƒKƒŒƒbƒh)
+item.green_ginga_brace.name=ƒMƒ“ƒKƒuƒŒƒX (ƒMƒ“ƒKƒOƒŠ[ƒ“)
+item.blue_ginga_brace.name=ƒMƒ“ƒKƒuƒŒƒX (ƒMƒ“ƒKƒuƒ‹[)
+item.yellow_ginga_brace.name=ƒMƒ“ƒKƒuƒŒƒX (ƒMƒ“ƒKƒCƒGƒ[)
+item.pink_ginga_brace.name=ƒMƒ“ƒKƒuƒŒƒX (ƒMƒ“ƒKƒsƒ“ƒN)
+item.black_knight_bull_riot.name=ƒuƒ‹ƒ‰ƒCƒAƒbƒg (•‹Rm)
 
-item.red_ginga_medal.name=ãƒ¬ãƒƒãƒ‰ã‚®ãƒ³ã‚¬ãƒ¡ãƒ€ãƒ«
-item.green_ginga_medal.name=ã‚°ãƒªãƒ¼ãƒ³ã‚®ãƒ³ã‚¬ãƒ¡ãƒ€ãƒ«
-item.blue_ginga_medal.name=ãƒ–ãƒ«ãƒ¼ã‚®ãƒ³ã‚¬ãƒ¡ãƒ€ãƒ«
-item.yellow_ginga_medal.name=ã‚¤ã‚¨ãƒ­ãƒ¼ã‚®ãƒ³ã‚¬ãƒ¡ãƒ€ãƒ«
-item.pink_ginga_medal.name=ãƒ”ãƒ³ã‚¯ã‚®ãƒ³ã‚¬ãƒ¡ãƒ€ãƒ«
-item.lights_of_ginga.name=ã‚®ãƒ³ã‚¬ã®å…‰
-item.black_knight_core.name=é»’é¨å£«ã‚³ã‚¢
+item.red_ginga_medal.name=ƒŒƒbƒhƒMƒ“ƒKƒƒ_ƒ‹
+item.green_ginga_medal.name=ƒOƒŠ[ƒ“ƒMƒ“ƒKƒƒ_ƒ‹
+item.blue_ginga_medal.name=ƒuƒ‹[ƒMƒ“ƒKƒƒ_ƒ‹
+item.yellow_ginga_medal.name=ƒCƒGƒ[ƒMƒ“ƒKƒƒ_ƒ‹
+item.pink_ginga_medal.name=ƒsƒ“ƒNƒMƒ“ƒKƒƒ_ƒ‹
+item.lights_of_ginga.name=ƒMƒ“ƒK‚ÌŒõ
+item.black_knight_core.name=•‹RmƒRƒA
 
-item.starbeast_sword_red.name=æ˜Ÿç£å‰£(ã‚®ãƒ³ã‚¬ãƒ¬ãƒƒãƒ‰)
-item.starbeast_sword_green.name=æ˜Ÿç£å‰£(ã‚®ãƒ³ã‚¬ã‚°ãƒªãƒ¼ãƒ³)
-item.starbeast_sword_blue.name=æ˜Ÿç£å‰£(ã‚®ãƒ³ã‚¬ãƒ–ãƒ«ãƒ¼)
-item.starbeast_sword_yellow.name=æ˜Ÿç£å‰£(ã‚®ãƒ³ã‚¬ã‚¤ã‚¨ãƒ­ãƒ¼)
-item.starbeast_sword_pink.name=æ˜Ÿç£å‰£(ã‚®ãƒ³ã‚¬ãƒ”ãƒ³ã‚¯)
-item.kiba_cutter.name=ã‚­ãƒã‚«ãƒƒã‚¿ãƒ¼
-item.kiba_shot.name=ã‚­ãƒã‚·ãƒ§ãƒƒãƒˆ
-item.kiba_claw.name=ã‚­ãƒã‚¯ãƒ­ãƒ¼
-item.kiba_knife.name=ã‚­ãƒãƒŠã‚¤ãƒ•
-item.kiba_arrow.name=ã‚­ãƒã‚¢ãƒ­ãƒ¼
-item.beast_attack_rod_red.name=ç£æ’ƒæ£’(ã‚®ãƒ³ã‚¬ãƒ¬ãƒƒãƒ‰)
-item.beast_attack_rod_green.name=ç£æ’ƒæ£’(ã‚®ãƒ³ã‚¬ã‚°ãƒªãƒ¼ãƒ³)
-item.beast_attack_rod_blue.name=ç£æ’ƒæ£’(ã‚®ãƒ³ã‚¬ãƒ–ãƒ«ãƒ¼)
-item.beast_attack_rod_yellow.name=ç£æ’ƒæ£’(ã‚®ãƒ³ã‚¬ã‚¤ã‚¨ãƒ­ãƒ¼)
-item.beast_attack_rod_pink.name=ç£æ’ƒæ£’(ã‚®ãƒ³ã‚¬ãƒ”ãƒ³ã‚¯)
-item.bull_riot.name=ãƒ–ãƒ«ãƒ©ã‚¤ã‚¢ãƒƒãƒˆ
+item.starbeast_sword.name=¯bŒ•
+item.kiba_cutter.name=ƒLƒoƒJƒbƒ^[
+item.kiba_shot.name=ƒLƒoƒVƒ‡ƒbƒg
+item.kiba_claw.name=ƒLƒoƒNƒ[
+item.kiba_knife.name=ƒLƒoƒiƒCƒt
+item.kiba_arrow.name=ƒLƒoƒAƒ[
+item.beast_attack_rod_red.name=bŒ‚–_ (ƒMƒ“ƒKƒŒƒbƒh)
+item.beast_attack_rod_green.name=bŒ‚–_ (ƒMƒ“ƒKƒOƒŠ[ƒ“)
+item.beast_attack_rod_blue.name=bŒ‚–_ (ƒMƒ“ƒKƒuƒ‹[)
+item.beast_attack_rod_yellow.name=bŒ‚–_ (ƒMƒ“ƒKƒCƒGƒ[)
+item.beast_attack_rod_pink.name=bŒ‚–_ (ƒMƒ“ƒKƒsƒ“ƒN)
+item.bull_riot.name=ƒuƒ‹ƒ‰ƒCƒAƒbƒg
 
 //23 GoGo-V
 itemGroup.tabGogoV=Kyukyu Sentai GoGo-V
 
-item.gogo_v_logo.name=GoGo-Vãƒ­ã‚´
-tile.gogo_v_ore.name=GoGo-Vé‰±çŸ³
+item.gogo_v_logo.name=GoGo-V Logo
+tile.gogo_v_ore.name=GoGo-V Ore
 
-item.gogo_v_head.name=GoGo-Vãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.gogo_v_torso.name=GoGo-Vãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.gogo_v_legs.name=GoGo-Vãƒ¬ã‚®ãƒ³ã‚¹
+item.gogo_v_head.name=GoGo-V Helmet
+item.gogo_v_torso.name=GoGo-V Chestplate
+item.gogo_v_legs.name=GoGo-V Leggings
 
-item.red_gogo_brace.name=GoGo Brace (Goãƒ¬ãƒƒãƒ‰)
-item.blue_gogo_brace.name=GoGo Brace (Goãƒ–ãƒ«ãƒ¼)
-item.green_gogo_brace.name=GoGo Brace (Goã‚°ãƒªãƒ¼ãƒ³)
-item.yellow_gogo_brace.name=GoGo Brace (Goã‚¤ã‚¨ãƒ­ãƒ¼)
-item.pink_gogo_brace.name=GoGo Brace (Goãƒ”ãƒ³ã‚¯)
-item.red_kyoko_gogo_brace.name=GoGo Brace (Goãƒ¬ãƒƒãƒ‰ Kyoko's Dream)
+item.red_gogo_brace.name=GoGo Brace (GoRed)
+item.blue_gogo_brace.name=GoGo Brace (GoBlue)
+item.green_gogo_brace.name=GoGo Brace (GoGreen)
+item.yellow_gogo_brace.name=GoGo Brace (GoYellow)
+item.pink_gogo_brace.name=GoGo Brace (GoPink)
+item.red_kyoko_gogo_brace.name=GoGo Brace (GoRed Kyoko's Dream)
 item.zeek_crystal.name=Zeek Crystal (Beast-Demon Hunter Zeek)
 item.jeanne_crystal.name=Zeek Crystal (Zeek-Jeanne)
 
-item.go_red_badge.name=Goãƒ¬ãƒƒãƒ‰ Badge
-item.go_blue_badge.name=Goãƒ–ãƒ«ãƒ¼ Badge
-item.go_green_badge.name=Goã‚°ãƒªãƒ¼ãƒ³ Badge
-item.go_yellow_badge.name=Goã‚¤ã‚¨ãƒ­ãƒ¼ Badge
-item.go_pink_badge.name=Goãƒ”ãƒ³ã‚¯ Badge
+item.go_red_badge.name=GoRed Badge
+item.go_blue_badge.name=GoBlue Badge
+item.go_green_badge.name=GoGreen Badge
+item.go_yellow_badge.name=GoYellow Badge
+item.go_pink_badge.name=GoPink Badge
 item.zeek_fragment.name=Zeek Crystal's Fragment
 
 item.v_mode_brace.name=V-Mode Brace
 
-item.laser_grip_red.name=Laser Grip (Goãƒ¬ãƒƒãƒ‰)
-item.laser_grip_blue.name=Laser Grip (Goãƒ–ãƒ«ãƒ¼)
-item.laser_grip_green.name=Laser Grip (Goã‚°ãƒªãƒ¼ãƒ³)
-item.laser_grip_yellow.name=Laser Grip (Goã‚¤ã‚¨ãƒ­ãƒ¼)
-item.laser_grip_pink.name=Laser Grip (Goãƒ”ãƒ³ã‚¯)
-item.five_laser_red.name=Five Laser (Goãƒ¬ãƒƒãƒ‰)
-item.five_laser_blue.name=Five Laser (Goãƒ–ãƒ«ãƒ¼)
-item.five_laser_green.name=Five Laser (Goã‚°ãƒªãƒ¼ãƒ³)
-item.five_laser_yellow.name=Five Laser (Goã‚¤ã‚¨ãƒ­ãƒ¼)
-item.five_laser_pink.name=Five Laser (Goãƒ”ãƒ³ã‚¯)
-item.v_boomerang_red.name=V-Boomerang (Goãƒ¬ãƒƒãƒ‰)
-item.v_boomerang_blue.name=V-Boomerang (Goãƒ–ãƒ«ãƒ¼)
-item.v_boomerang_green.name=V-Boomerang (Goã‚°ãƒªãƒ¼ãƒ³)
-item.v_boomerang_yellow.name=V-Boomerang (Goã‚¤ã‚¨ãƒ­ãƒ¼)
-item.v_boomerang_pink.name=V-Boomerang (Goãƒ”ãƒ³ã‚¯)
-item.v_lancer_red.name=V-Lancer (Goãƒ¬ãƒƒãƒ‰)
-item.v_lancer_blue.name=V-Lancer (Goãƒ–ãƒ«ãƒ¼)
-item.v_lancer_green.name=V-Lancer (Goã‚°ãƒªãƒ¼ãƒ³)
-item.v_lancer_yellow.name=V-Lancer (Goã‚¤ã‚¨ãƒ­ãƒ¼)
-item.v_lancer_pink.name=V-Lancer (Goãƒ”ãƒ³ã‚¯)
-item.v_machine_gun_red.name=V-Machine Gun (Goãƒ¬ãƒƒãƒ‰)
-item.v_machine_gun_blue.name=V-Machine Gun (Goãƒ–ãƒ«ãƒ¼)
-item.v_machine_gun_green.name=V-Machine Gun (Goã‚°ãƒªãƒ¼ãƒ³)
-item.v_machine_gun_yellow.name=V-Machine Gun (Goã‚¤ã‚¨ãƒ­ãƒ¼)
-item.v_machine_gun_pink.name=V-Machine Gun (Goãƒ”ãƒ³ã‚¯)
+item.laser_grip_red.name=Laser Grip (GoRed)
+item.laser_grip_blue.name=Laser Grip (GoBlue)
+item.laser_grip_green.name=Laser Grip (GoGreen)
+item.laser_grip_yellow.name=Laser Grip (GoYellow)
+item.laser_grip_pink.name=Laser Grip (GoPink)
+item.five_laser_red.name=Five Laser (GoRed)
+item.five_laser_blue.name=Five Laser (GoBlue)
+item.five_laser_green.name=Five Laser (GoGreen)
+item.five_laser_yellow.name=Five Laser (GoYellow)
+item.five_laser_pink.name=Five Laser (GoPink)
+item.v_boomerang_red.name=V-Boomerang (GoRed)
+item.v_boomerang_blue.name=V-Boomerang (GoBlue)
+item.v_boomerang_green.name=V-Boomerang (GoGreen)
+item.v_boomerang_yellow.name=V-Boomerang (GoYellow)
+item.v_boomerang_pink.name=V-Boomerang (GoPink)
+item.v_lancer_red.name=V-Lancer (GoRed)
+item.v_lancer_blue.name=V-Lancer (GoBlue)
+item.v_lancer_green.name=V-Lancer (GoGreen)
+item.v_lancer_yellow.name=V-Lancer (GoYellow)
+item.v_lancer_pink.name=V-Lancer (GoPink)
+item.v_machine_gun_red.name=V-Machine Gun (GoRed)
+item.v_machine_gun_blue.name=V-Machine Gun (GoBlue)
+item.v_machine_gun_green.name=V-Machine Gun (GoGreen)
+item.v_machine_gun_yellow.name=V-Machine Gun (GoYellow)
+item.v_machine_gun_pink.name=V-Machine Gun (GoPink)
 item.go_blaster.name=Go Blaster
 item.go_blaster_hyper.name=Go Blaster (Hyper Mode)
 item.zeek_sword.name=Zeek Sword
@@ -552,17 +680,18 @@ item.zeek_blaster.name=Zeek Blaster
 itemGroup.tabGaoranger=Hyakujuu Sentai Gaoranger
 
 item.empty_gao_jewel.name=Empty Gao Jewel
-tile.gaoranger_ore.name=Gaorangeré‰±çŸ³
+item.gaoranger_logo.name=Gaoranger Logo
+tile.gaoranger_ore.name=Gaoranger Ore
 
-item.gaoranger_head.name=Gaorangerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.gaoranger_torso.name=Gaorangerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.gaoranger_legs.name=Gaorangerãƒ¬ã‚®ãƒ³ã‚¹
+item.gaoranger_head.name=Gaoranger Helmet
+item.gaoranger_torso.name=Gaoranger Chestplate
+item.gaoranger_legs.name=Gaoranger Leggings
 
-item.red_g_phone.name=G-Phone (Gaoãƒ¬ãƒƒãƒ‰)
-item.yellow_g_phone.name=G-Phone (Gaoã‚¤ã‚¨ãƒ­ãƒ¼)
-item.blue_g_phone.name=G-Phone (Gaoãƒ–ãƒ«ãƒ¼)
-item.black_g_phone.name=G-Phone (Gaoãƒ–ãƒ©ãƒƒã‚¯)
-item.white_g_phone.name=G-Phone (Gaoãƒ›ãƒ¯ã‚¤ãƒˆ)
+item.red_g_phone.name=G-Phone (GaoRed)
+item.yellow_g_phone.name=G-Phone (GaoYellow)
+item.blue_g_phone.name=G-Phone (GaoBlue)
+item.black_g_phone.name=G-Phone (GaoBlack)
+item.white_g_phone.name=G-Phone (GaoWhite)
 item.g_brace_phone.name=G-Brace Phone (GaoSilver)
 
 item.gao_lion_jewel.name=GaoLion Jewel
@@ -572,38 +701,85 @@ item.gao_bison_jewel.name=GaoBison Jewel
 item.gao_tiger_jewel.name=GaoTiger Jewel
 item.gao_wolf_jewel.name=GaoWolf Jewel
 
+item.gao_elephant_jewel.name=GaoElephant Jewel
+item.gao_giraffe_jewel.name=GaoGiraffe Jewel
+item.gao_bear_jewel.name=GaoBear Jewel
+item.gao_polar_jewel.name=GaoPolar Jewel
+item.gao_gorilla_jewel.name=GaoGorilla Jewel
+item.gao_hammerhead_jewel.name=GaoHammerhead Jewel
+item.gao_ligator_jewel.name=GaoLigator Jewel
+item.gao_rhinos_jewel.name=GaoRhinos Jewel
+item.gao_madillo_jewel.name=GaoMadillo Jewel
+item.gao_deers_jewel.name=GaoDeers Jewel
+item.gao_falcon_jewel.name=GaoFalcon Jewel
+item.gao_leon_jewel.name=GaoLeon Jewel
+item.gao_condor_jewel.name=GaoCondor Jewel
+item.gao_sawshark_jewel.name=GaoSawshark Jewel
+item.gao_buffalo_jewel.name=GaoBuffalo Jewel
+item.gao_jaguar_jewel.name=GaoJaguar Jewel
+item.gao_kong_jewel.name=GaoKong Jewel
+item.gao_panda_jewel.name=GaoPanda Jewel
+
+item.gao_lion_blue_jewel.name=GaoLion Jewel (Blue)
+item.gao_lion_black_jewel.name=GaoLion Jewel (Black)
+item.gao_lion_white_jewel.name=GaoLion Jewel (White)
+item.gao_ape_jewel.name=GaoApe Jewel
+
+item.unfinished_gao_god_jewel.name=Unfinished GaoGod Jewel
+item.empty_gao_god_jewel.name=Empty GaoGod Jewel
+
 item.beast_king_sword.name=Beast King Sword
-item.lion_beast_king_sword.name=Beast King Sword (Gaoãƒ¬ãƒƒãƒ‰)
-item.eagle_beast_king_sword.name=Beast King Sword (Gaoã‚¤ã‚¨ãƒ­ãƒ¼)
-item.shark_beast_king_sword.name=Beast King Sword (Gaoãƒ–ãƒ«ãƒ¼)
-item.bison_beast_king_sword.name=Beast King Sword (Gaoãƒ–ãƒ©ãƒƒã‚¯)
-item.tiger_beast_king_sword.name=Beast King Sword (Gaoãƒ›ãƒ¯ã‚¤ãƒˆ)
+item.lion_beast_king_sword.name=Beast King Sword (GaoRed)
+item.eagle_beast_king_sword.name=Beast King Sword (GaoYellow)
+item.shark_beast_king_sword.name=Beast King Sword (GaoBlue)
+item.bison_beast_king_sword.name=Beast King Sword (GaoBlack)
+item.tiger_beast_king_sword.name=Beast King Sword (GaoWhite)
 item.evil_crushing_hundred_beast_sword.name=Evil-Crushing Hundred-Beast Sword
 item.lion_fang.name=Lion Fang
 item.gao_mane_buster.name=Gao Mane Buster
-item.gao_mane_buster_final.name=Gao Mane Buster (Final Mode)
 item.eagle_sword.name=Eagle Sword
 item.shark_cutter.name=Shark Cutter
 item.bison_axe.name=Bison Axe
 item.tiger_baton.name=Tiger Baton
 item.gao_hustler_rod.name=Gao Hustler Rod
 item.falcon_summoner.name=Falcon Summoner
-item.falcon_summoner_arrow.name=Falcon Summoner (Arrow Mode)
+
+item.mikazukiken.name=Mikazukiken (Crescent Moon Blade)
+item.flute_knife.name=Flute Knife
+
+item.gao_king_head.name=GaoKing Helmet
+
+item.gao_king_torso.name=GaoKing Chestplate
+item.gao_king_legs.name=GaoKing Leggings
+item.gao_king_boots.name=GaoKing Boots
+
+item.gao_muscle_head.name=GaoMuscle Helmet
+item.gao_hunter_head.name=GaoHunter Helmet
+item.gao_hunter_blue_moon_head.name=GaoHunter Blue Moon Helmet
+item.gao_icarus_head.name=GaoIcarus Helmet
+item.gao_god_head.name=GaoGod Helmet
+item.gao_knight_head.name=GaoKnight Helmet
+
+item.fin_blade.name=Fin Blade
+item.elephant_sword.name=Elephant Sword
+item.elephant_shield.name=Elephant Shield
+item.ligator_blade.name=Ligator Blade
+item.ligator_blade_blue_moon.name=Ligator Blade (Blue Moon)
 
 //27 Abaranger
 itemGroup.tabAbaranger=Bakuryu Sentai Abaranger
 
-item.abaranger_logo.name=Abarangerãƒ­ã‚´
-tile.abaranger_ore.name=Abarangeré‰±çŸ³
+item.abaranger_logo.name=Abaranger Logo
+tile.abaranger_ore.name=Abaranger Ore
 
-item.abaranger_head.name=Abarangerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.abaranger_torso.name=Abarangerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.abaranger_legs.name=Abarangerãƒ¬ã‚®ãƒ³ã‚¹
+item.abaranger_head.name=Abaranger Helmet
+item.abaranger_torso.name=Abaranger Chestplate
+item.abaranger_legs.name=Abaranger Leggings
 
-item.red_dino_brace.name=Dino Brace (Abaãƒ¬ãƒƒãƒ‰)
-item.blue_dino_brace.name=Dino Brace (Abareãƒ–ãƒ«ãƒ¼)
-item.yellow_dino_brace.name=Dino Brace (Abareã‚¤ã‚¨ãƒ­ãƒ¼)
-item.dino_commander.name=Dino Commander (Abareãƒ–ãƒ©ãƒƒã‚¯)
+item.red_dino_brace.name=Dino Brace (AbaRed)
+item.blue_dino_brace.name=Dino Brace (AbareBlue)
+item.yellow_dino_brace.name=Dino Brace (AbareYellow)
+item.dino_commander.name=Dino Commander (AbareBlack)
 item.dino_minder.name=Dino Minder (AbareKiller)
 
 item.tyranno_dino_guts.name=Tyranno Dino Guts
@@ -611,7 +787,18 @@ item.tricera_dino_guts.name=Tricera Dino Guts
 item.ptera_dino_guts.name=Ptera Dino Guts
 item.brachio_dino_guts.name=Brachio Dino Guts
 item.top_dino_guts.name=Top Dino Guts
+
+item.bachycelo_dino_guts.name=Bachycelo Dino Guts
+item.dimenoko_dino_guts.name=Dimenoko Dino Guts
+item.stego_dino_guts.name=Stego Dino Guts
+item.parasa_dino_guts.name=Parasa Dino Guts
+item.ankylo_dino_guts.name=Ankylo Dino Guts
+item.firenoko_dino_guts.name=Firenoko Dino Guts
 item.max_tyranno_dino_guts.name=Max Tyranno Dino Guts
+item.max_tricera_dino_guts.name=Max Tricera Dino Guts
+item.max_ptera_dino_guts.name=Max Ptera Dino Guts
+item.carno_dino_guts.name=Carno Dino Guts
+item.chasmo_dino_guts.name=Chasmo Dino Guts
 
 item.aba_laser.name=Aba Laser
 item.baku_laser.name=Baku Laser
@@ -623,30 +810,51 @@ item.wing_pentact.name=Wing Pentact
 item.sty_riser.name=StyRiser (Offense Mode)
 item.sty_riser_shield.name=StyRiser (Defense Mode)
 
+item.abaren_oh_head.name=AbarenOh Helmet
+
+item.abaren_oh_torso.name=AbarenOh Chestplate
+item.abaren_oh_legs.name=AbarenOh Leggings
+item.abaren_oh_boots.name=AbarenOh Boots
+
+item.abaren_ohji_head.name=AbarenOhJi Helmet
+item.killer_oh_head.name=KillerOh Helmet
+item.max_ohja_head.name=MaxOhJa Helmet
+item.max_ryuoh_head.name=MaxRyuuOh Helmet
+item.oo_abaren_oh_head.name=OoAbarenOh Helmet
+item.bakuren_oh_head.name=BakurenOh Helmet
+
+item.double_tall_sword.name=Double Tall Sword
+item.tricera_shield.name=Tricera Shield
+item.gale_spear.name=Gale Spear
+item.bakuryu_axe.name=Bakuryuu Axe
+item.bakuryu_spear.name=Bakuryuu Spear
+item.double_tall_sword_bakuren_oh.name=Double Tall Sword (BakurenOh)
+item.chasmo_shield.name=Chasmo Shield
+
 //30 Boukenger
 itemGroup.tabBoukenger=GoGo Sentai Boukenger
 
-item.boukenger_logo.name=Boukengerãƒ­ã‚´
-tile.boukenger_ore.name=Boukengeré‰±çŸ³
+item.boukenger_logo.name=Boukenger Logo
+tile.boukenger_ore.name=Boukenger Ore
 
-item.boukenger_head.name=Boukengerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.boukenger_torso.name=Boukengerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.boukenger_legs.name=Boukengerãƒ¬ã‚®ãƒ³ã‚¹
+item.boukenger_head.name=Boukenger Helmet
+item.boukenger_torso.name=Boukenger Chestplate
+item.boukenger_legs.name=Boukenger Leggings
 
-item.red_accellular.name=Accellular (Bouken ãƒ¬ãƒƒãƒ‰)
-item.black_accellular.name=Accellular (Bouken ãƒ–ãƒ©ãƒƒã‚¯)
-item.blue_accellular.name=Accellular (Bouken ãƒ–ãƒ«ãƒ¼)
-item.yellow_accellular.name=Accellular (Bouken ã‚¤ã‚¨ãƒ­ãƒ¼)
-item.pink_accellular.name=Accellular (Bouken ãƒ”ãƒ³ã‚¯)
+item.red_accellular.name=Accellular (Bouken Red)
+item.black_accellular.name=Accellular (Bouken Black)
+item.blue_accellular.name=Accellular (Bouken Blue)
+item.yellow_accellular.name=Accellular (Bouken Yellow)
+item.pink_accellular.name=Accellular (Bouken Pink)
 item.gogo_changer.name=GoGo Changer (Bouken Silver)
 item.zubaan.name=Zubaan Chest (Zubaan)
 
-item.bouken_red_logo.name=Bouken ãƒ¬ãƒƒãƒ‰ãƒ­ã‚´
-item.bouken_black_logo.name=Bouken ãƒ–ãƒ©ãƒƒã‚¯ãƒ­ã‚´
-item.bouken_blue_logo.name=Bouken ãƒ–ãƒ«ãƒ¼ãƒ­ã‚´
-item.bouken_yellow_logo.name=Bouken ã‚¤ã‚¨ãƒ­ãƒ¼ãƒ­ã‚´
-item.bouken_pink_logo.name=Bouken ãƒ”ãƒ³ã‚¯ãƒ­ã‚´
-item.bouken_silver_logo.name=Bouken Silverãƒ­ã‚´
+item.bouken_red_logo.name=Bouken Red Logo
+item.bouken_black_logo.name=Bouken Black Logo
+item.bouken_blue_logo.name=Bouken Blue Logo
+item.bouken_yellow_logo.name=Bouken Yellow Logo
+item.bouken_pink_logo.name=Bouken Pink Logo
+item.bouken_silver_logo.name=Bouken Silver Logo
 item.scale_of_the_salamander.name=Scale of the Salamander
 item.accel_tector.name=Accel Tector
 item.zubaan_crystal.name=Zubaan Chest Crystal
@@ -658,22 +866,21 @@ item.blow_knuckle.name=Blow Knuckle
 item.bucket_scooper.name=Bucket Scooper
 item.hydro_shooter.name=Hydro Shooter
 item.sagaspear.name=Sagasniper
-item.dual_crusher_mixer.name=Dual Crusher (Mixer Head)
-item.dual_crusher_drill.name=Dual Crusher (Drill Head)
+item.dual_crusher_mixer.name=Dual Crusher
 
 //31 Gekiranger
 itemGroup.tabGekiranger=Juken Sentai Gekiranger
 
-item.gekiranger_logo.name=Gekirangerãƒ­ã‚´
-tile.gekiranger_ore.name=Gekirangeré‰±çŸ³
+item.gekiranger_logo.name=Gekiranger Logo
+tile.gekiranger_ore.name=Gekiranger Ore
 
-item.gekiranger_head.name=Gekirangerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.gekiranger_torso.name=Gekirangerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.gekiranger_legs.name=Gekirangerãƒ¬ã‚®ãƒ³ã‚¹
+item.gekiranger_head.name=Gekiranger Helmet
+item.gekiranger_torso.name=Gekiranger Chestplate
+item.gekiranger_legs.name=Gekiranger Leggings
 
-item.red_geki_changer.name=GekiChanger (Gekiãƒ¬ãƒƒãƒ‰)
-item.yellow_geki_changer.name=GekiChanger (Gekiã‚¤ã‚¨ãƒ­ãƒ¼)
-item.blue_geki_changer.name=GekiChanger (Gekiãƒ–ãƒ«ãƒ¼)
+item.red_geki_changer.name=GekiChanger (GekiRed)
+item.yellow_geki_changer.name=GekiChanger (GekiYellow)
+item.blue_geki_changer.name=GekiChanger (GekiBlue)
 item.gong_changer.name=GongChanger (GekiViolet)
 item.chopper_sai_blade.name=SaiBlade (GekiChopper)
 
@@ -689,9 +896,9 @@ item.gorilla_spirit.name=Gorilla Spirit
 item.penguin_spirit.name=Penguin Spirit
 item.gazelle_spirit.name=Gazelle Spirit
 
-item.red_super_geki_claw.name=Super GekiClaw (Gekiãƒ¬ãƒƒãƒ‰)
-item.yellow_super_geki_claw.name=Super GekiClaw (Gekiã‚¤ã‚¨ãƒ­ãƒ¼)
-item.blue_super_geki_claw.name=Super GekiClaw (Gekiãƒ–ãƒ«ãƒ¼)
+item.red_super_geki_claw.name=Super GekiClaw (GekiRed)
+item.yellow_super_geki_claw.name=Super GekiClaw (GekiYellow)
+item.blue_super_geki_claw.name=Super GekiClaw (GekiBlue)
 item.sai_blade_cutter.name=SaiBlade
 item.geki_tonfa.name=GekiTonfa
 item.geki_tonfa_baton.name=GekiTonfa Baton
@@ -707,20 +914,21 @@ item.virtuous_beast_sword.name=Virtuous Beast Sword
 itemGroup.tabGoOnger=Engine Sentai Go-Onger
 
 item.blank_engine_soul.name=Blank Engine Soul
-tile.go_onger_ore.name=Go-Ongeré‰±çŸ³
+item.go_onger_logo.name=Go-Onger Logo
+tile.go_onger_ore.name=Go-Onger Ore
 
-item.go_onger_head.name=Go-Ongerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.go_onger_torso.name=Go-Ongerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.go_onger_legs.name=Go-Ongerãƒ¬ã‚®ãƒ³ã‚¹
+item.go_onger_head.name=Go-Onger Helmet
+item.go_onger_torso.name=Go-Onger Chestplate
+item.go_onger_legs.name=Go-Onger Leggings
 
-item.red_go_phone.name=Go-Phone (Go-On ãƒ¬ãƒƒãƒ‰)
-item.blue_go_phone.name=Go-Phone (Go-On ãƒ–ãƒ«ãƒ¼)
-item.yellow_go_phone.name=Go-Phone (Go-On ã‚¤ã‚¨ãƒ­ãƒ¼)
-item.green_shift_changer.name=Shift Changer (Go-On ã‚°ãƒªãƒ¼ãƒ³)
-item.black_shift_changer.name=Shift Changer (Go-On ãƒ–ãƒ©ãƒƒã‚¯)
+item.red_go_phone.name=Go-Phone (Go-On Red)
+item.blue_go_phone.name=Go-Phone (Go-On Blue)
+item.yellow_go_phone.name=Go-Phone (Go-On Yellow)
+item.green_shift_changer.name=Shift Changer (Go-On Green)
+item.black_shift_changer.name=Shift Changer (Go-On Black)
 item.gold_wing_trigger.name=Wing Trigger (Go-On Gold)
 item.silver_wing_trigger.name=Wing Trigger (Go-On Silver)
-item.kega_go_phone.name=Go-Phone (Kega ã‚¤ã‚¨ãƒ­ãƒ¼)
+item.kega_go_phone.name=Go-Phone (Kega Yellow)
 
 item.speedor_soul.name=Speedor Engine Soul
 item.buson_soul.name=Buson Engine Soul
@@ -735,6 +943,10 @@ item.kishamoth_soul.name=Kishamoth Engine Soul
 item.t_line_soul.name=T-line Engine Soul
 item.k_line_soul.name=K-line Engine Soul
 
+item.daishogun_soul.name=Dai-Shogun Soul
+item.skydor_soul.name=Skydor Soul
+item.kegalesia_soul.name=Kegalesia Soul
+
 item.mantan_sword.name=Mantan Gun
 item.road_sabre.name=Road Sabre
 item.garage_launcher.name=Garage Launcher
@@ -742,88 +954,110 @@ item.bridge_axe.name=Bridge Axe
 item.cowl_laser.name=Cowl Laser
 item.rocket_dagger.name=Rocket Dagger
 item.wing_booster.name=Wing Booster
+item.wing_booster_silver.name=Wing Booster
 item.kankanbar.name=Kankanbar
 item.kankan_mantan_gun.name=Kankan Mantan Gun
 
+item.engine_oh_head.name=Engine-Oh Helmet
+
+item.engine_oh_torso.name=Engine-Oh Chestplate
+item.engine_oh_legs.name=Engine-Oh Leggings
+item.engine_oh_boots.name=Engine-Oh Boots
+
+item.gunbir_oh_head.name=GunBir-Oh Helmet
+item.engine_oh_g6_head.name=Engine-Oh G6 Helmet
+item.seikuu_oh_head.name=Seikuu-Oh Helmet
+item.engine_oh_g9_head.name=Engine-Oh G9 Helmet
+item.kyoretsu_oh_head.name=Kyoretsu-Oh Helmet
+item.engine_oh_g12_head.name=Engine-Oh G12 Helmet
+item.engine_daishogun_head.name=Engine Dai-Shogun Helmet
+item.skydor_engine_oh_head.name=Engine-Oh Helmet (Skydor ver.)
+
+item.go_on_sword.name=Go-On Sword
+item.v_shield.name=V Shield
+item.enjin_ken.name=EnjinKen (Engine Sword)
+
 //33 Shinkenger
-itemGroup.tabShinkenger=ä¾æˆ¦éšŠã‚·ãƒ³ã‚±ãƒ³ã‚¸ãƒ£ãƒ¼
+itemGroup.tabShinkenger=˜í‘àƒVƒ“ƒPƒ“ƒWƒƒ[
 
-item.common_disk.name=å…±é€šãƒ‡ã‚£ã‚¹ã‚¯
-tile.shinkenger_ore.name=ã‚·ãƒ³ã‚±ãƒ³ã‚¸ãƒ£ãƒ¼é‰±çŸ³
+item.common_disk.name=‹¤’ÊƒfƒBƒXƒN
+item.shinkenger_logo.name=ƒVƒ“ƒPƒ“ƒWƒƒ[ƒƒS
+tile.shinkenger_ore.name=ƒVƒ“ƒPƒ“ƒWƒƒ[zÎ
 
-item.shinkenger_head.name=ã‚·ãƒ³ã‚±ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.shinkenger_torso.name=ã‚·ãƒ³ã‚±ãƒ³ã‚¸ãƒ£ãƒ¼ãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.shinkenger_legs.name=ã‚·ãƒ³ã‚±ãƒ³ã‚¸ãƒ£ãƒ¼ãƒ¬ã‚®ãƒ³ã‚¹
+item.shinkenger_head.name=ƒVƒ“ƒPƒ“ƒWƒƒ[ƒwƒ‹ƒƒbƒg
+item.shinkenger_torso.name=ƒVƒ“ƒPƒ“ƒWƒƒ[ƒ`ƒFƒXƒgƒvƒŒ[ƒg
+item.shinkenger_legs.name=ƒVƒ“ƒPƒ“ƒWƒƒ[ƒŒƒMƒ“ƒX
 
-item.red_shodophone.name=ã‚·ãƒ§ãƒ‰ã‚¦ãƒ•ã‚©ãƒ³(ã‚·ãƒ³ã‚±ãƒ³ãƒ¬ãƒƒãƒ‰)
-item.blue_shodophone.name=ã‚·ãƒ§ãƒ‰ã‚¦ãƒ•ã‚©ãƒ³(ã‚·ãƒ³ã‚±ãƒ³ãƒ–ãƒ«ãƒ¼)
-item.pink_shodophone.name=ã‚·ãƒ§ãƒ‰ã‚¦ãƒ•ã‚©ãƒ³(ã‚·ãƒ³ã‚±ãƒ³ãƒ”ãƒ³ã‚¯)
-item.green_shodophone.name=ã‚·ãƒ§ãƒ‰ã‚¦ãƒ•ã‚©ãƒ³(ã‚·ãƒ³ã‚±ãƒ³ã‚°ãƒªãƒ¼ãƒ³)
-item.yellow_shodophone.name=ã‚·ãƒ§ãƒ‰ã‚¦ãƒ•ã‚©ãƒ³(ã‚·ãƒ³ã‚±ãƒ³ã‚¤ã‚¨ãƒ­ãƒ¼)
-item.sushi_changer.name=ã‚¹ã‚·ãƒã‚§ãƒ³ã‚¸ãƒ£ãƒ¼(ã‚·ãƒ³ã‚±ãƒ³ã‚´ãƒ¼ãƒ«ãƒ‰)
-item.princess_red_shodophone.name=ã‚·ãƒ§ãƒ‰ã‚¦ãƒ•ã‚©ãƒ³(å§«ã‚·ãƒ³ã‚±ãƒ³ãƒ¬ãƒƒãƒ‰)
+item.red_shodophone.name=ƒVƒ‡ƒhƒEƒtƒHƒ“ (ƒVƒ“ƒPƒ“ƒŒƒbƒh)
+item.blue_shodophone.name=ƒVƒ‡ƒhƒEƒtƒHƒ“ (ƒVƒ“ƒPƒ“ƒuƒ‹[)
+item.pink_shodophone.name=ƒVƒ‡ƒhƒEƒtƒHƒ“ (ƒVƒ“ƒPƒ“ƒsƒ“ƒN)
+item.green_shodophone.name=ƒVƒ‡ƒhƒEƒtƒHƒ“ (ƒVƒ“ƒPƒ“ƒOƒŠ[ƒ“)
+item.yellow_shodophone.name=ƒVƒ‡ƒhƒEƒtƒHƒ“ (ƒVƒ“ƒPƒ“ƒCƒGƒ[)
+item.sushi_changer.name=ƒXƒVƒ`ƒFƒ“ƒWƒƒ[ (ƒVƒ“ƒPƒ“ƒS[ƒ‹ƒh)
+item.princess_red_shodophone.name=ƒVƒ‡ƒhƒEƒtƒHƒ“ (ƒVƒ“ƒPƒ“ƒŒƒbƒh•P)
 
-item.shishi_disk.name=ç…å­ãƒ‡ã‚£ã‚¹ã‚¯
-item.ryuu_disk.name=é¾ãƒ‡ã‚£ã‚¹ã‚¯
-item.kame_disk.name=äº€ãƒ‡ã‚£ã‚¹ã‚¯
-item.kuma_disk.name=ç†Šãƒ‡ã‚£ã‚¹ã‚¯
-item.saru_disk.name=çŒ¿ãƒ‡ã‚£ã‚¹ã‚¯
-item.sushi_disk.name=å¯¿å¸ãƒ‡ã‚£ã‚¹ã‚¯
-item.inromaru.name=ã‚¤ãƒ³ãƒ­ã‚¦ãƒãƒ«
-item.super_disk.name=ã‚¹ãƒ¼ãƒ‘ãƒ¼ãƒ‡ã‚£ã‚¹ã‚¯
-item.hyper_disk.name=æç«œãƒ‡ã‚£ã‚¹ã‚¯
-item.gedou_disk.name=å¤–é“ãƒ‡ã‚£ã‚¹ã‚¯
+item.shishi_disk.name=‚qƒfƒBƒXƒN
+item.ryuu_disk.name=—´ƒfƒBƒXƒN
+item.kame_disk.name=‹TƒfƒBƒXƒN
+item.kuma_disk.name=ŒFƒfƒBƒXƒN
+item.saru_disk.name=‰ƒfƒBƒXƒN
+item.sushi_disk.name=õiƒfƒBƒXƒN
+item.inromaru.name=ƒCƒ“ƒƒEƒ}ƒ‹
+item.super_disk.name=ƒX[ƒp[ƒfƒBƒXƒN
+item.hyper_disk.name=ƒnƒCƒp[ƒfƒBƒXƒN
+item.gedou_disk.name=ƒfƒBƒXƒN
 
-item.shinkenmaru.name=ã‚·ãƒ³ã‚±ãƒ³ãƒãƒ«
-item.rekka_daizantou.name=çƒˆç«å¤§æ–¬åˆ€
-item.water_arrow.name=ã‚¦ã‚©ãƒ¼ã‚¿ãƒ¼ã‚¢ãƒ­ãƒ¼
-item.heaven_fan.name=ãƒ˜ãƒ–ãƒ³ãƒ•ã‚¡ãƒ³
-item.wood_spear.name=ã‚¦ãƒƒãƒ‰ã‚¹ãƒ”ã‚¢
-item.land_slicer.name=ãƒ©ãƒ³ãƒ‰ã‚¹ãƒ©ã‚¤ã‚µãƒ¼
-item.sakanamaru.name=ã‚µã‚«ãƒŠãƒãƒ«
-item.super_shinkenmaru.name=ã‚¹ãƒ¼ãƒ‘ãƒ¼ã‚·ãƒ³ã‚±ãƒ³ãƒãƒ«
-item.kyoryumaru.name=ã‚­ãƒ§ã‚¦ãƒªãƒ¥ã‚¦ãƒãƒ«
-item.kyoryumaru_sakanamaru.name=ã‚­ãƒ§ã‚¦ãƒªãƒ¥ã‚¦ãƒãƒ«(ã‚·ãƒ³ã‚±ãƒ³ã‚´ãƒ¼ãƒ«ãƒ‰)
+item.shinkenmaru.name=ƒVƒ“ƒPƒ“ƒ}ƒ‹
+item.rekka_daizantou.name=—ó‰Î‘åa“
+item.water_arrow.name=ƒEƒH[ƒ^[ƒAƒ[
+item.heaven_fan.name=ƒwƒuƒ“ƒtƒ@ƒ“
+item.wood_spear.name=ƒEƒbƒhƒXƒsƒA
+item.land_slicer.name=ƒ‰ƒ“ƒhƒXƒ‰ƒCƒT[
+item.sakanamaru.name=ƒTƒJƒiƒ}ƒ‹
+item.super_shinkenmaru.name=ƒX[ƒp[ƒVƒ“ƒPƒ“ƒ}ƒ‹
+item.kyoryumaru.name=ƒLƒ‡ƒEƒŠƒ…ƒEƒ}ƒ‹
+item.kyoryumaru_sakanamaru.name=ƒLƒ‡ƒEƒŠƒ…ƒEƒ}ƒ‹
 
 //36 Go-Busters
 itemGroup.tabGoBusters=Tokumei Sentai Go-Busters
 
 item.enetron.name=Enetron
-item.blank_animal_disk.name=Blank Animal ãƒ‡ã‚£ã‚¹ã‚¯
-tile.go_busters_ore.name=Go-Bustersé‰±çŸ³
-tile.doubutsu_go_busters_ore.name=Doubutsu Go-Bustersé‰±çŸ³
+item.blank_animal_disk.name=Blank Animal Disk
+item.go_busters_logo.name=Go-Busters Logo
+tile.go_busters_ore.name=Go-Busters Ore
+tile.doubutsu_go_busters_ore.name=Doubutsu Go-Busters Ore
 
-item.go_busters_head.name=Go-Bustersãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.go_busters_torso.name=Go-Bustersãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.go_busters_legs.name=Go-Bustersãƒ¬ã‚®ãƒ³ã‚¹
+item.go_busters_head.name=Go-Busters Helmet
+item.go_busters_torso.name=Go-Busters Chestplate
+item.go_busters_legs.name=Go-Busters Leggings
 
-item.red_morphin_brace.name=Morphin Brace (ãƒ¬ãƒƒãƒ‰ Buster)
-item.blue_morphin_brace.name=Morphin Brace (ãƒ–ãƒ«ãƒ¼ Buster)
-item.yellow_morphin_brace.name=Morphin Brace (ã‚¤ã‚¨ãƒ­ãƒ¼ Buster)
+item.red_morphin_brace.name=Morphin Brace (Red Buster)
+item.blue_morphin_brace.name=Morphin Brace (Blue Buster)
+item.yellow_morphin_brace.name=Morphin Brace (Yellow Buster)
 item.beet_morphin_blaster.name=Morphin Blaster (Beet Buster)
 item.stag_morphin_blaster.name=Morphin Blaster (Stag Buster)
 item.beet_enter_morphin_blaster.name=Morphin Blaster (Enter's Beet Buster)
 
-item.cheetah_morphin_brace.name=Morphin Brace (ãƒ¬ãƒƒãƒ‰ Cheetah)
-item.gorilla_morphin_brace.name=Morphin Brace (ãƒ–ãƒ«ãƒ¼ Gorilla)
-item.rabbit_morphin_brace.name=Morphin Brace (ã‚¤ã‚¨ãƒ­ãƒ¼ Rabbit)
-item.beetle_morphin_blaster.name=Morphin Blaster (ã‚´ãƒ¼ãƒ«ãƒ‰ Beetle)
-item.hippopotamus_morphin_brace.name=Morphin Brace (ã‚°ãƒªãƒ¼ãƒ³ Hippopotamus)
-item.puma_morphin_brace.name=Morphin Brace (ãƒ–ãƒ©ãƒƒã‚¯ Puma)
+item.cheetah_morphin_brace.name=Morphin Brace (Red Cheetah)
+item.gorilla_morphin_brace.name=Morphin Brace (Blue Gorilla)
+item.rabbit_morphin_brace.name=Morphin Brace (Yellow Rabbit)
+item.beetle_morphin_blaster.name=Morphin Blaster (Gold Beetle)
+item.hippopotamus_morphin_brace.name=Morphin Brace (Green Hippopotamus)
+item.puma_morphin_brace.name=Morphin Brace (Black Puma)
 
-item.red_enetron.name=ãƒ¬ãƒƒãƒ‰ Enetron
-item.blue_enetron.name=ãƒ–ãƒ«ãƒ¼ Enetron
-item.yellow_enetron.name=ã‚¤ã‚¨ãƒ­ãƒ¼ Enetron
-item.gold_enetron.name=ã‚´ãƒ¼ãƒ«ãƒ‰ Enetron
-item.silver_enetron.name=ã‚·ãƒ«ãƒãƒ¼ Enetron
+item.red_enetron.name=Red Enetron
+item.blue_enetron.name=Blue Enetron
+item.yellow_enetron.name=Yellow Enetron
+item.gold_enetron.name=Gold Enetron
+item.silver_enetron.name=Silver Enetron
 
-item.cheetah_animal_disk.name=Cheetah Animal ãƒ‡ã‚£ã‚¹ã‚¯
-item.gorilla_animal_disk.name=Gorilla Animal ãƒ‡ã‚£ã‚¹ã‚¯
-item.rabbit_animal_disk.name=Rabbit Animal ãƒ‡ã‚£ã‚¹ã‚¯
-item.beetle_animal_disk.name=Beetle Animal ãƒ‡ã‚£ã‚¹ã‚¯
-item.stag_animal_disk.name=Stag Animal ãƒ‡ã‚£ã‚¹ã‚¯
-item.hippopotamus_animal_disk.name=Hippopotamus Animal ãƒ‡ã‚£ã‚¹ã‚¯
-item.puma_animal_disk.name=Puma Animal ãƒ‡ã‚£ã‚¹ã‚¯
+item.cheetah_animal_disk.name=Cheetah Animal Disk
+item.gorilla_animal_disk.name=Gorilla Animal Disk
+item.rabbit_animal_disk.name=Rabbit Animal Disk
+item.beetle_animal_disk.name=Beetle Animal Disk
+item.stag_animal_disk.name=Stag Animal Disk
+item.hippopotamus_animal_disk.name=Hippopotamus Animal Disk
+item.puma_animal_disk.name=Puma Animal Disk
 
 item.custom_visor.name=Custom Visor
 
@@ -837,11 +1071,15 @@ item.lio_attache.name=Lio AttachÃ©
 //36-37 Akibaranger
 itemGroup.tabAkibaranger=Hikounin Sentai Akibaranger
 
-item.red_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaãƒ¬ãƒƒãƒ‰)
-item.blue_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaãƒ–ãƒ«ãƒ¼)
-item.blue_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaãƒ–ãƒ«ãƒ¼ Season 2)
-item.yellow_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaã‚¤ã‚¨ãƒ­ãƒ¼)
-item.yellow_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (Akibaã‚¤ã‚¨ãƒ­ãƒ¼ Season 2)
+item.akibaranger_head.name=Akibaranger Helmet
+item.akibaranger_torso.name=Akibaranger Chestplate
+item.akibaranger_legs.name=Akibaranger Leggings
+
+item.red_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaRed)
+item.blue_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaBlue)
+item.blue_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaBlue Season 2)
+item.yellow_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaYellow)
+item.yellow_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaYellow Season 2)
 
 item.moe_moe_z_cune.name=Moe Moe Z-Cune
 item.munyu_munyu_zubaan.name=Munyu Munyu Zubaan
@@ -851,11 +1089,12 @@ item.munyu_moe_zubakyun.name=Munyu Moe Zubakyun
 itemGroup.tabToQger=Ressha Sentai ToQger
 
 item.blank_ressha.name=Blank Ressha
-tile.toqger_ore.name=ToQgeré‰±çŸ³
+item.toqger_logo.name=ToQger Logo
+tile.toqger_ore.name=ToQger Ore
 
-item.toqger_head.name=ToQgerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.toqger_torso.name=ToQgerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.toqger_legs.name=ToQgerãƒ¬ã‚®ãƒ³ã‚¹
+item.toqger_head.name=ToQger Helmet
+item.toqger_torso.name=ToQger Chestplate
+item.toqger_legs.name=ToQger Leggings
 
 item.ichigou_toq_changer.name=ToQ Changer (ToQ 1gou)
 item.nigou_toq_changer.name=ToQ Changer (ToQ 2gou)
@@ -864,22 +1103,24 @@ item.yongou_toq_changer.name=ToQ Changer (ToQ 4gou)
 item.gogou_toq_changer.name=ToQ Changer (ToQ 5gou)
 item.rokugou_appli_changer.name=Applichanger (ToQ 6gou)
 item.nanagou_appli_changer.name=Applichanger (ToQ 7gou)
+item.zerogou_toq_changer.name=ToQ Changer (Yami no 0gou)
 
-item.red_ressha.name=ãƒ¬ãƒƒãƒ‰ Ressha
-item.blue_ressha.name=ãƒ–ãƒ«ãƒ¼ Ressha
-item.yellow_ressha.name=ã‚¤ã‚¨ãƒ­ãƒ¼ Ressha
-item.green_ressha.name=ã‚°ãƒªãƒ¼ãƒ³ Ressha
-item.pink_ressha.name=ãƒ”ãƒ³ã‚¯ Ressha
+item.red_ressha.name=Red Ressha
+item.blue_ressha.name=Blue Ressha
+item.yellow_ressha.name=Yellow Ressha
+item.green_ressha.name=Green Ressha
+item.pink_ressha.name=Pink Ressha
 item.build_ressha.name=Build Ressha
 item.violet_ressha.name=Violet Ressha
 item.hyper_ressha.name=Hyper Ressha
-item.red_ressha_corrupted.name=Corrupted ãƒ¬ãƒƒãƒ‰ Ressha
+item.red_ressha_corrupted.name=Corrupted Red Ressha
 item.scope_ressha.name=Scope Ressha
 item.lion_ressha.name=Lion Ressha
 item.eagle_ressha.name=Eagle Ressha
 item.wildcat_ressha.name=Wildcat Ressha
 item.alligator_ressha.name=Alligator Ressha
 item.panda_ressha.name=Panda Ressha
+item.zero_ressha.name=Zero Ressha
 
 item.toq_blaster.name=ToQ Blaster
 item.rail_slasher.name=Rail Slasher
@@ -894,11 +1135,12 @@ item.daikaiten_cannon.name=Daikaiten Cannon
 itemGroup.tabZyuohger=Doubutsu Sentai Zyuohger
 
 item.king_s_credential.name=King's Credential
-tile.zyuohger_ore.name=Zyuohgeré‰±çŸ³
+item.zyuohger_logo.name=Zyuohger Logo
+tile.zyuohger_ore.name=Zyuohger Ore
 
-item.zyuohger_head.name=Zyuohgerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.zyuohger_torso.name=Zyuohgerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.zyuohger_legs.name=Zyuohgerãƒ¬ã‚®ãƒ³ã‚¹
+item.zyuohger_head.name=Zyuohger Helmet
+item.zyuohger_torso.name=Zyuohger Chestplate
+item.zyuohger_legs.name=Zyuohger Leggings
 
 item.eagle_zyuoh_changer.name=Zyuoh Changer (Zyuoh Eagle)
 item.zyuoh_whale_change_gun.name=Whale Change Gun (Zyuoh Whale)
@@ -928,19 +1170,188 @@ item.condor_eag_riser.name=EagRiser (Zyuoh Condor)
 item.zyuoh_buster.name=Zyuoh Buster
 item.zyuoh_the_rod.name=Zyuoh The GunRod
 
+//41 Kyuranger
+itemGroup.tabKyuranger=Uchu Sentai Kyuranger
+
+item.kyuranger_logo.name=Kyuranger Logo
+item.blank_kyutama.name=Blank Kyutama
+tile.kyuranger_ore.name=Kyuranger Ore
+tile.kyuranger_nether_ore.name=Kyuranger Nether Ore
+
+item.kyuranger_head.name=Kyuranger Helmet
+item.kyuranger_torso.name=Kyuranger Chestplate
+item.kyuranger_legs.name=Kyuranger Leggings
+
+item.red_seiza_blaster.name=Seiza Blaster (Shishi Red)
+item.orange_seiza_blaster.name=Seiza Blaster (Sasori Orange)
+item.blue_seiza_blaster.name=Seiza Blaster (Ookami Blue)
+item.gold_seiza_blaster.name=Seiza Blaster (Tenbin Gold)
+item.black_seiza_blaster.name=Seiza Blaster (Oushi Black)
+item.silver_seiza_blaster.name=Seiza Blaster (Hebitsukai Silver)
+item.green_seiza_blaster.name=Seiza Blaster (Chameleon Green)
+item.pink_seiza_blaster.name=Seiza Blaster (Washi Pink)
+item.yellow_seiza_blaster.name=Seiza Blaster (Kajiki Yellow)
+item.commander_ryutsueder.name=Ryutsueder (Ryu Commander)
+item.sky_blue_seiza_blaster.name=Seiza Blaster (Koguma Skyblue)
+item.houou_blade_shield.name=Houou Blade & Shield (Houou Soldier)
+item.metal_dark_seiza_blaster.name=Dark Seiza Blaster (Hebitsukai Metal)
+item.dark_red_seiza_blaster.name=Seiza Blaster (Dark Shishi Red)
+
+item.shishi_kyutama.name=Shishi Kyutama
+item.sasori_kyutama.name=Sasori Kyutama
+item.ookami_kyutama.name=Ookami Kyutama
+item.tenbin_kyutama.name=Tenbin Kyutama
+item.oushi_kyutama.name=Oushi Kyutama
+item.hebitsukai_kyutama.name=Hebitsukai Kyutama
+item.chameleon_kyutama.name=Chameleon Kyutama
+item.washi_kyutama.name=Washi Kyutama
+item.kajiki_kyutama.name=Kajiki Kyutama
+item.ryu_kyutama.name=Ryu Kyutama
+item.koguma_kyutama.name=Koguma Kyutama
+item.houou_kyutama.name=Houou Kyutama
+
+item.hikari_kyutama_taiyou.name=Hikari Kyutama (Taiyou Mode)
+item.hikari_kyutama_tsuki.name=Hikari Kyutama (Tsuki Mode)
+item.saiko_kyutama.name=Saiko Kyutama
+item.yagyuu_jubee_mask.name=Yagyuu Juubee Mask
+item.dark_kyutama.name=Dark Kyutama
+item.dark_shishi_kyutama.name=Dark Shishi Kyutama
+item.kyuranger_kyutama.name=Kyuranger Kyutama
+item.ex_aid_kyutama.name=Ex-Aid Kyutama
+
+item.shishi_skill_kyutama.name=Shishi Skill Kyutama
+item.sasori_skill_kyutama.name=Sasori Skill Kyutama
+item.ookami_skill_kyutama.name=Ookami Skill Kyutama
+item.tenbin_skill_kyutama.name=Tenbin Skill Kyutama
+item.oushi_skill_kyutama.name=Oushi Skill Kyutama
+item.hebitsukai_skill_kyutama.name=Hebitsukai Skill Kyutama
+item.chameleon_skill_kyutama.name=Chameleon Skill Kyutama
+item.washi_skill_kyutama.name=Washi Skill Kyutama
+item.kajiki_skill_kyutama.name=Kajiki Skill Kyutama
+item.ryu_skill_kyutama.name=Ryu Skill Kyutama
+item.koguma_skill_kyutama.name=Koguma Skill Kyutama
+item.houou_skill_kyutama.name=Houou Skill Kyutama
+
+item.orion_kyutama.name=Orion Kyutama
+item.tokei_kyutama.name=Tokei Kyutama
+item.ushikai_kyutama.name=Ushikai Kyutama
+item.hebi_kyutama.name=Hebi Kyutama
+item.pump_kyutama.name=Pump Kyutama
+item.hercules_kyutama.name=Hercules Kyutama
+item.rashinban_kyutama.name=Rashinban Kyutama
+item.bouenkyou_kyutama.name=Bouenkyou Kyutama
+
+item.kani_kyutama.name=Kani Kyutama
+item.ooguma_kyutama.name=Ooguma Kyutama
+item.uo_kyutama.name=Uo Kyutama
+item.tate_kyutama.name=Tate Kyutama
+item.futago_kyutama.name=Futago Kyutama
+item.ohitsuji_kyutama.name=Ohitsuji Kyutama
+item.ikkakuju_kyutama.name=Ikkakuju Kyutama
+item.mizugame_kyutama.name=Mizugame Kyutama
+item.yagi_kyutama.name=Yagi Kyutama
+item.kanmuri_kyutama.name=Kanmuri Kyutama
+
+item.centaurus_kyutama.name=Centaurus Kyutama
+item.kujaku_kyutama.name=Kujaku Kyutama
+item.pegasus_kyutama.name=Pegasus Kyutama
+item.kaminoke_kyutama.name=Kaminoke Kyutama
+item.ite_kyutama.name=Ite Kyutama
+item.perseus_kyutama.name=Perseus Kyutama
+item.kujira_kyutama.name=Kujira Kyutama
+item.cassiopeia_kyutama.name=Cassiopeia Kyutama
+item.tokage_kyutama.name=Tokage Kyutama
+item.andromeda_kyutama.name=Andromeda Kyutama
+
+item.genbikyo_kyutama.name=Genbikyo Kyutama
+item.ryoken_kyutama.name=Ryoken Kyutama
+item.kirin_kyutama.name=Kirin Kyutama
+item.tobiuo_kyutama.name=Tobiuo Kyutama
+item.karasu_kyutama.name=Karasu Kyutama
+item.jyogi_kyutama.name=Jyogi Kyutama
+item.choukokushitsu_kyutama.name=Choukokushitsu Kyutama
+item.iruka_kyutama.name=Iruka Kyutama
+item.compass_kyutama.name=Compass Kyutama
+item.saidan_kyutama.name=Saidan Kyutama
+
+item.otome_kyutama.name=Otome Kyutama
+item.ooinu_kyutama.name=Ooinu Kyutama
+item.sankaku_kyutama.name=Sankaku Kyutama
+item.cepheus_kyutama.name=Cepheus Kyutama
+item.koto_kyutama.name=Koto Kyutama
+item.hakuchou_kyutama.name=Hakuchou Kyutama
+//item.hae_kyutama.name=Hae Kyutama
+item.hato_kyutama.name=Hato Kyutama
+item.gaka_kyutama.name=Gaka Kyutama
+item.eridanus_kyutama.name=Eridanus Kyutama
+
+//item.kyoshichou_kyutama.name=Kyoshichou Kyutama 
+item.gyosha_kyutama.name=Gyosha Kyutama
+//item.kouma_kyutama.name=Kouma Kyutama
+item.cup_kyutama.name=Cup Kyutama
+item.mizuhebi_kyutama.name=Mizuhebi Kyutama
+item.koinu_kyutama.name=Koinu Kyutama
+item.umihebi_kyutama.name=Umihebi Kyutama
+item.usagi_kyutama.name=Usagi Kyutama
+item.chokokugu_kyutama.name=Chokokugu Kyutama
+//item.indian_kyutama.name=Indian Kyutama
+
+//item.table_san_kyutama.name=Table-san Kyutama
+item.fuuchou_kyutama.name=Fuuchou Kyutama
+item.minami_juuji_kyutama.name=Minami Juuji Kyutama
+//item.minami_no_uo_kyutama.name=Minami no Uo Kyutama
+//item.minami_no_sankaku_kyutama.name=Minami no Sankaku Kyutama
+//item.minami_no_kanmuri_kyutama.name=Minami no Kanmuri Kyutama
+item.kojishi_kyutama.name=Kojishi Kyutama
+item.reticle_kyutama.name=Reticle Kyutama
+item.rokubungi_kyutama.name=Rokubungi Kyutama
+item.hachibungi_kyutama.name=Hachibungi Kyutama
+
+item.tsuru_kyutama.name=Tsuru Kyutama
+item.kogitsune_kyutama.name=Kogitsune Kyutama
+item.ro_kyutama.name=Ro Kyutama
+item.ya_kyutama.name=Ya Kyutama
+item.yamaneko_kyutama.name=Yamaneko Kyutama
+item.ho_kyutama.name=Ho Kyutama
+item.ryukotsu_kyutama.name=Ryukotsu Kyutama
+item.tomo_kyutama.name=Tomo Kyutama
+item.argo_kyutama.name=Argo Kyutama
+item.cerberus_kyutama.name=Cerberus Kyutama
+
+item.halloween_kyutama.name=Halloween Kyutama
+
+item.seiza_blaster.name=Seiza Blaster
+item.ryutsueder.name=Ryutsueder
+item.houou_blade.name=Houou Blade
+item.houou_shield.name=Houou Shield
+item.dark_seiza_blaster.name=Dark Seiza Blaster
+
+item.kyu_sword.name=Kyu Sword
+item.kyu_spear.name=Kyu Spear
+item.kyu_claw.name=Kyu Claw
+item.kyu_crossbow.name=Kyu Crossbow
+item.kyu_axe.name=Kyu Axe
+item.kyu_sickle.name=Kyu Sickle
+item.kyu_rapier.name=Kyu Rapier
+item.kyu_shot.name=Kyu Shot
+item.kyu_slasher.name=Kyu Slasher
+item.dark_kyu_sickle.name=Dark Kyu Sickle
+
 //42-43 Lupinranger VS Patranger
 itemGroup.tabLupat=Lupinranger VS Patranger
 
 item.blank_striker.name=Blank Striker
-tile.vs_vehicle_ore.name=Lupinranger VS Patrangeré‰±çŸ³
+item.lupinranger_logo.name=Lupinranger Logo
+item.patranger_logo.name=Patranger Logo
+tile.vs_vehicle_ore.name=Lupinranger VS Patranger Ore
 
-item.lupat_head.name=Lupinranger VS Patrangerãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.lupat_torso.name=Lupinranger VS Patrangerãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.lupat_legs.name=Lupinranger VS Patrangerãƒ¬ã‚®ãƒ³ã‚¹
+item.lupat_head.name=Lupinranger VS Patranger Helmet
+item.lupat_torso.name=Lupinranger VS Patranger Chestplate
+item.lupat_legs.name=Lupinranger VS Patranger Leggings
 
-item.red_vs_changer.name=VS Changer (Lupin ãƒ¬ãƒƒãƒ‰)
-item.blue_vs_changer.name=VS Changer (Lupin ãƒ–ãƒ«ãƒ¼)
-item.yellow_vs_changer.name=VS Changer (Lupin ã‚¤ã‚¨ãƒ­ãƒ¼)
+item.red_vs_changer.name=VS Changer (Lupin Red)
+item.blue_vs_changer.name=VS Changer (Lupin Blue)
+item.yellow_vs_changer.name=VS Changer (Lupin Yellow)
 
 item.ichigou_vs_changer.name=VS Changer (Patren 1gou)
 item.nigou_vs_changer.name=VS Changer (Patren 2gou)
@@ -953,16 +1364,16 @@ item.ichigou_girl_vs_changer.name=VS Changer (Patren 1gou Girl)
 item.nigou_girl_vs_changer.name=VS Changer (Patren 2gou Girl)
 item.sangou_guy_vs_changer.name=VS Changer (Patren 3gou Guy)
 
-item.red_dial_fighter.name=ãƒ¬ãƒƒãƒ‰ Dial Fighter
-item.blue_dial_fighter.name=ãƒ–ãƒ«ãƒ¼ Dial Fighter
-item.yellow_dial_fighter.name=ã‚¤ã‚¨ãƒ­ãƒ¼ Dial Fighter
+item.red_dial_fighter.name=Red Dial Fighter
+item.blue_dial_fighter.name=Blue Dial Fighter
+item.yellow_dial_fighter.name=Yellow Dial Fighter
 
 item.ichigou_trigger_machine.name=Trigger Machine 1gou
 item.nigou_trigger_machine.name=Trigger Machine 2gou
 item.sangou_trigger_machine.name=Trigger Machine 3gou
 
-item.silver_x_train.name=X Train ã‚·ãƒ«ãƒãƒ¼
-item.gold_x_train.name=X Train ã‚´ãƒ¼ãƒ«ãƒ‰
+item.silver_x_train.name=X Train Silver
+item.gold_x_train.name=X Train Gold
 
 item.good_striker.name=Good Striker
 item.jackpot_striker.name=Jackpot Striker
@@ -978,7 +1389,6 @@ item.siren_striker.name=Siren Striker
 item.vs_changer.name=VS Changer
 item.x_changer.name=X Changer
 item.lupin_sword.name=Lupin Sword
-item.lupin_sword_magic_hand.name=Lupin Sword (Magic Hand Mode)
 item.lupin_magnum.name=Lupin Magnum
 item.pat_megabo.name=Pat MegaBo
 item.x_rod_sword.name=X Rod Sword
@@ -986,98 +1396,150 @@ item.scissor_shield.name=Scissor Shield
 item.blade_boomerang.name=Blade Boomerang
 
 //44 Ryusoulger
-itemGroup.tabRyusoulger=é¨å£«ç«œæˆ¦éšŠãƒªãƒ¥ã‚¦ã‚½ã‚¦ã‚¸ãƒ£ãƒ¼
+itemGroup.tabRyusoulger=‹Rm—³í‘àƒŠƒ…ƒEƒ\ƒEƒWƒƒ[
 
-item.blank_ryusoul.name=ãƒ–ãƒ©ãƒ³ã‚¯ãƒªãƒ¥ã‚¦ã‚½ã‚¦
-tile.ryusoulger_ore.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ã‚¸ãƒ£ãƒ¼é‰±çŸ³
+item.blank_ryusoul.name=ƒuƒ‰ƒ“ƒNƒŠƒ…ƒEƒ\ƒEƒ‹
+item.ryusoulger_logo.name=ƒŠƒ…ƒEƒ\ƒEƒWƒƒ[ƒƒS
+tile.ryusoulger_ore.name=ƒŠƒ…ƒEƒ\ƒEƒWƒƒ[zÎ
 
-item.ryusoulger_head.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ã‚¸ãƒ£ãƒ¼ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.ryusoulger_torso.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ã‚¸ãƒ£ãƒ¼ãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.ryusoulger_legs.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ã‚¸ãƒ£ãƒ¼ãƒ¬ã‚®ãƒ³ã‚¹
+item.ryusoulger_head.name=ƒŠƒ…ƒEƒ\ƒEƒWƒƒ[ƒwƒ‹ƒƒbƒg
+item.ryusoulger_torso.name=ƒŠƒ…ƒEƒ\ƒEƒWƒƒ[ƒ`ƒFƒXƒgƒvƒŒ[ƒg
+item.ryusoulger_legs.name=ƒŠƒ…ƒEƒ\ƒEƒWƒƒ[ƒŒƒMƒ“ƒX
 
-item.red_ryusoul_changer.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒã‚§ãƒ³ã‚¸ãƒ£ãƒ¼(ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ¬ãƒƒãƒ‰)
-item.blue_ryusoul_changer.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒã‚§ãƒ³ã‚¸ãƒ£ãƒ¼(ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ–ãƒ«ãƒ¼)
-item.pink_ryusoul_changer.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒã‚§ãƒ³ã‚¸ãƒ£ãƒ¼(ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ”ãƒ³ã‚¯)
-item.green_ryusoul_changer.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒã‚§ãƒ³ã‚¸ãƒ£ãƒ¼(ãƒªãƒ¥ã‚¦ã‚½ã‚¦ã‚°ãƒªãƒ¼ãƒ³)
-item.black_ryusoul_changer.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒã‚§ãƒ³ã‚¸ãƒ£ãƒ¼(ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ–ãƒ©ãƒƒã‚¯)
-item.gold_mosa_changer.name=ãƒ¢ã‚µãƒã‚§ãƒ³ã‚¸ãƒ£ãƒ¼(ãƒªãƒ¥ã‚¦ã‚½ã‚¦ã‚´ãƒ¼ãƒ«ãƒ‰)
-item.gaisorg_changer.name=ã‚¬ã‚¤ã‚½ãƒ¼ã‚±ãƒ³(ã‚¬ã‚¤ã‚½ãƒ¼ã‚°)
+item.red_ryusoul_changer.name=ƒŠƒ…ƒEƒ\ƒEƒ`ƒFƒ“ƒWƒƒ[ (ƒŠƒ…ƒEƒ\ƒEƒŒƒbƒh)
+item.blue_ryusoul_changer.name=ƒŠƒ…ƒEƒ\ƒEƒ`ƒFƒ“ƒWƒƒ[ (ƒŠƒ…ƒEƒ\ƒEƒuƒ‹[)
+item.pink_ryusoul_changer.name=ƒŠƒ…ƒEƒ\ƒEƒ`ƒFƒ“ƒWƒƒ[ (ƒŠƒ…ƒEƒ\ƒEƒsƒ“ƒN)
+item.green_ryusoul_changer.name=ƒŠƒ…ƒEƒ\ƒEƒ`ƒFƒ“ƒWƒƒ[ (ƒŠƒ…ƒEƒ\ƒEƒOƒŠ[ƒ“)
+item.black_ryusoul_changer.name=ƒŠƒ…ƒEƒ\ƒEƒ`ƒFƒ“ƒWƒƒ[ (ƒŠƒ…ƒEƒ\ƒEƒuƒ‰ƒbƒN)
+item.gold_mosa_changer.name=ƒ‚ƒUƒ`ƒFƒ“ƒWƒƒ[ (ƒŠƒ…ƒEƒ\ƒEƒS[ƒ‹ƒh)
+item.gaisorg_changer.name=ƒKƒCƒ\[ƒPƒ“ (ƒKƒCƒ\[ƒO)
+item.brown_changer.name=ƒuƒ‰ƒEƒ“ƒŠƒ…ƒEƒ\ƒEƒPƒ“ (ƒŠƒ…ƒEƒ\ƒEƒuƒ‰ƒEƒ“)
 
-item.red_ryusoul.name=ãƒ¬ãƒƒãƒ‰ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ«
-item.blue_ryusoul.name=ãƒ–ãƒ«ãƒ¼ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ«
-item.pink_ryusoul.name=ãƒ”ãƒ³ã‚¯ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ«
-item.green_ryusoul.name=ã‚°ãƒªãƒ¼ãƒ³ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ«
-item.black_ryusoul.name=ãƒ–ãƒ©ãƒƒã‚¯ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ«
-item.gold_ryusoul.name=ã‚´ãƒ¼ãƒ«ãƒ‰ãƒªãƒ¥ã‚¦ã‚½ã‚¦ãƒ«
-item.gai_soul.name=ã‚¬ã‚¤ã‚½ã‚¦ãƒ«
+item.red_ryusoul.name=ƒŒƒbƒhƒŠƒ…ƒEƒ\ƒEƒ‹
+item.blue_ryusoul.name=ƒuƒ‹[ƒŠƒ…ƒEƒ\ƒEƒ‹
+item.pink_ryusoul.name=ƒsƒ“ƒNƒŠƒ…ƒEƒ\ƒEƒ‹
+item.green_ryusoul.name=ƒOƒŠ[ƒ“ƒŠƒ…ƒEƒ\ƒEƒ‹
+item.black_ryusoul.name=ƒuƒ‰ƒbƒNƒŠƒ…ƒEƒ\ƒEƒ‹
+item.gold_ryusoul.name=ƒS[ƒ‹ƒhƒŠƒ…ƒEƒ\ƒEƒ‹
+item.gai_soul.name=ƒKƒCƒ\ƒEƒ‹
+item.brown_ryusoul.name=ƒuƒ‰ƒEƒ“ƒŠƒ…ƒEƒ\ƒEƒ‹
 
-item.tsuyo_soul.name=ãƒ„ãƒ¨ã‚½ã‚¦ãƒ«
-item.nobi_soul.name=ãƒãƒ“ã‚½ã‚¦ãƒ«
-item.omo_soul.name=ã‚ªãƒ¢ã‚½ã‚¦ãƒ«
-item.haya_soul.name=ãƒãƒ¤ã‚½ã‚¦ãƒ«
-item.kata_soul.name=ã‚«ã‚¿ã‚½ã‚¦ãƒ«
-item.kike_soul.name=ã‚­ã‚±ã‚½ã‚¦ãƒ«
-item.kusa_soul.name=ã‚¯ã‚µã‚½ã‚¦ãƒ«
-item.mie_soul.name=ãƒŸã‚¨ã‚½ã‚¦ãƒ«
-item.mukimuki_soul.name=ãƒ ã‚­ãƒ ã‚­ã‚½ã‚¦ãƒ«
-item.chiisa_soul.name=ãƒã‚¤ã‚µã‚½ã‚¦ãƒ«
-item.mabushi_soul.name=ãƒãƒ–ã‚·ã‚½ã‚¦ãƒ«ã‚½ã‚¦ãƒ«
-item.mist_soul.name=ãƒŸã‚¹ãƒˆã‚½ã‚¦ãƒ«
-item.karu_soul.name=ã‚«ãƒ«ã‚½ã‚¦ãƒ«
-item.gyaku_soul.name=ã‚®ãƒ£ã‚¯ã‚½ã‚¦ãƒ«
-item.kotae_soul.name=ã‚³ã‚¿ã‚¨ã‚½ã‚¦ãƒ«
-item.migake_soul.name=ãƒŸã‚¬ã‚±ã‚½ã‚¦ãƒ«
-item.kunkun_soul.name=ã‚¯ãƒ³ã‚¯ãƒ³ã‚½ã‚¦ãƒ«
-item.pukupuku_soul.name=ãƒ—ã‚¯ãƒ—ã‚¯ã‚½ã‚¦ãƒ«
-item.kakure_soul.name=ã‚«ã‚¯ãƒ¬ã‚½ã‚¦ãƒ«
-item.fue_soul.name=ãƒ•ã‚¨ã‚½ã‚¦ãƒ«
-item.nemu_soul.name=ãƒãƒ ã‚½ã‚¦ãƒ«
-item.mawari_soul.name=ãƒãƒ¯ãƒªã‚½ã‚¦ãƒ«
-item.kawaki_soul.name=ã‚«ãƒ¯ã‚­ã‚½ã‚¦ãƒ«
-item.yawaraka_soul.name=ãƒ¤ãƒ¯ãƒ©ã‚«ã‚½ã‚¦ãƒ«
+item.tsuyo_soul.name=ƒcƒˆƒ\ƒEƒ‹
+item.nobi_soul.name=ƒmƒrƒ\ƒEƒ‹
+item.omo_soul.name=ƒIƒ‚ƒ\ƒEƒ‹
+item.haya_soul.name=ƒnƒ„ƒ\ƒEƒ‹
+item.kata_soul.name=ƒJƒ^ƒ\ƒEƒ‹
+item.kike_soul.name=ƒLƒPƒ\ƒEƒ‹
+item.kusa_soul.name=ƒNƒTƒ\ƒEƒ‹
+item.mie_soul.name=ƒ~ƒGƒ\ƒEƒ‹
+item.mukimuki_soul.name=ƒ€ƒLƒ€ƒLƒ\ƒEƒ‹
+item.chiisa_soul.name=ƒ`ƒCƒTƒ\ƒEƒ‹
+item.mabushi_soul.name=ƒ}ƒuƒVƒ\ƒEƒ‹
+item.mist_soul.name=ƒ~ƒXƒgƒ\ƒEƒ‹
+item.karu_soul.name=ƒJƒ‹ƒ\ƒEƒ‹
+item.gyaku_soul.name=ƒMƒƒƒNƒ\ƒEƒ‹
+item.kotae_soul.name=ƒRƒ^ƒGƒ\ƒEƒ‹
+item.migake_soul.name=ƒ~ƒKƒPƒ\ƒEƒ‹
+item.kunkun_soul.name=ƒNƒ“ƒNƒ“ƒ\ƒEƒ‹
+item.pukupuku_soul.name=ƒvƒNƒvƒNƒ\ƒEƒ‹
+item.kakure_soul.name=ƒJƒNƒŒƒ\ƒEƒ‹
+item.fue_soul.name=ƒtƒGƒ\ƒEƒ‹
+item.nemu_soul.name=ƒlƒ€ƒ\ƒEƒ‹
+item.mawari_soul.name=ƒ}ƒƒŠƒ\ƒEƒ‹
+item.kawaki_soul.name=ƒJƒƒLƒ\ƒEƒ‹
+item.yawaraka_soul.name=ƒ„ƒƒ‰ƒJƒ\ƒEƒ‹
 
-item.meramera_soul.name=ãƒ¡ãƒ©ãƒ¡ãƒ©ã‚½ã‚¦ãƒ«
-item.biribiri_soul.name=ãƒ“ãƒªãƒ“ãƒªã‚½ã‚¦ãƒ«
-item.kurayami_soul.name=ã‚¯ãƒ©ãƒ¤ãƒŸã‚½ã‚¦ãƒ«
-item.kagayaki_soul.name=ã‚«ã‚¬ãƒ¤ã‚­ã‚½ã‚¦ãƒ«
-item.cosmo_soul.name=ã‚³ã‚¹ãƒ¢ã‚½ã‚¦ãƒ«
-item.kanae_soul.name=ã‚«ãƒŠã‚¨ã‚½ã‚¦ãƒ«
-item.dosshin_soul.name=ãƒ‰ãƒƒã‚·ãƒ³ã‚½ã‚¦ãƒ«
-item.byubyu_soul.name=ãƒ“ãƒ¥ãƒ¼ãƒ“ãƒ¥ãƒ¼ã‚½ã‚¦ãƒ«
+item.meramera_soul.name=ƒƒ‰ƒƒ‰ƒ\ƒEƒ‹
+item.biribiri_soul.name=ƒrƒŠƒrƒŠƒ\ƒEƒ‹
+item.byubyu_soul.name=ƒrƒ…[ƒrƒ…[ƒ\ƒEƒ‹
+item.kurayami_soul.name=ƒNƒ‰ƒ„ƒ~ƒ\ƒEƒ‹
+item.kagayaki_soul.name=ƒJƒKƒ„ƒLƒ\ƒEƒ‹
+item.cosmo_soul.name=ƒRƒXƒ‚ƒ\ƒEƒ‹
+item.kanae_soul.name=ƒJƒiƒGƒ\ƒEƒ‹
+item.dosshin_soul.name=ƒhƒbƒVƒ“ƒ\ƒEƒ‹
+item.hiehie_soul.name=ƒqƒGƒqƒGƒ\ƒEƒ‹
+item.max_ryusoul.name=ƒ}ƒbƒNƒXƒŠƒ…ƒEƒ\ƒEƒ‹
 
-item.ryusoul_ken.name=ãƒªãƒ¥ã‚¦ã‚½ã‚¦ã‚±ãƒ³
-item.mosa_changer.name=ãƒ¢ã‚µãƒã‚§ãƒ³ã‚¸ãƒ£ãƒ¼
-item.mosa_blade.name=ãƒ¢ã‚µãƒ–ãƒ¬ã‚¤ãƒ‰
-item.mosa_breaker.name=ãƒ¢ã‚µãƒ–ãƒ¬ã‚¤ã‚«ãƒ¼
-item.gaisoul_ken.name=ã‚¬ã‚¤ã‚½ãƒ¼ã‚±ãƒ³
-item.gaisoul_shield.name=ã‚¬ã‚¤ã‚½ãƒ¼ã‚·ãƒ¼ãƒ«ãƒ‰
+item.kyoryuger_soul.name=ƒLƒ‡ƒEƒŠƒ…ƒEƒWƒƒ[ƒ\ƒEƒ‹
+item.lupinranger_soul.name=ƒ‹ƒpƒ“ƒŒƒ“ƒWƒƒ[ƒ\ƒEƒ‹
+item.shiawase_soul.name=ƒVƒAƒƒZƒ\ƒEƒ‹
+item.yamamori_soul.name=ƒ„ƒ}ƒ‚ƒŠƒ\ƒEƒ‹
+
+item.ryusoul_ken.name=ƒŠƒ…ƒEƒ\ƒEƒPƒ“
+item.mosa_changer.name=ƒ‚ƒUƒ`ƒFƒ“ƒWƒƒ[
+item.mosa_blade.name=ƒ‚ƒTƒuƒŒ[ƒh
+item.mosa_breaker.name=ƒ‚ƒTƒuƒŒƒCƒJ[
+item.gaisoul_ken.name=ƒKƒCƒ\[ƒPƒ“
+item.gaisoul_shield.name=ƒKƒCƒ\[ƒV[ƒ‹ƒh
+item.brown_ryusoul_ken.name=ƒuƒ‰ƒEƒ“ƒŠƒ…ƒEƒ\ƒEƒPƒ“
+item.brown_ryusoul_shield.name=ƒuƒ‰ƒEƒ“ƒŠƒ…ƒEƒ\ƒEƒV[ƒ‹ƒh
+item.max_ryusoul_changer.name=ƒ}ƒbƒNƒXƒŠƒ…ƒEƒ\ƒEƒ`ƒFƒ“ƒWƒƒ[
+item.ryusoul_calibur.name=ƒŠƒ…ƒEƒ\ƒEƒJƒŠƒo[
+
+//45 Kirameiger
+itemGroup.tabKirameiger=Mashin Sentai Kirameiger
+
+item.kirameiger_logo.name=Kirameiger Logo
+item.blue_diamond.name=Blue Diamond
+tile.kirameiger_ore.name=Kirameiger Ore
+
+item.kirameiger_head.name=Kirameiger Helmet
+item.kirameiger_torso.name=Kirameiger Chestplate
+item.kirameiger_legs.name=Kirameiger Leggings
+
+item.red_kiramei_changer.name=Kiramei Changer (Kiramei Red)
+item.yellow_kiramei_changer.name=Kiramei Changer (Kiramei Yellow)
+item.green_kiramei_changer.name=Kiramei Changer (Kiramei Green)
+item.blue_kiramei_changer.name=Kiramei Changer (Kiramei Blue)
+item.pink_kiramei_changer.name=Kiramei Changer (Kiramei Pink)
+item.shiny_kiramei_changer.name=Shiny Kiramei Changer (Kiramei Silver)
+item.yodon_changer.name=Yodon Changer (Dark Kiramei Silver)
+item.gold_kiraful_go_arrow.name=Kiraful Go Arrow (Kiramei Gold)
+
+item.red_kiramei_stone.name=Red Kiramei Stone
+item.yellow_kiramei_stone.name=Yellow Kiramei Stone
+item.green_kiramei_stone.name=Green Kiramei Stone
+item.blue_kiramei_stone.name=Blue Kiramei Stone
+item.pink_kiramei_stone.name=Pink Kiramei Stone
+item.shiny_kiramei_stone.name=Shiny Kiramei Stone
+item.dark_kiramei_stone.name=Dark Kiramei Stone
+item.gold_kiramei_stone.name=Gold Kiramei Stone
+
+item.destoria_kanaema_stone.name=Destoria Kanaema Stone
+item.reversia_kanaema_stone.name=Reversia Kanaema Stone
+item.energia_kanaema_stone.name=Energia Kanaema Stone
+
+item.kiraful_go_arrow.name=Kiraful Go Arrow
+item.kiramei_sword.name=Kiramei Sword
+item.kiramei_shot.name=Kiramei Shot
+item.kiramei_buster.name=Kiramei Buster
+item.shiny_breaker.name=Shiny Breaker
+item.shiny_breaker_tool.name=Shiny Breaker (Tool)
+item.yellow_stone_hammer.name=Yellow Stone Hammer
 
 //?? Kawarimono Team
 itemGroup.tabKawarimono=Kawarimono (Oddball) Team
 
-item.kawarimono_head.name=Kawarimonoãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ
-item.kawarimono_torso.name=Kawarimonoãƒã‚§ã‚¹ãƒˆãƒ—ãƒ¬ãƒ¼ãƒˆ
-item.kawarimono_legs.name=Kawarimonoãƒ¬ã‚®ãƒ³ã‚¹
+item.kawarimono_head.name=Kawarimono Helmet
+item.kawarimono_torso.name=Kawarimono Chestplate
+item.kawarimono_legs.name=Kawarimono Leggings
 
-item.red_mobirates.name=Mobirates (Gokai ãƒ¬ãƒƒãƒ‰)
+item.red_mobirates.name=Mobirates (Gokai Red)
 item.aka_ninja_ichibantou.name=Ninja Ichibantou (AkaNinger)
-item.orange_seiza_blaster.name=Seiza Blaster (Sasori Orange)
 
-item.gokai_red_key.name=Gokai ãƒ¬ãƒƒãƒ‰ Key
+item.gokai_red_key.name=Gokai Red Key
 item.akaranger_key.name=Akaranger Key
 item.spade_ace_key.name=Spade Ace Key
 item.vul_eagle_key.name=VulEagle Key
-item.red_mask_key.name=ãƒ¬ãƒƒãƒ‰ãƒã‚¹ã‚¯ Key
-item.red_racer_key.name=ãƒ¬ãƒƒãƒ‰ Racer Key
-item.ginga_red_key.name=Gingaãƒ¬ãƒƒãƒ‰ Key
-item.gao_red_key.name=Gaoãƒ¬ãƒƒãƒ‰ Key
-item.shinken_red_key.name=ã‚·ãƒ³ã‚±ãƒ³ ãƒ¬ãƒƒãƒ‰ Key
+item.red_mask_key.name=Red Mask Key
+item.red_racer_key.name=Red Racer Key
+item.ginga_red_key.name=GingaRed Key
+item.gao_red_key.name=GaoRed Key
+item.shinken_red_key.name=Shinken Red Key
 item.aka_ninger_key.name=AkaNinger Key
-item.gold_anchor_key.name=ã‚´ãƒ¼ãƒ«ãƒ‰ Anchor Key
+item.gold_anchor_key.name=Gold Anchor Key
 item.aka_ninger_shuriken.name=AkaNinger Shuriken
 item.chouzetsu_shoubu_changer.name=Chouzetsu Shoubu Changer
-item.sasori_kyutama.name=Sasori Kyutama
-item.ikkakuju_kyutama.name=Ikkakuju Kyutama
 
 item.gokai_saber.name=Gokai Saber
 item.gokai_gun.name=Gokai Gun
@@ -1088,5 +1550,16 @@ item.karakuri_hengen_sword.name=Karakuri Hengen (Sword)
 item.karakuri_hengen_bow.name=Karakuri Hengen (Bow)
 item.karakuri_hengen_claw.name=Karakuri Hengen (Claw)
 item.gama_gama_gun.name=Gama Gama Gun
-item.seiza_blaster.name=Seiza Blaster
+
+//Misc
+itemGroup.tabMisc=Misc Sentai Items
+
+item.mecha_gear.name=Mecha Gear
+tile.mecha_ore.name=Mecha Ore
+
+item.hachibungi.name=Octant
+item.rokubungi.name=Sextant
+item.compass_kyu.name=Chalkboard Compass
+item.jyogi.name=Ruler
+
 //item..name=

@@ -42,7 +42,7 @@ public class ore_block extends Block implements IHasModel
 	{
 		Random generator = new Random();
 		
-		//01 Goranger
+/*		//01 Goranger
 		if (CRYSTAL==RiderItems.goranger_logo)
 		{
 			int rand = generator.nextInt(250);
@@ -187,7 +187,7 @@ public class ore_block extends Block implements IHasModel
 			if (rand<145) return RiderItems.signalman_badge;
 			return CRYSTAL;
 		}
-		//21 Megaranger
+*/		//21 Megaranger
 		if (CRYSTAL==RiderItems.megaranger_logo)
 		{
 			int rand = generator.nextInt(300);
@@ -213,7 +213,7 @@ public class ore_block extends Block implements IHasModel
 			if (rand<145) return RiderItems.black_knight_core;
 			return CRYSTAL;
 		}
-		//23 GoGo-V
+/*		//23 GoGo-V
 		if (CRYSTAL==RiderItems.gogo_v_logo)
 		{
 			int rand = generator.nextInt(270);
@@ -225,7 +225,7 @@ public class ore_block extends Block implements IHasModel
 			if (rand<135) return RiderItems.zeek_fragment;
 			return CRYSTAL;
 		}
-		//25 Gaoranger
+*/		//25 Gaoranger
 		if (CRYSTAL==RiderItems.empty_gao_jewel)
 		{
 			int rand = generator.nextInt(466);
@@ -251,7 +251,7 @@ public class ore_block extends Block implements IHasModel
 		//27 Abaranger
 		if (CRYSTAL==RiderItems.abaranger_logo)
 		{
-			int rand = generator.nextInt(420);
+			int rand = generator.nextInt(440);
 			if (rand<25) return RiderItems.tyranno_dino_guts;
 			if (rand<50) return RiderItems.tricera_dino_guts;
 			if (rand<75) return RiderItems.ptera_dino_guts;
@@ -553,7 +553,7 @@ public class ore_block extends Block implements IHasModel
 		//45 Kirameiger
 		if (CRYSTAL==RiderItems.blue_diamond)
 		{
-			int rand = generator.nextInt(290);
+			int rand = generator.nextInt(298);
 			if (rand<25) return RiderItems.red_kiramei_stone;
 			if (rand<50) return RiderItems.yellow_kiramei_stone;
 			if (rand<75) return RiderItems.green_kiramei_stone;
@@ -563,6 +563,7 @@ public class ore_block extends Block implements IHasModel
 			if (rand<146) return RiderItems.destoria_kanaema_stone;
 			if (rand<147) return RiderItems.reversia_kanaema_stone;
 			if (rand<148) return RiderItems.energia_kanaema_stone;
+			if (rand<149) return RiderItems.gold_kiramei_stone;
 			
 			return CRYSTAL;
 		}
