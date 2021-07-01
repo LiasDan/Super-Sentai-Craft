@@ -142,13 +142,13 @@ public class item_whale_change_gun extends ItemBow  implements IHasModel
 			{	
 				if (this==RiderItems.whale_change_gun)
 				{
-					if (playerIn.isSneaking())
-					{
-						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
-					}
-					else
+					if (playerIn.isSneaking()&&item_zyuoh_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=2)
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 2);
+					}
+					else if (playerIn.isSneaking()&&item_zyuoh_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==2)
+					{
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 			}

@@ -110,17 +110,18 @@ public class item_kiraful_go_arrow extends ItemBow  implements IHasModel
 				{
 					ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
-					if (playerIn.isSneaking())
+					if (playerIn.isSneaking()&&item_kiramei_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
+					{
+						item_kiramei_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+					}
+					else if (playerIn.isSneaking()&&item_kiramei_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
 					{
 						item_kiramei_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
-					else if (itemstack.isEmpty() && playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gold_kiramei_stone)
+					
+					if (itemstack.isEmpty() && playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gold_kiramei_stone)
 					{
 						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.gold_kiraful_go_arrow));
-					}
-					else
-					{
-						item_kiramei_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
 					}
 				}
 			}

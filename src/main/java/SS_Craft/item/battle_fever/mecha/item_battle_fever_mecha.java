@@ -115,6 +115,20 @@ public class item_battle_fever_mecha extends ItemArmor implements IHasModel
 		}
 		itemstack.getTagCompound().setInteger("core", flag);
 	}
+	
+	public static int  get_effect(ItemStack itemstack)
+	{
+		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("effect") :0;
+	}
+
+	public static void set_effect(ItemStack itemstack, int flag)
+	{
+		if (!itemstack.hasTagCompound())
+		{
+			itemstack.setTagCompound(new NBTTagCompound());
+		}
+		itemstack.getTagCompound().setInteger("effect", flag);
+	}
 
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) 
@@ -133,6 +147,10 @@ public class item_battle_fever_mecha extends ItemArmor implements IHasModel
 							{
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.battle_fever_robo_boots)
 								{
+									if (this.get_effect(armor)==1)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
+									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.battle_fever_robo_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));

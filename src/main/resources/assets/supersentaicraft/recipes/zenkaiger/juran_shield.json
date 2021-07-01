@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zenkai_juran",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_sentai_gear"
+    },
+	"b": {
+	  "item": "supersentaicraft:zenkai_juran_gear"
+	},
+	"c": {
+      "item": "minecraft:shield"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:juran_shield"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "ex_aid",
+  "group": "rider",
   "ingredients": [
 	{
       "item": "supersentaicraft:blank_kyutama"

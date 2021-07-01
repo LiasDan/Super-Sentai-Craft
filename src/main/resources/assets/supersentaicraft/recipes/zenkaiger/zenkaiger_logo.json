@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zenkaiger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_sentai_gear"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:zenkaiger_logo"
+  }
+}

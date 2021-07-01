@@ -4,6 +4,8 @@ import SS_Craft.RiderItems;
 import SS_Craft.mobs.Boss.EntityBossBase;
 import SS_Craft.mobs.Boss.entity_rouki;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
@@ -14,6 +16,15 @@ public class entity_orgettes extends Entity_base_henchmen
 	public entity_orgettes(World par1World)
 	{
 		super(par1World);
+	}
+
+	/**
+	 * Returns the item that this EntityLiving is holding, if any.
+	 */
+	@Override
+	public ItemStack getHeldItemMainhand()
+	{
+		return new ItemStack(RiderItems.orgettes_club);
 	}
 
 	public void onDeath(DamageSource cause)

@@ -1,0 +1,57 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:zenkaiger/other_gear/red_goranger_gear",
+      "supersentaicraft:zenkaiger/other_gear/red_lupinranger_gear",
+      "supersentaicraft:zenkaiger/other_gear/red_patranger_gear",
+      "supersentaicraft:zenkaiger/other_gear/red_kirameiger_gear"
+    ]
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dye",
+			"data": 1
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/red_goranger_gear"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/red_lupinranger_gear"
+      }
+    },
+    "has_the_recipe2": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/red_patranger_gear"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/red_kirameiger_gear"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item",
+      "has_the_recipe",
+      "has_the_recipe1",
+      "has_the_recipe2",
+      "has_the_recipe3"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gokaiger_logo"
+    },
+	{
+      "item": "kamenridercraft4th:kuwagata"
+    },
+	{
+      "item": "kamenridercraft4th:kamakiri"
+    },
+	{
+      "item": "kamenridercraft4th:batta"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gatakiriba_key"
+  }
+}

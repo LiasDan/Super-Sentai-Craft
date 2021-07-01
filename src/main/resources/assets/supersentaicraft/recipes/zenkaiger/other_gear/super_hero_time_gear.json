@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:zenkaizer_gear"
+    },
+	{
+      "item": "kamenridercraft4th:brave_dragon_wonderride_book"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:super_hero_time_gear"
+  }
+}

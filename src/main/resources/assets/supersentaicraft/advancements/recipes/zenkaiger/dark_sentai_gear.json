@@ -1,0 +1,96 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:zenkaiger/other_gear/dark_goranger_gear",
+      "supersentaicraft:zenkaiger/other_gear/dark_jakq_gear",
+      "supersentaicraft:zenkaiger/other_gear/dark_flashman_gear",
+      "supersentaicraft:zenkaiger/other_gear/dark_maskman_gear",
+      "supersentaicraft:zenkaiger/other_gear/dark_fiveman_gear",
+      "supersentaicraft:zenkaiger/other_gear/dark_zyuranger_gear",
+      "supersentaicraft:zenkaiger/other_gear/dark_gaoranger_gear",
+      "supersentaicraft:zenkaiger/other_gear/dark_magiranger_gear",
+      "supersentaicraft:zenkaiger/other_gear/dark_boukenger_gear"
+    ]
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:blank_dark_sentai_gear"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/dark_goranger_gear"
+      }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/dark_jakq_gear"
+      }
+    },
+    "has_the_recipe2": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/dark_flashman_gear"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/dark_maskman_gear"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/dark_fiveman_gear"
+      }
+    },
+    "has_the_recipe5": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/dark_zyuranger_gear"
+      }
+    },
+    "has_the_recipe6": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/dark_gaoranger_gear"
+      }
+    },
+    "has_the_recipe7": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/dark_magiranger_gear"
+      }
+    },
+    "has_the_recipe8": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/other_gear/dark_boukenger_gear"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item",
+      "has_the_recipe",
+      "has_the_recipe1",
+      "has_the_recipe2",
+      "has_the_recipe3",
+      "has_the_recipe4",
+      "has_the_recipe5",
+      "has_the_recipe6",
+      "has_the_recipe7",
+      "has_the_recipe8"
+    ]
+  ]
+}

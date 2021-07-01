@@ -117,6 +117,11 @@ public class Tabs
 	//08
 	public static CreativeTabs tabBioman= new CreativeTabs("tabBioman")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_bioman_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.bioman_head);
@@ -178,6 +183,11 @@ public class Tabs
 	//20
 	public static CreativeTabs tabCarranger= new CreativeTabs("tabCarranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_carranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.carranger_head);
@@ -215,6 +225,11 @@ public class Tabs
 	//25
 	public static CreativeTabs tabGaoranger= new CreativeTabs("tabGaoranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_gaoranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.gaoranger_head);
@@ -330,7 +345,7 @@ public class Tabs
 			return new ItemStack(RiderItems.kyuranger_head);
 		}
 	};
-	//42-43
+	//42
 	public static CreativeTabs tabLupat= new CreativeTabs("tabLupat")
 	{
 		@SideOnly(Side.CLIENT)
@@ -343,7 +358,7 @@ public class Tabs
 			return new ItemStack(RiderItems.lupat_head);
 		}
 	};
-	//44
+	//43
 	public static CreativeTabs tabRyusoulger= new CreativeTabs("tabRyusoulger")
 	{
 		@SideOnly(Side.CLIENT)
@@ -356,7 +371,7 @@ public class Tabs
 			return new ItemStack(RiderItems.ryusoulger_head);
 		}
 	};
-	//45
+	//44
 	public static CreativeTabs tabKirameiger= new CreativeTabs("tabKirameiger")
 	{
 		@SideOnly(Side.CLIENT)
@@ -367,6 +382,19 @@ public class Tabs
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.kirameiger_head);
+		}
+	};
+	//45
+	public static CreativeTabs tabZenkaiger= new CreativeTabs("tabZenkaiger")
+	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_zenkaiger_items.png");
+	    }
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(RiderItems.zenkaiger_head);
 		}
 	};
 	//??

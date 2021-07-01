@@ -120,6 +120,20 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("core", flag);
 	}
 	
+	public static int  get_effect(ItemStack itemstack)
+	{
+		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("effect") :0;
+	}
+
+	public static void set_effect(ItemStack itemstack, int flag)
+	{
+		if (!itemstack.hasTagCompound())
+		{
+			itemstack.setTagCompound(new NBTTagCompound());
+		}
+		itemstack.getTagCompound().setInteger("effect", flag);
+	}
+	
 	public static String get_right(ItemStack itemstack)
 	{	
 		return itemstack.hasTagCompound() ? item_gao_jewel.RIGHT[itemstack.getTagCompound().getInteger("right")] : "blank";
@@ -165,6 +179,10 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 							{
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gao_king_boots)
 								{
+									if (this.get_effect(armor)==1)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
+									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_king_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));

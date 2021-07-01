@@ -59,6 +59,27 @@ entity.DrunnsMob.name=Drunn Soldiers
 entity.GaisorgMob.name=Gaisoulg
 entity.BechatsMob.name=Bechats
 entity.DarkKirameiSilverMob.name=Dark Kiramei Silver
+entity.KudakksMob.name=Kudakks
+entity.StacaesarMob.name=Stacaesar
+
+item.super_sentai_logo.name=Super Sentai Logo
+
+//00 Mobs Weapon
+item.zolders_sword.name=Zolders Sword
+item.ungler_lance.name=Ungler Lance
+item.yartots_saber.name=Yartots Saber
+item.nanashi_dao.name=Nanashi Dao
+item.drunn_spear.name=Drunn Spear
+item.drunn_shield.name=Drunn Shield
+
+item.crimers_sword.name=Crimers Sword
+item.machinemen_knife.name=Machinemen Knife
+item.wumpers_sword.name=Wumpers Sword
+item.orgettes_club.name=Orgettes Club
+item.porderman_sword.name=Porderman Sword
+
+item.mechaclones_sword.name=Mechaclones Sword
+item.plug_lancer.name=Plug Lancer
 
 //01 Goranger
 itemGroup.tabGoranger=Himitsu Sentai Goranger
@@ -258,12 +279,20 @@ item.mayan_diamond.name=Mayan Diamond
 item.goggle_sabre.name=Goggle Sabre
 item.goggle_golden_spear.name=Goggle Golden Spear
 item.red_hammer.name=Red Hammer
+item.red_ribbon.name=Red Ribbon
 item.black_club.name=Black Club
 item.black_emerald_nunchuck.name=Black Emerald Nunchuck
 item.black_hammer.name=Black Hammer
+item.black_ribbon.name=Black Ribbon
 item.blue_hammer.name=Blue Hammer
+item.blue_ribbon.name=Blue Ribbon
 item.yellow_hammer.name=Yellow Hammer
+item.yellow_ribbon.name=Yellow Ribbon
 item.pink_hammer.name=Pink Hammer
+item.pink_ribbon.name=Pink Ribbon
+
+//07 Dynaman
+item.dynaman_logo.name=Dynaman Logo
 
 //08 Bioman
 itemGroup.tabBioman=Choudenshi Bioman
@@ -297,6 +326,9 @@ item.laser_sword.name=Laser Sword
 item.bio_arrow.name=Bio Arrow
 
 item.bi_buster.name=Bi Buster
+
+//09 Changeman
+item.changeman_logo.name=Changeman Logo
 
 //10 Flashman
 itemGroup.tabFlashman=Choushinsei Flashman
@@ -359,6 +391,11 @@ item.masky_tonfa.name=Masky Tonfa
 item.masky_rotor.name=Masky Rotor
 item.masky_ribbon.name=Masky Ribbon
 
+//12 Liveman
+item.liveman_logo.name=Liveman Logo
+
+item.falcon_saber.name=Falcon Saber
+
 //13 Turboranger
 itemGroup.tabTurboranger=Kousoku Sentai Turboranger
 
@@ -389,6 +426,9 @@ item.b_bowgun.name=B Bowgun
 item.w_stick.name=W Stick
 item.turbo_laser_j.name=Turbo Laser (J Gun Combo)
 item.turbo_laser_w.name=Turbo Laser (W Stick Combo)
+
+//14 Fiveman
+item.fiveman_logo.name=Fiveman Logo
 
 //15 Jetman
 itemGroup.tabJetman=Choujin Sentai Jetman
@@ -499,6 +539,12 @@ item.kirin_9_part_whip.name=Kirin 9-Part Whip
 item.phoenix_spear.name=Phoenix Spear
 item.dairinken.name=Dairinken
 item.byakkoshinken.name=Byakkoshinken
+
+//18 Kakuranger
+item.kakuranger_logo.name=Kakuranger Logo
+
+//19 Ohranger
+item.ohranger_logo.name=Ohranger Logo
 
 //20 Carranger
 itemGroup.tabCarranger=Gekisou Sentai Carranger
@@ -682,6 +728,9 @@ item.zeek_sword.name=Zeek Sword
 item.zeek_shot.name=Zeek Shot
 item.zeek_blaster.name=Zeek Blaster
 
+//24 Timeranger
+item.timeranger_logo.name=Timeranger Logo
+
 //25 Gaoranger
 itemGroup.tabGaoranger=Hyakujuu Sentai Gaoranger
 
@@ -772,6 +821,11 @@ item.elephant_shield.name=Elephant Shield
 item.ligator_blade.name=Ligator Blade
 item.ligator_blade_blue_moon.name=Ligator Blade (Blue Moon)
 
+//26 Hurricaneger
+item.hurricaneger_logo.name=Hurricaneger Logo
+
+item.shurikens_bat.name=Shuriken's Bat
+
 //27 Abaranger
 itemGroup.tabAbaranger=Bakuryu Sentai Abaranger
 
@@ -836,6 +890,12 @@ item.bakuryu_axe.name=Bakuryuu Axe
 item.bakuryu_spear.name=Bakuryuu Spear
 item.double_tall_sword_bakuren_oh.name=Double Tall Sword (BakurenOh)
 item.chasmo_shield.name=Chasmo Shield
+
+//28 Dekaranger
+item.dekaranger_badge.name=Dekaranger Badge
+
+//29 Magiranger
+item.magiranger_logo.name=Magiranger Logo
 
 //30 Boukenger
 itemGroup.tabBoukenger=GoGo Sentai Boukenger
@@ -1024,6 +1084,12 @@ item.super_shinkenmaru.name=Super Shinkenmaru
 item.kyoryumaru.name=Kyoryumaru
 item.kyoryumaru_sakanamaru.name=Kyoryumaru
 
+//34 Goseiger
+item.goseiger_logo.name=Goseiger Logo
+
+//35 Gokaiger
+item.gokaiger_logo.name=Gokaiger Logo
+
 //36 Go-Busters
 itemGroup.tabGoBusters=Tokumei Sentai Go-Busters
 
@@ -1091,6 +1157,9 @@ item.moe_moe_z_cune.name=Moe Moe Z-Cune
 item.munyu_munyu_zubaan.name=Munyu Munyu Zubaan
 item.munyu_moe_zubakyun.name=Munyu Moe Zubakyun
 
+//37 Kyoryuger
+item.kyoryuger_logo.name=Kyoryuger Logo
+
 //38 ToQger
 itemGroup.tabToQger=Ressha Sentai ToQger
 
@@ -1128,6 +1197,8 @@ item.alligator_ressha.name=Alligator Ressha
 item.panda_ressha.name=Panda Ressha
 item.zero_ressha.name=Zero Ressha
 
+item.den_o_ressha.name=Den-O Ressha
+
 item.toq_blaster.name=ToQ Blaster
 item.rail_slasher.name=Rail Slasher
 item.home_trigger.name=Home Trigger
@@ -1136,6 +1207,9 @@ item.tunnel_axe.name=Tunnel Ax
 item.tekkyou_claw.name=Tekkyou Claw
 item.yudo_breaker.name=Yudo Breaker
 item.daikaiten_cannon.name=Daikaiten Cannon
+
+//39 Ninninger
+item.ninninger_logo.name=Ninninger Logo
 
 //40 Zyuohger
 itemGroup.tabZyuohger=Doubutsu Sentai Zyuohger
@@ -1343,7 +1417,7 @@ item.kyu_shot.name=Kyu Shot
 item.kyu_slasher.name=Kyu Slasher
 item.dark_kyu_sickle.name=Dark Kyu Sickle
 
-//42-43 Lupinranger VS Patranger
+//42 Lupinranger VS Patranger
 itemGroup.tabLupat=Lupinranger VS Patranger
 
 item.blank_striker.name=Blank Striker
@@ -1392,6 +1466,8 @@ item.crane_trigger_machine.name=Trigger Machine Crane
 item.splash_trigger_machine.name=Trigger Machine Splash
 item.siren_striker.name=Siren Striker
 
+item.unfinished_lupin_magnum.name=Unfinished Lupin Magnum
+
 item.vs_changer.name=VS Changer
 item.x_changer.name=X Changer
 item.lupin_sword.name=Lupin Sword
@@ -1401,7 +1477,7 @@ item.x_rod_sword.name=X Rod Sword
 item.scissor_shield.name=Scissor Shield
 item.blade_boomerang.name=Blade Boomerang
 
-//44 Ryusoulger
+//43 Ryusoulger
 itemGroup.tabRyusoulger=Kishiryu Sentai Ryusoulger
 
 item.blank_ryusoul.name=Blank Ryusoul
@@ -1471,6 +1547,8 @@ item.lupinranger_soul.name=LupinrangerSoul
 item.shiawase_soul.name=ShiawaseSoul
 item.yamamori_soul.name=YamamoriSoul
 
+item.unfinished_ryusoul_calibur.name=Unfinished Ryusoul Calibur
+
 item.ryusoul_ken.name=Ryusoul Ken
 item.mosa_changer.name=Mosa Changer
 item.mosa_blade.name=Mosa Blade
@@ -1482,7 +1560,7 @@ item.brown_ryusoul_shield.name=Brown Ryusoul Shield
 item.max_ryusoul_changer.name=Max Ryusoul Changer
 item.ryusoul_calibur.name=Ryusoul Calibur
 
-//45 Kirameiger
+//44 Kirameiger
 itemGroup.tabKirameiger=Mashin Sentai Kirameiger
 
 item.kirameiger_logo.name=Kirameiger Logo
@@ -1523,6 +1601,133 @@ item.shiny_breaker.name=Shiny Breaker
 item.shiny_breaker_tool.name=Shiny Breaker (Tool)
 item.yellow_stone_hammer.name=Yellow Stone Hammer
 
+//45 Zenkaiger
+itemGroup.tabZenkaiger=Kikai Sentai Zenkaiger
+
+item.zenkaiger_logo.name=Zenkaiger Logo
+item.blank_sentai_gear.name=Blank Sentai Gear
+item.blank_dark_sentai_gear.name=Blank Dark Sentai Gear
+tile.zenkaiger_ore.name=Zenkaiger Ore
+
+item.zenkaiger_head.name=Zenkaiger Helmet
+item.zenkaiger_torso.name=Zenkaiger Chestplate
+item.zenkaiger_legs.name=Zenkaiger Leggings
+
+item.zenkaizer_geartlinger.name=Geartlinger (Zenkaizer)
+item.juran_geartlinger.name=Geartlinger (Zenkai Juran)
+item.gaon_geartlinger.name=Geartlinger (Zenkai Gaon)
+item.magine_geartlinger.name=Geartlinger (Zenkai Magine)
+item.vroon_geartlinger.name=Geartlinger (Zenkai Vroon)
+item.twokaizer_geardalinger.name=Geardalinger (Twokaizer)
+item.stacaeser_geartozinger.name=Geartozinger (Stacaesar)
+item.red_geartlinger.name=Geartlinger (Zenkai Red)
+
+item.zenkaizer_gear.name=Zenkaizer Gear
+item.zenkai_juran_gear.name=Zenkai Juran Gear
+item.zenkai_gaon_gear.name=Zenkai Gaon Gear
+item.zenkai_magine_gear.name=Zenkai Magine Gear
+item.zenkai_vroon_gear.name=Zenkai Vroon Gear
+item.twokaizer_gear.name=Twokaizer Gear
+item.stacaesar_gear.name=Stacaesar Gear
+item.zenkai_red_gear.name=Zenkai Red Gear
+
+item.twokai_cutanner_gear.name=Twokai Cutanner Gear
+item.twokai_ricky_gear.name=Twokai Ricky Gear
+item.zenkai_zyu_gear.name=Zenkai Zyu Gear
+
+item.goranger_gear.name=Goranger Gear
+item.jakq_gear.name=J.A.K.Q. Gear
+item.battle_fever_gear.name=Battle Fever Gear
+item.denziman_gear.name=Denziman Gear
+item.sun_vulcan_gear.name=Sun Vulcan Gear
+item.goggle_v_gear.name=Goggle V Gear
+item.dynaman_gear.name=Dynaman Gear
+item.bioman_gear.name=Bioman Gear
+item.changeman_gear.name=Changeman Gear
+item.flashman_gear.name=Flashman Gear
+
+item.maskman_gear.name=Maskman Gear
+item.liveman_gear.name=Liveman Gear
+item.turboranger_gear.name=Turboranger Gear
+item.fiveman_gear.name=Fiveman Gear
+item.jetman_gear.name=Jetman Gear
+item.zyuranger_gear.name=Zyuranger Gear
+item.dairanger_gear.name=Dairanger Gear
+item.kakuranger_gear.name=Kakuranger Gear
+item.ohranger_gear.name=Ohranger Gear
+item.carranger_gear.name=Carranger Gear
+
+item.megaranger_gear.name=Megaranger Gear
+item.gingaman_gear.name=Gingaman Gear
+item.gogo_v_gear.name=GoGo-V Gear
+item.timeranger_gear.name=Timeranger Gear
+item.gaoranger_gear.name=Gaoranger Gear
+item.hurricaneger_gear.name=Hurricaneger Gear
+item.abaranger_gear.name=Abaranger Gear
+item.dekaranger_gear.name=Dekaranger Gear
+item.magiranger_gear.name=Magiranger Gear
+item.boukenger_gear.name=Boukenger Gear
+
+item.gekiranger_gear.name=Gekiranger Gear
+item.go_onger_gear.name=Go-Onger Gear
+item.shinkenger_gear.name=Shinkenger Gear
+item.goseiger_gear.name=Goseiger Gear
+item.gokaiger_gear.name=Gokaiger Gear
+item.go_busters_gear.name=Go-Busters Gear
+item.kyoryuger_gear.name=Kyoryuger Gear
+item.toqger_gear.name=ToQger Gear
+item.ninninger_gear.name=Ninninger Gear
+item.zyuohger_gear.name=Zyuohger Gear
+
+item.kyuranger_gear.name=Kyuranger Gear
+item.lupinranger_gear.name=Lupinranger Gear
+item.patranger_gear.name=Patranger Gear
+item.ryusoulger_gear.name=Ryusoulger Gear
+item.kirameiger_gear.name=Kirameiger Gear
+
+item.dark_goranger_gear.name=Dark Goranger Gear
+item.dark_jakq_gear.name=Dark J.A.K.Q. Gear
+item.dark_flashman_gear.name=Dark Flashman Gear
+item.dark_maskman_gear.name=Dark Maskman Gear
+item.dark_fiveman_gear.name=Dark Fiveman Gear
+item.dark_zyuranger_gear.name=Dark Zyuranger Gear
+item.dark_gaoranger_gear.name=Dark Gaoranger Gear
+item.dark_magiranger_gear.name=Dark Magiranger Gear
+item.dark_boukenger_gear.name=Dark Boukenger Gear
+
+item.red_goranger_gear.name=Red Goranger Gear
+item.red_lupinranger_gear.name=Red Lupinranger Gear
+item.red_patranger_gear.name=Red Patranger Gear
+item.red_kirameiger_gear.name=Red Kirameiger Gear
+
+item.metallic_zenkaizer_gear.name=Metallic Zenkaizer Gear
+item.metallic_zenkai_juran_gear.name=Metallic Zenkai Juran Gear
+item.metallic_zenkai_gaon_gear.name=Metallic Zenkai Gaon Gear
+item.metallic_zenkai_magine_gear.name=Metallic Zenkai Magine Gear
+item.metallic_zenkai_vroon_gear.name=Metallic Zenkai Vroon Gear
+item.metallic_twokaizer_gear.name=Metallic Twokaizer Gear
+
+item.super_sentai_gear.name=Super Sentai Gear
+item.zenkaiger_asobou_gear.name=Zenkaiger Asobou Gear
+item.super_hero_time_gear.name=Super Hero Time Gear
+
+item.zi_o_gear.name=Zi-O Gear
+item.zero_one_gear.name=Zero-One Gear
+item.saber_gear.name=Saber Gear
+
+item.geartlinger.name=Geartlinger
+item.geardalinger.name=Geardalinger
+item.geartozinger.name=Geartozinger
+
+item.juran_sword.name=Juran Sword
+item.juran_shield.name=Juran Shield
+item.gaon_claw.name=Gaon Claw
+item.magine_stick.name=Magine Stick
+item.vroon_picker.name=Vroon Picker
+item.tail_drill.name=Tail Drill
+
+item.white_ribbon.name=White Ribbon
+
 //?? Kawarimono Team
 itemGroup.tabKawarimono=Kawarimono (Oddball) Team
 
@@ -1556,6 +1761,15 @@ item.karakuri_hengen_sword.name=Karakuri Hengen (Sword)
 item.karakuri_hengen_bow.name=Karakuri Hengen (Bow)
 item.karakuri_hengen_claw.name=Karakuri Hengen (Claw)
 item.gama_gama_gun.name=Gama Gama Gun
+
+item.drive_shuriken.name=Drive Shuriken
+item.ooo_key.name=OOO TaToBa Key
+item.gatakiriba_key.name=OOO GataKiriBa Key
+item.latoratah_key.name=OOO LaToraTah Key
+item.sagozou_key.name=OOO SaGoZou Key
+item.tajadol_key.name=OOO TaJaDol Key
+item.shauta_key.name=OOO ShaUTa Key
+item.putotyra_key.name=OOO PuToTyra Key
 
 //Misc
 itemGroup.tabMisc=Misc Sentai Items

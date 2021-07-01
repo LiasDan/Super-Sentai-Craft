@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:putotyra_key"
+    },
+	{
+      "item": "kamenridercraft4th:ptera"
+    },
+	{
+      "item": "kamenridercraft4th:tricera"
+    },
+	{
+      "item": "kamenridercraft4th:tyranno"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:putotyra_key"
+  }
+}

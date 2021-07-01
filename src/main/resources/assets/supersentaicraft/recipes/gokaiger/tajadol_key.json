@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gokaiger_logo"
+    },
+	{
+      "item": "kamenridercraft4th:taka"
+    },
+	{
+      "item": "kamenridercraft4th:kujaku"
+    },
+	{
+      "item": "kamenridercraft4th:condor"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:tajadol_key"
+  }
+}

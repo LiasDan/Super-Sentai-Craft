@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zenkai_gear",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:dynaman_logo"
+    },
+	{
+      "item": "supersentaicraft:blank_sentai_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:dynaman_gear"
+  }
+}

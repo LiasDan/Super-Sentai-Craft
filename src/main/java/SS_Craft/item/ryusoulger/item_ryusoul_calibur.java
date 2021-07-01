@@ -4,6 +4,7 @@ import javax.annotation.Nullable;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.abaranger.item_dino_brace;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.util.IHasModel;
@@ -69,13 +70,13 @@ public class item_ryusoul_calibur extends ItemSword implements IHasModel
     			{
     				if (this==RiderItems.ryusoul_calibur)
     				{
-    					if (playerIn.isSneaking())
-    					{
-    						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
-    					}
-    					else
+    					if (playerIn.isSneaking()&&item_ryusoul_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=9)
     					{
     						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 9);
+    					}
+    					else if (playerIn.isSneaking()&&item_ryusoul_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==9)
+    					{
+    						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
     					}
     				}
     			}

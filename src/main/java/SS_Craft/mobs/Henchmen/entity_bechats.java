@@ -63,14 +63,14 @@ public class entity_bechats extends Entity_base_henchmen
 				break;
 				
 			case 5:
-				switch (this.rand.nextInt(6))
+				switch (this.rand.nextInt(7))
 				{
 					case 0:
 						this.dropItem(RiderItems.shiny_kiramei_stone, 1);
 						break;
 					
 					case 1:
-						this.dropItem(RiderItems.blue_diamond, 2);
+						this.dropItem(RiderItems.gold_kiramei_stone, 1);
 						break;
 
 					case 2:
@@ -86,6 +86,10 @@ public class entity_bechats extends Entity_base_henchmen
 						break;
 
 					case 5:
+						this.dropItem(RiderItems.blue_diamond, 2);
+						break;
+
+					case 6:
 						this.dropItem(RiderItems.blue_diamond, 2);
 						break;
 				}

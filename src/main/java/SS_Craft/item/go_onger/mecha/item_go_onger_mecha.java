@@ -129,6 +129,20 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("core", flag);
 	}
 	
+	public static int  get_effect(ItemStack itemstack)
+	{
+		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("effect") :0;
+	}
+
+	public static void set_effect(ItemStack itemstack, int flag)
+	{
+		if (!itemstack.hasTagCompound())
+		{
+			itemstack.setTagCompound(new NBTTagCompound());
+		}
+		itemstack.getTagCompound().setInteger("effect", flag);
+	}
+	
 	public static String get_right(ItemStack itemstack)
 	{	
 		return itemstack.hasTagCompound() ? item_engine_soul.RIGHT[itemstack.getTagCompound().getInteger("right")] : "blank";
@@ -174,6 +188,10 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 							{
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.engine_oh_boots)
 								{
+									if (this.get_effect(armor)==1)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
+									}
 									if (this.get_left(armor)=="birca"|this.get_right(armor)=="birca")
 									{
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));

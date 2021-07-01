@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zenkai_gear",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:boukenger_logo"
+    },
+	{
+      "item": "supersentaicraft:blank_sentai_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:boukenger_gear"
+  }
+}

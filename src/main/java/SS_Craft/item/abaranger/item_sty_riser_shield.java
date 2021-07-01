@@ -65,13 +65,13 @@ public class item_sty_riser_shield extends ItemShield implements IHasModel
 			{	
 				if (this==RiderItems.sty_riser_shield)
 				{
-					if (playerIn.isSneaking())
-					{
-						item_dino_brace.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
-					}
-					else
+					if (playerIn.isSneaking()&&item_dino_brace.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
 						item_dino_brace.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+					}
+					else if (playerIn.isSneaking()&&item_dino_brace.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						item_dino_brace.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 			}

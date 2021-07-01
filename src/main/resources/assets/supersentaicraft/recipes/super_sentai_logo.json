@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_sentai",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:mecha_gear"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:super_sentai_logo"
+  }
+}

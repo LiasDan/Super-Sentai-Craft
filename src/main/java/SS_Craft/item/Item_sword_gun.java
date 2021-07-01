@@ -11,6 +11,8 @@ import com.google.common.collect.Multimap;
 import SS_Craft.RiderItems;
 import SS_Craft.Tabs;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.kyuranger.item_seiza_blaster;
+import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
@@ -73,14 +75,42 @@ public class Item_sword_gun extends ItemBow  implements IHasModel
             @SideOnly(Side.CLIENT)
             public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
             {
-                if (entityIn == null)
-                {
-                    return 0.0F;
-                }
-                else
-                {
-                    return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 1.0F;
-                }
+            	if (stack.getItem() == RiderItems.geardalinger)
+				{
+					if (entityIn == null)
+					{
+						return 0.0F;
+					}
+					else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
+					{
+						if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_geartlinger)
+						{
+							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.twokaizer_geardalinger)
+								if (item_geartlinger.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="super")
+									return entityIn.getActiveItemStack().getItem() != stack.getItem()? 2.0F : 3.0F;
+								else
+									return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : 1.0F;
+						}
+						else
+						{
+							return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 1.0F;
+						}
+					
+						return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 1.0F;
+					}
+				}
+            	else
+            	{
+            		if (entityIn == null)
+            		{
+            			return 0.0F;
+            		}
+            		else
+            		{
+            			return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 1.0F;
+            		}
+            	}
+				return 0.0F;
             }
         });
 	}

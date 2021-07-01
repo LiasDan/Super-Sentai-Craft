@@ -6,6 +6,7 @@ import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.lupatranger.item_vs_changer;
+import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -65,13 +66,13 @@ public class item_sty_riser extends ItemSword implements IHasModel
 			{	
 				if (this==RiderItems.sty_riser)
 				{
-					if (playerIn.isSneaking())
-					{
-						item_dino_brace.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
-					}
-					else
+					if (playerIn.isSneaking()&&item_dino_brace.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
 						item_dino_brace.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+					}
+					else if (playerIn.isSneaking()&&item_dino_brace.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						item_dino_brace.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 			}

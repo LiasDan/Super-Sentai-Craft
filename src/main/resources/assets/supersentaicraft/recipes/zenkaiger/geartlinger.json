@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zenkaiger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_sentai_gear"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:zenkaizer_gear"
+	  },
+	  {
+	    "item": "supersentaicraft:zenkai_juran_gear"
+	  },
+	  {
+	    "item": "supersentaicraft:zenkai_gaon_gear"
+	  },
+	  {
+	    "item": "supersentaicraft:zenkai_magine_gear"
+	  },
+	  {
+	    "item": "supersentaicraft:zenkai_vroon_gear"
+	  },
+	  {
+	    "item": "supersentaicraft:zenkai_red_gear"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:geartlinger"
+  }
+}

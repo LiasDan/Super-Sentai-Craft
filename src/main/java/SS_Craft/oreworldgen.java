@@ -368,7 +368,7 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.kyuranger_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
-		//42-43 Lupinranger VS Patranger
+		//42 Lupinranger VS Patranger
 		for (int i = 0; i < 4; i++)
 		{
 			//16x16 area up to y = 64
@@ -379,7 +379,7 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.vs_vehicle_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
-		//44 Ryusoulger
+		//43 Ryusoulger
 		for (int i = 0; i < 4; i++)
 		{
 			//16x16 area up to y = 64
@@ -390,7 +390,7 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.ryusoulger_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
-		//45 Kirameiger
+		//44 Kirameiger
 		for (int i = 0; i < 4; i++)
 		{
 			//16x16 area up to y = 64
@@ -400,6 +400,17 @@ public class oreworldgen implements IWorldGenerator
 			// 10 blocks per vein
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.kirameiger_ore.getDefaultState(), 10)).generate(world, rand,position);
+		}
+		//45 Zenkaiger
+		for (int i = 0; i < 4; i++)
+		{
+			//16x16 area up to y = 64
+			int randPosX = chunkX + rand.nextInt(16);
+			int randPosY = rand.nextInt(60);
+			int randPosZ = chunkZ + rand.nextInt(16);
+			// 10 blocks per vein
+			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(RiderItems.zenkaiger_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
 	}
 

@@ -1,6 +1,8 @@
 package SS_Craft.mobs.Henchmen;
 
 import SS_Craft.RiderItems;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
@@ -9,6 +11,15 @@ public class entity_wumpers_white extends Entity_base_henchmen
 	public entity_wumpers_white(World par1World)
 	{
 		super(par1World);
+	}
+
+	/**
+	 * Returns the item that this EntityLiving is holding, if any.
+	 */
+	@Override
+	public ItemStack getHeldItemMainhand()
+	{
+		return new ItemStack(RiderItems.wumpers_sword);
 	}
 
 	public void onDeath(DamageSource cause)

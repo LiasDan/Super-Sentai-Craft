@@ -148,6 +148,20 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("core", flag);
 	}
 	
+	public static int  get_effect(ItemStack itemstack)
+	{
+		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("effect") :0;
+	}
+
+	public static void set_effect(ItemStack itemstack, int flag)
+	{
+		if (!itemstack.hasTagCompound())
+		{
+			itemstack.setTagCompound(new NBTTagCompound());
+		}
+		itemstack.getTagCompound().setInteger("effect", flag);
+	}
+	
 	public static String get_right(ItemStack itemstack)
 	{	
 		return itemstack.hasTagCompound() ? item_dino_guts.RIGHT[itemstack.getTagCompound().getInteger("right")] : "blank";
@@ -193,6 +207,10 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 							{
 								if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.abaren_oh_boots)
 								{
+									if (this.get_effect(armor)==1)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
+									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.abaren_oh_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));

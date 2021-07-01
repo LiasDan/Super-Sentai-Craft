@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "toqger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_ressha"
+    },
+	{
+      "item": "kamenridercraft4th:rider_ticket_sword"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:den_o_ressha"
+  }
+}

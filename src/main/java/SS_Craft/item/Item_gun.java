@@ -20,6 +20,7 @@ import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.turboranger.item_turbo_brace;
+import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
 import SS_Craft.mobs.mini_boss.entity_ular_captain;
 import SS_Craft.potion.PotionCore;
@@ -249,6 +250,32 @@ public class Item_gun extends ItemBow  implements IHasModel
 										return 2;
 									else
 										return 1;
+							}
+							else
+							{
+								return 0;
+							}
+						
+							return 0;
+						}
+					
+						return 0;
+					}
+					if (stack.getItem() == RiderItems.geartlinger)
+					{
+						if (entityIn == null)
+						{
+							return 0.0F;
+						}
+						else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
+						{
+							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_geartlinger)
+							{
+								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zenkaizer_geartlinger)
+									if (item_geartlinger.get_core(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+										return 1;
+									else
+										return 0;
 							}
 							else
 							{

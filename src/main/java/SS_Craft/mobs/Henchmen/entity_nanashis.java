@@ -5,6 +5,8 @@ import SS_Craft.mobs.Boss.EntityBossBase;
 import SS_Craft.mobs.Boss.entity_gedou_shinken_red;
 import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
@@ -15,6 +17,15 @@ public class entity_nanashis extends Entity_base_henchmen
 	public entity_nanashis(World par1World)
 	{
 		super(par1World);
+	}
+
+	/**
+	 * Returns the item that this EntityLiving is holding, if any.
+	 */
+	@Override
+	public ItemStack getHeldItemMainhand()
+	{
+		return new ItemStack(RiderItems.nanashi_dao);
 	}
 
 	public void onDeath(DamageSource cause)

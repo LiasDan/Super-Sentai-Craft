@@ -13,6 +13,7 @@ import SS_Craft.mobs.Boss.entity_gaisorg;
 import SS_Craft.mobs.Boss.entity_gedou_shinken_red;
 import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
 import SS_Craft.mobs.Boss.entity_rouki;
+import SS_Craft.mobs.Boss.entity_stacaesar;
 import SS_Craft.mobs.Boss.entity_yami_0gou;
 import SS_Craft.mobs.Henchmen.entity_barmias_black;
 import SS_Craft.mobs.Henchmen.entity_barmias_white;
@@ -31,6 +32,7 @@ import SS_Craft.mobs.Henchmen.entity_indavers_blue;
 import SS_Craft.mobs.Henchmen.entity_indavers_green;
 import SS_Craft.mobs.Henchmen.entity_indavers_white;
 import SS_Craft.mobs.Henchmen.entity_karths;
+import SS_Craft.mobs.Henchmen.entity_kudakks;
 import SS_Craft.mobs.Henchmen.entity_kunekunes;
 import SS_Craft.mobs.Henchmen.entity_kuros;
 import SS_Craft.mobs.Henchmen.entity_machinemen;
@@ -76,103 +78,103 @@ public class ClientProxyRider extends CommonProxyRider
 	public void registerRenderThings()
 	{
 		//01 Goranger
-		RenderingRegistry.registerEntityRenderingHandler(entity_zolders.class, new RenderRiderMob(new tokuMobModel("zolder_2"), 0.5F,"textures/entities/zolder_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_zolders.class, new RenderRiderMob2(new tokuMobModel("zolder_2"), 0.5F,"textures/entities/zolder_1.png"));
 	
 		//02 J.A.K.Q.
-		RenderingRegistry.registerEntityRenderingHandler(entity_crimers.class, new RenderRiderMob(new tokuMobModel("crimer_2"), 0.5F,"textures/entities/crimer_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_crimers.class, new RenderRiderMob2(new tokuMobModel("crimer_2"), 0.5F,"textures/entities/crimer_1.png"));
 		
 		//03 Battle Fever
-		RenderingRegistry.registerEntityRenderingHandler(entity_cutmen.class, new RenderRiderMob(new tokuMobModel("cutman_2"), 0.5F,"textures/entities/cutman_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_cutmen.class, new RenderRiderMob2(new tokuMobModel("cutman_2"), 0.5F,"textures/entities/cutman_1.png"));
 		
 		//04 Denziman
-		RenderingRegistry.registerEntityRenderingHandler(entity_dustlers.class, new RenderRiderMob(new tokuMobModel("dustler_2"), 0.5F,"textures/entities/dustler_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_dustlers.class, new RenderRiderMob2(new tokuMobModel("dustler_2"), 0.5F,"textures/entities/dustler_1.png"));
 		
 		//05 Sun Vulcan
-		RenderingRegistry.registerEntityRenderingHandler(entity_machinemen.class, new RenderRiderMob(new tokuMobModel("machineman_2"), 0.5F,"textures/entities/machineman_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_machinemen.class, new RenderRiderMob2(new tokuMobModel("machineman_2"), 0.5F,"textures/entities/machineman_1.png"));
 
 		//06 Goggle V
-		RenderingRegistry.registerEntityRenderingHandler(entity_spotmen.class, new RenderRiderMob(new tokuMobModel("spotman_2"), 0.5F,"textures/entities/spotman_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_spotmen.class, new RenderRiderMob2(new tokuMobModel("spotman_2"), 0.5F,"textures/entities/spotman_1.png"));
 			
 		//08 Bioman
-		RenderingRegistry.registerEntityRenderingHandler(entity_mechaclones.class, new RenderRiderMob(new tokuMobModel("mechaclone_2"), 0.5F,"textures/entities/mechaclone_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_mechaclones.class, new RenderRiderMob2(new tokuMobModel("mechaclone_2"), 0.5F,"textures/entities/mechaclone_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_bio_hunter_silva.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_bio_hunter_silva.png"));
 
 		//10 Flashman
-		RenderingRegistry.registerEntityRenderingHandler(entity_zolohs.class, new RenderRiderMob(new tokuMobModel("zolohs_2"), 0.5F,"textures/entities/zolohs_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_zolohs.class, new RenderRiderMob2(new tokuMobModel("zolohs_2"), 0.5F,"textures/entities/zolohs_1.png"));
 		
 		//11 Maskman
-		RenderingRegistry.registerEntityRenderingHandler(entity_unglers.class, new RenderRiderMob(new tokuMobModel("ungler_2"), 0.5F,"textures/entities/ungler_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_unglers.class, new RenderRiderMob2(new tokuMobModel("ungler_2"), 0.5F,"textures/entities/ungler_1.png"));
 
 		//13 Turboranger
-		RenderingRegistry.registerEntityRenderingHandler(entity_ulars.class, new RenderRiderMob(new tokuMobModel("ular_2"), 0.5F,"textures/entities/ular_1.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_ular_captain.class, new RenderRiderMob(new tokuMobModel("ular_captain_2"), 0.5F,"textures/entities/ular_captain_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_ulars.class, new RenderRiderMob2(new tokuMobModel("ular_2"), 0.5F,"textures/entities/ular_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_ular_captain.class, new RenderRiderMob2(new tokuMobModel("ular_captain_2"), 0.5F,"textures/entities/ular_captain_1.png"));
 
 		//15 Jetman
-		RenderingRegistry.registerEntityRenderingHandler(entity_grinams.class, new RenderRiderMob(new tokuMobModel("grinam_2"), 0.5F,"textures/entities/grinam_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_grinams.class, new RenderRiderMob2(new tokuMobModel("grinam_2"), 0.5F,"textures/entities/grinam_1.png"));
 		
 		//16 Zyuranger
-		RenderingRegistry.registerEntityRenderingHandler(entity_golems1.class, new RenderRiderMob(new tokuMobModel("golem1_2"), 0.5F,"textures/entities/golem1_1.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_golems2.class, new RenderRiderMob(new tokuMobModel("golem2_2"), 0.5F,"textures/entities/golem2_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_golems1.class, new RenderRiderMob2(new tokuMobModel("golem1_2"), 0.5F,"textures/entities/golem1_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_golems2.class, new RenderRiderMob2(new tokuMobModel("golem2_2"), 0.5F,"textures/entities/golem2_1.png"));
 
-		RenderingRegistry.registerEntityRenderingHandler(entity_dora_sphinx.class, new RenderRiderMob(new tokuMobModel("dora_sphinx_2"), 0.5F,"textures/entities/dora_sphinx_1.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_pumpkin_rapper.class, new RenderRiderMob(new tokuMobModel("pumpkin_rapper_2"), 0.5F,"textures/entities/pumpkin_rapper_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_dora_sphinx.class, new RenderRiderMob2(new tokuMobModel("dora_sphinx_2"), 0.5F,"textures/entities/dora_sphinx_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_pumpkin_rapper.class, new RenderRiderMob2(new tokuMobModel("pumpkin_rapper_2"), 0.5F,"textures/entities/pumpkin_rapper_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_dragon_ranger.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_dragon_ranger.png"));
 		
 		//17 Dairanger
-		RenderingRegistry.registerEntityRenderingHandler(entity_cotpotros.class, new RenderRiderMob(new tokuMobModel("cotpotro_2"), 0.5F,"textures/entities/cotpotro_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_cotpotros.class, new RenderRiderMob2(new tokuMobModel("cotpotro_2"), 0.5F,"textures/entities/cotpotro_1.png"));
 
 		//20 Carranger
-		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_blue.class, new RenderRiderMob(new tokuMobModel("wumper_blue_2"), 0.5F,"textures/entities/wumper_blue_1.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_pink.class, new RenderRiderMob(new tokuMobModel("wumper_pink_2"), 0.5F,"textures/entities/wumper_pink_1.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_green.class, new RenderRiderMob(new tokuMobModel("wumper_green_2"), 0.5F,"textures/entities/wumper_green_1.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_white.class, new RenderRiderMob(new tokuMobModel("wumper_white_2"), 0.5F,"textures/entities/wumper_white_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_blue.class, new RenderRiderMob2(new tokuMobModel("wumper_blue_2"), 0.5F,"textures/entities/wumper_blue_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_pink.class, new RenderRiderMob2(new tokuMobModel("wumper_pink_2"), 0.5F,"textures/entities/wumper_pink_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_green.class, new RenderRiderMob2(new tokuMobModel("wumper_green_2"), 0.5F,"textures/entities/wumper_green_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_white.class, new RenderRiderMob2(new tokuMobModel("wumper_white_2"), 0.5F,"textures/entities/wumper_white_1.png"));
 
 		//21 Megaranger
-		RenderingRegistry.registerEntityRenderingHandler(entity_kunekunes.class, new RenderRiderMob(new tokuMobModel("kunekune_2"), 0.5F,"textures/entities/kunekune_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_kunekunes.class, new RenderRiderMob2(new tokuMobModel("kunekune_2"), 0.5F,"textures/entities/kunekune_1.png"));
 
 		//22 Gingaman
-		RenderingRegistry.registerEntityRenderingHandler(entity_yartots.class, new RenderRiderMob(new tokuMobModel("yartots_2"), 0.5F,"textures/entities/yartots_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_yartots.class, new RenderRiderMob2(new tokuMobModel("yartots_2"), 0.5F,"textures/entities/yartots_1.png"));
 
 		//23 GoGo-V
-		RenderingRegistry.registerEntityRenderingHandler(entity_imps.class, new RenderRiderMob(new tokuMobModel("imps_2"), 0.5F,"textures/entities/imps_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_imps.class, new RenderRiderMob2(new tokuMobModel("imps_2"), 0.5F,"textures/entities/imps_1.png"));
 
 		//25 Gaoranger
-		RenderingRegistry.registerEntityRenderingHandler(entity_orgettes.class, new RenderRiderMob(new tokuMobModel("orgettes_2"), 0.5F,"textures/entities/orgettes_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_orgettes.class, new RenderRiderMob2(new tokuMobModel("orgettes_2"), 0.5F,"textures/entities/orgettes_1.png"));
 
-		RenderingRegistry.registerEntityRenderingHandler(entity_rouki.class, new RenderRiderMob(new tokuMobModel("rouki_2"), 0.5F,"textures/entities/rouki_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_rouki.class, new RenderRiderMob2(new tokuMobModel("rouki_2"), 0.5F,"textures/entities/rouki_1.png"));
 		//25 Gaoranger
-		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_black.class, new RenderRiderMob(new tokuMobModel("barmia_black_2"), 0.5F,"textures/entities/barmia_black_1.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_white.class, new RenderRiderMob(new tokuMobModel("barmia_white_2"), 0.5F,"textures/entities/barmia_white_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_black.class, new RenderRiderMob2(new tokuMobModel("barmia_black_2"), 0.5F,"textures/entities/barmia_black_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_white.class, new RenderRiderMob2(new tokuMobModel("barmia_white_2"), 0.5F,"textures/entities/barmia_white_1.png"));
 
 		//30 Boukenger
-		RenderingRegistry.registerEntityRenderingHandler(entity_karths.class, new RenderRiderMob(new tokuMobModel("karths_2"), 0.5F,"textures/entities/karths_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_karths.class, new RenderRiderMob2(new tokuMobModel("karths_2"), 0.5F,"textures/entities/karths_1.png"));
 
 		//31 Gekiranger
-		RenderingRegistry.registerEntityRenderingHandler(entity_rinshis.class, new RenderRiderMob(new tokuMobModel("rinshi_2"), 0.5F,"textures/entities/rinshi_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_rinshis.class, new RenderRiderMob2(new tokuMobModel("rinshi_2"), 0.5F,"textures/entities/rinshi_1.png"));
 
 		//32 Go-Onger
-		RenderingRegistry.registerEntityRenderingHandler(entity_ugatz.class, new RenderRiderMob(new tokuMobModel("ugatz_2"), 0.5F,"textures/entities/ugatz_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_ugatz.class, new RenderRiderMob2(new tokuMobModel("ugatz_2"), 0.5F,"textures/entities/ugatz_1.png"));
 
 		//33 Shinkenger
-		RenderingRegistry.registerEntityRenderingHandler(entity_nanashis.class, new RenderRiderMob(new tokuMobModel("nanashi_2"), 0.5F,"textures/entities/nanashi_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_nanashis.class, new RenderRiderMob2(new tokuMobModel("nanashi_2"), 0.5F,"textures/entities/nanashi_1.png"));
 
 		RenderingRegistry.registerEntityRenderingHandler(entity_gedou_shinken_red.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_gedou_shinken_red.png"));
 		
 		//36 Go-Busters
-		RenderingRegistry.registerEntityRenderingHandler(entity_buglars.class, new RenderRiderMob(new tokuMobModel("buglar_2"), 0.5F,"textures/entities/buglar_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_buglars.class, new RenderRiderMob2(new tokuMobModel("buglar_2"), 0.5F,"textures/entities/buglar_1.png"));
 
 		//38 ToQger
-		RenderingRegistry.registerEntityRenderingHandler(entity_kuros.class, new RenderRiderMob(new tokuMobModel("kuros_2"), 0.5F,"textures/entities/kuros_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_kuros.class, new RenderRiderMob2(new tokuMobModel("kuros_2"), 0.5F,"textures/entities/kuros_1.png"));
 
 		RenderingRegistry.registerEntityRenderingHandler(entity_yami_0gou.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_yami_0gou.png"));
 		
 		//40 Zyuohger
-		RenderingRegistry.registerEntityRenderingHandler(entity_moebas.class, new RenderRiderMob(new tokuMobModel("moeba_2"), 0.5F,"textures/entities/moeba_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_moebas.class, new RenderRiderMob2(new tokuMobModel("moeba_2"), 0.5F,"textures/entities/moeba_1.png"));
 
 		//41 Kyuranger
-		RenderingRegistry.registerEntityRenderingHandler(entity_indavers_blue.class, new RenderRiderMob(new tokuMobModel("indaver_blue_2"), 0.5F,"textures/entities/indaver_blue_1.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_indavers_green.class, new RenderRiderMob(new tokuMobModel("indaver_green_2"), 0.5F,"textures/entities/indaver_green_1.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_indavers_white.class, new RenderRiderMob(new tokuMobModel("indaver_white_2"), 0.5F,"textures/entities/indaver_white_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_indavers_blue.class, new RenderRiderMob2(new tokuMobModel("indaver_blue_2"), 0.5F,"textures/entities/indaver_blue_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_indavers_green.class, new RenderRiderMob2(new tokuMobModel("indaver_green_2"), 0.5F,"textures/entities/indaver_green_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_indavers_white.class, new RenderRiderMob2(new tokuMobModel("indaver_white_2"), 0.5F,"textures/entities/indaver_white_1.png"));
 
 		RenderingRegistry.registerEntityRenderingHandler(entity_hebitsukai_metal.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_hebitsukai_metal.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_dark_shishi_red.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_kyuranger.png"));
@@ -181,18 +183,23 @@ public class ClientProxyRider extends CommonProxyRider
 		RenderingRegistry.registerEntityRenderingHandler(entity_garu_bike.class, new RenderRiderMob2(new model_garu_bike(), 0.5F,"textures/entities/garu_bike.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_ex_aid.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_ex_aid.png"));
 		
-		//42-43 Lupin VS Pat
-		RenderingRegistry.registerEntityRenderingHandler(entity_pordermen.class, new RenderRiderMob(new tokuMobModel("porderman_2"), 0.5F,"textures/entities/porderman_1.png"));
+		//42 Lupin VS Pat
+		RenderingRegistry.registerEntityRenderingHandler(entity_pordermen.class, new RenderRiderMob2(new tokuMobModel("porderman_2"), 0.5F,"textures/entities/porderman_1.png"));
 
-		//44 Ryusoulger
-		RenderingRegistry.registerEntityRenderingHandler(entity_drunns.class, new RenderRiderMob(new tokuMobModel("drunn_2"), 0.5F,"textures/entities/drunn_1.png"));
+		//43 Ryusoulger
+		RenderingRegistry.registerEntityRenderingHandler(entity_drunns.class, new RenderRiderMob2(new tokuMobModel("drunn_2"), 0.5F,"textures/entities/drunn_1.png"));
 
 		RenderingRegistry.registerEntityRenderingHandler(entity_gaisorg.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_gaisorg.png"));
 		
-		//45 Kirameiger
-		RenderingRegistry.registerEntityRenderingHandler(entity_bechats.class, new RenderRiderMob(new tokuMobModel("bechat_2"), 0.5F,"textures/entities/bechat_1.png"));
+		//44 Kirameiger
+		RenderingRegistry.registerEntityRenderingHandler(entity_bechats.class, new RenderRiderMob2(new tokuMobModel("bechat_2"), 0.5F,"textures/entities/bechat_1.png"));
 
 		RenderingRegistry.registerEntityRenderingHandler(entity_dark_kiramei_silver.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_dark_kiramei_silver.png"));
+
+		//45 Zenkaiger
+		RenderingRegistry.registerEntityRenderingHandler(entity_kudakks.class, new RenderRiderMob2(new tokuMobModel("kudakk_2"), 0.5F,"textures/entities/kudakk_1.png"));
+
+		RenderingRegistry.registerEntityRenderingHandler(entity_stacaesar.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_stacaesar.png"));
 		
 	}
 

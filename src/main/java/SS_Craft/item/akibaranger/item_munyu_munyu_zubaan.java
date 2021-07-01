@@ -2,6 +2,7 @@ package SS_Craft.item.akibaranger;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.abaranger.item_dino_brace;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -58,13 +59,13 @@ public class item_munyu_munyu_zubaan extends ItemSword implements IHasModel
 			{	
 				if (this==RiderItems.munyu_munyu_zubaan)
 				{
-					if (playerIn.isSneaking())
-					{
-						item_moe_moe_z_cune.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
-					}
-					else
+					if (playerIn.isSneaking()&&item_moe_moe_z_cune.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
 						item_moe_moe_z_cune.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+					}
+					else if (playerIn.isSneaking()&&item_moe_moe_z_cune.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						item_moe_moe_z_cune.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 			}

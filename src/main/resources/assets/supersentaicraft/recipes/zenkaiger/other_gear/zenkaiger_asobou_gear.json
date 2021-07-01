@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "red_gear",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_sentai_gear"
+    },
+	{
+      "item": "minecraft:dye",
+      "data": 1
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:zenkaiger_asobou_gear"
+  }
+}

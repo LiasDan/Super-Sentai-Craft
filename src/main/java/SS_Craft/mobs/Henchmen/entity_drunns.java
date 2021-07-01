@@ -5,6 +5,8 @@ import SS_Craft.mobs.Boss.EntityBossBase;
 import SS_Craft.mobs.Boss.entity_gaisorg;
 import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
@@ -15,6 +17,26 @@ public class entity_drunns extends Entity_base_henchmen
 	public entity_drunns(World par1World)
 	{
 		super(par1World);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.drunn_spear));
+		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(RiderItems.drunn_shield));
+	}
+
+	/**
+	 * Returns the item that this EntityLiving is holding, if any.
+	 */
+	@Override
+	public ItemStack getHeldItemMainhand()
+	{
+		return new ItemStack(RiderItems.drunn_spear);
+	}
+
+	/**
+	 * Returns the item that this EntityLiving is holding, if any.
+	 */
+	@Override
+	public ItemStack getHeldItemOffhand()
+	{
+		return new ItemStack(RiderItems.drunn_shield);
 	}
 
 	public void onDeath(DamageSource cause)
@@ -31,7 +53,7 @@ public class entity_drunns extends Entity_base_henchmen
 				switch (this.rand.nextInt(5))
 				{
 				case 0:
-					playerIn.sendStatusMessage(new TextComponentString(TextFormatting.LIGHT_PURPLE+"Gaisoul Change!"), true);
+					playerIn.sendStatusMessage(new TextComponentString(TextFormatting.DARK_PURPLE+"Gaisoul Change!"), true);
 					
 					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
 					world.spawnEntity(entityboss);

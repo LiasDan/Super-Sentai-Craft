@@ -475,7 +475,7 @@ public class ore_block extends Block implements IHasModel
 			}
 		}
 		
-		//42-43 Lupinranger VS Patranger
+		//42 Lupinranger VS Patranger
 		if (CRYSTAL==RiderItems.blank_striker)
 		{
 			int rand = generator.nextInt(506);
@@ -498,7 +498,7 @@ public class ore_block extends Block implements IHasModel
 			if (rand<253) return RiderItems.unfinished_lupin_magnum;
 			return CRYSTAL;
 		}
-		//44 Ryusoulger
+		//43 Ryusoulger
 		if (CRYSTAL==RiderItems.blank_ryusoul)
 		{
 			int rand = generator.nextInt(946);
@@ -550,7 +550,7 @@ public class ore_block extends Block implements IHasModel
 			
 			return CRYSTAL;
 		}
-		//45 Kirameiger
+		//44 Kirameiger
 		if (CRYSTAL==RiderItems.blue_diamond)
 		{
 			int rand = generator.nextInt(298);
@@ -564,6 +564,43 @@ public class ore_block extends Block implements IHasModel
 			if (rand<147) return RiderItems.reversia_kanaema_stone;
 			if (rand<148) return RiderItems.energia_kanaema_stone;
 			if (rand<149) return RiderItems.gold_kiramei_stone;
+			
+			return CRYSTAL;
+		}
+		//45 Zenkaiger
+		if (CRYSTAL==RiderItems.blank_sentai_gear)
+		{
+			int rand = generator.nextInt(532);
+			if (rand<25) return RiderItems.zenkaizer_gear;
+			if (rand<50) return RiderItems.zenkai_juran_gear;
+			if (rand<75) return RiderItems.zenkai_gaon_gear;
+			if (rand<100) return RiderItems.zenkai_magine_gear;
+			if (rand<125) return RiderItems.zenkai_vroon_gear;
+			if (rand<145) return RiderItems.twokaizer_gear;
+			if (rand<160) return RiderItems.twokai_cutanner_gear;
+			if (rand<175) return RiderItems.twokai_ricky_gear;
+			if (rand<185) return RiderItems.zenkai_red_gear;
+			if (rand<190) return RiderItems.kakuranger_logo;
+			if (rand<195) return RiderItems.dekaranger_badge;
+			if (rand<200) return RiderItems.kyoryuger_logo;
+			if (rand<205) return RiderItems.liveman_logo;
+			if (rand<210) return RiderItems.ohranger_logo;
+			if (rand<215) return RiderItems.timeranger_logo;
+			if (rand<220) return RiderItems.magiranger_logo;
+			if (rand<225) return RiderItems.goseiger_logo;
+			if (rand<230) return RiderItems.dynaman_logo;
+			if (rand<235) return RiderItems.changeman_logo;
+			if (rand<240) return RiderItems.fiveman_logo;
+			if (rand<245) return RiderItems.hurricaneger_logo;
+			if (rand<250) return RiderItems.ninninger_logo;
+			if (rand<255) return RiderItems.gokaiger_logo;
+			if (rand<256) return RiderItems.metallic_zenkaizer_gear;
+			if (rand<257) return RiderItems.metallic_zenkai_juran_gear;
+			if (rand<258) return RiderItems.metallic_zenkai_gaon_gear;
+			if (rand<259) return RiderItems.metallic_zenkai_magine_gear;
+			if (rand<260) return RiderItems.metallic_zenkai_vroon_gear;
+			if (rand<261) return RiderItems.metallic_twokaizer_gear;
+			if (rand<266) return RiderItems.zenkai_zyu_gear;
 			
 			return CRYSTAL;
 		}

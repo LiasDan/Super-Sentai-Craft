@@ -249,7 +249,6 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 2,true,false));
 										
-										
 										if (this.get_core(armor)==1)
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));

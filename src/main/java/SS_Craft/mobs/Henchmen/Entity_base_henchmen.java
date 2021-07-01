@@ -73,7 +73,6 @@ public class Entity_base_henchmen extends EntityZombie
 	        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
 	        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(45.0D);	        	        
 	        this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(3.0D);
-	        
 	}
 
 	

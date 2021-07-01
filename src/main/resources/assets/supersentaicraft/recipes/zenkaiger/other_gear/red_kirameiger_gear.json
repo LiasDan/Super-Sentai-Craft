@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "red_gear",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:kirameiger_gear"
+    },
+	{
+      "item": "minecraft:dye",
+      "data": 1
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:red_kirameiger_gear"
+  }
+}

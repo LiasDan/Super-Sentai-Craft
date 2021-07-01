@@ -27,6 +27,7 @@ import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
 import SS_Craft.item.toqger.item_toq_changer;
+import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.util.Refercence;
 import net.minecraft.client.Minecraft;
@@ -429,6 +430,23 @@ public class BipedLockseed extends ModelBiped
 					if (item_kiramei_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_kiramei_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
+				}
+				else if (stack.getItem() instanceof item_geartlinger)
+				{
+					String rider = ((item_geartlinger)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+					
+					if (item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="denzi_punch")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png"));
+					}
+					else if (item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
 					}
 					else
 					{

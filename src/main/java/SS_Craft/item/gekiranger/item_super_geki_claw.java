@@ -4,6 +4,7 @@ import javax.annotation.Nullable;
 
 import SS_Craft.RiderItems;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.util.IHasModel;
@@ -96,13 +97,13 @@ public class item_super_geki_claw extends ItemSword implements IHasModel
 			{	
 				if (this==RiderItems.red_super_geki_claw)
 				{
-					if (playerIn.isSneaking())
-					{
-						item_geki_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
-					}
-					else
+					if (playerIn.isSneaking()&&item_geki_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
 						item_geki_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+					}
+					else if (playerIn.isSneaking()&&item_geki_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						item_geki_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 			}
@@ -110,13 +111,13 @@ public class item_super_geki_claw extends ItemSword implements IHasModel
 			{	
 				if (this==RiderItems.yellow_super_geki_claw)
 				{
-					if (playerIn.isSneaking())
-					{
-						item_geki_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
-					}
-					else
+					if (playerIn.isSneaking()&&item_geki_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
 						item_geki_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+					}
+					else if (playerIn.isSneaking()&&item_geki_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						item_geki_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 			}
@@ -124,13 +125,13 @@ public class item_super_geki_claw extends ItemSword implements IHasModel
 			{	
 				if (this==RiderItems.blue_super_geki_claw)
 				{
-					if (playerIn.isSneaking())
-					{
-						item_geki_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
-					}
-					else
+					if (playerIn.isSneaking()&&item_geki_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
 						item_geki_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+					}
+					else if (playerIn.isSneaking()&&item_geki_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						item_geki_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 			}

@@ -15,6 +15,7 @@ import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.maskman.item_masking_brace;
+import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.Block;
@@ -130,6 +131,24 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 	 */
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
 	{
+		if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
+		{
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.lupin_x_changer)
+			{	
+				if (this==RiderItems.x_changer)
+				{
+					if (playerIn.isSneaking()&&item_vs_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
+					{
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+					}
+					else if (playerIn.isSneaking()&&item_zyuoh_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
+					}
+				}
+			}
+		}
+		
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
 		boolean flag = true;
 
