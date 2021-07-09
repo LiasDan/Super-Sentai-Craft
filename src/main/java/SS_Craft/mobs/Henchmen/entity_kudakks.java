@@ -86,23 +86,23 @@ public class entity_kudakks extends Entity_base_henchmen
 						break;
 
 					case 2:
-						this.dropItem(RiderItems.blue_diamond, 2);
+						this.dropItem(RiderItems.blank_sentai_gear, 2);
 						break;
 
 					case 3:
-						this.dropItem(RiderItems.blue_diamond, 2);
+						this.dropItem(RiderItems.blank_sentai_gear, 2);
 						break;
 
 					case 4:
-						this.dropItem(RiderItems.blue_diamond, 2);
+						this.dropItem(RiderItems.blank_sentai_gear, 2);
 						break;
 
 					case 5:
-						this.dropItem(RiderItems.blue_diamond, 2);
+						this.dropItem(RiderItems.blank_sentai_gear, 2);
 						break;
 
 					case 6:
-						this.dropItem(RiderItems.blue_diamond, 2);
+						this.dropItem(RiderItems.blank_sentai_gear, 2);
 						break;
 				}
 				break;
