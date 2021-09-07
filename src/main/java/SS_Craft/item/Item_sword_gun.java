@@ -86,17 +86,19 @@ public class Item_sword_gun extends ItemBow  implements IHasModel
 						if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_geartlinger)
 						{
 							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.twokaizer_geardalinger)
+							{
 								if (item_geartlinger.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="super")
 									return entityIn.getActiveItemStack().getItem() != stack.getItem()? 2.0F : 3.0F;
 								else
 									return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : 1.0F;
+							}
 						}
 						else
 						{
-							return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 1.0F;
+							return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : 1.0F;
 						}
 					
-						return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 1.0F;
+						return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : 1.0F;
 					}
 				}
             	else

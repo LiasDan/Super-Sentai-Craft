@@ -22,6 +22,7 @@ import SS_Craft.mobs.Henchmen.entity_buglars;
 import SS_Craft.mobs.Henchmen.entity_cotpotros;
 import SS_Craft.mobs.Henchmen.entity_crimers;
 import SS_Craft.mobs.Henchmen.entity_cutmen;
+import SS_Craft.mobs.Henchmen.entity_dorodoros;
 import SS_Craft.mobs.Henchmen.entity_drunns;
 import SS_Craft.mobs.Henchmen.entity_dustlers;
 import SS_Craft.mobs.Henchmen.entity_golems1;
@@ -55,6 +56,7 @@ import SS_Craft.mobs.Henchmen.entity_zolders;
 import SS_Craft.mobs.Henchmen.entity_zolohs;
 import SS_Craft.mobs.allies.entity_ex_aid;
 import SS_Craft.mobs.allies.entity_kyuranger;
+import SS_Craft.mobs.allies.entity_mecha_dark_gear;
 import SS_Craft.mobs.bikes.entity_garu_bike;
 import SS_Craft.mobs.mini_boss.entity_dora_sphinx;
 import SS_Craft.mobs.mini_boss.entity_pumpkin_rapper;
@@ -122,6 +124,9 @@ public class ClientProxyRider extends CommonProxyRider
 		
 		//17 Dairanger
 		RenderingRegistry.registerEntityRenderingHandler(entity_cotpotros.class, new RenderRiderMob2(new tokuMobModel("cotpotro_2"), 0.5F,"textures/entities/cotpotro_1.png"));
+
+		//18 Kakuranger
+		RenderingRegistry.registerEntityRenderingHandler(entity_dorodoros.class, new RenderRiderMob2(new tokuMobModel("dorodoro_2"), 0.5F,"textures/entities/dorodoro_1.png"));
 
 		//20 Carranger
 		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_blue.class, new RenderRiderMob2(new tokuMobModel("wumper_blue_2"), 0.5F,"textures/entities/wumper_blue_1.png"));
@@ -200,7 +205,7 @@ public class ClientProxyRider extends CommonProxyRider
 		RenderingRegistry.registerEntityRenderingHandler(entity_kudakks.class, new RenderRiderMob2(new tokuMobModel("kudakk_2"), 0.5F,"textures/entities/kudakk_1.png"));
 
 		RenderingRegistry.registerEntityRenderingHandler(entity_stacaesar.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_stacaesar.png"));
-		
+		RenderingRegistry.registerEntityRenderingHandler(entity_mecha_dark_gear.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_stacaesar.png"));
 	}
 
 	public void registerItemRender(Item item, int i, String string) {

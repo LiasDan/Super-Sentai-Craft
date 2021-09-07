@@ -162,9 +162,9 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 											if (player.isSneaking())
 											{
 												Vec3d look = player.getLookVec();
-												player.motionX=look.x*3;
+												player.motionX=look.x*5;
 												player.motionY=look.y;
-												player.motionZ=look.z*3;
+												player.motionZ=look.z*5;
 												item_morphin_brace.set_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 											}
 										}
@@ -212,9 +212,9 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 											if (player.isSneaking())
 											{
 												Vec3d look = player.getLookVec();
-												player.motionX=look.x*3;
+												player.motionX=look.x*5;
 												player.motionY=look.y;
-												player.motionZ=look.z*3;
+												player.motionZ=look.z*5;
 												item_morphin_brace.set_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 											}
 										}

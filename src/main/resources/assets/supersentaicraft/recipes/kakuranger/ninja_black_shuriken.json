@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ninja_black",
+  "pattern": [
+    " a ",
+    "aba",
+	" a "
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:kakuranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:jiraiya_medal"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:ninja_black_shuriken"
+  }
+}

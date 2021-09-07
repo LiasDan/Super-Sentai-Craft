@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ninja_yellow",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:kakuranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:seikai_medal"
+    },
+	"c": {
+      "item": "supersentaicraft:shinobi_knuckle"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:yellow_claw"
+  }
+}

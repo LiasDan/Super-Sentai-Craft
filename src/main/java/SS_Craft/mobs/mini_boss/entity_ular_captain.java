@@ -3,6 +3,8 @@ package SS_Craft.mobs.mini_boss;
 import SS_Craft.RiderItems;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
@@ -11,6 +13,7 @@ public class entity_ular_captain extends Entity_base_henchmen
 	public entity_ular_captain(World par1World)
 	{
 		super(par1World);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.bone_axe));
 	}
 	
 	protected void applyEntityAttributes()

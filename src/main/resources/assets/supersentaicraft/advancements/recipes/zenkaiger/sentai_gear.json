@@ -9,6 +9,7 @@
       "supersentaicraft:zenkaiger/sentai_gear/sun_vulcan_gear",
       "supersentaicraft:zenkaiger/sentai_gear/goggle_v_gear",
       "supersentaicraft:zenkaiger/sentai_gear/dynaman_gear",
+      "supersentaicraft:zenkaiger/sentai_gear/bioman_gear",
       "supersentaicraft:zenkaiger/sentai_gear/changeman_gear",
       "supersentaicraft:zenkaiger/sentai_gear/flashman_gear",
       "supersentaicraft:zenkaiger/sentai_gear/maskman_gear",
@@ -23,9 +24,11 @@
       "supersentaicraft:zenkaiger/sentai_gear/carranger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/megaranger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/gingaman_gear",
+      "supersentaicraft:zenkaiger/sentai_gear/gogo_v_gear",
       "supersentaicraft:zenkaiger/sentai_gear/timeranger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/gaoranger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/hurricaneger_gear",
+      "supersentaicraft:zenkaiger/sentai_gear/abaranger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/dekaranger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/magiranger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/boukenger_gear",
@@ -308,6 +311,24 @@
       "conditions": {
         "recipe": "supersentaicraft:zenkaiger/sentai_gear/kirameiger_gear"
       }
+    },
+    "has_the_recipe42": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/bioman_gear"
+      }
+    },
+    "has_the_recipe43": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/gogo_v_gear"
+      }
+    },
+    "has_the_recipe44": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/abaranger_gear"
+      }
     }
   },
   "requirements": [
@@ -354,7 +375,10 @@
       "has_the_recipe38",
       "has_the_recipe39",
       "has_the_recipe40",
-      "has_the_recipe41"
+      "has_the_recipe41",
+      "has_the_recipe42",
+      "has_the_recipe43",
+      "has_the_recipe44"
     ]
   ]
 }

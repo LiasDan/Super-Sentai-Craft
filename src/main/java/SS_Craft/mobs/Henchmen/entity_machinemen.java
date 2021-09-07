@@ -11,15 +11,7 @@ public class entity_machinemen extends Entity_base_henchmen
 	public entity_machinemen(World par1World)
 	{
 		super(par1World);
-	}
-
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemMainhand()
-	{
-		return new ItemStack(RiderItems.machinemen_knife);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.machinemen_knife));
 	}
 
 	public void onDeath(DamageSource cause)

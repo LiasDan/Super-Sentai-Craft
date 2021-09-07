@@ -21,24 +21,6 @@ public class entity_drunns extends Entity_base_henchmen
 		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(RiderItems.drunn_shield));
 	}
 
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemMainhand()
-	{
-		return new ItemStack(RiderItems.drunn_spear);
-	}
-
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemOffhand()
-	{
-		return new ItemStack(RiderItems.drunn_shield);
-	}
-
 	public void onDeath(DamageSource cause)
 	{
 		if (!this.world.isRemote){   

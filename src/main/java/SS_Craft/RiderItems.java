@@ -102,6 +102,10 @@ import SS_Craft.item.jakq.item_powered_capsule;
 import SS_Craft.item.jetman.item_cross_changer;
 import SS_Craft.item.jetman.item_jetman_armor;
 import SS_Craft.item.jetman.item_jetman_armor2;
+import SS_Craft.item.kakuranger.item_doron_changer;
+import SS_Craft.item.kakuranger.item_kakuranger_armor;
+import SS_Craft.item.kakuranger.item_kakuranger_armor2;
+import SS_Craft.item.kakuranger.item_kakure_medal;
 import SS_Craft.item.kawarimono.item_kawarimono_armor;
 import SS_Craft.item.kawarimono.item_kawarimono_armor2;
 import SS_Craft.item.kirameiger.item_kanaema_stone;
@@ -212,7 +216,15 @@ public class RiderItems
 	public static Item orgettes_club = new ItemBaseSword("orgettes_club", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	public static Item porderman_sword = new ItemBaseSword("porderman_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	
+	public static Item cutmen_sword = new ItemBaseSword("cutmen_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item jakotsuken = new ItemBaseSword("jakotsuken", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item bone_axe = new ItemBaseSword("bone_axe", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item imps_sword = new ItemBaseSword("imps_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item karths_sickle = new ItemBaseSword("karths_sickle", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item buglars_katar = new ItemBaseSword("buglars_katar", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	
 	public static Item mechaclones_sword = new ItemBaseSword("mechaclones_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item dorodoros_sword = new ItemBaseSword("dorodoros_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	public static Item plug_lancer = new ItemBaseSword("plug_lancer", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	
 	//Misc Items
@@ -589,7 +601,7 @@ public class RiderItems
 	//12 Choujuu Sentai Liveman
 	public static Item liveman_logo = new Item_ore("liveman_logo").setCreativeTab(Tabs.tabMisc);
 	
-	public static Item falcon_saber = new Item_gun("falcon_saber",Tabs.gun,RiderItems.liveman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item falcon_saber = new ItemBaseSword("falcon_saber",Tabs.gun,RiderItems.liveman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	
 	//13 Kousoku Sentai Turboranger
 	public static Item turboranger_logo = new item_fairy_power(1, "turboranger_logo").setCreativeTab(Tabs.tabTurboranger);
@@ -743,7 +755,48 @@ public class RiderItems
 	public static Item byakkoshinken = new ItemBaseSword("byakkoshinken",Tabs.sword,RiderItems.dairanger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabDairanger);
 	
 	//18 Ninja Sentai Kakuranger
-	public static Item kakuranger_logo = new Item_ore("kakuranger_logo").setCreativeTab(Tabs.tabMisc);
+	public static Item kakuranger_logo = new Item_ore("kakuranger_logo").setCreativeTab(Tabs.tabKakuranger);
+	
+	public static Item kakuranger_head = new item_kakuranger_armor("kakuranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item kakuranger_torso = new item_kakuranger_armor2("kakuranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item kakuranger_legs = new item_kakuranger_armor2("kakuranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+
+	public static Item red_doron_changer = new item_doron_changer("red_doron_changer", ArmorMaterial.DIAMOND, 4, "ninja_red").setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item white_doron_changer = new item_doron_changer("white_doron_changer", ArmorMaterial.DIAMOND, 4, "ninja_white").setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item yellow_doron_changer = new item_doron_changer("yellow_doron_changer", ArmorMaterial.DIAMOND, 4, "ninja_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item blue_doron_changer = new item_doron_changer("blue_doron_changer", ArmorMaterial.DIAMOND, 4, "ninja_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item black_doron_changer = new item_doron_changer("black_doron_changer", ArmorMaterial.DIAMOND, 4, "ninja_black").setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item ninjaman_urn = new item_doron_changer("ninjaman_urn", ArmorMaterial.DIAMOND, 4, "ninja_man").setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	
+	public static Item sasuke_medal = new Item_ore("sasuke_medal").setCreativeTab(Tabs.tabKakuranger);
+	public static Item tsuruhime_medal = new Item_ore("tsuruhime_medal").setCreativeTab(Tabs.tabKakuranger);
+	public static Item seikai_medal = new Item_ore("seikai_medal").setCreativeTab(Tabs.tabKakuranger);
+	public static Item saizou_medal = new Item_ore("saizou_medal").setCreativeTab(Tabs.tabKakuranger);
+	public static Item jiraiya_medal = new Item_ore("jiraiya_medal").setCreativeTab(Tabs.tabKakuranger);
+	public static Item ninjaman_medal = new item_kakure_medal(1,"ninjaman_medal").setCreativeTab(Tabs.tabKakuranger);
+	
+	public static Item ninja_red_belt = new Item_ore("ninja_red_belt");
+	public static Item ninja_white_belt = new Item_ore("ninja_white_belt");
+	public static Item ninja_yellow_belt = new Item_ore("ninja_yellow_belt");
+	public static Item ninja_blue_belt = new Item_ore("ninja_blue_belt");
+	public static Item ninja_black_belt = new Item_ore("ninja_black_belt");
+	
+	public static Item kakuremaru = new ItemBaseSword("kakuremaru", Tabs.sword,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item kaku_laser = new Item_sword_gun("kaku_laser", Tabs.sword_gun,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item ninja_red_shuriken = new ItemBaseSword("ninja_red_shuriken", Tabs.throwable,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item ninja_white_shuriken = new ItemBaseSword("ninja_white_shuriken", Tabs.throwable,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item ninja_yellow_shuriken = new ItemBaseSword("ninja_yellow_shuriken", Tabs.throwable,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item ninja_blue_shuriken = new ItemBaseSword("ninja_blue_shuriken", Tabs.throwable,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item ninja_black_shuriken = new ItemBaseSword("ninja_black_shuriken", Tabs.throwable,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item shinobi_knuckle = new ItemBaseSword("shinobi_knuckle", Tabs.tonfa,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item red_slicer = new ItemBaseSword("red_slicer", Tabs.throwable,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item white_beak = new ItemBaseSword("white_beak", Tabs.sword,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item yellow_claw = new ItemBaseSword("yellow_claw", Tabs.sword,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item blue_shot = new Item_gun("blue_shot", Tabs.gun,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item black_bow = new Item_gun("black_bow", Tabs.bow,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item hikarimaru = new ItemBaseSword("hikarimaru", Tabs.super_sword,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item ninja_sword = new ItemBaseSword("ninja_sword", Tabs.sword,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item samurai_javelin = new ItemBaseSword("samurai_javelin", Tabs.rod,RiderItems.kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
 	
 	//19 Chouriki Sentai Ohranger
 	public static Item ohranger_logo = new Item_ore("ohranger_logo").setCreativeTab(Tabs.tabMisc);
@@ -1089,6 +1142,8 @@ public class RiderItems
 	
 	//29 Mahou Sentai Magiranger
 	public static Item magiranger_logo = new Item_ore("magiranger_logo").setCreativeTab(Tabs.tabMisc);
+	
+	public static Item magi_king_wings = new Item_ore("magi_king_wings");
 	
 	//30 GoGo Sentai Boukenger
 	public static Item boukenger_logo = new Item_ore("boukenger_logo").setCreativeTab(Tabs.tabBoukenger);
@@ -1833,6 +1888,7 @@ public class RiderItems
 	public static Item twokaizer_geardalinger = new item_geartlinger("twokaizer_geardalinger", ArmorMaterial.DIAMOND, 4, "twokaizer", "base").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
 	public static Item stacaeser_geartozinger = new item_geartlinger("stacaeser_geartozinger", ArmorMaterial.DIAMOND, 4, "stacaesar").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
 	public static Item red_geartlinger = new item_geartlinger("red_geartlinger", ArmorMaterial.DIAMOND, 4, "zenkai_red").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
+	public static Item mecha_dark_gear = new item_geartlinger("mecha_dark_gear", ArmorMaterial.DIAMOND, 4, "mecha").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
 	
 	public static Item zenkaizer_belt = new Item_ore("zenkaizer_belt");
 	public static Item twokaizer_belt = new Item_ore("twokaizer_belt");
@@ -1859,7 +1915,7 @@ public class RiderItems
 	public static Item sun_vulcan_gear = new item_sentai_gear(5, "sun_vulcan_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item goggle_v_gear = new item_sentai_gear(6, "goggle_v_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item dynaman_gear = new item_sentai_gear(7, "dynaman_gear").setCreativeTab(Tabs.tabZenkaiger);
-//	public static Item bioman_gear = new item_sentai_gear(8, "bioman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item bioman_gear = new item_sentai_gear(8, "bioman_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item changeman_gear = new item_sentai_gear(9, "changeman_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item flashman_gear = new item_sentai_gear(10, "flashman_gear").setCreativeTab(Tabs.tabZenkaiger);
 
@@ -1876,11 +1932,11 @@ public class RiderItems
 
 	public static Item megaranger_gear = new item_sentai_gear(21, "megaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item gingaman_gear = new item_sentai_gear(22, "gingaman_gear").setCreativeTab(Tabs.tabZenkaiger);
-//	public static Item gogo_v_gear = new item_sentai_gear(23, "gogo_v_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item gogo_v_gear = new item_sentai_gear(23, "gogo_v_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item timeranger_gear = new item_sentai_gear(24, "timeranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item gaoranger_gear = new item_sentai_gear(25, "gaoranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item hurricaneger_gear = new item_sentai_gear(26, "hurricaneger_gear").setCreativeTab(Tabs.tabZenkaiger);
-//	public static Item abaranger_gear = new item_sentai_gear(27, "abaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item abaranger_gear = new item_sentai_gear(27, "abaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item dekaranger_gear = new item_sentai_gear(28, "dekaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item magiranger_gear = new item_sentai_gear(29, "magiranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item boukenger_gear = new item_sentai_gear(30, "boukenger_gear").setCreativeTab(Tabs.tabZenkaiger);
@@ -1904,17 +1960,102 @@ public class RiderItems
 	
 	public static Item dark_goranger_gear = new item_dark_gear(1, "dark_goranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item dark_jakq_gear = new item_dark_gear(2, "dark_jakq_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_battle_fever_gear = new item_dark_gear(3, "dark_battle_fever_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_denziman_gear = new item_dark_gear(4, "dark_denziman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_sun_vulcan_gear = new item_dark_gear(5, "dark_sun_vulcan_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_goggle_v_gear = new item_dark_gear(6, "dark_goggle_v_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_dynaman_gear = new item_dark_gear(7, "dark_dynaman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_bioman_gear = new item_dark_gear(8, "dark_bioman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_changeman_gear = new item_dark_gear(9, "dark_changeman_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item dark_flashman_gear = new item_dark_gear(10, "dark_flashman_gear").setCreativeTab(Tabs.tabZenkaiger);
+
 	public static Item dark_maskman_gear = new item_dark_gear(11, "dark_maskman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_liveman_gear = new item_dark_gear(12, "dark_liveman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_turboranger_gear = new item_dark_gear(13, "dark_turboranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item dark_fiveman_gear = new item_dark_gear(14, "dark_fiveman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_jetman_gear = new item_dark_gear(15, "dark_jetman_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item dark_zyuranger_gear = new item_dark_gear(16, "dark_zyuranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_dairanger_gear = new item_dark_gear(17, "dark_dairanger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_kakuranger_gear = new item_dark_gear(18, "dark_kakuranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_ohranger_gear = new item_dark_gear(19, "dark_ohranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_carranger_gear = new item_dark_gear(20, "dark_carranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+
+	public static Item dark_megaranger_gear = new item_dark_gear(21, "dark_megaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_gingaman_gear = new item_dark_gear(22, "dark_gingaman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_gogo_v_gear = new item_dark_gear(23, "dark_gogo_v_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_timeranger_gear = new item_dark_gear(24, "dark_timeranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item dark_gaoranger_gear = new item_dark_gear(25, "dark_gaoranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_hurricaneger_gear = new item_dark_gear(26, "dark_hurricaneger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_abaranger_gear = new item_dark_gear(27, "dark_abaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_dekaranger_gear = new item_dark_gear(28, "dark_dekaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item dark_magiranger_gear = new item_dark_gear(29, "dark_magiranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item dark_boukenger_gear = new item_dark_gear(30, "dark_boukenger_gear").setCreativeTab(Tabs.tabZenkaiger);
+
+	public static Item dark_gekiranger_gear = new item_dark_gear(31, "dark_gekiranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_go_onger_gear = new item_dark_gear(32, "dark_go_onger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_shinkenger_gear = new item_dark_gear(33, "dark_shinkenger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_goseiger_gear = new item_dark_gear(34, "dark_goseiger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_gokaiger_gear = new item_dark_gear(35, "dark_gokaiger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_go_busters_gear = new item_dark_gear(36, "dark_go_busters_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_kyoryuger_gear = new item_dark_gear(37, "dark_kyoryuger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_toqger_gear = new item_dark_gear(38, "dark_toqger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_ninninger_gear = new item_dark_gear(39, "dark_ninninger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_zyuohger_gear = new item_dark_gear(40, "dark_zyuohger_gear").setCreativeTab(Tabs.tabZenkaiger);
+
+	public static Item dark_kyuranger_gear = new item_dark_gear(41, "dark_kyuranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_lupinranger_gear = new item_dark_gear(42, "dark_lupinranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_patranger_gear = new item_dark_gear(43, "dark_patranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_ryusoulger_gear = new item_dark_gear(44, "dark_ryusoulger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item dark_kirameiger_gear = new item_dark_gear(45, "dark_kirameiger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	
 	public static Item red_goranger_gear = new item_sentai_gear(1, "red_goranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_jakq_gear = new item_sentai_gear(2, "red_jakq_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_battle_fever_gear = new item_sentai_gear(3, "red_battle_fever_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_denziman_gear = new item_sentai_gear(4, "red_denziman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_sun_vulcan_gear = new item_sentai_gear(5, "red_sun_vulcan_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_goggle_v_gear = new item_sentai_gear(6, "red_goggle_v_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_dynaman_gear = new item_sentai_gear(7, "red_dynaman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_bioman_gear = new item_sentai_gear(8, "red_bioman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_changeman_gear = new item_sentai_gear(9, "red_changeman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_flashman_gear = new item_sentai_gear(10, "red_flashman_gear").setCreativeTab(Tabs.tabZenkaiger);
+
+	public static Item red_maskman_gear = new item_sentai_gear(11, "red_maskman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_liveman_gear = new item_sentai_gear(12, "red_liveman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_turboranger_gear = new item_sentai_gear(13, "red_turboranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_fiveman_gear = new item_sentai_gear(14, "red_fiveman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_jetman_gear = new item_sentai_gear(15, "red_jetman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_zyuranger_gear = new item_sentai_gear(16, "red_zyuranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_dairanger_gear = new item_sentai_gear(17, "red_dairanger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_kakuranger_gear = new item_sentai_gear(18, "red_kakuranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_ohranger_gear = new item_sentai_gear(19, "red_ohranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_carranger_gear = new item_sentai_gear(20, "red_carranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+
+	public static Item red_megaranger_gear = new item_sentai_gear(21, "red_megaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_gingaman_gear = new item_sentai_gear(22, "red_gingaman_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_gogo_v_gear = new item_sentai_gear(23, "red_gogo_v_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_timeranger_gear = new item_sentai_gear(24, "red_timeranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_gaoranger_gear = new item_sentai_gear(25, "red_gaoranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_hurricaneger_gear = new item_sentai_gear(26, "red_hurricaneger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_abaranger_gear = new item_sentai_gear(27, "red_abaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_dekaranger_gear = new item_sentai_gear(28, "red_dekaranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_magiranger_gear = new item_sentai_gear(29, "red_magiranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_boukenger_gear = new item_sentai_gear(30, "red_boukenger_gear").setCreativeTab(Tabs.tabZenkaiger);
+
+	public static Item red_gekiranger_gear = new item_sentai_gear(31, "red_gekiranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_go_onger_gear = new item_sentai_gear(32, "red_go_onger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_shinkenger_gear = new item_sentai_gear(33, "red_shinkenger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_goseiger_gear = new item_sentai_gear(34, "red_goseiger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_gokaiger_gear = new item_sentai_gear(35, "red_gokaiger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_go_busters_gear = new item_sentai_gear(36, "red_go_busters_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_kyoryuger_gear = new item_sentai_gear(37, "red_kyoryuger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_toqger_gear = new item_sentai_gear(38, "red_toqger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_ninninger_gear = new item_sentai_gear(39, "red_ninninger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_zyuohger_gear = new item_sentai_gear(40, "red_zyuohger_gear").setCreativeTab(Tabs.tabZenkaiger);
+
+	public static Item red_kyuranger_gear = new item_sentai_gear(41, "red_kyuranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item red_lupinranger_gear = new item_sentai_gear(42, "red_lupinranger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item red_patranger_gear = new item_sentai_gear(42, "red_patranger_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item red_ryusoulger_gear = new item_sentai_gear(43, "red_ryusoulger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item red_kirameiger_gear = new item_sentai_gear(44, "red_kirameiger_gear").setCreativeTab(Tabs.tabZenkaiger);
 	
 	public static Item metallic_zenkaizer_gear = new Item_ore("metallic_zenkaizer_gear").setCreativeTab(Tabs.tabZenkaiger);
@@ -1928,12 +2069,12 @@ public class RiderItems
 	public static Item zenkaiger_asobou_gear = new Item_ore("zenkaiger_asobou_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Item super_hero_time_gear = new Item_ore("super_hero_time_gear").setCreativeTab(Tabs.tabZenkaiger);
 	
-	public static Item zi_o_gear = new Item_ore("zi_o_gear").setCreativeTab(Tabs.tabZenkaiger);
-	public static Item zero_one_gear = new Item_ore("zero_one_gear").setCreativeTab(Tabs.tabZenkaiger);
-	public static Item saber_gear = new Item_ore("saber_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item zi_o_gear = new item_sentai_gear(0, "zi_o_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item zero_one_gear = new item_sentai_gear(0, "zero_one_gear").setCreativeTab(Tabs.tabZenkaiger);
+	public static Item saber_gear = new item_sentai_gear(0, "saber_gear").setCreativeTab(Tabs.tabZenkaiger);
 	
 	public static Item geartlinger = new Item_gun("geartlinger", Tabs.gun,RiderItems.blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
-	public static Item geardalinger = new Item_sword_gun("geardalinger", Tabs.gun,RiderItems.blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
+	public static Item geardalinger = new Item_sword_gun("geardalinger", Tabs.sword_gun,RiderItems.blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
 	public static Item geartozinger = new Item_gun("geartozinger", Tabs.gun,RiderItems.blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
 	
 	public static Item juran_sword = new ItemBaseSword("juran_sword",Tabs.sword,RiderItems.blank_sentai_gear).setCreativeTab(Tabs.tabZenkaiger);
@@ -1942,7 +2083,7 @@ public class RiderItems
 	public static Item magine_stick = new ItemBaseSword("magine_stick",Tabs.rod,RiderItems.blank_sentai_gear).setCreativeTab(Tabs.tabZenkaiger);
 	public static Item vroon_picker = new ItemBaseSword("vroon_picker",Tabs.axe,RiderItems.blank_sentai_gear).setCreativeTab(Tabs.tabZenkaiger);
 	
-	public static Item tail_drill = new ItemBaseSword("tail_drill",Tabs.mecha_sword,RiderItems.blank_sentai_gear).setCreativeTab(Tabs.tabZenkaiger);
+	public static Item tail_drill = new ItemBaseSword("tail_drill",Tabs.super_sword,RiderItems.blank_sentai_gear).setCreativeTab(Tabs.tabZenkaiger);
 	
 	public static Item white_ribbon = new ItemBaseSword("white_ribbon",Tabs.whip,RiderItems.goggle_v_logo).setCreativeTab(Tabs.tabZenkaiger);
 

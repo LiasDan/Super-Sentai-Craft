@@ -14,15 +14,6 @@ public class entity_crimers extends Entity_base_henchmen
 		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.crimers_sword));
 	}
 
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemMainhand()
-	{
-		return new ItemStack(RiderItems.crimers_sword);
-	}
-
 	public void onDeath(DamageSource cause)
 	{
 		if (!this.world.isRemote){   

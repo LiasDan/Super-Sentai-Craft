@@ -11,15 +11,7 @@ public class entity_unglers extends Entity_base_henchmen
 	public entity_unglers(World par1World)
 	{
 		super(par1World);
-	}
-
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemMainhand()
-	{
-		return new ItemStack(RiderItems.ungler_lance);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.ungler_lance));
 	}
 
 	public void onDeath(DamageSource cause)

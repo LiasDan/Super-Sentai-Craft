@@ -29,8 +29,11 @@ public class item_zenkaiger_armor2 extends ItemArmor  implements IHasModel
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
-	public static final String[] Zenkaiger= new String[] {"","_normal"};
-	public static final String[] Zenkaizer= new String[] {"","_super"};
+	public static final String[] Zenkaiger= new String[] {"","_normal","_jetman"};
+	public static final String[] Zenkaizer= new String[] {"","_super","_jetman"};
+	public static final String[] Twokaizer= new String[] {"","_jetman"};
+	public static final String[] Mecha= new String[] {"akaranger","spade_ace","battle_fever_robo","dai_denzin","sun_vulcan_robo","goggle_robo","dyna_robo","bio_robo","change_robo","flash_king","great_five","live_robo","turbo_robo","five_robo","jet_icarus","dai_zyujin","ryusei_oh","muteki_shogun","ohranger_robo","rv_robo","galaxy_mega","gingai_oh","victory_robo","time_robo_alpha","gao_king","senpuu_jin","abaren_oh","dekaranger_robo","magi_king","dai_bouken","geki_tohja","engine_oh","shinken_oh","gosei_great","gokai_oh","go_buster_oh","kyoryu_zin","toq_oh","shuriken_jin","zyuoh_king","kyuren_oh","lupin_kaiser","pat_kaiser","kishiryu_oh","kiramei_zin"};
+												   //{1      ,2      ,3                  ,4           ,5                ,6            ,7          ,8         ,9            ,10          ,11          ,12         ,13          ,14         ,15          ,16          ,17         ,18             ,19             ,20       ,21           ,22         ,23            ,24               ,25        ,26          ,27         ,28               ,29         ,30          ,31          ,32         ,33          ,34           ,35        ,36            ,37          ,38      ,39            ,40          ,41         ,42            ,43          ,44           ,45           };
 
 	public item_zenkaiger_armor2 (String name,ArmorMaterial par2EnumArmorMaterial, int par3, EntityEquipmentSlot par4)
 	{
@@ -69,6 +72,17 @@ public class item_zenkaiger_armor2 extends ItemArmor  implements IHasModel
 							return Refercence.MODID+":textures/armor/"+rider+Zenkaizer[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_1.png";
 						}
 					}
+					else if (rider == "twokaizer")
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+Twokaizer[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+rider+Twokaizer[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_1.png";
+						}
+					}
 					else if (rider == "zenkai_juran" || rider == "zenkai_gaon" || rider == "zenkai_magine" || rider == "zenkai_vroon")
 					{
 						if ( slot == EntityEquipmentSlot.LEGS)
@@ -78,6 +92,17 @@ public class item_zenkaiger_armor2 extends ItemArmor  implements IHasModel
 						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
 						{
 							return Refercence.MODID+":textures/armor/"+rider+Zenkaiger[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_1.png";
+						}
+					}
+					else if (rider == "mecha")
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/mecha/"+Mecha[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/mecha/"+Mecha[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_1.png";
 						}
 					}
 					else

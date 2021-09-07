@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kakuranger",
+  "pattern": [
+    "a a",
+    "aaa",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:kakuranger_logo"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:kakuranger_torso"
+  }
+}

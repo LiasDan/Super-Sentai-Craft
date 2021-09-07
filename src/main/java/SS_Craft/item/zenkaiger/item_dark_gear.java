@@ -13,6 +13,7 @@ import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
 import SS_Craft.mobs.allies.entity_ex_aid;
 import SS_Craft.mobs.allies.entity_kyuranger;
+import SS_Craft.mobs.allies.entity_mecha_dark_gear;
 import SS_Craft.mobs.bikes.EntityBikeBase;
 import SS_Craft.mobs.bikes.entity_garu_bike;
 import SS_Craft.mobs.mini_boss.entity_ular_captain;
@@ -97,185 +98,14 @@ public class item_dark_gear extends Item implements IHasModel
 			{
 				if ((this.get_ammo(par1ItemStack)==100))
 				{
-					if (num == 1) //Goranger
+					if (num != 0)
 					{
+						entity_mecha_dark_gear mecha  = new entity_mecha_dark_gear(worldIn);
+						mecha.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
+						item_geartlinger.set_core(mecha.getItemStackFromSlot(EntityEquipmentSlot.FEET), num-1);
+						worldIn.spawnEntity(mecha);
 						
-					}
-					if (num == 2) //J.A.K.Q.
-					{
-						
-					}
-					if (num == 3)//Battle Fever
-					{
-						
-					}
-					if (num == 4)//Denziman
-					{
-						
-					}
-					if (num == 5)//Sun Vulcan
-					{
-						
-					}
-					if (num == 6)//GoGo-V
-					{
-						
-					}
-					if (num == 7)//Dynaman
-					{
-						
-					}
-					if (num == 8)//Bioman
-					{
-						
-					}
-					if (num == 9)//Changeman
-					{
-						
-					}
-					if (num == 10)//Flashman
-					{
-						
-					}
-					if (num == 11)//Maskman
-					{
-						
-					}
-					if (num == 12)//Liveman
-					{
-						
-					}
-					if (num == 13)//Turboranger
-					{
-						
-					}
-					if (num == 14)//Fiveman
-					{
-						
-					}
-					if (num == 15)//Jetman
-					{
-						
-					}
-					if (num == 16)//Zyuranger
-					{
-						
-					}
-					if (num == 17)//Dairanger
-					{
-						
-					}
-					if (num == 18)//Kakuranger
-					{
-						
-					}
-					if (num == 19)//Ohranger
-					{
-						
-					}
-					if (num == 20)//Carranger
-					{
-						
-					}
-					if (num == 21)//Megaranger
-					{
-						
-					}
-					if (num == 22)//Gingaman
-					{
-						
-					}
-					if (num == 23)//GoGo-V
-					{
-						
-					}
-					if (num == 24)//Timeranger
-					{
-						
-					}
-					if (num == 25)//Gaoranger
-					{
-						
-					}
-					if (num == 26)//Hurricaneger
-					{
-						
-					}
-					if (num == 27)//Abaranger
-					{
-						
-					}
-					if (num == 28)//Dekaranger
-					{
-						
-					}
-					if (num == 29)//Magiranger
-					{
-						
-					}
-					if (num == 30)//Boukenger
-					{
-						
-					}
-					if (num == 31)//Gekiranger
-					{
-						
-					}
-					if (num == 32)//Go-Onger
-					{
-						
-					}
-					if (num == 33)//Shinkenger
-					{
-						
-					}
-					if (num == 34)//Goseiger
-					{
-						
-					}
-					if (num == 35)//Gokaiger
-					{
-						
-					}
-					if (num == 36)//Go-Busters
-					{
-						
-					}
-					if (num == 37)//Kyoryuger
-					{
-						
-					}
-					if (num == 38)//Toqger
-					{
-						
-					}
-					if (num == 39)//Ninninger
-					{
-						
-					}
-					if (num == 40)//Zyuohger
-					{
-						
-					}
-					if (num == 41)//Kyuranger
-					{
-						
-					}
-					if (num == 42)//Lupinranger & Patranger
-					{
-						
-					}
-					if (num == 43)//Ryusoulger
-					{
-						
-					}
-					if (num == 44)//Kirameiger
-					{
-						
-					}
-					if (num == 45)//Zenkaiger
-					{
-						
+						playerIn.getHeldItem(handIn).shrink(1);
 					}
 				}
 				this.set_ammo(playerIn.getHeldItem(handIn),0);

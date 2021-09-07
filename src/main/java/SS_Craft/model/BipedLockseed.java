@@ -29,6 +29,7 @@ import SS_Craft.item.shinkenger.item_shodophone;
 import SS_Craft.item.toqger.item_toq_changer;
 import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.item.zyuranger.item_dino_buckler;
+import SS_Craft.potion.PotionCore;
 import SS_Craft.util.Refercence;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
@@ -104,8 +105,26 @@ public class BipedLockseed extends ModelBiped
 		
 		this.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 
+		float height=1;
+		float height2=0;
+		
+		if (entity instanceof EntityPlayer)
+		{
+			EntityPlayer player =((EntityPlayer) entity);
+			
+			if(player.isPotionActive(PotionCore.SS_BIG))
+			{
+				height=2.5f;		
+			}
+			if (height!=1)
+			{
+				height2=-0.99f;
+			}
+		}	
+		
+
 		GL11.glPushMatrix();
-		GL11.glScalef(1.1F, 1.1F, 1.1F);
+		GL11.glScalef(1.1F*height, 1.1F*height, 1.1F*height);
 
 
 
@@ -113,17 +132,19 @@ public class BipedLockseed extends ModelBiped
 			GL11.glTranslatef(0, 0.2F, 0);
 
 		}else {
-			GL11.glTranslatef(0, -0.02F, 0);
+			GL11.glTranslatef(0, -0.02F+(height/25), 0);
 
 
 		}
+		GL11.glTranslatef(0,height2,0);
+		
 		this.bipedRightArm2.offsetX=-0.02f;
 		this.bipedRightArm2.render(f5);
 		GL11.glPopMatrix();
 
 
 		GL11.glPushMatrix();
-		GL11.glScalef(1F, 1F, 1F);
+		GL11.glScalef(1F*height, 1F*height, 1F*height);
 
 
 		if (entity.isSneaking()){
@@ -134,6 +155,7 @@ public class BipedLockseed extends ModelBiped
 
 
 		}
+		GL11.glTranslatef(0,height2,0);
 
 
 		this.bipedRightLeg2.offsetX=-0.045f;
@@ -147,12 +169,13 @@ public class BipedLockseed extends ModelBiped
 
 
 		GL11.glPushMatrix();
-		GL11.glScalef(0.99F, 0.99F, 0.99F);
+		GL11.glScalef(0.99F*height, 0.99F*height, 0.99F*height);
 		if(entity.isSneaking()){
 			GL11.glTranslatef(0, 0.17F, -0.02f);
 		}else{
 			GL11.glTranslatef(0, -0F, 0);
 		}
+		GL11.glTranslatef(0,height2-(height2/10),0);
 		this.bipedHead2.render(f5);
 		this.bipedHeadwear2.render(f5);
 
@@ -160,7 +183,7 @@ public class BipedLockseed extends ModelBiped
 		GL11.glPopMatrix();
 
 		GL11.glPushMatrix();
-		GL11.glScalef(1F, 1F, 1F);
+		GL11.glScalef(1F*height, 1F*height, 1F*height);
 		GL11.glTranslatef(0, 0.05F, 0);
 
 
@@ -174,6 +197,7 @@ public class BipedLockseed extends ModelBiped
 
 
 		}
+		GL11.glTranslatef(0,height2,0);
 
 		this.bipedBody3.render(f5);
 
@@ -183,7 +207,7 @@ public class BipedLockseed extends ModelBiped
 		GL11.glPushMatrix();
 
 
-		GL11.glScalef(1F, 1F, 1F);
+		GL11.glScalef(1F*height, 1F*height, 1F*height);
 
 		if(entity.isSneaking()){
 			this.bipedBody2.offsetZ=-0.0f;
@@ -192,6 +216,8 @@ public class BipedLockseed extends ModelBiped
 			this.bipedBody2.offsetZ=0.00025f;
 			this.bipedBody2.offsetY=0.05f;
 		}
+		GL11.glTranslatef(0,height2,0);
+		
 		this.bipedBody2.render(f5);
 
 		GL11.glPopMatrix();
@@ -200,7 +226,7 @@ public class BipedLockseed extends ModelBiped
 
 		GL11.glPopMatrix();
 		GL11.glPushMatrix();
-		GL11.glScalef(1.1F, 1.1F, 1.1F);
+		GL11.glScalef(1.1F*height, 1.1F*height, 1.1F*height);
 
 
 
@@ -212,6 +238,7 @@ public class BipedLockseed extends ModelBiped
 
 
 		}
+		GL11.glTranslatef(0,height2,0);
 
 		if (entity instanceof  EntityLivingBase)
 		{
@@ -350,13 +377,13 @@ public class BipedLockseed extends ModelBiped
 				}
 				else if (stack.getItem() instanceof item_toq_changer)
 				{
-					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_toq_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_toq_changer.get_lock(stack)+"_2.png"));
 				}
 				else if (stack.getItem() instanceof item_seiza_blaster)
 				{
-					if (item_seiza_blaster.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kyu_pegasus")
+					if (item_seiza_blaster.get_lock(stack)=="kyu_pegasus")
 					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_seiza_blaster.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_seiza_blaster.get_lock(stack)+"_2.png"));
 					}
 					else
 					{
@@ -367,26 +394,26 @@ public class BipedLockseed extends ModelBiped
 				{
 					String rider = ((item_vs_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 					
-					if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
+					if (item_vs_changer.get_lock(stack)=="victory")
 					{
 						if (rider == "lupin_x")
 						{
-							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/patran_x_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/patran_x_"+item_vs_changer.get_lock(stack)+"_2.png"));
 						}
 						else
 						{
-							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_vs_changer.get_lock(stack)+"_2.png"));
 						}
 					}
-					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="pat_siren")
+					else if (item_vs_changer.get_lock(stack)=="pat_siren")
 					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_vs_changer.get_lock(stack)+"_2.png"));
 					}
-					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_tricolor" || item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="patran_ugou" || item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_scissor")
+					else if (item_vs_changer.get_lock(stack)=="lupin_tricolor" || item_vs_changer.get_lock(stack)=="patran_ugou" || item_vs_changer.get_lock(stack)=="lupin_scissor")
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 					}
-					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank" || item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="blank")
+					else if (item_vs_changer.get_lock(stack)!="blank" || item_vs_changer.get_lock(stack)=="blank")
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 					}
@@ -401,19 +428,19 @@ public class BipedLockseed extends ModelBiped
 					}
 					else
 					{
-						if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
+						if (item_ryusoul_changer.get_soul(stack)=="victory")
 						{
-							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_ryusoul_changer.get_soul(stack)+"_2.png"));
 						}
-						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="pat_siren")
+						else if (item_ryusoul_changer.get_soul(stack)=="pat_siren")
 						{
-							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(stack)+"_2.png"));
 						}
-						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						else if (item_ryusoul_changer.get_soul(stack)!="blank")
 						{
-							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(stack)+"_2.png"));
 						}
-						else if (item_ryusoul_changer.get_vs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_scissor")
+						else if (item_ryusoul_changer.get_vs(stack)=="lupin_scissor")
 						{
 							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 						}
@@ -427,9 +454,9 @@ public class BipedLockseed extends ModelBiped
 				{
 					String rider = ((item_kiramei_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 					
-					if (item_kiramei_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					if (item_kiramei_changer.get_lock(stack)!="blank")
 					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_kiramei_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_kiramei_changer.get_lock(stack)+"_2.png"));
 					}
 					else
 					{
@@ -440,13 +467,13 @@ public class BipedLockseed extends ModelBiped
 				{
 					String rider = ((item_geartlinger)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
 					
-					if (item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="denzi_punch")
+					if (item_geartlinger.get_lock(stack)=="denzi_punch")
 					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png"));
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_geartlinger.get_lock(stack)+".png"));
 					}
-					else if (item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					else if (item_geartlinger.get_lock(stack)!="blank")
 					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_geartlinger.get_lock(stack)+"_2.png"));
 					}
 					else
 					{
@@ -462,7 +489,7 @@ public class BipedLockseed extends ModelBiped
 
 		GL11.glPopMatrix();
 		GL11.glPushMatrix();
-		GL11.glScalef(1F, 1F, 1F);
+		GL11.glScalef(1F*height, 1F*height, 1F*height);
 
 
 		if (entity.isSneaking()){
@@ -473,6 +500,7 @@ public class BipedLockseed extends ModelBiped
 
 
 		}
+		GL11.glTranslatef(0,height2,0);
 
 		this.bipedLeftLeg2.offsetX=0.045f;
 

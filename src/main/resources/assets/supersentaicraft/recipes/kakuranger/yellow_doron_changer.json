@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ninja_yellow",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:kakuranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:seikai_medal"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:yellow_doron_changer"
+  }
+}

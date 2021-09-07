@@ -98,6 +98,23 @@ public class item_sentai_gear extends Item implements IHasModel
 			{
 				if ((this.get_ammo(par1ItemStack)==100))
 				{
+					if (num == 0)
+					{
+						if (this == RiderItems.saber_gear)
+						{
+							playerIn.dropItem(Item.getByNameOrId("kamenridercraft4th:kaenken_rekka"), 1);
+							playerIn.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_SLASH, 1000, 2,true,false));
+						}
+						if (this == RiderItems.zero_one_gear)
+						{
+							playerIn.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 1000, 4,true,false));
+						}
+						if (this == RiderItems.zi_o_gear)
+						{
+							playerIn.addPotionEffect(new PotionEffect(MobEffects.SPEED, 1000, 4,true,false));
+							playerIn.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 1000, 2,true,false));
+						}
+					}
 					if (num == 1) //Goranger
 					{
 						playerIn.dropItem(Items.SNOWBALL, 16);
@@ -119,7 +136,7 @@ public class item_sentai_gear extends Item implements IHasModel
 					}
 					if (num == 5)//Sun Vulcan
 					{
-						
+						playerIn.dropItem(Items.SNOWBALL, 16);
 					}
 					if (num == 6)//GoGo-V
 					{
@@ -150,7 +167,7 @@ public class item_sentai_gear extends Item implements IHasModel
 					}
 					if (num == 8)//Bioman
 					{
-						
+						playerIn.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST, 1000, 2,true,false));
 					}
 					if (num == 9)//Changeman
 					{
@@ -179,7 +196,20 @@ public class item_sentai_gear extends Item implements IHasModel
 					}
 					if (num == 15)//Jetman
 					{
-						
+						if (item_geartlinger.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0 && playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.twokaizer_geardalinger)
+						{
+							item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
+							item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
+						else if (item_geartlinger.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0 && playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.twokaizer_geardalinger && playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.red_geartlinger && playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.stacaeser_geartozinger) 
+						{
+							item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2);
+							item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
+						else
+						{
+							item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
+						}
 					}
 					if (num == 16)//Zyuranger
 					{
@@ -216,7 +246,9 @@ public class item_sentai_gear extends Item implements IHasModel
 					}
 					if (num == 19)//Ohranger
 					{
-						
+						playerIn.addPotionEffect(new PotionEffect(MobEffects.SPEED,1000, 4,true,false));
+						playerIn.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,1000, 4,true,false));
+						playerIn.addPotionEffect(new PotionEffect(MobEffects.HASTE,1000, 4,true,false));
 					}
 					if (num == 20)//Carranger
 					{
@@ -228,7 +260,10 @@ public class item_sentai_gear extends Item implements IHasModel
 					}
 					if (num == 22)//Gingaman
 					{
-						
+						if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.twokaizer_geardalinger)
+						{
+							playerIn.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,1000, 2,true,false));
+						}
 					}
 					if (num == 23)//GoGo-V
 					{
@@ -269,7 +304,10 @@ public class item_sentai_gear extends Item implements IHasModel
 					}
 					if (num == 27)//Abaranger
 					{
-						
+						if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.twokaizer_geardalinger)
+						{
+							playerIn.dropItem(RiderItems.wing_pentact, 1);
+						}
 					}
 					if (num == 28)//Dekaranger
 					{	
@@ -319,7 +357,9 @@ public class item_sentai_gear extends Item implements IHasModel
 					}
 					if (num == 33)//Shinkenger
 					{
-						
+						playerIn.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,1000, 1,true,false));
+						playerIn.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,1000, 4,true,false));
+						playerIn.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 1000, 4,true,false));
 					}
 					if (num == 34)//Goseiger
 					{

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dark_gear",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:toqger_logo"
+    },
+	{
+      "item": "supersentaicraft:blank_dark_sentai_gear"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:dark_toqger_gear"
+  }
+}

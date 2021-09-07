@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "red_gear",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:turboranger_logo"
+    },
+	{
+      "item": "minecraft:dye",
+      "data": 1
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:red_turboranger_gear"
+  }
+}

@@ -151,6 +151,11 @@ public class Tabs
 	//13
 	public static CreativeTabs tabTurboranger= new CreativeTabs("tabTurboranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_turboranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.turboranger_head);
@@ -178,6 +183,19 @@ public class Tabs
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.dairanger_head);
+		}
+	};
+	//18
+	public static CreativeTabs tabKakuranger= new CreativeTabs("tabKakuranger")
+	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_kakuranger_items.png");
+	    }
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(RiderItems.kakuranger_head);
 		}
 	};
 	//20
@@ -217,6 +235,11 @@ public class Tabs
 	//23
 	public static CreativeTabs tabGogoV= new CreativeTabs("tabGogoV")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_gogo_v_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.gogo_v_head);
@@ -246,6 +269,11 @@ public class Tabs
 	//30
 	public static CreativeTabs tabBoukenger= new CreativeTabs("tabBoukenger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_boukenger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.boukenger_head);
@@ -400,6 +428,11 @@ public class Tabs
 	//??
 	public static CreativeTabs tabMisc= new CreativeTabs("tabMisc")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_misc_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.super_sentai_logo);

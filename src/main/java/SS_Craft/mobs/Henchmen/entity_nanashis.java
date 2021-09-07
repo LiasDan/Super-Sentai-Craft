@@ -17,15 +17,7 @@ public class entity_nanashis extends Entity_base_henchmen
 	public entity_nanashis(World par1World)
 	{
 		super(par1World);
-	}
-
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemMainhand()
-	{
-		return new ItemStack(RiderItems.nanashi_dao);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.nanashi_dao));
 	}
 
 	public void onDeath(DamageSource cause)

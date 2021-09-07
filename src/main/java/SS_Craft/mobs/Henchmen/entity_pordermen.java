@@ -11,15 +11,7 @@ public class entity_pordermen extends Entity_base_henchmen
 	public entity_pordermen(World par1World)
 	{
 		super(par1World);
-	}
-
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemMainhand()
-	{
-		return new ItemStack(RiderItems.porderman_sword);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.porderman_sword));
 	}
 
 	public void onDeath(DamageSource cause)

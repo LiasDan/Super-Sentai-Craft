@@ -26,6 +26,7 @@ entity.DoraSphinxMob.name=Dora Sphinx
 entity.PumpkinRapperMob.name=Pumpkin Rapper
 entity.DragonRangerMob.name=Dragon Ranger
 entity.CotpotrosMob.name=Cotpotros
+entity.DorodorosMob.name=Dorodoros
 entity.WumpersBlueMob.name=Combatant Wumpers (Blue)
 entity.WumpersGreenMob.name=Combatant Wumpers (Green)
 entity.WumpersPinkMob.name=Combatant Wumpers (Pink)
@@ -51,7 +52,7 @@ entity.IndaversGreenMob.name=Indaver (Green)
 entity.IndaversWhiteMob.name=Indaver (White)
 entity.HebitsukaiMetalMob.name=Hebitsukai Metal (Evil)
 entity.DarkShishiRedMob.name=Dark Shishi Red
-entity.KyurangersMob.name=Kyuranger (Futago Kyutama's Clone)
+entity.KyurangersMob.name=Kyuranger (Futago Kyutama)
 entity.GaruBikeMob.name=Garu Bike
 entity.ExAidMob.name=Kamen Rider Ex-Aid
 entity.PordermenMob.name=Porderman
@@ -61,6 +62,7 @@ entity.BechatsMob.name=Bechats
 entity.DarkKirameiSilverMob.name=Dark Kiramei Silver
 entity.KudakksMob.name=Kudakks
 entity.StacaesarMob.name=Stacaesar
+entity.MechaDarkGearMob.name=Fake Sentai Robo （Dark Sentai Gear）
 
 item.super_sentai_logo.name=Super Sentai Logo
 
@@ -78,7 +80,15 @@ item.wumpers_sword.name=Wumpers Sword
 item.orgettes_club.name=Orgettes Club
 item.porderman_sword.name=Porderman Sword
 
+item.cutmen_sword.name=Cutmen Sword
+item.jakotsuken.name=Jakotsuken
+item.bone_axe.name=Bone Axe
+item.imps_sword.name=Imps Sword
+item.karths_sickle.name=Karths Sickle
+item.burglars_katar.name=Burglars Katar
+
 item.mechaclones_sword.name=Mechaclones Sword
+item.dorodoros_sword.name=Dorodoros Sword
 item.plug_lancer.name=Plug Lancer
 
 //01 Goranger
@@ -541,7 +551,44 @@ item.dairinken.name=Dairinken
 item.byakkoshinken.name=Byakkoshinken
 
 //18 Kakuranger
+itemGroup.tabKakuranger=Ninja Sentai Kakuranger
+
 item.kakuranger_logo.name=Kakuranger Logo
+
+item.kakuranger_head.name=Kakuranger Helmet
+item.kakuranger_torso.name=Kakuranger Torso
+item.kakuranger_legs.name=Kakuranger Legs
+
+item.red_doron_changer.name=Doron Changer (NinjaRed)
+item.white_doron_changer.name=Doron Changer (NinjaWhite)
+item.yellow_doron_changer.name=Doron Changer (NinjaYellow)
+item.blue_doron_changer.name=Doron Changer (NinjaBlue)
+item.black_doron_changer.name=Doron Changer (NinjaBlack)
+item.ninjaman_urn.name=Ninjaman Urn
+
+item.sasuke_medal.name=Sasuke Medal
+item.tsuruhime_medal.name=Tsuruhime Medal
+item.saizou_medal.name=Saizou Medal
+item.seikai_medal.name=Seikai Medal
+item.jiraiya_medal.name=Jiraiya Medal
+item.ninjaman_medal.name=Ninjaman Medal
+
+item.kakuremaru.name=Kakuremaru
+item.kaku_laser.name=Kakulaser
+item.ninja_red_shuriken.name=NinjaRed Shuriken
+item.ninja_white_shuriken.name=NinjaWhite Shuriken
+item.ninja_yellow_shuriken.name=NinjaYellow Shuriken
+item.ninja_blue_shuriken.name=NinjaBlue Shuriken
+item.ninja_black_shuriken.name=NinjaBlack Shuriken
+item.shinobi_knuckle.name=Shinobi Knuckle
+item.red_slicer.name=Red Slicer
+item.white_beak.name=White Beak
+item.yellow_claw.name=Yellow Claw
+item.blue_shot.name=Blue Shot
+item.black_bow.name=Black Bow
+item.hikarimaru.name=Hikarimaru
+item.ninja_sword.name=Ninja Sword
+item.samurai_javelin.name=Samurai Javelin
 
 //19 Ohranger
 item.ohranger_logo.name=Ohranger Logo
@@ -1107,7 +1154,7 @@ item.red_morphin_brace.name=Morphin Brace (Red Buster)
 item.blue_morphin_brace.name=Morphin Brace (Blue Buster)
 item.yellow_morphin_brace.name=Morphin Brace (Yellow Buster)
 item.beet_morphin_blaster.name=Morphin Blaster (Beet Buster)
-item.stag_morphin_blaster.name=Morphin Blaster (Stag Buster)
+item.stag_morphin_blaster.name=Morphin Blaster (Stag Buster/Silver Stag)
 item.beet_enter_morphin_blaster.name=Morphin Blaster (Enter's Beet Buster)
 
 item.cheetah_morphin_brace.name=Morphin Brace (Red Cheetah)
@@ -1621,6 +1668,7 @@ item.vroon_geartlinger.name=Geartlinger (Zenkai Vroon)
 item.twokaizer_geardalinger.name=Geardalinger (Twokaizer)
 item.stacaeser_geartozinger.name=Geartozinger (Stacaesar)
 item.red_geartlinger.name=Geartlinger (Zenkai Red)
+item.mecha_dark_gear.name=Dark Sentai Gear (Fake Sentai Robo)
 
 item.zenkaizer_gear.name=Zenkaizer Gear
 item.zenkai_juran_gear.name=Zenkai Juran Gear
@@ -1687,17 +1735,102 @@ item.kirameiger_gear.name=Kirameiger Gear
 
 item.dark_goranger_gear.name=Dark Goranger Gear
 item.dark_jakq_gear.name=Dark J.A.K.Q. Gear
+item.dark_battle_fever_gear.name=Dark Battle Fever Gear
+item.dark_denziman_gear.name=Dark Denziman Gear
+item.dark_sun_vulcan_gear.name=Dark Sun Vulcan Gear
+item.dark_goggle_v_gear.name=Dark Goggle V Gear
+item.dark_dynaman_gear.name=Dark Dynaman Gear
+item.dark_bioman_gear.name=Dark Bioman Gear
+item.dark_changeman_gear.name=Dark Changeman Gear
 item.dark_flashman_gear.name=Dark Flashman Gear
+
 item.dark_maskman_gear.name=Dark Maskman Gear
+item.dark_liveman_gear.name=Dark Liveman Gear
+item.dark_turboranger_gear.name=Dark Turboranger Gear
 item.dark_fiveman_gear.name=Dark Fiveman Gear
+item.dark_jetman_gear.name=Dark Jetman Gear
 item.dark_zyuranger_gear.name=Dark Zyuranger Gear
+item.dark_dairanger_gear.name=Dark Dairanger Gear
+item.dark_kakuranger_gear.name=Dark Kakuranger Gear
+item.dark_ohranger_gear.name=Dark Ohranger Gear
+item.dark_carranger_gear.name=Dark Carranger Gear
+
+item.dark_megaranger_gear.name=Dark Megaranger Gear
+item.dark_gingaman_gear.name=Dark Gingaman Gear
+item.dark_gogo_v_gear.name=Dark GoGo-V Gear
+item.dark_timeranger_gear.name=Dark Timeranger Gear
 item.dark_gaoranger_gear.name=Dark Gaoranger Gear
+item.dark_hurricaneger_gear.name=Dark Hurricaneger Gear
+item.dark_abaranger_gear.name=Dark Abaranger Gear
+item.dark_dekaranger_gear.name=Dark Dekaranger Gear
 item.dark_magiranger_gear.name=Dark Magiranger Gear
 item.dark_boukenger_gear.name=Dark Boukenger Gear
 
+item.dark_gekiranger_gear.name=Dark Gekiranger Gear
+item.dark_go_onger_gear.name=Dark Go-Onger Gear
+item.dark_shinkenger_gear.name=Dark Shinkenger Gear
+item.dark_goseiger_gear.name=Dark Goseiger Gear
+item.dark_gokaiger_gear.name=Dark Gokaiger Gear
+item.dark_go_busters_gear.name=Dark Go-Busters Gear
+item.dark_kyoryuger_gear.name=Dark Kyoryuger Gear
+item.dark_toqger_gear.name=Dark ToQger Gear
+item.dark_ninninger_gear.name=Dark Ninninger Gear
+item.dark_zyuohger_gear.name=Dark Zyuohger Gear
+
+item.dark_kyuranger_gear.name=Dark Kyuranger Gear
+item.dark_lupinranger_gear.name=Dark Lupinranger Gear
+item.dark_patranger_gear.name=Dark Patranger Gear
+item.dark_ryusoulger_gear.name=Dark Ryusoulger Gear
+item.dark_kirameiger_gear.name=Dark Kirameiger Gear
+
 item.red_goranger_gear.name=Red Goranger Gear
+item.red_jakq_gear.name=Red J.A.K.Q. Gear
+item.red_battle_fever_gear.name=Red Battle Fever Gear
+item.red_denziman_gear.name=Red Denziman Gear
+item.red_sun_vulcan_gear.name=Red Sun Vulcan Gear
+item.red_goggle_v_gear.name=Red Goggle V Gear
+item.red_dynaman_gear.name=Red Dynaman Gear
+item.red_bioman_gear.name=Red Bioman Gear
+item.red_changeman_gear.name=Red Changeman Gear
+item.red_flashman_gear.name=Red Flashman Gear
+
+item.red_maskman_gear.name=Red Maskman Gear
+item.red_liveman_gear.name=Red Liveman Gear
+item.red_turboranger_gear.name=Red Turboranger Gear
+item.red_fiveman_gear.name=Red Fiveman Gear
+item.red_jetman_gear.name=Red Jetman Gear
+item.red_zyuranger_gear.name=Red Zyuranger Gear
+item.red_dairanger_gear.name=Red Dairanger Gear
+item.red_kakuranger_gear.name=Red Kakuranger Gear
+item.red_ohranger_gear.name=Red Ohranger Gear
+item.red_carranger_gear.name=Red Carranger Gear
+
+item.red_megaranger_gear.name=Red Megaranger Gear
+item.red_gingaman_gear.name=Red Gingaman Gear
+item.red_gogo_v_gear.name=Red GoGo-V Gear
+item.red_timeranger_gear.name=Red Timeranger Gear
+item.red_gaoranger_gear.name=Red Gaoranger Gear
+item.red_hurricaneger_gear.name=Red Hurricaneger Gear
+item.red_abaranger_gear.name=Red Abaranger Gear
+item.red_dekaranger_gear.name=Red Dekaranger Gear
+item.red_magiranger_gear.name=Red Magiranger Gear
+item.red_boukenger_gear.name=Red Boukenger Gear
+
+item.red_gekiranger_gear.name=Red Gekiranger Gear
+item.red_go_onger_gear.name=Red Go-Onger Gear
+item.red_shinkenger_gear.name=Red Shinkenger Gear
+item.red_goseiger_gear.name=Red Goseiger Gear
+item.red_gokaiger_gear.name=Red Gokaiger Gear
+item.red_go_busters_gear.name=Red Go-Busters Gear
+item.red_kyoryuger_gear.name=Red Kyoryuger Gear
+item.red_toqger_gear.name=Red ToQger Gear
+item.red_ninninger_gear.name=Red Ninninger Gear
+item.red_zyuohger_gear.name=Red Zyuohger Gear
+
+item.red_kyuranger_gear.name=Red Kyuranger Gear
 item.red_lupinranger_gear.name=Red Lupinranger Gear
 item.red_patranger_gear.name=Red Patranger Gear
+item.red_ryusoulger_gear.name=Red Ryusoulger Gear
 item.red_kirameiger_gear.name=Red Kirameiger Gear
 
 item.metallic_zenkaizer_gear.name=Metallic Zenkaizer Gear

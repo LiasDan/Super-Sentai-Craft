@@ -11,15 +11,7 @@ public class entity_wumpers_green extends Entity_base_henchmen
 	public entity_wumpers_green(World par1World)
 	{
 		super(par1World);
-	}
-
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemMainhand()
-	{
-		return new ItemStack(RiderItems.wumpers_sword);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.wumpers_sword));
 	}
 
 	public void onDeath(DamageSource cause)
@@ -53,7 +45,7 @@ public class entity_wumpers_green extends Entity_base_henchmen
 				switch (this.rand.nextInt(7))
 				{
 					case 0:
-						this.dropItem(RiderItems.pink_racer_badge, 1);
+						this.dropItem(RiderItems.white_racer_badge, 1);
 						break;
 					
 					case 1:

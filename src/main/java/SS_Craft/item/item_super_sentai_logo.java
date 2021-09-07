@@ -10,8 +10,10 @@ import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha;
 import SS_Craft.item.go_onger.mecha.item_go_onger_mecha;
 import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.item.jetman.item_cross_changer;
+import SS_Craft.item.kakuranger.item_doron_changer;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.sun_vulcan.mecha.item_sun_vulcan_mecha;
+import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.util.IHasModel;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -112,6 +114,62 @@ public class item_super_sentai_logo extends Item implements IHasModel
 				else
 				{
 					item_sun_vulcan_mecha.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD)), 1);
+				}
+			}
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.ninjaman_urn)
+			{
+				if (playerIn.isSneaking())
+				{
+					item_doron_changer.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)), 0);
+				}
+				else
+				{
+					item_doron_changer.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)), 1);
+				}
+			}
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_geartlinger)
+			{
+				if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.red_geartlinger && playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.stacaeser_geartozinger)
+				{
+					if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zenkaizer_geartlinger)
+					{
+						if (item_geartlinger.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+						{
+							if (playerIn.isSneaking())
+							{
+								item_geartlinger.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)), 0);
+							}
+							else
+							{
+								item_geartlinger.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)), 4);
+							}
+						}
+					}
+					else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.twokaizer_geardalinger)
+					{
+						if (item_geartlinger.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="super")
+						{
+							if (playerIn.isSneaking())
+							{
+								item_geartlinger.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)), 0);
+							}
+							else
+							{
+								item_geartlinger.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)), 4);
+							}
+						}
+					}
+					else
+					{
+						if (playerIn.isSneaking())
+						{
+							item_geartlinger.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)), 0);
+						}
+						else
+						{
+							item_geartlinger.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)), 4);
+						}
+					}
 				}
 			}
 		}

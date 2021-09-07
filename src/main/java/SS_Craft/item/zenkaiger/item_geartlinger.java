@@ -1,7 +1,5 @@
 package SS_Craft.item.zenkaiger;
 
-import java.util.Queue;
-
 import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
@@ -56,19 +54,6 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 
 	public String Rider;
 	public String Armor;
-
-	public item_geartlinger (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
-	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
-		this.material = par2EnumArmorMaterial;
-		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
-		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
-	}
 	
 	public item_geartlinger (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, String armor)
 	{
@@ -79,6 +64,19 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 		this.maxStackSize = 1;
 		Rider=rider;
 		Armor=armor;
+		setTranslationKey(name);
+		setRegistryName(name);
+		TokuCraft_core.ITEMS.add(this);
+	}
+
+	public item_geartlinger (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
+	{
+		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		this.material = par2EnumArmorMaterial;
+		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
+		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
+		this.maxStackSize = 1;
+		Rider=rider;
 		setTranslationKey(name);
 		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
@@ -109,6 +107,10 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 				{
 					armorModel.belt=new ItemStack(RiderItems.stacaesar_belt);
 				}
+				else if (this == RiderItems.mecha_dark_gear)
+				{
+					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				}
 				else
 				{
 					if (this != RiderItems.zenkaizer_geartlinger)
@@ -131,6 +133,10 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 				if (this.get_effect(stack)==3)
 				{
 					armorModel.wings=new ItemStack(RiderItems.zenkai_zyuoh_wings);
+				}
+				else if (this == RiderItems.mecha_dark_gear && this.get_core(stack)==29)
+				{
+					armorModel.wings=new ItemStack(RiderItems.magi_king_wings);
 				}
 				else
 				{
@@ -247,6 +253,13 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										
+										if (this.get_core(armor)==1)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 6,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 6,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 6,true,false));
+										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.juran_geartlinger)
 									{
@@ -273,6 +286,7 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.LUCK,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.vroon_geartlinger)
 									{
@@ -319,6 +333,11 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
 									}
+									if (this.get_lock(armor)=="super")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 6,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 6,true,false));
+									}
 									if (this.get_effect(armor)==1)
 									{
 										if (this.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) < 1000)
@@ -345,8 +364,8 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 											if (player.isSneaking())
 											{
 												Vec3d look = player.getLookVec();
-												player.motionX=look.x/2;
-												player.motionZ=look.z/2;
+												player.motionX=look.x/5;
+												player.motionZ=look.z/5;
 											}
 										}
 										else
@@ -354,6 +373,10 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 											this.set_eftTime(armor, 0);
 											this.set_effect(armor, 0);
 										}
+									}
+									if (this.get_effect(armor)==4)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
 									}
 								}
 							}

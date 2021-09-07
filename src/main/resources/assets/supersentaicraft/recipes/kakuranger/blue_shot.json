@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ninja_blue",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:kakuranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:saizou_medal"
+    },
+	"c": {
+      "item": "supersentaicraft:shinobi_knuckle"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:blue_shot"
+  }
+}

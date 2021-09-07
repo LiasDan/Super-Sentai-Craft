@@ -16,15 +16,7 @@ public class entity_orgettes extends Entity_base_henchmen
 	public entity_orgettes(World par1World)
 	{
 		super(par1World);
-	}
-
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemMainhand()
-	{
-		return new ItemStack(RiderItems.orgettes_club);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.orgettes_club));
 	}
 
 	public void onDeath(DamageSource cause)
