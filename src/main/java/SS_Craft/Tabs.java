@@ -214,6 +214,11 @@ public class Tabs
 	//21
 	public static CreativeTabs tabMegaranger= new CreativeTabs("tabMegaranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_megaranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.megaranger_head);
@@ -266,6 +271,19 @@ public class Tabs
 			return new ItemStack(RiderItems.abaranger_head);
 		}
 	};
+	//28
+	public static CreativeTabs tabDekaranger= new CreativeTabs("tabDekaranger")
+	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_dekaranger_items.png");
+	    }
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(RiderItems.dekaranger_head);
+		}
+	};
 	//30
 	public static CreativeTabs tabBoukenger= new CreativeTabs("tabBoukenger")
 	{
@@ -290,6 +308,11 @@ public class Tabs
 	//32
 	public static CreativeTabs tabGoOnger= new CreativeTabs("tabGoOnger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_go_onger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
 			return new ItemStack(RiderItems.go_onger_head);

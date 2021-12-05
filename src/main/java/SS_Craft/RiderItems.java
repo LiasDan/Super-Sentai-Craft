@@ -45,6 +45,10 @@ import SS_Craft.item.carranger.item_carranger_armor2;
 import SS_Craft.item.dairanger.item_aura_changer;
 import SS_Craft.item.dairanger.item_dairanger_armor;
 import SS_Craft.item.dairanger.item_dairanger_armor2;
+import SS_Craft.item.dekaranger.item_dekaranger_armor;
+import SS_Craft.item.dekaranger.item_dekaranger_armor2;
+import SS_Craft.item.dekaranger.item_sp_badge;
+import SS_Craft.item.dekaranger.item_sp_license;
 import SS_Craft.item.denziman.item_denzi_punch;
 import SS_Craft.item.denziman.item_denzi_ring;
 import SS_Craft.item.denziman.item_denziman_armor;
@@ -223,8 +227,16 @@ public class RiderItems
 	public static Item karths_sickle = new ItemBaseSword("karths_sickle", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	public static Item buglars_katar = new ItemBaseSword("buglars_katar", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	
+	public static Item dustlers_sickle = new ItemBaseSword("dustlers_sickle", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item kunekunes_sword = new ItemBaseSword("kunekunes_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item ugatz_sword = new ItemBaseSword("ugatz_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item moebas_sword = new ItemBaseSword("moebas_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	
 	public static Item mechaclones_sword = new ItemBaseSword("mechaclones_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	public static Item dorodoros_sword = new ItemBaseSword("dorodoros_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item ana_knife = new ItemBaseSword("ana_knife", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item batsu_sword = new ItemBaseSword("batsu_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	public static Item iga_sword = new ItemBaseSword("iga_sword", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	public static Item plug_lancer = new ItemBaseSword("plug_lancer", Tabs.sword,RiderItems.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	
 	//Misc Items
@@ -465,7 +477,7 @@ public class RiderItems
 	
 	//06 Dai Sentai Goggle V
 	public static Item goggle_v_logo = new Item_ore("goggle_v_logo").setCreativeTab(Tabs.tabGoggleV);
-//	public static Block goggle_v_ore = new ore_block("goggle_v_ore", Material.ROCK, goggle_v_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoggleV);
+	public static Block goggle_v_ore = new ore_block("goggle_v_ore", Material.ROCK, goggle_v_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoggleV);
 	
 	public static Item goggle_v_head = new item_goggle_v_armor("goggle_v_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
 	public static Item goggle_v_torso = new item_goggle_v_armor2("goggle_v_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGoggleV);
@@ -1138,7 +1150,69 @@ public class RiderItems
 	public static Item chasmo_shield = new ItemBaseShield("chasmo_shield",RiderItems.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabAbaranger);
 	
 	//28 Tokusou Sentai Dekaranger
-	public static Item dekaranger_badge = new Item_ore("dekaranger_badge").setCreativeTab(Tabs.tabMisc);
+	public static Item dekaranger_badge = new Item_ore("dekaranger_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Block dekaranger_ore = new ore_block("dekaranger_ore", Material.ROCK, dekaranger_badge, 2).setHardness(9.9F).setCreativeTab(Tabs.tabDekaranger);
+	public static Block dekaranger_nether_ore = new ore_block("dekaranger_nether_ore", Material.ROCK, dekaranger_badge, 3).setHardness(9.9F).setCreativeTab(Tabs.tabDekaranger);
+	
+	public static Item dekaranger_head = new item_dekaranger_armor("dekaranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item dekaranger_torso = new item_dekaranger_armor2("dekaranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item dekaranger_legs = new item_dekaranger_armor2("dekaranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	
+	public static Item red_sp_license = new item_sp_license("red_sp_license", ArmorMaterial.DIAMOND, 4, "deka_red").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item fs_license = new item_sp_license("fs_license", ArmorMaterial.DIAMOND, 4, "deka_red_fire_squad").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item blue_sp_license = new item_sp_license("blue_sp_license", ArmorMaterial.DIAMOND, 4, "deka_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item green_sp_license = new item_sp_license("green_sp_license", ArmorMaterial.DIAMOND, 4, "deka_green").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item yellow_sp_license = new item_sp_license("yellow_sp_license", ArmorMaterial.DIAMOND, 4, "deka_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item pink_sp_license = new item_sp_license("pink_sp_license", ArmorMaterial.DIAMOND, 4, "deka_pink").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item break_brace_throttle = new item_sp_license("break_brace_throttle", ArmorMaterial.DIAMOND, 4, "deka_break").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item master_license = new item_sp_license("master_license", ArmorMaterial.DIAMOND, 4, "deka_master").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item swan_sp_license = new item_sp_license("swan_sp_license", ArmorMaterial.DIAMOND, 4, "deka_swan").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item bright_brace_throttle = new item_sp_license("bright_brace_throttle", ArmorMaterial.DIAMOND, 4, "deka_bright").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item gold_sp_license = new item_sp_license("gold_sp_license", ArmorMaterial.DIAMOND, 4, "deka_gold").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item neo_red_sp_license = new item_sp_license("neo_red_sp_license", ArmorMaterial.DIAMOND, 4, "neo_deka_red").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item neo_yellow_sp_license = new item_sp_license("neo_yellow_sp_license", ArmorMaterial.DIAMOND, 4, "neo_deka_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	
+	public static Item dekaranger_belt = new Item_ore("dekaranger_belt");
+	public static Item deka_fire_squad_belt = new Item_ore("deka_fire_squad_belt");
+	public static Item deka_break_belt = new Item_ore("deka_break_belt");
+	public static Item deka_master_belt = new Item_ore("deka_master_belt");
+	
+	public static Item deka_red_badge = new item_sp_badge(0,"deka_red_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_blue_badge = new item_sp_badge(0,"deka_blue_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_green_badge = new item_sp_badge(0,"deka_green_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_yellow_badge = new item_sp_badge(0,"deka_yellow_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_pink_badge = new item_sp_badge(0,"deka_pink_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_break_badge = new item_sp_badge(0,"deka_break_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_master_badge = new item_sp_badge(0,"deka_master_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_swan_badge = new item_sp_badge(0,"deka_swan_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_bright_badge = new item_sp_badge(0,"deka_bright_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_gold_badge = new item_sp_badge(0,"deka_gold_badge").setCreativeTab(Tabs.tabDekaranger);
+	
+	public static Item deka_red_swat_badge = new item_sp_badge(1,"deka_red_swat_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_blue_swat_badge = new item_sp_badge(1,"deka_blue_swat_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_green_swat_badge = new item_sp_badge(1,"deka_green_swat_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_yellow_swat_badge = new item_sp_badge(1,"deka_yellow_swat_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_pink_swat_badge = new item_sp_badge(1,"deka_pink_swat_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_red_fire_squad_badge = new item_sp_badge(0,"deka_red_fire_squad_badge").setCreativeTab(Tabs.tabDekaranger);
+	public static Item deka_red_battlizer_badge = new item_sp_badge(2,"deka_red_battlizer_badge").setCreativeTab(Tabs.tabDekaranger);
+	
+	public static Item sp_shooter = new Item_gun("sp_shooter",Tabs.gun,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_magnum_1 = new Item_gun("d_magnum_1",Tabs.gun,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_magnum_2 = new Item_gun("d_magnum_2",Tabs.gun,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item hybrid_magnum = new Item_gun("hybrid_magnum",Tabs.super_gun,RiderItems.dekaranger_badge).setContainerItem(RiderItems.d_magnum_2).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_rod_blue = new ItemBaseSword("d_rod_blue",Tabs.rod,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_rod_green = new ItemBaseSword("d_rod_green",Tabs.rod,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_stick_yellow = new ItemBaseSword("d_stick_yellow",Tabs.rod,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_stick_pink = new ItemBaseSword("d_stick_pink",Tabs.rod,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_knuckle = new ItemBaseSword("d_knuckle",Tabs.tonfa,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_sniper = new Item_gun("d_sniper",Tabs.super_gun,RiderItems.dekaranger_badge).setContainerItem(RiderItems.d_knuckle).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_blaster = new Item_gun("d_blaster",Tabs.super_gun,RiderItems.dekaranger_badge).setContainerItem(RiderItems.d_knuckle).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_shot_yellow = new Item_gun("d_shot_yellow",Tabs.super_gun,RiderItems.dekaranger_badge).setContainerItem(RiderItems.d_knuckle).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_shot_pink = new Item_gun("d_shot_pink",Tabs.super_gun,RiderItems.dekaranger_badge).setContainerItem(RiderItems.d_knuckle).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_sword_vega = new ItemBaseSword("d_sword_vega",Tabs.super_sword,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_smasher = new Item_gun("d_smasher",Tabs.hyper_gun,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item d_revolver = new Item_gun("d_revolver",Tabs.bazooka,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item battlizer_sword = new Item_sword_gun("battlizer_sword",Tabs.sword_gun,RiderItems.dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
 	
 	//29 Mahou Sentai Magiranger
 	public static Item magiranger_logo = new Item_ore("magiranger_logo").setCreativeTab(Tabs.tabMisc);

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "deka_swan",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:dekaranger_badge"
+    },
+	"b": {
+      "item": "supersentaicraft:deka_swan_badge"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:swan_sp_license"
+  }
+}

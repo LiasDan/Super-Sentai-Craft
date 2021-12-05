@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:dekaranger/d_revolver"
+    ]
+  },
+  "criteria": {
+    "has_logo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:deka_red_swat_badge"
+          }
+        ]
+      }
+    },
+    "has_logo1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:deka_blue_swat_badge"
+          }
+        ]
+      }
+    },
+    "has_logo2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:deka_green_swat_badge"
+          }
+        ]
+      }
+    },
+    "has_logo3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:deka_yellow_swat_badge"
+          }
+        ]
+      }
+    },
+    "has_logo4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "supersentaicraft:deka_pink_swat_badge"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:dekaranger/d_revolver"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_logo",
+      "has_logo1",
+      "has_logo2",
+      "has_logo3",
+      "has_logo4",
+      "has_the_recipe"
+    ]
+  ]
+}

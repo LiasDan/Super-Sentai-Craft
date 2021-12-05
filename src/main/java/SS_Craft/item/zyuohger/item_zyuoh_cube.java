@@ -71,7 +71,7 @@ public class item_zyuoh_cube extends Item implements IHasModel
 					}
 					else
 					{
-						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 					}
 				}
 				else if (belt == RiderItems.zyuoh_the_light)

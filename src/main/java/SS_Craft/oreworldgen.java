@@ -54,6 +54,18 @@ public class oreworldgen implements IWorldGenerator
 			//(new WorldGenMinable(RiderItems.hellrock_lockseedblock.getDefaultState(), 1)).generate(world, rand,position);
 			new WorldGenMinable(RiderItems.mecha_ore.getDefaultState(), 3, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, rand,position);
 		}
+		//28 Dekaranger
+		for (int i = 0; i < 2; i++)
+		{
+			//16x16 area up to y = 64
+			int randPosX = chunkX + rand.nextInt(16);
+			int randPosY = rand.nextInt(128);
+			int randPosZ = chunkZ + rand.nextInt(16);
+			// 10 blocks per vein
+			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
+			//(new WorldGenMinable(RiderItems.hellrock_lockseedblock.getDefaultState(), 1)).generate(world, rand,position);
+			new WorldGenMinable(RiderItems.dekaranger_nether_ore.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.NETHERRACK)).generate(world, rand,position);
+		}
 		//36 Go-Busters
 		for (int i = 0; i < 2; i++)
 		{
@@ -137,6 +149,7 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.sun_vulcan_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
+		*/
 		//06 Goggle V
 		for (int i = 0; i < 4; i++)
 		{
@@ -148,7 +161,7 @@ public class oreworldgen implements IWorldGenerator
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.goggle_v_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
-		//10 Flashman
+/*		//10 Flashman
 		for (int i = 0; i < 4; i++)
 		{
 			//16x16 area up to y = 64
@@ -279,6 +292,17 @@ public class oreworldgen implements IWorldGenerator
 			// 10 blocks per vein
 			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
 			(new WorldGenMinable(RiderItems.abaranger_ore.getDefaultState(), 10)).generate(world, rand,position);
+		}
+		//28 Dekaranger
+		for (int i = 0; i < 4; i++)
+		{
+			//16x16 area up to y = 64
+			int randPosX = chunkX + rand.nextInt(16);
+			int randPosY = rand.nextInt(60);
+			int randPosZ = chunkZ + rand.nextInt(16);
+			// 10 blocks per vein
+			BlockPos position = new BlockPos(randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(RiderItems.dekaranger_ore.getDefaultState(), 10)).generate(world, rand,position);
 		}
 		//30 Boukenger
 		for (int i = 0; i < 4; i++)

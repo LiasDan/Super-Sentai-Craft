@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "deka_green",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:d_rod_green"
+    },
+	{
+      "item": "supersentaicraft:d_knuckle"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:d_blaster"
+  }
+}

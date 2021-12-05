@@ -1,6 +1,8 @@
 package SS_Craft.mobs.Henchmen;
 
 import SS_Craft.RiderItems;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
@@ -9,6 +11,7 @@ public class entity_ugatz extends Entity_base_henchmen
 	public entity_ugatz(World par1World)
 	{
 		super(par1World);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.ugatz_sword));
 	}
 
 	public void onDeath(DamageSource cause)

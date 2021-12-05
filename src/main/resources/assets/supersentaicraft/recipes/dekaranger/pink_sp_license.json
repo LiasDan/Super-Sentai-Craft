@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "deka_pink",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:dekaranger_badge"
+    },
+	"b": {
+      "item": "supersentaicraft:deka_pink_badge"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:pink_sp_license"
+  }
+}

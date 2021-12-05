@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "deka_break",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:dekaranger_badge"
+    },
+	"b": {
+      "item": "supersentaicraft:deka_break_badge"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:break_brace_throttle"
+  }
+}

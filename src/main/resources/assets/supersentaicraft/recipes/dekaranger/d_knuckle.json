@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dekaranger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:dekaranger_badge"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:deka_blue_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:deka_green_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:deka_yellow_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:deka_pink_badge"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:d_knuckle"
+  }
+}

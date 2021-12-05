@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "deka_swat",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:dekaranger_badge"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:deka_red_swat_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:deka_blue_swat_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:deka_green_swat_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:deka_yellow_swat_badge"
+	  },
+	  {
+	    "item": "supersentaicraft:deka_pink_swat_badge"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:d_revolver"
+  }
+}

@@ -38,6 +38,11 @@ entity.OrgettesMob.name=Orgettes
 entity.RoukiMob.name=Duke Org Rouki
 entity.BarmiasBlackMob.name=Barmia Soldiers (Black)
 entity.BarmiasWhiteMob.name=Barmia Soldiers (White)
+entity.AnaroidsMob.name=Anaroids
+entity.BatsuroidsMob.name=Batsuroids
+entity.IgaroidsMob.name=Igaroids
+entity.NeoDekaRedMob.name=Neo DekaRed
+entity.NeoDekaYellowMob.name=Neo DekaYellow
 entity.KarthsMob.name=Combatant Karths
 entity.RinshisMob.name=Rinshi
 entity.UgatzMob.name=Barbaric Machine Soldiers Ugatz
@@ -87,8 +92,16 @@ item.imps_sword.name=Imps Sword
 item.karths_sickle.name=Karths Sickle
 item.burglars_katar.name=Burglars Katar
 
+item.dustlers_sickle.name=Dustlers Sickle
+item.kunekunes_sword.name=Kunekunes Sword
+item.ugatz_sword.name=Ugatz Sword
+item.moebas_sword.name=Moebas Sword
+
 item.mechaclones_sword.name=Mechaclones Sword
 item.dorodoros_sword.name=Dorodoros Sword
+item.ana_knife.name=AnaKnife
+item.batsu_sword.name=BatsuSword
+item.iga_sword.name=IgaSword
 item.plug_lancer.name=Plug Lancer
 
 //01 Goranger
@@ -939,7 +952,66 @@ item.double_tall_sword_bakuren_oh.name=Double Tall Sword (BakurenOh)
 item.chasmo_shield.name=Chasmo Shield
 
 //28 Dekaranger
+itemGroup.tabDekaranger=Tokusou Sentai Dekaranger
+
 item.dekaranger_badge.name=Dekaranger Badge
+tile.dekaranger_ore.name=Dekaranger Ore
+tile.dekaranger_nether_ore.name=Dekaranger Nether Ore
+
+item.dekaranger_head.name=Dekaranger Helmet
+item.dekaranger_torso.name=Dekaranger Chestplate
+item.dekaranger_legs.name=Dekaranger Leggings
+
+item.red_sp_license.name=SP License (DekaRed)
+item.fs_license.name=FS License (DekaRed Fire Squad)
+item.blue_sp_license.name=SP License (DekaBlue)
+item.green_sp_license.name=SP License (DekaGreen)
+item.yellow_sp_license.name=SP License (DekaYellow)
+item.pink_sp_license.name=SP License (DekaPink)
+item.break_brace_throttle.name=Brace Throttle (DekaBreak)
+item.master_license.name=Master License (DekaMaster)
+item.swan_sp_license.name=SP License (DekaSwan)
+item.bright_brace_throttle.name=Brace Throttle (DekaBright)
+item.gold_sp_license.name=SP License (DekaGold)
+item.neo_red_sp_license.name=SP License (Neo DekaRed)
+item.neo_yellow_sp_license.name=SP License (Neo DekaYellow)
+
+item.deka_red_badge.name=DekaRed Badge
+item.deka_blue_badge.name=DekaBlue Badge
+item.deka_green_badge.name=DekaGreen Badge
+item.deka_yellow_badge.name=DekaYellow Badge
+item.deka_pink_badge.name=DekaPink Badge
+item.deka_break_badge.name=DekaBreak Badge
+item.deka_master_badge.name=DekaMaster Badge
+item.deka_swan_badge.name=DekaSwan Badge
+item.deka_bright_badge.name=DekaBright Badge
+item.deka_gold_badge.name=DekaGold Badge
+
+item.deka_red_swat_badge.name=DekaRed S.W.A.T. Badge
+item.deka_blue_swat_badge.name=DekaBlue S.W.A.T. Badge
+item.deka_green_swat_badge.name=DekaGreen S.W.A.T. Badge
+item.deka_yellow_swat_badge.name=DekaYellow S.W.A.T. Badge
+item.deka_pink_swat_badge.name=DekaPink S.W.A.T. Badge
+item.deka_red_fire_squad_badge.name=DekaRed Fire Squad Badge
+item.deka_red_battlizer_badge.name=DekaRed Battlizer Badge
+
+item.sp_shooter.name=SP Shooter
+item.d_magnum_1.name=D-Magnum 01
+item.d_magnum_2.name=D-Magnum 02
+item.hybrid_magnum.name=Hybrid Magnum
+item.d_rod_blue.name=D-Rod (DekaBlue)
+item.d_rod_green.name=D-Rod (DekaGreen)
+item.d_stick_yellow.name=D-Stick (DekaYellow)
+item.d_stick_pink.name=D-Stick (DekaPink)
+item.d_knuckle.name=D-Knuckle
+item.d_sniper.name=D-Sniper
+item.d_blaster.name=D-Blaster
+item.d_shot_yellow.name=D-Shot (DekaYellow)
+item.d_shot_pink.name=D-Shot (DekaPink)
+item.d_sword_vega.name=D-Sword Vega
+item.d_smasher.name=D-Smasher
+item.d_revolver.name=D-Revolver
+item.battlizer_sword.name=Battlizer Sword
 
 //29 Magiranger
 item.magiranger_logo.name=Magiranger Logo
@@ -1056,8 +1128,8 @@ item.kishamoth_soul.name=Kishamoth Engine Soul
 item.t_line_soul.name=T-line Engine Soul
 item.k_line_soul.name=K-line Engine Soul
 
-item.daishogun_soul.name=Dai-Shogun Soul
-item.skydor_soul.name=Skydor Soul
+item.daishogun_soul.name=Engine Dai-Shogun　Soul
+item.skydor_soul.name=Skydor　Engine Soul
 item.kegalesia_soul.name=Kegalesia Soul
 
 item.mantan_sword.name=Mantan Gun

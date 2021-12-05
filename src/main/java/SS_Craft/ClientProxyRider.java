@@ -12,9 +12,12 @@ import SS_Craft.mobs.Boss.entity_dragon_ranger;
 import SS_Craft.mobs.Boss.entity_gaisorg;
 import SS_Craft.mobs.Boss.entity_gedou_shinken_red;
 import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
+import SS_Craft.mobs.Boss.entity_neo_deka_red;
+import SS_Craft.mobs.Boss.entity_neo_deka_yellow;
 import SS_Craft.mobs.Boss.entity_rouki;
 import SS_Craft.mobs.Boss.entity_stacaesar;
 import SS_Craft.mobs.Boss.entity_yami_0gou;
+import SS_Craft.mobs.Henchmen.entity_anaroids;
 import SS_Craft.mobs.Henchmen.entity_barmias_black;
 import SS_Craft.mobs.Henchmen.entity_barmias_white;
 import SS_Craft.mobs.Henchmen.entity_bechats;
@@ -28,6 +31,7 @@ import SS_Craft.mobs.Henchmen.entity_dustlers;
 import SS_Craft.mobs.Henchmen.entity_golems1;
 import SS_Craft.mobs.Henchmen.entity_golems2;
 import SS_Craft.mobs.Henchmen.entity_grinams;
+import SS_Craft.mobs.Henchmen.entity_igaroids;
 import SS_Craft.mobs.Henchmen.entity_imps;
 import SS_Craft.mobs.Henchmen.entity_indavers_blue;
 import SS_Craft.mobs.Henchmen.entity_indavers_green;
@@ -58,6 +62,7 @@ import SS_Craft.mobs.allies.entity_ex_aid;
 import SS_Craft.mobs.allies.entity_kyuranger;
 import SS_Craft.mobs.allies.entity_mecha_dark_gear;
 import SS_Craft.mobs.bikes.entity_garu_bike;
+import SS_Craft.mobs.mini_boss.entity_batsuroids;
 import SS_Craft.mobs.mini_boss.entity_dora_sphinx;
 import SS_Craft.mobs.mini_boss.entity_pumpkin_rapper;
 import SS_Craft.mobs.mini_boss.entity_ular_captain;
@@ -147,10 +152,19 @@ public class ClientProxyRider extends CommonProxyRider
 		RenderingRegistry.registerEntityRenderingHandler(entity_orgettes.class, new RenderRiderMob2(new tokuMobModel("orgettes_2"), 0.5F,"textures/entities/orgettes_1.png"));
 
 		RenderingRegistry.registerEntityRenderingHandler(entity_rouki.class, new RenderRiderMob2(new tokuMobModel("rouki_2"), 0.5F,"textures/entities/rouki_1.png"));
-		//25 Gaoranger
+		
+		//27 Abaranger
 		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_black.class, new RenderRiderMob2(new tokuMobModel("barmia_black_2"), 0.5F,"textures/entities/barmia_black_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_barmias_white.class, new RenderRiderMob2(new tokuMobModel("barmia_white_2"), 0.5F,"textures/entities/barmia_white_1.png"));
 
+		//28 Dekaranger
+		RenderingRegistry.registerEntityRenderingHandler(entity_anaroids.class, new RenderRiderMob2(new tokuMobModel("anaroid_2"), 0.5F,"textures/entities/anaroid_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_igaroids.class, new RenderRiderMob2(new tokuMobModel("igaroid_2"), 0.5F,"textures/entities/igaroid_1.png"));
+
+		RenderingRegistry.registerEntityRenderingHandler(entity_batsuroids.class, new RenderRiderMob2(new tokuMobModel("batsuroid_2"), 0.5F,"textures/entities/batsuroid_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_neo_deka_red.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_neo_deka_red.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_neo_deka_yellow.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_neo_deka_yellow.png"));
+		
 		//30 Boukenger
 		RenderingRegistry.registerEntityRenderingHandler(entity_karths.class, new RenderRiderMob2(new tokuMobModel("karths_2"), 0.5F,"textures/entities/karths_1.png"));
 

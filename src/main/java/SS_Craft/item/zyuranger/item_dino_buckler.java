@@ -41,19 +41,6 @@ public class item_dino_buckler extends ItemArmor implements IHasModel
 	public String Rider;
 	public String Armor;
 
-	public item_dino_buckler (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
-	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
-		this.material = par2EnumArmorMaterial;
-		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
-		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
-	}
-	
 	public item_dino_buckler (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, String armor)
 	{
 		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
@@ -68,6 +55,19 @@ public class item_dino_buckler extends ItemArmor implements IHasModel
 		TokuCraft_core.ITEMS.add(this);
 	}
 
+	public item_dino_buckler (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
+	{
+		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		this.material = par2EnumArmorMaterial;
+		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
+		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
+		this.maxStackSize = 1;
+		Rider=rider;
+		setTranslationKey(name);
+		setRegistryName(name);
+		TokuCraft_core.ITEMS.add(this);
+	}
+	
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack par1ItemStack)
 	{

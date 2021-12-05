@@ -12,6 +12,7 @@ import SS_Craft.RiderItems;
 import SS_Craft.item.abaranger.mecha.item_abaranger_mecha;
 import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.boukenger.item_accellular;
+import SS_Craft.item.dekaranger.item_sp_license;
 import SS_Craft.item.denziman.item_denzi_ring;
 import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha;
 import SS_Craft.item.gingaman.item_ginga_brace;
@@ -294,6 +295,23 @@ public class BipedLockseed extends ModelBiped
 					if (item_abaranger_mecha.get_left(mecha)!="blank")
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/mecha/"+item_abaranger_mecha.get_left(mecha)+".png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
+				}
+				else if (stack.getItem() instanceof item_sp_license)
+				{
+					String rider = ((item_sp_license)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+					
+					if (rider == "neo_deka_red" || rider == "neo_deka_yellow")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_sp_license.get_lock(stack)+"_2.png"));
+					}
+					else if (item_sp_license.get_lock(stack)!="blank" && item_sp_license.get_lock(stack)!="fire_squad_armor")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_sp_license.get_lock(stack)+"_2.png"));
 					}
 					else
 					{
