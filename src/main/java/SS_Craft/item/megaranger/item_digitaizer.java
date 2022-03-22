@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_bouken_spirit;
 import SS_Craft.model.model_belt;
@@ -70,7 +70,7 @@ public class item_digitaizer extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				armorModel.belt=new ItemStack(RiderItems.megaranger_logo);
+				armorModel.belt=new ItemStack(SentaiItems40.megaranger_logo);
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -142,13 +142,13 @@ public class item_digitaizer extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.megaranger_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems40.megaranger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.megaranger_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems40.megaranger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.megaranger_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.megaranger_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_digitaizer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.red_digitaizer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -156,14 +156,14 @@ public class item_digitaizer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_digitaizer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.black_digitaizer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_digitaizer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.blue_digitaizer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -171,14 +171,14 @@ public class item_digitaizer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_digitaizer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.yellow_digitaizer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_digitaizer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.pink_digitaizer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -186,7 +186,7 @@ public class item_digitaizer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.keitaizer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.keitaizer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -224,6 +224,6 @@ public class item_digitaizer extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.megaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.megaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

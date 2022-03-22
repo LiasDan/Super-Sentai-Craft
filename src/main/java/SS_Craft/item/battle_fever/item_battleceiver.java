@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
@@ -69,25 +69,25 @@ public class item_battleceiver extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				if (this == RiderItems.japan_battleceiver)
+				if (this == SentaiItems20.japan_battleceiver)
 				{
-					armorModel.belt=new ItemStack(RiderItems.battle_japan_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.battle_japan_belt);
 				}
-				if (this == RiderItems.cossack_battleceiver)
+				if (this == SentaiItems20.cossack_battleceiver)
 				{
-					armorModel.belt=new ItemStack(RiderItems.battle_cossack_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.battle_cossack_belt);
 				}
-				if (this == RiderItems.france_battleceiver)
+				if (this == SentaiItems20.france_battleceiver)
 				{
-					armorModel.belt=new ItemStack(RiderItems.battle_france_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.battle_france_belt);
 				}
-				if (this == RiderItems.kenya_battleceiver)
+				if (this == SentaiItems20.kenya_battleceiver)
 				{
-					armorModel.belt=new ItemStack(RiderItems.battle_kenya_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.battle_kenya_belt);
 				}
-				if (this == RiderItems.america_battleceiver)
+				if (this == SentaiItems20.america_battleceiver)
 				{
-					armorModel.belt=new ItemStack(RiderItems.miss_america_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.miss_america_belt);
 				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -146,40 +146,40 @@ public class item_battleceiver extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.battle_fever_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems20.battle_fever_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.battle_fever_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems20.battle_fever_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.battle_fever_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems20.battle_fever_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.japan_battleceiver)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.japan_battleceiver)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.cossack_battleceiver)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.cossack_battleceiver)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.france_battleceiver)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.france_battleceiver)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.kenya_battleceiver)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.kenya_battleceiver)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.america_battleceiver)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.america_battleceiver)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -209,6 +209,6 @@ public class item_battleceiver extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.battle_fever_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.battle_fever_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

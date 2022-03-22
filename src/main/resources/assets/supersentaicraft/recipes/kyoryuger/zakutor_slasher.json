@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kyoryu_green",
+  "pattern": [
+    "aba",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_zyudenchi"
+    },
+	"b": {
+	  "item": "supersentaicraft:zakutor_zyudenchi"
+	},
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:zakutor_slasher"
+  }
+}

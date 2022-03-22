@@ -4,7 +4,8 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.shinkenger.item_secret_disk;
 import SS_Craft.model.BipedLockseed;
@@ -73,7 +74,7 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				armorModel.belt=new ItemStack(SentaiItems20.blanknoitem);
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -173,17 +174,17 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.gao_king_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems40.gao_king_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.gao_king_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems40.gao_king_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gao_king_boots)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.gao_king_boots)
 								{
 									if (this.get_effect(armor)==1)
 									{
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_king_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.gao_king_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
@@ -212,7 +213,7 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20, 3,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_muscle_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.gao_muscle_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
@@ -241,7 +242,7 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20, 3,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_hunter_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.gao_hunter_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
@@ -267,7 +268,7 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20, 3,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_hunter_blue_moon_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.gao_hunter_blue_moon_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
@@ -293,7 +294,7 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20, 3,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_icarus_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.gao_icarus_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
@@ -326,7 +327,7 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20, 3,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_god_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.gao_god_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
@@ -358,7 +359,7 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20, 3,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_knight_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.gao_knight_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
@@ -406,6 +407,6 @@ public class item_gaoranger_mecha extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.mecha_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.mecha_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

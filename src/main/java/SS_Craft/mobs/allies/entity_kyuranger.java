@@ -7,7 +7,8 @@ import javax.annotation.Nullable;
 
 import com.google.common.base.Predicate;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockColored;
 import net.minecraft.block.material.Material;
@@ -89,21 +90,21 @@ public class entity_kyuranger extends EntityGolem implements IRangedAttackMob
 	{
 		super(par1World);
 
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.kyuranger_head));
-        this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.kyuranger_torso));
-        this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.kyuranger_legs));   
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.red_seiza_blaster));
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.kyu_sword));
-		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(RiderItems.seiza_blaster));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems60.kyuranger_head));
+        this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems60.kyuranger_torso));
+        this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems60.kyuranger_legs));   
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.red_seiza_blaster));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.kyu_sword));
+		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(SentaiItems60.seiza_blaster));
 		
 		this.tasks.addTask(1, new EntityAISwimming(this));
 		this.tasks.addTask(2, new EntityAIWander(this, 0.4F));
 		this.tasks.addTask(3, new EntityAILeapAtTarget(this, 0.4F));
 		this.tasks.addTask(4, new EntityAIAttackMelee(this, 1.0D, true));
-		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, RiderItems.seiza_blaster, false));
-		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, RiderItems.ryutsueder, false));
-		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, RiderItems.houou_blade, false));
-		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, RiderItems.houou_shield, false));
+		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, SentaiItems60.seiza_blaster, false));
+		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, SentaiItems60.ryutsueder, false));
+		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, SentaiItems60.houou_blade, false));
+		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, SentaiItems60.houou_shield, false));
 		this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntityLiving.class, 10, false, true, new Predicate<EntityLiving>()
         {
             public boolean apply(@Nullable EntityLiving p_apply_1_)
@@ -111,99 +112,6 @@ public class entity_kyuranger extends EntityGolem implements IRangedAttackMob
                 return p_apply_1_ != null && IMob.VISIBLE_MOB_SELECTOR.apply(p_apply_1_) && !(p_apply_1_ instanceof EntityCreeper);
             }
         }));
-	}
-
-	public void onEntityUpdate()
-	{
-		super.onEntityUpdate();
-		
-		if (this.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()!=null)
-		{
-		switch (this.rand.nextInt(9999999))
-		{
-		case 0:
-			this.replaceItemInInventory(100,new ItemStack(RiderItems.red_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_sword));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-			break;
-		case 1:
-			this.replaceItemInInventory(100,new ItemStack(RiderItems.blue_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_claw));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-			break;
-		case 2:
-			this.replaceItemInInventory(100,new ItemStack(RiderItems.orange_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_spear));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-			break;
-		
-		case 3:
-			this.replaceItemInInventory(100,new ItemStack(RiderItems.gold_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_crossbow));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-    		this.tasks.removeTask(this.aiAttackMelee);
-    		this.tasks.addTask(2, this.aiArrowAttack);
-			break;
-			
-		case 4:
-			this.replaceItemInInventory(100,new ItemStack(RiderItems.black_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_axe));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-			break;
-			
-		case 5:
-    		this.replaceItemInInventory(100,new ItemStack(RiderItems.silver_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_sickle));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-			break;
-			
-		case 6:
-    		this.replaceItemInInventory(100,new ItemStack(RiderItems.green_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_rapier));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-			break;
-			
-		case 7:
-    		this.replaceItemInInventory(100,new ItemStack(RiderItems.pink_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_shot));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-    		this.tasks.removeTask(this.aiAttackMelee);
-    		this.tasks.addTask(2, this.aiArrowAttack);
-			break;
-			
-		case 8:
-    		this.replaceItemInInventory(100,new ItemStack(RiderItems.yellow_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_slasher));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-			break;
-			
-		case 9:
-    		this.replaceItemInInventory(100,new ItemStack(RiderItems.commander_ryutsueder));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.ryutsueder));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.blanknoitem));
-    		this.tasks.addTask(2, this.aiArrowAttack);
-    		this.tasks.addTask(3, this.aiAttackOnCollide);
-			break;
-			
-		case 10:
-    		this.replaceItemInInventory(100,new ItemStack(RiderItems.sky_blue_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_spear));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
-			break;
-			
-		case 11:
-    		this.replaceItemInInventory(100,new ItemStack(RiderItems.houou_blade_shield));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.houou_blade));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.houou_shield));
-			break;
-			
-		case 12:
-    		this.replaceItemInInventory(100,new ItemStack(RiderItems.metal_dark_seiza_blaster));
-    		this.replaceItemInInventory(98,new ItemStack(RiderItems.dark_kyu_sickle));
-    		this.replaceItemInInventory(99,new ItemStack(RiderItems.dark_seiza_blaster));
-			break;
-		}
-		}
 	}
 	
 	/**
@@ -283,7 +191,7 @@ public class entity_kyuranger extends EntityGolem implements IRangedAttackMob
 	{
 		if (!this.world.isRemote){
 
-			this.dropItem(RiderItems.futago_kyutama, 1);
+			this.dropItem(SentaiItems60.futago_kyutama, 1);
 
 		}
 

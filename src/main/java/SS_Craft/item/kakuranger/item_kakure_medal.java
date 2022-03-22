@@ -1,7 +1,7 @@
 package SS_Craft.item.kakuranger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.item.jetman.item_cross_changer;
@@ -46,7 +46,7 @@ public class item_kakure_medal extends Item implements IHasModel
     {
 		if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.ninjaman_urn)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.ninjaman_urn)
 			{
 				if (item_doron_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))>0)
 				{

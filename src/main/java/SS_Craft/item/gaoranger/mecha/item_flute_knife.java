@@ -2,7 +2,7 @@ package SS_Craft.item.gaoranger.mecha;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.lupatranger.item_vs_changer;
@@ -61,9 +61,9 @@ public class item_flute_knife extends ItemSword implements IHasModel
     {
     	if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD)!= null)
 		{
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_hunter_head | playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.gao_hunter_blue_moon_head)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.gao_hunter_head | playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.gao_hunter_blue_moon_head)
 			{	
-				if (this == RiderItems.flute_knife)
+				if (this == SentaiItems40.flute_knife)
 				{
 					if (item_gaoranger_mecha.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD))==1)
 					{
@@ -83,6 +83,6 @@ public class item_flute_knife extends ItemSword implements IHasModel
     
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.empty_gao_jewel == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.empty_gao_jewel == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

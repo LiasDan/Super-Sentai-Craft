@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kyoryuger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_zyudenchi"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:kyoryuger_logo"
+  }
+}

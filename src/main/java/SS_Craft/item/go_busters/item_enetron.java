@@ -1,7 +1,7 @@
 package SS_Craft.item.go_busters;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.util.IHasModel;
@@ -51,11 +51,11 @@ public class item_enetron extends Item implements IHasModel
 
 				if (num==1)
 				{
-					if (belt == RiderItems.red_morphin_brace || belt == RiderItems.blue_morphin_brace || belt == RiderItems.yellow_morphin_brace)
+					if (belt == SentaiItems40.red_morphin_brace || belt == SentaiItems40.blue_morphin_brace || belt == SentaiItems40.yellow_morphin_brace)
 					{
 						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
-					else if (belt == RiderItems.cheetah_morphin_brace || belt == RiderItems.gorilla_morphin_brace || belt == RiderItems.rabbit_morphin_brace)
+					else if (belt == SentaiItems40.cheetah_morphin_brace || belt == SentaiItems40.gorilla_morphin_brace || belt == SentaiItems40.rabbit_morphin_brace)
 					{
 						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2);
 					}

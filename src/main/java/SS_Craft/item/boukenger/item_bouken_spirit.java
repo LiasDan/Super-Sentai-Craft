@@ -1,7 +1,7 @@
 package SS_Craft.item.boukenger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.util.IHasModel;
@@ -49,7 +49,7 @@ public class item_bouken_spirit extends Item implements IHasModel
 			{
 				item_accellular belt = (item_accellular) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
-				if (belt == RiderItems.zubaan)
+				if (belt == SentaiItems40.zubaan)
 				{
 					item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 				}

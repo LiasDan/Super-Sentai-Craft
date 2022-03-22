@@ -6,7 +6,8 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.lupatranger.item_vs_vehicle;
@@ -86,52 +87,52 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				if (this == RiderItems.gold_mosa_changer)
+				if (this == SentaiItems60.gold_mosa_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.ryusoul_gold_buckle);
+					armorModel.belt=new ItemStack(SentaiItems60.ryusoul_gold_buckle);
 				}
-				else if (this == RiderItems.gaisorg_changer | this == RiderItems.brown_changer)
+				else if (this == SentaiItems60.gaisorg_changer | this == SentaiItems60.brown_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+					armorModel.belt=new ItemStack(SentaiItems20.blanknoitem);
 				}
-				else if (this == RiderItems.red_ryusoul_changer && this.get_core(stack)==2)
+				else if (this == SentaiItems60.red_ryusoul_changer && this.get_core(stack)==2)
 				{
-					armorModel.belt=new ItemStack(RiderItems.lupat_belt);
+					armorModel.belt=new ItemStack(SentaiItems60.lupat_belt);
 				}
-				else if ((this == RiderItems.blue_ryusoul_changer | this == RiderItems.pink_ryusoul_changer) && this.get_core(stack)==1)
+				else if ((this == SentaiItems60.blue_ryusoul_changer | this == SentaiItems60.pink_ryusoul_changer) && this.get_core(stack)==1)
 				{
-					armorModel.belt=new ItemStack(RiderItems.lupat_belt);
+					armorModel.belt=new ItemStack(SentaiItems60.lupat_belt);
 				}
 				else
 				{
-					armorModel.belt=new ItemStack(RiderItems.ryusoul_buckle);
+					armorModel.belt=new ItemStack(SentaiItems60.ryusoul_buckle);
 				}
 				
 				if (this.get_soul(stack)=="ryusoul_hiehie")
 				{
 					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
 					{
-						armorModel.wings=new ItemStack(RiderItems.hiehie_soul_wing);
+						armorModel.wings=new ItemStack(SentaiItems60.hiehie_soul_wing);
 					}
 					else
 					{
-						armorModel.wings=new ItemStack(RiderItems.hiehie_soul_wing_close);
+						armorModel.wings=new ItemStack(SentaiItems60.hiehie_soul_wing_close);
 					}
 				}
 				else if (this.get_vs(stack)=="lupin_scissor")
 				{
-					if (living.getHeldItem(EnumHand.OFF_HAND).getItem()==RiderItems.blade_boomerang || living.getHeldItem(EnumHand.MAIN_HAND).getItem()==RiderItems.blade_boomerang)
+					if (living.getHeldItem(EnumHand.OFF_HAND).getItem()==SentaiItems60.blade_boomerang || living.getHeldItem(EnumHand.MAIN_HAND).getItem()==SentaiItems60.blade_boomerang)
 					{
-						armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+						armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
 					}
 					else
 					{
-						armorModel.wings=new ItemStack(RiderItems.blade_boomerang_wing);
+						armorModel.wings=new ItemStack(SentaiItems60.blade_boomerang_wing);
 					}
 				}
 				else
 				{
-					armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+					armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
 				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -232,17 +233,17 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.ryusoulger_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems60.ryusoulger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.ryusoulger_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems60.ryusoulger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.ryusoulger_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems60.ryusoulger_head)
 								{
 									if(this.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))<100)
 									{
 										this.set_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),this.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+1);
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.red_ryusoul_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -263,7 +264,7 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.blue_ryusoul_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -275,7 +276,7 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.pink_ryusoul_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -287,31 +288,31 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.green_ryusoul_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_ryusoul_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.black_ryusoul_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gold_mosa_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.gold_mosa_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gaisorg_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.gaisorg_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.brown_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.brown_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -628,6 +629,13 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 									}
+									if (this.get_soul(armor)=="ryusoul_kiramei") 
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
+									}
 								}
 							}
 						}
@@ -651,6 +659,6 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.blank_ryusoul == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems60.blank_ryusoul == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

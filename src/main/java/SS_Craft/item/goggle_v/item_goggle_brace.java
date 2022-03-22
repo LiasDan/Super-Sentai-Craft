@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
@@ -69,7 +69,7 @@ public class item_goggle_brace extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				armorModel.belt= new ItemStack(RiderItems.goggle_v_belt);
+				armorModel.belt= new ItemStack(SentaiItems20.goggle_v_belt);
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -127,13 +127,13 @@ public class item_goggle_brace extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.goggle_v_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems20.goggle_v_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.goggle_v_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems20.goggle_v_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.goggle_v_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems20.goggle_v_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_goggle_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_goggle_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -141,7 +141,7 @@ public class item_goggle_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_goggle_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.black_goggle_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -149,7 +149,7 @@ public class item_goggle_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_goggle_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.blue_goggle_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -157,7 +157,7 @@ public class item_goggle_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_goggle_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.yellow_goggle_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -165,7 +165,7 @@ public class item_goggle_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_goggle_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.pink_goggle_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -196,6 +196,6 @@ public class item_goggle_brace extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.goggle_v_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.goggle_v_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

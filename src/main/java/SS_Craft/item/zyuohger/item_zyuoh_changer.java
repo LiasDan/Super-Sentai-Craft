@@ -4,8 +4,10 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.shinkenger.item_secret_disk;
 import SS_Craft.model.model_belt;
 import SS_Craft.model.model_belt_plus;
 import SS_Craft.potion.PotionCore;
@@ -72,52 +74,55 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				if (this == RiderItems.zyuoh_the_light)
+				if (this == SentaiItems40.zyuoh_the_light)
 				{
-					armorModel.belt=new ItemStack(RiderItems.zyuoh_the_world_belt);
+					armorModel.belt=new ItemStack(SentaiItems40.zyuoh_the_world_belt);
 				}
 				else
 				{
-					armorModel.belt=new ItemStack(RiderItems.zyuohger_belt);
+					armorModel.belt=new ItemStack(SentaiItems40.zyuohger_belt);
 				}
 				
-				if (this == RiderItems.eagle_zyuoh_changer)
+				if (this == SentaiItems40.eagle_zyuoh_changer)
 				{
 					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==0)
 					{
-						armorModel.wings=new ItemStack(RiderItems.zyuoh_eagle_wing);
+						armorModel.wings=new ItemStack(SentaiItems40.zyuoh_eagle_wing);
 					}
 					else if(this.get_core(stack)==3)
 					{
-						armorModel.wings=new ItemStack(RiderItems.zyuoh_eagle_wing);
-					}
-					else if((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==4)
-					{
-						armorModel.wings=new ItemStack(RiderItems.zyuoh_condor_wing);
+						armorModel.wings=new ItemStack(SentaiItems40.zyuoh_eagle_wing);
 					}
 					else
 					{
-						armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+						armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
 					}
 				}
-				else if (this == RiderItems.zyuoh_changer_final)
+				else if (this == SentaiItems40.zyuoh_changer_final)
 				{
 					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==0)
 					{
-						armorModel.wings=new ItemStack(RiderItems.zyuoh_bird_wing);
-					}
-					else if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==1)
-					{
-						armorModel.wings=new ItemStack(RiderItems.zyuoh_condor_wing);
+						armorModel.wings=new ItemStack(SentaiItems40.zyuoh_bird_wing);
 					}
 					else
 					{
-						armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+						armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
+					}
+				}
+				else if (this == SentaiItems40.condor_zyuoh_changer)
+				{
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) && this.get_core(stack)==0)
+					{
+						armorModel.wings=new ItemStack(SentaiItems40.zyuoh_condor_wing);
+					}
+					else
+					{
+						armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
 					}
 				}
 				else
 				{
-					armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+					armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
 				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -165,6 +170,20 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("core", flag);
 	}
 	
+	public static String get_lock(ItemStack itemstack)
+	{	
+		return itemstack.hasTagCompound() ? item_zyuoh_cube.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
+	}
+	
+	public static void set_lock(ItemStack itemstack,int flag)
+	{
+		if (!itemstack.hasTagCompound())
+		{
+			itemstack.setTagCompound(new NBTTagCompound());
+		}
+		itemstack.getTagCompound().setInteger("armor", flag);
+	}
+	
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) 
 	{
@@ -176,13 +195,13 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.zyuohger_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems40.zyuohger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.zyuohger_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems40.zyuohger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.zyuohger_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.zyuohger_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.eagle_zyuoh_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.eagle_zyuoh_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -241,7 +260,7 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.shark_zyuoh_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.shark_zyuoh_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -259,27 +278,27 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 											}
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.lion_zyuoh_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.lion_zyuoh_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.elephant_zyuoh_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.elephant_zyuoh_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.tiger_zyuoh_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.tiger_zyuoh_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zyuoh_the_light)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.zyuoh_the_light)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -298,7 +317,7 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zyuoh_changer_final)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.zyuoh_changer_final)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -341,6 +360,6 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.king_s_credential == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.king_s_credential == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

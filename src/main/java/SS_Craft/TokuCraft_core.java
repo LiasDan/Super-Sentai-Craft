@@ -1,14 +1,17 @@
 package SS_Craft;
 
+import SS_Craft.biome.sentaiBiomes;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.potion.PotionFirePunch;
 import SS_Craft.potion.PotionFly;
 import SS_Craft.potion.PotionPunchBoost;
 import SS_Craft.util.Refercence;
 import SS_Craft.world.gen.WorldGenCustomStructures;
+import SS_Craft.world.gen.modDimensionWorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Potion;
+import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -33,11 +36,14 @@ public class TokuCraft_core {
 	public static TokuCraft_core instance;
 
 	@SidedProxy(clientSide = Refercence.CLIENT_PROXY_CLASS, serverSide = Refercence.COMMON_PROXY_CLASS)
-	public static CommonProxyRider proxy;
+	public static CommonProxySentai proxy;
 
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event) {
-		RiderItems.init();
+		SentaiItems20.init();
+		SentaiItems40.init();
+		SentaiItems60.init();
+		DimensionManager.registerDimension(modDimensionWorldGen.SUPER_SENTAI_TOPIA_DIM_ID, modDimensionWorldGen.SUPER_SENTAI_TOPIA_DIM_TYPE);
 	}
 
 	@EventHandler
@@ -54,7 +60,7 @@ public class TokuCraft_core {
 		proxy.registerRenderThings();
 		GameRegistry.registerWorldGenerator(new oreworldgen(), 0);
 		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
-		CraftingRecipeForRider.Crafrting();
+		CraftingRecipeForSentai.Crafrting();
 		mobsCore.Addmob();
 	}
 

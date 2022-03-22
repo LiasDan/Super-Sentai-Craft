@@ -2,7 +2,7 @@ package SS_Craft.item.akibaranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;

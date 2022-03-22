@@ -11,7 +11,8 @@ import java.util.UUID;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Sets;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.item.shinkenger.item_shodophone;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -67,25 +68,24 @@ import net.minecraft.world.World;
 public class entity_gedou_shinken_red extends EntityBossBase
 //implements IBossDisplayData
 {
-	public static final Item[] weapon = new Item[] {RiderItems.super_shinkenmaru,RiderItems.rekka_daizantou,RiderItems.super_shinkenmaru,RiderItems.rekka_daizantou,RiderItems.super_shinkenmaru};
+	public static final Item[] weapon = new Item[] {SentaiItems40.super_shinkenmaru,SentaiItems40.rekka_daizantou,SentaiItems40.super_shinkenmaru,SentaiItems40.rekka_daizantou,SentaiItems40.super_shinkenmaru};
 	
 	public entity_gedou_shinken_red(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.shinkenmaru));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.shinkenger_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.shinkenger_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.red_shodophone));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.shinkenger_legs));
+		Random generator = new Random();
+		int rand = generator.nextInt(5);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(weapon[rand]));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems40.shinkenger_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems40.shinkenger_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems40.red_shodophone));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems40.shinkenger_legs));
 	}
 
 	public void onEntityUpdate()
 	{
 		super.onEntityUpdate();
-		if (this.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==RiderItems.red_shodophone)
-		{
-			item_shodophone.set_lock(this.getItemStackFromSlot(EntityEquipmentSlot.FEET), 3);
-		}
+		item_shodophone.set_lock(this.getItemStackFromSlot(EntityEquipmentSlot.FEET), 3);
 	}
 	
 	protected void applyEntityAttributes()
@@ -106,8 +106,8 @@ public class entity_gedou_shinken_red extends EntityBossBase
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.gedou_disk, 1);
-			this.dropItem(RiderItems.common_disk, 5);
+			this.dropItem(SentaiItems40.gedou_disk, 1);
+			this.dropItem(SentaiItems40.common_disk, 5);
 		}
 	}
 }

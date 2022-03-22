@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kyoryuger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:fang_shot"
+    },
+	{
+      "item": "supersentaicraft:stego_shield"
+    },
+	{
+      "item": "supersentaicraft:zakutor_slasher"
+    },
+	{
+      "item": "supersentaicraft:drice_lance"
+    },
+	{
+      "item": "supersentaicraft:kentrospiker_zyudenchi"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:kentrospiker"
+  }
+}

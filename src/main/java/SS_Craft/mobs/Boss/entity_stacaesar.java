@@ -11,7 +11,8 @@ import java.util.UUID;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Sets;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -69,11 +70,11 @@ public class entity_stacaesar extends EntityBossBase
 	public entity_stacaesar(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.geartozinger));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.zenkaiger_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.zenkaiger_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.stacaeser_geartozinger));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.zenkaiger_legs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.geartozinger));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems60.zenkaiger_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems60.zenkaiger_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.stacaeser_geartozinger));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems60.zenkaiger_legs));
 	}
 
 	protected void applyEntityAttributes()
@@ -95,14 +96,21 @@ public class entity_stacaesar extends EntityBossBase
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.stacaesar_gear, 1);
-			this.dropItem(RiderItems.blank_sentai_gear, 5);
-		}
-		switch (this.rand.nextInt(5))
-		{   		   	    		
-		case 0:
-			this.dropItem(RiderItems.blank_dark_sentai_gear, 1);
-			break;
+			this.dropItem(SentaiItems60.stacaesar_gear, 1);
+			this.dropItem(SentaiItems60.blank_sentai_gear, 5);
+			
+			switch (this.rand.nextInt(5))
+			{   		   	    		
+			case 0:
+				this.dropItem(SentaiItems60.blank_dark_sentai_gear, 1);
+				break;   		   	    		
+			case 1:
+				this.dropItem(SentaiItems60.tojiru_gear, 1);
+				break; 		   	    		
+			case 2:
+				this.dropItem(SentaiItems60.sta_shield, 1);
+				break;
+			}
 		}
 	}
 }

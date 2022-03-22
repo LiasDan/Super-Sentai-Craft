@@ -1,7 +1,7 @@
 package SS_Craft.item.ninninger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
@@ -52,15 +52,15 @@ public class item_nin_shuriken extends Item implements IHasModel
 
 				item_ninja_ichibantou.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 			}
-			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.ninja_ichibantou)
+			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems20.ninja_ichibantou)
 			{
 				ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 				if (itemstack.isEmpty())
 				{
-					if (this == RiderItems.aka_ninger_shuriken)
+					if (this == SentaiItems20.aka_ninger_shuriken)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.aka_ninja_ichibantou));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems20.aka_ninja_ichibantou));
 					}
 				}
 			}

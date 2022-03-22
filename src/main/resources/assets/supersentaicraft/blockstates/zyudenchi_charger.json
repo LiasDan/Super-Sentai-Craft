@@ -1,0 +1,20 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "variants": {
+    "facing=north": {
+      "model": "supersentaicraft:zyudenchi_charger"
+    },
+    "facing=south": {
+      "model": "supersentaicraft:zyudenchi_charger",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "supersentaicraft:zyudenchi_charger",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "supersentaicraft:zyudenchi_charger",
+      "y": 90
+    }
+  }
+}

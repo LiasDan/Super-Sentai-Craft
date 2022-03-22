@@ -6,7 +6,7 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Multimap;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.carranger.item_accel_changer;
@@ -104,9 +104,9 @@ public class item_kiraful_go_arrow extends ItemBow  implements IHasModel
 	{
 		if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.shiny_kiramei_changer | playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.yodon_changer)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != SentaiItems60.yodon_changer)
 			{	
-				if (this==RiderItems.kiraful_go_arrow)
+				if (this==SentaiItems60.kiraful_go_arrow)
 				{
 					ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
@@ -119,9 +119,9 @@ public class item_kiraful_go_arrow extends ItemBow  implements IHasModel
 						item_kiramei_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 					
-					if (itemstack.isEmpty() && playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gold_kiramei_stone)
+					if (itemstack.isEmpty() && playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.gold_kiramei_stone)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.gold_kiraful_go_arrow));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.gold_kiraful_go_arrow));
 					}
 				}
 			}
@@ -275,7 +275,7 @@ public class item_kiraful_go_arrow extends ItemBow  implements IHasModel
      */
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
     {
-    	return RiderItems.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+    	return SentaiItems60.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
 
     /**

@@ -1,7 +1,7 @@
 package SS_Craft.item.kirameiger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.lupatranger.item_vs_changer;
@@ -51,7 +51,7 @@ public class item_kiramei_stone extends Item implements IHasModel
 			{
 				item_kiramei_changer belt = (item_kiramei_changer) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 			
-				if (belt == RiderItems.shiny_kiramei_changer & this == RiderItems.shiny_kiramei_stone)
+				if (belt == SentaiItems60.shiny_kiramei_changer & this == SentaiItems60.shiny_kiramei_stone)
 				{
 					if (item_kiramei_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 0)
 					{
@@ -62,7 +62,7 @@ public class item_kiramei_stone extends Item implements IHasModel
 						item_kiramei_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
 				}
-				else if (belt == RiderItems.yodon_changer & this == RiderItems.dark_kiramei_stone)
+				else if (belt == SentaiItems60.yodon_changer & this == SentaiItems60.dark_kiramei_stone)
 				{
 					if (item_kiramei_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 0)
 					{
@@ -75,9 +75,9 @@ public class item_kiramei_stone extends Item implements IHasModel
 				}
 				else if (num == 0)
 				{
-					if (belt != RiderItems.red_kiramei_changer)
+					if (belt != SentaiItems60.red_kiramei_changer)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.kiraful_go_arrow)
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.kiraful_go_arrow)
 						{
 							if (item_kiramei_changer.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "go")
 							{

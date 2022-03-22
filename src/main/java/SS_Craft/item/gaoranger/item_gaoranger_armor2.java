@@ -2,7 +2,7 @@ package SS_Craft.item.gaoranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
@@ -123,7 +123,7 @@ public class item_gaoranger_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.empty_gao_jewel == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.empty_gao_jewel == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

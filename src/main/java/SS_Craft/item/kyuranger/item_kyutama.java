@@ -1,7 +1,7 @@
 package SS_Craft.item.kyuranger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
@@ -65,46 +65,46 @@ public class item_kyutama extends Item implements IHasModel
 				
 				if (num > 0)
 				{
-					if (this == RiderItems.saiko_kyutama)
+					if (this == SentaiItems60.saiko_kyutama)
 					{
-						if (belt == RiderItems.red_seiza_blaster)
+						if (belt == SentaiItems60.red_seiza_blaster)
 						{
 							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 						}
-						if (belt == RiderItems.dark_red_seiza_blaster)
+						if (belt == SentaiItems60.dark_red_seiza_blaster)
 						{
 							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
 							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 						}
 					}
-					else if (this == RiderItems.dark_kyutama)
+					else if (this == SentaiItems60.dark_kyutama)
 					{
-						if (belt == RiderItems.silver_seiza_blaster)
+						if (belt == SentaiItems60.silver_seiza_blaster)
 						{
 							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);	
 						}
 					}
-					else if (this == RiderItems.yagyuu_jubee_mask)
+					else if (this == SentaiItems60.yagyuu_jubee_mask)
 					{
-						if (belt == RiderItems.black_seiza_blaster)
+						if (belt == SentaiItems60.black_seiza_blaster)
 						{
 							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);	
 						}
 					}
-					else if (this == RiderItems.ryu_skill_kyutama)
+					else if (this == SentaiItems60.ryu_skill_kyutama)
 					{
-						if (belt == RiderItems.commander_ryutsueder)
+						if (belt == SentaiItems60.commander_ryutsueder)
 						{
 							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);	
 						}
 					}
-					else if (this == RiderItems.halloween_kyutama)
+					else if (this == SentaiItems60.halloween_kyutama)
 					{
-						if (belt == RiderItems.houou_blade_shield || belt == RiderItems.red_seiza_blaster)
+						if (belt == SentaiItems60.houou_blade_shield || belt == SentaiItems60.red_seiza_blaster)
 						{
 							if (item_seiza_blaster.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==3)
 							{
@@ -117,7 +117,7 @@ public class item_kyutama extends Item implements IHasModel
 								item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							}
 						}
-						else if (belt == RiderItems.commander_ryutsueder || belt == RiderItems.sky_blue_seiza_blaster)
+						else if (belt == SentaiItems60.commander_ryutsueder || belt == SentaiItems60.sky_blue_seiza_blaster)
 						{
 							item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);	
@@ -137,7 +137,7 @@ public class item_kyutama extends Item implements IHasModel
 				}
 				else if (num2 > 0)
 				{
-					if (belt != RiderItems.houou_blade_shield | belt != RiderItems.commander_ryutsueder | belt != RiderItems.black_seiza_blaster)
+					if (belt != SentaiItems60.houou_blade_shield | belt != SentaiItems60.commander_ryutsueder | belt != SentaiItems60.black_seiza_blaster)
 					{
 						item_seiza_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 						item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
@@ -149,91 +149,91 @@ public class item_kyutama extends Item implements IHasModel
 					item_seiza_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 				}
 			}
-			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.seiza_blaster)
+			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.seiza_blaster)
 			{
 				ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 				if (itemstack.isEmpty())
 				{
-					if (this == RiderItems.shishi_kyutama)
+					if (this == SentaiItems60.shishi_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.red_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.red_seiza_blaster));
 					}
-					if (this == RiderItems.sasori_kyutama)
+					if (this == SentaiItems60.sasori_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.orange_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.orange_seiza_blaster));
 					}
-					if (this == RiderItems.ookami_kyutama)
+					if (this == SentaiItems60.ookami_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.blue_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.blue_seiza_blaster));
 					}
-					if (this == RiderItems.tenbin_kyutama)
+					if (this == SentaiItems60.tenbin_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.gold_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.gold_seiza_blaster));
 					}
-					if (this == RiderItems.oushi_kyutama)
+					if (this == SentaiItems60.oushi_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.black_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.black_seiza_blaster));
 					}
-					if (this == RiderItems.hebitsukai_kyutama)
+					if (this == SentaiItems60.hebitsukai_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.silver_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.silver_seiza_blaster));
 					}
-					if (this == RiderItems.chameleon_kyutama)
+					if (this == SentaiItems60.chameleon_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.green_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.green_seiza_blaster));
 					}
-					if (this == RiderItems.washi_kyutama)
+					if (this == SentaiItems60.washi_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.pink_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.pink_seiza_blaster));
 					}
-					if (this == RiderItems.kajiki_kyutama)
+					if (this == SentaiItems60.kajiki_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.yellow_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.yellow_seiza_blaster));
 					}
-					if (this == RiderItems.koguma_kyutama)
+					if (this == SentaiItems60.koguma_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.sky_blue_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.sky_blue_seiza_blaster));
 					}
-					if (this == RiderItems.dark_shishi_kyutama)
+					if (this == SentaiItems60.dark_shishi_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.dark_red_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.dark_red_seiza_blaster));
 					}
 				}
 			}
-			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.ryutsueder)
+			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.ryutsueder)
 			{
 				ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 				if (itemstack.isEmpty())
 				{
-					if (this == RiderItems.ryu_kyutama)
+					if (this == SentaiItems60.ryu_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.commander_ryutsueder));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.commander_ryutsueder));
 					}
 				}
 			}
-			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.houou_shield)
+			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.houou_shield)
 			{
 				ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 				if (itemstack.isEmpty())
 				{
-					if (this == RiderItems.houou_kyutama)
+					if (this == SentaiItems60.houou_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.houou_blade_shield));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.houou_blade_shield));
 					}
 				}
 			}
-			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.dark_seiza_blaster)
+			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.dark_seiza_blaster)
 			{
 				ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 				if (itemstack.isEmpty())
 				{
-					if (this == RiderItems.dark_kyutama)
+					if (this == SentaiItems60.dark_kyutama)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.metal_dark_seiza_blaster));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.metal_dark_seiza_blaster));
 					}
 				}
 			}

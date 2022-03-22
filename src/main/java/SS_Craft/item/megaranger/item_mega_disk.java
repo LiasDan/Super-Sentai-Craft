@@ -1,6 +1,6 @@
 package SS_Craft.item.megaranger;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.lupatranger.item_vs_changer;

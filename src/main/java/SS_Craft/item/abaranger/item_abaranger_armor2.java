@@ -2,7 +2,7 @@ package SS_Craft.item.abaranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
@@ -101,14 +101,14 @@ public class item_abaranger_armor2 extends ItemArmor  implements IHasModel
 				armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.LEGS;
 				armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.CHEST;
 				armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.LEGS;
-				
+
 				armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.CHEST;
 				armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
-				
+
 				armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.CHEST;
-				
-				armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
-				armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
+
+				armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.CHEST;
+				armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.CHEST;
 
 				armorModel.isSneak = defaultModel.isSneak;
 				armorModel.isRiding = defaultModel.isRiding;
@@ -139,6 +139,6 @@ public class item_abaranger_armor2 extends ItemArmor  implements IHasModel
 
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

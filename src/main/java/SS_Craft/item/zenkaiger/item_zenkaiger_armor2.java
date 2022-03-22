@@ -2,7 +2,7 @@ package SS_Craft.item.zenkaiger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.maskman.item_masking_brace;
@@ -32,8 +32,10 @@ public class item_zenkaiger_armor2 extends ItemArmor  implements IHasModel
 	public static final String[] Zenkaiger= new String[] {"","_normal","_jetman"};
 	public static final String[] Zenkaizer= new String[] {"","_super","_jetman"};
 	public static final String[] Twokaizer= new String[] {"","_jetman"};
-	public static final String[] Mecha= new String[] {"akaranger","spade_ace","battle_fever_robo","dai_denzin","sun_vulcan_robo","goggle_robo","dyna_robo","bio_robo","change_robo","flash_king","great_five","live_robo","turbo_robo","five_robo","jet_icarus","dai_zyujin","ryusei_oh","muteki_shogun","ohranger_robo","rv_robo","galaxy_mega","gingai_oh","victory_robo","time_robo_alpha","gao_king","senpuu_jin","abaren_oh","dekaranger_robo","magi_king","dai_bouken","geki_tohja","engine_oh","shinken_oh","gosei_great","gokai_oh","go_buster_oh","kyoryu_zin","toq_oh","shuriken_jin","zyuoh_king","kyuren_oh","lupin_kaiser","pat_kaiser","kishiryu_oh","kiramei_zin"};
-												   //{1      ,2      ,3                  ,4           ,5                ,6            ,7          ,8         ,9            ,10          ,11          ,12         ,13          ,14         ,15          ,16          ,17         ,18             ,19             ,20       ,21           ,22         ,23            ,24               ,25        ,26          ,27         ,28               ,29         ,30          ,31          ,32         ,33          ,34           ,35        ,36            ,37          ,38      ,39            ,40          ,41         ,42            ,43          ,44           ,45           };
+	public static final String[] Stacaesar= new String[] {"","_kyoka"};
+	public static final String[] Hakaizer= new String[] {"","_kai"};
+	public static final String[] Mecha= new String[] {"akaranger","spade_ace","battle_fever_robo","dai_denzin","sun_vulcan_robo","goggle_robo","dyna_robo","bio_robo","change_robo","flash_king","great_five","live_robo","turbo_robo","five_robo","jet_icarus","dai_zyujin","ryusei_oh","muteki_shogun","ohranger_robo","rv_robo","galaxy_mega","gingai_oh","victory_robo","time_robo_alpha","gao_king","senpuu_jin","abaren_oh","dekaranger_robo","magi_king","dai_bouken","geki_tohja","engine_oh","shinken_oh","gosei_great","gokai_oh","go_buster_oh","kyoryu_zin","toq_oh","shuriken_jin","zyuoh_king","kyuren_oh","lupin_kaiser","pat_kaiser","kishiryu_oh","kiramei_zin","don_momotarou"};
+												   //{1          ,2          ,3                  ,4           ,5                ,6            ,7          ,8         ,9            ,10          ,11          ,12         ,13          ,14         ,15          ,16          ,17         ,18             ,19             ,20       ,21           ,22         ,23            ,24               ,25        ,26          ,27         ,28               ,29         ,30          ,31          ,32         ,33          ,34           ,35        ,36            ,37          ,38      ,39            ,40          ,41         ,42            ,43          ,44           ,45           ,46             };
 
 	public item_zenkaiger_armor2 (String name,ArmorMaterial par2EnumArmorMaterial, int par3, EntityEquipmentSlot par4)
 	{
@@ -92,6 +94,28 @@ public class item_zenkaiger_armor2 extends ItemArmor  implements IHasModel
 						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
 						{
 							return Refercence.MODID+":textures/armor/"+rider+Zenkaiger[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_1.png";
+						}
+					}
+					else if (rider == "stacaesar")
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+Stacaesar[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+rider+Stacaesar[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_1.png";
+						}
+					}
+					else if (rider == "hakaizer")
+					{
+						if ( slot == EntityEquipmentSlot.LEGS)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+Hakaizer[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_2.png";
+						}
+						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+						{
+							return Refercence.MODID+":textures/armor/"+rider+Hakaizer[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+"_1.png";
 						}
 					}
 					else if (rider == "mecha")
@@ -183,7 +207,7 @@ public class item_zenkaiger_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.blank_sentai_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems60.blank_sentai_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

@@ -8,7 +8,8 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Multimap;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
@@ -133,22 +134,22 @@ public class item_sword_gun_changer extends ItemBow  implements IHasModel
 
 			if (!worldIn.isRemote)
 			{
-					if (this == RiderItems.sai_blade_cutter)
+					if (this == SentaiItems40.sai_blade_cutter)
 					{
 						ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 						if (itemstack.isEmpty())
 						{
-							playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.chopper_sai_blade));
+							playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems40.chopper_sai_blade));
 						}
 					}
-					if (this == RiderItems.bull_riot)
+					if (this == SentaiItems40.bull_riot)
 					{
 						ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 						if (itemstack.isEmpty())
 						{
-							playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.black_knight_bull_riot));
+							playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems40.black_knight_bull_riot));
 						}
 					}
 				

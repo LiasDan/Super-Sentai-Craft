@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "future_kyoryu_gold",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gold_gaburichanger"
+    },
+	{
+      "item": "supersentaicraft:sp_zyudenchi"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:future_gaburichanger"
+  }
+}

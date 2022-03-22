@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
@@ -69,7 +69,7 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				armorModel.belt=new ItemStack(RiderItems.go_busters_belt);
+				armorModel.belt=new ItemStack(SentaiItems40.go_busters_belt);
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -141,17 +141,17 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.go_busters_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems40.go_busters_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.go_busters_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems40.go_busters_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.go_busters_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.go_busters_head)
 								{
 									if(item_morphin_brace.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))<100)
 									{
 										item_morphin_brace.set_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),item_morphin_brace.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+1);
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.cheetah_morphin_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.red_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.cheetah_morphin_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -169,13 +169,13 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 											}
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gorilla_morphin_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.blue_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.gorilla_morphin_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.rabbit_morphin_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.yellow_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.rabbit_morphin_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -189,19 +189,19 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 											}
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.beet_morphin_blaster || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.beetle_morphin_blaster || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.beet_enter_morphin_blaster)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.beet_morphin_blaster || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.beetle_morphin_blaster || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.beet_enter_morphin_blaster)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.stag_morphin_blaster)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.stag_morphin_blaster)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.puma_morphin_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.puma_morphin_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -219,7 +219,7 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 											}
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.hippopotamus_morphin_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.hippopotamus_morphin_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -227,15 +227,15 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 									}
 									if (this.get_lock(armor)=="_powered_custom" || this.get_lock(armor)=="_animal_perfect")
 									{
-										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.cheetah_morphin_brace)
+										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.red_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.cheetah_morphin_brace)
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
 										}
-										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gorilla_morphin_brace)
+										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.blue_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.gorilla_morphin_brace)
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
 										}
-										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.rabbit_morphin_brace)
+										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.yellow_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.rabbit_morphin_brace)
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
 										}
@@ -264,6 +264,6 @@ public class item_morphin_brace extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.enetron == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.enetron == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

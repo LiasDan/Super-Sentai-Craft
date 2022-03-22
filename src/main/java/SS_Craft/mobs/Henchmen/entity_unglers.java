@@ -1,6 +1,6 @@
 package SS_Craft.mobs.Henchmen;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
@@ -11,61 +11,61 @@ public class entity_unglers extends Entity_base_henchmen
 	public entity_unglers(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.ungler_lance));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems20.ungler_lance));
 	}
 
 	public void onDeath(DamageSource cause)
 	{
 		if (!this.world.isRemote){   
 
-			this.dropItem(RiderItems.maskman_logo, 1);
+			this.dropItem(SentaiItems20.maskman_logo, 1);
 			switch (this.rand.nextInt(6))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.red_aura_power, 1);
+				this.dropItem(SentaiItems20.red_aura_power, 1);
 				break;
 				
 			case 1:
-				this.dropItem(RiderItems.black_aura_power, 1);
+				this.dropItem(SentaiItems20.black_aura_power, 1);
 				break;
 
 			case 2:
-				this.dropItem(RiderItems.blue_aura_power, 1);
+				this.dropItem(SentaiItems20.blue_aura_power, 1);
 				break;
 
 			case 3:
-				this.dropItem(RiderItems.yellow_aura_power, 1);
+				this.dropItem(SentaiItems20.yellow_aura_power, 1);
 				break;
 
 			case 4:
-				this.dropItem(RiderItems.pink_aura_power, 1);
+				this.dropItem(SentaiItems20.pink_aura_power, 1);
 				break;
 				
 			case 5:
 				switch (this.rand.nextInt(6))
 				{
 					case 0:
-						this.dropItem(RiderItems.x1_aura_power, 1);
+						this.dropItem(SentaiItems20.x1_aura_power, 1);
 						break;
 					
 					case 1:
-						this.dropItem(RiderItems.maskman_logo, 2);
+						this.dropItem(SentaiItems20.maskman_logo, 2);
 						break;
 
 					case 2:
-						this.dropItem(RiderItems.maskman_logo, 2);
+						this.dropItem(SentaiItems20.maskman_logo, 2);
 						break;
 
 					case 3:
-						this.dropItem(RiderItems.maskman_logo, 2);
+						this.dropItem(SentaiItems20.maskman_logo, 2);
 						break;
 
 					case 4:
-						this.dropItem(RiderItems.maskman_logo, 2);
+						this.dropItem(SentaiItems20.maskman_logo, 2);
 						break;
 
 					case 5:
-						this.dropItem(RiderItems.maskman_logo, 2);
+						this.dropItem(SentaiItems20.maskman_logo, 2);
 						break;
 				}
 				break;

@@ -2,7 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "supersentaicraft:zyuohger/condor_eag_riser"
+      "supersentaicraft:zyuohger/condor_eag_riser",
+      "supersentaicraft:zyuohger/condor_zyuoh_changer"
     ]
   },
   "criteria": {
@@ -21,12 +22,19 @@
       "conditions": {
         "recipe": "supersentaicraft:zyuohger/condor_eag_riser"
       }
+    },
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zyuohger/condor_zyuoh_changer"
+      }
     }
   },
   "requirements": [
     [
       "has_item",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_the_recipe1"
     ]
   ]
 }

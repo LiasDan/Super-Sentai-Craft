@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kyoryuger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_zyudenchi"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:gabutyra_zyudenchi"
+	  },
+	  {
+	    "item": "supersentaicraft:parasagun_zyudenchi"
+	  },
+	  {
+	    "item": "supersentaicraft:stegotchi_zyudenchi"
+	  },
+	  {
+	    "item": "supersentaicraft:zakutor_zyudenchi"
+	  },
+	  {
+	    "item": "supersentaicraft:dricera_zyudenchi"
+	  },
+	  {
+	    "item": "supersentaicraft:plezuon_zyudenchi"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gaburicalibur"
+  }
+}

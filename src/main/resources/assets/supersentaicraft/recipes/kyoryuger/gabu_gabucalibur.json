@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "brave_kyoryuger",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_brave_zyudenchi"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:guntyra_zyudenchi"
+	  },
+	  {
+	    "item": "supersentaicraft:stegonsaw_zyudenchi"
+	  },
+	  {
+	    "item": "supersentaicraft:shovecera_zyudenchi"
+	  },
+	  {
+	    "item": "supersentaicraft:parasaser_zyudenchi"
+	  },
+	  {
+	    "item": "supersentaicraft:rapx_zyudenchi"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gabu_gabucalibur"
+  }
+}

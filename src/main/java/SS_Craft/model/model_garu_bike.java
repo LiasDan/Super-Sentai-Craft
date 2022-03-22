@@ -3,7 +3,7 @@ package SS_Craft.model;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.util.Refercence;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;

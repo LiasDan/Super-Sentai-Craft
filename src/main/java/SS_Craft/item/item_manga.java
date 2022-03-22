@@ -1,7 +1,7 @@
 package SS_Craft.item;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.item.jetman.item_cross_changer;
@@ -64,7 +64,7 @@ public class item_manga extends Item implements IHasModel
 			{
 				item_cross_changer belt = (item_cross_changer) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
-				if (belt == RiderItems.green_cross_changer || belt == RiderItems.black_cross_changer)
+				if (belt == SentaiItems20.green_cross_changer || belt == SentaiItems20.black_cross_changer)
 				{
 					item_cross_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 				}

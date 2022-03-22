@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
@@ -69,25 +69,29 @@ public class item_turbo_brace extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				if (stack.getItem()==RiderItems.red_turbo_brace)
+				if (stack.getItem()==SentaiItems20.red_turbo_brace)
 				{
-					armorModel.belt=new ItemStack(RiderItems.red_turbo_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.red_turbo_belt);
 				}
-				if (stack.getItem()==RiderItems.black_turbo_brace)
+				if (stack.getItem()==SentaiItems20.black_turbo_brace)
 				{
-					armorModel.belt=new ItemStack(RiderItems.black_turbo_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.black_turbo_belt);
 				}
-				if (stack.getItem()==RiderItems.blue_turbo_brace)
+				if (stack.getItem()==SentaiItems20.blue_turbo_brace)
 				{
-					armorModel.belt=new ItemStack(RiderItems.blue_turbo_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.blue_turbo_belt);
 				}
-				if (stack.getItem()==RiderItems.yellow_turbo_brace)
+				if (stack.getItem()==SentaiItems20.yellow_turbo_brace)
 				{
-					armorModel.belt=new ItemStack(RiderItems.yellow_turbo_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.yellow_turbo_belt);
 				}
-				if (stack.getItem()==RiderItems.pink_turbo_brace)
+				if (stack.getItem()==SentaiItems20.pink_turbo_brace)
 				{
-					armorModel.belt=new ItemStack(RiderItems.pink_turbo_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.pink_turbo_belt);
+				}
+				if (this.get_core(stack)==1)
+				{
+					armorModel.belt=new ItemStack(SentaiItems20.powerless_turbo_belt);
 				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -146,11 +150,11 @@ public class item_turbo_brace extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.turboranger_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems20.turboranger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.turboranger_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems20.turboranger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.turboranger_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems20.turboranger_head)
 								{
 									if (this.get_core(armor)==1)
 									{
@@ -161,35 +165,35 @@ public class item_turbo_brace extends ItemArmor implements IHasModel
 										player.removePotionEffect(MobEffects.SPEED);
 										player.removePotionEffect(MobEffects.NIGHT_VISION);
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_turbo_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_turbo_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_turbo_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.black_turbo_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_turbo_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.blue_turbo_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_turbo_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.yellow_turbo_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_turbo_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.pink_turbo_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -219,6 +223,6 @@ public class item_turbo_brace extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.turboranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.turboranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

@@ -2,7 +2,7 @@ package SS_Craft.item.gekiranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
@@ -139,7 +139,7 @@ public class item_gekiranger_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.gekiranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.gekiranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

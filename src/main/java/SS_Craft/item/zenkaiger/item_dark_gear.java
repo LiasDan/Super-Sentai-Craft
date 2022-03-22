@@ -4,7 +4,8 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
@@ -94,7 +95,7 @@ public class item_dark_gear extends Item implements IHasModel
 			ItemStack par1ItemStack= playerIn.getHeldItem(handIn);
 			
 			if (!worldIn.isRemote){
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.stacaeser_geartozinger)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.stacaeser_geartozinger)
 			{
 				if ((this.get_ammo(par1ItemStack)==100))
 				{

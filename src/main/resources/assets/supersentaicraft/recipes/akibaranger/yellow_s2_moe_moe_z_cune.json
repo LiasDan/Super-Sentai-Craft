@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "akiba_yellow",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:yellow_moe_moe_z_cune"
+    },
+	{
+      "item": "supersentaicraft:akiba_yellow_logo"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:yellow_s2_moe_moe_z_cune"
+  }
+}

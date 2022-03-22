@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "china_red",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:akibaranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:red_lailai_jewel"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:china_aura_changer"
+  }
+}

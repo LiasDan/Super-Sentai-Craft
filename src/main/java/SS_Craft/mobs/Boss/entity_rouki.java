@@ -11,7 +11,8 @@ import java.util.UUID;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Sets;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -71,7 +72,7 @@ public class entity_rouki extends EntityBossBase
 		super(par1World);
 		Random generator = new Random();
 		int rand = generator.nextInt(5);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.mikazukiken));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems40.mikazukiken));
 	}
 
 	protected void applyEntityAttributes()
@@ -97,25 +98,25 @@ public class entity_rouki extends EntityBossBase
 			switch (this.rand.nextInt(3))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.gao_wolf_jewel, 1);
+				this.dropItem(SentaiItems40.gao_wolf_jewel, 1);
 				break;	   	    		
 			case 1:
-				this.dropItem(RiderItems.gao_hammerhead_jewel, 1);
+				this.dropItem(SentaiItems40.gao_hammerhead_jewel, 1);
 				break;  	    		
 			case 2:
-				this.dropItem(RiderItems.gao_ligator_jewel, 1);
+				this.dropItem(SentaiItems40.gao_ligator_jewel, 1);
 				break;
 			}
 			
-			this.dropItem(RiderItems.empty_gao_jewel, 5);
+			this.dropItem(SentaiItems40.empty_gao_jewel, 5);
 			
 			switch (this.rand.nextInt(5))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.mikazukiken, 1);
+				this.dropItem(SentaiItems40.mikazukiken, 1);
 				break;	   	    		
 			case 1:
-				this.dropItem(RiderItems.flute_knife, 1);
+				this.dropItem(SentaiItems40.flute_knife, 1);
 				break;
 			}
 		}

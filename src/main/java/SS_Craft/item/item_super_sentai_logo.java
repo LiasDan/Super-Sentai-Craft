@@ -1,7 +1,8 @@
 package SS_Craft.item;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.abaranger.mecha.item_abaranger_mecha;
 import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha;
@@ -116,7 +117,7 @@ public class item_super_sentai_logo extends Item implements IHasModel
 					item_sun_vulcan_mecha.set_effect((playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD)), 1);
 				}
 			}
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.ninjaman_urn)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.ninjaman_urn)
 			{
 				if (playerIn.isSneaking())
 				{
@@ -129,9 +130,9 @@ public class item_super_sentai_logo extends Item implements IHasModel
 			}
 			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_geartlinger)
 			{
-				if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.red_geartlinger && playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != RiderItems.stacaeser_geartozinger)
+				if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != SentaiItems60.red_geartlinger && playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() != SentaiItems60.stacaeser_geartozinger)
 				{
-					if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.zenkaizer_geartlinger)
+					if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.zenkaizer_geartlinger)
 					{
 						if (item_geartlinger.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
 						{
@@ -145,7 +146,7 @@ public class item_super_sentai_logo extends Item implements IHasModel
 							}
 						}
 					}
-					else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.twokaizer_geardalinger)
+					else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.twokaizer_geardalinger)
 					{
 						if (item_geartlinger.get_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="super")
 						{

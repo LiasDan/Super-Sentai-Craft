@@ -1,6 +1,6 @@
 package SS_Craft.mobs.Henchmen;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.mobs.Boss.EntityBossBase;
 import SS_Craft.mobs.Boss.entity_bio_hunter_silva;
 import SS_Craft.mobs.Boss.entity_dark_kiramei_silver;
@@ -17,22 +17,14 @@ public class entity_mechaclones extends Entity_base_henchmen
 	public entity_mechaclones(World par1World)
 	{
 		super(par1World);
-	}
-
-	/**
-	 * Returns the item that this EntityLiving is holding, if any.
-	 */
-	@Override
-	public ItemStack getHeldItemMainhand()
-	{
-		return new ItemStack(RiderItems.mechaclones_sword);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems20.mechaclones_sword));
 	}
 
 	public void onDeath(DamageSource cause)
 	{
 		if (!this.world.isRemote){   
 
-			this.dropItem(RiderItems.bioman_logo, 1);
+			this.dropItem(SentaiItems20.bioman_logo, 1);
 			
 			if (this.getAttackTarget() instanceof EntityPlayer)
 			{
@@ -51,27 +43,27 @@ public class entity_mechaclones extends Entity_base_henchmen
 			switch (this.rand.nextInt(6))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.red_bio_particles, 1);
+				this.dropItem(SentaiItems20.red_bio_particles, 1);
 				break;
 
 			case 1:
-				this.dropItem(RiderItems.green_bio_particles, 1);
+				this.dropItem(SentaiItems20.green_bio_particles, 1);
 				break;
 
 			case 2:
-				this.dropItem(RiderItems.blue_bio_particles, 1);
+				this.dropItem(SentaiItems20.blue_bio_particles, 1);
 				break;
 
 			case 3:
-				this.dropItem(RiderItems.yellow_bio_particles, 1);
+				this.dropItem(SentaiItems20.yellow_bio_particles, 1);
 				break;
 
 			case 4:
-				this.dropItem(RiderItems.pink_bio_particles, 1);
+				this.dropItem(SentaiItems20.pink_bio_particles, 1);
 				break;
 
 			case 5:
-				this.dropItem(RiderItems.bioman_logo, 2);
+				this.dropItem(SentaiItems20.bioman_logo, 2);
 				break;
 			}
 		}

@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.IEntityLivingData;
@@ -57,11 +57,11 @@ public class entity_bio_hunter_silva extends EntityBossBase implements IRangedAt
     public entity_bio_hunter_silva(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.bi_buster));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.bioman_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.bioman_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.bio_hunter_silva_belt));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.bioman_legs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems20.bi_buster));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems20.bioman_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems20.bioman_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems20.bio_hunter_silva_belt));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems20.bioman_legs));
 		
 		this.tasks.addTask(2, aiArrowAttack);
 	}
@@ -85,14 +85,15 @@ public class entity_bio_hunter_silva extends EntityBossBase implements IRangedAt
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.bio_hunter_silva_belt, 1);
-			this.dropItem(RiderItems.bioman_logo, 5);
-		}
-		switch (this.rand.nextInt(5))
-		{   		   	    		
-		case 0:
-			this.dropItem(RiderItems.bi_buster, 1);
-			break;
+			this.dropItem(SentaiItems20.bio_hunter_silva_belt, 1);
+			this.dropItem(SentaiItems20.bioman_logo, 5);
+			
+			switch (this.rand.nextInt(5))
+			{   		   	    		
+			case 0:
+				this.dropItem(SentaiItems20.bi_buster, 1);
+				break;
+			}
 		}
 	}
 

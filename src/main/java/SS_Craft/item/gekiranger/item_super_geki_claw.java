@@ -2,7 +2,7 @@ package SS_Craft.item.gekiranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.gingaman.item_ginga_brace;
@@ -54,7 +54,7 @@ public class item_super_geki_claw extends ItemSword implements IHasModel
 			@SideOnly(Side.CLIENT)
 	           public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
 	           {
-					if (stack.getItem() == RiderItems.red_super_geki_claw|stack.getItem() == RiderItems.yellow_super_geki_claw|stack.getItem() == RiderItems.blue_super_geki_claw)
+					if (stack.getItem() == SentaiItems40.red_super_geki_claw|stack.getItem() == SentaiItems40.yellow_super_geki_claw|stack.getItem() == SentaiItems40.blue_super_geki_claw)
 					{
 						if (entityIn == null)
 		                {
@@ -93,9 +93,9 @@ public class item_super_geki_claw extends ItemSword implements IHasModel
     {
     	if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_geki_changer)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.red_geki_changer)
 			{	
-				if (this==RiderItems.red_super_geki_claw)
+				if (this==SentaiItems40.red_super_geki_claw)
 				{
 					if (playerIn.isSneaking()&&item_geki_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
@@ -107,9 +107,9 @@ public class item_super_geki_claw extends ItemSword implements IHasModel
 					}
 				}
 			}
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_geki_changer)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.yellow_geki_changer)
 			{	
-				if (this==RiderItems.yellow_super_geki_claw)
+				if (this==SentaiItems40.yellow_super_geki_claw)
 				{
 					if (playerIn.isSneaking()&&item_geki_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
@@ -121,9 +121,9 @@ public class item_super_geki_claw extends ItemSword implements IHasModel
 					}
 				}
 			}
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_geki_changer)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.blue_geki_changer)
 			{	
-				if (this==RiderItems.blue_super_geki_claw)
+				if (this==SentaiItems40.blue_super_geki_claw)
 				{
 					if (playerIn.isSneaking()&&item_geki_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
@@ -143,6 +143,6 @@ public class item_super_geki_claw extends ItemSword implements IHasModel
     
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.gekiranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.gekiranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

@@ -4,7 +4,8 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_vehicle;
 import SS_Craft.model.model_belt;
@@ -72,7 +73,7 @@ public class item_mobirates extends ItemArmor implements IHasModel
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				Item[] form= new Item[] {RiderItems.gokaiger_belt,RiderItems.akaranger_belt,RiderItems.jakq_belt,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.vul_eagle_belt,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.carranger_belt,RiderItems.blanknoitem,RiderItems.gingaman_logo,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.gaoranger_belt,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.shinkenger_belt,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem,RiderItems.blanknoitem};
+				Item[] form= new Item[] {SentaiItems20.gokaiger_belt,SentaiItems20.akaranger_belt,SentaiItems20.jakq_belt,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems20.vul_eagle_belt,SentaiItems20.blanknoitem,SentaiItems20.dynaman_belt,SentaiItems20.blanknoitem,SentaiItems20.changeman_belt,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems20.red_falcon_belt,SentaiItems20.blanknoitem,SentaiItems20.fiveman_belt,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems20.ohranger_logo,SentaiItems20.carranger_belt,SentaiItems20.blanknoitem,SentaiItems40.gingaman_logo,SentaiItems20.blanknoitem,SentaiItems40.timeranger_belt,SentaiItems40.gaoranger_belt,SentaiItems40.hurricaneger_belt,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems40.magiranger_logo,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems40.shinkenger_belt,SentaiItems40.goseiger_belt,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem};
 				
 				armorModel.belt=new ItemStack(form[item_mobirates.get_core(stack)]);
 				
@@ -146,13 +147,13 @@ public class item_mobirates extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.kawarimono_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems20.kawarimono_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.kawarimono_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems20.kawarimono_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.kawarimono_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems20.kawarimono_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_mobirates)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_mobirates)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));

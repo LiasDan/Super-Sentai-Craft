@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
@@ -69,29 +69,29 @@ public class item_doron_changer extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				if (this == RiderItems.red_doron_changer)
+				if (this == SentaiItems20.red_doron_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.ninja_red_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.ninja_red_belt);
 				}
-				if (this == RiderItems.white_doron_changer)
+				if (this == SentaiItems20.white_doron_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.ninja_white_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.ninja_white_belt);
 				}
-				if (this == RiderItems.yellow_doron_changer)
+				if (this == SentaiItems20.yellow_doron_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.ninja_yellow_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.ninja_yellow_belt);
 				}
-				if (this == RiderItems.blue_doron_changer)
+				if (this == SentaiItems20.blue_doron_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.ninja_blue_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.ninja_blue_belt);
 				}
-				if (this == RiderItems.black_doron_changer)
+				if (this == SentaiItems20.black_doron_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.ninja_black_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.ninja_black_belt);
 				}
 				else
 				{
-					armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+					armorModel.belt=new ItemStack(SentaiItems20.blanknoitem);
 				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -164,17 +164,17 @@ public class item_doron_changer extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.kakuranger_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems20.kakuranger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.kakuranger_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems20.kakuranger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.kakuranger_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems20.kakuranger_head)
 								{
 									if (this.get_effect(armor)==1)
 									{
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_doron_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_doron_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -189,7 +189,7 @@ public class item_doron_changer extends ItemArmor implements IHasModel
 											player.motionZ=look.z/5;
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.white_doron_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.white_doron_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -204,7 +204,7 @@ public class item_doron_changer extends ItemArmor implements IHasModel
 											player.motionZ=look.z/5;
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_doron_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.yellow_doron_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -219,7 +219,7 @@ public class item_doron_changer extends ItemArmor implements IHasModel
 											player.motionZ=look.z/5;
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_doron_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.blue_doron_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -244,7 +244,7 @@ public class item_doron_changer extends ItemArmor implements IHasModel
 											}
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_doron_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.black_doron_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -260,7 +260,7 @@ public class item_doron_changer extends ItemArmor implements IHasModel
 											player.motionZ=look.z/5;
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.ninjaman_urn)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.ninjaman_urn)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -310,6 +310,6 @@ public class item_doron_changer extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.kakuranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.kakuranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

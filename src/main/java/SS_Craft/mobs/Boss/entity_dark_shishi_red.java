@@ -11,7 +11,8 @@ import java.util.UUID;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Sets;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -69,12 +70,12 @@ public class entity_dark_shishi_red extends EntityBossBase
 	public entity_dark_shishi_red(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.kyu_sword));
-		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(RiderItems.seiza_blaster));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.kyuranger_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.kyuranger_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.dark_red_seiza_blaster));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.kyuranger_legs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.kyu_sword));
+		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(SentaiItems60.seiza_blaster));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems60.kyuranger_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems60.kyuranger_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.dark_red_seiza_blaster));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems60.kyuranger_legs));
 	}
 
 	protected void applyEntityAttributes()
@@ -96,8 +97,8 @@ public class entity_dark_shishi_red extends EntityBossBase
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.dark_shishi_kyutama, 1);
-			this.dropItem(RiderItems.blank_kyutama, 5);
+			this.dropItem(SentaiItems60.dark_shishi_kyutama, 1);
+			this.dropItem(SentaiItems60.blank_kyutama, 5);
 		}
 	}
 }

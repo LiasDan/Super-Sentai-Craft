@@ -2,7 +2,7 @@ package SS_Craft.item.turboranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.model.tokuArmorModel;
@@ -126,7 +126,7 @@ public class item_turboranger_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.turboranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.turboranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

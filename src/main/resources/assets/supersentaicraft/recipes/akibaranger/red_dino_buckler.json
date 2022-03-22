@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "red_powerful_ranger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:akibaranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:tyranno_medal"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:red_dino_buckler"
+  }
+}

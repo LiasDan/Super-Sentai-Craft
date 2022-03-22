@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
 import SS_Craft.model.model_belt_plus;
@@ -70,41 +70,41 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				armorModel.belt=new ItemStack(RiderItems.jetman_belt);
+				armorModel.belt=new ItemStack(SentaiItems20.jetman_belt);
 				
-				if (this == RiderItems.red_cross_changer)
+				if (this == SentaiItems20.red_cross_changer)
 				{
 					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
 					{
-						armorModel.wings=new ItemStack(RiderItems.red_hawk_wing);
+						armorModel.wings=new ItemStack(SentaiItems20.red_hawk_wing);
 					}
 				}
-				if (this == RiderItems.black_cross_changer)
+				if (this == SentaiItems20.black_cross_changer)
 				{
 					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
 					{
-						armorModel.wings=new ItemStack(RiderItems.black_condor_wing);
+						armorModel.wings=new ItemStack(SentaiItems20.black_condor_wing);
 					}
 				}
-				if (this == RiderItems.yellow_cross_changer)
+				if (this == SentaiItems20.yellow_cross_changer)
 				{
 					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
 					{
-						armorModel.wings=new ItemStack(RiderItems.yellow_owl_wing);
+						armorModel.wings=new ItemStack(SentaiItems20.yellow_owl_wing);
 					}
 				}
-				if (this == RiderItems.white_cross_changer)
+				if (this == SentaiItems20.white_cross_changer)
 				{
 					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
 					{
-						armorModel.wings=new ItemStack(RiderItems.white_swan_wing);
+						armorModel.wings=new ItemStack(SentaiItems20.white_swan_wing);
 					}
 				}
-				if (this == RiderItems.blue_cross_changer)
+				if (this == SentaiItems20.blue_cross_changer)
 				{
 					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)))
 					{
-						armorModel.wings=new ItemStack(RiderItems.blue_swallow_wing);
+						armorModel.wings=new ItemStack(SentaiItems20.blue_swallow_wing);
 					}
 				}
 				
@@ -164,13 +164,13 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.jetman_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems20.jetman_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.jetman_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems20.jetman_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.jetman_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems20.jetman_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_cross_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_cross_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -178,7 +178,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_cross_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.black_cross_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -186,7 +186,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_cross_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.yellow_cross_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -194,7 +194,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.white_cross_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.white_cross_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -202,7 +202,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_cross_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.blue_cross_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -210,7 +210,7 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_cross_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.green_cross_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -241,6 +241,6 @@ public class item_cross_changer extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.birdonic_wave == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.birdonic_wave == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

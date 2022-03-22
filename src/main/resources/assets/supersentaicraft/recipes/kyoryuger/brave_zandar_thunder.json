@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "brave_kyoryu_gold",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_brave_zyudenchi"
+    },
+	"b": {
+	  "item": "supersentaicraft:pteravolton_zyudenchi"
+	},
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:zandar_thunder"
+  }
+}

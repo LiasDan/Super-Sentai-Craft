@@ -4,7 +4,7 @@ package SS_Craft.mobs.Henchmen;
 import java.util.Calendar;
 import java.util.UUID;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;

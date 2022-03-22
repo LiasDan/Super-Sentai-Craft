@@ -1,6 +1,7 @@
 package SS_Craft.mobs.Boss;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.IRangedAttackMob;
@@ -37,11 +38,11 @@ public class entity_neo_deka_red extends EntityBossBase implements IRangedAttack
     public entity_neo_deka_red(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.d_revolver));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.dekaranger_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.dekaranger_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.neo_red_sp_license));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.dekaranger_legs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems40.d_revolver));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems40.dekaranger_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems40.dekaranger_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems40.neo_red_sp_license));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems40.dekaranger_legs));
 		
 		this.tasks.addTask(2, aiArrowAttack);
 	}
@@ -65,14 +66,15 @@ public class entity_neo_deka_red extends EntityBossBase implements IRangedAttack
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.neo_red_sp_license, 1);
-			this.dropItem(RiderItems.dekaranger_badge, 5);
-		}
-		switch (this.rand.nextInt(5))
-		{   		   	    		
-		case 0:
-			this.dropItem(RiderItems.d_revolver, 1);
-			break;
+			this.dropItem(SentaiItems40.neo_red_sp_license, 1);
+			this.dropItem(SentaiItems40.dekaranger_badge, 5);
+			
+			switch (this.rand.nextInt(5))
+			{   		   	    		
+			case 0:
+				this.dropItem(SentaiItems40.d_revolver, 1);
+				break;
+			}
 		}
 	}
 

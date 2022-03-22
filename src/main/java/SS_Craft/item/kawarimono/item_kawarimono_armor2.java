@@ -2,7 +2,7 @@ package SS_Craft.item.kawarimono;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.kyuranger.item_seiza_blaster;

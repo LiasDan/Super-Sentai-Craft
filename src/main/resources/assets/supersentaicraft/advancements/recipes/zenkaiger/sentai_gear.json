@@ -38,6 +38,7 @@
       "supersentaicraft:zenkaiger/sentai_gear/goseiger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/gokaiger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/go_busters_gear",
+      "supersentaicraft:zenkaiger/sentai_gear/akibaranger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/kyoryuger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/toqger_gear",
       "supersentaicraft:zenkaiger/sentai_gear/ninninger_gear",
@@ -261,70 +262,76 @@
     "has_the_recipe33": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/kyoryuger_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/akibaranger_gear"
       }
     },
     "has_the_recipe34": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/toqger_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/kyoryuger_gear"
       }
     },
     "has_the_recipe35": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/ninninger_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/toqger_gear"
       }
     },
     "has_the_recipe36": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/zyuohger_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/ninninger_gear"
       }
     },
     "has_the_recipe37": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/kyuranger_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/zyuohger_gear"
       }
     },
     "has_the_recipe38": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/lupinranger_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/kyuranger_gear"
       }
     },
     "has_the_recipe39": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/patranger_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/lupinranger_gear"
       }
     },
     "has_the_recipe40": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/ryusoulger_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/patranger_gear"
       }
     },
     "has_the_recipe41": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/kirameiger_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/ryusoulger_gear"
       }
     },
     "has_the_recipe42": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/bioman_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/kirameiger_gear"
       }
     },
     "has_the_recipe43": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "supersentaicraft:zenkaiger/sentai_gear/gogo_v_gear"
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/bioman_gear"
       }
     },
     "has_the_recipe44": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "supersentaicraft:zenkaiger/sentai_gear/gogo_v_gear"
+      }
+    },
+    "has_the_recipe45": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
         "recipe": "supersentaicraft:zenkaiger/sentai_gear/abaranger_gear"
@@ -378,7 +385,8 @@
       "has_the_recipe41",
       "has_the_recipe42",
       "has_the_recipe43",
-      "has_the_recipe44"
+      "has_the_recipe44",
+      "has_the_recipe45"
     ]
   ]
 }

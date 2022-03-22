@@ -6,7 +6,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
@@ -82,33 +82,33 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				if (this == RiderItems.red_kiramei_changer)
+				if (this == SentaiItems60.red_kiramei_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.kiramei_red_belt);
+					armorModel.belt=new ItemStack(SentaiItems60.kiramei_red_belt);
 				}
-				if (this == RiderItems.yellow_kiramei_changer)
+				if (this == SentaiItems60.yellow_kiramei_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.kiramei_yellow_belt);
+					armorModel.belt=new ItemStack(SentaiItems60.kiramei_yellow_belt);
 				}
-				if (this == RiderItems.green_kiramei_changer)
+				if (this == SentaiItems60.green_kiramei_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.kiramei_green_belt);
+					armorModel.belt=new ItemStack(SentaiItems60.kiramei_green_belt);
 				}
-				if (this == RiderItems.blue_kiramei_changer)
+				if (this == SentaiItems60.blue_kiramei_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.kiramei_blue_belt);
+					armorModel.belt=new ItemStack(SentaiItems60.kiramei_blue_belt);
 				}
-				if (this == RiderItems.pink_kiramei_changer)
+				if (this == SentaiItems60.pink_kiramei_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.kiramei_pink_belt);
+					armorModel.belt=new ItemStack(SentaiItems60.kiramei_pink_belt);
 				}
-				if (this == RiderItems.shiny_kiramei_changer | this == RiderItems.yodon_changer)
+				if (this == SentaiItems60.shiny_kiramei_changer | this == SentaiItems60.yodon_changer)
 				{
-					armorModel.belt=new ItemStack(RiderItems.kiramei_silver_belt);
+					armorModel.belt=new ItemStack(SentaiItems60.kiramei_silver_belt);
 				}
-				if (this == RiderItems.gold_kiraful_go_arrow)
+				if (this == SentaiItems60.gold_kiraful_go_arrow)
 				{
-					armorModel.belt=new ItemStack(RiderItems.kiramei_gold_belt);
+					armorModel.belt=new ItemStack(SentaiItems60.kiramei_gold_belt);
 				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -187,20 +187,20 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.kirameiger_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems60.kirameiger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.kirameiger_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems60.kirameiger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.kirameiger_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems60.kirameiger_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_kiramei_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.red_kiramei_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_kiramei_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.yellow_kiramei_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -208,7 +208,7 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_kiramei_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.green_kiramei_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -216,7 +216,7 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_kiramei_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.blue_kiramei_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -225,7 +225,7 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_kiramei_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.pink_kiramei_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -233,7 +233,7 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.shiny_kiramei_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.shiny_kiramei_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -242,7 +242,7 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yodon_changer)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.yodon_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -252,7 +252,7 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.WITHER,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gold_kiraful_go_arrow)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.gold_kiraful_go_arrow)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -268,15 +268,15 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
 										
-										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_kiramei_changer)
+										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.yellow_kiramei_changer)
 										{
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 4,true,false));
 										}
-										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_kiramei_changer)
+										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.green_kiramei_changer)
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
 										}
-										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_kiramei_changer)
+										if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.blue_kiramei_changer)
 										{
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 4,true,false));
 										}
@@ -304,6 +304,6 @@ public class item_kiramei_changer extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems60.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

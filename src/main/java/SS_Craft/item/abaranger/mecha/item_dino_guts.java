@@ -1,7 +1,7 @@
 package SS_Craft.item.abaranger.mecha;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.util.IHasModel;
@@ -52,9 +52,9 @@ public class item_dino_guts extends Item implements IHasModel
 			{
 				item_abaranger_mecha belt = (item_abaranger_mecha) playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem();
 
-				if (belt == RiderItems.killer_oh_head)
+				if (belt == SentaiItems40.killer_oh_head)
 				{
-					if (this == RiderItems.top_dino_guts)
+					if (this == SentaiItems40.top_dino_guts)
 					{
 						item_abaranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 					}
@@ -75,9 +75,9 @@ public class item_dino_guts extends Item implements IHasModel
 						}
 					}
 				}
-				else if (belt == RiderItems.abaren_oh_head)
+				else if (belt == SentaiItems40.abaren_oh_head)
 				{
-					if (this == RiderItems.top_dino_guts)
+					if (this == SentaiItems40.top_dino_guts)
 					{
 						item_abaranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 						item_abaranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);

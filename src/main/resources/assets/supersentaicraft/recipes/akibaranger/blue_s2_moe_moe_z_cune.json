@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "akiba_blue",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blue_moe_moe_z_cune"
+    },
+	{
+      "item": "supersentaicraft:akiba_blue_logo"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:blue_s2_moe_moe_z_cune"
+  }
+}

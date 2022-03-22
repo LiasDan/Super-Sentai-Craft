@@ -2,7 +2,7 @@ package SS_Craft.item.gaoranger.mecha;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.go_onger.item_go_phone;
 import SS_Craft.item.maskman.item_masking_brace;
@@ -205,7 +205,7 @@ public class item_gaoranger_mecha_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.mecha_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.mecha_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

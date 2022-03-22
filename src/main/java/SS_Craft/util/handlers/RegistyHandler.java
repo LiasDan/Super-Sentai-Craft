@@ -1,6 +1,6 @@
 package SS_Craft.util.handlers;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.potion.PotionCore;

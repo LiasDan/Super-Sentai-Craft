@@ -2,8 +2,10 @@ package SS_Craft.item.dairanger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.go_onger.item_go_phone;
+import SS_Craft.model.BipedLockseed;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
 import SS_Craft.util.Refercence;
@@ -51,17 +53,15 @@ public class item_dairanger_armor extends ItemArmor  implements IHasModel
 				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_aura_changer)
 				{
 					String rider = ((item_aura_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
-
-					if ( slot == EntityEquipmentSlot.LEGS)
+					
+					if (item_aura_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="base")
 					{
-						return Refercence.MODID+":textures/armor/"+rider +"_2.png";
+						return Refercence.MODID+":textures/armor/kiba_ranger_base_1.png";
 					}
-					if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
+					else
 					{
-						return Refercence.MODID+":textures/armor/"+rider +"_1.png";
+						return Refercence.MODID+":textures/armor/blank.png";
 					}
-
-					return Refercence.MODID+":textures/armor/blank.png";
 				}
 			}
 			else
@@ -97,17 +97,17 @@ public class item_dairanger_armor extends ItemArmor  implements IHasModel
 		{
 			if(stack.getItem() instanceof item_dairanger_armor)
 			{
-				tokuArmorModel armorModel = new tokuArmorModel();
+				BipedLockseed armorModel = new BipedLockseed();
+				
+				armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.HEAD;
+				armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.HEAD;
+				armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.HEAD;
 
-				armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.LEGS;
-				armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.CHEST;
-				armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.LEGS;
-				
-				armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.CHEST;
-				armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
-				
-				armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.CHEST;
-				
+				armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.HEAD;
+				armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.HEAD;
+
+				armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.HEAD;
+
 				armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
 				armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
 
@@ -125,6 +125,6 @@ public class item_dairanger_armor extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.dairanger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.dairanger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

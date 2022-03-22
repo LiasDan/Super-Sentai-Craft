@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kyoryuger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gaburivolver"
+    },
+	{
+      "item": "supersentaicraft:gaburicalibur"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gaburu_cannon"
+  }
+}

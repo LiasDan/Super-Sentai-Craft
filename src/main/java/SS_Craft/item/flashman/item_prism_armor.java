@@ -1,6 +1,6 @@
 package SS_Craft.item.flashman;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.lupatranger.item_vs_changer;
@@ -55,16 +55,16 @@ public class item_prism_armor extends Item implements IHasModel
 				}
 				else
 				{
-					if (this == RiderItems.prism_kaizer)
+					if (this == SentaiItems20.prism_kaizer)
 					{
-						if (belt == RiderItems.green_prism_flash)
+						if (belt == SentaiItems20.green_prism_flash)
 						{
 							item_prism_flash.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 						}
 					}
-					if (this == RiderItems.prism_boots)
+					if (this == SentaiItems20.prism_boots)
 					{
-						if (belt == RiderItems.pink_prism_flash)
+						if (belt == SentaiItems20.pink_prism_flash)
 						{
 							item_prism_flash.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 						}

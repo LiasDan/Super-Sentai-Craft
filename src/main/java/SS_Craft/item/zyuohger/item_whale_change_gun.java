@@ -6,7 +6,9 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Multimap;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.carranger.item_accel_changer;
@@ -84,7 +86,7 @@ public class item_whale_change_gun extends ItemBow  implements IHasModel
 			@SideOnly(Side.CLIENT)
 	           public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
 	           {
-					if (stack.getItem() == RiderItems.whale_change_gun)
+					if (stack.getItem() == SentaiItems40.whale_change_gun)
 					{
 						if (entityIn == null)
 		                {
@@ -138,17 +140,19 @@ public class item_whale_change_gun extends ItemBow  implements IHasModel
 	{
 		if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.eagle_zyuoh_changer)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.eagle_zyuoh_changer)
 			{	
-				if (this==RiderItems.whale_change_gun)
+				if (this==SentaiItems40.whale_change_gun)
 				{
 					if (playerIn.isSneaking()&&item_zyuoh_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=2)
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 2);
+						item_zyuoh_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 					else if (playerIn.isSneaking()&&item_zyuoh_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==2)
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
+						item_zyuoh_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 			}
@@ -303,7 +307,7 @@ public class item_whale_change_gun extends ItemBow  implements IHasModel
 
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.king_s_credential == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.king_s_credential == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
     /**

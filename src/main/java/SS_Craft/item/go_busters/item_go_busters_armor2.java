@@ -2,7 +2,7 @@ package SS_Craft.item.go_busters;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.model.BipedLockseed;
@@ -128,7 +128,7 @@ public class item_go_busters_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.enetron == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.enetron == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

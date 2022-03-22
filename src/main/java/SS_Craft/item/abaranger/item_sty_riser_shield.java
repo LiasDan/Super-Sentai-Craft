@@ -2,7 +2,7 @@ package SS_Craft.item.abaranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.lupatranger.item_vs_changer;
@@ -61,9 +61,9 @@ public class item_sty_riser_shield extends ItemShield implements IHasModel
     {
     	if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_dino_brace)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.red_dino_brace)
 			{	
-				if (this==RiderItems.sty_riser_shield)
+				if (this==SentaiItems40.sty_riser_shield)
 				{
 					if (playerIn.isSneaking()&&item_dino_brace.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
@@ -83,6 +83,6 @@ public class item_sty_riser_shield extends ItemShield implements IHasModel
     
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

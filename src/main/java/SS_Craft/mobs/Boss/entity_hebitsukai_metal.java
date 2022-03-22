@@ -11,7 +11,8 @@ import java.util.UUID;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Sets;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -69,12 +70,12 @@ public class entity_hebitsukai_metal extends EntityBossBase
 	public entity_hebitsukai_metal(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.dark_kyu_sickle));
-		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(RiderItems.dark_seiza_blaster));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.kyuranger_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.kyuranger_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.metal_dark_seiza_blaster));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.kyuranger_legs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.dark_kyu_sickle));
+		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(SentaiItems60.dark_seiza_blaster));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems60.kyuranger_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems60.kyuranger_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.metal_dark_seiza_blaster));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems60.kyuranger_legs));
 	}
 
 	protected void applyEntityAttributes()
@@ -96,16 +97,16 @@ public class entity_hebitsukai_metal extends EntityBossBase
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.dark_kyutama, 1);
-			this.dropItem(RiderItems.blank_kyutama, 5);
+			this.dropItem(SentaiItems60.dark_kyutama, 1);
+			this.dropItem(SentaiItems60.blank_kyutama, 5);
 			
 			switch (this.rand.nextInt(5))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.dark_kyu_sickle, 1);
+				this.dropItem(SentaiItems60.dark_kyu_sickle, 1);
 				break;	   	    		
 			case 1:
-				this.dropItem(RiderItems.dark_seiza_blaster, 1);
+				this.dropItem(SentaiItems60.dark_seiza_blaster, 1);
 				break;
 			}
 		}

@@ -2,7 +2,7 @@ package SS_Craft.item.shinkenger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.BipedLockseed;
 import SS_Craft.model.tokuArmorModel;
@@ -122,6 +122,6 @@ public class item_shinkenger_armor extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.common_disk == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.common_disk == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

@@ -2,7 +2,7 @@ package SS_Craft.item.ryusoulger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.abaranger.item_dino_brace;
 import SS_Craft.item.gingaman.item_ginga_brace;
@@ -66,9 +66,9 @@ public class item_ryusoul_calibur extends ItemSword implements IHasModel
 			{
     			item_ryusoul_changer belt = (item_ryusoul_changer) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
-    			if (belt != RiderItems.gaisorg_changer | belt != RiderItems.brown_changer)
+    			if (belt != SentaiItems60.gaisorg_changer | belt != SentaiItems60.brown_changer)
     			{
-    				if (this==RiderItems.ryusoul_calibur)
+    				if (this==SentaiItems60.ryusoul_calibur)
     				{
     					if (playerIn.isSneaking()&&item_ryusoul_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=9)
     					{
@@ -90,6 +90,6 @@ public class item_ryusoul_calibur extends ItemSword implements IHasModel
 
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.blank_ryusoul == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems60.blank_ryusoul == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

@@ -1,7 +1,7 @@
 package SS_Craft.item.turboranger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.item.jetman.item_cross_changer;

@@ -4,7 +4,8 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.shinkenger.item_secret_disk;
 import SS_Craft.model.BipedLockseed;
@@ -80,26 +81,26 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				armorModel.belt=new ItemStack(SentaiItems20.blanknoitem);
 				
-				if (this == RiderItems.abaren_oh_head)
+				if (this == SentaiItems40.abaren_oh_head)
 				{
 					if (this.get_right(stack)=="abaren_galer")
 					{
-						armorModel.wings=new ItemStack(RiderItems.oo_abaren_oh_wings);
+						armorModel.wings=new ItemStack(SentaiItems40.oo_abaren_oh_wings);
 					}
 					else
 					{
-						armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+						armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
 					}
 				}
-				else if (this == RiderItems.oo_abaren_oh_head)
+				else if (this == SentaiItems40.oo_abaren_oh_head)
 				{
-					armorModel.wings=new ItemStack(RiderItems.oo_abaren_oh_wings);
+					armorModel.wings=new ItemStack(SentaiItems40.oo_abaren_oh_wings);
 				}
 				else
 				{
-					armorModel.wings=new ItemStack(RiderItems.blanknoitem);
+					armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
 				}
 				
 				
@@ -201,17 +202,17 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.abaren_oh_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems40.abaren_oh_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.abaren_oh_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems40.abaren_oh_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.abaren_oh_boots)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.abaren_oh_boots)
 								{
 									if (this.get_effect(armor)==1)
 									{
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.abaren_oh_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.abaren_oh_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
@@ -267,7 +268,7 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 											player.removePotionEffect(MobEffects.SLOWNESS);
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.abaren_ohji_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.abaren_ohji_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
@@ -280,7 +281,7 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.killer_oh_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.killer_oh_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
@@ -321,7 +322,7 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH,20, 3,true,false));
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.max_ohja_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.max_ohja_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
@@ -330,7 +331,7 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.max_ryuoh_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.max_ryuoh_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
@@ -343,7 +344,7 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 20, 4,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.oo_abaren_oh_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.oo_abaren_oh_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
@@ -357,7 +358,7 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.bakuren_oh_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.bakuren_oh_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
@@ -419,6 +420,6 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.mecha_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.mecha_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

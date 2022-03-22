@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kyoryu_red_carnival",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:gaburi_carnival"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:gaburivolver"
+  }
+}

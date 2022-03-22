@@ -11,7 +11,8 @@ import java.util.UUID;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Sets;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -69,12 +70,12 @@ public class entity_gaisorg extends EntityBossBase
 	public entity_gaisorg(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.gaisoul_ken));
-		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(RiderItems.gaisoul_shield));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.ryusoulger_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.ryusoulger_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.gaisorg_changer));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.ryusoulger_legs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.gaisoul_ken));
+		this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(SentaiItems60.gaisoul_shield));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems60.ryusoulger_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems60.ryusoulger_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.gaisorg_changer));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems60.ryusoulger_legs));
 	}
 
 	protected void applyEntityAttributes()
@@ -95,19 +96,19 @@ public class entity_gaisorg extends EntityBossBase
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.gai_soul, 1);
-			this.dropItem(RiderItems.blank_ryusoul, 5);
+			this.dropItem(SentaiItems60.gai_soul, 1);
+			this.dropItem(SentaiItems60.blank_ryusoul, 5);
 			
 			switch (this.rand.nextInt(5))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.byubyu_soul, 1);
+				this.dropItem(SentaiItems60.byubyu_soul, 1);
 				break;
 			case 1:
-				this.dropItem(RiderItems.max_ryusoul, 1);
+				this.dropItem(SentaiItems60.max_ryusoul, 1);
 				break;
 			case 2:
-				this.dropItem(RiderItems.gaisoul_ken, 1);
+				this.dropItem(SentaiItems60.gaisoul_ken, 1);
 				break;
 			}
 		}

@@ -46,7 +46,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.goranger_head);
+			return new ItemStack(SentaiItems20.goranger_head);
 		}
 	};
 	//02
@@ -59,7 +59,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.jakq_head);
+			return new ItemStack(SentaiItems20.jakq_head);
 		}
 	};
 	//03
@@ -72,7 +72,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.battle_fever_head);
+			return new ItemStack(SentaiItems20.battle_fever_head);
 		}
 	};
 	//04
@@ -85,7 +85,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.denziman_head);
+			return new ItemStack(SentaiItems20.denziman_head);
 		}
 	};
 	//05
@@ -98,7 +98,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.sun_vulcan_head);
+			return new ItemStack(SentaiItems20.sun_vulcan_head);
 		}
 	};
 	//06
@@ -111,7 +111,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.goggle_v_head);
+			return new ItemStack(SentaiItems20.goggle_v_head);
 		}
 	};
 	//08
@@ -124,15 +124,20 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.bioman_head);
+			return new ItemStack(SentaiItems20.bioman_head);
 		}
 	};
 	//10
 	public static CreativeTabs tabFlashman= new CreativeTabs("tabFlashman")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_flashman_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.flashman_head);
+			return new ItemStack(SentaiItems20.flashman_head);
 		}
 	};
 	//11
@@ -145,7 +150,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.maskman_head);
+			return new ItemStack(SentaiItems20.maskman_head);
 		}
 	};
 	//13
@@ -158,31 +163,46 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.turboranger_head);
+			return new ItemStack(SentaiItems20.turboranger_head);
 		}
 	};
 	//15
 	public static CreativeTabs tabJetman= new CreativeTabs("tabJetman")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_jetman_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.jetman_head);
+			return new ItemStack(SentaiItems20.jetman_head);
 		}
 	};
 	//16
 	public static CreativeTabs tabZyuranger= new CreativeTabs("tabZyuranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_zyuranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.zyuranger_head);
+			return new ItemStack(SentaiItems20.zyuranger_head);
 		}
 	};
 	//17
 	public static CreativeTabs tabDairanger= new CreativeTabs("tabDairanger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_dairanger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.dairanger_head);
+			return new ItemStack(SentaiItems20.dairanger_head);
 		}
 	};
 	//18
@@ -195,7 +215,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.kakuranger_head);
+			return new ItemStack(SentaiItems20.kakuranger_head);
 		}
 	};
 	//20
@@ -208,7 +228,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.carranger_head);
+			return new ItemStack(SentaiItems20.carranger_head);
 		}
 	};
 	//21
@@ -221,7 +241,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.megaranger_head);
+			return new ItemStack(SentaiItems40.megaranger_head);
 		}
 	};
 	//22
@@ -234,7 +254,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.gingaman_head);
+			return new ItemStack(SentaiItems40.gingaman_head);
 		}
 	};
 	//23
@@ -247,7 +267,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.gogo_v_head);
+			return new ItemStack(SentaiItems40.gogo_v_head);
 		}
 	};
 	//25
@@ -260,15 +280,20 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.gaoranger_head);
+			return new ItemStack(SentaiItems40.gaoranger_head);
 		}
 	};
 	//27
 	public static CreativeTabs tabAbaranger= new CreativeTabs("tabAbaranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_abaranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.abaranger_head);
+			return new ItemStack(SentaiItems40.abaranger_head);
 		}
 	};
 	//28
@@ -281,7 +306,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.dekaranger_head);
+			return new ItemStack(SentaiItems40.dekaranger_head);
 		}
 	};
 	//30
@@ -294,15 +319,20 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.boukenger_head);
+			return new ItemStack(SentaiItems40.boukenger_head);
 		}
 	};
 	//31
 	public static CreativeTabs tabGekiranger= new CreativeTabs("tabGekiranger")
 	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_gekiranger_items.png");
+	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.gekiranger_head);
+			return new ItemStack(SentaiItems40.gekiranger_head);
 		}
 	};
 	//32
@@ -315,7 +345,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.go_onger_head);
+			return new ItemStack(SentaiItems40.go_onger_head);
 		}
 	};
 	//33
@@ -328,7 +358,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.shinkenger_head);
+			return new ItemStack(SentaiItems40.shinkenger_head);
 		}
 	};
 	//36
@@ -341,7 +371,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.go_busters_head);
+			return new ItemStack(SentaiItems40.go_busters_head);
 		}
 	};
 	//??
@@ -354,7 +384,20 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.akibaranger_head);
+			return new ItemStack(SentaiItems40.akibaranger_head);
+		}
+	};
+	//37
+	public static CreativeTabs tabKyoryuger= new CreativeTabs("tabKyoryuger")
+	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_kyoryuger_items.png");
+	    }
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(SentaiItems40.kyoryuger_head);
 		}
 	};
 	//38
@@ -367,7 +410,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.toqger_head);
+			return new ItemStack(SentaiItems40.toqger_head);
 		}
 	};
 	//40
@@ -380,7 +423,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.zyuohger_head);
+			return new ItemStack(SentaiItems40.zyuohger_head);
 		}
 	};
 	//41
@@ -393,7 +436,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.kyuranger_head);
+			return new ItemStack(SentaiItems60.kyuranger_head);
 		}
 	};
 	//42
@@ -406,7 +449,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.lupat_head);
+			return new ItemStack(SentaiItems60.lupat_head);
 		}
 	};
 	//43
@@ -419,7 +462,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.ryusoulger_head);
+			return new ItemStack(SentaiItems60.ryusoulger_head);
 		}
 	};
 	//44
@@ -432,7 +475,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.kirameiger_head);
+			return new ItemStack(SentaiItems60.kirameiger_head);
 		}
 	};
 	//45
@@ -445,7 +488,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.zenkaiger_head);
+			return new ItemStack(SentaiItems60.zenkaiger_head);
 		}
 	};
 	//??
@@ -458,7 +501,7 @@ public class Tabs
 	    }
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RiderItems.super_sentai_logo);
+			return new ItemStack(SentaiItems20.super_sentai_logo);
 		}
 	};
 	

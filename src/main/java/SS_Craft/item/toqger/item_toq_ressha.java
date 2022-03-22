@@ -1,7 +1,7 @@
 package SS_Craft.item.toqger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
@@ -52,11 +52,11 @@ public class item_toq_ressha extends Item implements IHasModel
 			{
 				item_toq_changer belt = (item_toq_changer) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 					
-				if (belt != RiderItems.zerogou_toq_changer)
+				if (belt != SentaiItems40.zerogou_toq_changer)
 				{
 					if (num == 1)
 					{
-						if (belt == RiderItems.ichigou_toq_changer)
+						if (belt == SentaiItems40.ichigou_toq_changer)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
@@ -69,7 +69,7 @@ public class item_toq_ressha extends Item implements IHasModel
 					}
 					else if (num == 2)
 					{
-						if (belt == RiderItems.nigou_toq_changer)
+						if (belt == SentaiItems40.nigou_toq_changer)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
@@ -82,7 +82,7 @@ public class item_toq_ressha extends Item implements IHasModel
 					}
 					else if (num == 3)
 					{
-						if (belt == RiderItems.sangou_toq_changer)
+						if (belt == SentaiItems40.sangou_toq_changer)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
@@ -95,7 +95,7 @@ public class item_toq_ressha extends Item implements IHasModel
 					}
 					else if (num == 4)
 					{
-						if (belt == RiderItems.yongou_toq_changer)
+						if (belt == SentaiItems40.yongou_toq_changer)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
@@ -108,7 +108,7 @@ public class item_toq_ressha extends Item implements IHasModel
 					}
 					else if (num == 5)
 					{
-						if (belt == RiderItems.gogou_toq_changer)
+						if (belt == SentaiItems40.gogou_toq_changer)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
@@ -121,7 +121,7 @@ public class item_toq_ressha extends Item implements IHasModel
 					}
 					else if (num == 6)
 					{
-						if (belt == RiderItems.rokugou_appli_changer)
+						if (belt == SentaiItems40.rokugou_appli_changer)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
@@ -134,7 +134,7 @@ public class item_toq_ressha extends Item implements IHasModel
 					}
 					else if (num == 7)
 					{
-						if (belt == RiderItems.nanagou_appli_changer)
+						if (belt == SentaiItems40.nanagou_appli_changer)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
@@ -147,19 +147,19 @@ public class item_toq_ressha extends Item implements IHasModel
 					}
 					else if (num == 8)
 					{	
-						if (belt!=RiderItems.rokugou_appli_changer||belt!=RiderItems.nanagou_appli_changer)
+						if (belt!=SentaiItems40.rokugou_appli_changer||belt!=SentaiItems40.nanagou_appli_changer)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 						}
 					}
-					else if (belt == RiderItems.ichigou_toq_changer)
+					else if (belt == SentaiItems40.ichigou_toq_changer)
 					{
 						if (playerIn.isSneaking())
 						{
 							if (num2 == 1)
 							{
-								if (playerIn.inventory.hasItemStack(new ItemStack(RiderItems.red_ressha))&playerIn.inventory.hasItemStack(new ItemStack(RiderItems.blue_ressha))&playerIn.inventory.hasItemStack(new ItemStack(RiderItems.yellow_ressha))&playerIn.inventory.hasItemStack(new ItemStack(RiderItems.green_ressha))&playerIn.inventory.hasItemStack(new ItemStack(RiderItems.pink_ressha))&playerIn.inventory.hasItemStack(new ItemStack(RiderItems.build_ressha)))
+								if (playerIn.inventory.hasItemStack(new ItemStack(SentaiItems40.red_ressha))&playerIn.inventory.hasItemStack(new ItemStack(SentaiItems40.blue_ressha))&playerIn.inventory.hasItemStack(new ItemStack(SentaiItems40.yellow_ressha))&playerIn.inventory.hasItemStack(new ItemStack(SentaiItems40.green_ressha))&playerIn.inventory.hasItemStack(new ItemStack(SentaiItems40.pink_ressha))&playerIn.inventory.hasItemStack(new ItemStack(SentaiItems40.build_ressha)))
 								{
 									item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 11);
 									item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
@@ -171,7 +171,7 @@ public class item_toq_ressha extends Item implements IHasModel
 								}
 							}
 						}
-						else if (num == 10 || this == RiderItems.lion_ressha)
+						else if (num == 10 || this == SentaiItems40.lion_ressha)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
@@ -182,22 +182,9 @@ public class item_toq_ressha extends Item implements IHasModel
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
 						}
 					}
-					else if (belt == RiderItems.nigou_toq_changer)
+					else if (belt == SentaiItems40.nigou_toq_changer)
 					{
-						if (this==RiderItems.eagle_ressha)
-						{
-							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
-							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
-						}
-						else
-						{	
-							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
-							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
-						}
-					}
-					else if (belt == RiderItems.sangou_toq_changer)
-					{
-						if (this==RiderItems.wildcat_ressha)
+						if (this==SentaiItems40.eagle_ressha)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
@@ -208,9 +195,22 @@ public class item_toq_ressha extends Item implements IHasModel
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
 						}
 					}
-					else if (belt == RiderItems.yongou_toq_changer)
+					else if (belt == SentaiItems40.sangou_toq_changer)
 					{
-						if (this==RiderItems.alligator_ressha)
+						if (this==SentaiItems40.wildcat_ressha)
+						{
+							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
+							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
+						}
+						else
+						{	
+							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
+							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
+						}
+					}
+					else if (belt == SentaiItems40.yongou_toq_changer)
+					{
+						if (this==SentaiItems40.alligator_ressha)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
@@ -221,9 +221,9 @@ public class item_toq_ressha extends Item implements IHasModel
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);
 						}
 					}
-					else if (belt == RiderItems.gogou_toq_changer)
+					else if (belt == SentaiItems40.gogou_toq_changer)
 					{
-						if (this==RiderItems.panda_ressha)
+						if (this==SentaiItems40.panda_ressha)
 						{
 							item_toq_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
 							item_toq_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num2);

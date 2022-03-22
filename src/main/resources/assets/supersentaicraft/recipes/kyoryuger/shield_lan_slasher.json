@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kyoryuger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:stego_shield"
+    },
+	{
+      "item": "supersentaicraft:zakutor_slasher"
+    },
+	{
+      "item": "supersentaicraft:drice_lance"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:shield_lan_slasher"
+  }
+}

@@ -1,6 +1,6 @@
 package SS_Craft.blocks;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.util.IHasModel;
 import net.minecraft.block.BlockHorizontal;

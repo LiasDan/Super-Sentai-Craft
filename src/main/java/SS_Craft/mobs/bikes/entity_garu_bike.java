@@ -3,7 +3,7 @@ package SS_Craft.mobs.bikes;
 import java.util.Calendar;
 import java.util.UUID;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
@@ -122,7 +122,7 @@ public class entity_garu_bike extends EntityHorse
     {
     	if (!this.world.isRemote)
     	{
-    		this.dropItem(RiderItems.gyosha_kyutama, 1);
+    		this.dropItem(SentaiItems60.gyosha_kyutama, 1);
     	}
     }
 }

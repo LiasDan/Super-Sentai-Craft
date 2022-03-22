@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kyoryu_pink",
+  "pattern": [
+    "aba",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_zyudenchi"
+    },
+	"b": {
+	  "item": "supersentaicraft:dricera_zyudenchi"
+	},
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:drice_lance"
+  }
+}

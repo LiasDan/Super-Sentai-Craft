@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "super_akiba_red",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+	"a": {
+      "item": "supersentaicraft:munyu_moe_zubakyun"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:munyu_munyu_zubaan"
+  }
+}

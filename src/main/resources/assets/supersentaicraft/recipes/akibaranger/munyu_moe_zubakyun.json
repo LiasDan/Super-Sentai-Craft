@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_akiba_red",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:moe_moe_z_cune"
+    },
+	{
+      "item": "supersentaicraft:munyu_munyu_zubaan"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:munyu_moe_zubakyun"
+  }
+}

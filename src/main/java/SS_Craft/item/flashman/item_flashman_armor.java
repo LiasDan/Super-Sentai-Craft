@@ -2,7 +2,7 @@ package SS_Craft.item.flashman;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.model.tokuArmorModel;
@@ -154,6 +154,6 @@ public class item_flashman_armor extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.flashman_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.flashman_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

@@ -1,7 +1,7 @@
 package SS_Craft.item.dekaranger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.util.IHasModel;
@@ -49,15 +49,15 @@ public class item_sp_badge extends Item implements IHasModel
 			{
 				item_sp_license belt = (item_sp_license) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
-				if (belt==RiderItems.break_brace_throttle|belt==RiderItems.master_license|belt==RiderItems.swan_sp_license
-						|belt==RiderItems.bright_brace_throttle|belt==RiderItems.gold_sp_license
-						|belt==RiderItems.neo_red_sp_license|belt==RiderItems.neo_yellow_sp_license)
+				if (belt==SentaiItems40.break_brace_throttle|belt==SentaiItems40.master_license|belt==SentaiItems40.swan_sp_license
+						|belt==SentaiItems40.bright_brace_throttle|belt==SentaiItems40.gold_sp_license
+						|belt==SentaiItems40.neo_red_sp_license|belt==SentaiItems40.neo_yellow_sp_license)
 				{
 					item_sp_license.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 				}
 				if (num>1)
 				{
-					if (belt==RiderItems.red_sp_license)
+					if (belt==SentaiItems40.red_sp_license)
 					{
 						item_sp_license.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 						item_sp_license.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);

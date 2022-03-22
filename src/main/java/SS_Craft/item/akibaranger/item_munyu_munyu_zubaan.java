@@ -1,6 +1,6 @@
 package SS_Craft.item.akibaranger;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.abaranger.item_dino_brace;
 import SS_Craft.util.IHasModel;
@@ -55,9 +55,9 @@ public class item_munyu_munyu_zubaan extends ItemSword implements IHasModel
     {
     	if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_moe_moe_z_cune)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.red_moe_moe_z_cune)
 			{	
-				if (this==RiderItems.munyu_munyu_zubaan)
+				if (this==SentaiItems40.munyu_munyu_zubaan)
 				{
 					if (playerIn.isSneaking()&&item_moe_moe_z_cune.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{

@@ -2,7 +2,7 @@ package SS_Craft.item.kyuranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
@@ -195,7 +195,7 @@ public class item_kyuranger_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.blank_kyutama == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems60.blank_kyutama == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

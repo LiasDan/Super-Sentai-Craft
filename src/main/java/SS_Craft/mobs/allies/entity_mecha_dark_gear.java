@@ -7,7 +7,8 @@ import javax.annotation.Nullable;
 
 import com.google.common.base.Predicate;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import SS_Craft.item.zenkaiger.item_geartlinger;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockColored;
@@ -88,16 +89,16 @@ public class entity_mecha_dark_gear extends EntityGolem
 	{
 		super(par1World);
 
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.zenkaiger_head));
-        this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.zenkaiger_torso));
-        this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.zenkaiger_legs));   
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.mecha_dark_gear));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems60.zenkaiger_head));
+        this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems60.zenkaiger_torso));
+        this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems60.zenkaiger_legs));   
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.mecha_dark_gear));
 		
 		this.tasks.addTask(1, new EntityAISwimming(this));
 		this.tasks.addTask(2, new EntityAIWander(this, 0.4F));
 		this.tasks.addTask(3, new EntityAILeapAtTarget(this, 0.4F));
 		this.tasks.addTask(4, new EntityAIAttackMelee(this, 1.0D, true));
-		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, RiderItems.geartozinger, false));
+		this.tasks.addTask(5, new EntityAITempt(this, 1.0D, SentaiItems60.geartozinger, false));
 		this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntityLiving.class, 10, false, true, new Predicate<EntityLiving>()
         {
             public boolean apply(@Nullable EntityLiving p_apply_1_)
@@ -189,7 +190,7 @@ public class entity_mecha_dark_gear extends EntityGolem
 	{
 		if (!this.world.isRemote){
 
-			this.dropItem(RiderItems.blank_dark_sentai_gear, 1);
+			this.dropItem(SentaiItems60.blank_dark_sentai_gear, 1);
 
 		}
 

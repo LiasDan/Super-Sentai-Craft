@@ -11,7 +11,7 @@ import java.util.UUID;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Sets;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -66,7 +66,7 @@ import net.minecraft.world.World;
 public class entity_dragon_ranger extends EntityBossBase
 //implements IBossDisplayData
 {
-	public static final Item[] weapon = new Item[] {RiderItems.zyusouken,RiderItems.hellfriede,RiderItems.zyusouken,RiderItems.hellfriede,RiderItems.zyusouken};
+	public static final Item[] weapon = new Item[] {SentaiItems20.zyusouken,SentaiItems20.hellfriede,SentaiItems20.zyusouken,SentaiItems20.hellfriede,SentaiItems20.zyusouken};
 	
 	public entity_dragon_ranger(World par1World)
 	{
@@ -74,10 +74,10 @@ public class entity_dragon_ranger extends EntityBossBase
 		Random generator = new Random();
 		int rand = generator.nextInt(5);
 		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(weapon[rand]));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.zyuranger_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.zyuranger_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.dragon_dino_buckler));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.zyuranger_legs));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems20.zyuranger_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems20.zyuranger_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems20.dragon_dino_buckler));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems20.zyuranger_legs));
 	}
 
 	protected void applyEntityAttributes()
@@ -99,16 +99,16 @@ public class entity_dragon_ranger extends EntityBossBase
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.dragon_medal, 1);
-			this.dropItem(RiderItems.zyuranger_medal, 5);
+			this.dropItem(SentaiItems20.dragon_medal, 1);
+			this.dropItem(SentaiItems20.zyuranger_medal, 5);
 			
 			switch (this.rand.nextInt(5))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.zyusouken, 1);
+				this.dropItem(SentaiItems20.zyusouken, 1);
 				break;
 			case 1:
-				this.dropItem(RiderItems.hellfriede, 1);
+				this.dropItem(SentaiItems20.hellfriede, 1);
 				break;
 			}
 		}

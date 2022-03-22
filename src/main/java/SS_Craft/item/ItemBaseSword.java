@@ -4,7 +4,9 @@ package SS_Craft.item;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gekiranger.item_geki_changer;
@@ -41,6 +43,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
@@ -75,7 +78,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
         	@SideOnly(Side.CLIENT)
 	        public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
 	        {
-        		if (stack.getItem() == RiderItems.ninja_ichibantou)
+        		if (stack.getItem() == SentaiItems20.ninja_ichibantou)
         		{
 
         			if (entityIn == null)
@@ -88,7 +91,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 						{
 							if (item_ninja_ichibantou.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "blank")
 							{	
-								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.aka_ninja_ichibantou)
+								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.aka_ninja_ichibantou)
 									return 1;
 							}
 							if (item_ninja_ichibantou.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "_chouzetsu")
@@ -102,7 +105,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 						return 0;
 					}
         		}
-        		if (stack.getItem() == RiderItems.max_ryusoul_changer)
+        		if (stack.getItem() == SentaiItems60.max_ryusoul_changer)
             	{
 
             		if (entityIn == null)
@@ -115,7 +118,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 						{
 							if (item_ryusoul_changer.get_core(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 1)
 							{	
-								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_ryusoul_changer)
+								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.red_ryusoul_changer)
 									return 1;
 							}
 						}
@@ -129,7 +132,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 					
 					return 0;
 	            }
-        		if (stack.getItem() == RiderItems.starbeast_sword)
+        		if (stack.getItem() == SentaiItems40.starbeast_sword)
         		{
 
         			if (entityIn == null)
@@ -161,7 +164,7 @@ public class ItemBaseSword extends ItemSword implements IHasModel
     @Override
     public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker)
     {
-    	if (this == RiderItems.fire_sword|this == RiderItems.hurricane_sword|this == RiderItems.elec_sword|this == RiderItems.thunder_sword|this == RiderItems.laser_sword)
+    	if (this == SentaiItems20.fire_sword|this == SentaiItems20.hurricane_sword|this == SentaiItems20.elec_sword|this == SentaiItems20.thunder_sword|this == SentaiItems20.laser_sword)
     	{
 			Vec3d look = attacker.getLookVec();
     		target.setVelocity(look.x*1.5, look.y*1.5, look.z*1.5);

@@ -13,7 +13,7 @@ package SS_Craft.model;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.potion.PotionCore;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
@@ -35,10 +35,10 @@ public class model_belt_plus extends ModelBiped
 	
 
 	public ItemStack belt;
-	public ItemStack belt2=new ItemStack(RiderItems.blanknoitem);
-	public ItemStack belt3=new ItemStack(RiderItems.blanknoitem);
-	public ItemStack belt4=new ItemStack(RiderItems.blanknoitem);
-	public ItemStack wings=new ItemStack(RiderItems.blanknoitem);
+	public ItemStack belt2=new ItemStack(SentaiItems20.blanknoitem);
+	public ItemStack belt3=new ItemStack(SentaiItems20.blanknoitem);
+	public ItemStack belt4=new ItemStack(SentaiItems20.blanknoitem);
+	public ItemStack wings=new ItemStack(SentaiItems20.blanknoitem);
 
 	public model_belt_plus()
 	{

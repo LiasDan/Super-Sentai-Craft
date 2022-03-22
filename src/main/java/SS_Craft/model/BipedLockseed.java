@@ -8,10 +8,12 @@ package SS_Craft.model;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.item.abaranger.item_dino_brace;
 import SS_Craft.item.abaranger.mecha.item_abaranger_mecha;
 import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.boukenger.item_accellular;
+import SS_Craft.item.dairanger.item_aura_changer;
 import SS_Craft.item.dekaranger.item_sp_license;
 import SS_Craft.item.denziman.item_denzi_ring;
 import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha;
@@ -21,6 +23,7 @@ import SS_Craft.item.go_onger.item_go_phone;
 import SS_Craft.item.go_onger.mecha.item_go_onger_mecha;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.kirameiger.item_kiramei_changer;
+import SS_Craft.item.kyoryuger.item_gaburivolver;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.megaranger.item_digitaizer;
@@ -29,6 +32,7 @@ import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
 import SS_Craft.item.toqger.item_toq_changer;
 import SS_Craft.item.zenkaiger.item_geartlinger;
+import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.Refercence;
@@ -262,6 +266,17 @@ public class BipedLockseed extends ModelBiped
 				{
 					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_dino_buckler.get_lock(stack) +"_2.png"));
 				}
+				else if (stack.getItem() instanceof item_aura_changer)
+				{
+					if (item_aura_changer.get_lock(stack)=="base")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/kiba_ranger_base_2.png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
+				}
 				else if (stack.getItem() instanceof item_ginga_brace)
 				{	
 					String rider = ((item_ginga_brace)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
@@ -282,6 +297,17 @@ public class BipedLockseed extends ModelBiped
 					if (item_gaoranger_mecha.get_left(mecha)!="blank")
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/mecha/"+item_gaoranger_mecha.get_left(mecha)+".png"));
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
+				}
+				else if (stack.getItem() instanceof item_dino_brace)
+				{
+					if (item_dino_brace.get_lock(stack)=="base")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/abare_killer_base_2.png"));
 					}
 					else
 					{
@@ -375,7 +401,15 @@ public class BipedLockseed extends ModelBiped
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_super_2.png"));
 					}
+					if (item_moe_moe_z_cune.get_lock(stack)!="blank")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_moe_moe_z_cune.get_lock(stack) +"_2.png"));
+					}
 					else if (item_moe_moe_z_cune.get_core(stack)==0)
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
+					else
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 					}
@@ -393,9 +427,70 @@ public class BipedLockseed extends ModelBiped
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 					}
 				}
+				else if (stack.getItem() instanceof item_gaburivolver)
+				{
+					if (item_gaburivolver.get_left(stack)!="blank")
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_gaburivolver.get_left(stack)+".png"));
+					}
+					else if (item_gaburivolver.get_lock(stack)!="blank")
+					{
+						if (item_gaburivolver.get_lock(stack)=="kyoryu_gaburu_armed_on2")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/kyoryu_gaburu_armed_on.png"));
+						}
+						else if (item_gaburivolver.get_lock(stack)=="kyoryu_deinosgrander")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/kyoryu_deinosgrander.png"));
+						}
+						else
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_gaburivolver.get_lock(stack)+"_2.png"));
+						}
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
+				}
 				else if (stack.getItem() instanceof item_toq_changer)
 				{
 					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_toq_changer.get_lock(stack)+"_2.png"));
+				}
+				else if (stack.getItem() instanceof item_zyuoh_changer)
+				{
+					String rider = ((item_zyuoh_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+
+					if (item_zyuoh_changer.get_lock(stack)=="yasei_kaihou")
+					{
+						if (rider == "zyuoh_eagle")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/zyuoh_gorilla_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						}
+						else if (rider == "zyuoh_tiger")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/zyuoh_lion_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png"));
+						}
+						else
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png"));
+						}
+					}
+					else if (item_zyuoh_changer.get_lock(stack)=="yasei_dai_kaihou")
+					{
+						if (rider == "zyuoh_eagle")
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_base_2.png"));
+						}
+						else 
+						{
+							Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+rider+"_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_2.png"));
+						}
+					}
+					else
+					{
+						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
+					}
 				}
 				else if (stack.getItem() instanceof item_seiza_blaster)
 				{

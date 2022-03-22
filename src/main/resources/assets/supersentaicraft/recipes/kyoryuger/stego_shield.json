@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kyoryu_blue",
+  "pattern": [
+    "aba",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_zyudenchi"
+    },
+	"b": {
+	  "item": "supersentaicraft:stegotchi_zyudenchi"
+	},
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:stego_shield"
+  }
+}

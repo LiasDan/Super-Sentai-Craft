@@ -1,6 +1,7 @@
 package SS_Craft.mobs.mini_boss;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -13,7 +14,7 @@ public class entity_batsuroids extends Entity_base_henchmen
 	public entity_batsuroids(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.batsu_sword));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems20.batsu_sword));
 	}
 	
 	protected void applyEntityAttributes()
@@ -28,77 +29,77 @@ public class entity_batsuroids extends Entity_base_henchmen
 	{
 		if (!this.world.isRemote){   
 
-			this.dropItem(RiderItems.dekaranger_badge, 1);
+			this.dropItem(SentaiItems40.dekaranger_badge, 1);
 			switch (this.rand.nextInt(6))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.deka_red_badge, 1);
+				this.dropItem(SentaiItems40.deka_red_badge, 1);
 				break;
 
 			case 1:
-				this.dropItem(RiderItems.deka_blue_badge, 1);
+				this.dropItem(SentaiItems40.deka_blue_badge, 1);
 				break;
 
 			case 2:
-				this.dropItem(RiderItems.deka_green_badge, 1);
+				this.dropItem(SentaiItems40.deka_green_badge, 1);
 				break;
 
 			case 3:
-				this.dropItem(RiderItems.deka_yellow_badge, 1);
+				this.dropItem(SentaiItems40.deka_yellow_badge, 1);
 				break;
 
 			case 4:
-				this.dropItem(RiderItems.deka_pink_badge, 1);
+				this.dropItem(SentaiItems40.deka_pink_badge, 1);
 				break;  
 				
 			case 5:
-				this.dropItem(RiderItems.deka_red_badge, 2);
-				this.dropItem(RiderItems.dekaranger_badge, 1);
+				this.dropItem(SentaiItems40.deka_red_badge, 2);
+				this.dropItem(SentaiItems40.dekaranger_badge, 1);
 				break;
 
 			case 6:
-				this.dropItem(RiderItems.deka_blue_badge, 2);
-				this.dropItem(RiderItems.dekaranger_badge, 1);
+				this.dropItem(SentaiItems40.deka_blue_badge, 2);
+				this.dropItem(SentaiItems40.dekaranger_badge, 1);
 				break;
 
 			case 7:
-				this.dropItem(RiderItems.deka_green_badge, 2);
-				this.dropItem(RiderItems.dekaranger_badge, 1);
+				this.dropItem(SentaiItems40.deka_green_badge, 2);
+				this.dropItem(SentaiItems40.dekaranger_badge, 1);
 				break;
 
 			case 8:
-				this.dropItem(RiderItems.deka_yellow_badge, 2);
-				this.dropItem(RiderItems.dekaranger_badge, 1);
+				this.dropItem(SentaiItems40.deka_yellow_badge, 2);
+				this.dropItem(SentaiItems40.dekaranger_badge, 1);
 				break;
 
 			case 9:
-				this.dropItem(RiderItems.deka_pink_badge, 2);
-				this.dropItem(RiderItems.dekaranger_badge, 1);
+				this.dropItem(SentaiItems40.deka_pink_badge, 2);
+				this.dropItem(SentaiItems40.dekaranger_badge, 1);
 				break;   
 				
 			case 10:
-				this.dropItem(RiderItems.deka_red_badge, 3);
-				this.dropItem(RiderItems.dekaranger_badge, 2);
+				this.dropItem(SentaiItems40.deka_red_badge, 3);
+				this.dropItem(SentaiItems40.dekaranger_badge, 2);
 				break;
 
 			case 11:
-				this.dropItem(RiderItems.deka_blue_badge, 3);
-				this.dropItem(RiderItems.dekaranger_badge, 2);
+				this.dropItem(SentaiItems40.deka_blue_badge, 3);
+				this.dropItem(SentaiItems40.dekaranger_badge, 2);
 				break;
 
 			case 12:
-				this.dropItem(RiderItems.deka_green_badge, 3);
-				this.dropItem(RiderItems.dekaranger_badge, 2);
+				this.dropItem(SentaiItems40.deka_green_badge, 3);
+				this.dropItem(SentaiItems40.dekaranger_badge, 2);
 				break;
 
 			case 13:
-				this.dropItem(RiderItems.deka_yellow_badge, 3);
-				this.dropItem(RiderItems.dekaranger_badge, 2);
+				this.dropItem(SentaiItems40.deka_yellow_badge, 3);
+				this.dropItem(SentaiItems40.dekaranger_badge, 2);
 				break;
 
 			case 14:
-				this.dropItem(RiderItems.deka_pink_badge, 3);
-				this.dropItem(RiderItems.dekaranger_badge, 2);
+				this.dropItem(SentaiItems40.deka_pink_badge, 3);
+				this.dropItem(SentaiItems40.dekaranger_badge, 2);
 				break;
 			}
 		}

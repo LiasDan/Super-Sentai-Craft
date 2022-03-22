@@ -2,7 +2,8 @@ package SS_Craft.item.zyuohger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
@@ -32,9 +33,8 @@ public class item_zyuohger_armor2 extends ItemArmor  implements IHasModel
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 	
-	public static final String[] ZyuohEagle= new String[] {"zyuoh_eagle","zyuoh_gorilla","zyuoh_whale","zyuoh_eagle_great_instinct_awakened","zyuoh_condor"};
+	public static final String[] ZyuohEagle= new String[] {"zyuoh_eagle","zyuoh_gorilla","zyuoh_whale","zyuoh_eagle_yasei_dai_kaihou"};
 	public static final String[] ZyuohTheWorld= new String[] {"","_crocodile","_wolf"};
-	public static final String[] ZyuohBird= new String[] {"zyuoh_bird","zyuoh_condor"};
 	
 	public item_zyuohger_armor2 (String name,ArmorMaterial par2EnumArmorMaterial, int par3, EntityEquipmentSlot par4)
 	{
@@ -84,17 +84,6 @@ public class item_zyuohger_armor2 extends ItemArmor  implements IHasModel
 							return Refercence.MODID+":textures/armor/"+rider+ZyuohTheWorld[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
 						}
 					}
-					else if (rider == "zyuoh_bird")
-					{
-						if ( slot == EntityEquipmentSlot.LEGS)
-						{
-							return Refercence.MODID+":textures/armor/"+ZyuohBird[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_2.png";
-						}
-						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
-						{
-							return Refercence.MODID+":textures/armor/"+ZyuohBird[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
-						}
-					}
 					else
 					{
 						if ( slot == EntityEquipmentSlot.LEGS)
@@ -134,14 +123,14 @@ public class item_zyuohger_armor2 extends ItemArmor  implements IHasModel
 				armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.LEGS;
 				armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.CHEST;
 				armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.LEGS;
-				
+
 				armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.CHEST;
 				armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
-				
+
 				armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.CHEST;
-				
-				armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
-				armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
+
+				armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.CHEST;
+				armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.CHEST;
 
 
 				armorModel.isSneak = living.isSneaking();
@@ -173,7 +162,7 @@ public class item_zyuohger_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.king_s_credential == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.king_s_credential == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

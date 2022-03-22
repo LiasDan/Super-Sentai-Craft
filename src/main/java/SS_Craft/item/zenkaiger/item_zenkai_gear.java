@@ -1,7 +1,7 @@
 package SS_Craft.item.zenkaiger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.lupatranger.item_vs_changer;
@@ -52,9 +52,9 @@ public class item_zenkai_gear extends Item implements IHasModel
 			{
 				item_geartlinger belt = (item_geartlinger) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 			
-				if (belt != RiderItems.zenkaizer_geartlinger && belt != RiderItems.twokaizer_geardalinger && belt != RiderItems.stacaeser_geartozinger && belt != RiderItems.red_geartlinger)
+				if (belt != SentaiItems60.zenkaizer_geartlinger && belt != SentaiItems60.twokaizer_geardalinger && belt != SentaiItems60.stacaeser_geartozinger && belt != SentaiItems60.red_geartlinger && belt != SentaiItems60.hakaizer_belt && belt != SentaiItems60.twokai_flint_geardalinger)
 				{
-					if (this == RiderItems.metallic_zenkai_juran_gear || this == RiderItems.metallic_zenkai_gaon_gear || this == RiderItems.metallic_zenkai_magine_gear || this == RiderItems.metallic_zenkai_vroon_gear)
+					if (this == SentaiItems60.metallic_zenkai_juran_gear || this == SentaiItems60.metallic_zenkai_gaon_gear || this == SentaiItems60.metallic_zenkai_magine_gear || this == SentaiItems60.metallic_zenkai_vroon_gear)
 					{
 						item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
@@ -65,9 +65,9 @@ public class item_zenkai_gear extends Item implements IHasModel
 						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 					}
 				}
-				else if (belt == RiderItems.zenkaizer_geartlinger)
+				else if (belt == SentaiItems60.zenkaizer_geartlinger)
 				{
-					if (this == RiderItems.zenkai_zyu_gear)
+					if (this == SentaiItems60.zenkai_zyu_gear)
 					{
 						item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
@@ -78,14 +78,14 @@ public class item_zenkai_gear extends Item implements IHasModel
 						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 					}
 				}
-				else if (belt == RiderItems.twokaizer_geardalinger)
+				else if (belt == SentaiItems60.twokaizer_geardalinger)
 				{
-					if (this == RiderItems.twokai_cutanner_gear || this == RiderItems.twokai_ricky_gear)
+					if (this == SentaiItems60.twokai_cutanner_gear || this == SentaiItems60.twokai_ricky_gear)
 					{
 						item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
-					else if (this == RiderItems.zenkai_zyu_gear)
+					else if (this == SentaiItems60.zenkai_zyu_gear)
 					{
 						item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),5);
@@ -96,60 +96,90 @@ public class item_zenkai_gear extends Item implements IHasModel
 						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
 					}
 				}
-			}
-			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.geartlinger)
-			{
-				ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
-
-				if (itemstack.isEmpty())
+				else if (belt == SentaiItems60.stacaeser_geartozinger || belt == SentaiItems60.hakaizer_belt)
 				{
-					if (this == RiderItems.zenkaizer_gear)
+					if (this == SentaiItems60.tojiru_gear)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.zenkaizer_geartlinger));
+						item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 					}
-					if (this == RiderItems.zenkai_juran_gear)
+					else
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.juran_geartlinger));
+						item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 					}
-					if (this == RiderItems.zenkai_gaon_gear)
+				}
+				else if (belt == SentaiItems60.twokai_flint_geardalinger)
+				{
+					if (this == SentaiItems60.twokai_cutanner_gear || this == SentaiItems60.twokai_ricky_gear)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.gaon_geartlinger));
+						item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
-					if (this == RiderItems.zenkai_magine_gear)
+					else
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.magine_geartlinger));
-					}
-					if (this == RiderItems.zenkai_vroon_gear)
-					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.vroon_geartlinger));
-					}
-					if (this == RiderItems.zenkai_red_gear)
-					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.red_geartlinger));
+						item_geartlinger.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						item_geartlinger.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
 					}
 				}
 			}
-			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.geardalinger)
+			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.geartlinger)
 			{
 				ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 				if (itemstack.isEmpty())
 				{
-					if (this == RiderItems.twokaizer_gear)
+					if (this == SentaiItems60.zenkaizer_gear)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.twokaizer_geardalinger));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.zenkaizer_geartlinger));
+					}
+					if (this == SentaiItems60.zenkai_juran_gear)
+					{
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.juran_geartlinger));
+					}
+					if (this == SentaiItems60.zenkai_gaon_gear)
+					{
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.gaon_geartlinger));
+					}
+					if (this == SentaiItems60.zenkai_magine_gear)
+					{
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.magine_geartlinger));
+					}
+					if (this == SentaiItems60.zenkai_vroon_gear)
+					{
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.vroon_geartlinger));
+					}
+					if (this == SentaiItems60.zenkai_red_gear)
+					{
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.red_geartlinger));
 					}
 				}
 			}
-			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.geartozinger)
+			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.geardalinger)
 			{
 				ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 				if (itemstack.isEmpty())
 				{
-					if (this == RiderItems.stacaesar_gear)
+					if (this == SentaiItems60.twokaizer_gear)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.stacaeser_geartozinger));
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.twokaizer_geardalinger));
+					}
+					else if (this == SentaiItems60.twokai_flint_gear)
+					{
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.twokai_flint_geardalinger));
+					}
+				}
+			}
+			if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.geartozinger)
+			{
+				ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
+
+				if (itemstack.isEmpty())
+				{
+					if (this == SentaiItems60.stacaesar_gear)
+					{
+						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.stacaeser_geartozinger));
 					}
 				}
 			}

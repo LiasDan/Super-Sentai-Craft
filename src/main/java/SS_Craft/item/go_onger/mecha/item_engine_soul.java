@@ -1,7 +1,7 @@
 package SS_Craft.item.go_onger.mecha;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.util.IHasModel;
@@ -54,15 +54,15 @@ public class item_engine_soul extends Item implements IHasModel
 
 				if (belt.Rider == "seikuu_oh")
 				{
-					if (this == RiderItems.birca_soul)
+					if (this == SentaiItems40.birca_soul)
 					{
 						item_go_onger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),1);
 					}
-					else if (this == RiderItems.gunpherd_soul)
+					else if (this == SentaiItems40.gunpherd_soul)
 					{
 						item_go_onger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),2);
 					}
-					else if (this == RiderItems.toripter_soul || this == RiderItems.jetras_soul)
+					else if (this == SentaiItems40.toripter_soul || this == SentaiItems40.jetras_soul)
 					{
 						item_go_onger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_go_onger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
@@ -86,7 +86,7 @@ public class item_engine_soul extends Item implements IHasModel
 				}
 				else if (belt.Rider == "gunbir_oh")
 				{
-					if (this == RiderItems.birca_soul || this == RiderItems.gunpherd_soul)
+					if (this == SentaiItems40.birca_soul || this == SentaiItems40.gunpherd_soul)
 					{
 						item_go_onger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_go_onger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);

@@ -4,8 +4,10 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.dairanger.item_aura_changer;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
@@ -23,6 +25,7 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
@@ -36,9 +39,26 @@ public class item_dino_brace extends ItemArmor implements IHasModel
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
+	
+	public static String[] ARMOR= new String[] {"blank","base"};
 
 	public String Rider;
+	public String Armor;
 
+	public item_dino_brace (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, String armor)
+	{
+		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		this.material = par2EnumArmorMaterial;
+		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
+		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
+		this.maxStackSize = 1;
+		Rider=rider;
+		Armor=armor;
+		setTranslationKey(name);
+		setRegistryName(name);
+		TokuCraft_core.ITEMS.add(this);
+	}
+	
 	public item_dino_brace (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
 		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
@@ -69,7 +89,7 @@ public class item_dino_brace extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				armorModel.belt=new ItemStack(RiderItems.blanknoitem);
+				armorModel.belt=new ItemStack(SentaiItems20.blanknoitem);
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -115,6 +135,29 @@ public class item_dino_brace extends ItemArmor implements IHasModel
 		}
 		itemstack.getTagCompound().setInteger("core", flag);
 	}
+	
+	public static String get_lock(ItemStack itemstack)
+	{	
+		item_dino_brace belt = (item_dino_brace)itemstack.getItem();
+
+		if (belt.Armor!=null)
+		{
+			return itemstack.hasTagCompound() ? item_dino_brace.ARMOR[itemstack.getTagCompound().getInteger("armor")] : belt.Armor;
+		}
+		else 
+		{
+			return itemstack.hasTagCompound() ? item_dino_brace.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
+		}
+	}
+	
+	public static void set_lock(ItemStack itemstack,int flag)
+	{
+		if (!itemstack.hasTagCompound())
+		{
+			itemstack.setTagCompound(new NBTTagCompound());
+		}
+		itemstack.getTagCompound().setInteger("armor", flag);
+	}
 
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) 
@@ -127,11 +170,11 @@ public class item_dino_brace extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.abaranger_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems40.abaranger_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.abaranger_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems40.abaranger_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.abaranger_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.abaranger_head)
 								{
 									if (this.get_core(armor)==1)
 									{
@@ -139,7 +182,7 @@ public class item_dino_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_dino_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.red_dino_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -147,14 +190,14 @@ public class item_dino_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_dino_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.blue_dino_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_dino_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.yellow_dino_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -162,14 +205,14 @@ public class item_dino_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.dino_commander)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.dino_commander)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.dino_minder)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.dino_minder)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -200,6 +243,6 @@ public class item_dino_brace extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

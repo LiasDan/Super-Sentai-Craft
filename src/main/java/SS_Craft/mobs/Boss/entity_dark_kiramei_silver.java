@@ -11,7 +11,8 @@ import java.util.UUID;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Sets;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -69,11 +70,11 @@ public class entity_dark_kiramei_silver extends EntityBossBase
 	public entity_dark_kiramei_silver(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.shiny_breaker));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.kirameiger_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.kirameiger_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.yodon_changer));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.kirameiger_legs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.shiny_breaker));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems60.kirameiger_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems60.kirameiger_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.yodon_changer));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems60.kirameiger_legs));
 	}
 
 	protected void applyEntityAttributes()
@@ -95,14 +96,15 @@ public class entity_dark_kiramei_silver extends EntityBossBase
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.dark_kiramei_stone, 1);
-			this.dropItem(RiderItems.blue_diamond, 5);
-		}
-		switch (this.rand.nextInt(5))
-		{   		   	    		
-		case 0:
-			this.dropItem(RiderItems.gold_kiramei_stone, 1);
-			break;
+			this.dropItem(SentaiItems60.dark_kiramei_stone, 1);
+			this.dropItem(SentaiItems60.blue_diamond, 5);
+			
+			switch (this.rand.nextInt(5))
+			{   		   	    		
+			case 0:
+				this.dropItem(SentaiItems60.gold_kiramei_stone, 1);
+				break;
+			}
 		}
 	}
 }

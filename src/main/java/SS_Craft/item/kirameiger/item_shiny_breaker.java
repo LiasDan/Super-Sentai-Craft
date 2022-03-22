@@ -4,7 +4,7 @@ package SS_Craft.item.kirameiger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gekiranger.item_geki_changer;
@@ -71,7 +71,7 @@ public class item_shiny_breaker extends ItemPickaxe implements IHasModel
 	
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
 	{
-		if (this == RiderItems.shiny_breaker_tool)
+		if (this == SentaiItems60.shiny_breaker_tool)
 		{
 			playerIn.fallDistance=0; 
 				
@@ -89,6 +89,6 @@ public class item_shiny_breaker extends ItemPickaxe implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems60.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

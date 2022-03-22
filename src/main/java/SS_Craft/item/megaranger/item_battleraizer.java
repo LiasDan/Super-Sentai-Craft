@@ -1,6 +1,6 @@
 package SS_Craft.item.megaranger;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
@@ -52,11 +52,11 @@ public class item_battleraizer extends Item implements IHasModel
 					{
 						if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.megaranger_legs)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems40.megaranger_legs)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.megaranger_torso)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems40.megaranger_torso)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.megaranger_head)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.megaranger_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 4,true,false));
 									}

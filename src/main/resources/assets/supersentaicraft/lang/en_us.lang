@@ -20,8 +20,8 @@ entity.UnglersMob.name=Ungler Soldiers
 entity.UlarsMob.name=Ular Soldiers
 entity.UlarCaptainMob.name=Ular Captain
 entity.GrinamsMob.name=Grinam Soldiers
-entity.GolemsMob1.name=Golems
-entity.GolemsMob2.name=Golems
+entity.GolemsMob1.name=Golem Soldiers
+entity.GolemsMob2.name=Golem Soldiers
 entity.DoraSphinxMob.name=Dora Sphinx
 entity.PumpkinRapperMob.name=Pumpkin Rapper
 entity.DragonRangerMob.name=Dragon Ranger
@@ -44,17 +44,25 @@ entity.IgaroidsMob.name=Igaroids
 entity.NeoDekaRedMob.name=Neo DekaRed
 entity.NeoDekaYellowMob.name=Neo DekaYellow
 entity.KarthsMob.name=Combatant Karths
-entity.RinshisMob.name=Rinshi
+entity.RinshisMob.name=Rinshis
 entity.UgatzMob.name=Barbaric Machine Soldiers Ugatz
-entity.NanashisMob.name=Nanashi Company
+entity.NanashisMob.name=Nanashi Companies
 entity.GedouShinkenRedMob.name=Gedou Shinken Red
 entity.BuglarsMob.name=Buglars
+entity.DroansMob.name=Droans
+entity.ZorimasMob.name=Zorimas
+entity.DogoldMob.name=Raging Knight Dogold
+entity.DeathRyugerMob.name=Deathryuger
+entity.BraveKyoryuGold.name=Brave Kyoryu Gold
+entity.ChaosRyugerMob.name=Chaosryuger
+entity.DeinochaserMob.name=Deinochaser
+entity.KyoryugerMob.name=Kyoryuger (Futabain Zyudenchi)
 entity.KurosMob.name=Combatant Kuros
 entity.Yami0gouMob.name=Yami no 0gou
-entity.MoebasMob.name=Moeba
-entity.IndaversBlueMob.name=Indaver (Blue)
-entity.IndaversGreenMob.name=Indaver (Green)
-entity.IndaversWhiteMob.name=Indaver (White)
+entity.MoebasMob.name=Moebas
+entity.IndaversBlueMob.name=Indavers (Blue)
+entity.IndaversGreenMob.name=Indavers (Green)
+entity.IndaversWhiteMob.name=Indavers (White)
 entity.HebitsukaiMetalMob.name=Hebitsukai Metal (Evil)
 entity.DarkShishiRedMob.name=Dark Shishi Red
 entity.KyurangersMob.name=Kyuranger (Futago Kyutama)
@@ -67,7 +75,9 @@ entity.BechatsMob.name=Bechats
 entity.DarkKirameiSilverMob.name=Dark Kiramei Silver
 entity.KudakksMob.name=Kudakks
 entity.StacaesarMob.name=Stacaesar
+entity.HakaizerMob.name=Hakaizer
 entity.MechaDarkGearMob.name=Fake Sentai Robo （Dark Sentai Gear）
+entity.DonMomotarouMob.name=DonMomotarou
 
 item.super_sentai_logo.name=Super Sentai Logo
 
@@ -90,18 +100,29 @@ item.jakotsuken.name=Jakotsuken
 item.bone_axe.name=Bone Axe
 item.imps_sword.name=Imps Sword
 item.karths_sickle.name=Karths Sickle
-item.burglars_katar.name=Burglars Katar
+item.buglars_katar.name=Buglars Katar
 
 item.dustlers_sickle.name=Dustlers Sickle
 item.kunekunes_sword.name=Kunekunes Sword
 item.ugatz_sword.name=Ugatz Sword
 item.moebas_sword.name=Moebas Sword
 
+item.grinam_axe.name=Grinam Axe
+item.rinshi_lance.name=Rinshi Lance
+item.kuros_axe.name=Kuros Axe
+
+item.spotmen_spear.name=Spotmen Spear
+item.cotpotros_staff.name=Cotpotros Staff
+item.barmias_staff.name=Barmias Staff
+item.gyoi_saber.name=Gyoi Saber
+item.numade.name=Numade
+
 item.mechaclones_sword.name=Mechaclones Sword
 item.dorodoros_sword.name=Dorodoros Sword
 item.ana_knife.name=AnaKnife
 item.batsu_sword.name=BatsuSword
 item.iga_sword.name=IgaSword
+item.zorin_gun.name=ZorinGun
 item.plug_lancer.name=Plug Lancer
 
 //01 Goranger
@@ -321,7 +342,7 @@ item.dynaman_logo.name=Dynaman Logo
 itemGroup.tabBioman=Choudenshi Bioman
 
 item.bioman_logo.name=Bioman Logo
-//tile.bioman_ore.name=Bioman Ore
+tile.bioman_ore.name=Bioman Ore
 
 item.bioman_head.name=Bioman Helmet
 item.bioman_torso.name=Bioman Chestplate
@@ -721,12 +742,6 @@ item.beast_attack_rod_green.name=Beast Attack Rod (GingaGreen)
 item.beast_attack_rod_blue.name=Beast Attack Rod (GingaBlue)
 item.beast_attack_rod_yellow.name=Beast Attack Rod (GingaYellow)
 item.beast_attack_rod_pink.name=Beast Attack Rod (GingaPink)
-item.flashing_starbeast_sword.name=Flashing Starbeast Sword
-item.flashing_beast_attack_rod_red.name=Flashing Beast Attack Rod (GingaRed)
-item.flashing_beast_attack_rod_green.name=Flashing Beast Attack Rod (GingaGreen)
-item.flashing_beast_attack_rod_blue.name=Flashing Beast Attack Rod (GingaBlue)
-item.flashing_beast_attack_rod_yellow.name=Flashing Beast Attack Rod (GingaYellow)
-item.flashing_beast_attack_rod_pink.name=Flashing Beast Attack Rod (GingaPink)
 item.bull_riot.name=Bull Riot
 
 //23 GoGo-V
@@ -943,12 +958,12 @@ item.max_ryuoh_head.name=MaxRyuuOh Helmet
 item.oo_abaren_oh_head.name=OoAbarenOh Helmet
 item.bakuren_oh_head.name=BakurenOh Helmet
 
-item.double_tall_sword.name=Double Tall Sword
+item.double_tall_sword.name=Double Tail Sword
 item.tricera_shield.name=Tricera Shield
 item.gale_spear.name=Gale Spear
 item.bakuryu_axe.name=Bakuryuu Axe
 item.bakuryu_spear.name=Bakuryuu Spear
-item.double_tall_sword_bakuren_oh.name=Double Tall Sword (BakurenOh)
+item.double_tall_sword_bakuren_oh.name=Double Tail Sword (BakurenOh)
 item.chasmo_shield.name=Chasmo Shield
 
 //28 Dekaranger
@@ -1015,6 +1030,12 @@ item.battlizer_sword.name=Battlizer Sword
 
 //29 Magiranger
 item.magiranger_logo.name=Magiranger Logo
+
+item.magi_stick_red.name=MagiStick (MagiRed)
+item.magi_stick_yellow.name=MagiStick (MagiYellow)
+item.magi_stick_blue.name=MagiStick (MagiBlue)
+item.magi_stick_pink.name=MagiStick (MagiPink)
+item.magi_stick_green.name=MagiStick (MagiGreen)
 
 //30 Boukenger
 itemGroup.tabBoukenger=GoGo Sentai Boukenger
@@ -1262,6 +1283,7 @@ item.lio_attache.name=Lio Attaché
 //36-37 Akibaranger
 itemGroup.tabAkibaranger=Hikounin Sentai Akibaranger
 
+item.akibaranger_logo.name=Akibaranger Logo
 item.akibaranger_head.name=Akibaranger Helmet
 item.akibaranger_torso.name=Akibaranger Chestplate
 item.akibaranger_legs.name=Akibaranger Leggings
@@ -1271,13 +1293,167 @@ item.blue_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaBlue)
 item.blue_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaBlue Season 2)
 item.yellow_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaYellow)
 item.yellow_s2_moe_moe_z_cune.name=Moe Moe Z-Cune (AkibaYellow Season 2)
+item.china_aura_changer.name=Aura Changer (China Red)
+item.akiba_changer.name=Kiba Changer (AkibaWhite)
+item.red_dino_buckler.name=Dino Buckler (Powerful Red Ranger)
+item.green_dino_buckler.name=Dino Buckler (Powerful Green Ranger)
+
+item.akiba_red_logo.name=AkibaRed Logo
+item.akiba_blue_logo.name=AkibaBlue Logo
+item.akiba_yellow_logo.name=AkibaYellow Logo
 
 item.moe_moe_z_cune.name=Moe Moe Z-Cune
 item.munyu_munyu_zubaan.name=Munyu Munyu Zubaan
 item.munyu_moe_zubakyun.name=Munyu Moe Zubakyun
 
 //37 Kyoryuger
+itemGroup.tabKyoryuger=Zyuden Sentai Kyoryuger
+
+item.blank_zyudenchi.name=Blank Zyudenchi
 item.kyoryuger_logo.name=Kyoryuger Logo
+tile.zyudenchi_charger.name=Zyudenchi Charger Block
+item.blank_deboth_zyudenchi.name=Blank Deboth Zyudenchi
+item.blank_brave_zyudenchi.name=Blank Brave Zyudenchi/Blank Dinocell
+
+item.kyoryuger_head.name=Kyoryuger Helmet
+item.kyoryuger_torso.name=Kyoryuger Chestplate
+item.kyoryuger_legs.name=Kyoryuger Leggings
+
+item.red_gaburivolver.name=Gaburivolver (Kyoryu Red)
+item.black_gaburivolver.name=Gaburivolver (Kyoryu Black)
+item.blue_gaburivolver.name=Gaburivolver (Kyoryu Blue)
+item.green_gaburivolver.name=Gaburivolver (Kyoryu Green)
+item.pink_gaburivolver.name=Gaburivolver (Kyoryu Pink)
+item.gold_gaburichanger.name=Gaburichanger (Kyoryu Gold)
+item.cyan_gaburivolver.name=Gaburivolver (Kyoryu Cyan)
+item.grey_gaburivolver.name=Gaburivolver (Kyoryu Grey)
+item.violet_gaburivolver.name=Gaburivolver (Kyoryu Violet)
+item.silver_giga_gaburivolver.name=GigaGaburivolver (Kyoryu Silver)
+
+item.cyan_spirit_zyudenchi.name=Ankydon Zyudenchi (Spirit Kyoryu Cyan)
+item.grey_spirit_zyudenchi.name=Bunpachy Zyudenchi (Spirit Kyoryu Grey)
+
+item.death_flute_buster.name=Flute Buster (Deathryuger)
+item.chaos_stone.name=Chaos Stone (Chaosryuger)
+
+item.future_red_gaburivolver.name=Gaburivolver (Future Kyoryu Red)
+item.future_black_gaburivolver.name=Gaburivolver (Future Kyoryu Black)
+item.future_blue_gaburivolver.name=Gaburivolver (Future Kyoryu Blue)
+item.future_green_gaburivolver.name=Gaburivolver (Future Kyoryu Green)
+item.future_pink_gaburivolver.name=Gaburivolver (Future Kyoryu Pink)
+item.future_gaburichanger.name=Gaburichanger (Future Kyoryu Gold)
+
+item.red_gabu_gaburivolver.name=GabuGaburivolver (Brave Kyoryu Red)
+item.black_gabu_gaburivolver.name=GabuGaburivolver (Brave Kyoryu Black)
+item.blue_gabu_gaburivolver.name=GabuGaburivolver (Brave Kyoryu Blue)
+item.green_gabu_gaburivolver.name=GabuGaburivolver (Brave Kyoryu Green)
+item.pink_gabu_gaburivolver.name=GabuGaburivolver (Brave Kyoryu Pink)
+item.gold_gabu_gabuchanger.name=GabuGabuchanger (Brave Kyoryu Gold)
+
+item.tobaspino_zyudenchi.name=Tobaspino Zyudenchi
+item.gabutyra_zyudenchi.name=Gabutyra Zyudenchi
+item.parasagun_zyudenchi.name=Parasagun Zyudenchi
+item.stegotchi_zyudenchi.name=Stegotchi Zyudenchi
+item.zakutor_zyudenchi.name=Zakutor Zyudenchi
+item.dricera_zyudenchi.name=Dricera Zyudenchi
+item.pteragordon_zyudenchi.name=Pteragordon Zyudenchi
+item.ankydon_zyudenchi.name=Ankydon Zyudenchi
+item.bunpachy_zyudenchi.name=Bunpachy Zyudenchi
+item.plezuon_zyudenchi.name=Plezuon Zyudenchi
+item.bragigas_zyudenchi.name=Bragigas Zyudenchi
+
+item.guntyra_zyudenchi.name=Guntyra Zyudenchi/Cannontyra Dinocell
+item.stegonsaw_zyudenchi.name=Stegonsaw Zyudenchi/Stegotoup Dinocell
+item.shovecera_zyudenchi.name=Shovecera Zyudenchi/Forkcera Dinocell
+item.parasaser_zyudenchi.name=Parasaser Zyudenchi/Dinocell
+item.rapx_zyudenchi.name=Rapx Zyudenchi/RaptorAx Dinocell
+item.pteravolton_zyudenchi.name=Pteravolton Zyudenchi/Pteravolt Dinocell
+item.giga_bragigas_zyudenchi.name=Giga Bragigas Zyudenchi/Dinocell
+
+item.carnival_zyudenchi.name=Carnival Zyudenchi
+item.victory_zyudenchi.name=Victory Zyudenchi
+item.maximum_zyudenchi.name=Maximum Zyudenchi
+item.double_gabutyra_zyudenchi.name=Double Gabutyra Zyudenchi
+item.death_ryuger_zyudenchi.name=Deathryuger Zyudenchi
+item.ghost_stegotchi_zyudenchi.name=Stegotchi Zyudenchi (Ghost)
+item.spirit_pteragordon_zyudenchi.name=Pteragordon Zyudenchi (Spirit Ranger Gold ver.)
+item.spirit_plezuon_zyudenchi.name=Plezuon Zyudenchi (Spirit Ranger Violet ver.)
+item.sp_zyudenchi.name=Special Zyudenchi
+
+item.deinochaser_zyudenchi.name=Deinochaser Zyudenchi
+item.deinosgrander_zyudenchi.name=Deinosgrander Zyudenchi
+item.kentrospiker_zyudenchi.name=Kentrospiker Zyudenchi
+item.stymero_zyudenchi.name=Stymero Zyudenchi
+item.allomerus_zyudenchi.name=Allomerus Zyudenchi
+item.beyonsmo_zyudenchi.name=Beyonsmo Zyudenchi
+item.ovirappoo_zyudenchi.name=Ovirappoo Zyudenchi
+item.igeranodon_zyudenchi.name=Igeranodon Zyudenchi
+item.tuperanda_zyudenchi.name=Tuperanda Zyudenchi
+item.gurumonite_zyudenchi.name=Gurumonite Zyudenchi
+item.archenolon_zyudenchi.name=Archenolon Zyudenchi
+item.pukuptor_zyudenchi.name=Pukuptor Zyudenchi
+item.futabain_zyudenchi.name=Futabain Zyudenchi
+
+item.speedrus_zyudenchi.name=Speedrus Zyudenchi/Dinocell
+item.prisukeos_zyudenchi.name=Prisukeos Zyudenchi/Plisukeos Dinocell
+item.fuwanycto_zyudenchi.name=Fuwanycto Zyudenchi/Buunycto Dinocell
+item.kachicox_zyudenchi.name=Kachicox Zyudenchi/Dollex Dinocell
+item.karateta_zyudenchi.name=Karateta Zyudenchi/Kotsutator Dinocell
+item.taekwondonto_zyudenchi.name=Taekwondonto Zyudenchi/Taekwondontos Dinocell
+
+item.deboth_tobaspino_zyudenchi.name=Tobaspino Deboth Zyudenchi
+item.deboth_gabutyra_zyudenchi.name=Gabutyra Deboth Zyudenchi
+item.deboth_parasagun_zyudenchi.name=Parasagun Deboth Zyudenchi
+item.deboth_stegotchi_zyudenchi.name=Stegotchi Deboth Zyudenchi
+item.deboth_zakutor_zyudenchi.name=Zakutor Deboth Zyudenchi
+item.deboth_dricera_zyudenchi.name=Dricera Deboth Zyudenchi
+item.deboth_pteragordon_zyudenchi.name=Pteragordon Deboth Zyudenchi
+item.deboth_ankydon_zyudenchi.name=Ankydon Deboth Zyudenchi
+item.deboth_bunpachy_zyudenchi.name=Bunpachy Deboth Zyudenchi
+item.deboth_plezuon_zyudenchi.name=Plezuon Deboth Zyudenchi
+item.deboth_bragigas_zyudenchi.name=Bragigas Deboth Zyudenchi
+
+item.deboth_deinochaser_zyudenchi.name=Deinochaser Deboth Zyudenchi
+item.deboth_deinosgrander_zyudenchi.name=Deinosgrander Deboth Zyudenchi
+item.deboth_kentrospiker_zyudenchi.name=Kentrospiker Deboth Zyudenchi
+item.deboth_stymero_zyudenchi.name=Stymero Deboth Zyudenchi
+item.deboth_allomerus_zyudenchi.name=Allomerus Deboth Zyudenchi
+item.deboth_beyonsmo_zyudenchi.name=Beyonsmo Deboth Zyudenchi
+item.deboth_ovirappoo_zyudenchi.name=Ovirappoo Deboth Zyudenchi
+item.deboth_igeranodon_zyudenchi.name=Igeranodon Deboth Zyudenchi
+item.deboth_tuperanda_zyudenchi.name=Tuperanda Deboth Zyudenchi
+item.deboth_gurumonite_zyudenchi.name=Gurumonite Deboth Zyudenchi
+item.deboth_archenolon_zyudenchi.name=Archenolon Deboth Zyudenchi
+item.deboth_pukuptor_zyudenchi.name=Pukuptor Deboth Zyudenchi
+item.deboth_futabain_zyudenchi.name=Futabain Deboth Zyudenchi
+
+item.gaburivolver.name=Gaburivolver
+item.gabutyra_de_carnival.name=Gabutyra de Carnival
+item.gaburichanger.name=Gaburichanger
+item.giga_gaburivolver.name=GigaGaburivolver
+item.gabu_gaburivolver.name=GabuGaburivolver
+item.gabu_gabuchanger.name=GabuGabuchanger
+item.gaburicalibur.name=Gaburicalibur
+item.gaburu_cannon.name=Gaburu Cannon
+item.gaburu_cannon_bayonet.name=Gaburu Cannon (Bayonet Mode)
+item.gaburi_carnival.name=Gaburi Carnival
+item.gabu_gabucalibur.name=GabuGabucalibur
+item.gabu_gabucannon.name=GabuGabu Cannon
+item.gabutyra_fang.name=Gabutyra Fang
+item.parasa_shot.name=Parasa Shot
+item.stego_shield.name=Stego Shield
+item.zakutor_slasher.name=Zakutor Slasher
+item.drice_lance.name=DriceLance
+item.fang_shot.name=Fang Shot
+item.shield_lan_slasher.name=Shield Lan Slasher
+item.slash_shield_shot.name=Slash Shield Shot
+item.kentrospiker.name=Kentrospiker
+item.zandar_thunder.name=Zandar Thunder
+item.golder_zandar_thunder.name=Golder Zandar Thunder
+item.feather_edge.name=Feather Edge
+item.flute_buster.name=Flute Buster
+item.kenka_joutou.name=Kenka Joutou (Fighting Superior Sword)
+item.chaos_calibur.name=Chaos Calibur
 
 //38 ToQger
 itemGroup.tabToQger=Ressha Sentai ToQger
@@ -1342,13 +1518,13 @@ item.zyuohger_torso.name=Zyuohger Chestplate
 item.zyuohger_legs.name=Zyuohger Leggings
 
 item.eagle_zyuoh_changer.name=Zyuoh Changer (Zyuoh Eagle)
-item.zyuoh_whale_change_gun.name=Whale Change Gun (Zyuoh Whale)
 item.shark_zyuoh_changer.name=Zyuoh Changer (Zyuoh Shark)
 item.lion_zyuoh_changer.name=Zyuoh Changer (Zyuoh Lion)
 item.elephant_zyuoh_changer.name=Zyuoh Changer (Zyuoh Elephant)
 item.tiger_zyuoh_changer.name=Zyuoh Changer (Zyuoh Tiger)
 item.zyuoh_the_light.name=Zyuoh The Light (Zyuoh The World)
 item.zyuoh_changer_final.name=Zyuoh Changer Final (Zyuoh Bird)
+item.condor_zyuoh_changer.name=Zyuoh Changer (Zyuoh Condor)
 
 item.condor_cube.name=Cube Condor
 item.eagle_cube.name=Cube Eagle
@@ -1663,6 +1839,7 @@ item.max_ryusoul.name=Max RyuSoul
 
 item.kyoryuger_soul.name=KyoryugerSoul
 item.lupinranger_soul.name=LupinrangerSoul
+item.kirameiger_soul.name=KirameigerSoul
 item.shiawase_soul.name=ShiawaseSoul
 item.yamamori_soul.name=YamamoriSoul
 
@@ -1711,6 +1888,7 @@ item.gold_kiramei_stone.name=Gold Kiramei Stone
 item.destoria_kanaema_stone.name=Destoria Kanaema Stone
 item.reversia_kanaema_stone.name=Reversia Kanaema Stone
 item.energia_kanaema_stone.name=Energia Kanaema Stone
+item.illusia_kanaema_stone.name=Illusia Kanaema Stone
 
 item.kiraful_go_arrow.name=Kiraful Go Arrow
 item.kiramei_sword.name=Kiramei Sword
@@ -1739,7 +1917,9 @@ item.magine_geartlinger.name=Geartlinger (Zenkai Magine)
 item.vroon_geartlinger.name=Geartlinger (Zenkai Vroon)
 item.twokaizer_geardalinger.name=Geardalinger (Twokaizer)
 item.stacaeser_geartozinger.name=Geartozinger (Stacaesar)
+item.hakaizer_belt.name=Hakaizer Belt
 item.red_geartlinger.name=Geartlinger (Zenkai Red)
+item.twokai_flint_geardalinger.name=Geardalinger (Twokai Flint)
 item.mecha_dark_gear.name=Dark Sentai Gear (Fake Sentai Robo)
 
 item.zenkaizer_gear.name=Zenkaizer Gear
@@ -1749,11 +1929,14 @@ item.zenkai_magine_gear.name=Zenkai Magine Gear
 item.zenkai_vroon_gear.name=Zenkai Vroon Gear
 item.twokaizer_gear.name=Twokaizer Gear
 item.stacaesar_gear.name=Stacaesar Gear
+item.tojiru_gear.name=Tojiru Gear
 item.zenkai_red_gear.name=Zenkai Red Gear
+item.twokai_flint_gear.name=Twokai Flint Gear
 
 item.twokai_cutanner_gear.name=Twokai Cutanner Gear
 item.twokai_ricky_gear.name=Twokai Ricky Gear
 item.zenkai_zyu_gear.name=Zenkai Zyu Gear
+item.kirameki_zenkai_zyu_gear.name=Kirameki Zenkai Zyu Gear
 
 item.goranger_gear.name=Goranger Gear
 item.jakq_gear.name=J.A.K.Q. Gear
@@ -1804,6 +1987,9 @@ item.lupinranger_gear.name=Lupinranger Gear
 item.patranger_gear.name=Patranger Gear
 item.ryusoulger_gear.name=Ryusoulger Gear
 item.kirameiger_gear.name=Kirameiger Gear
+item.new_zenkaizer_gear.name=Zenkaiger Gear (2022)
+item.don_brothers_gear.name=DonBrothers Gear
+item.akibaranger_gear.name=Akibaranger Gear
 
 item.dark_goranger_gear.name=Dark Goranger Gear
 item.dark_jakq_gear.name=Dark J.A.K.Q. Gear
@@ -1854,6 +2040,14 @@ item.dark_lupinranger_gear.name=Dark Lupinranger Gear
 item.dark_patranger_gear.name=Dark Patranger Gear
 item.dark_ryusoulger_gear.name=Dark Ryusoulger Gear
 item.dark_kirameiger_gear.name=Dark Kirameiger Gear
+
+item.dark_zenkai_juran_gear.name=Dark Zenkai Juran Gear
+item.dark_zenkai_gaon_gear.name=Dark Zenkai Gaon Gear
+item.dark_zenkai_magine_gear.name=Dark Zenkai Magine Gear
+item.dark_zenkai_vroon_gear.name=Dark Zenkai Vroon Gear
+item.dark_twokaizer_gear.name=Dark Twokaizer Gear
+item.dark_twokai_cutanner_gear.name=Dark Twokai Cutanner Gear
+item.dark_twokai_ricky_gear.name=Dark Twokai Ricky Gear
 
 item.red_goranger_gear.name=Red Goranger Gear
 item.red_jakq_gear.name=Red J.A.K.Q. Gear
@@ -1930,6 +2124,9 @@ item.gaon_claw.name=Gaon Claw
 item.magine_stick.name=Magine Stick
 item.vroon_picker.name=Vroon Picker
 item.tail_drill.name=Tail Drill
+item.zenryoku_zenkai_cannon.name=Zenryoku Zenkai Cannon
+item.sta_shield.name=StaShield
+item.v_merang.name=V-Merang
 
 item.white_ribbon.name=White Ribbon
 
@@ -1947,11 +2144,20 @@ item.gokai_red_key.name=Gokai Red Key
 item.akaranger_key.name=Akaranger Key
 item.spade_ace_key.name=Spade Ace Key
 item.vul_eagle_key.name=VulEagle Key
+item.dyna_red_key.name=DynaRed Key
+item.change_dragon_key.name=ChangeDragon Key
 item.red_mask_key.name=Red Mask Key
+item.red_falcon_key.name=Red Falcon Key
+item.five_red_key.name=Five Red Key
+item.oh_red_key.name=OhRed Key
 item.red_racer_key.name=Red Racer Key
 item.ginga_red_key.name=GingaRed Key
+item.time_red_key.name=TimeRed Key
 item.gao_red_key.name=GaoRed Key
+item.hurricane_red_key.name=HurricaneRed Key
+item.magi_red_key.name=MagiRed Key
 item.shinken_red_key.name=Shinken Red Key
+item.gosei_red_key.name=Gosei Red Key
 item.aka_ninger_key.name=AkaNinger Key
 item.gold_anchor_key.name=Gold Anchor Key
 item.aka_ninger_shuriken.name=AkaNinger Shuriken
@@ -1981,6 +2187,7 @@ itemGroup.tabMisc=Misc Sentai Items
 
 item.mecha_gear.name=Mecha Gear
 tile.mecha_ore.name=Mecha Ore
+tile.mecha_topia_ore.name=Mecha Ore (Super Sentai Topia)
 
 item.hachibungi.name=Octant
 item.rokubungi.name=Sextant

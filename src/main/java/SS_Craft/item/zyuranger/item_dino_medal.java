@@ -1,6 +1,6 @@
 package SS_Craft.item.zyuranger;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.lupatranger.item_vs_changer;
@@ -50,17 +50,17 @@ public class item_dino_medal extends Item implements IHasModel
 			{
 				item_dino_buckler belt = (item_dino_buckler) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
-				if (belt == RiderItems.dragon_dino_buckler || belt == RiderItems.armed_tyranno_dino_buckler)
+				if (belt == SentaiItems20.dragon_dino_buckler || belt == SentaiItems20.armed_tyranno_dino_buckler)
 				{
-					if (this == RiderItems.zyuranger_medal)
+					if (this == SentaiItems20.zyuranger_medal)
 					{
 						item_dino_buckler.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2);
 					}
-					else if (this == RiderItems.dragon_medal)
+					else if (this == SentaiItems20.dragon_medal)
 					{
 						item_dino_buckler.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3);
 					}
-					else if (this != RiderItems.dragon_medal || this != RiderItems.zyuranger_medal)
+					else if (this != SentaiItems20.dragon_medal || this != SentaiItems20.zyuranger_medal)
 					{
 						item_dino_buckler.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3);
 					}

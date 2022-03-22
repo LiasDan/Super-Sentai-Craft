@@ -2,7 +2,7 @@ package SS_Craft.item.jetman;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.abaranger.item_dino_brace;
 import SS_Craft.model.tokuArmorModel;
@@ -126,7 +126,7 @@ public class item_jetman_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.birdonic_wave == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.birdonic_wave == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

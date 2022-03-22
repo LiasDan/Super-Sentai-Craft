@@ -2,7 +2,7 @@ package SS_Craft.item.kakuranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
@@ -139,6 +139,6 @@ public class item_kakuranger_armor2 extends ItemArmor  implements IHasModel
 
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.kakuranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

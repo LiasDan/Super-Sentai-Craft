@@ -4,7 +4,7 @@ package SS_Craft.mobs.bikes;
 import java.util.Calendar;
 import java.util.UUID;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.entity.Entity;

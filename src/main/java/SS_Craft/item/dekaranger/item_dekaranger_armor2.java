@@ -2,7 +2,7 @@ package SS_Craft.item.dekaranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.maskman.item_masking_brace;
@@ -167,7 +167,7 @@ public class item_dekaranger_armor2 extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.dekaranger_badge == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.dekaranger_badge == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

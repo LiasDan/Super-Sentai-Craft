@@ -4,7 +4,8 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.mobs.Henchmen.Entity_base_henchmen;
 import SS_Craft.mobs.allies.entity_ex_aid;
@@ -95,7 +96,7 @@ public class item_skill_kyutama extends Item implements IHasModel
 					}
 					if (num == 2)
 					{
-						if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_seiza_blaster)
+						if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.black_seiza_blaster)
 						{
 							playerIn.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 1000, 4,true,false));
 						}
@@ -118,7 +119,7 @@ public class item_skill_kyutama extends Item implements IHasModel
 					}
 					if (num == 6)
 					{
-						if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.sky_blue_seiza_blaster)
+						if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.sky_blue_seiza_blaster)
 						{
 							playerIn.addPotionEffect(new PotionEffect(PotionCore.SS_BIG, 1000, 0,true,false));
 							playerIn.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 1000, 2,true,false));
@@ -137,95 +138,95 @@ public class item_skill_kyutama extends Item implements IHasModel
 					{
 						entity_kyuranger kyuranger  = new entity_kyuranger(worldIn);
 
-						if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_seiza_blaster)
+						if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.red_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.red_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_sword));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.red_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_sword));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.blue_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.blue_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_claw));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.blue_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_claw));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.orange_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.orange_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.orange_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_spear));
-				    		kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.orange_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_spear));
+				    		kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.gold_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.gold_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.gold_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_crossbow));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.gold_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_crossbow));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							kyuranger.tasks.removeTask(kyuranger.aiAttackMelee);
 							kyuranger.tasks.addTask(2, kyuranger.aiArrowAttack);
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.black_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.black_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.black_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_axe));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.black_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_axe));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.silver_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.silver_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.silver_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_sickle));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.silver_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_sickle));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.green_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.green_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_rapier));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.green_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_rapier));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.pink_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.pink_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_shot));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.pink_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_shot));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							kyuranger.tasks.removeTask(kyuranger.aiAttackMelee);
 							kyuranger.tasks.addTask(2, kyuranger.aiArrowAttack);
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.yellow_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.yellow_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_slasher));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.yellow_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_slasher));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.commander_ryutsueder)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.commander_ryutsueder)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.commander_ryutsueder));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.ryutsueder));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.commander_ryutsueder));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.ryutsueder));
 							kyuranger.replaceItemInInventory(99,null);
 							kyuranger.tasks.addTask(2, kyuranger.aiArrowAttack);
 							kyuranger.tasks.addTask(3, kyuranger.aiAttackOnCollide);
@@ -233,29 +234,29 @@ public class item_skill_kyutama extends Item implements IHasModel
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.sky_blue_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.sky_blue_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.sky_blue_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.kyu_spear));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.sky_blue_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.kyu_spear));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.seiza_blaster));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.houou_blade_shield)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.houou_blade_shield)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.houou_blade_shield));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.houou_blade));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.houou_shield));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.houou_blade_shield));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.houou_blade));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.houou_shield));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
 						}
-						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.metal_dark_seiza_blaster)
+						else if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.metal_dark_seiza_blaster)
 						{
-							kyuranger.replaceItemInInventory(100,new ItemStack(RiderItems.metal_dark_seiza_blaster));
-							kyuranger.replaceItemInInventory(98,new ItemStack(RiderItems.dark_kyu_sickle));
-							kyuranger.replaceItemInInventory(99,new ItemStack(RiderItems.dark_seiza_blaster));
+							kyuranger.replaceItemInInventory(100,new ItemStack(SentaiItems60.metal_dark_seiza_blaster));
+							kyuranger.replaceItemInInventory(98,new ItemStack(SentaiItems60.dark_kyu_sickle));
+							kyuranger.replaceItemInInventory(99,new ItemStack(SentaiItems60.dark_seiza_blaster));
 							
 							kyuranger.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, 0, 0.0F);
 							worldIn.spawnEntity(kyuranger);
@@ -479,11 +480,11 @@ public class item_skill_kyutama extends Item implements IHasModel
 					}
 					if (num == 31)
 					{
-						playerIn.dropItem(RiderItems.rokubungi, 1);
+						playerIn.dropItem(SentaiItems20.rokubungi, 1);
 					}
 					if (num == 32)
 					{
-						playerIn.dropItem(RiderItems.hachibungi, 1);
+						playerIn.dropItem(SentaiItems20.hachibungi, 1);
 					}
 					if (num == 33)
 					{
@@ -495,11 +496,11 @@ public class item_skill_kyutama extends Item implements IHasModel
 					}
 					if (num == 35)
 					{
-						playerIn.dropItem(RiderItems.jyogi, 1);
+						playerIn.dropItem(SentaiItems20.jyogi, 1);
 					}
 					if (num == 36)
 					{
-						playerIn.dropItem(RiderItems.compass_kyu, 1);
+						playerIn.dropItem(SentaiItems20.compass_kyu, 1);
 					}
 					if (num == 37)
 					{

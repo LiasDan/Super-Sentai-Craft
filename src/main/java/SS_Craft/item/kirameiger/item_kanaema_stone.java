@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
@@ -18,6 +18,8 @@ import SS_Craft.mobs.bikes.entity_garu_bike;
 import SS_Craft.mobs.mini_boss.entity_ular_captain;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
+import SS_Craft.world.gen.SuperSentaiTopiaTeleporter;
+import SS_Craft.world.gen.modDimensionWorldGen;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
@@ -142,7 +144,14 @@ public class item_kanaema_stone extends Item implements IHasModel
 					}
 					if (num == 4)
 					{
-						
+						if (playerIn.dimension==modDimensionWorldGen.SUPER_SENTAI_TOPIA_DIM_ID)
+						{
+							playerIn.changeDimension(0, new SuperSentaiTopiaTeleporter());
+						}
+						else
+						{
+							playerIn.changeDimension(modDimensionWorldGen.SUPER_SENTAI_TOPIA_DIM_ID, new SuperSentaiTopiaTeleporter());
+						}
 					}
 				}
 				this.set_ammo(playerIn.getHeldItem(handIn),0);

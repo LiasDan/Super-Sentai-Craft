@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "future_kyoryu_pink",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:pink_gaburivolver"
+    },
+	{
+      "item": "supersentaicraft:sp_zyudenchi"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:future_pink_gaburivolver"
+  }
+}

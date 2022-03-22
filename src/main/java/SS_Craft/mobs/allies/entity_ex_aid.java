@@ -7,7 +7,8 @@ import javax.annotation.Nullable;
 
 import com.google.common.base.Predicate;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockColored;
 import net.minecraft.block.material.Material;
@@ -182,7 +183,7 @@ public class entity_ex_aid extends EntityGolem
 	{
 		if (!this.world.isRemote){
 
-			this.dropItem(RiderItems.ex_aid_kyutama, 1);
+			this.dropItem(SentaiItems60.ex_aid_kyutama, 1);
 
 		}
 

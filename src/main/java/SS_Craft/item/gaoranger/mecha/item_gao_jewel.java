@@ -1,7 +1,7 @@
 package SS_Craft.item.gaoranger.mecha;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.go_onger.mecha.item_go_onger_mecha;
 import SS_Craft.item.lupatranger.item_vs_changer;
@@ -53,24 +53,24 @@ public class item_gao_jewel extends Item implements IHasModel
 			{
 				item_gaoranger_mecha belt = (item_gaoranger_mecha) playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem();
 
-				if (belt == RiderItems.gao_king_head)
+				if (belt == SentaiItems40.gao_king_head)
 				{
-					if (this == RiderItems.gao_shark_jewel || this == RiderItems.gao_tiger_jewel)
+					if (this == SentaiItems40.gao_shark_jewel || this == SentaiItems40.gao_tiger_jewel)
 					{
 						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 					}
-					else if (this == RiderItems.gao_eagle_jewel || this == RiderItems.gao_bison_jewel)
+					else if (this == SentaiItems40.gao_eagle_jewel || this == SentaiItems40.gao_bison_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_lion_blue_jewel)
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_blue_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 3);
 						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_lion_black_jewel)
+						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_black_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 6);
 						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_lion_white_jewel)
+						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_white_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 9);
 						}
@@ -79,17 +79,17 @@ public class item_gao_jewel extends Item implements IHasModel
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 						}
 					}
-					else if (this == RiderItems.gao_rhinos_jewel || this == RiderItems.gao_madillo_jewel)
+					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_lion_blue_jewel)
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_blue_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 4);
 						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_lion_black_jewel)
+						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_black_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 7);
 						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_lion_white_jewel)
+						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_white_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 10);
 						}
@@ -98,17 +98,17 @@ public class item_gao_jewel extends Item implements IHasModel
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
 						}
 					}
-					else if (this == RiderItems.gao_buffalo_jewel)
+					else if (this == SentaiItems40.gao_buffalo_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_lion_blue_jewel)
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_blue_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 5);
 						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_lion_black_jewel)
+						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_black_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 8);
 						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_lion_white_jewel)
+						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_white_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 11);
 						}
@@ -134,22 +134,22 @@ public class item_gao_jewel extends Item implements IHasModel
 						}
 					}
 				}
-				else if (belt == RiderItems.gao_knight_head)
+				else if (belt == SentaiItems40.gao_knight_head)
 				{
-					if (this == RiderItems.gao_shark_jewel || this == RiderItems.gao_tiger_jewel)
+					if (this == SentaiItems40.gao_shark_jewel || this == SentaiItems40.gao_tiger_jewel)
 					{
 						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 					}
-					else if (this == RiderItems.gao_eagle_jewel || this == RiderItems.gao_bison_jewel)
+					else if (this == SentaiItems40.gao_eagle_jewel || this == SentaiItems40.gao_bison_jewel)
 					{
 						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 					}
-					else if (this == RiderItems.gao_rhinos_jewel || this == RiderItems.gao_madillo_jewel)
+					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
 					{
 						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
 					}
-					else if (this == RiderItems.gao_buffalo_jewel)
+					else if (this == SentaiItems40.gao_buffalo_jewel)
 					{
 						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 2);
 					}
@@ -170,16 +170,16 @@ public class item_gao_jewel extends Item implements IHasModel
 						}
 					}
 				}
-				else if (belt == RiderItems.gao_muscle_head)
+				else if (belt == SentaiItems40.gao_muscle_head)
 				{
-					if (this == RiderItems.gao_bear_jewel || this == RiderItems.gao_polar_jewel)
+					if (this == SentaiItems40.gao_bear_jewel || this == SentaiItems40.gao_polar_jewel)
 					{
 						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 					}
-					else if (this == RiderItems.gao_eagle_jewel || this == RiderItems.gao_bison_jewel)
+					else if (this == SentaiItems40.gao_eagle_jewel || this == SentaiItems40.gao_bison_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_ape_jewel)
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_ape_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 3);
 						}
@@ -188,9 +188,9 @@ public class item_gao_jewel extends Item implements IHasModel
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 						}
 					}
-					else if (this == RiderItems.gao_rhinos_jewel || this == RiderItems.gao_madillo_jewel)
+					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_ape_jewel)
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_ape_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 4);
 						}
@@ -199,9 +199,9 @@ public class item_gao_jewel extends Item implements IHasModel
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
 						}
 					}
-					else if (this == RiderItems.gao_buffalo_jewel)
+					else if (this == SentaiItems40.gao_buffalo_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.gao_ape_jewel)
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_ape_jewel)
 						{
 							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 5);
 						}
@@ -227,9 +227,9 @@ public class item_gao_jewel extends Item implements IHasModel
 						}
 					}
 				}
-				else if (belt == RiderItems.gao_hunter_head || belt == RiderItems.gao_hunter_blue_moon_head)
+				else if (belt == SentaiItems40.gao_hunter_head || belt == SentaiItems40.gao_hunter_blue_moon_head)
 				{
-					if (this == RiderItems.gao_hammerhead_jewel || this == RiderItems.gao_wolf_jewel)
+					if (this == SentaiItems40.gao_hammerhead_jewel || this == SentaiItems40.gao_wolf_jewel)
 					{
 						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
@@ -251,22 +251,22 @@ public class item_gao_jewel extends Item implements IHasModel
 						}
 					}
 				}
-				else if (belt == RiderItems.gao_icarus_head)
+				else if (belt == SentaiItems40.gao_icarus_head)
 				{
-					if (this == RiderItems.gao_giraffe_jewel || this == RiderItems.gao_deers_jewel)
+					if (this == SentaiItems40.gao_giraffe_jewel || this == SentaiItems40.gao_deers_jewel)
 					{
 						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 					}
-					else if (this == RiderItems.gao_rhinos_jewel || this == RiderItems.gao_madillo_jewel)
+					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
 					{
 						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 					}
-					else if (this == RiderItems.gao_bison_jewel)
+					else if (this == SentaiItems40.gao_bison_jewel)
 					{
 						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
 					}
-					else if (this == RiderItems.gao_buffalo_jewel)
+					else if (this == SentaiItems40.gao_buffalo_jewel)
 					{
 						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 2);
 					}
@@ -287,22 +287,22 @@ public class item_gao_jewel extends Item implements IHasModel
 						}
 					}
 				}
-				else if (belt == RiderItems.gao_god_head)
+				else if (belt == SentaiItems40.gao_god_head)
 				{
-					if (this == RiderItems.gao_sawshark_jewel || this == RiderItems.gao_jaguar_jewel)
+					if (this == SentaiItems40.gao_sawshark_jewel || this == SentaiItems40.gao_jaguar_jewel)
 					{
 						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 					}
-					else if (this == RiderItems.gao_buffalo_jewel)
+					else if (this == SentaiItems40.gao_buffalo_jewel)
 					{
 						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 					}
-					else if (this == RiderItems.gao_bison_jewel)
+					else if (this == SentaiItems40.gao_bison_jewel)
 					{
 						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
 					}
-					else if (this == RiderItems.gao_rhinos_jewel || this == RiderItems.gao_madillo_jewel)
+					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
 					{
 						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 2);
 					}

@@ -2,11 +2,12 @@ package SS_Craft.item.akibaranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.boukenger.item_boukenger_armor;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
+import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.model.BipedLockseed;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
@@ -59,6 +60,10 @@ public class item_akibaranger_armor extends ItemArmor  implements IHasModel
 					if (item_moe_moe_z_cune.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 1)
 					{
 						return Refercence.MODID+":textures/armor/"+rider+"_super_1.png";
+					}
+					if (item_moe_moe_z_cune.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) != "blank")
+					{
+						return Refercence.MODID+":textures/armor/"+item_moe_moe_z_cune.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
 					}
 					if (item_moe_moe_z_cune.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 0)
 					{

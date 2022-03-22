@@ -1,7 +1,7 @@
 package SS_Craft.item.gokaiger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.shinkenger.item_shodophone;
@@ -64,7 +64,7 @@ public class item_ranger_key extends Item implements IHasModel
 			{
 				item_mobirates belt = (item_mobirates) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
-				if (this == RiderItems.gold_anchor_key) 
+				if (this == SentaiItems20.gold_anchor_key) 
 				{
 					item_mobirates.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num2);
 					item_mobirates.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);

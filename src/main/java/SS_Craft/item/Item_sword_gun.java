@@ -8,7 +8,8 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Multimap;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import SS_Craft.Tabs;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
@@ -75,7 +76,7 @@ public class Item_sword_gun extends ItemBow  implements IHasModel
             @SideOnly(Side.CLIENT)
             public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
             {
-            	if (stack.getItem() == RiderItems.geardalinger)
+            	if (stack.getItem() == SentaiItems60.geardalinger)
 				{
 					if (entityIn == null)
 					{
@@ -85,7 +86,7 @@ public class Item_sword_gun extends ItemBow  implements IHasModel
 					{
 						if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_geartlinger)
 						{
-							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.twokaizer_geardalinger)
+							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.twokaizer_geardalinger)
 							{
 								if (item_geartlinger.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="super")
 									return entityIn.getActiveItemStack().getItem() != stack.getItem()? 2.0F : 3.0F;

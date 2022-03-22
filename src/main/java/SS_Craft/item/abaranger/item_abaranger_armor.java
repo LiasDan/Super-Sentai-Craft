@@ -2,9 +2,12 @@ package SS_Craft.item.abaranger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.dairanger.item_aura_changer;
+import SS_Craft.item.dairanger.item_dairanger_armor;
 import SS_Craft.item.zyuohger.item_zyuoh_changer;
+import SS_Craft.model.BipedLockseed;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
 import SS_Craft.util.Refercence;
@@ -54,31 +57,15 @@ public class item_abaranger_armor extends ItemArmor  implements IHasModel
 				if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_dino_brace)
 				{
 					String rider = ((item_dino_brace)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
-
-					if (rider=="aba_red")
+					
+					if (item_dino_brace.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="base")
 					{
-						if ( slot == EntityEquipmentSlot.LEGS)
-						{
-							return Refercence.MODID+":textures/armor/"+AbaRed[item_dino_brace.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_2.png";
-						}
-						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
-						{
-							return Refercence.MODID+":textures/armor/"+AbaRed[item_dino_brace.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +"_1.png";
-						}
+						return Refercence.MODID+":textures/armor/abare_killer_base_1.png";
 					}
 					else
 					{
-						if ( slot == EntityEquipmentSlot.LEGS)
-						{
-							return Refercence.MODID+":textures/armor/"+rider +"_2.png";
-						}
-						if (slot == EntityEquipmentSlot.HEAD||slot == EntityEquipmentSlot.CHEST  )
-						{
-							return Refercence.MODID+":textures/armor/"+rider +"_1.png";
-						}
+						return Refercence.MODID+":textures/armor/blank.png";
 					}
-					
-					return Refercence.MODID+":textures/armor/blank.png";
 				}
 			}
 			else
@@ -114,17 +101,17 @@ public class item_abaranger_armor extends ItemArmor  implements IHasModel
 		{
 			if(stack.getItem() instanceof item_abaranger_armor)
 			{
-				tokuArmorModel armorModel = new tokuArmorModel();
+				BipedLockseed armorModel = new BipedLockseed();
+				
+				armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.HEAD;
+				armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.HEAD;
+				armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.HEAD;
 
-				armorModel.bipedBody2.showModel = slot == EntityEquipmentSlot.LEGS;
-				armorModel.bipedRightArm2.showModel = slot == EntityEquipmentSlot.CHEST;
-				armorModel.bipedLeftArm2.showModel = slot == EntityEquipmentSlot.LEGS;
-				
-				armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.CHEST;
-				armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.LEGS;
-				
-				armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.CHEST;
-				
+				armorModel.bipedLeftLeg2.showModel = slot == EntityEquipmentSlot.HEAD;
+				armorModel.bipedRightLeg2.showModel = slot == EntityEquipmentSlot.HEAD;
+
+				armorModel.bipedBody3.showModel = slot == EntityEquipmentSlot.HEAD;
+
 				armorModel.bipedHead2.showModel = slot == EntityEquipmentSlot.HEAD;
 				armorModel.bipedHeadwear2.showModel = slot == EntityEquipmentSlot.HEAD;
 
@@ -142,6 +129,6 @@ public class item_abaranger_armor extends ItemArmor  implements IHasModel
 
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems40.abaranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

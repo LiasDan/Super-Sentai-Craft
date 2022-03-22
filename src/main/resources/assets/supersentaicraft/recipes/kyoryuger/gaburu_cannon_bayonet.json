@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kyoryu_violet",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:gaburivolver"
+    },
+	{
+      "item": "supersentaicraft:gaburicalibur"
+    },
+	{
+      "item": "supersentaicraft:plezuon_zyudenchi"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:gaburu_cannon_bayonet"
+  }
+}

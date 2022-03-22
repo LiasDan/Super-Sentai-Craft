@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kyoryuger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:parasa_shot"
+    },
+	{
+      "item": "supersentaicraft:stego_shield"
+    },
+	{
+      "item": "supersentaicraft:zakutor_slasher"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:slash_shield_shot"
+  }
+}

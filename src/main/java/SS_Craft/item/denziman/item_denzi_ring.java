@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_bouken_spirit;
 import SS_Craft.model.model_belt;
@@ -70,25 +70,25 @@ public class item_denzi_ring extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				if (stack.getItem()==RiderItems.red_denzi_ring)
+				if (stack.getItem()==SentaiItems20.red_denzi_ring)
 				{
-					armorModel.belt=new ItemStack(RiderItems.denzi_red_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.denzi_red_belt);
 				}
-				if (stack.getItem()==RiderItems.blue_denzi_ring)
+				if (stack.getItem()==SentaiItems20.blue_denzi_ring)
 				{
-					armorModel.belt=new ItemStack(RiderItems.denzi_blue_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.denzi_blue_belt);
 				}
-				if (stack.getItem()==RiderItems.yellow_denzi_ring)
+				if (stack.getItem()==SentaiItems20.yellow_denzi_ring)
 				{
-					armorModel.belt=new ItemStack(RiderItems.denzi_yellow_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.denzi_yellow_belt);
 				}
-				if (stack.getItem()==RiderItems.green_denzi_ring)
+				if (stack.getItem()==SentaiItems20.green_denzi_ring)
 				{
-					armorModel.belt=new ItemStack(RiderItems.denzi_green_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.denzi_green_belt);
 				}
-				if (stack.getItem()==RiderItems.pink_denzi_ring)
+				if (stack.getItem()==SentaiItems20.pink_denzi_ring)
 				{
-					armorModel.belt=new ItemStack(RiderItems.denzi_pink_belt);
+					armorModel.belt=new ItemStack(SentaiItems20.denzi_pink_belt);
 				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -161,13 +161,13 @@ public class item_denzi_ring extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.denziman_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems20.denziman_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.denziman_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems20.denziman_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.denziman_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems20.denziman_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_denzi_ring)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_denzi_ring)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -175,7 +175,7 @@ public class item_denzi_ring extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_denzi_ring)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.blue_denzi_ring)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -183,7 +183,7 @@ public class item_denzi_ring extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_denzi_ring)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.yellow_denzi_ring)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -191,7 +191,7 @@ public class item_denzi_ring extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_denzi_ring)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.green_denzi_ring)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -199,7 +199,7 @@ public class item_denzi_ring extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_denzi_ring)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.pink_denzi_ring)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
@@ -235,6 +235,6 @@ public class item_denzi_ring extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.empty_denzi_ring == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.empty_denzi_ring == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

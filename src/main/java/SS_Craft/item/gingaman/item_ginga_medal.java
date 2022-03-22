@@ -1,7 +1,7 @@
 package SS_Craft.item.gingaman;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.util.IHasModel;
@@ -49,7 +49,7 @@ public class item_ginga_medal extends Item implements IHasModel
 			{
 				item_ginga_brace belt = (item_ginga_brace) playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
 
-				if (belt==RiderItems.black_knight_bull_riot)
+				if (belt==SentaiItems40.black_knight_bull_riot)
 				{
 					item_ginga_brace.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 				}

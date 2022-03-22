@@ -8,7 +8,9 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Multimap;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.carranger.item_accel_changer;
 import SS_Craft.item.gaoranger.item_g_phone;
@@ -79,7 +81,7 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 			@SideOnly(Side.CLIENT)
 	           public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
 	           {
-					if (stack.getItem() == RiderItems.x_changer)
+					if (stack.getItem() == SentaiItems60.x_changer)
 					{
 						if (entityIn == null)
 		                {
@@ -133,9 +135,9 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 	{
 		if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 		{
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.lupin_x_changer)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.lupin_x_changer)
 			{	
-				if (this==RiderItems.x_changer)
+				if (this==SentaiItems60.x_changer)
 				{
 					if (playerIn.isSneaking()&&item_vs_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=1)
 					{
@@ -178,32 +180,52 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 
 			if (!worldIn.isRemote)
 			{
-					if (this == RiderItems.x_changer)
+					if (this == SentaiItems60.x_changer)
 					{
 						ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 		    	        if (itemstack.isEmpty())
 		    	        {
-		    	        	 playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.lupin_x_changer));
+		    	        	 playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.lupin_x_changer));
 		    	        }
 					}
-					if (this == RiderItems.morphin_blaster)
+					if (this == SentaiItems40.morphin_blaster)
 					{
 						ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
 
 		    	        if (itemstack.isEmpty())
 		    	        {
-		    	        	if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.silver_enetron || playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.stag_animal_disk)
+		    	        	if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.silver_enetron || playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.stag_animal_disk)
 		    	        	{
-		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.stag_morphin_blaster));
+		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems40.stag_morphin_blaster));
 		    	        	}
-		    	        	else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.beetle_animal_disk)
+		    	        	else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.beetle_animal_disk)
 		    	        	{
-		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.beetle_morphin_blaster));
+		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems40.beetle_morphin_blaster));
 		    	        	}
 		    	        	else
 		    	        	{
-		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(RiderItems.beet_morphin_blaster));
+		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems40.beet_morphin_blaster));
+		    	        	}
+		    	        }
+					}
+					if (this == SentaiItems40.moe_moe_z_cune)
+					{
+						ItemStack itemstack = playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET);
+
+		    	        if (itemstack.isEmpty())
+		    	        {
+		    	        	if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.akiba_blue_logo)
+		    	        	{
+		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems40.blue_moe_moe_z_cune));
+		    	        	}
+		    	        	else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.akiba_yellow_logo)
+		    	        	{
+		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems40.yellow_moe_moe_z_cune));
+		    	        	}
+		    	        	else
+		    	        	{
+		    	        		playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems40.red_moe_moe_z_cune));
 		    	        	}
 		    	        }
 					}

@@ -4,7 +4,8 @@ package SS_Craft.item;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
@@ -53,7 +54,7 @@ public class ItemBaseShield extends ItemShield implements IHasModel
         	@SideOnly(Side.CLIENT)
 	        public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
 	        {
-        		if (stack.getItem() == RiderItems.houou_shield)
+        		if (stack.getItem() == SentaiItems60.houou_shield)
         		{
         			if (entityIn == null)
 	                {
@@ -61,7 +62,7 @@ public class ItemBaseShield extends ItemShield implements IHasModel
 	                }
         			else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (entityIn.getHeldItem(EnumHand.MAIN_HAND).getItem()== RiderItems.houou_blade)
+						if (entityIn.getHeldItem(EnumHand.MAIN_HAND).getItem()== SentaiItems60.houou_blade)
 						{
 							return 1;
 						}

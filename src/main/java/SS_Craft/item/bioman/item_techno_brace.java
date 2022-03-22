@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
@@ -69,13 +69,13 @@ public class item_techno_brace extends ItemArmor implements IHasModel
 			{
 				model_belt armorModel = new model_belt();
 				
-				if (this == RiderItems.bio_hunter_silva_belt)
+				if (this == SentaiItems20.bio_hunter_silva_belt)
 				{
-					armorModel.belt= new ItemStack(RiderItems.bio_hunter_silva_belt);
+					armorModel.belt= new ItemStack(SentaiItems20.bio_hunter_silva_belt);
 				}
 				else
 				{
-					armorModel.belt= new ItemStack(RiderItems.bioman_belt);
+					armorModel.belt= new ItemStack(SentaiItems20.bioman_belt);
 				}
 				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
@@ -134,13 +134,13 @@ public class item_techno_brace extends ItemArmor implements IHasModel
 				{
 					if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == RiderItems.bioman_legs)
+						if (player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() == SentaiItems20.bioman_legs)
 						{
-							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == RiderItems.bioman_torso)
+							if (player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() == SentaiItems20.bioman_torso)
 							{
-								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == RiderItems.bioman_head)
+								if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems20.bioman_head)
 								{
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.red_techno_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_techno_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -149,7 +149,7 @@ public class item_techno_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.green_techno_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.green_techno_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -158,7 +158,7 @@ public class item_techno_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.blue_techno_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.blue_techno_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -175,7 +175,7 @@ public class item_techno_brace extends ItemArmor implements IHasModel
 											player.motionZ=look.z/2;
 										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.yellow_techno_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.yellow_techno_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -185,7 +185,7 @@ public class item_techno_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.pink_techno_brace)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.pink_techno_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -194,7 +194,7 @@ public class item_techno_brace extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 2,true,false));
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == RiderItems.bio_hunter_silva_belt)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.bio_hunter_silva_belt)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 2,true,false));
@@ -230,6 +230,6 @@ public class item_techno_brace extends ItemArmor implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.goggle_v_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems20.goggle_v_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

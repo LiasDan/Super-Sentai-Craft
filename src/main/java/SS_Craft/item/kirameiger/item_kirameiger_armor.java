@@ -2,7 +2,7 @@ package SS_Craft.item.kirameiger;
 
 import javax.annotation.Nullable;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.model.BipedLockseed;
@@ -130,6 +130,6 @@ public class item_kirameiger_armor extends ItemArmor  implements IHasModel
 	
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return RiderItems.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+		return SentaiItems60.blue_diamond == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

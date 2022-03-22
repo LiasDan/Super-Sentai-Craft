@@ -11,7 +11,9 @@ import java.util.UUID;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Sets;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
+import SS_Craft.SentaiItems60;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -69,11 +71,11 @@ public class entity_yami_0gou extends EntityBossBase
 	public entity_yami_0gou(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.rail_slasher));
-		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(RiderItems.toqger_torso));
-		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(RiderItems.toqger_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(RiderItems.zerogou_toq_changer));
-		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(RiderItems.toqger_legs));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems40.rail_slasher));
+		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems40.toqger_torso));
+		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems40.toqger_head));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems40.zerogou_toq_changer));
+		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems40.toqger_legs));
 	}
 
 	protected void applyEntityAttributes()
@@ -94,15 +96,8 @@ public class entity_yami_0gou extends EntityBossBase
 	{
 		if (!this.world.isRemote)
 		{
-			this.dropItem(RiderItems.zero_ressha, 1);
-			this.dropItem(RiderItems.blank_ressha, 5);
-			
-			switch (this.rand.nextInt(5))
-			{   		   	    		
-			case 0:
-				this.dropItem(RiderItems.rail_slasher, 1);
-				break;
-			}
+			this.dropItem(SentaiItems40.zero_ressha, 1);
+			this.dropItem(SentaiItems40.blank_ressha, 5);
 		}
 	}
 }

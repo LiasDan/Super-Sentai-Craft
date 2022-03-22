@@ -1,6 +1,6 @@
 package SS_Craft.item.denziman;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.lupatranger.item_vs_changer;

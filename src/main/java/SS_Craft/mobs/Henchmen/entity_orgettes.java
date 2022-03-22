@@ -1,6 +1,7 @@
 package SS_Craft.mobs.Henchmen;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.mobs.Boss.EntityBossBase;
 import SS_Craft.mobs.Boss.entity_rouki;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,14 +17,14 @@ public class entity_orgettes extends Entity_base_henchmen
 	public entity_orgettes(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.orgettes_club));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems20.orgettes_club));
 	}
 
 	public void onDeath(DamageSource cause)
 	{
 		if (!this.world.isRemote){   
 
-			this.dropItem(RiderItems.empty_gao_jewel, 1);
+			this.dropItem(SentaiItems40.empty_gao_jewel, 1);
 
 			if (this.getAttackTarget() instanceof EntityPlayer)
 			{
@@ -42,27 +43,27 @@ public class entity_orgettes extends Entity_base_henchmen
 			switch (this.rand.nextInt(6))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.gao_lion_jewel, 1);
+				this.dropItem(SentaiItems40.gao_lion_jewel, 1);
 				break;
 				
 			case 1:
-				this.dropItem(RiderItems.gao_eagle_jewel, 1);
+				this.dropItem(SentaiItems40.gao_eagle_jewel, 1);
 				break;
 
 			case 2:
-				this.dropItem(RiderItems.gao_shark_jewel, 1);
+				this.dropItem(SentaiItems40.gao_shark_jewel, 1);
 				break;
 
 			case 3:
-				this.dropItem(RiderItems.gao_bison_jewel, 1);
+				this.dropItem(SentaiItems40.gao_bison_jewel, 1);
 				break;
 
 			case 4:
-				this.dropItem(RiderItems.gao_tiger_jewel, 1);
+				this.dropItem(SentaiItems40.gao_tiger_jewel, 1);
 				break;
 				
 			case 5:
-				this.dropItem(RiderItems.empty_gao_jewel, 2);
+				this.dropItem(SentaiItems40.empty_gao_jewel, 2);
 				break;
 			}
 		}

@@ -1,6 +1,6 @@
 package SS_Craft.mobs.Henchmen;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
@@ -11,38 +11,38 @@ public class entity_cutmen extends Entity_base_henchmen
 	public entity_cutmen(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(RiderItems.cutmen_sword));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems20.cutmen_sword));
 	}
 
 	public void onDeath(DamageSource cause)
 	{
 		if (!this.world.isRemote){   
 
-			this.dropItem(RiderItems.battle_fever_logo, 1);
+			this.dropItem(SentaiItems20.battle_fever_logo, 1);
 			switch (this.rand.nextInt(6))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.japan_badge, 1);
+				this.dropItem(SentaiItems20.japan_badge, 1);
 				break;
 
 			case 1:
-				this.dropItem(RiderItems.cossack_badge, 1);
+				this.dropItem(SentaiItems20.cossack_badge, 1);
 				break;
 
 			case 2:
-				this.dropItem(RiderItems.france_badge, 1);
+				this.dropItem(SentaiItems20.france_badge, 1);
 				break;
 
 			case 3:
-				this.dropItem(RiderItems.kenya_badge, 1);
+				this.dropItem(SentaiItems20.kenya_badge, 1);
 				break;
 
 			case 4:
-				this.dropItem(RiderItems.america_badge, 1);
+				this.dropItem(SentaiItems20.america_badge, 1);
 				break;
 
 			case 5:
-				this.dropItem(RiderItems.battle_fever_logo, 2);
+				this.dropItem(SentaiItems20.battle_fever_logo, 2);
 				break;
 			}
 		}

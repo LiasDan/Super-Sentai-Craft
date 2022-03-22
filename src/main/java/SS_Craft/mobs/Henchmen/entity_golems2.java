@@ -1,11 +1,13 @@
 package SS_Craft.mobs.Henchmen;
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems20;
 import SS_Craft.mobs.Boss.EntityBossBase;
 import SS_Craft.mobs.Boss.entity_dragon_ranger;
 import SS_Craft.mobs.mini_boss.entity_dora_sphinx;
 import SS_Craft.mobs.mini_boss.entity_pumpkin_rapper;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
@@ -14,13 +16,14 @@ public class entity_golems2 extends Entity_base_henchmen
 	public entity_golems2(World par1World)
 	{
 		super(par1World);
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems20.blanknoitem));
 	}
 
 	public void onDeath(DamageSource cause)
 	{
 		if (!this.world.isRemote){   
 
-			this.dropItem(RiderItems.zyuranger_medal, 1);
+			this.dropItem(SentaiItems20.zyuranger_medal, 1);
 			
 			if (this.getAttackTarget()instanceof EntityPlayer)
 			{
@@ -51,27 +54,27 @@ public class entity_golems2 extends Entity_base_henchmen
 			switch (this.rand.nextInt(6))
 			{   		   	    		
 			case 0:
-				this.dropItem(RiderItems.tyranno_medal, 1);
+				this.dropItem(SentaiItems20.tyranno_medal, 1);
 				break;
 
 			case 1:
-				this.dropItem(RiderItems.mammoth_medal, 1);
+				this.dropItem(SentaiItems20.mammoth_medal, 1);
 				break;
 
 			case 2:
-				this.dropItem(RiderItems.tricera_medal, 1);
+				this.dropItem(SentaiItems20.tricera_medal, 1);
 				break;
 
 			case 3:
-				this.dropItem(RiderItems.tiger_medal, 1);
+				this.dropItem(SentaiItems20.tiger_medal, 1);
 				break;
 
 			case 4:
-				this.dropItem(RiderItems.ptera_medal, 1);
+				this.dropItem(SentaiItems20.ptera_medal, 1);
 				break;
 
 			case 5:
-				this.dropItem(RiderItems.zyuranger_medal, 2);
+				this.dropItem(SentaiItems20.zyuranger_medal, 2);
 				break;
 			}
 		}

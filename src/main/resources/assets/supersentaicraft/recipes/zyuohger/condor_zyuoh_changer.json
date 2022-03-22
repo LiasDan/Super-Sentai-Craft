@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zyuohger",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:eagle_zyuoh_changer"
+    },
+	{
+      "item": "supersentaicraft:zyuoh_changer_final"
+    },
+	{
+      "item": "supersentaicraft:condor_cube"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:condor_zyuoh_changer"
+  }
+}

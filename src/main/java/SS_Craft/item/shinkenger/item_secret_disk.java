@@ -1,7 +1,7 @@
 package SS_Craft.item.shinkenger;
 
 
-import SS_Craft.RiderItems;
+import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.go_onger.item_go_phone;
 import SS_Craft.util.IHasModel;
@@ -52,23 +52,23 @@ public class item_secret_disk extends Item implements IHasModel
 				
 				if (num==1)
 				{
-					if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.inromaru)
+					if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.inromaru)
 					{
 						item_shodophone.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
 				}
 				else if (num==2)
 				{
-					if (belt==RiderItems.sushi_changer)
+					if (belt==SentaiItems40.sushi_changer)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.sakanamaru)
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.sakanamaru)
 						{
 							item_shodophone.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 						}	
 					}
 					else
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.shinkenmaru)
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.shinkenmaru)
 						{
 							item_shodophone.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 						}
@@ -76,7 +76,7 @@ public class item_secret_disk extends Item implements IHasModel
 				}
 				else if (num==3)
 				{
-					if (belt==RiderItems.red_shodophone)
+					if (belt==SentaiItems40.red_shodophone)
 					{
 						item_shodophone.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
@@ -86,11 +86,11 @@ public class item_secret_disk extends Item implements IHasModel
 					item_shodophone.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 				}
 			}
-			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==RiderItems.red_go_phone)
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==SentaiItems40.red_go_phone)
 			{
 				if (num==2)
 				{
-					if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== RiderItems.mantan_sword)
+					if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.mantan_sword)
 					{
 						item_go_phone.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
