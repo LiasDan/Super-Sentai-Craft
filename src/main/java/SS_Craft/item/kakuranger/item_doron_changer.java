@@ -73,19 +73,19 @@ public class item_doron_changer extends ItemArmor implements IHasModel
 				{
 					armorModel.belt=new ItemStack(SentaiItems20.ninja_red_belt);
 				}
-				if (this == SentaiItems20.white_doron_changer)
+				else if (this == SentaiItems20.white_doron_changer)
 				{
 					armorModel.belt=new ItemStack(SentaiItems20.ninja_white_belt);
 				}
-				if (this == SentaiItems20.yellow_doron_changer)
+				else if (this == SentaiItems20.yellow_doron_changer)
 				{
 					armorModel.belt=new ItemStack(SentaiItems20.ninja_yellow_belt);
 				}
-				if (this == SentaiItems20.blue_doron_changer)
+				else if (this == SentaiItems20.blue_doron_changer)
 				{
 					armorModel.belt=new ItemStack(SentaiItems20.ninja_blue_belt);
 				}
-				if (this == SentaiItems20.black_doron_changer)
+				else if (this == SentaiItems20.black_doron_changer)
 				{
 					armorModel.belt=new ItemStack(SentaiItems20.ninja_black_belt);
 				}

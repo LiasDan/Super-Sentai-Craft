@@ -101,7 +101,7 @@ public class entity_kudakks extends Entity_base_henchmen
 						break;
 
 					case 2:
-						this.dropItem(SentaiItems60.blank_sentai_gear, 2);
+						this.dropItem(SentaiItems60.twokai_flint_gear, 1);
 						break;
 
 					case 3:
@@ -117,6 +117,10 @@ public class entity_kudakks extends Entity_base_henchmen
 						break;
 
 					case 6:
+						this.dropItem(SentaiItems60.blank_sentai_gear, 2);
+						break;
+
+					case 7:
 						this.dropItem(SentaiItems60.blank_sentai_gear, 2);
 						break;
 				}

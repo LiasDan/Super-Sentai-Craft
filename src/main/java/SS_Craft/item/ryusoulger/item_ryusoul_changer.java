@@ -7,10 +7,14 @@ import javax.annotation.Nullable;
 import org.lwjgl.opengl.GL11;
 
 import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.lupatranger.item_vs_vehicle;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
+import SS_Craft.item.shinkenger.item_shodophone;
 import SS_Craft.model.model_belt;
 import SS_Craft.model.model_belt_plus;
 import SS_Craft.potion.PotionCore;
@@ -49,24 +53,26 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_ryusoul_changer extends ItemArmor implements IHasModel
+public class item_ryusoul_changer extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
+	public static final String[] RyusoulRed= new String[] {"ryusoul_red","ryusoul_red_max","lupin_red"};
+	public static final String[] RyusoulBlue= new String[] {"ryusoul_blue","lupin_blue"};
+	public static final String[] RyusoulPink= new String[] {"ryusoul_pink","lupin_yellow"};
+
 	public String Rider;
 
 	public item_ryusoul_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems60.ryusoulger_head, SentaiItems60.ryusoulger_torso, SentaiItems60.ryusoulger_legs, SentaiItems60.blank_ryusoul);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
 		TokuCraft_core.ITEMS.add(this);
 	}
 
@@ -660,5 +666,112 @@ public class item_ryusoul_changer extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems60.blank_ryusoul == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_ryusoul_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					if (rider == "ryusoul_red")
+					{
+						return Refercence.MODID+":textures/armor/"+RyusoulRed[item_ryusoul_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "ryusoul_blue")
+					{
+						return Refercence.MODID+":textures/armor/"+RyusoulBlue[item_ryusoul_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "ryusoul_pink")
+					{
+						return Refercence.MODID+":textures/armor/"+RyusoulPink[item_ryusoul_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+rider+ext;
+					}
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					if (rider == "ryusoul_gold")
+					{
+						if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+						else
+						{
+							return "blank";
+						}
+					}
+					else if (rider == "gaisorg" | rider == "ryusoul_brown")
+					{
+						return "blank";
+					}
+					else
+					{
+						if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="pat_siren")
+						{
+							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+						else if (item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_soul(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+						else if (item_ryusoul_changer.get_vs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_scissor")
+						{
+							return Refercence.MODID+":textures/armor/blank.png";
+						}
+						else if (item_ryusoul_changer.get_vs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+						{
+							if (num==4)
+							{
+								return "blank";
+							}
+							else 
+							{
+								return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_vs(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+							}
+						}
+						else
+						{
+							if (num==4)
+							{
+								return "blank";
+							}
+							else 
+							{
+								return Refercence.MODID+":textures/armor/"+item_ryusoul_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+							}
+						}
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

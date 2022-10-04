@@ -587,7 +587,7 @@ public class ore_block extends Block implements IHasModel
 		//44 Kirameiger
 		if (CRYSTAL==SentaiItems60.blue_diamond)
 		{
-			int rand = generator.nextInt(298);
+			int rand = generator.nextInt(300);
 			if (rand<25) return SentaiItems60.red_kiramei_stone;
 			if (rand<50) return SentaiItems60.yellow_kiramei_stone;
 			if (rand<75) return SentaiItems60.green_kiramei_stone;
@@ -597,14 +597,15 @@ public class ore_block extends Block implements IHasModel
 			if (rand<146) return SentaiItems60.destoria_kanaema_stone;
 			if (rand<147) return SentaiItems60.reversia_kanaema_stone;
 			if (rand<148) return SentaiItems60.energia_kanaema_stone;
-			if (rand<149) return SentaiItems60.gold_kiramei_stone;
+			if (rand<149) return SentaiItems60.illusia_kanaema_stone;
+			if (rand<150) return SentaiItems60.gold_kiramei_stone;
 			
 			return CRYSTAL;
 		}
 		//45 Zenkaiger
 		if (CRYSTAL==SentaiItems60.blank_sentai_gear)
 		{
-			int rand = generator.nextInt(512);
+			int rand = generator.nextInt(546);
 			if (rand<25) return SentaiItems60.zenkaizer_gear;
 			if (rand<50) return SentaiItems60.zenkai_juran_gear;
 			if (rand<75) return SentaiItems60.zenkai_gaon_gear;
@@ -614,28 +615,29 @@ public class ore_block extends Block implements IHasModel
 			if (rand<160) return SentaiItems60.twokai_cutanner_gear;
 			if (rand<175) return SentaiItems60.twokai_ricky_gear;
 			if (rand<185) return SentaiItems60.zenkai_red_gear;
-			if (rand<190) return SentaiItems40.kyoryuger_logo;
-			if (rand<195) return SentaiItems20.liveman_logo;
-			if (rand<200) return SentaiItems20.ohranger_logo;
-			if (rand<205) return SentaiItems40.timeranger_logo;
-			if (rand<210) return SentaiItems40.magiranger_logo;
-			if (rand<215) return SentaiItems40.goseiger_logo;
-			if (rand<220) return SentaiItems20.dynaman_logo;
-			if (rand<225) return SentaiItems20.changeman_logo;
-			if (rand<230) return SentaiItems20.fiveman_logo;
-			if (rand<235) return SentaiItems40.hurricaneger_logo;
-			if (rand<240) return SentaiItems40.ninninger_logo;
-			if (rand<245) return SentaiItems40.gokaiger_logo;
-			if (rand<246) return SentaiItems60.metallic_zenkaizer_gear;
-			if (rand<247) return SentaiItems60.metallic_zenkai_juran_gear;
-			if (rand<248) return SentaiItems60.metallic_zenkai_gaon_gear;
-			if (rand<249) return SentaiItems60.metallic_zenkai_magine_gear;
-			if (rand<250) return SentaiItems60.metallic_zenkai_vroon_gear;
-			if (rand<251) return SentaiItems60.metallic_twokaizer_gear;
-			if (rand<256) return SentaiItems60.zenkai_zyu_gear;
-			if (rand<261) return SentaiItems60.kirameki_zenkai_zyu_gear;
-			if (rand<262) return SentaiItems60.new_zenkaizer_gear;
-			if (rand<263) return SentaiItems60.don_brothers_gear;
+			if (rand<195) return SentaiItems60.twokai_flint_gear;
+			if (rand<200) return SentaiItems40.kyoryuger_logo;
+			if (rand<205) return SentaiItems20.liveman_logo;
+			if (rand<210) return SentaiItems20.ohranger_logo;
+			if (rand<215) return SentaiItems40.timeranger_logo;
+			if (rand<220) return SentaiItems40.magiranger_logo;
+			if (rand<225) return SentaiItems40.goseiger_logo;
+			if (rand<230) return SentaiItems20.dynaman_logo;
+			if (rand<235) return SentaiItems20.changeman_logo;
+			if (rand<240) return SentaiItems20.fiveman_logo;
+			if (rand<245) return SentaiItems40.hurricaneger_logo;
+			if (rand<250) return SentaiItems40.ninninger_logo;
+			if (rand<255) return SentaiItems40.gokaiger_logo;
+			if (rand<256) return SentaiItems60.metallic_zenkaizer_gear;
+			if (rand<257) return SentaiItems60.metallic_zenkai_juran_gear;
+			if (rand<258) return SentaiItems60.metallic_zenkai_gaon_gear;
+			if (rand<259) return SentaiItems60.metallic_zenkai_magine_gear;
+			if (rand<260) return SentaiItems60.metallic_zenkai_vroon_gear;
+			if (rand<261) return SentaiItems60.metallic_twokaizer_gear;
+			if (rand<266) return SentaiItems60.zenkai_zyu_gear;
+			if (rand<271) return SentaiItems60.kirameki_zenkai_zyu_gear;
+			if (rand<272) return SentaiItems60.new_zenkaizer_gear;
+			if (rand<273) return SentaiItems60.don_brothers_gear;
 			
 			return CRYSTAL;
 		}

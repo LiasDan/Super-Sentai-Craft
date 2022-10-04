@@ -17,6 +17,7 @@ public class PotionCore {
 	public static final Potion SS_SLASH_BOOST = new PotionSlashBoost();
 	public static final Potion SS_FIRE_SLASH = new PotionFireSlash();
 	public static final Potion SS_SHOT_BOOST = new PotionShotBoost();
+	public static final Potion SS_BOOST = new PotionBoost();
 	
 	public static void init(FMLInitializationEvent event) {
 		ForgeRegistries.POTIONS.register(SS_FLY_POTION);
@@ -27,6 +28,7 @@ public class PotionCore {
 		ForgeRegistries.POTIONS.register(SS_SLASH_BOOST);
 		ForgeRegistries.POTIONS.register(SS_FIRE_SLASH);
 		ForgeRegistries.POTIONS.register(SS_SHOT_BOOST);
+		ForgeRegistries.POTIONS.register(SS_BOOST);
 	}
 	
 }

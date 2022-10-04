@@ -22,6 +22,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -48,6 +50,7 @@ public class RegistyHandler {
 		boolean fly = false;
 		if(event.player.isPotionActive(PotionCore.SS_FLY_POTION)) fly = true;
 		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "fly"))) fly = true;
+		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("ultracraft"+ ":" + "fly"))) fly = true;
 		
 		if(fly || event.player.isCreative() || event.player.isSpectator()) {
 			event.player.capabilities.allowFlying = true;
@@ -67,21 +70,6 @@ public class RegistyHandler {
 				event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,event.player.getActivePotionEffect(PotionCore.SS_PUNCH_BOOST).getAmplifier(), 4,true,false));
 			}
 		}
-		
-		boolean big = false;
-		if(event.player.isPotionActive(PotionCore.SS_BIG)) big = true;
-		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "big"))) big = true;
-		
-		if(big){
-				event.player.height=4+(event.player.getDefaultEyeHeight());
-				event.player.eyeHeight=4;
-				
-				event.player.setInvisible(true);
-		} else{
-			event.player.height=event.player.getDefaultEyeHeight();
-			event.player.eyeHeight=event.player.getDefaultEyeHeight();
-			event.player.setInvisible(event.player.isPotionActive(MobEffects.INVISIBILITY));
-		}
 
 		if(event.player.isPotionActive(PotionCore.SS_FIRE_PUNCH)){
 			if(event.player.getHeldItemMainhand().isEmpty())
@@ -95,6 +83,7 @@ public class RegistyHandler {
 			}
 			}	
 		}
+		
 		if(event.player.isPotionActive(PotionCore.SS_SLASH_BOOST))
 		{
 			if(event.player.getHeldItemMainhand().getItem() instanceof ItemSword)
@@ -105,6 +94,7 @@ public class RegistyHandler {
 				}
 			}
 		}
+		
 		if(event.player.isPotionActive(PotionCore.SS_FIRE_SLASH))
 		{
 			if(event.player.getHeldItemMainhand().getItem() instanceof ItemSword)
@@ -119,6 +109,22 @@ public class RegistyHandler {
 						}
 					}
 				}
+			}
+		}
+		
+		if(event.player.isPotionActive(PotionCore.SS_BOOST)) {
+			if (event.player.isSneaking()){
+
+				event.player.fallDistance = 0.0f;
+				Vec3d look = event.player.getLookVec();
+				event.player.motionX=look.x*(1+event.player.getActivePotionEffect(PotionCore.SS_BOOST).getAmplifier());
+				event.player.motionY=look.y*(0.5*(1+event.player.getActivePotionEffect(PotionCore.SS_BOOST).getAmplifier()));
+				event.player.motionZ=look.z*(1+event.player.getActivePotionEffect(PotionCore.SS_BOOST).getAmplifier());
+				
+				event.player.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL,event.player.posX,event.player.posY, event.player.posZ, 0.0D, 0.0D, 0.0D);
+				event.player.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL,event.player.posX,event.player.posY+1, event.player.posZ, 0.0D, 0.0D, 0.0D);
+				event.player.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL,event.player.posX,event.player.posY+0.5, event.player.posZ, 0.0D, 0.0D, 0.0D);
+		
 			}
 		}
 	}

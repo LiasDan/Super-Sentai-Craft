@@ -75,8 +75,6 @@ import SS_Craft.item.gekiranger.item_gekiranger_armor2;
 import SS_Craft.item.gekiranger.item_super_geki_claw;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.gingaman.item_ginga_medal;
-import SS_Craft.item.gingaman.item_gingaman_armor;
-import SS_Craft.item.gingaman.item_gingaman_armor2;
 import SS_Craft.item.go_busters.item_enetron;
 import SS_Craft.item.go_busters.item_go_busters_armor;
 import SS_Craft.item.go_busters.item_go_busters_armor2;
@@ -97,8 +95,6 @@ import SS_Craft.item.gogo_v.item_gogo_v_armor2;
 import SS_Craft.item.gogo_v.item_v_mode_brace;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.gokaiger.item_ranger_key;
-import SS_Craft.item.goranger.item_goranger_armor;
-import SS_Craft.item.goranger.item_goranger_armor2;
 import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.item.jakq.item_jakq_armor;
 import SS_Craft.item.jakq.item_jakq_armor2;
@@ -129,8 +125,6 @@ import SS_Craft.item.lupatranger.item_lupat_armor2;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.lupatranger.item_vs_vehicle;
 import SS_Craft.item.maskman.item_masking_brace;
-import SS_Craft.item.maskman.item_maskman_armor;
-import SS_Craft.item.maskman.item_maskman_armor2;
 import SS_Craft.item.megaranger.item_battleraizer;
 import SS_Craft.item.megaranger.item_digitaizer;
 import SS_Craft.item.megaranger.item_mega_disk;
@@ -143,9 +137,10 @@ import SS_Craft.item.ryusoulger.item_ryusoul_calibur;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.ryusoulger.item_ryusoulger_armor;
 import SS_Craft.item.ryusoulger.item_ryusoulger_armor2;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_armor;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.item.shinkenger.item_secret_disk;
-import SS_Craft.item.shinkenger.item_shinkenger_armor;
-import SS_Craft.item.shinkenger.item_shinkenger_armor2;
 import SS_Craft.item.shinkenger.item_shodophone;
 import SS_Craft.item.sun_vulcan.item_sun_vulcan_armor;
 import SS_Craft.item.sun_vulcan.item_sun_vulcan_armor2;
@@ -204,6 +199,7 @@ import static java.util.Objects.*;
 public class SentaiItems20 
 {
 	public static Item blanknoitem = new Item_ore("blanknoitem");
+	public static Item blanknoform= new item_form_changer("blanknoform", item_sentai_changer.class, blanknoitem, "", "");
 	public static Item super_sentai_logo = new item_super_sentai_logo("super_sentai_logo").setCreativeTab(Tabs.tabMisc);
 
 	//00 Mobs Weapon
@@ -318,9 +314,9 @@ public class SentaiItems20
 	public static Item goranger_logo = new Item_ore("goranger_logo").setCreativeTab(Tabs.tabGoranger);
 //	public static Block goranger_ore = new ore_block("goranger_ore", Material.ROCK, goranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoranger);
 	
-	public static Item goranger_head = new item_goranger_armor("goranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
-	public static Item goranger_torso = new item_goranger_armor2("goranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
-	public static Item goranger_legs = new item_goranger_armor2("goranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
+	public static Item goranger_head = new item_sentai_armor("goranger_head", item_goranger_belt.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, goranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
+	public static Item goranger_torso = new item_sentai_armor("goranger_torso", item_goranger_belt.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, goranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
+	public static Item goranger_legs = new item_sentai_armor("goranger_legs", item_goranger_belt.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, goranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
 	
 	public static Item akaranger_belt = new item_goranger_belt("akaranger_belt", ArmorMaterial.DIAMOND, 4, "akaranger").setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
 	public static Item aoranger_belt = new item_goranger_belt("aoranger_belt", ArmorMaterial.DIAMOND, 4, "aoranger").setMaxStackSize(1).setCreativeTab(Tabs.tabGoranger);
@@ -610,9 +606,9 @@ public class SentaiItems20
 	public static Item maskman_logo = new Item_ore("maskman_logo").setCreativeTab(Tabs.tabMaskman);
 //	public static Block maskman_ore = new ore_block("maskman_ore", Material.ROCK, maskman_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabMaskman);
 	
-	public static Item maskman_head = new item_maskman_armor("maskman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);
-	public static Item maskman_torso = new item_maskman_armor2("maskman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);
-	public static Item maskman_legs = new item_maskman_armor2("maskman_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);
+	public static Item maskman_head = new item_sentai_armor("maskman_head", item_masking_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, maskman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);
+	public static Item maskman_torso = new item_sentai_armor("maskman_torso", item_masking_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, maskman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);
+	public static Item maskman_legs = new item_sentai_armor("maskman_legs", item_masking_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, maskman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);
 	
 	public static Item red_masking_brace = new item_masking_brace("red_masking_brace", ArmorMaterial.DIAMOND, 4, "red_mask").setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);
 	public static Item black_masking_brace = new item_masking_brace("black_masking_brace", ArmorMaterial.DIAMOND, 4, "black_mask").setMaxStackSize(1).setCreativeTab(Tabs.tabMaskman);

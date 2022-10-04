@@ -76,8 +76,6 @@ import SS_Craft.item.gekiranger.item_gekiranger_armor2;
 import SS_Craft.item.gekiranger.item_super_geki_claw;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.gingaman.item_ginga_medal;
-import SS_Craft.item.gingaman.item_gingaman_armor;
-import SS_Craft.item.gingaman.item_gingaman_armor2;
 import SS_Craft.item.go_busters.item_enetron;
 import SS_Craft.item.go_busters.item_go_busters_armor;
 import SS_Craft.item.go_busters.item_go_busters_armor2;
@@ -99,8 +97,6 @@ import SS_Craft.item.gogo_v.item_gogo_v_armor2;
 import SS_Craft.item.gogo_v.item_v_mode_brace;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.gokaiger.item_ranger_key;
-import SS_Craft.item.goranger.item_goranger_armor;
-import SS_Craft.item.goranger.item_goranger_armor2;
 import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.item.jakq.item_jakq_armor;
 import SS_Craft.item.jakq.item_jakq_armor2;
@@ -136,8 +132,6 @@ import SS_Craft.item.lupatranger.item_lupat_armor2;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.lupatranger.item_vs_vehicle;
 import SS_Craft.item.maskman.item_masking_brace;
-import SS_Craft.item.maskman.item_maskman_armor;
-import SS_Craft.item.maskman.item_maskman_armor2;
 import SS_Craft.item.megaranger.item_battleraizer;
 import SS_Craft.item.megaranger.item_digitaizer;
 import SS_Craft.item.megaranger.item_mega_disk;
@@ -150,9 +144,8 @@ import SS_Craft.item.ryusoulger.item_ryusoul_calibur;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.ryusoulger.item_ryusoulger_armor;
 import SS_Craft.item.ryusoulger.item_ryusoulger_armor2;
+import SS_Craft.item.sentai_armor_base.item_sentai_armor;
 import SS_Craft.item.shinkenger.item_secret_disk;
-import SS_Craft.item.shinkenger.item_shinkenger_armor;
-import SS_Craft.item.shinkenger.item_shinkenger_armor2;
 import SS_Craft.item.shinkenger.item_shodophone;
 import SS_Craft.item.sun_vulcan.item_sun_vulcan_armor;
 import SS_Craft.item.sun_vulcan.item_sun_vulcan_armor2;
@@ -254,9 +247,9 @@ public class SentaiItems40
 	public static Item gingaman_logo = new Item_ore("gingaman_logo").setCreativeTab(Tabs.tabGingaman);
 	public static Block gingaman_ore = new ore_block("gingaman_ore", Material.ROCK, gingaman_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGingaman);
 	
-	public static Item gingaman_head = new item_gingaman_armor("gingaman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
-	public static Item gingaman_torso = new item_gingaman_armor2("gingaman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
-	public static Item gingaman_legs = new item_gingaman_armor2("gingaman_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
+	public static Item gingaman_head = new item_sentai_armor("gingaman_head", item_ginga_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
+	public static Item gingaman_torso = new item_sentai_armor("gingaman_torso", item_ginga_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
+	public static Item gingaman_legs = new item_sentai_armor("gingaman_legs", item_ginga_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
 	
 	public static Item red_ginga_brace = new item_ginga_brace("red_ginga_brace", ArmorMaterial.DIAMOND, 4, "ginga_red").setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
 	public static Item green_ginga_brace = new item_ginga_brace("green_ginga_brace", ArmorMaterial.DIAMOND, 4, "ginga_green").setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
@@ -742,9 +735,9 @@ public class SentaiItems40
 	public static Item common_disk = new Item_ore("common_disk").setCreativeTab(Tabs.tabShinkenger);
 	public static Block shinkenger_ore = new ore_block("shinkenger_ore", Material.ROCK, common_disk, 2).setHardness(9.9F).setCreativeTab(Tabs.tabShinkenger);
 	
-	public static Item shinkenger_head = new item_shinkenger_armor("shinkenger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabShinkenger);
-	public static Item shinkenger_torso = new item_shinkenger_armor2("shinkenger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabShinkenger);
-	public static Item shinkenger_legs = new item_shinkenger_armor2("shinkenger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabShinkenger);
+	public static Item shinkenger_head = new item_sentai_armor("shinkenger_head", item_shodophone.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, common_disk).setMaxStackSize(1).setCreativeTab(Tabs.tabShinkenger);
+	public static Item shinkenger_torso = new item_sentai_armor("shinkenger_torso", item_shodophone.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, common_disk).setMaxStackSize(1).setCreativeTab(Tabs.tabShinkenger);
+	public static Item shinkenger_legs = new item_sentai_armor("shinkenger_legs", item_shodophone.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, common_disk).setMaxStackSize(1).setCreativeTab(Tabs.tabShinkenger);
 	
 	public static Item red_shodophone = new item_shodophone("red_shodophone", ArmorMaterial.DIAMOND, 4, "shinken_red").setMaxStackSize(1).setCreativeTab(Tabs.tabShinkenger);
 	public static Item blue_shodophone = new item_shodophone("blue_shodophone", ArmorMaterial.DIAMOND, 4, "shinken_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabShinkenger);
