@@ -208,7 +208,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 4,true,false));
@@ -227,7 +227,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.blue_seiza_blaster)
 									{
@@ -256,7 +256,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										}
 										else
@@ -264,7 +264,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.green_seiza_blaster)
@@ -303,7 +303,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										}
 									}
@@ -319,7 +319,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.metal_dark_seiza_blaster)
@@ -327,7 +327,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.dark_red_seiza_blaster)
@@ -338,7 +338,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 4,true,false));
@@ -364,7 +364,7 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 									}
 									if (this.get_lock(armor)=="kyu_taiyou_mode")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));;
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
 									}

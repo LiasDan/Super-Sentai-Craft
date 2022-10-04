@@ -77,26 +77,32 @@ public class item_ryusoul extends Item implements IHasModel
 				}
 				else if (this == SentaiItems60.lupinranger_soul)
 				{
-					if (belt == SentaiItems60.blue_ryusoul_changer | belt == SentaiItems60.pink_ryusoul_changer)
+					if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()==SentaiItems60.ryusoul_ken)
 					{
-						item_ryusoul_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
-						item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-					}
-					else if (belt == SentaiItems60.red_ryusoul_changer)
-					{
-						item_ryusoul_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2);
-						item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						if (belt == SentaiItems60.blue_ryusoul_changer | belt == SentaiItems60.pink_ryusoul_changer)
+						{
+							item_ryusoul_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),1);
+							item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
+						else if (belt == SentaiItems60.red_ryusoul_changer)
+						{
+							item_ryusoul_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2);
+							item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+						}
 					}
 				}
 				else if (this == SentaiItems60.kirameiger_soul)
 				{
 					if (belt != SentaiItems60.gold_mosa_changer & belt != SentaiItems60.gaisorg_changer & belt != SentaiItems60.brown_changer)
 					{
-						item_ryusoul_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-						item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()==SentaiItems60.ryusoul_ken)
+						{
+							item_ryusoul_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+						}
 					}
 				}
 				else if  (num >= 1)

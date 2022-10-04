@@ -274,7 +274,7 @@ public class item_vs_changer extends ItemArmor implements IHasModel
 									}
 									if (this.get_lock(armor)=="lupin_magic")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 									}
 									if (this.get_lock(armor)=="pat_splash")
 									{
@@ -288,7 +288,7 @@ public class item_vs_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 									}
 									if (this.get_lock(armor)=="pat_siren")
 									{
@@ -354,7 +354,7 @@ public class item_vs_changer extends ItemArmor implements IHasModel
 									}
 									if(this.get_soul(armor)=="ryusoul_migake_soul")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250 , 3,true,false));
 									}
 									if(this.get_soul(armor)=="ryusoul_kunkun_soul")
 									{

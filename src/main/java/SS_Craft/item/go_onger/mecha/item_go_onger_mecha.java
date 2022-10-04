@@ -238,7 +238,7 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 										
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
@@ -247,7 +247,7 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 										
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
@@ -282,7 +282,7 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
@@ -311,7 +311,7 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 										
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 3,true,false));
@@ -329,7 +329,7 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
@@ -359,7 +359,7 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 										
 										if (player.onGround)
@@ -400,7 +400,7 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.engine_oh_g12_head)
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
@@ -457,7 +457,7 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.engine_daishogun_head)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 										
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
@@ -470,7 +470,7 @@ public class item_go_onger_mecha extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 3,true,false));

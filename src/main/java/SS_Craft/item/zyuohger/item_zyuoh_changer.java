@@ -210,7 +210,7 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										}
 										else if (this.get_core(armor)==1)
 										{
@@ -220,7 +220,7 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										else if (this.get_core(armor)==2)
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 											
 											if (player.isInWater())
@@ -237,7 +237,7 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										else if (this.get_core(armor)==3)
 										{
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
@@ -256,7 +256,7 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										}
 									}
@@ -267,7 +267,7 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
 										if (player.isInWater())
 										{
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 											
 											if (player.isSneaking())
 											{
@@ -302,7 +302,7 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										
 										if (this.get_core(armor)==0)
 										{
@@ -326,14 +326,14 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										if (this.get_core(armor)==0)
 										{
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										}
 										else if (this.get_core(armor)==1)
 										{
 											player.removePotionEffect(MobEffects.STRENGTH);
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										}
 									}

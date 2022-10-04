@@ -310,7 +310,7 @@ public class item_ryusoul_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.gaisorg_changer)
 									{
@@ -372,6 +372,7 @@ public class item_ryusoul_changer extends item_sentai_changer
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SMALL, 20, 2,true,false));
 									}
 									if(this.get_lock(armor)=="ryusoul_mabushi_soul")
 									{
@@ -398,7 +399,7 @@ public class item_ryusoul_changer extends item_sentai_changer
 									}
 									if(this.get_lock(armor)=="ryusoul_migake_soul")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250 , 3,true,false));
 									}
 									if(this.get_lock(armor)=="ryusoul_kunkun_soul")
 									{
@@ -519,7 +520,7 @@ public class item_ryusoul_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250 , 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 20 , 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST, 20, 2,true,false));
@@ -529,7 +530,7 @@ public class item_ryusoul_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250 , 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 20 , 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST, 20, 2,true,false));
@@ -539,7 +540,7 @@ public class item_ryusoul_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 , 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250 , 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 20 , 3,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST, 20, 3,true,false));
@@ -611,7 +612,7 @@ public class item_ryusoul_changer extends item_sentai_changer
 									}
 									if (this.get_vs(armor)=="lupin_magic")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 									}
 									if (this.get_vs(armor)=="pat_splash")
 									{
@@ -625,7 +626,7 @@ public class item_ryusoul_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 									}
 									if (this.get_soul(armor)=="pat_siren")
 									{

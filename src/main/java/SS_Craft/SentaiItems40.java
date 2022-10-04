@@ -142,8 +142,6 @@ import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul;
 import SS_Craft.item.ryusoulger.item_ryusoul_calibur;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
-import SS_Craft.item.ryusoulger.item_ryusoulger_armor;
-import SS_Craft.item.ryusoulger.item_ryusoulger_armor2;
 import SS_Craft.item.sentai_armor_base.item_sentai_armor;
 import SS_Craft.item.shinkenger.item_secret_disk;
 import SS_Craft.item.shinkenger.item_shodophone;
@@ -851,7 +849,7 @@ public class SentaiItems40
 	public static Item akiba_blue_logo = new Item_ore("akiba_blue_logo").setCreativeTab(Tabs.tabAkibaranger);
 	public static Item akiba_yellow_logo = new Item_ore("akiba_yellow_logo").setCreativeTab(Tabs.tabAkibaranger);
 	
-	public static Item moe_moe_z_cune = new Item_gun("moe_moe_z_cune", Tabs.gun,SentaiItems40.akibaranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item moe_moe_z_cune = new item_gun_changer("moe_moe_z_cune", Tabs.gun,SentaiItems40.akibaranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 	public static Item munyu_munyu_zubaan = new item_munyu_munyu_zubaan("munyu_munyu_zubaan", Tabs.super_sword).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 	public static Item munyu_moe_zubakyun = new Item_gun("munyu_moe_zubakyun", Tabs.super_gun,SentaiItems40.akibaranger_logo).setMaxStackSize(1).setContainerItem(SentaiItems40.moe_moe_z_cune).setCreativeTab(Tabs.tabAkibaranger);
 	

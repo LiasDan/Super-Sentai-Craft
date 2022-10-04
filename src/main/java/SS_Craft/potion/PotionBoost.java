@@ -10,7 +10,7 @@ public class PotionBoost extends Potion {
 	public PotionBoost() {
 		super(false, 0xe443ff);
 		setPotionName("effect.boost");
-		setIconIndex(1, 1);
+		setIconIndex(0, 1);
 		setRegistryName(new ResourceLocation(Refercence.MODID + ":" + "boost"));
 	}
 	

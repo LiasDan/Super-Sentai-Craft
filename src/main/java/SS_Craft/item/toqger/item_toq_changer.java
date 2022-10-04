@@ -202,14 +202,14 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 5,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20, 0,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.WITHER, 20, 0,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 5,true,false));
 										}
 										if (this.get_core(armor)==11)
 										{
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 0,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
@@ -298,7 +298,7 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 5,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20, 0,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.WITHER, 20, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 5,true,false));

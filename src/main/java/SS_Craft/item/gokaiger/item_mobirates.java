@@ -193,7 +193,7 @@ public class item_mobirates extends ItemArmor implements IHasModel
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
 										}
 										else if (this.get_core(armor)==22)
 										{
@@ -219,7 +219,7 @@ public class item_mobirates extends ItemArmor implements IHasModel
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
 									}
 								}
 							}

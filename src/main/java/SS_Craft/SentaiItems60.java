@@ -135,8 +135,6 @@ import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul;
 import SS_Craft.item.ryusoulger.item_ryusoul_calibur;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
-import SS_Craft.item.ryusoulger.item_ryusoulger_armor;
-import SS_Craft.item.ryusoulger.item_ryusoulger_armor2;
 import SS_Craft.item.sentai_armor_base.item_sentai_armor;
 import SS_Craft.item.shinkenger.item_secret_disk;
 import SS_Craft.item.shinkenger.item_shodophone;
