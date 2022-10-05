@@ -47,7 +47,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class tokuArmorModel2 extends ModelBiped
+public class model_mecha extends ModelBiped
 {
 	public ModelRenderer bipedHead2;
 	public ModelRenderer bipedHeadwear2;
@@ -88,9 +88,9 @@ public class tokuArmorModel2 extends ModelBiped
 	/** The Biped's Left Leg */
 	public ModelRenderer bigBipedLeftLeg2;
 	
-	public Class<? extends item_sentai_changer> base;  
+	public Class<? extends item_mecha> base;  
 	
-	public tokuArmorModel2()
+	public model_mecha()
 	{
 		
 		 this.bipedHead2 = new ModelRenderer(this, 0, 0);
@@ -186,13 +186,13 @@ public class tokuArmorModel2 extends ModelBiped
 
 		float height=1;
 		float height2=0;
-		item_sentai_changer belt = (item_sentai_changer)SentaiItems20.akaranger_belt;
+		item_mecha belt = (item_mecha)SentaiItems20.sun_vulcan_robo_head;
 		int[] Text= new int[] {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 
 		if (entity instanceof EntityLivingBase){
 			EntityLivingBase player =((EntityLivingBase) entity);
-			if (  player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_sentai_changer){
-			belt = (item_sentai_changer) player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem();
+			if (  player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof item_mecha){
+			belt = (item_mecha) player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem();
 			}
 		}	
 		

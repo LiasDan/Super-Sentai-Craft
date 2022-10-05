@@ -290,19 +290,6 @@ public class BipedLockseed extends ModelBiped
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank_2.png"));
 					}
 				}
-				else if (mecha.getItem() instanceof item_gaoranger_mecha)
-				{
-					String rider = ((item_gaoranger_mecha)player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem()).Rider;
-					
-					if (item_gaoranger_mecha.get_left(mecha)!="blank")
-					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/mecha/"+item_gaoranger_mecha.get_left(mecha)+".png"));
-					}
-					else
-					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
-					}
-				}
 				else if (stack.getItem() instanceof item_dino_brace)
 				{
 					if (item_dino_brace.get_lock(stack)=="base")

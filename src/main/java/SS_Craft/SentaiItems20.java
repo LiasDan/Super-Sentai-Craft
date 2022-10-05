@@ -40,8 +40,6 @@ import SS_Craft.item.boukenger.item_bouken_spirit;
 import SS_Craft.item.boukenger.item_boukenger_armor;
 import SS_Craft.item.boukenger.item_boukenger_armor2;
 import SS_Craft.item.carranger.item_accel_changer;
-import SS_Craft.item.carranger.item_carranger_armor;
-import SS_Craft.item.carranger.item_carranger_armor2;
 import SS_Craft.item.dairanger.item_aura_changer;
 import SS_Craft.item.dairanger.item_dairanger_armor;
 import SS_Craft.item.dairanger.item_dairanger_armor2;
@@ -61,14 +59,9 @@ import SS_Craft.item.flashman.item_flashman_armor2;
 import SS_Craft.item.flashman.item_prism_armor;
 import SS_Craft.item.flashman.item_prism_flash;
 import SS_Craft.item.gaoranger.item_g_phone;
-import SS_Craft.item.gaoranger.item_gaoranger_armor;
-import SS_Craft.item.gaoranger.item_gaoranger_armor2;
 import SS_Craft.item.gaoranger.mecha.item_flute_knife;
 import SS_Craft.item.gaoranger.mecha.item_gao_jewel;
 import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha;
-import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha_armor;
-import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha_armor2;
-import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha_armor2;
 import SS_Craft.item.gekiranger.item_geki_changer;
 import SS_Craft.item.gekiranger.item_gekiranger_armor;
 import SS_Craft.item.gekiranger.item_gekiranger_armor2;
@@ -96,8 +89,6 @@ import SS_Craft.item.gogo_v.item_v_mode_brace;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.gokaiger.item_ranger_key;
 import SS_Craft.item.goranger.item_goranger_belt;
-import SS_Craft.item.jakq.item_jakq_armor;
-import SS_Craft.item.jakq.item_jakq_armor2;
 import SS_Craft.item.jakq.item_powered_capsule;
 import SS_Craft.item.jetman.item_cross_changer;
 import SS_Craft.item.jetman.item_jetman_armor;
@@ -120,8 +111,6 @@ import SS_Craft.item.kyuranger.item_kyuranger_armor2;
 import SS_Craft.item.kyuranger.item_kyutama;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.kyuranger.item_skill_kyutama;
-import SS_Craft.item.lupatranger.item_lupat_armor;
-import SS_Craft.item.lupatranger.item_lupat_armor2;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.lupatranger.item_vs_vehicle;
 import SS_Craft.item.maskman.item_masking_brace;
@@ -136,16 +125,15 @@ import SS_Craft.item.ryusoulger.item_ryusoul;
 import SS_Craft.item.ryusoulger.item_ryusoul_calibur;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_mecha;
+import SS_Craft.item.sentai_armor_base.item_mecha_armor;
+import SS_Craft.item.sentai_armor_base.item_mecha_changer;
 import SS_Craft.item.sentai_armor_base.item_sentai_armor;
 import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.item.shinkenger.item_secret_disk;
 import SS_Craft.item.shinkenger.item_shodophone;
-import SS_Craft.item.sun_vulcan.item_sun_vulcan_armor;
-import SS_Craft.item.sun_vulcan.item_sun_vulcan_armor2;
 import SS_Craft.item.sun_vulcan.item_vulcan_brace;
 import SS_Craft.item.sun_vulcan.mecha.item_sun_vulcan_mecha;
-import SS_Craft.item.sun_vulcan.mecha.item_sun_vulcan_mecha_armor;
-import SS_Craft.item.sun_vulcan.mecha.item_sun_vulcan_mecha_armor2;
 import SS_Craft.item.toqger.item_toq_changer;
 import SS_Craft.item.toqger.item_toq_ressha;
 import SS_Craft.item.toqger.item_toqger_armor;
@@ -198,6 +186,7 @@ public class SentaiItems20
 {
 	public static Item blanknoitem = new Item_ore("blanknoitem");
 	public static Item blanknoform= new item_form_changer("blanknoform", item_sentai_changer.class, blanknoitem, "", "");
+	public static Item blanknomecha= new item_mecha_changer("blanknomecha", item_mecha.class, blanknoitem, "", "");
 	public static Item super_sentai_logo = new item_super_sentai_logo("super_sentai_logo").setCreativeTab(Tabs.tabMisc);
 
 	//00 Mobs Weapon
@@ -343,9 +332,9 @@ public class SentaiItems20
 	public static Item blank_card = new Item_ore("blank_card").setCreativeTab(Tabs.tabJakq);
 //	public static Block jakq_ore = new ore_block("jakq_ore", Material.ROCK, blank_card, 2).setHardness(9.9F).setCreativeTab(Tabs.tabJakq);
 	
-	public static Item jakq_head = new item_jakq_armor("jakq_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
-	public static Item jakq_torso = new item_jakq_armor2("jakq_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
-	public static Item jakq_legs = new item_jakq_armor2("jakq_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
+	public static Item jakq_head = new item_sentai_armor("jakq_head", item_powered_capsule.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blank_card).setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
+	public static Item jakq_torso = new item_sentai_armor("jakq_torso", item_powered_capsule.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blank_card).setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
+	public static Item jakq_legs = new item_sentai_armor("jakq_legs", item_powered_capsule.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blank_card).setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
 	
 	public static Item ace_powered_capsule = new item_powered_capsule("ace_powered_capsule", ArmorMaterial.DIAMOND, 4, "spade_ace").setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
 	public static Item jack_powered_capsule = new item_powered_capsule("jack_powered_capsule", ArmorMaterial.DIAMOND, 4, "dia_jack").setMaxStackSize(1).setCreativeTab(Tabs.tabJakq);
@@ -462,9 +451,9 @@ public class SentaiItems20
 	public static Item sun_vulcan_logo = new Item_ore("sun_vulcan_logo").setCreativeTab(Tabs.tabSunVulcan);
 //	public static Block sun_vulcan_ore = new ore_block("sun_vulcan_ore", Material.ROCK, sun_vulcan_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabSunVulcan);
 	
-	public static Item sun_vulcan_head = new item_sun_vulcan_armor("sun_vulcan_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
-	public static Item sun_vulcan_torso = new item_sun_vulcan_armor2("sun_vulcan_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
-	public static Item sun_vulcan_legs = new item_sun_vulcan_armor2("sun_vulcan_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
+	public static Item sun_vulcan_head = new item_sentai_armor("sun_vulcan_head", item_vulcan_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, sun_vulcan_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
+	public static Item sun_vulcan_torso = new item_sentai_armor("sun_vulcan_torso", item_vulcan_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, sun_vulcan_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
+	public static Item sun_vulcan_legs = new item_sentai_armor("sun_vulcan_legs", item_vulcan_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, sun_vulcan_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 
 	public static Item eagle_vulcan_brace = new item_vulcan_brace("eagle_vulcan_brace", ArmorMaterial.DIAMOND, 4, "vul_eagle").setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 	public static Item shark_vulcan_brace = new item_vulcan_brace("shark_vulcan_brace", ArmorMaterial.DIAMOND, 4, "vul_shark").setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
@@ -481,11 +470,11 @@ public class SentaiItems20
 	public static Item vulcan_stick = new ItemBaseSword("vulcan_stick", Tabs.sword,SentaiItems20.sun_vulcan_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 	public static Item vulcan_stick_eagle = new ItemBaseSword("vulcan_stick_eagle", Tabs.sword,SentaiItems20.sun_vulcan_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 
-	public static Item sun_vulcan_robo_head = new item_sun_vulcan_mecha("sun_vulcan_robo_head", ArmorMaterial.DIAMOND, 4, "sun_vulcan_robo").setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
+	public static Item sun_vulcan_robo_torso = new item_mecha_armor("sun_vulcan_robo_torso", item_sun_vulcan_mecha.class, Tabs.mecha, 4, EntityEquipmentSlot.CHEST, mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
+	public static Item sun_vulcan_robo_legs = new item_mecha_armor("sun_vulcan_robo_legs", item_sun_vulcan_mecha.class, Tabs.mecha, 4, EntityEquipmentSlot.LEGS, mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
+	public static Item sun_vulcan_robo_boots = new item_mecha_armor("sun_vulcan_robo_boots", item_sun_vulcan_mecha.class, Tabs.mecha, 4, EntityEquipmentSlot.FEET, mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 	
-	public static Item sun_vulcan_robo_torso = new item_sun_vulcan_mecha_armor2("sun_vulcan_robo_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
-	public static Item sun_vulcan_robo_legs = new item_sun_vulcan_mecha_armor2("sun_vulcan_robo_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
-	public static Item sun_vulcan_robo_boots = new item_sun_vulcan_mecha_armor("sun_vulcan_robo_boots", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.FEET).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
+	public static Item sun_vulcan_robo_head = new item_sun_vulcan_mecha("sun_vulcan_robo_head", Tabs.mecha, 4, "sun_vulcan_robo").setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 	
 	public static Item taiyo_ken = new ItemBaseSword("taiyo_ken",Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
 	public static Item vul_shield = new ItemBaseShield("vul_shield",SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabSunVulcan);
@@ -841,9 +830,9 @@ public class SentaiItems20
 	public static Item carranger_logo = new Item_ore("carranger_logo").setCreativeTab(Tabs.tabCarranger);
 //	public static Block carranger_ore = new ore_block("carranger_ore", Material.ROCK, carranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabCarranger);
 	
-	public static Item carranger_head = new item_carranger_armor("carranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
-	public static Item carranger_torso = new item_carranger_armor2("carranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
-	public static Item carranger_legs = new item_carranger_armor2("carranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
+	public static Item carranger_head = new item_sentai_armor("carranger_head", item_accel_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, carranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
+	public static Item carranger_torso = new item_sentai_armor("carranger_torso", item_accel_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, carranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
+	public static Item carranger_legs = new item_sentai_armor("carranger_legs", item_accel_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, carranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
 
 	public static Item red_accel_changer = new item_accel_changer("red_accel_changer", ArmorMaterial.DIAMOND, 4, "red_racer").setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);
 	public static Item blue_accel_changer = new item_accel_changer("blue_accel_changer", ArmorMaterial.DIAMOND, 4, "blue_racer").setMaxStackSize(1).setCreativeTab(Tabs.tabCarranger);

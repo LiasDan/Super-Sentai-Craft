@@ -33,7 +33,7 @@ public class Tabs
 	public static ToolMaterial hammer = new EnumHelper().addToolMaterial("hammer", 10, 4000, 12.0F, 4.0F, 22);
 	public static ToolMaterial sword_gun = new EnumHelper().addToolMaterial("sword_gun", 10, 3500, 12.0F, 5.0F, 22);
 	
-	public static ArmorMaterial mecha = new EnumHelper().addArmorMaterial("mecha", "blank", 99, new int[]{9, 18, 24, 9}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0F);
+	public static ArmorMaterial mecha = new EnumHelper().addArmorMaterial("mecha", "diamond", 99, new int[]{9, 18, 24, 9}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0F);
 	public static ToolMaterial mecha_sword = new EnumHelper().addToolMaterial("mecha_sword", 10, 30000, 30.0F, 30.0F, 22);
 	
 	//01

@@ -52,7 +52,6 @@ public class item_ginga_brace extends item_sentai_changer
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)

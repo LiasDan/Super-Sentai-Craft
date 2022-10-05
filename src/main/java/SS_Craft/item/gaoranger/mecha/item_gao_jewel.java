@@ -21,8 +21,6 @@ public class item_gao_jewel extends Item implements IHasModel
 {
 	public int num;
 	public String num2;
-	public static String[] RIGHT= new String[] {"blank","gao_shark","gao_giraffe","gao_polar","gao_hammerhead","gao_sawshark","gao_panda"};
-	public static String[] LEFT= new String[] {"blank","gao_tiger","gao_deers","gao_bear","gao_wolf","gao_jaguar"};
 
 	public item_gao_jewel(int armor,String name,String part)
 	{
@@ -62,76 +60,23 @@ public class item_gao_jewel extends Item implements IHasModel
 					}
 					else if (this == SentaiItems40.gao_eagle_jewel || this == SentaiItems40.gao_bison_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_blue_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 3);
-						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_black_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 6);
-						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_white_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 9);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
-						}
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 					}
-					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
+					else if (this == SentaiItems40.gao_lion_jewel || this == SentaiItems40.gao_lion_black_jewel || this == SentaiItems40.gao_lion_blue_jewel || this == SentaiItems40.gao_lion_white_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_blue_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 4);
-						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_black_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 7);
-						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_white_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 10);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
-						}
+						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else if (this == SentaiItems40.gao_buffalo_jewel)
+					else if (num2 == "right")
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_blue_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 5);
-						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_black_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 8);
-						}
-						else if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_lion_white_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 11);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 2);
-						}
+						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else
+					else if (num2 == "left")
 					{
-						if (num2 == "right")
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else if (num2 == "left") 
-						{
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-						}
+						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
+					}
+					else if (num2 == "legs")
+					{
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
 				}
 				else if (belt == SentaiItems40.gao_knight_head)
@@ -143,31 +88,19 @@ public class item_gao_jewel extends Item implements IHasModel
 					}
 					else if (this == SentaiItems40.gao_eagle_jewel || this == SentaiItems40.gao_bison_jewel)
 					{
-						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 					}
-					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
+					else if (num2 == "right")
 					{
-						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
+						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else if (this == SentaiItems40.gao_buffalo_jewel)
+					else if (num2 == "left")
 					{
-						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 2);
+						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else
+					else if (num2 == "legs")
 					{
-						if (num2 == "right")
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else if (num2 == "left") 
-						{
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-						}
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
 				}
 				else if (belt == SentaiItems40.gao_muscle_head)
@@ -179,52 +112,23 @@ public class item_gao_jewel extends Item implements IHasModel
 					}
 					else if (this == SentaiItems40.gao_eagle_jewel || this == SentaiItems40.gao_bison_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_ape_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 3);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
-						}
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 					}
-					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
+					else if (this == SentaiItems40.gao_gorilla_jewel || this == SentaiItems40.gao_ape_jewel)
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_ape_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 4);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
-						}
+						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else if (this == SentaiItems40.gao_buffalo_jewel)
+					else if (num2 == "right")
 					{
-						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems40.gao_ape_jewel)
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 5);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 2);
-						}
+						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else
+					else if (num2 == "left")
 					{
-						if (num2 == "right")
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else if (num2 == "left") 
-						{
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-						}
+						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
+					}
+					else if (num2 == "legs")
+					{
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
 				}
 				else if (belt == SentaiItems40.gao_hunter_head || belt == SentaiItems40.gao_hunter_blue_moon_head)
@@ -234,21 +138,13 @@ public class item_gao_jewel extends Item implements IHasModel
 						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 					}
-					else
+					else if (num2 == "right")
 					{
-						if (num2 == "right")
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else if (num2 == "left") 
-						{
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-						}
+						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
+					}
+					else if (num2 == "left")
+					{
+						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
 				}
 				else if (belt == SentaiItems40.gao_icarus_head)
@@ -260,31 +156,19 @@ public class item_gao_jewel extends Item implements IHasModel
 					}
 					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
 					{
-						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 					}
-					else if (this == SentaiItems40.gao_bison_jewel)
+					else if (num2 == "right")
 					{
-						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
+						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else if (this == SentaiItems40.gao_buffalo_jewel)
+					else if (num2 == "left")
 					{
-						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 2);
+						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else
+					else if (num2 == "legs")
 					{
-						if (num2 == "right")
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else if (num2 == "left") 
-						{
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-						}
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
 				}
 				else if (belt == SentaiItems40.gao_god_head)
@@ -296,37 +180,20 @@ public class item_gao_jewel extends Item implements IHasModel
 					}
 					else if (this == SentaiItems40.gao_buffalo_jewel)
 					{
-						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 0);
 					}
-					else if (this == SentaiItems40.gao_bison_jewel)
+					else if (num2 == "right")
 					{
-						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 1);
+						item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else if (this == SentaiItems40.gao_rhinos_jewel || this == SentaiItems40.gao_madillo_jewel)
+					else if (num2 == "left")
 					{
-						item_gaoranger_mecha.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD), 2);
+						item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-					else
+					else if (num2 == "legs")
 					{
-						if (num2 == "right")
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else if (num2 == "left") 
-						{
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
-						}
-						else
-						{
-							item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-							item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-						}
+						item_gaoranger_mecha.set_leg(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);
 					}
-				}
-				else
-				{
-					item_gaoranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
-					item_gaoranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 				}
 			}
 		}

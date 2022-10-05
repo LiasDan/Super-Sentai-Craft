@@ -8,6 +8,9 @@ import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.ryusoulger.item_ryusoul;
+import SS_Craft.item.ryusoulger.item_ryusoul_changer;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.model.model_belt;
 import SS_Craft.model.model_belt_plus;
 import SS_Craft.potion.PotionCore;
@@ -43,7 +46,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_vs_changer extends ItemArmor implements IHasModel
+public class item_vs_changer extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -53,15 +56,12 @@ public class item_vs_changer extends ItemArmor implements IHasModel
 
 	public item_vs_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems60.lupat_head, SentaiItems60.lupat_torso, SentaiItems60.lupat_legs, SentaiItems60.blank_striker);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -432,5 +432,86 @@ public class item_vs_changer extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems60.blank_striker == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_vs_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_tricolor")
+					{
+						return Refercence.MODID+":textures/armor/lupin_tricolor"+ext;
+					}
+					else if(item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="patran_ugou")
+					{
+						return Refercence.MODID+":textures/armor/patran_ugou"+ext;
+					}
+					else if(item_vs_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						return Refercence.MODID+":textures/armor/patran_x"+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+rider+ext;
+					}
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="victory")
+					{
+						if (rider == "lupin_x")
+						{
+							return Refercence.MODID+":textures/armor/patran_x_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+					}
+					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="pat_siren")
+					{
+						return Refercence.MODID+":textures/armor/"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+					}
+					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_tricolor" || item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="patran_ugou" || item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_scissor")
+					{
+						return "blank";
+					}
+					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					{
+						if (num==4)
+						{
+							return "blank";
+						}
+						else 
+						{
+							return Refercence.MODID+":textures/armor/"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+						}
+					}
+					else
+					{
+						return "blank";
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

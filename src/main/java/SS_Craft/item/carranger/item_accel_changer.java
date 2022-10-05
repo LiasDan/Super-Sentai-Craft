@@ -6,6 +6,8 @@ import org.lwjgl.opengl.GL11;
 
 import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
@@ -31,7 +33,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_accel_changer extends ItemArmor implements IHasModel
+public class item_accel_changer extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -41,15 +43,12 @@ public class item_accel_changer extends ItemArmor implements IHasModel
 
 	public item_accel_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems20.carranger_head, SentaiItems20.carranger_torso, SentaiItems20.carranger_legs, SentaiItems20.carranger_logo);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
