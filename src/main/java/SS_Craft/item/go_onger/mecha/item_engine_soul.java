@@ -20,8 +20,6 @@ public class item_engine_soul extends Item implements IHasModel
 {
 	public int num;
 	public String num2;
-	public static String[] RIGHT= new String[] {"blank","birca","gunpherd","toripter","t_line"};
-	public static String[] LEFT= new String[] {"blank","birca","gunpherd","jetras","k_line"};
 
 	public item_engine_soul(int armor,String name,String part)
 	{

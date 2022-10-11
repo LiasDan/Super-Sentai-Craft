@@ -6,6 +6,8 @@ import org.lwjgl.opengl.GL11;
 
 import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.sentai_armor_base.item_mecha;
+import SS_Craft.item.sentai_armor_base.item_mecha_changer;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
@@ -31,7 +33,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_denziman_mecha extends ItemArmor implements IHasModel
+public class item_denziman_mecha extends item_mecha
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -41,15 +43,12 @@ public class item_denziman_mecha extends ItemArmor implements IHasModel
 
 	public item_denziman_mecha (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.HEAD);
+		super(name, par2EnumArmorMaterial,4,rider,(item_mecha_changer)SentaiItems20.blanknomecha,SentaiItems20.dai_denzin_torso, SentaiItems20.dai_denzin_legs, SentaiItems20.dai_denzin_boots, SentaiItems20.mecha_gear);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.HEAD);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.HEAD));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)

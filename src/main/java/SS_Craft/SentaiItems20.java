@@ -43,11 +43,7 @@ import SS_Craft.item.dekaranger.item_sp_badge;
 import SS_Craft.item.dekaranger.item_sp_license;
 import SS_Craft.item.denziman.item_denzi_punch;
 import SS_Craft.item.denziman.item_denzi_ring;
-import SS_Craft.item.denziman.item_denziman_armor;
-import SS_Craft.item.denziman.item_denziman_armor2;
 import SS_Craft.item.denziman.mecha.item_denziman_mecha;
-import SS_Craft.item.denziman.mecha.item_denziman_mecha_armor;
-import SS_Craft.item.denziman.mecha.item_denziman_mecha_armor2;
 import SS_Craft.item.flashman.item_flashman_armor;
 import SS_Craft.item.flashman.item_flashman_armor2;
 import SS_Craft.item.flashman.item_prism_armor;
@@ -64,13 +60,9 @@ import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.gingaman.item_ginga_medal;
 import SS_Craft.item.go_busters.item_enetron;
 import SS_Craft.item.go_busters.item_morphin_brace;
-import SS_Craft.item.go_onger.item_go_onger_armor;
-import SS_Craft.item.go_onger.item_go_onger_armor2;
 import SS_Craft.item.go_onger.item_go_phone;
 import SS_Craft.item.go_onger.mecha.item_engine_soul;
 import SS_Craft.item.go_onger.mecha.item_go_onger_mecha;
-import SS_Craft.item.go_onger.mecha.item_go_onger_mecha_armor;
-import SS_Craft.item.go_onger.mecha.item_go_onger_mecha_armor2;
 import SS_Craft.item.goggle_v.item_goggle_brace;
 import SS_Craft.item.goggle_v.item_goggle_v_armor;
 import SS_Craft.item.goggle_v.item_goggle_v_armor2;
@@ -107,8 +99,6 @@ import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.megaranger.item_battleraizer;
 import SS_Craft.item.megaranger.item_digitaizer;
 import SS_Craft.item.megaranger.item_mega_disk;
-import SS_Craft.item.megaranger.item_megaranger_armor;
-import SS_Craft.item.megaranger.item_megaranger_armor2;
 import SS_Craft.item.ninninger.item_nin_shuriken;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul;
@@ -139,8 +129,6 @@ import SS_Craft.item.zenkaiger.item_zenkaiger_armor2;
 import SS_Craft.item.zyuohger.item_whale_change_gun;
 import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.item.zyuohger.item_zyuoh_cube;
-import SS_Craft.item.zyuohger.item_zyuohger_armor;
-import SS_Craft.item.zyuohger.item_zyuohger_armor2;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.item.zyuranger.item_dino_medal;
 import SS_Craft.item.zyuranger.item_zyuranger_armor;
@@ -396,9 +384,9 @@ public class SentaiItems20
 	public static Item empty_denzi_ring = new Item_ore("empty_denzi_ring").setCreativeTab(Tabs.tabDenziman);
 //	public static Block denziman_ore = new ore_block("denziman_ore", Material.ROCK, empty_denzi_ring, 2).setHardness(9.9F).setCreativeTab(Tabs.tabDenziman);
 	
-	public static Item denziman_head = new item_denziman_armor("denziman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
-	public static Item denziman_torso = new item_denziman_armor2("denziman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
-	public static Item denziman_legs = new item_denziman_armor2("denziman_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item denziman_head = new item_sentai_armor("denziman_head", item_denzi_ring.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, empty_denzi_ring).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item denziman_torso = new item_sentai_armor("denziman_torso", item_denzi_ring.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, empty_denzi_ring).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item denziman_legs = new item_sentai_armor("denziman_legs", item_denzi_ring.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, empty_denzi_ring).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
 	
 	public static Item red_denzi_ring = new item_denzi_ring("red_denzi_ring", ArmorMaterial.DIAMOND, 4, "denzi_red").setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
 	public static Item blue_denzi_ring = new item_denzi_ring("blue_denzi_ring", ArmorMaterial.DIAMOND, 4, "denzi_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
@@ -425,11 +413,11 @@ public class SentaiItems20
 	public static Item pink_denzi_stick = new ItemBaseSword("pink_denzi_stick", Tabs.sword,SentaiItems20.empty_denzi_ring).setCreativeTab(Tabs.tabDenziman);
 	public static Item denzi_punch = new item_denzi_punch(1, "denzi_punch").setCreativeTab(Tabs.tabDenziman);
 	
-	public static Item dai_denzin_head = new item_denziman_mecha("dai_denzin_head", ArmorMaterial.DIAMOND, 4, "dai_denzin").setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item dai_denzin_torso = new item_mecha_armor("dai_denzin_torso", item_denziman_mecha.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item dai_denzin_legs = new item_mecha_armor("dai_denzin_legs", item_denziman_mecha.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item dai_denzin_boots = new item_mecha_armor("dai_denzin_boots", item_denziman_mecha.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.FEET, mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
 	
-	public static Item dai_denzin_torso = new item_denziman_mecha_armor2("dai_denzin_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
-	public static Item dai_denzin_legs = new item_denziman_mecha_armor2("dai_denzin_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
-	public static Item dai_denzin_boots = new item_denziman_mecha_armor("dai_denzin_boots", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.FEET).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
+	public static Item dai_denzin_head = new item_denziman_mecha("dai_denzin_head", ArmorMaterial.DIAMOND, 4, "dai_denzin").setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
 	
 	public static Item denzi_ken = new ItemBaseSword("denzi_ken",Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);
 	public static Item dai_denzin_boomerang = new ItemBaseSword("dai_denzin_boomerang",Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDenziman);

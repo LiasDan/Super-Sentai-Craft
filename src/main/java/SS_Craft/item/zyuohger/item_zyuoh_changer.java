@@ -6,7 +6,11 @@ import org.lwjgl.opengl.GL11;
 
 import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems40;
+import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.megaranger.item_digitaizer;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.item.shinkenger.item_secret_disk;
 import SS_Craft.model.model_belt;
 import SS_Craft.model.model_belt_plus;
@@ -36,25 +40,25 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_zyuoh_changer extends ItemArmor implements IHasModel
+public class item_zyuoh_changer extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
 	public String Rider;
+	
+	public static final String[] ZyuohEagle= new String[] {"zyuoh_eagle","zyuoh_gorilla","zyuoh_whale","zyuoh_eagle_yasei_dai_kaihou"};
+	public static final String[] ZyuohTheWorld= new String[] {"","_crocodile","_wolf"};
 
 	public item_zyuoh_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems40.zyuohger_head, SentaiItems40.zyuohger_torso, SentaiItems40.zyuohger_legs, SentaiItems40.king_s_credential);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -236,11 +240,11 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										}
 										else if (this.get_core(armor)==3)
 										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 6,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 5,true,false));
 											if (player.isInWater())
 											{
 												if (player.isSneaking())
@@ -251,13 +255,6 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 												player.motionZ=look.z/2;
 												}
 											}
-										}
-										else if (this.get_core(armor)==4)
-										{
-											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.shark_zyuoh_changer)
@@ -277,12 +274,23 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 											player.motionZ=look.z/2;
 											}
 										}
+										if (this.get_lock(armor)=="yasei_kaihou")
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.lion_zyuoh_changer)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+										
+										if (this.get_lock(armor)=="yasei_kaihou")
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.elephant_zyuoh_changer)
 									{
@@ -290,6 +298,12 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
+										
+										if (this.get_lock(armor)=="yasei_kaihou")
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.tiger_zyuoh_changer)
 									{
@@ -297,6 +311,13 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										
+										if (this.get_lock(armor)=="yasei_kaihou")
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
+										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.zyuoh_the_light)
 									{
@@ -316,26 +337,31 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
 										}
+										
+										if (this.get_lock(armor)=="yasei_dai_kaihou")
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
+										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.zyuoh_changer_final)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										
-										if (this.get_core(armor)==0)
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
-										}
-										else if (this.get_core(armor)==1)
-										{
-											player.removePotionEffect(MobEffects.STRENGTH);
-											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
-										}
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.condor_zyuoh_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
 									}
 								}
 							}
@@ -361,5 +387,78 @@ public class item_zyuoh_changer extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems40.king_s_credential == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_zyuoh_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					if (rider == "zyuoh_eagle")
+					{
+						return Refercence.MODID+":textures/armor/"+ZyuohEagle[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "zyuoh_the_world")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+ZyuohTheWorld[item_zyuoh_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+rider+ext;
+					}
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					if (item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="yasei_kaihou")
+					{
+						if (rider == "zyuoh_eagle")
+						{
+							return Refercence.MODID+":textures/armor/zyuoh_gorilla_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+						else if (rider == "zyuoh_tiger")
+						{
+							return Refercence.MODID+":textures/armor/zyuoh_lion_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+						}
+					}
+					else if (item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="yasei_dai_kaihou")
+					{
+						if (rider == "zyuoh_eagle")
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_base"+ext;
+						}
+						else 
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_zyuoh_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+					}
+					else
+					{
+						return "blank";
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

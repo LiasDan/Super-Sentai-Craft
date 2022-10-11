@@ -44,11 +44,7 @@ import SS_Craft.item.dekaranger.item_sp_badge;
 import SS_Craft.item.dekaranger.item_sp_license;
 import SS_Craft.item.denziman.item_denzi_punch;
 import SS_Craft.item.denziman.item_denzi_ring;
-import SS_Craft.item.denziman.item_denziman_armor;
-import SS_Craft.item.denziman.item_denziman_armor2;
 import SS_Craft.item.denziman.mecha.item_denziman_mecha;
-import SS_Craft.item.denziman.mecha.item_denziman_mecha_armor;
-import SS_Craft.item.denziman.mecha.item_denziman_mecha_armor2;
 import SS_Craft.item.flashman.item_flashman_armor;
 import SS_Craft.item.flashman.item_flashman_armor2;
 import SS_Craft.item.flashman.item_prism_armor;
@@ -65,14 +61,10 @@ import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.gingaman.item_ginga_medal;
 import SS_Craft.item.go_busters.item_enetron;
 import SS_Craft.item.go_busters.item_morphin_brace;
-import SS_Craft.item.go_onger.item_go_onger_armor;
-import SS_Craft.item.go_onger.item_go_onger_armor2;
 import SS_Craft.item.go_onger.item_go_phone;
 import SS_Craft.item.go_onger.item_rocket_dagger;
 import SS_Craft.item.go_onger.mecha.item_engine_soul;
 import SS_Craft.item.go_onger.mecha.item_go_onger_mecha;
-import SS_Craft.item.go_onger.mecha.item_go_onger_mecha_armor;
-import SS_Craft.item.go_onger.mecha.item_go_onger_mecha_armor2;
 import SS_Craft.item.goggle_v.item_goggle_brace;
 import SS_Craft.item.goggle_v.item_goggle_v_armor;
 import SS_Craft.item.goggle_v.item_goggle_v_armor2;
@@ -114,8 +106,6 @@ import SS_Craft.item.maskman.item_masking_brace;
 import SS_Craft.item.megaranger.item_battleraizer;
 import SS_Craft.item.megaranger.item_digitaizer;
 import SS_Craft.item.megaranger.item_mega_disk;
-import SS_Craft.item.megaranger.item_megaranger_armor;
-import SS_Craft.item.megaranger.item_megaranger_armor2;
 import SS_Craft.item.ninninger.item_nin_shuriken;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
 import SS_Craft.item.ryusoulger.item_ryusoul;
@@ -142,8 +132,6 @@ import SS_Craft.item.zenkaiger.item_zenkaiger_armor2;
 import SS_Craft.item.zyuohger.item_whale_change_gun;
 import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.item.zyuohger.item_zyuoh_cube;
-import SS_Craft.item.zyuohger.item_zyuohger_armor;
-import SS_Craft.item.zyuohger.item_zyuohger_armor2;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.item.zyuranger.item_dino_medal;
 import SS_Craft.item.zyuranger.item_zyuranger_armor;
@@ -179,9 +167,9 @@ public class SentaiItems40
 	public static Item megaranger_logo = new Item_ore("megaranger_logo").setCreativeTab(Tabs.tabMegaranger);
 	public static Block megaranger_ore = new ore_block("megaranger_ore", Material.ROCK, megaranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabMegaranger);
 	
-	public static Item megaranger_head = new item_megaranger_armor("megaranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
-	public static Item megaranger_torso = new item_megaranger_armor2("megaranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
-	public static Item megaranger_legs = new item_megaranger_armor2("megaranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item megaranger_head = new item_sentai_armor("megaranger_head", item_digitaizer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, megaranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item megaranger_torso = new item_sentai_armor("megaranger_torso", item_digitaizer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, megaranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
+	public static Item megaranger_legs = new item_sentai_armor("megaranger_legs", item_digitaizer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, megaranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
 	
 	public static Item red_digitaizer = new item_digitaizer("red_digitaizer", ArmorMaterial.DIAMOND, 4, "mega_red").setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
 	public static Item black_digitaizer = new item_digitaizer("black_digitaizer", ArmorMaterial.DIAMOND, 4, "mega_black").setMaxStackSize(1).setCreativeTab(Tabs.tabMegaranger);
@@ -637,9 +625,9 @@ public class SentaiItems40
 	public static Item blank_engine_soul = new Item_ore("blank_engine_soul").setCreativeTab(Tabs.tabGoOnger);
 	public static Block go_onger_ore = new ore_block("go_onger_ore", Material.ROCK, blank_engine_soul, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoOnger);
 	
-	public static Item go_onger_head = new item_go_onger_armor("go_onger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
-	public static Item go_onger_torso = new item_go_onger_armor2("go_onger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
-	public static Item go_onger_legs = new item_go_onger_armor2("go_onger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item go_onger_head = new item_sentai_armor("go_onger_head", item_go_phone.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blank_engine_soul).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item go_onger_torso = new item_sentai_armor("go_onger_torso", item_go_phone.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blank_engine_soul).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item go_onger_legs = new item_sentai_armor("go_onger_legs", item_go_phone.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blank_engine_soul).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
 	
 	public static Item red_go_phone = new item_go_phone("red_go_phone", ArmorMaterial.DIAMOND, 4, "go_on_red").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
 	public static Item blue_go_phone = new item_go_phone("blue_go_phone", ArmorMaterial.DIAMOND, 4, "go_on_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
@@ -683,11 +671,11 @@ public class SentaiItems40
 	public static Item kankanbar = new ItemBaseSword("kankanbar", Tabs.mecha_sword,SentaiItems40.blank_engine_soul).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
 	public static Item kankan_mantan_gun = new Item_gun("kankan_mantan_gun", Tabs.hyper_gun,SentaiItems40.blank_engine_soul).setMaxStackSize(1).setContainerItem(SentaiItems40.mantan_sword).setCreativeTab(Tabs.tabGoOnger);
 	
-	public static Item engine_oh_head = new item_go_onger_mecha("engine_oh_head", Tabs.mecha, 4, "engine_oh").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item engine_oh_torso = new item_mecha_armor("engine_oh_torso", item_go_onger_mecha.class, Tabs.mecha, 4, EntityEquipmentSlot.CHEST, SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item engine_oh_legs = new item_mecha_armor("engine_oh_legs", item_go_onger_mecha.class, Tabs.mecha, 4, EntityEquipmentSlot.LEGS, SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item engine_oh_boots = new item_mecha_armor("engine_oh_boots", item_go_onger_mecha.class, Tabs.mecha, 4, EntityEquipmentSlot.FEET, SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
 	
-	public static Item engine_oh_torso = new item_go_onger_mecha_armor2("engine_oh_torso", Tabs.mecha, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
-	public static Item engine_oh_legs = new item_go_onger_mecha_armor2("engine_oh_legs", Tabs.mecha, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
-	public static Item engine_oh_boots = new item_go_onger_mecha_armor("engine_oh_boots", Tabs.mecha, 4, EntityEquipmentSlot.FEET).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
+	public static Item engine_oh_head = new item_go_onger_mecha("engine_oh_head", Tabs.mecha, 4, "engine_oh").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
 	
 	public static Item gunbir_oh_head = new item_go_onger_mecha("gunbir_oh_head", Tabs.mecha, 4, "gunbir_oh").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
 	public static Item engine_oh_g6_head = new item_go_onger_mecha("engine_oh_g6_head", Tabs.mecha, 4, "engine_oh_g6").setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
@@ -1035,9 +1023,9 @@ public class SentaiItems40
 	public static Item king_s_credential = new Item_ore("king_s_credential").setCreativeTab(Tabs.tabZyuohger);
 	public static Block zyuohger_ore = new ore_block("zyuohger_ore", Material.ROCK, king_s_credential, 2).setHardness(9.9F).setCreativeTab(Tabs.tabZyuohger);
 	
-	public static Item zyuohger_head = new item_zyuohger_armor("zyuohger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
-	public static Item zyuohger_torso = new item_zyuohger_armor2("zyuohger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
-	public static Item zyuohger_legs = new item_zyuohger_armor2("zyuohger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuohger_head = new item_sentai_armor("zyuohger_head", item_zyuoh_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, king_s_credential).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuohger_torso = new item_sentai_armor("zyuohger_torso", item_zyuoh_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, king_s_credential).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
+	public static Item zyuohger_legs = new item_sentai_armor("zyuohger_legs", item_zyuoh_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, king_s_credential).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
 
 	public static Item eagle_zyuoh_changer = new item_zyuoh_changer("eagle_zyuoh_changer", ArmorMaterial.DIAMOND, 4, "zyuoh_eagle").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
 	public static Item shark_zyuoh_changer = new item_zyuoh_changer("shark_zyuoh_changer", ArmorMaterial.DIAMOND, 4, "zyuoh_shark").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuohger);
