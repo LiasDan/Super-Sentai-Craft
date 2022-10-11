@@ -26,19 +26,13 @@ import SS_Craft.item.akibaranger.item_akibaranger_armor;
 import SS_Craft.item.akibaranger.item_akibaranger_armor2;
 import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.akibaranger.item_munyu_munyu_zubaan;
-import SS_Craft.item.battle_fever.item_battle_fever_armor;
-import SS_Craft.item.battle_fever.item_battle_fever_armor2;
 import SS_Craft.item.battle_fever.item_battleceiver;
 import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha;
-import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha_armor;
-import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha_armor2;
 import SS_Craft.item.bioman.item_bioman_armor;
 import SS_Craft.item.bioman.item_bioman_armor2;
 import SS_Craft.item.bioman.item_techno_brace;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.boukenger.item_bouken_spirit;
-import SS_Craft.item.boukenger.item_boukenger_armor;
-import SS_Craft.item.boukenger.item_boukenger_armor2;
 import SS_Craft.item.carranger.item_accel_changer;
 import SS_Craft.item.dairanger.item_aura_changer;
 import SS_Craft.item.dairanger.item_dairanger_armor;
@@ -69,8 +63,6 @@ import SS_Craft.item.gekiranger.item_super_geki_claw;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.gingaman.item_ginga_medal;
 import SS_Craft.item.go_busters.item_enetron;
-import SS_Craft.item.go_busters.item_go_busters_armor;
-import SS_Craft.item.go_busters.item_go_busters_armor2;
 import SS_Craft.item.go_busters.item_morphin_brace;
 import SS_Craft.item.go_onger.item_go_onger_armor;
 import SS_Craft.item.go_onger.item_go_onger_armor2;
@@ -83,8 +75,6 @@ import SS_Craft.item.goggle_v.item_goggle_brace;
 import SS_Craft.item.goggle_v.item_goggle_v_armor;
 import SS_Craft.item.goggle_v.item_goggle_v_armor2;
 import SS_Craft.item.gogo_v.item_gogo_brace;
-import SS_Craft.item.gogo_v.item_gogo_v_armor;
-import SS_Craft.item.gogo_v.item_gogo_v_armor2;
 import SS_Craft.item.gogo_v.item_v_mode_brace;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.gokaiger.item_ranger_key;
@@ -140,8 +130,6 @@ import SS_Craft.item.toqger.item_toqger_armor;
 import SS_Craft.item.toqger.item_toqger_armor2;
 import SS_Craft.item.turboranger.item_fairy_power;
 import SS_Craft.item.turboranger.item_turbo_brace;
-import SS_Craft.item.turboranger.item_turboranger_armor;
-import SS_Craft.item.turboranger.item_turboranger_armor2;
 import SS_Craft.item.zenkaiger.item_dark_gear;
 import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.item.zenkaiger.item_sentai_gear;
@@ -361,9 +349,9 @@ public class SentaiItems20
 	public static Item battle_fever_logo = new Item_ore("battle_fever_logo").setCreativeTab(Tabs.tabBattleFever);
 //	public static Block battle_fever_ore = new ore_block("battle_fever_ore", Material.ROCK, battle_fever_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabBattleFever);
 	
-	public static Item battle_fever_head = new item_battle_fever_armor("battle_fever_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
-	public static Item battle_fever_torso = new item_battle_fever_armor2("battle_fever_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
-	public static Item battle_fever_legs = new item_battle_fever_armor2("battle_fever_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
+	public static Item battle_fever_head = new item_sentai_armor("battle_fever_head", item_battleceiver.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, battle_fever_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
+	public static Item battle_fever_torso = new item_sentai_armor("battle_fever_torso", item_battleceiver.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, battle_fever_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
+	public static Item battle_fever_legs = new item_sentai_armor("battle_fever_legs", item_battleceiver.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, battle_fever_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	
 	public static Item japan_battleceiver = new item_battleceiver("japan_battleceiver", ArmorMaterial.DIAMOND, 4, "battle_japan").setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	public static Item cossack_battleceiver = new item_battleceiver("cossack_battleceiver", ArmorMaterial.DIAMOND, 4, "battle_cossack").setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
@@ -389,11 +377,11 @@ public class SentaiItems20
 	public static Item kenya_whip = new ItemBaseSword("kenya_whip", Tabs.whip,SentaiItems20.battle_fever_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	public static Item america_throwing_knife = new ItemBaseSword("america_throwing_knife", Tabs.throwable,SentaiItems20.battle_fever_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	
-	public static Item battle_fever_robo_head = new item_battle_fever_mecha("battle_fever_robo_head", ArmorMaterial.DIAMOND, 4, "battle_fever_robo").setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
+	public static Item battle_fever_robo_torso = new item_mecha_armor("battle_fever_robo_torso", item_battle_fever_mecha.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
+	public static Item battle_fever_robo_legs = new item_mecha_armor("battle_fever_robo_legs", item_battle_fever_mecha.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
+	public static Item battle_fever_robo_boots = new item_mecha_armor("battle_fever_robo_boots", item_battle_fever_mecha.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.FEET, mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	
-	public static Item battle_fever_robo_torso = new item_battle_fever_mecha_armor2("battle_fever_robo_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
-	public static Item battle_fever_robo_legs = new item_battle_fever_mecha_armor2("battle_fever_robo_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
-	public static Item battle_fever_robo_boots = new item_battle_fever_mecha_armor("battle_fever_robo_boots", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.FEET).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
+	public static Item battle_fever_robo_head = new item_battle_fever_mecha("battle_fever_robo_head", ArmorMaterial.DIAMOND, 4, "battle_fever_robo").setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	
 	public static Item denkouken = new ItemBaseSword("denkouken",Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
 	public static Item sword_fever = new ItemBaseSword("sword_fever",Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabBattleFever);
@@ -629,9 +617,9 @@ public class SentaiItems20
 	public static Item turboranger_logo = new item_fairy_power(1, "turboranger_logo").setCreativeTab(Tabs.tabTurboranger);
 //	public static Block turboranger_ore = new ore_block("turboranger_ore", Material.ROCK, turboranger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabTurboranger);
 	
-	public static Item turboranger_head = new item_turboranger_armor("turboranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
-	public static Item turboranger_torso = new item_turboranger_armor2("turboranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
-	public static Item turboranger_legs = new item_turboranger_armor2("turboranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
+	public static Item turboranger_head = new item_sentai_armor("turboranger_head", item_turbo_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, turboranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
+	public static Item turboranger_torso = new item_sentai_armor("turboranger_torso", item_turbo_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, turboranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
+	public static Item turboranger_legs = new item_sentai_armor("turboranger_legs", item_turbo_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, turboranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
 
 	public static Item red_turbo_brace = new item_turbo_brace("red_turbo_brace", ArmorMaterial.DIAMOND, 4, "red_turbo").setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);
 	public static Item black_turbo_brace = new item_turbo_brace("black_turbo_brace", ArmorMaterial.DIAMOND, 4, "black_turbo").setMaxStackSize(1).setCreativeTab(Tabs.tabTurboranger);

@@ -5,7 +5,6 @@ import javax.annotation.Nullable;
 import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_accellular;
-import SS_Craft.item.boukenger.item_boukenger_armor;
 import SS_Craft.model.BipedLockseed;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;

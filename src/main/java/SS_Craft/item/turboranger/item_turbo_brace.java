@@ -6,6 +6,9 @@ import org.lwjgl.opengl.GL11;
 
 import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.goranger.item_goranger_belt;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
@@ -31,7 +34,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_turbo_brace extends ItemArmor implements IHasModel
+public class item_turbo_brace extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -39,17 +42,16 @@ public class item_turbo_brace extends ItemArmor implements IHasModel
 
 	public String Rider;
 
+	public static final String[] Turbo= new String[] {"","_powerless"};
+
 	public item_turbo_brace (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems20.turboranger_head, SentaiItems20.turboranger_torso, SentaiItems20.turboranger_legs, SentaiItems20.turboranger_logo);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -224,5 +226,34 @@ public class item_turbo_brace extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems20.turboranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public   String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_turbo_brace)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					return Refercence.MODID+":textures/armor/"+rider+Turbo[item_turbo_brace.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

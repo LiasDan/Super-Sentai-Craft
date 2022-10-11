@@ -27,19 +27,13 @@ import SS_Craft.item.akibaranger.item_akibaranger_armor;
 import SS_Craft.item.akibaranger.item_akibaranger_armor2;
 import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.akibaranger.item_munyu_munyu_zubaan;
-import SS_Craft.item.battle_fever.item_battle_fever_armor;
-import SS_Craft.item.battle_fever.item_battle_fever_armor2;
 import SS_Craft.item.battle_fever.item_battleceiver;
 import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha;
-import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha_armor;
-import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha_armor2;
 import SS_Craft.item.bioman.item_bioman_armor;
 import SS_Craft.item.bioman.item_bioman_armor2;
 import SS_Craft.item.bioman.item_techno_brace;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.boukenger.item_bouken_spirit;
-import SS_Craft.item.boukenger.item_boukenger_armor;
-import SS_Craft.item.boukenger.item_boukenger_armor2;
 import SS_Craft.item.carranger.item_accel_changer;
 import SS_Craft.item.dairanger.item_aura_changer;
 import SS_Craft.item.dairanger.item_dairanger_armor;
@@ -70,8 +64,6 @@ import SS_Craft.item.gekiranger.item_super_geki_claw;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.gingaman.item_ginga_medal;
 import SS_Craft.item.go_busters.item_enetron;
-import SS_Craft.item.go_busters.item_go_busters_armor;
-import SS_Craft.item.go_busters.item_go_busters_armor2;
 import SS_Craft.item.go_busters.item_morphin_brace;
 import SS_Craft.item.go_onger.item_go_onger_armor;
 import SS_Craft.item.go_onger.item_go_onger_armor2;
@@ -85,8 +77,6 @@ import SS_Craft.item.goggle_v.item_goggle_brace;
 import SS_Craft.item.goggle_v.item_goggle_v_armor;
 import SS_Craft.item.goggle_v.item_goggle_v_armor2;
 import SS_Craft.item.gogo_v.item_gogo_brace;
-import SS_Craft.item.gogo_v.item_gogo_v_armor;
-import SS_Craft.item.gogo_v.item_gogo_v_armor2;
 import SS_Craft.item.gogo_v.item_v_mode_brace;
 import SS_Craft.item.gokaiger.item_mobirates;
 import SS_Craft.item.gokaiger.item_ranger_key;
@@ -143,8 +133,6 @@ import SS_Craft.item.toqger.item_toqger_armor;
 import SS_Craft.item.toqger.item_toqger_armor2;
 import SS_Craft.item.turboranger.item_fairy_power;
 import SS_Craft.item.turboranger.item_turbo_brace;
-import SS_Craft.item.turboranger.item_turboranger_armor;
-import SS_Craft.item.turboranger.item_turboranger_armor2;
 import SS_Craft.item.zenkaiger.item_dark_gear;
 import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.item.zenkaiger.item_sentai_gear;
@@ -269,9 +257,9 @@ public class SentaiItems40
 	public static Item gogo_v_logo = new Item_ore("gogo_v_logo").setCreativeTab(Tabs.tabGogoV);
 //	public static Block gogo_v_ore = new ore_block("gogo_v_ore", Material.ROCK, gogo_v_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGogoV);
 	
-	public static Item gogo_v_head = new item_gogo_v_armor("gogo_v_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
-	public static Item gogo_v_torso = new item_gogo_v_armor2("gogo_v_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
-	public static Item gogo_v_legs = new item_gogo_v_armor2("gogo_v_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
+	public static Item gogo_v_head = new item_sentai_armor("gogo_v_head", item_gogo_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, gogo_v_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
+	public static Item gogo_v_torso = new item_sentai_armor("gogo_v_torso", item_gogo_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, gogo_v_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
+	public static Item gogo_v_legs = new item_sentai_armor("gogo_v_legs", item_gogo_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, gogo_v_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
 	
 	public static Item red_gogo_brace = new item_gogo_brace("red_gogo_brace", ArmorMaterial.DIAMOND, 4, "go_red").setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
 	public static Item blue_gogo_brace = new item_gogo_brace("blue_gogo_brace", ArmorMaterial.DIAMOND, 4, "go_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabGogoV);
@@ -570,9 +558,9 @@ public class SentaiItems40
 	public static Item boukenger_logo = new Item_ore("boukenger_logo").setCreativeTab(Tabs.tabBoukenger);
 	public static Block boukenger_ore = new ore_block("boukenger_ore", Material.ROCK, boukenger_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabBoukenger);
 	
-	public static Item boukenger_head = new item_boukenger_armor("boukenger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
-	public static Item boukenger_torso = new item_boukenger_armor2("boukenger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
-	public static Item boukenger_legs = new item_boukenger_armor2("boukenger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
+	public static Item boukenger_head = new item_sentai_armor("boukenger_head", item_accellular.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, boukenger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
+	public static Item boukenger_torso = new item_sentai_armor("boukenger_torso", item_accellular.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, boukenger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
+	public static Item boukenger_legs = new item_sentai_armor("boukenger_legs", item_accellular.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, boukenger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
 	
 	public static Item red_accellular = new item_accellular("red_accellular", ArmorMaterial.DIAMOND, 4, "bouken_red").setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
 	public static Item black_accellular = new item_accellular("black_accellular", ArmorMaterial.DIAMOND, 4, "bouken_black").setMaxStackSize(1).setCreativeTab(Tabs.tabBoukenger);
@@ -771,9 +759,9 @@ public class SentaiItems40
 	public static Block go_busters_ore = new ore_block("go_busters_ore", Material.ROCK, enetron, 2).setHardness(9.9F).setCreativeTab(Tabs.tabGoBusters);
 	public static Block doubutsu_go_busters_ore = new ore_block("doubutsu_go_busters_ore", Material.ROCK, blank_animal_disk, 3).setHardness(9.9F).setCreativeTab(Tabs.tabGoBusters);
 	
-	public static Item go_busters_head = new item_go_busters_armor("go_busters_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
-	public static Item go_busters_torso = new item_go_busters_armor2("go_busters_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
-	public static Item go_busters_legs = new item_go_busters_armor2("go_busters_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
+	public static Item go_busters_head = new item_sentai_armor("go_busters_head", item_morphin_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, enetron).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
+	public static Item go_busters_torso = new item_sentai_armor("go_busters_torso", item_morphin_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, enetron).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
+	public static Item go_busters_legs = new item_sentai_armor("go_busters_legs", item_morphin_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, enetron).setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
 	
 	public static Item red_morphin_brace = new item_morphin_brace("red_morphin_brace", ArmorMaterial.DIAMOND, 4, "red_buster").setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
 	public static Item blue_morphin_brace = new item_morphin_brace("blue_morphin_brace", ArmorMaterial.DIAMOND, 4, "blue_buster").setMaxStackSize(1).setCreativeTab(Tabs.tabGoBusters);
