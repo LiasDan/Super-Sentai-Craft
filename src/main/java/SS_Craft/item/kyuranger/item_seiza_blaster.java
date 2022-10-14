@@ -8,6 +8,9 @@ import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.gokaiger.item_ranger_key;
+import SS_Craft.item.lupatranger.item_vs_changer;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.model.model_belt;
 import SS_Craft.model.model_belt_plus;
 import SS_Craft.potion.PotionCore;
@@ -35,25 +38,28 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_seiza_blaster extends ItemArmor implements IHasModel
+public class item_seiza_blaster extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
 	public String Rider;
+	
+	public static final String[] Kyuranger= new String[] {"","_ya","_orion","_halloween","_halloween1"};
+	public static final String[] OushiBlack= new String[] {"oushi_black","oushi_black_ya","yagyuu_jubee","oushi_black_halloween"};
+	public static final String[] HebitsukaiSilver= new String[] {"hebitsukai_silver","hebitsukai_silver_ya","hebitsukai_metal_good","hebitsukai_silver_halloween"};
+	public static final String[] RyuCommander= new String[] {"ryu_commander","ryu_commander_ya","ryu_violet"};
+	public static final String[] DarkShishiRed = new String[] {"","_orion"};
 
 	public item_seiza_blaster (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems60.kyuranger_head, SentaiItems60.kyuranger_torso, SentaiItems60.kyuranger_legs, SentaiItems60.blank_kyutama);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -418,5 +424,79 @@ public class item_seiza_blaster extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems60.blank_kyutama == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_seiza_blaster)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					if (rider == "hebitsukai_metal_evil")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+ext;
+					}
+					else if (rider == "hebitsukai_silver")
+					{
+						return Refercence.MODID+":textures/armor/"+HebitsukaiSilver[item_seiza_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "oushi_black")
+					{
+						return Refercence.MODID+":textures/armor/"+OushiBlack[item_seiza_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "ryu_commander")
+					{
+						return Refercence.MODID+":textures/armor/"+RyuCommander[item_seiza_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "dark_shishi_red")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+DarkShishiRed[item_seiza_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+rider+Kyuranger[item_seiza_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					if (item_seiza_blaster.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kyu_pegasus")
+					{
+						return Refercence.MODID+":textures/armor/"+item_seiza_blaster.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+					}
+					else if (item_seiza_blaster.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="kyu_pegasus")
+					{
+						if (num==4)
+						{
+							return "blank";
+						}
+						else 
+						{
+							return Refercence.MODID+":textures/armor/"+item_seiza_blaster.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+						}
+					}
+					else
+					{
+						return "blank";
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

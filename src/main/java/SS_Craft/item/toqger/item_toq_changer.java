@@ -4,9 +4,13 @@ import javax.annotation.Nullable;
 
 import org.lwjgl.opengl.GL11;
 
+import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.gokaiger.item_ranger_key;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.model.model_belt;
 import SS_Craft.model.model_belt_plus;
 import SS_Craft.potion.PotionCore;
@@ -34,7 +38,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_toq_changer extends ItemArmor implements IHasModel
+public class item_toq_changer extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -42,32 +46,31 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 
 	public String Rider;
 	int Gender;
+	
+	public static final String[] ToQ_Transfer= new String[] {"","toq_1gou","toq_2gou","toq_3gou","toq_4gou","toq_5gou","toq_6gou","toq_7gou"};
+	public static final String[] ToQ_Extra= new String[] {"","","","","","","","","_white","_safari","_darkness","_rainbow"};
+	public static final String[] ToQ_Gender= new String[] {"_guy","_girl"};
+	public static final String[] ToQ_Color= new String[] {"","_red","_blue","_yellow","_green","_pink","_orange","_violet"};
 
 	public item_toq_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems40.toqger_head, SentaiItems40.toqger_torso, SentaiItems40.toqger_legs, SentaiItems40.blank_ressha);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 	
 	public item_toq_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, int gender)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems40.toqger_head, SentaiItems40.toqger_torso, SentaiItems40.toqger_legs, SentaiItems40.blank_ressha);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
 		Gender=gender;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -327,5 +330,71 @@ public class item_toq_changer extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems40.blank_ressha == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_toq_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					if (rider=="yami_0gou")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+ext;
+					}
+					if (rider=="toq_6gou"||rider=="toq_7gou")
+					{
+						if (item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+ext;
+						}
+						else if (item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))>=1&&item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))<=7)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+ToQ_Color[item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+						}
+					}
+					else
+					{
+						if (item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+ToQ_Gender[((item_toq_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Gender]+ext;
+						}
+						else if (item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))>=1&&item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))<=7)
+						{
+							return Refercence.MODID+":textures/armor/"+ToQ_Transfer[item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ToQ_Gender[((item_toq_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Gender]+ext;						}
+						else if (item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))>=8)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+ToQ_Extra[item_toq_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/"+rider+ext;
+						}
+					}
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					return Refercence.MODID+":textures/armor/"+item_toq_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
+		return "blank";
 	}
 }

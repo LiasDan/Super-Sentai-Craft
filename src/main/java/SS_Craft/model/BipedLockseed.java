@@ -266,17 +266,6 @@ public class BipedLockseed extends ModelBiped
 				{
 					Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/"+item_dino_buckler.get_lock(stack) +"_2.png"));
 				}
-				else if (stack.getItem() instanceof item_aura_changer)
-				{
-					if (item_aura_changer.get_lock(stack)=="base")
-					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/kiba_ranger_base_2.png"));
-					}
-					else
-					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
-					}
-				}
 				else if (stack.getItem() instanceof item_ginga_brace)
 				{	
 					String rider = ((item_ginga_brace)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
@@ -288,30 +277,6 @@ public class BipedLockseed extends ModelBiped
 					else if (item_ginga_brace.get_lock(stack)=="blank")
 					{
 						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank_2.png"));
-					}
-				}
-				else if (stack.getItem() instanceof item_dino_brace)
-				{
-					if (item_dino_brace.get_lock(stack)=="base")
-					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/abare_killer_base_2.png"));
-					}
-					else
-					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
-					}
-				}
-				else if (mecha.getItem() instanceof item_abaranger_mecha)
-				{
-					String rider = ((item_abaranger_mecha)player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem()).Rider;
-					
-					if (item_abaranger_mecha.get_left(mecha)!="blank")
-					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/mecha/"+item_abaranger_mecha.get_left(mecha)+".png"));
-					}
-					else
-					{
-						Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(Refercence.MODID+":textures/armor/blank.png"));
 					}
 				}
 				else if (stack.getItem() instanceof item_sp_license)

@@ -20,8 +20,6 @@ public class item_dino_guts extends Item implements IHasModel
 {
 	public int num;
 	public String num2;
-	public static String[] RIGHT= new String[] {"blank","abaren_nagurus","abaren_veilus","abaren_galer"};
-	public static String[] LEFT= new String[] {"blank","abaren_nokodon","abaren_rokkiru","abaren_nokodon_fire"};
 
 	public item_dino_guts(int armor,String name,String part)
 	{
@@ -90,7 +88,7 @@ public class item_dino_guts extends Item implements IHasModel
 						}
 						else if (num2 == "left")
 						{
-							if (item_abaranger_mecha.get_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD))=="abaren_galer")
+							if (item_abaranger_mecha.get_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD))==3)
 							{
 								item_abaranger_mecha.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),0);
 								item_abaranger_mecha.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.HEAD),num);

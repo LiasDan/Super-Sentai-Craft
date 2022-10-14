@@ -7,6 +7,9 @@ import org.lwjgl.opengl.GL11;
 import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.gingaman.item_ginga_brace;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
@@ -32,7 +35,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_geki_changer extends ItemArmor implements IHasModel
+public class item_geki_changer extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -40,17 +43,16 @@ public class item_geki_changer extends ItemArmor implements IHasModel
 
 	public String Rider;
 
+	public static final String[] SuperGeki= new String[] {"","_super_mode"};
+
 	public item_geki_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems40.gekiranger_head, SentaiItems40.gekiranger_torso, SentaiItems40.gekiranger_legs, SentaiItems40.gekiranger_logo);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -206,5 +208,41 @@ public class item_geki_changer extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems40.gekiranger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_geki_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					if (rider=="geki_red"|rider=="geki_yellow"|rider=="geki_blue")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+SuperGeki[item_geki_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))] +ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+rider+ext;
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

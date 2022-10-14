@@ -7,6 +7,9 @@ import org.lwjgl.opengl.GL11;
 import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.go_onger.mecha.item_go_onger_mecha;
+import SS_Craft.item.sentai_armor_base.item_mecha;
+import SS_Craft.item.sentai_armor_base.item_mecha_changer;
 import SS_Craft.item.shinkenger.item_secret_disk;
 import SS_Craft.model.BipedLockseed;
 import SS_Craft.model.model_belt;
@@ -43,25 +46,25 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_abaranger_mecha extends ItemArmor implements IHasModel
+public class item_abaranger_mecha extends item_mecha
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
 	public String Rider;
+	
+	public static String[] Right= new String[] {"","abaren_nagurus","abaren_veilus","abaren_galer"};
+	public static String[] Left= new String[] {"","abaren_nokodon","abaren_rokkiru","abaren_nokodon_fire"};
 
 	public item_abaranger_mecha (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.HEAD);
+		super(name, par2EnumArmorMaterial,4,rider,(item_mecha_changer)SentaiItems20.blanknomecha,SentaiItems40.abaren_oh_torso, SentaiItems40.abaren_oh_legs, SentaiItems40.abaren_oh_boots, SentaiItems20.mecha_gear);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.HEAD);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.HEAD));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -85,7 +88,7 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 				
 				if (this == SentaiItems40.abaren_oh_head)
 				{
-					if (this.get_right(stack)=="abaren_galer")
+					if (this.get_right(stack)==3)
 					{
 						armorModel.wings=new ItemStack(SentaiItems40.oo_abaren_oh_wings);
 					}
@@ -163,9 +166,9 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("effect", flag);
 	}
 	
-	public static String get_right(ItemStack itemstack)
+	public static int get_right(ItemStack itemstack)
 	{	
-		return itemstack.hasTagCompound() ? item_dino_guts.RIGHT[itemstack.getTagCompound().getInteger("right")] : "blank";
+		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("right") : 0;
 	}
 	
 	public static void set_right(ItemStack itemstack,int flag)
@@ -177,9 +180,9 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 		itemstack.getTagCompound().setInteger("right", flag);
 	}
 	
-	public static String get_left(ItemStack itemstack)
+	public static int get_left(ItemStack itemstack)
 	{	
-		return itemstack.hasTagCompound() ? item_dino_guts.LEFT[itemstack.getTagCompound().getInteger("left")] : "blank";
+		return itemstack.hasTagCompound() ? itemstack.getTagCompound().getInteger("left") : 0;
 	}
 	
 	public static void set_left(ItemStack itemstack,int flag)
@@ -220,52 +223,15 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 0,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 0,true,false));
 										
-										if (this.get_left(armor)=="blank")
+										if (this.get_left(armor)==0)
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 20, 3,true,false));
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
 										}
-										if (this.get_right(armor)=="blank")
+										if (this.get_right(armor)==0)
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 6,true,false));
-										}
-										if (this.get_left(armor)=="abaren_rokkiru")
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
-											player.removePotionEffect(MobEffects.SLOWNESS);
-										}
-										if (this.get_right(armor)=="abaren_nagurus")
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
-										}
-										if (this.get_right(armor)=="abaren_veilus")
-										{
-											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
-										}
-										if (this.get_left(armor)=="abaren_nokodon")
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
-										}
-										if (this.get_left(armor)=="abaren_nokodon_fire")
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH,20, 3,true,false));
-										}
-										if (this.get_right(armor)=="abaren_galer")
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
-											player.removePotionEffect(MobEffects.SLOWNESS);
 										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.abaren_ohji_head)
@@ -291,36 +257,6 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
-										
-										if (this.get_left(armor)=="abaren_rokkiru")
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
-										}
-										if (this.get_right(armor)=="abaren_nagurus")
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
-										}
-										if (this.get_right(armor)=="abaren_veilus")
-										{
-											player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
-										}
-										if (this.get_left(armor)=="abaren_nokodon")
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
-										}
-										if (this.get_left(armor)=="abaren_nokodon_fire")
-										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH,20, 3,true,false));
-										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() == SentaiItems40.max_ohja_head)
 									{
@@ -397,6 +333,43 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 								            }
 								        }
 									}
+									if (this.get_left(armor)==2)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
+										player.removePotionEffect(MobEffects.SLOWNESS);
+									}
+									if (this.get_right(armor)==1)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+									}
+									if (this.get_right(armor)==2)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
+									}
+									if (this.get_left(armor)==1)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
+									}
+									if (this.get_left(armor)==3)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH,20, 3,true,false));
+									}
+									if (this.get_right(armor)==3)
+									{
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
+										player.removePotionEffect(MobEffects.SLOWNESS);
+									}
 								}
 							}
 						}
@@ -421,5 +394,56 @@ public class item_abaranger_mecha extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems20.mecha_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem()instanceof item_mecha)
+			{
+				String rider = ((item_abaranger_mecha)player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem()).Rider;
+				
+				if (num==1||num==3||num==6||num==7||num==8)
+				{
+					return Refercence.MODID+":textures/armor/mecha/"+rider+ext;
+				}
+				else if (num==5)
+				{
+					if (this.get_right(player.getItemStackFromSlot(EntityEquipmentSlot.HEAD))==0 || this.get_right(player.getItemStackFromSlot(EntityEquipmentSlot.HEAD))==3)
+					{
+						return Refercence.MODID+":textures/armor/mecha/"+rider+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/mecha/"+Right[item_abaranger_mecha.get_right(player.getItemStackFromSlot(EntityEquipmentSlot.HEAD))]+".png";
+					}
+				}
+				else if (num==2)
+				{
+					if (this.get_left(player.getItemStackFromSlot(EntityEquipmentSlot.HEAD))==0)
+					{
+						return Refercence.MODID+":textures/armor/mecha/"+rider+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/mecha/"+Left[item_abaranger_mecha.get_left(player.getItemStackFromSlot(EntityEquipmentSlot.HEAD))]+".png";
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

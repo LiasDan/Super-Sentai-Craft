@@ -6,6 +6,9 @@ import org.lwjgl.opengl.GL11;
 
 import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.denziman.item_denzi_ring;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.item.shinkenger.item_secret_disk;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.item.zyuranger.item_dino_medal;
@@ -35,42 +38,22 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_aura_changer extends ItemArmor implements IHasModel
+public class item_aura_changer extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
-	
-	public static String[] ARMOR= new String[] {"blank","base"};
 
 	public String Rider;
-	public String Armor;
-
-	public item_aura_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, String armor)
-	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
-		this.material = par2EnumArmorMaterial;
-		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
-		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		Rider=rider;
-		Armor=armor;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
-	}
-
+	
 	public item_aura_changer (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems20.dairanger_head, SentaiItems20.dairanger_torso, SentaiItems20.dairanger_legs, SentaiItems20.dairanger_logo);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -135,29 +118,6 @@ public class item_aura_changer extends ItemArmor implements IHasModel
 			itemstack.setTagCompound(new NBTTagCompound());
 		}
 		itemstack.getTagCompound().setInteger("core", flag);
-	}
-	
-	public static String get_lock(ItemStack itemstack)
-	{	
-		item_aura_changer belt = (item_aura_changer)itemstack.getItem();
-
-		if (belt.Armor!=null)
-		{
-			return itemstack.hasTagCompound() ? item_aura_changer.ARMOR[itemstack.getTagCompound().getInteger("armor")] : belt.Armor;
-		}
-		else 
-		{
-			return itemstack.hasTagCompound() ? item_aura_changer.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
-		}
-	}
-	
-	public static void set_lock(ItemStack itemstack,int flag)
-	{
-		if (!itemstack.hasTagCompound())
-		{
-			itemstack.setTagCompound(new NBTTagCompound());
-		}
-		itemstack.getTagCompound().setInteger("armor", flag);
 	}
 
 	@Override
@@ -250,5 +210,45 @@ public class item_aura_changer extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems20.dairanger_logo == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_aura_changer)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					return Refercence.MODID+":textures/armor/"+rider+ext;
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					if (rider == "kiba_ranger")
+					{
+						return Refercence.MODID+":textures/armor/kiba_ranger_base"+ext;
+					}
+					else
+					{
+						return "blank";
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }
