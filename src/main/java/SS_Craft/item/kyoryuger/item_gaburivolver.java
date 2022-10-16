@@ -9,8 +9,11 @@ import SS_Craft.SentaiItems40;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.blocks.zyudenchi_charger;
+import SS_Craft.item.dekaranger.item_sp_license;
 import SS_Craft.item.go_onger.mecha.item_engine_soul;
 import SS_Craft.item.gokaiger.item_ranger_key;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.item.zyuranger.item_dino_medal;
 import SS_Craft.model.model_belt;
@@ -41,40 +44,29 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_gaburivolver extends ItemArmor implements IHasModel
+public class item_gaburivolver extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
 	public String Rider;
-	public String Armor;
-
-	public item_gaburivolver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, String armor)
-	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
-		this.material = par2EnumArmorMaterial;
-		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
-		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		Rider=rider;
-		Armor=armor;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
-	}
+	
+	public static final String[] Kyoryuger= new String[] {"","_cursed","_ghost","_guy","_gabutyra","_carnival"};
+	public static final String[] FutureRed= new String[] {"kyoryu_red","kyoryu_navy","kyoryu_red_carnival"};
+	public static final String[] FutureBlack= new String[] {"kyoryu_black","kyoryu_silver"};
+	public static final String[] FutureGreen= new String[] {"kyoryu_green","kyoryu_grey"};
+	public static final String[] FuturePink= new String[] {"kyoryu_pink","kyoryu_cyan"};
+	public static final String[] FutureGold= new String[] {"kyoryu_gold","kyoryu_violet_guy"};
 
 	public item_gaburivolver (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems40.kyoryuger_head, SentaiItems40.kyoryuger_torso, SentaiItems40.kyoryuger_legs, SentaiItems40.blank_zyudenchi);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	public item_gaburivolver AddToKyoryugerZyudenchi(int num)
@@ -199,14 +191,7 @@ public class item_gaburivolver extends ItemArmor implements IHasModel
 	{	
 		item_gaburivolver belt = (item_gaburivolver)itemstack.getItem();
 
-		if (belt.Armor!=null)
-		{
-			return itemstack.hasTagCompound() ? item_zyudenchi.RIGHT[itemstack.getTagCompound().getInteger("right")] : belt.Armor;
-		}
-		else 
-		{
-			return itemstack.hasTagCompound() ? item_zyudenchi.RIGHT[itemstack.getTagCompound().getInteger("right")] : "blank";
-		}
+		return itemstack.hasTagCompound() ? item_zyudenchi.RIGHT[itemstack.getTagCompound().getInteger("right")] : "blank";
 	}
 	
 	public static void set_right(ItemStack itemstack,int flag)
@@ -588,5 +573,105 @@ public class item_gaburivolver extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems60.blank_kyutama == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_gaburivolver)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					if (rider == "future_kyoryu_red")
+					{
+						return Refercence.MODID+":textures/armor/"+FutureRed[item_gaburivolver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "future_kyoryu_black")
+					{
+						return Refercence.MODID+":textures/armor/"+FutureBlack[item_gaburivolver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "future_kyoryu_green")
+					{
+						return Refercence.MODID+":textures/armor/"+FutureGreen[item_gaburivolver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "future_kyoryu_pink")
+					{
+						return Refercence.MODID+":textures/armor/"+FuturePink[item_gaburivolver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "future_kyoryu_gold")
+					{
+						return Refercence.MODID+":textures/armor/"+FutureGold[item_gaburivolver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+rider+Kyoryuger[item_gaburivolver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					if(rider == "future_kyoryu_red"||rider == "future_kyoryu_black"||rider == "future_kyoryu_green"||rider == "future_kyoryu_pink"||rider == "future_kyoryu_gold"||rider == "future_kyoryu_blue")
+					{
+						if (num==9&item_gaburivolver.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0)
+						{
+							if (rider == "future_kyoryu_gold")
+							{
+								return Refercence.MODID+":textures/armor/kyoryu_gaburu_armed_on.png";
+							}
+							else
+							{	
+								return Refercence.MODID+":textures/armor/kyoryu_armed_on.png";
+							}
+						}
+						else
+						{
+							return "blank";
+						}
+					}
+					else if (num==9&num==11&item_gaburivolver.get_right(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					{
+						return Refercence.MODID+":textures/armor/"+item_gaburivolver.get_right(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+					}
+					else if (num==4&num==10&item_gaburivolver.get_left(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					{
+						return Refercence.MODID+":textures/armor/"+item_gaburivolver.get_left(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+					}
+					else if (item_gaburivolver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					{
+						if (item_gaburivolver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kyoryu_gaburu_armed_on2")
+						{
+							return Refercence.MODID+":textures/armor/kyoryu_gaburu_armed_on.png";
+						}
+						else if (item_gaburivolver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="kyoryu_deinosgrander")
+						{
+							return Refercence.MODID+":textures/armor/kyoryu_deinosgrander.png";
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/"+item_gaburivolver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+item_gaburivolver.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

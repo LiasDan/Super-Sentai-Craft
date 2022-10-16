@@ -8,6 +8,9 @@ import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems40;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.dekaranger.item_sp_license;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.item.zyuranger.item_dino_medal;
 import SS_Craft.model.model_belt;
@@ -49,40 +52,30 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_geartlinger extends ItemArmor implements IHasModel
+public class item_geartlinger extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
 	public String Rider;
-	public String Armor;
-	
-	public item_geartlinger (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, String armor)
-	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
-		this.material = par2EnumArmorMaterial;
-		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
-		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		Rider=rider;
-		Armor=armor;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
-	}
+
+	public static final String[] Zenkaiger= new String[] {"","_normal","_jetman"};
+	public static final String[] Zenkaizer= new String[] {"","_super","_jetman"};
+	public static final String[] Twokaizer= new String[] {"","_jetman"};
+	public static final String[] Stacaesar= new String[] {"","_kyoka"};
+	public static final String[] Hakaizer= new String[] {"","_kai"};
+	public static final String[] Mecha= new String[] {"akaranger","spade_ace","battle_fever_robo","dai_denzin","sun_vulcan_robo","goggle_robo","dyna_robo","bio_robo","change_robo","flash_king","great_five","live_robo","turbo_robo","five_robo","jet_icarus","dai_zyujin","ryusei_oh","muteki_shogun","ohranger_robo","rv_robo","galaxy_mega","gingai_oh","victory_robo","time_robo_alpha","gao_king","senpuu_jin","abaren_oh","dekaranger_robo","magi_king","dai_bouken","geki_tohja","engine_oh","shinken_oh","gosei_great","gokai_oh","go_buster_oh","kyoryu_zin","toq_oh","shuriken_jin","zyuoh_king","kyuren_oh","lupin_kaiser","pat_kaiser","kishiryu_oh","kiramei_zin","don_momotarou"};
+												   //{1          ,2          ,3                  ,4           ,5                ,6            ,7          ,8         ,9            ,10          ,11          ,12         ,13          ,14         ,15          ,16          ,17         ,18             ,19             ,20       ,21           ,22         ,23            ,24               ,25        ,26          ,27         ,28               ,29         ,30          ,31          ,32         ,33          ,34           ,35        ,36            ,37          ,38      ,39            ,40          ,41         ,42            ,43          ,44           ,45           ,46             };
 
 	public item_geartlinger (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems60.zenkaiger_head, SentaiItems60.zenkaiger_torso, SentaiItems60.zenkaiger_legs, SentaiItems60.blank_sentai_gear);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -233,10 +226,6 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 	{	
 		item_geartlinger belt = (item_geartlinger)itemstack.getItem();
 		
-		if (belt.Armor!=null)
-		{
-			return itemstack.hasTagCompound() ? item_zenkai_gear.ARMOR[itemstack.getTagCompound().getInteger("armor")] : belt.Armor;
-		}
 		return itemstack.hasTagCompound() ? item_zenkai_gear.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
 	}
 	
@@ -492,5 +481,87 @@ public class item_geartlinger extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems60.blank_sentai_gear == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_geartlinger)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					if (rider == "zenkaizer")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+Zenkaizer[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "twokaizer")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+Twokaizer[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "zenkai_juran" || rider == "zenkai_gaon" || rider == "zenkai_magine" || rider == "zenkai_vroon")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+Zenkaiger[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "stacaesar")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+Stacaesar[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "hakaizer")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+Hakaizer[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else if (rider == "mecha")
+					{
+						return Refercence.MODID+":textures/armor/mecha/"+Mecha[item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+rider+ext;
+					}
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					if (rider=="twokaizer" || rider=="twokai_flint")
+					{
+						if (item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0)
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_base"+ext;
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+						}
+					}
+					else if (item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="denzi_punch")
+					{
+						return Refercence.MODID+":textures/armor/"+item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+					}
+					else if (item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+"_"+item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/blank.png";
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

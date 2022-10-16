@@ -18,21 +18,15 @@ import SS_Craft.item.abaranger.item_sty_riser;
 import SS_Craft.item.abaranger.item_sty_riser_shield;
 import SS_Craft.item.abaranger.mecha.item_abaranger_mecha;
 import SS_Craft.item.abaranger.mecha.item_dino_guts;
-import SS_Craft.item.akibaranger.item_akibaranger_armor;
-import SS_Craft.item.akibaranger.item_akibaranger_armor2;
 import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.akibaranger.item_munyu_munyu_zubaan;
 import SS_Craft.item.battle_fever.item_battleceiver;
 import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha;
-import SS_Craft.item.bioman.item_bioman_armor;
-import SS_Craft.item.bioman.item_bioman_armor2;
 import SS_Craft.item.bioman.item_techno_brace;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.boukenger.item_bouken_spirit;
 import SS_Craft.item.carranger.item_accel_changer;
 import SS_Craft.item.dairanger.item_aura_changer;
-import SS_Craft.item.dekaranger.item_dekaranger_armor;
-import SS_Craft.item.dekaranger.item_dekaranger_armor2;
 import SS_Craft.item.dekaranger.item_sp_badge;
 import SS_Craft.item.dekaranger.item_sp_license;
 import SS_Craft.item.denziman.item_denzi_punch;
@@ -62,8 +56,6 @@ import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.item.jakq.item_powered_capsule;
 import SS_Craft.item.jetman.item_cross_changer;
 import SS_Craft.item.kakuranger.item_doron_changer;
-import SS_Craft.item.kakuranger.item_kakuranger_armor;
-import SS_Craft.item.kakuranger.item_kakuranger_armor2;
 import SS_Craft.item.kakuranger.item_kakure_medal;
 import SS_Craft.item.kawarimono.item_kawarimono_armor;
 import SS_Craft.item.kawarimono.item_kawarimono_armor2;
@@ -104,15 +96,11 @@ import SS_Craft.item.zenkaiger.item_dark_gear;
 import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.item.zenkaiger.item_sentai_gear;
 import SS_Craft.item.zenkaiger.item_zenkai_gear;
-import SS_Craft.item.zenkaiger.item_zenkaiger_armor;
-import SS_Craft.item.zenkaiger.item_zenkaiger_armor2;
 import SS_Craft.item.zyuohger.item_whale_change_gun;
 import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.item.zyuohger.item_zyuoh_cube;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.item.zyuranger.item_dino_medal;
-import SS_Craft.item.zyuranger.item_zyuranger_armor;
-import SS_Craft.item.zyuranger.item_zyuranger_armor2;
 import SS_Craft.potion.PotionCore;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -481,9 +469,9 @@ public class SentaiItems20
 	public static Item bioman_logo = new Item_ore("bioman_logo").setCreativeTab(Tabs.tabBioman);
 //  public static Block bioman_ore = new ore_block("bioman_ore", Material.ROCK, bioman_logo, 2).setHardness(9.9F).setCreativeTab(Tabs.tabBioman);
 	
-	public static Item bioman_head = new item_bioman_armor("bioman_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
-	public static Item bioman_torso = new item_bioman_armor2("bioman_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
-	public static Item bioman_legs = new item_bioman_armor2("bioman_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item bioman_head = new item_sentai_armor("bioman_head", item_techno_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item bioman_torso = new item_sentai_armor("bioman_torso", item_techno_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
+	public static Item bioman_legs = new item_sentai_armor("bioman_legs", item_techno_brace.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, bioman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
 	
 	public static Item red_techno_brace = new item_techno_brace("red_techno_brace", ArmorMaterial.DIAMOND, 4, "red_one").setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
 	public static Item green_techno_brace = new item_techno_brace("green_techno_brace", ArmorMaterial.DIAMOND, 4, "green_two").setMaxStackSize(1).setCreativeTab(Tabs.tabBioman);
@@ -663,18 +651,18 @@ public class SentaiItems20
 	public static Item zyuranger_medal = new item_dino_medal(0,"zyuranger_medal").setCreativeTab(Tabs.tabZyuranger);
 //	public static Block zyuranger_ore = new ore_block("zyuranger_ore", Material.ROCK, zyuranger_medal, 2).setHardness(9.9F).setCreativeTab(Tabs.tabZyuranger);
 	
-	public static Item zyuranger_head = new item_zyuranger_armor("zyuranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
-	public static Item zyuranger_torso = new item_zyuranger_armor2("zyuranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
-	public static Item zyuranger_legs = new item_zyuranger_armor2("zyuranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
+	public static Item zyuranger_head = new item_sentai_armor("zyuranger_head", item_dino_buckler.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, zyuranger_medal).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
+	public static Item zyuranger_torso = new item_sentai_armor("zyuranger_torso", item_dino_buckler.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, zyuranger_medal).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
+	public static Item zyuranger_legs = new item_sentai_armor("zyuranger_legs", item_dino_buckler.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, zyuranger_medal).setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
 
 	public static Item tyranno_dino_buckler = new item_dino_buckler("tyranno_dino_buckler", ArmorMaterial.DIAMOND, 4, "tyranno_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
-	public static Item armed_tyranno_dino_buckler = new item_dino_buckler("armed_tyranno_dino_buckler", ArmorMaterial.DIAMOND, 4, "tyranno_ranger","zyu_full_dragon_shield").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
+	public static Item armed_tyranno_dino_buckler = new item_dino_buckler("armed_tyranno_dino_buckler", ArmorMaterial.DIAMOND, 4, "tyranno_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
 	public static Item mammoth_dino_buckler = new item_dino_buckler("mammoth_dino_buckler", ArmorMaterial.DIAMOND, 4, "mammoth_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
 	public static Item tricera_dino_buckler = new item_dino_buckler("tricera_dino_buckler", ArmorMaterial.DIAMOND, 4, "tricera_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
 	public static Item tiger_dino_buckler = new item_dino_buckler("tiger_dino_buckler", ArmorMaterial.DIAMOND, 4, "tiger_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
 	public static Item ptera_dino_buckler = new item_dino_buckler("ptera_dino_buckler", ArmorMaterial.DIAMOND, 4, "ptera_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
 	public static Item unarmed_dragon_dino_buckler = new item_dino_buckler("unarmed_dragon_dino_buckler", ArmorMaterial.DIAMOND, 4, "dragon_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabZyuranger);
-	public static Item dragon_dino_buckler = new item_dino_buckler("dragon_dino_buckler", ArmorMaterial.DIAMOND, 4, "dragon_ranger","zyu_full_dragon_shield").setMaxStackSize(1).setContainerItem(SentaiItems20.unarmed_dragon_dino_buckler).setCreativeTab(Tabs.tabZyuranger);
+	public static Item dragon_dino_buckler = new item_dino_buckler("dragon_dino_buckler", ArmorMaterial.DIAMOND, 4, "dragon_ranger").setMaxStackSize(1).setContainerItem(SentaiItems20.unarmed_dragon_dino_buckler).setCreativeTab(Tabs.tabZyuranger);
 	
 	public static Item tyranno_medal = new item_dino_medal(0,"tyranno_medal").setCreativeTab(Tabs.tabZyuranger);
 	public static Item mammoth_medal = new item_dino_medal(0,"mammoth_medal").setCreativeTab(Tabs.tabZyuranger);
@@ -738,9 +726,9 @@ public class SentaiItems20
 	//18 Ninja Sentai Kakuranger
 	public static Item kakuranger_logo = new Item_ore("kakuranger_logo").setCreativeTab(Tabs.tabKakuranger);
 	
-	public static Item kakuranger_head = new item_kakuranger_armor("kakuranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
-	public static Item kakuranger_torso = new item_kakuranger_armor2("kakuranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
-	public static Item kakuranger_legs = new item_kakuranger_armor2("kakuranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item kakuranger_head = new item_sentai_armor("kakuranger_head", item_doron_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item kakuranger_torso = new item_sentai_armor("kakuranger_torso", item_doron_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
+	public static Item kakuranger_legs = new item_sentai_armor("kakuranger_legs", item_doron_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, kakuranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
 
 	public static Item red_doron_changer = new item_doron_changer("red_doron_changer", ArmorMaterial.DIAMOND, 4, "ninja_red").setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);
 	public static Item white_doron_changer = new item_doron_changer("white_doron_changer", ArmorMaterial.DIAMOND, 4, "ninja_white").setMaxStackSize(1).setCreativeTab(Tabs.tabKakuranger);

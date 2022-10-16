@@ -7,6 +7,9 @@ import org.lwjgl.opengl.GL11;
 import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_bouken_spirit;
+import SS_Craft.item.dairanger.item_aura_changer;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.model.model_belt;
 import SS_Craft.potion.PotionCore;
 import SS_Craft.util.IHasModel;
@@ -32,40 +35,22 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_dino_buckler extends ItemArmor implements IHasModel
+public class item_dino_buckler extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
 	public ArmorMaterial material;
 
 	public String Rider;
-	public String Armor;
-
-	public item_dino_buckler (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, String armor)
-	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
-		this.material = par2EnumArmorMaterial;
-		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
-		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		Rider=rider;
-		Armor=armor;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
-	}
-
+	
 	public item_dino_buckler (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems20.zyuranger_head, SentaiItems20.zyuranger_torso, SentaiItems20.zyuranger_legs, SentaiItems20.zyuranger_medal);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -136,14 +121,7 @@ public class item_dino_buckler extends ItemArmor implements IHasModel
 	{	
 		item_dino_buckler belt = (item_dino_buckler)itemstack.getItem();
 
-		if (belt.Armor!=null)
-		{
-			return itemstack.hasTagCompound() ? item_dino_medal.ARMOR[itemstack.getTagCompound().getInteger("armor")] : belt.Armor;
-		}
-		else 
-		{
-			return itemstack.hasTagCompound() ? item_dino_medal.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
-		}
+		return itemstack.hasTagCompound() ? item_dino_medal.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
 	}
 	
 	public static void set_lock(ItemStack itemstack,int flag)
@@ -276,5 +254,52 @@ public class item_dino_buckler extends ItemArmor implements IHasModel
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
 		return SentaiItems20.zyuranger_medal == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_dino_buckler)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					return Refercence.MODID+":textures/armor/"+rider+ext;
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					if (rider == "dragon_ranger" || this == SentaiItems20.armed_tyranno_dino_buckler)
+					{
+						if (item_dino_buckler.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="blank")
+						{
+							return Refercence.MODID+":textures/armor/zyu_full_dragon_shield"+ext;
+						}
+						else
+						{
+							return Refercence.MODID+":textures/armor/"+item_dino_buckler.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+						}
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+item_dino_buckler.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+"_1.png";
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

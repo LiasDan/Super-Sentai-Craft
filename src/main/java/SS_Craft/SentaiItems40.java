@@ -19,21 +19,15 @@ import SS_Craft.item.abaranger.item_sty_riser;
 import SS_Craft.item.abaranger.item_sty_riser_shield;
 import SS_Craft.item.abaranger.mecha.item_abaranger_mecha;
 import SS_Craft.item.abaranger.mecha.item_dino_guts;
-import SS_Craft.item.akibaranger.item_akibaranger_armor;
-import SS_Craft.item.akibaranger.item_akibaranger_armor2;
 import SS_Craft.item.akibaranger.item_moe_moe_z_cune;
 import SS_Craft.item.akibaranger.item_munyu_munyu_zubaan;
 import SS_Craft.item.battle_fever.item_battleceiver;
 import SS_Craft.item.battle_fever.mecha.item_battle_fever_mecha;
-import SS_Craft.item.bioman.item_bioman_armor;
-import SS_Craft.item.bioman.item_bioman_armor2;
 import SS_Craft.item.bioman.item_techno_brace;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.boukenger.item_bouken_spirit;
 import SS_Craft.item.carranger.item_accel_changer;
 import SS_Craft.item.dairanger.item_aura_changer;
-import SS_Craft.item.dekaranger.item_dekaranger_armor;
-import SS_Craft.item.dekaranger.item_dekaranger_armor2;
 import SS_Craft.item.dekaranger.item_sp_badge;
 import SS_Craft.item.dekaranger.item_sp_license;
 import SS_Craft.item.denziman.item_denzi_punch;
@@ -64,8 +58,6 @@ import SS_Craft.item.goranger.item_goranger_belt;
 import SS_Craft.item.jakq.item_powered_capsule;
 import SS_Craft.item.jetman.item_cross_changer;
 import SS_Craft.item.kakuranger.item_doron_changer;
-import SS_Craft.item.kakuranger.item_kakuranger_armor;
-import SS_Craft.item.kakuranger.item_kakuranger_armor2;
 import SS_Craft.item.kakuranger.item_kakure_medal;
 import SS_Craft.item.kawarimono.item_kawarimono_armor;
 import SS_Craft.item.kawarimono.item_kawarimono_armor2;
@@ -76,8 +68,6 @@ import SS_Craft.item.kirameiger.item_kiramei_stone;
 import SS_Craft.item.kirameiger.item_shiny_breaker;
 import SS_Craft.item.kyoryuger.item_gaburivolver;
 import SS_Craft.item.kyoryuger.item_guardian_zyudenchi;
-import SS_Craft.item.kyoryuger.item_kyoryuger_armor;
-import SS_Craft.item.kyoryuger.item_kyoryuger_armor2;
 import SS_Craft.item.kyoryuger.item_zyudenchi;
 import SS_Craft.item.kyuranger.item_kyutama;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
@@ -107,15 +97,11 @@ import SS_Craft.item.zenkaiger.item_dark_gear;
 import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.item.zenkaiger.item_sentai_gear;
 import SS_Craft.item.zenkaiger.item_zenkai_gear;
-import SS_Craft.item.zenkaiger.item_zenkaiger_armor;
-import SS_Craft.item.zenkaiger.item_zenkaiger_armor2;
 import SS_Craft.item.zyuohger.item_whale_change_gun;
 import SS_Craft.item.zyuohger.item_zyuoh_changer;
 import SS_Craft.item.zyuohger.item_zyuoh_cube;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.item.zyuranger.item_dino_medal;
-import SS_Craft.item.zyuranger.item_zyuranger_armor;
-import SS_Craft.item.zyuranger.item_zyuranger_armor2;
 import SS_Craft.potion.PotionCore;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -451,9 +437,9 @@ public class SentaiItems40
 	public static Block dekaranger_ore = new ore_block("dekaranger_ore", Material.ROCK, dekaranger_badge, 2).setHardness(9.9F).setCreativeTab(Tabs.tabDekaranger);
 	public static Block dekaranger_nether_ore = new ore_block("dekaranger_nether_ore", Material.ROCK, dekaranger_badge, 3).setHardness(9.9F).setCreativeTab(Tabs.tabDekaranger);
 	
-	public static Item dekaranger_head = new item_dekaranger_armor("dekaranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
-	public static Item dekaranger_torso = new item_dekaranger_armor2("dekaranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
-	public static Item dekaranger_legs = new item_dekaranger_armor2("dekaranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item dekaranger_head = new item_sentai_armor("dekaranger_head", item_sp_license.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item dekaranger_torso = new item_sentai_armor("dekaranger_torso", item_sp_license.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
+	public static Item dekaranger_legs = new item_sentai_armor("dekaranger_legs", item_sp_license.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, dekaranger_badge).setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
 	
 	public static Item red_sp_license = new item_sp_license("red_sp_license", ArmorMaterial.DIAMOND, 4, "deka_red").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
 	public static Item fs_license = new item_sp_license("fs_license", ArmorMaterial.DIAMOND, 4, "deka_red_fire_squad").setMaxStackSize(1).setCreativeTab(Tabs.tabDekaranger);
@@ -773,9 +759,9 @@ public class SentaiItems40
 	//36-37 Hikounin Sentai Akibaranger
 	public static Item akibaranger_logo = new Item_ore("akibaranger_logo").setCreativeTab(Tabs.tabAkibaranger);
 	
-	public static Item akibaranger_head = new item_akibaranger_armor("akibaranger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
-	public static Item akibaranger_torso = new item_akibaranger_armor2("akibaranger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
-	public static Item akibaranger_legs = new item_akibaranger_armor2("akibaranger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item akibaranger_head = new item_sentai_armor("akibaranger_head", item_moe_moe_z_cune.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, akibaranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item akibaranger_torso = new item_sentai_armor("akibaranger_torso", item_moe_moe_z_cune.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, akibaranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item akibaranger_legs = new item_sentai_armor("akibaranger_legs", item_moe_moe_z_cune.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, akibaranger_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 
 	public static Item red_moe_moe_z_cune = new item_moe_moe_z_cune("red_moe_moe_z_cune", ArmorMaterial.DIAMOND, 4, "akiba_red").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 	public static Item blue_moe_moe_z_cune = new item_moe_moe_z_cune("blue_moe_moe_z_cune", ArmorMaterial.DIAMOND, 4, "akiba_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
@@ -783,9 +769,9 @@ public class SentaiItems40
 	public static Item yellow_moe_moe_z_cune = new item_moe_moe_z_cune("yellow_moe_moe_z_cune", ArmorMaterial.DIAMOND, 4, "akiba_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 	public static Item yellow_s2_moe_moe_z_cune = new item_moe_moe_z_cune("yellow_s2_moe_moe_z_cune", ArmorMaterial.DIAMOND, 4, "akiba_yellow_s2").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 	public static Item china_aura_changer = new item_moe_moe_z_cune("china_aura_changer", ArmorMaterial.DIAMOND, 4, "china_red").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
-	public static Item akiba_changer = new item_moe_moe_z_cune("akiba_changer", ArmorMaterial.DIAMOND, 4, "akiba_white","akiba_white_base").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item akiba_changer = new item_moe_moe_z_cune("akiba_changer", ArmorMaterial.DIAMOND, 4, "akiba_white").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 	public static Item red_dino_buckler = new item_moe_moe_z_cune("red_dino_buckler", ArmorMaterial.DIAMOND, 4, "red_powerful_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
-	public static Item green_dino_buckler = new item_moe_moe_z_cune("green_dino_buckler", ArmorMaterial.DIAMOND, 4, "green_powerful_ranger","zyu_full_dragon_shield").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
+	public static Item green_dino_buckler = new item_moe_moe_z_cune("green_dino_buckler", ArmorMaterial.DIAMOND, 4, "green_powerful_ranger").setMaxStackSize(1).setCreativeTab(Tabs.tabAkibaranger);
 
 	public static Item akiba_red_logo = new Item_ore("akiba_red_logo").setCreativeTab(Tabs.tabAkibaranger);
 	public static Item akiba_blue_logo = new Item_ore("akiba_blue_logo").setCreativeTab(Tabs.tabAkibaranger);
@@ -802,9 +788,9 @@ public class SentaiItems40
 	public static Item blank_deboth_zyudenchi = new Item_ore("blank_deboth_zyudenchi").setCreativeTab(Tabs.tabKyoryuger);
 	public static Item blank_brave_zyudenchi = new Item_ore("blank_brave_zyudenchi").setCreativeTab(Tabs.tabKyoryuger);
 	
-	public static Item kyoryuger_head = new item_kyoryuger_armor("kyoryuger_head", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD).setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
-	public static Item kyoryuger_torso = new item_kyoryuger_armor2("kyoryuger_torso", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST).setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
-	public static Item kyoryuger_legs = new item_kyoryuger_armor2("kyoryuger_legs", ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS).setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
+	public static Item kyoryuger_head = new item_sentai_armor("kyoryuger_head", item_gaburivolver.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blank_zyudenchi).setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
+	public static Item kyoryuger_torso = new item_sentai_armor("kyoryuger_torso", item_gaburivolver.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blank_zyudenchi).setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
+	public static Item kyoryuger_legs = new item_sentai_armor("kyoryuger_legs", item_gaburivolver.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blank_zyudenchi).setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
 
 	public static Item red_gaburivolver = new item_gaburivolver("red_gaburivolver", ArmorMaterial.DIAMOND, 4,"kyoryu_red").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
 	public static Item black_gaburivolver = new item_gaburivolver("black_gaburivolver", ArmorMaterial.DIAMOND, 4,"kyoryu_black").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
@@ -823,12 +809,12 @@ public class SentaiItems40
 	public static Item death_flute_buster = new item_gaburivolver("death_flute_buster", ArmorMaterial.DIAMOND, 4,"death_ryuger").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
 	public static Item chaos_stone = new item_gaburivolver("chaos_stone", ArmorMaterial.DIAMOND, 4,"chaos_ryuger").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
 	
-	public static Item future_red_gaburivolver = new item_gaburivolver("future_red_gaburivolver", ArmorMaterial.DIAMOND, 4,"future_kyoryu_red","kyoryu_armed_on").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
-	public static Item future_black_gaburivolver = new item_gaburivolver("future_black_gaburivolver", ArmorMaterial.DIAMOND, 4,"future_kyoryu_black","kyoryu_armed_on").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
-	public static Item future_blue_gaburivolver = new item_gaburivolver("future_blue_gaburivolver", ArmorMaterial.DIAMOND, 4,"kyoryu_blue","kyoryu_armed_on").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
-	public static Item future_green_gaburivolver = new item_gaburivolver("future_green_gaburivolver", ArmorMaterial.DIAMOND, 4,"future_kyoryu_green","kyoryu_armed_on").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
-	public static Item future_pink_gaburivolver = new item_gaburivolver("future_pink_gaburivolver", ArmorMaterial.DIAMOND, 4,"future_kyoryu_pink","kyoryu_armed_on").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
-	public static Item future_gaburichanger = new item_gaburivolver("future_gaburichanger", ArmorMaterial.DIAMOND, 4,"future_kyoryu_gold","kyoryu_gaburu_armed_on").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
+	public static Item future_red_gaburivolver = new item_gaburivolver("future_red_gaburivolver", ArmorMaterial.DIAMOND, 4,"future_kyoryu_red").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
+	public static Item future_black_gaburivolver = new item_gaburivolver("future_black_gaburivolver", ArmorMaterial.DIAMOND, 4,"future_kyoryu_black").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
+	public static Item future_blue_gaburivolver = new item_gaburivolver("future_blue_gaburivolver", ArmorMaterial.DIAMOND, 4,"kyoryu_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
+	public static Item future_green_gaburivolver = new item_gaburivolver("future_green_gaburivolver", ArmorMaterial.DIAMOND, 4,"future_kyoryu_green").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
+	public static Item future_pink_gaburivolver = new item_gaburivolver("future_pink_gaburivolver", ArmorMaterial.DIAMOND, 4,"future_kyoryu_pink").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
+	public static Item future_gaburichanger = new item_gaburivolver("future_gaburichanger", ArmorMaterial.DIAMOND, 4,"future_kyoryu_gold").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
 	
 	public static Item red_gabu_gaburivolver = new item_gaburivolver("red_gabu_gaburivolver", ArmorMaterial.DIAMOND, 4,"brave_kyoryu_red").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);
 	public static Item black_gabu_gaburivolver = new item_gaburivolver("black_gabu_gaburivolver", ArmorMaterial.DIAMOND, 4,"brave_kyoryu_black").setMaxStackSize(1).setCreativeTab(Tabs.tabKyoryuger);

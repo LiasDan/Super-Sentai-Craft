@@ -8,6 +8,9 @@ import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems40;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_bouken_spirit;
+import SS_Craft.item.dekaranger.item_sp_license;
+import SS_Craft.item.sentai_armor_base.item_form_changer;
+import SS_Craft.item.sentai_armor_base.item_sentai_changer;
 import SS_Craft.item.zyuranger.item_dino_buckler;
 import SS_Craft.item.zyuranger.item_dino_medal;
 import SS_Craft.model.model_belt;
@@ -36,7 +39,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
-public class item_moe_moe_z_cune extends ItemArmor implements IHasModel
+public class item_moe_moe_z_cune extends item_sentai_changer
 {
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	public String armorNamePrefix;
@@ -44,33 +47,15 @@ public class item_moe_moe_z_cune extends ItemArmor implements IHasModel
 
 	public String Rider;
 	public static String[] ARMOR= new String[] {"blank","_super"};
-	public String Armor;
-
-	public item_moe_moe_z_cune (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider, String armor)
-	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
-		this.material = par2EnumArmorMaterial;
-		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
-		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
-		this.maxStackSize = 1;
-		Rider=rider;
-		Armor=armor;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
-	}
 
 	public item_moe_moe_z_cune (String name,ArmorMaterial par2EnumArmorMaterial, int par3, String rider)
 	{
-		super(par2EnumArmorMaterial, par3, EntityEquipmentSlot.FEET);
+		super(name, par2EnumArmorMaterial,4,rider,(item_form_changer)SentaiItems20.blanknoform,SentaiItems40.akibaranger_head, SentaiItems40.akibaranger_torso, SentaiItems40.akibaranger_legs, SentaiItems40.akibaranger_logo);
 		this.material = par2EnumArmorMaterial;
 		par2EnumArmorMaterial.getDamageReductionAmount(EntityEquipmentSlot.FEET);
 		this.setMaxDamage(par2EnumArmorMaterial.getDurability(EntityEquipmentSlot.FEET));
 		this.maxStackSize = 1;
 		Rider=rider;
-		setTranslationKey(name);
-		setRegistryName(name);
-		TokuCraft_core.ITEMS.add(this);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -152,14 +137,7 @@ public class item_moe_moe_z_cune extends ItemArmor implements IHasModel
 	{	
 		item_moe_moe_z_cune belt = (item_moe_moe_z_cune)itemstack.getItem();
 
-		if (belt.Armor!=null)
-		{
-			return itemstack.hasTagCompound() ? item_moe_moe_z_cune.ARMOR[itemstack.getTagCompound().getInteger("armor")] : belt.Armor;
-		}
-		else 
-		{
-			return itemstack.hasTagCompound() ? item_moe_moe_z_cune.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
-		}
+		return itemstack.hasTagCompound() ? item_moe_moe_z_cune.ARMOR[itemstack.getTagCompound().getInteger("armor")] : "blank";
 	}
 	
 	public static void set_lock(ItemStack itemstack,int flag)
@@ -276,5 +254,57 @@ public class item_moe_moe_z_cune extends ItemArmor implements IHasModel
 	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type)
 	{
 		return Refercence.MODID+":textures/armor/blank.png";
+	}
+	
+	public String getTexture(Entity entity, int num,String ext)
+	{
+		if (entity instanceof EntityLivingBase)
+		{
+			EntityLivingBase player = ((EntityLivingBase)entity);
+			if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()instanceof item_sentai_changer)
+			{
+				String rider = ((item_moe_moe_z_cune)player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()).Rider;
+				
+				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
+				{
+					return Refercence.MODID+":textures/armor/"+rider+ext;
+				}
+				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
+				{
+					if (rider=="akiba_white")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+"_base"+ext;
+					}
+					if (rider=="green_powerful_ranger")
+					{
+						return Refercence.MODID+":textures/armor/zyu_full_dragon_shield"+ext;
+					}
+					if (item_moe_moe_z_cune.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 1)
+					{
+						return Refercence.MODID+":textures/armor/"+rider+"_super"+ext;
+					}
+					if (item_moe_moe_z_cune.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 0)
+					{
+						return "blank";
+					}
+					else
+					{
+						return "blank";
+					}
+				}
+				else
+				{
+					return "blank";
+				}
+			}
+			else
+			{
+				return "blank";
+			}
+		}
+		else
+		{
+			return "blank";
+		}
 	}
 }

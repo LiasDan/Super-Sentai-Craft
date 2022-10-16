@@ -405,7 +405,7 @@ public class item_zyudenchi extends Item implements IHasModel
 					{
 						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()==SentaiItems40.gabutyra_de_carnival)
 						{
-							item_gaburivolver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),3);
+							item_gaburivolver.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),2);
 							item_gaburivolver.set_right(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 							item_gaburivolver.set_left(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
 						}
