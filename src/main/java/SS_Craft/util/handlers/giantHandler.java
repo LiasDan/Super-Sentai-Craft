@@ -74,7 +74,7 @@ public class giantHandler
 	
 		if(entity.isPotionActive(PotionCore.SS_BIG)) big = true;
 		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "big"))) big = true;
-		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("ultracraft"+ ":" + "small"))) small = true;
+		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("ultracraft"+ ":" + "big"))) big = true;
 		
 		if(entity.isPotionActive(PotionCore.SS_SMALL)) small = true;
 		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "small"))) small = true;
