@@ -101,20 +101,6 @@ public class tokuArmorModel extends ModelBiped
 		float height=1;
 		float height2=0;
 		
-		if (entity instanceof EntityPlayer)
-		{
-			EntityPlayer player =((EntityPlayer) entity);
-			
-			if(player.isPotionActive(PotionCore.SS_BIG))
-			{
-				height=2.5f;		
-			}
-			if (height!=1)
-			{
-				height2=-0.99f;
-			}
-		}	
-		
 		GL11.glPushMatrix();
 		GL11.glScalef(1F*height, 1F*height, 1F*height);
 
