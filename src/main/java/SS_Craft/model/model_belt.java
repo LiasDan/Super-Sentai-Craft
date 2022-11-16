@@ -54,16 +54,6 @@ public class model_belt extends ModelBiped
 		float height2=0f;
 		float height3=1f;
 		float height4=-1.3f;
-		if (entity instanceof EntityPlayer){
-			EntityPlayer player =((EntityPlayer) entity);
-			
-			if(player.isPotionActive(PotionCore.SS_BIG)){
-				height=0.5f;
-				height2=2f;
-				height3=2.5f;
-				height4=0.5f;
-			}
-		}
 		
 		this.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 		if (entity instanceof EntityLivingBase){
