@@ -15,18 +15,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:boukenger/zubaan"
-      }
     }
   },
   "requirements": [
     [
-      "has_item",
-      "has_the_recipe"
+      "has_item"
     ]
   ]
 }

@@ -17,32 +17,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:go_onger/mecha/engine_oh_boots"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:go_onger/mecha/engine_oh_torso"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:go_onger/mecha/engine_oh_legs"
-      }
     }
   },
   "requirements": [
     [
-      "has_logo",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2"
+      "has_logo"
     ]
   ]
 }

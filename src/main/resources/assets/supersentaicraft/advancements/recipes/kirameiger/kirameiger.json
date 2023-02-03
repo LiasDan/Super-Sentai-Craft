@@ -22,67 +22,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kirameiger/kirameiger_head"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kirameiger/kirameiger_torso"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kirameiger/kirameiger_legs"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kirameiger/kirameiger_logo"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kirameiger/kiramei_sword"
-      }
-    },
-    "has_the_recipe5": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kirameiger/kiramei_shot"
-      }
-    },
-    "has_the_recipe6": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kirameiger/kiramei_buster"
-      }
-    },
-    "has_the_recipe7": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kirameiger/kiramei_buster1"
-      }
     }
   },
   "requirements": [
     [
-      "has_logo",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4",
-      "has_the_recipe5",
-      "has_the_recipe6",
-      "has_the_recipe7"
+      "has_logo"
     ]
   ]
 }

@@ -15,18 +15,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/golder_zandar_thunder"
-      }
     }
   },
   "requirements": [
     [
-      "has_item",
-      "has_the_recipe"
+      "has_item"
     ]
   ]
 }

@@ -23,74 +23,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/kyoryuger_logo"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/kyoryuger_head"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/kyoryuger_torso"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/kyoryuger_legs"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/gaburivolver"
-      }
-    },
-    "has_the_recipe5": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/gaburicalibur"
-      }
-    },
-    "has_the_recipe6": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/zyudenchi_charger"
-      }
-    },
-    "has_the_recipe7": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/gaburu_cannon"
-      }
-    },
-    "has_the_recipe8": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/gaburu_cannon1"
-      }
     }
   },
   "requirements": [
     [
-      "has_item",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4",
-      "has_the_recipe5",
-      "has_the_recipe6",
-      "has_the_recipe7",
-      "has_the_recipe8"
+      "has_item"
     ]
   ]
 }

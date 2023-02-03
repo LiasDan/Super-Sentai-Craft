@@ -633,7 +633,7 @@ public class SentaiItems40
 	public static Item cowl_laser = new Item_gun("cowl_laser", Tabs.gun,SentaiItems40.blank_engine_soul).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
 	public static Item rocket_dagger = new item_rocket_dagger("rocket_dagger", Tabs.sword).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
 	public static Item wing_booster = new Item_gun("wing_booster", Tabs.super_gun,SentaiItems40.blank_engine_soul).setMaxStackSize(1).setContainerItem(SentaiItems40.rocket_dagger).setCreativeTab(Tabs.tabGoOnger);
-	public static Item wing_booster_silver = new Item_gun("wing_booster_silver", Tabs.super_gun,SentaiItems40.blank_engine_soul).setMaxStackSize(1).setContainerItem(SentaiItems40.rocket_dagger);
+	public static Item wing_booster_silver = new Item_gun("wing_booster_silver", Tabs.super_gun,SentaiItems40.blank_engine_soul).setMaxStackSize(1).setContainerItem(SentaiItems40.rocket_dagger).setCreativeTab(null);
 	public static Item kankanbar = new ItemBaseSword("kankanbar", Tabs.mecha_sword,SentaiItems40.blank_engine_soul).setMaxStackSize(1).setCreativeTab(Tabs.tabGoOnger);
 	public static Item kankan_mantan_gun = new Item_gun("kankan_mantan_gun", Tabs.hyper_gun,SentaiItems40.blank_engine_soul).setMaxStackSize(1).setContainerItem(SentaiItems40.mantan_sword).setCreativeTab(Tabs.tabGoOnger);
 	
@@ -696,7 +696,7 @@ public class SentaiItems40
 	public static Item sakanamaru = new ItemBaseSword("sakanamaru", Tabs.sword,SentaiItems40.common_disk).setMaxStackSize(1).setCreativeTab(Tabs.tabShinkenger);
 	public static Item super_shinkenmaru = new ItemBaseSword("super_shinkenmaru", Tabs.super_sword,SentaiItems40.common_disk).setMaxStackSize(1).setContainerItem(shinkenmaru).setCreativeTab(Tabs.tabShinkenger);
 	public static Item kyoryumaru = new ItemBaseSword("kyoryumaru", Tabs.super_sword,SentaiItems40.common_disk).setMaxStackSize(1).setContainerItem(shinkenmaru).setCreativeTab(Tabs.tabShinkenger);
-	public static Item kyoryumaru_sakanamaru = new ItemBaseSword("kyoryumaru_sakanamaru", Tabs.super_sword,SentaiItems40.common_disk).setMaxStackSize(1).setContainerItem(sakanamaru);
+	public static Item kyoryumaru_sakanamaru = new ItemBaseSword("kyoryumaru_sakanamaru", Tabs.super_sword,SentaiItems40.common_disk).setMaxStackSize(1).setContainerItem(sakanamaru).setCreativeTab(null);
 	
 	//34 Tensou Sentai Goseiger
 	public static Item goseiger_logo = new Item_ore("goseiger_logo").setCreativeTab(Tabs.tabMisc);

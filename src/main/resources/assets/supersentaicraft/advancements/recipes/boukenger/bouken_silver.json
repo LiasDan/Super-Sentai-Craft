@@ -16,25 +16,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:boukenger/gogo_changer"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:boukenger/sagaspear"
-      }
     }
   },
   "requirements": [
     [
-      "has_item",
-      "has_the_recipe",
-      "has_the_recipe1"
+      "has_item"
     ]
   ]
 }

@@ -36,27 +36,13 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:abaranger/mecha/abaren_oh_head"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:abaranger/mecha/abaren_oh_head1"
-      }
     }
   },
   "requirements": [
     [
       "has_logo",
       "has_logo1",
-      "has_logo2",
-      "has_the_recipe",
-      "has_the_recipe1"
+      "has_logo2"
     ]
   ]
 }

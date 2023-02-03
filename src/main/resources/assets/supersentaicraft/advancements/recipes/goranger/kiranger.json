@@ -16,25 +16,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:goranger/kiranger_belt"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:goranger/ki_sticker"
-      }
     }
   },
   "requirements": [
     [
-      "has_item",
-      "has_the_recipe",
-      "has_the_recipe1"
+      "has_item"
     ]
   ]
 }

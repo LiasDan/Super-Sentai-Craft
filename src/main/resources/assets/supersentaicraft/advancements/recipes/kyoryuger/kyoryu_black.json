@@ -15,18 +15,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:kyoryuger/parasa_shot"
-      }
     }
   },
   "requirements": [
     [
-      "has_item",
-      "has_the_recipe"
+      "has_item"
     ]
   ]
 }

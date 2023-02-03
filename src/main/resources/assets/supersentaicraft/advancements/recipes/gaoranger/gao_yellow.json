@@ -17,32 +17,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gaoranger/yellow_g_phone"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gaoranger/eagle_beast_king_sword"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gaoranger/eagle_sword"
-      }
     }
   },
   "requirements": [
     [
-      "has_logo",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2"
+      "has_logo"
     ]
   ]
 }

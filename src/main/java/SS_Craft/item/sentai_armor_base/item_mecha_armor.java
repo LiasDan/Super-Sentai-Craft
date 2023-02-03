@@ -6,7 +6,6 @@ import javax.annotation.Nullable;
 import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_mecha;
-import SS_Craft.model.tokuArmorModel;
 import SS_Craft.model.tokuArmorModel2;
 import SS_Craft.util.IHasModel;
 import SS_Craft.util.Refercence;

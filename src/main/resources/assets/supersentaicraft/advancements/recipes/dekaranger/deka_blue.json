@@ -18,39 +18,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dekaranger/blue_sp_license"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dekaranger/d_rod_blue"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dekaranger/d_sniper"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dekaranger/d_sniper1"
-      }
     }
   },
   "requirements": [
     [
-      "has_logo",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3"
+      "has_logo"
     ]
   ]
 }

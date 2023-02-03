@@ -101,6 +101,7 @@ public class tokuArmorModel extends ModelBiped
 		float height=1;
 		float height2=0;
 		
+		
 		GL11.glPushMatrix();
 		GL11.glScalef(1F*height, 1F*height, 1F*height);
 

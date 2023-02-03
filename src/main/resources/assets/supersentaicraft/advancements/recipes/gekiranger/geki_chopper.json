@@ -16,25 +16,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gekiranger/sai_blade_cutter"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gekiranger/virtuous_beast_sword"
-      }
     }
   },
   "requirements": [
     [
-      "has_item",
-      "has_the_recipe",
-      "has_the_recipe1"
+      "has_item"
     ]
   ]
 }

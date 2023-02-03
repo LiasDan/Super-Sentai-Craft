@@ -18,39 +18,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:megaranger/yellow_digitaizer"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:megaranger/mega_sling"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:megaranger/sling_sniper"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:megaranger/sling_sniper1"
-      }
     }
   },
   "requirements": [
     [
-      "has_item",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3"
+      "has_item"
     ]
   ]
 }

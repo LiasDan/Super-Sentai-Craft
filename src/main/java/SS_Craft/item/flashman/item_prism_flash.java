@@ -138,15 +138,15 @@ public class item_prism_flash extends item_sentai_changer
 								{
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_prism_flash)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.green_prism_flash)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										
 										if (this.get_core(armor)==1)
 										{
@@ -155,22 +155,22 @@ public class item_prism_flash extends item_sentai_changer
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.blue_prism_flash)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.yellow_prism_flash)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.pink_prism_flash)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
 										

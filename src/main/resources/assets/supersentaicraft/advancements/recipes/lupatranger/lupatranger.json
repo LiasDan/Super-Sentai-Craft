@@ -22,67 +22,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:lupatranger/lupat_head"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:lupatranger/lupat_torso"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:lupatranger/lupat_legs"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:lupatranger/lupinranger_logo"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:lupatranger/patranger_logo"
-      }
-    },
-    "has_the_recipe5": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:lupatranger/vs_changer"
-      }
-    },
-    "has_the_recipe6": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:lupatranger/lupin_sword"
-      }
-    },
-    "has_the_recipe7": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:lupatranger/pat_megabo"
-      }
     }
   },
   "requirements": [
     [
-      "has_logo",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4",
-      "has_the_recipe5",
-      "has_the_recipe6",
-      "has_the_recipe7"
+      "has_logo"
     ]
   ]
 }

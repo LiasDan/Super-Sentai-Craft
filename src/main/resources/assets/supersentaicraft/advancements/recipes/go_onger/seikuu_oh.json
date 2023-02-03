@@ -35,20 +35,13 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:go_onger/mecha/seikuu_oh_head"
-      }
     }
   },
   "requirements": [
     [
       "has_logo",
       "has_logo1",
-      "has_logo2",
-      "has_the_recipe"
+      "has_logo2"
     ]
   ]
 }

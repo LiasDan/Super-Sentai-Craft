@@ -15,18 +15,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:go_onger/gold_wing_trigger"
-      }
     }
   },
   "requirements": [
     [
-      "has_logo",
-      "has_the_recipe"
+      "has_logo"
     ]
   ]
 }

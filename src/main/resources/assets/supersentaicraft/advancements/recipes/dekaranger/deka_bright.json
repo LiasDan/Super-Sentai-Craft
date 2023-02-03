@@ -15,18 +15,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:dekaranger/bright_brace_throttle"
-      }
     }
   },
   "requirements": [
     [
-      "has_logo",
-      "has_the_recipe"
+      "has_logo"
     ]
   ]
 }

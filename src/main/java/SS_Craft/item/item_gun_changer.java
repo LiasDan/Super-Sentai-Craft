@@ -143,7 +143,7 @@ public class item_gun_changer extends ItemBow  implements IHasModel
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
 					}
-					else if (playerIn.isSneaking()&&item_zyuoh_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					else if (playerIn.isSneaking()&&item_vs_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
 					{
 						item_zyuoh_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}

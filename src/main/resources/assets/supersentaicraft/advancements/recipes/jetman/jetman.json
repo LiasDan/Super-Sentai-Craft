@@ -25,88 +25,11 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/jetman_head"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/jetman_torso"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/jetman_legs"
-      }
-    },
-    "has_the_recipe3": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/jetman_logo"
-      }
-    },
-    "has_the_recipe4": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/bird_blaster"
-      }
-    },
-    "has_the_recipe5": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/bringer_sword"
-      }
-    },
-    "has_the_recipe6": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/beak_smasher"
-      }
-    },
-    "has_the_recipe7": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/jet_hand_cannon"
-      }
-    },
-    "has_the_recipe8": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/jet_hand_cannon1"
-      }
-    },
-    "has_the_recipe9": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/smash_bomber"
-      }
-    },
-    "has_the_recipe10": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:jetman/smash_bomber1"
-      }
     }
   },
   "requirements": [
     [
-      "has_logo",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2",
-      "has_the_recipe3",
-      "has_the_recipe4",
-      "has_the_recipe5",
-      "has_the_recipe6",
-      "has_the_recipe7",
-      "has_the_recipe8",
-      "has_the_recipe9",
-      "has_the_recipe10"
+      "has_logo"
     ]
   ]
 }

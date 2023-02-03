@@ -26,26 +26,12 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:abaranger/mecha/killer_oh_head"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:abaranger/mecha/gale_spear"
-      }
     }
   },
   "requirements": [
     [
       "has_logo",
-      "has_logo1",
-      "has_the_recipe",
-      "has_the_recipe1"
+      "has_logo1"
     ]
   ]
 }

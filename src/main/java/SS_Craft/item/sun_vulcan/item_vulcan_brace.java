@@ -146,23 +146,23 @@ public class item_vulcan_brace extends item_sentai_changer
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.eagle_vulcan_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.shark_vulcan_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.panther_vulcan_brace)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
 								}
 							}

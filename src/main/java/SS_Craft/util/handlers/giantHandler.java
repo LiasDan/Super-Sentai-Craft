@@ -27,14 +27,19 @@ public class giantHandler
 	{
 		boolean big = false;
 		boolean small = false;
+
+		boolean kiji = false;
+		boolean inu = false;
+		
 		final EntityLivingBase entity = event.player;
 		if(event.player.isPotionActive(PotionCore.SS_BIG)) big = true;
-		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "big"))) big = true;
-		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("ultracraft"+ ":" + "big"))) big = true;
 		
 		if(event.player.isPotionActive(PotionCore.SS_SMALL)) small = true;
-		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "small"))) small = true;
-		if(event.player.isPotionActive(Potion.getPotionFromResourceLocation("ultracraft"+ ":" + "small"))) small = true;
+
+		if(event.player.isPotionActive(PotionCore.SS_KIJIBROTHER)) kiji = true;
+		
+		if(event.player.isPotionActive(PotionCore.SS_INUBROTHER)) inu = true;
+		
 		if(big&!small){
 				event.player.width= 0.6F* 4.0F;
 				event.player.height=1.8F* 3.0F;
@@ -53,6 +58,25 @@ public class giantHandler
 			final AxisAlignedBB aabb = entity.getEntityBoundingBox();
 			entity.setEntityBoundingBox(new AxisAlignedBB(entity.posX - d0, aabb.minY, entity.posZ - d0,
 					entity.posX + d0, aabb.minY + entity.height, entity.posZ + d0));
+		}
+		else if(kiji&!inu){
+				event.player.width= 0.6F;
+				event.player.height=1.8F*1.45F;
+				event.player.eyeHeight=event.player.getDefaultEyeHeight()* 1.45F;
+				
+				final double d0 = 0.6F / 2.0D;
+				final AxisAlignedBB aabb = entity.getEntityBoundingBox();
+				entity.setEntityBoundingBox(new AxisAlignedBB(entity.posX - d0, aabb.minY, entity.posZ - d0,
+						entity.posX + d0, aabb.minY + entity.height, entity.posZ + d0));
+		} else if(inu&!kiji){
+			event.player.width = 0.6F;
+			event.player.height =1.4F;
+			event.player.eyeHeight = 1.2f;
+			
+			final double d0 = 0.6 / 2.0D;
+			final AxisAlignedBB aabb = entity.getEntityBoundingBox();
+			entity.setEntityBoundingBox(new AxisAlignedBB(entity.posX - d0, aabb.minY, entity.posZ - d0,
+					entity.posX + d0, aabb.minY + entity.height, entity.posZ + d0));
 		}else{
 			event.player.width = 0.6F;
 			event.player.height=1.8F;
@@ -64,22 +88,23 @@ public class giantHandler
 		}
 	}
 	
-	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
 	public void onEntityRenderPre(RenderLivingEvent.Pre event)
 	{
 		final EntityLivingBase entity = event.getEntity();
 		boolean big = false;
 		boolean small = false;
+
+		boolean kiji = false;
+		boolean inu = false;
 	
 		if(entity.isPotionActive(PotionCore.SS_BIG)) big = true;
-		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "big"))) big = true;
-		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("ultracraft"+ ":" + "big"))) big = true;
 		
 		if(entity.isPotionActive(PotionCore.SS_SMALL)) small = true;
-		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("kamenridercraft4th"+ ":" + "small"))) small = true;
-		if(entity.isPotionActive(Potion.getPotionFromResourceLocation("ultracraft"+ ":" + "small"))) small = true;
+
+		if(entity.isPotionActive(PotionCore.SS_KIJIBROTHER)) kiji = true;
 		
+		if(entity.isPotionActive(PotionCore.SS_INUBROTHER)) inu = true;
 		
 			if(big&!small)
 			{
@@ -99,16 +124,34 @@ public class giantHandler
 				GlStateManager.pushMatrix();
 				GlStateManager.scale(scaleWidth, scaleHeight, scaleWidth);
 				GlStateManager.translate(event.getX() / scaleWidth - event.getX(),event.getY() / scaleHeight - event.getY(), event.getZ() / scaleWidth - event.getZ());
-			}			
+			}	
+			else if(kiji&!inu)
+			{
+				
+				float scaleHeight = 1f;
+				float scaleWidth = 1f;
+				
+				GlStateManager.pushMatrix();
+				GlStateManager.scale(scaleWidth, scaleHeight, scaleWidth);
+				GlStateManager.translate(event.getX() / scaleWidth - event.getX(),event.getY() / scaleHeight - event.getY(), event.getZ() / scaleWidth - event.getZ());
+			}else if(inu&!kiji)
+			{
+				
+				float scaleHeight = 1f;
+				float scaleWidth = 1f;
+				
+				GlStateManager.pushMatrix();
+				GlStateManager.scale(scaleWidth, scaleHeight, scaleWidth);
+				GlStateManager.translate(event.getX() / scaleWidth - event.getX(),event.getY() / scaleHeight - event.getY(), event.getZ() / scaleWidth - event.getZ());
+			}		
 		}
 		
-	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
 	public void onLivingRenderPost(RenderLivingEvent.Post event)
 	{
 		final EntityLivingBase entity = event.getEntity();
 		
-		if(entity.isPotionActive(PotionCore.SS_BIG)||entity.isPotionActive(PotionCore.SS_SMALL))
+		if(entity.isPotionActive(PotionCore.SS_BIG)||entity.isPotionActive(PotionCore.SS_SMALL)||entity.isPotionActive(PotionCore.SS_KIJIBROTHER)||entity.isPotionActive(PotionCore.SS_INUBROTHER))
 		{
 				GlStateManager.popMatrix();
 		}

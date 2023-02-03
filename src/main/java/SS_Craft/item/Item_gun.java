@@ -14,6 +14,7 @@ import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.boukenger.item_accellular;
 import SS_Craft.item.carranger.item_accel_changer;
+import SS_Craft.item.don_brothers.item_don_blaster;
 import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.kyoryuger.item_gaburivolver;
@@ -299,6 +300,32 @@ public class Item_gun extends ItemBow  implements IHasModel
 							{
 								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.zenkaizer_geartlinger)
 									if (item_geartlinger.get_core(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+										return 1;
+									else
+										return 0;
+							}
+							else
+							{
+								return 0;
+							}
+						
+							return 0;
+						}
+					
+						return 0;
+					}
+					if (stack.getItem() == SentaiItems60.don_blaster)
+					{
+						if (entityIn == null)
+						{
+							return 0.0F;
+						}
+						else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
+						{
+							if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_don_blaster)
+							{
+								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.momotarou_don_blaster)
+									if (item_don_blaster.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="_goldon_armor")
 										return 1;
 									else
 										return 0;

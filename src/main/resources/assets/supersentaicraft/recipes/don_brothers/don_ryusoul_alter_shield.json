@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "don_momotarou_alter",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_avatarou_gear"
+    },
+	"b": {
+	  "item": "supersentaicraft:ryusoulger_avatarou_gear_alter"
+	},
+	"c": {
+      "item": "minecraft:shield"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:don_ryusoul_alter_shield"
+  }
+}

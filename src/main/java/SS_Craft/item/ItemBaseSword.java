@@ -8,6 +8,7 @@ import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems40;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.don_brothers.item_don_blaster;
 import SS_Craft.item.gaoranger.item_g_phone;
 import SS_Craft.item.gekiranger.item_geki_changer;
 import SS_Craft.item.gingaman.item_ginga_brace;
@@ -78,9 +79,31 @@ public class ItemBaseSword extends ItemSword implements IHasModel
         	@SideOnly(Side.CLIENT)
 	        public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
 	        {
+        		if (stack.getItem() == SentaiItems40.starbeast_sword)
+        		{
+        			if (entityIn == null)
+	                {
+	                    return 0.0F;
+	                }
+        			else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
+					{
+						if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_ginga_brace)
+						{
+							if (item_ginga_brace.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "beast_armor_shine")
+								return 1;
+						}
+						else
+						{
+							return 0;
+						}
+						
+						return 0;
+					}
+					
+					return 0;
+	            }
         		if (stack.getItem() == SentaiItems20.ninja_ichibantou)
         		{
-
         			if (entityIn == null)
 	                {
 	                    return 0.0F;
@@ -107,7 +130,6 @@ public class ItemBaseSword extends ItemSword implements IHasModel
         		}
         		if (stack.getItem() == SentaiItems60.max_ryusoul_changer)
             	{
-
             		if (entityIn == null)
     	            {
     	                return 0.0F;
@@ -132,19 +154,21 @@ public class ItemBaseSword extends ItemSword implements IHasModel
 					
 					return 0;
 	            }
-        		if (stack.getItem() == SentaiItems40.starbeast_sword)
-        		{
-
-        			if (entityIn == null)
-	                {
-	                    return 0.0F;
-	                }
+        		if (stack.getItem() == SentaiItems60.ryuko_no_geki)
+            	{
+            		if (entityIn == null)
+    	            {
+    	                return 0.0F;
+    	            }
         			else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
 					{
-						if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_ginga_brace)
+						if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_don_blaster)
 						{
-							if (item_ginga_brace.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "beast_armor_shine")
-								return 1;
+							if (item_don_blaster.get_core(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == 1)
+							{	
+								if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.toradora_ryuko_no_geki)
+									return 1;
+							}
 						}
 						else
 						{

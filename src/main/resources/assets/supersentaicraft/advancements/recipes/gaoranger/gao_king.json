@@ -56,18 +56,6 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gaoranger/mecha/gao_king_head"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gaoranger/mecha/fin_blade"
-      }
     }
   },
   "requirements": [
@@ -76,9 +64,7 @@
       "has_logo1",
       "has_logo2",
       "has_logo3",
-      "has_logo4",
-      "has_the_recipe",
-      "has_the_recipe1"
+      "has_logo4"
     ]
   ]
 }

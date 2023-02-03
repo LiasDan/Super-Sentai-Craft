@@ -631,11 +631,11 @@ public class item_gaburivolver extends item_sentai_changer
 							return "blank";
 						}
 					}
-					else if (num==9&num==11&item_gaburivolver.get_right(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					else if ((num==9||num==11)&item_gaburivolver.get_right(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
 					{
 						return Refercence.MODID+":textures/armor/"+item_gaburivolver.get_right(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
 					}
-					else if (num==4&num==10&item_gaburivolver.get_left(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
+					else if ((num==4||num==10)&item_gaburivolver.get_left(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
 					{
 						return Refercence.MODID+":textures/armor/"+item_gaburivolver.get_left(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
 					}

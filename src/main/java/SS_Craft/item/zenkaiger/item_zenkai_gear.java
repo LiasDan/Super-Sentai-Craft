@@ -1,6 +1,7 @@
 package SS_Craft.item.zenkaiger;
 
 
+import SS_Craft.SentaiItems40;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
@@ -131,7 +132,14 @@ public class item_zenkai_gear extends Item implements IHasModel
 				{
 					if (this == SentaiItems60.zenkaizer_gear)
 					{
-						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.zenkaizer_geartlinger));
+						if (playerIn.inventory.hasItemStack(new ItemStack(SentaiItems60.zenkaizer_black_avatarou_gear)))
+						{
+							playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.black_geartlinger));
+						}
+						else
+						{
+							playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.zenkaizer_geartlinger));
+						}
 					}
 					if (this == SentaiItems60.zenkai_juran_gear)
 					{

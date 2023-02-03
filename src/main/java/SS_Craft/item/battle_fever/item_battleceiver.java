@@ -160,8 +160,8 @@ public class item_battleceiver extends item_sentai_changer
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.cossack_battleceiver)
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.france_battleceiver)

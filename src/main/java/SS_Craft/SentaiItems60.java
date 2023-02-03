@@ -32,6 +32,11 @@ import SS_Craft.item.dekaranger.item_sp_license;
 import SS_Craft.item.denziman.item_denzi_punch;
 import SS_Craft.item.denziman.item_denzi_ring;
 import SS_Craft.item.denziman.mecha.item_denziman_mecha;
+import SS_Craft.item.don_brothers.item_alter_gear;
+import SS_Craft.item.don_brothers.item_avatarou_gear;
+import SS_Craft.item.don_brothers.item_don_blaster;
+import SS_Craft.item.don_brothers.item_don_gear;
+import SS_Craft.item.don_brothers.item_sono_shield;
 import SS_Craft.item.flashman.item_prism_armor;
 import SS_Craft.item.flashman.item_prism_flash;
 import SS_Craft.item.gaoranger.item_g_phone;
@@ -514,7 +519,7 @@ public class SentaiItems60
 	public static Item hakaizer_belt = new item_geartlinger("hakaizer_belt", ArmorMaterial.DIAMOND, 4, "hakaizer").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
 	public static Item red_geartlinger = new item_geartlinger("red_geartlinger", ArmorMaterial.DIAMOND, 4, "zenkai_red").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
 	public static Item twokai_flint_geardalinger = new item_geartlinger("twokai_flint_geardalinger", ArmorMaterial.DIAMOND, 4, "twokai_flint").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
-	public static Item mecha_dark_gear = new item_geartlinger("mecha_dark_gear", ArmorMaterial.DIAMOND, 4, "mecha").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
+	public static Item mecha_dark_gear = new item_geartlinger("mecha_dark_gear", ArmorMaterial.DIAMOND, 4, "mecha").setMaxStackSize(1).setCreativeTab(null);
 	
 	public static Item zenkaizer_belt = new Item_ore("zenkaizer_belt");
 	public static Item zenkai_juran_belt = new Item_ore("zenkai_juran_belt");
@@ -735,7 +740,155 @@ public class SentaiItems60
 	public static Item white_ribbon = new ItemBaseSword("white_ribbon",Tabs.whip,SentaiItems20.goggle_v_logo).setCreativeTab(Tabs.tabZenkaiger);
 
 	//46 Avatarou Sentai DonBrothers
+	public static Item don_brothers_logo = new Item_ore("don_brothers_logo").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item blank_avatarou_gear = new Item_ore("blank_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item don_brothers_head = new item_sentai_armor("don_brothers_head", item_don_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_brothers_torso = new item_sentai_armor("don_brothers_torso", item_don_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_brothers_legs = new item_sentai_armor("don_brothers_legs", item_don_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item momotarou_don_blaster = new item_don_blaster("momotarou_don_blaster", ArmorMaterial.DIAMOND, 4, "don_momotarou").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item saru_don_blaster = new item_don_blaster("saru_don_blaster", ArmorMaterial.DIAMOND, 4, "saru_brother").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item oni_don_blaster = new item_don_blaster("oni_don_blaster", ArmorMaterial.DIAMOND, 4, "oni_sister").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item inu_don_blaster = new item_don_blaster("inu_don_blaster", ArmorMaterial.DIAMOND, 4, "inu_brother").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kiji_don_blaster = new item_don_blaster("kiji_don_blaster", ArmorMaterial.DIAMOND, 4, "kiji_brother").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item toradora_ryuko_no_geki = new item_don_blaster("toradora_ryuko_no_geki", ArmorMaterial.DIAMOND, 4, "don_doragoku").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item murasame_ninjark_sword = new item_don_blaster("murasame_ninjark_sword", ArmorMaterial.DIAMOND, 4, "don_murasame").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item black_geartlinger = new item_don_blaster("black_geartlinger", ArmorMaterial.DIAMOND, 4, "zenkaizer_black").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item sonoi_nouto_brace = new item_don_blaster("sonoi_nouto_brace", ArmorMaterial.DIAMOND, 4, "sonoi").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item sononi_nouto_brace = new item_don_blaster("sononi_nouto_brace", ArmorMaterial.DIAMOND, 4, "sononi").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item sonoza_nouto_brace = new item_don_blaster("sonoza_nouto_brace", ArmorMaterial.DIAMOND, 4, "sonoza").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item future_don_blaster = new item_don_blaster("future_don_blaster", ArmorMaterial.DIAMOND, 4, "future_oni_sister").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item future_ninjark_sword = new item_don_blaster("future_ninjark_sword", ArmorMaterial.DIAMOND, 4, "future_don_murasame").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	
 	public static Item donbro_buckle = new Item_ore("donbro_buckle");
+	public static Item don_murasame_belt = new Item_ore("don_murasame_belt");
+	public static Item kiji_brother_wings = new Item_ore("kiji_brother_wings");
+	public static Item kiji_brother_wings_close = new Item_ore("kiji_brother_wings_close");
+	public static Item ninjark_sword_back = new Item_ore("ninjark_sword_back");
+	public static Item don_ninnin_alter = new Item_ore("don_ninnin_alter");
+	public static Item don_zyuoh_alter = new Item_ore("don_zyuoh_alter");
+	
+	public static Item don_momotarou_avatarou_gear = new item_don_gear(0, "don_momotarou_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item saru_brother_avatarou_gear = new item_don_gear(0, "saru_brother_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item oni_sister_avatarou_gear = new item_don_gear(0, "oni_sister_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item inu_brother_avatarou_gear = new item_don_gear(0, "inu_brother_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kiji_brother_avatarou_gear = new item_don_gear(0, "kiji_brother_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_doragoku_avatarou_gear = new item_don_gear(0, "don_doragoku_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_torabolt_avatarou_gear = new item_don_gear(1, "don_torabolt_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_murasame_avatarou_gear = new item_don_gear(0, "don_murasame_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item zenkaizer_black_avatarou_gear = new item_don_gear(0, "zenkaizer_black_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item omikoshi_phoenix = new item_don_gear(1, "omikoshi_phoenix").setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item don_momotarou_avatarou_gear_alter = new item_alter_gear(1, "don_momotarou_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_doragoku_avatarou_gear_alter = new item_alter_gear(1, "don_doragoku_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_murasame_avatarou_gear_alter = new item_alter_gear(1, "don_murasame_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item oni_sister_manga_avatarou_gear = new item_don_gear(1, "oni_sister_manga_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item goranger_avatarou_gear = new item_avatarou_gear(1, "goranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item jakq_avatarou_gear = new item_avatarou_gear(2, "jakq_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item battle_fever_avatarou_gear = new item_avatarou_gear(3, "battle_fever_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item denziman_avatarou_gear = new item_avatarou_gear(4, "denziman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item sun_vulcan_avatarou_gear = new item_avatarou_gear(5, "sun_vulcan_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item goggle_v_avatarou_gear = new item_avatarou_gear(6, "goggle_v_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item dynaman_avatarou_gear = new item_avatarou_gear(7, "dynaman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item bioman_avatarou_gear = new item_avatarou_gear(8, "bioman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item changeman_avatarou_gear = new item_avatarou_gear(9, "changeman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item flashman_avatarou_gear = new item_avatarou_gear(10, "flashman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+
+	public static Item maskman_avatarou_gear = new item_avatarou_gear(11, "maskman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item liveman_avatarou_gear = new item_avatarou_gear(12, "liveman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item turboranger_avatarou_gear = new item_avatarou_gear(13, "turboranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item fiveman_avatarou_gear = new item_avatarou_gear(14, "fiveman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item jetman_avatarou_gear = new item_avatarou_gear(15, "jetman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item zyuranger_avatarou_gear = new item_avatarou_gear(16, "zyuranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item dairanger_avatarou_gear = new item_avatarou_gear(17, "dairanger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kakuranger_avatarou_gear = new item_avatarou_gear(18, "kakuranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item ohranger_avatarou_gear = new item_avatarou_gear(19, "ohranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item carranger_avatarou_gear = new item_avatarou_gear(20, "carranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+
+	public static Item megaranger_avatarou_gear = new item_avatarou_gear(21, "megaranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item gingaman_avatarou_gear = new item_avatarou_gear(22, "gingaman_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item gogo_v_avatarou_gear = new item_avatarou_gear(23, "gogo_v_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item timeranger_avatarou_gear = new item_avatarou_gear(24, "timeranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item gaoranger_avatarou_gear = new item_avatarou_gear(25, "gaoranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item hurricaneger_avatarou_gear = new item_avatarou_gear(26, "hurricaneger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item abaranger_avatarou_gear = new item_avatarou_gear(27, "abaranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item dekaranger_avatarou_gear = new item_avatarou_gear(28, "dekaranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item magiranger_avatarou_gear = new item_avatarou_gear(29, "magiranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item boukenger_avatarou_gear = new item_avatarou_gear(30, "boukenger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+
+	public static Item gekiranger_avatarou_gear = new item_avatarou_gear(31, "gekiranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item go_onger_avatarou_gear = new item_avatarou_gear(32, "go_onger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item shinkenger_avatarou_gear = new item_avatarou_gear(33, "shinkenger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item goseiger_avatarou_gear = new item_avatarou_gear(34, "goseiger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item gokaiger_avatarou_gear = new item_avatarou_gear(35, "gokaiger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item go_busters_avatarou_gear = new item_avatarou_gear(36, "go_busters_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kyoryuger_avatarou_gear = new item_avatarou_gear(37, "kyoryuger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item toqger_avatarou_gear = new item_avatarou_gear(38, "toqger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item ninninger_avatarou_gear = new item_avatarou_gear(39, "ninninger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item zyuohger_avatarou_gear = new item_avatarou_gear(40, "zyuohger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+
+	public static Item kyuranger_avatarou_gear = new item_avatarou_gear(41, "kyuranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item lupinranger_avatarou_gear = new item_avatarou_gear(42, "lupinranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item patranger_avatarou_gear = new item_avatarou_gear(43, "patranger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item ryusoulger_avatarou_gear = new item_avatarou_gear(44, "ryusoulger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kirameiger_avatarou_gear = new item_avatarou_gear(45, "kirameiger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item zenkaiger_avatarou_gear = new item_avatarou_gear(46, "zenkaiger_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
+
+	public static Item dragon_ranger_avatarou_gear = new item_avatarou_gear("dragon_ranger_avatarou_gear", 2).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kiba_ranger_avatarou_gear = new item_avatarou_gear("kiba_ranger_avatarou_gear", 3).setCreativeTab(Tabs.tabDonBrothers);
+
+	public static Item gokai_silver_avatarou_gear = new item_avatarou_gear("gokai_silver_avatarou_gear", 4).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item beet_buster_avatarou_gear = new item_avatarou_gear("beet_buster_avatarou_gear", 5).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kyoryu_gold_avatarou_gear = new item_avatarou_gear("kyoryu_gold_avatarou_gear", 6).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item toq_6gou_avatarou_gear = new item_avatarou_gear("toq_6gou_avatarou_gear", 7).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item star_ninger_avatarou_gear = new item_avatarou_gear("star_ninger_avatarou_gear", 8).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item zyuoh_the_world_avatarou_gear = new item_avatarou_gear("zyuoh_the_world_avatarou_gear", 9).setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item houou_soldier_avatarou_gear = new item_avatarou_gear("houou_soldier_avatarou_gear", 10).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item lupin_x_avatarou_gear = new item_avatarou_gear("lupin_x_avatarou_gear", 11).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item patren_x_avatarou_gear = new item_avatarou_gear("patren_x_avatarou_gear", 12).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item ryusoul_gold_avatarou_gear = new item_avatarou_gear("ryusoul_gold_avatarou_gear", 13).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kiramei_silver_avatarou_gear = new item_avatarou_gear("kiramei_silver_avatarou_gear", 14).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item twokaizer_avatarou_gear = new item_avatarou_gear("twokaizer_avatarou_gear", 15).setCreativeTab(Tabs.tabDonBrothers);
+
+	public static Item gokaiger_avatarou_gear_alter = new item_alter_gear(2, "gokaiger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item go_busters_avatarou_gear_alter = new item_alter_gear(3, "go_busters_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kyoryuger_avatarou_gear_alter = new item_alter_gear(4, "kyoryuger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item toqger_avatarou_gear_alter = new item_alter_gear(5, "toqger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item ninninger_avatarou_gear_alter = new item_alter_gear(6, "ninninger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item zyuohger_avatarou_gear_alter = new item_alter_gear(7, "zyuohger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+
+	public static Item kyuranger_avatarou_gear_alter = new item_alter_gear(8, "kyuranger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item lupinranger_avatarou_gear_alter = new item_alter_gear(9, "lupinranger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item patranger_avatarou_gear_alter = new item_alter_gear(10, "patranger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item ryusoulger_avatarou_gear_alter = new item_alter_gear(11, "ryusoulger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kirameiger_avatarou_gear_alter = new item_alter_gear(12, "kirameiger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item zenkaiger_avatarou_gear_alter = new Item_ore("zenkaiger_avatarou_gear_alter").setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item don_blaster = new Item_gun("don_blaster", Tabs.gun,SentaiItems60.blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item ryuko_no_geki = new ItemBaseSword("ryuko_no_geki",Tabs.super_sword,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item tiguardora = new ItemBaseShield("tiguardora",SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item ninjark_sword = new item_sword_changer("ninjark_sword",Tabs.sword,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item zanglas_sword = new ItemBaseSword("zanglas_sword",Tabs.sword,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item full_konbou = new ItemBaseSword("full_konbou",Tabs.megaton,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item inu_brother_shuriken = new ItemBaseSword("inu_brother_shuriken",Tabs.throwable,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+
+	public static Item don_lupin_alter = new ItemBaseSword("don_lupin_alter",Tabs.sword,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_patren_alter = new ItemBaseShield("don_patren_alter",SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_ryusoul_alter = new ItemBaseSword("don_ryusoul_alter",Tabs.sword,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_ryusoul_alter_shield = new ItemBaseShield("don_ryusoul_alter_shield",SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	
+	public static Item baron_sword = new ItemBaseSword("baron_sword",Tabs.super_sword,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item sono_shield = new item_sono_shield("sono_shield").setCreativeTab(Tabs.tabDonBrothers);
+	public static Item condor_arrow = new Item_gun("condor_arrow", Tabs.bow,SentaiItems60.blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item condor_sword = new ItemBaseSword("condor_sword",Tabs.sword,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item kage_spear = new ItemBaseSword("kage_spear",Tabs.rod,SentaiItems60.blank_avatarou_gear).setCreativeTab(Tabs.tabDonBrothers);
 	
 	public static void init() 
 	{

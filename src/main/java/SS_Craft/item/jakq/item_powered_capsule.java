@@ -141,38 +141,38 @@ public class item_powered_capsule extends item_sentai_changer
 								{
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.ace_powered_capsule)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2, true, false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.jack_powered_capsule)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2, true, false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.queen_powered_capsule)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2, true, false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.king_powered_capsule)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2, true, false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.big_one_red_rose)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 3, true, false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
 									}
 								}

@@ -14,6 +14,8 @@ package SS_Craft.model;
 import org.lwjgl.opengl.GL11;
 
 import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems60;
+import SS_Craft.item.don_brothers.item_don_blaster;
 import SS_Craft.potion.PotionCore;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
@@ -51,9 +53,15 @@ public class model_belt_plus extends ModelBiped
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
 	{
+		
+		
 		float height=-2f;
 		float height2=0f;
+		float height3=1f;
 		float height4=-1.3f;
+		
+
+
 		
 		this.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 		if (entity instanceof EntityLivingBase){
@@ -68,7 +76,24 @@ public class model_belt_plus extends ModelBiped
 			}
 			GL11.glRotatef(180, 0, 1, 0);
 			GL11.glRotatef(180, 0, 0, 1);
-			GL11.glScaled(3,3,1);
+
+			if (living.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_don_blaster && item_don_blaster.get_alter(stack)!=0 && item_don_blaster.get_alter(stack)!=6 && item_don_blaster.get_alter(stack)!=7)
+			{	
+				GL11.glScaled(0.75,0.75,1);
+				GL11.glTranslated(0,-0.15,0);
+			}
+			else
+			{
+				GL11.glScaled(3,3,1);
+			}
+			
+			if (living.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==SentaiItems60.kiji_don_blaster && item_don_blaster.get_avatar(stack)==0 && item_don_blaster.get_core(stack)==0)
+			{	
+				if(living.isSneaking()){
+					GL11.glTranslated(0,0,-0.3);
+				}
+			}
+			
 			GL11.glTranslatef((float) (0f),-0.05f,-0.2f);
 			
 			Minecraft.getMinecraft().getItemRenderer().renderItem(living,wings,null);
@@ -86,6 +111,23 @@ public class model_belt_plus extends ModelBiped
 
 			GL11.glScaled(0.35, 0.35,0.35);
 
+			if (living.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==SentaiItems60.inu_don_blaster && item_don_blaster.get_avatar(stack)==0 && item_don_blaster.get_core(stack)==0)
+			{	
+				GL11.glTranslated(0,-0.7,-0.2);
+				
+				if(living.isSneaking()){
+					GL11.glTranslated(0,0.1,0.4);
+				}
+			}
+			if (living.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==SentaiItems60.kiji_don_blaster && item_don_blaster.get_avatar(stack)==0 && item_don_blaster.get_core(stack)==0)
+			{	
+				GL11.glTranslated(0,2.2,-0.2);
+				
+				if(living.isSneaking()){
+					GL11.glTranslated(0,-0.2,-0.9);
+				}
+			}
+			
 			GL11.glTranslatef((float) (0f+dri),-2f,0.6f);
 
 			Minecraft.getMinecraft().getItemRenderer().renderItem(living,belt,null);

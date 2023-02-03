@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "goldon_momotarou",
+  "pattern": [
+    "adg",
+    "beh",
+	"cfi"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:saru_brother_avatarou_gear"
+    },
+    "b": {
+      "item": "supersentaicraft:oni_sister_avatarou_gear"
+    },
+    "c": {
+      "item": "supersentaicraft:kiji_brother_avatarou_gear"
+    },
+    "d": {
+      "item": "supersentaicraft:don_momotarou_avatarou_gear"
+    },
+    "e": {
+      "item": "supersentaicraft:sono_shield"
+    },
+    "f": {
+      "item": "supersentaicraft:zenkaizer_black_avatarou_gear"
+    },
+    "g": {
+      "item": "supersentaicraft:sonoi_nouto_brace"
+    },
+    "h": {
+      "item": "supersentaicraft:sononi_nouto_brace"
+    },
+    "i": {
+      "item": "supersentaicraft:sonoza_nouto_brace"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:omikoshi_phoenix"
+  }
+}

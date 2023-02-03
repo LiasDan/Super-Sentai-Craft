@@ -26,26 +26,12 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:megaranger/mega_sniper"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:megaranger/mega_sniper1"
-      }
     }
   },
   "requirements": [
     [
       "has_item",
-      "has_item1",
-      "has_the_recipe",
-      "has_the_recipe1"
+      "has_item1"
     ]
   ]
 }

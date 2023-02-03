@@ -47,24 +47,6 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:go_busters/morphin_blaster"
-      }
-    },
-    "has_the_recipe1": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:go_busters/beet_enter_morphin_blaster"
-      }
-    },
-    "has_the_recipe2": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:go_busters/dri_blade"
-      }
     }
   },
   "requirements": [
@@ -72,10 +54,7 @@
       "has_logo",
       "has_logo1",
       "has_logo2",
-      "has_logo3",
-      "has_the_recipe",
-      "has_the_recipe1",
-      "has_the_recipe2"
+      "has_logo3"
     ]
   ]
 }

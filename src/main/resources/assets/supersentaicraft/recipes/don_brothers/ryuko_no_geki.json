@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "don_doragoku_torabolt",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_avatarou_gear"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:don_doragoku_avatarou_gear"
+	  },
+	  {
+	    "item": "supersentaicraft:don_torabolt_avatarou_gear"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:ryuko_no_geki"
+  }
+}

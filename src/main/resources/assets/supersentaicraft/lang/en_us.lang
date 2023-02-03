@@ -1732,8 +1732,7 @@ item.ichigou_vs_changer.name=VS Changer (Patren 1gou)
 item.nigou_vs_changer.name=VS Changer (Patren 2gou)
 item.sangou_vs_changer.name=VS Changer (Patren 3gou)
 
-item.lupin_x_changer.name=X Changer (Lupin X)
-item.patran_x_changer.name=X Changer (Patren X)
+item.lupin_x_changer.name=X Changer (Lupin X/Patren X)
 
 item.ichigou_girl_vs_changer.name=VS Changer (Patren 1gou Girl)
 item.nigou_girl_vs_changer.name=VS Changer (Patren 2gou Girl)
@@ -2129,6 +2128,152 @@ item.sta_shield.name=StaShield
 item.v_merang.name=V-Merang
 
 item.white_ribbon.name=White Ribbon
+
+//46 DonBrothers
+itemGroup.tabDonBrothers=Avatarou Sentai DonBrothers
+
+item.don_brothers_logo.name=DonBrothers Logo
+item.blank_avatarou_gear.name=Blank Avatarou Gear
+tile..name=
+
+item.don_brothers_head.name=DonBrothers Helmet
+item.don_brothers_torso.name=DonBrothers Chestplate
+item.don_brothers_legs.name=DonBrothers Leggings
+
+item.momotarou_don_blaster.name=DonBlaster (Don Momotarou)
+item.saru_don_blaster.name=DonBlaster (Saru Brother)
+item.oni_don_blaster.name=DonBlaster (Oni Sister)
+item.inu_don_blaster.name=DonBlaster (Inu Brother)
+item.kiji_don_blaster.name=DonBlaster (Kiji Brother)
+item.toradora_ryuko_no_geki.name=RyukoNoGeki (Don Doragoku/Don Torabolt)
+item.murasame_ninjark_sword.name=NinjarkSword (Don Murasame)
+item.black_geartlinger.name=Geartlinger (Zenkaizer Black)
+
+item.sonoi_nouto_brace.name=Nouto Brace (Sonoi)
+item.sononi_nouto_brace.name=Nouto Brace (Sononi)
+item.sonoza_nouto_brace.name=Nouto Brace (Sonoza)
+
+item.future_don_blaster.name=DonBlaster (Future Oni Sister)
+item.future_ninjark_sword.name=NinjarkSword (Future Don Murasame)
+
+item.don_momotarou_avatarou_gear.name=Don Momotarou Avatarou Gear
+item.saru_brother_avatarou_gear.name=Saru Brother Avatarou Gear
+item.oni_sister_avatarou_gear.name=Oni Sister Avatarou Gear
+item.inu_brother_avatarou_gear.name=Inu Brother Avatarou Gear
+item.kiji_brother_avatarou_gear.name=Kiji Brother Avatarou Gear
+item.don_doragoku_avatarou_gear.name=Don Doragoku Avatarou Gear
+item.don_torabolt_avatarou_gear.name=Don Torabolt Avatarou Gear
+item.don_murasame_avatarou_gear.name=Don Murasame Avatarou Gear
+item.zenkaizer_black_avatarou_gear.name=Zenkaizer Black Avatarou Gear
+item.omikoshi_phoenix.name=Omikoshi Phoenix
+
+item.don_momotarou_avatarou_gear_alter.name=Don Momotarou Avatarou Gear Alter
+item.don_doragoku_avatarou_gear_alter.name=Don Doragoku Avatarou Gear Alter
+item.don_murasame_avatarou_gear_alter.name=Don Murasame Avatarou Gear Alter
+
+item.oni_sister_manga_avatarou_gear.name=Oni Sister Avatarou Gear (Manga)
+
+item.goranger_avatarou_gear.name=Goranger Avatarou Gear
+item.jakq_avatarou_gear.name=J.A.K.Q. Avatarou Gear
+item.battle_fever_avatarou_gear.name=Battle Fever Avatarou Gear
+item.denziman_avatarou_gear.name=Denziman Avatarou Gear
+item.sun_vulcan_avatarou_gear.name=Sun Vulcan Avatarou Gear
+item.goggle_v_avatarou_gear.name=Goggle V Avatarou Gear
+item.dynaman_avatarou_gear.name=Dynaman Avatarou Gear
+item.bioman_avatarou_gear.name=Bioman Avatarou Gear
+item.changeman_avatarou_gear.name=Changeman Avatarou Gear
+item.flashman_avatarou_gear.name=Flashman Avatarou Gear
+
+item.maskman_avatarou_gear.name=Maskman Avatarou Gear
+item.liveman_avatarou_gear.name=Liveman Avatarou Gear
+item.turboranger_avatarou_gear.name=Turboranger Avatarou Gear
+item.fiveman_avatarou_gear.name=Fiveman Avatarou Gear
+item.jetman_avatarou_gear.name=Jetman Avatarou Gear
+item.zyuranger_avatarou_gear.name=Zyuranger Avatarou Gear
+item.dairanger_avatarou_gear.name=Dairanger Avatarou Gear
+item.kakuranger_avatarou_gear.name=Kakuranger Avatarou Gear
+item.ohranger_avatarou_gear.name=Ohranger Avatarou Gear
+item.carranger_avatarou_gear.name=Carranger Avatarou Gear
+
+item.megaranger_avatarou_gear.name=Megaranger Avatarou Gear
+item.gingaman_avatarou_gear.name=Gingaman Avatarou Gear
+item.gogo_v_avatarou_gear.name=GoGo-V Avatarou Gear
+item.timeranger_avatarou_gear.name=Timeranger Avatarou Gear
+item.gaoranger_avatarou_gear.name=Gaoranger Avatarou Gear
+item.hurricaneger_avatarou_gear.name=Hurricaneger Avatarou Gear
+item.abaranger_avatarou_gear.name=Abaranger Avatarou Gear
+item.dekaranger_avatarou_gear.name=Dekaranger Avatarou Gear
+item.magiranger_avatarou_gear.name=Magiranger Avatarou Gear
+item.boukenger_avatarou_gear.name=Boukenger Avatarou Gear
+
+item.gekiranger_avatarou_gear.name=Gekiranger Avatarou Gear
+item.go_onger_avatarou_gear.name=Go-Onger Avatarou Gear
+item.shinkenger_avatarou_gear.name=Shinkenger Avatarou Gear
+item.goseiger_avatarou_gear.name=Goseiger Avatarou Gear
+item.gokaiger_avatarou_gear.name=Gokaiger Avatarou Gear
+item.go_busters_avatarou_gear.name=Go-Busters Avatarou Gear
+item.kyoryuger_avatarou_gear.name=Kyoryuger Avatarou Gear
+item.toqger_avatarou_gear.name=ToQger Avatarou Gear
+item.ninninger_avatarou_gear.name=Ninninger Avatarou Gear
+item.zyuohger_avatarou_gear.name=Zyuohger Avatarou Gear
+
+item.kyuranger_avatarou_gear.name=Kyuranger Avatarou Gear
+item.lupinranger_avatarou_gear.name=Lupinranger Avatarou Gear
+item.patranger_avatarou_gear.name=Patranger Avatarou Gear
+item.ryusoulger_avatarou_gear.name=Ryusoulger Avatarou Gear
+item.kirameiger_avatarou_gear.name=Kirameiger Avatarou Gear
+item.zenkaiger_avatarou_gear.name=Zenkaiger Avatarou Gear
+
+item.dragon_ranger_avatarou_gear.name=DragonRanger Avatarou Gear
+item.kiba_ranger_avatarou_gear.name=KibaRanger Avatarou Gear
+
+item.gokai_silver_avatarou_gear.name=Gokai Silver Avatarou Gear
+item.beet_buster_avatarou_gear.name=Beet Buster Avatarou Gear
+item.kyoryu_gold_avatarou_gear.name=Kyoryu Gold Avatarou Gear
+item.toq_6gou_avatarou_gear.name=ToQ 6Gou Avatarou Gear
+item.star_ninger_avatarou_gear.name=StarNinger Avatarou Gear
+item.zyuoh_the_world_avatarou_gear.name=Zyuoh The World Avatarou Gear
+
+item.houou_soldier_avatarou_gear.name=Houou Soldier Avatarou Gear
+item.lupin_x_avatarou_gear.name=Lupin X Avatarou Gear
+item.patren_x_avatarou_gear.name=Patren X Avatarou Gear
+item.ryusoul_gold_avatarou_gear.name=Ryusoul Gold Avatarou Gear
+item.kiramei_silver_avatarou_gear.name=Kiramei Silver Avatarou Gear
+item.twokaizer_avatarou_gear.name=Twokaizer Avatarou Gear
+
+item.gokaiger_avatarou_gear_alter.name=Gokaiger Avatarou Gear Alter
+item.go_busters_avatarou_gear_alter.name=Go-Busters Avatarou Gear Alter
+item.kyoryuger_avatarou_gear_alter.name=Kyoryuger Avatarou Gear Alter
+item.toqger_avatarou_gear_alter.name=ToQger Avatarou Gear Alter
+item.ninninger_avatarou_gear_alter.name=Ninninger Avatarou Gear Alter
+item.zyuohger_avatarou_gear_alter.name=Zyuohger Avatarou Gear Alter
+
+item.kyuranger_avatarou_gear_alter.name=Kyuranger Avatarou Gear Alter
+item.lupinranger_avatarou_gear_alter.name=Lupinranger Avatarou Gear Alter
+item.patranger_avatarou_gear_alter.name=Patranger Avatarou Gear Alter
+item.ryusoulger_avatarou_gear_alter.name=Ryusoulger Avatarou Gear Alter
+item.kirameiger_avatarou_gear_alter.name=Kirameiger Avatarou Gear Alter
+item.zenkaiger_avatarou_gear_alter.name=Zenkaiger Avatarou Gear Alter
+
+item.don_blaster.name=DonBlaster
+item.ryuko_no_geki.name=RyukoNoGeki
+item.tiguardora.name=TiGuarDora
+item.ninjark_sword.name=NinjarkSword
+
+item.zanglas_sword.name=ZanglasSword
+item.full_konbou.name=Full Konbou
+item.inu_brother_shuriken.name=Inu Brother Shuriken
+
+item.don_lupin_alter.name=Lupinranger Alter
+item.don_patren_alter.name=Patranger Alter
+item.don_ryusoul_alter.name=Ryusoulger Alter Sword
+item.don_ryusoul_alter_shield.name=Ryusoulger Alter Shield
+
+item.baron_sword.name=Baron Sword
+item.sono_shield.name=Sono Shield
+item.condor_arrow.name=Condor Arrow
+item.condor_sword.name=Condor Arrow (Twin Blade)
+item.kage_spear.name=Kage Spear
 
 //?? Kawarimono Team
 itemGroup.tabKawarimono=Kawarimono (Oddball) Team

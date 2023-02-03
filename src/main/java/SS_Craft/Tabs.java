@@ -491,6 +491,19 @@ public class Tabs
 			return new ItemStack(SentaiItems60.zenkaiger_head);
 		}
 	};
+	//46
+	public static CreativeTabs tabDonBrothers= new CreativeTabs("tabDonBrothers")
+	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_don_brothers_items.png");
+	    }
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(SentaiItems60.don_brothers_head);
+		}
+	};
 	//??
 	public static CreativeTabs tabMisc= new CreativeTabs("tabMisc")
 	{

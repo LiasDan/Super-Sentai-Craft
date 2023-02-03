@@ -12,6 +12,7 @@ import SS_Craft.mobs.Boss.entity_dark_kiramei_silver;
 import SS_Craft.mobs.Boss.entity_dark_shishi_red;
 import SS_Craft.mobs.Boss.entity_death_ryuger;
 import SS_Craft.mobs.Boss.entity_dogold;
+import SS_Craft.mobs.Boss.entity_don_murasame;
 import SS_Craft.mobs.Boss.entity_dragon_ranger;
 import SS_Craft.mobs.Boss.entity_gaisorg;
 import SS_Craft.mobs.Boss.entity_gedou_shinken_red;
@@ -20,9 +21,13 @@ import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
 import SS_Craft.mobs.Boss.entity_neo_deka_red;
 import SS_Craft.mobs.Boss.entity_neo_deka_yellow;
 import SS_Craft.mobs.Boss.entity_rouki;
+import SS_Craft.mobs.Boss.entity_sonoi;
+import SS_Craft.mobs.Boss.entity_sononi;
+import SS_Craft.mobs.Boss.entity_sonoza;
 import SS_Craft.mobs.Boss.entity_stacaesar;
 import SS_Craft.mobs.Boss.entity_yami_0gou;
 import SS_Craft.mobs.Henchmen.entity_anaroids;
+import SS_Craft.mobs.Henchmen.entity_anounis;
 import SS_Craft.mobs.Henchmen.entity_barmias_black;
 import SS_Craft.mobs.Henchmen.entity_barmias_white;
 import SS_Craft.mobs.Henchmen.entity_bechats;
@@ -76,7 +81,6 @@ import SS_Craft.mobs.mini_boss.entity_batsuroids;
 import SS_Craft.mobs.mini_boss.entity_dora_sphinx;
 import SS_Craft.mobs.mini_boss.entity_pumpkin_rapper;
 import SS_Craft.mobs.mini_boss.entity_ular_captain;
-import SS_Craft.model.MobWithBeltModel;
 import SS_Craft.model.model_deinochaser;
 import SS_Craft.model.model_garu_bike;
 import SS_Craft.model.tokuMobModel;
@@ -248,6 +252,14 @@ public class ClientProxySentai extends CommonProxySentai
 		
 		RenderingRegistry.registerEntityRenderingHandler(entity_mecha_dark_gear.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_stacaesar.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_don_momotarou.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_don_momotarou.png"));
+	
+		//46 DonBrothers
+		RenderingRegistry.registerEntityRenderingHandler(entity_anounis.class, new RenderRiderMob2(new tokuMobModel("anouni_2"), 0.5F,"textures/entities/anouni_1.png"));
+
+		RenderingRegistry.registerEntityRenderingHandler(entity_sonoi.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_sonoi.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_sononi.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_sononi.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_sonoza.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_sonoza.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_don_murasame.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_don_murasame.png"));
 	}
 
 	public void registerItemRender(Item item, int i, String string) {

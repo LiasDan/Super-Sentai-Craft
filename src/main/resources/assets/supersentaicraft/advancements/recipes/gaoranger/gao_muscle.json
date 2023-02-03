@@ -35,19 +35,12 @@
           }
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:gaoranger/mecha/gao_muscle_head"
-      }
     }
   },
   "requirements": [
     [
       "has_logo",
-      "has_logo1",
-      "has_the_recipe"
+      "has_logo1"
     ]
   ]
 }

@@ -79,7 +79,7 @@ public class item_seiza_blaster extends item_sentai_changer
 			{
 				model_belt_plus armorModel = new model_belt_plus();
 				
-				if (this == SentaiItems60.commander_ryutsueder | (this == SentaiItems60.red_seiza_blaster & this.get_core(stack)==2) | (this == SentaiItems60.dark_red_seiza_blaster & this.get_core(stack)==1))
+				if ((this == SentaiItems60.commander_ryutsueder & this.get_core(stack)!=1) | (this == SentaiItems60.red_seiza_blaster & this.get_core(stack)==2) | (this == SentaiItems60.dark_red_seiza_blaster & this.get_core(stack)==1))
 				{
 					armorModel.belt=new ItemStack(SentaiItems60.ryu_buckle);
 				}
@@ -94,7 +94,7 @@ public class item_seiza_blaster extends item_sentai_changer
 				
 				if (this == SentaiItems60.pink_seiza_blaster)
 				{
-					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) & this.get_core(stack)==0)
+					if ((living instanceof EntityPlayer && (((EntityPlayer) living).capabilities.isFlying)) & (this.get_core(stack)==0 | this.get_core(stack)==3))
 					{
 						armorModel.wings=new ItemStack(SentaiItems60.washi_pink_wing);
 					}

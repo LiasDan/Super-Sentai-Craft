@@ -138,35 +138,30 @@ public class item_goranger_belt extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST,20, 2,true,false));
-										player.fallDistance=0; 
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.aoranger_belt)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST,20, 2,true,false));
-										player.fallDistance=0; 
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.kiranger_belt)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST,20, 2,true,false));
-										player.fallDistance=0; 
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.momoranger_belt)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST,20, 2,true,false));
-										player.fallDistance=0; 
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() ==  SentaiItems20.midoranger_belt)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST,20, 2,true,false));
-										player.fallDistance=0; 
 									}
 								}
 							}

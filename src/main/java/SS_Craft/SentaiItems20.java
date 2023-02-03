@@ -177,6 +177,8 @@ public class SentaiItems20
 	public static Item zorin_gun = new ItemBaseSword("zorin_gun", Tabs.sword,SentaiItems20.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	public static Item plug_lancer = new ItemBaseSword("plug_lancer", Tabs.sword,SentaiItems20.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
 	
+	public static Item ano_hammer = new ItemBaseSword("ano_hammer", Tabs.sword,SentaiItems20.blanknoitem).setMaxStackSize(1).setCreativeTab(Tabs.tabMisc);
+	
 	//Misc Items
 	public static Item mecha_gear = new Item_ore("mecha_gear").setCreativeTab(Tabs.tabMisc);
 	public static Block mecha_ore = new ore_block("mecha_ore", Material.ROCK, mecha_gear, 3).setHardness(9.9F).setCreativeTab(Tabs.tabMisc);

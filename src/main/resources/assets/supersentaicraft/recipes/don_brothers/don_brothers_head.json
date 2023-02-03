@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "don_brothers",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_avatarou_gear"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:don_brothers_head"
+  }
+}

@@ -11,7 +11,6 @@ import SS_Craft.item.gaoranger.mecha.item_gaoranger_mecha;
 import SS_Craft.item.sentai_armor_base.item_mecha;
 import SS_Craft.item.sentai_armor_base.item_mecha_changer;
 import SS_Craft.item.shinkenger.item_secret_disk;
-import SS_Craft.model.BipedLockseed;
 import SS_Craft.model.model_belt;
 import SS_Craft.model.tokuArmorModel;
 import SS_Craft.potion.PotionCore;

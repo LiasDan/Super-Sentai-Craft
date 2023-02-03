@@ -141,11 +141,11 @@ public class item_techno_brace extends item_sentai_changer
 								{
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_techno_brace)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.green_techno_brace)
@@ -159,38 +159,30 @@ public class item_techno_brace extends item_sentai_changer
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.blue_techno_brace)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
-										player.fallDistance=0; 
-										
-										if (player.isSneaking())
-										{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/2;
-											player.motionY=look.y/2;
-											player.motionZ=look.z/2;
-										}
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST, 20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.yellow_techno_brace)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.pink_techno_brace)
 									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.bio_hunter_silva_belt)

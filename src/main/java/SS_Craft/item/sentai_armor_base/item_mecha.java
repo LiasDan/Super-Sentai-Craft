@@ -10,7 +10,6 @@ import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.model.model_belt;
 import SS_Craft.model.model_belt_plus;
-import SS_Craft.model.tokuArmorModel;
 import SS_Craft.util.IHasModel;
 import SS_Craft.util.Refercence;
 import net.minecraft.client.Minecraft;

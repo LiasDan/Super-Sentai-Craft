@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "don_brothers",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:blank_avatarou_gear"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:don_brothers_logo"
+  }
+}

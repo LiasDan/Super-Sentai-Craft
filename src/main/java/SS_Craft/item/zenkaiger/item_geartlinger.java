@@ -527,7 +527,7 @@ public class item_geartlinger extends item_sentai_changer
 				{
 					if (rider=="twokaizer" || rider=="twokai_flint")
 					{
-						if (item_geartlinger.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0)
+						if (item_geartlinger.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="base")
 						{
 							return Refercence.MODID+":textures/armor/"+rider+"_base"+ext;
 						}
