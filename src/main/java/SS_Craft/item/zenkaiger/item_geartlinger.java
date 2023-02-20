@@ -449,7 +449,7 @@ public class item_geartlinger extends item_sentai_changer
 									{
 										if (this.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) < 1000)
 										{
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 0,true,false));
 										}
 										else
 										{

@@ -174,7 +174,7 @@ public class item_doron_changer extends item_sentai_changer
 								{
 									if (this.get_effect(armor)==1)
 									{
-										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_BIG,20, 0,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.red_doron_changer)
 									{
@@ -183,13 +183,7 @@ public class item_doron_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
-										
-										if (player.isSneaking())
-										{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/5;
-											player.motionZ=look.z/5;
-										}
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.white_doron_changer)
 									{
@@ -198,13 +192,7 @@ public class item_doron_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
-										
-										if (player.isSneaking())
-										{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/5;
-											player.motionZ=look.z/5;
-										}
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.yellow_doron_changer)
 									{
@@ -213,13 +201,7 @@ public class item_doron_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 2,true,false));
-										
-										if (player.isSneaking())
-										{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/5;
-											player.motionZ=look.z/5;
-										}
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.blue_doron_changer)
 									{
@@ -228,23 +210,8 @@ public class item_doron_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
-										
-										if (player.isSneaking())
-										{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/5;
-											player.motionZ=look.z/5;
-										}
-										if (player.isInWater())
-										{
-											if (player.isSneaking())
-											{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/5;
-											player.motionY=look.y/5;
-											player.motionZ=look.z/5;
-											}
-										}
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_WATERBOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.black_doron_changer)
 									{
@@ -254,13 +221,7 @@ public class item_doron_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 2,true,false));
-										
-										if (player.isSneaking())
-										{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/5;
-											player.motionZ=look.z/5;
-										}
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems20.ninjaman_urn)
 									{
@@ -268,13 +229,7 @@ public class item_doron_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
-										
-										if (player.isSneaking())
-										{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/5;
-											player.motionZ=look.z/5;
-										}
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
 										
 										if(this.get_core(armor)==0)
 										{

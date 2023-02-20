@@ -55,12 +55,14 @@ public class item_alter_gear extends Item implements IHasModel
 					if (this == SentaiItems60.don_momotarou_avatarou_gear_alter)
 					{
 						item_don_blaster.set_alter(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
+						item_don_blaster.set_avatar(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 						item_don_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 						item_don_blaster.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 					else if (item_don_blaster.get_alter(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=0)
 					{
 						item_don_blaster.set_alter(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
+						item_don_blaster.set_avatar(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 				else if (belt == SentaiItems60.toradora_ryuko_no_geki)
@@ -68,11 +70,13 @@ public class item_alter_gear extends Item implements IHasModel
 					if (this == SentaiItems60.don_doragoku_avatarou_gear_alter)
 					{
 						item_don_blaster.set_alter(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
+						item_don_blaster.set_avatar(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 						item_don_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 					else if (item_don_blaster.get_alter(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=0)
 					{
 						item_don_blaster.set_alter(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
+						item_don_blaster.set_avatar(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 				else if (belt == SentaiItems60.murasame_ninjark_sword)
@@ -80,11 +84,13 @@ public class item_alter_gear extends Item implements IHasModel
 					if (this == SentaiItems60.don_murasame_avatarou_gear_alter)
 					{
 						item_don_blaster.set_alter(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
+						item_don_blaster.set_avatar(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 						item_don_blaster.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 					else if (item_don_blaster.get_alter(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=0)
 					{
 						item_don_blaster.set_alter(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), num);
+						item_don_blaster.set_avatar(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
 					}
 				}
 			}

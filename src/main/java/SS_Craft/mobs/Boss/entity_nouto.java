@@ -64,16 +64,16 @@ import net.minecraft.world.BossInfoServer;
 import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.World;
 
-public class entity_sonoza extends EntityBossBase
+public class entity_nouto extends EntityBossBase
 //implements IBossDisplayData
 {
-	public entity_sonoza(World par1World)
+	public entity_nouto(World par1World)
 	{
 		super(par1World);
-		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.kage_spear));
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.baron_sword));
 		this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems60.don_brothers_torso));
 		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems60.don_brothers_head));
-		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.sonoza_nouto_brace));
+		this.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.sonoi_nouto_brace));
 		this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems60.don_brothers_legs));
 	}
 
@@ -98,17 +98,52 @@ public class entity_sonoza extends EntityBossBase
 		{
 			this.dropItem(SentaiItems60.blank_avatarou_gear, 5);
 			
-			switch (this.rand.nextInt(5))
-			{   		   	    		
-			case 0:
-				this.dropItem(SentaiItems60.sonoza_nouto_brace, 1);
-				break;   		   	    		
-			case 1:
-				this.dropItem(SentaiItems60.kage_spear, 1);
-				break;    		   	    		
-			case 2:
-				this.dropItem(SentaiItems60.oni_sister_manga_avatarou_gear, 1);
-				break;
+			if (this.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==SentaiItems60.sonoi_nouto_brace)
+			{
+				switch (this.rand.nextInt(5))
+					{   		   	    		
+				case 0:
+					this.dropItem(SentaiItems60.sonoi_nouto_brace, 1);
+					break;   		   	    		
+				case 1:
+					this.dropItem(SentaiItems60.baron_sword, 1);
+					break; 		   	    		
+				case 2:
+					this.dropItem(SentaiItems60.sono_shield, 1);
+					break;
+				}
+			}
+			
+			if (this.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==SentaiItems60.sononi_nouto_brace)
+			{
+				switch (this.rand.nextInt(5))
+					{   		   	    		
+				case 0:
+					this.dropItem(SentaiItems60.sononi_nouto_brace, 1);
+					break;   		   	    		
+				case 1:
+					this.dropItem(SentaiItems60.condor_arrow, 1);
+					break; 		   	    		
+				case 2:
+					this.dropItem(SentaiItems60.condor_sword, 1);
+					break;
+				}
+			}
+			
+			if (this.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem()==SentaiItems60.sonoza_nouto_brace)
+			{
+				switch (this.rand.nextInt(5))
+					{   		   	    		
+				case 0:
+					this.dropItem(SentaiItems60.sonoza_nouto_brace, 1);
+					break;   		   	    		
+				case 1:
+					this.dropItem(SentaiItems60.kage_spear, 1);
+					break; 		   	    		
+				case 2:
+					this.dropItem(SentaiItems60.oni_sister_manga_avatarou_gear, 1);
+					break;
+				}
 			}
 		}
 	}

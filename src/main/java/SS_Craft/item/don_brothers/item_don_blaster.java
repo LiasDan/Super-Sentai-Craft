@@ -9,6 +9,7 @@ import SS_Craft.SentaiItems40;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.item.dekaranger.item_sp_license;
+import SS_Craft.item.go_busters.item_morphin_brace;
 import SS_Craft.item.ryusoulger.item_ryusoul_changer;
 import SS_Craft.item.sentai_armor_base.item_form_changer;
 import SS_Craft.item.sentai_armor_base.item_sentai_changer;
@@ -140,6 +141,10 @@ public class item_don_blaster extends item_sentai_changer
 					if (living.getHeldItem(EnumHand.OFF_HAND).getItem()==SentaiItems60.ninjark_sword || living.getHeldItem(EnumHand.MAIN_HAND).getItem()==SentaiItems60.ninjark_sword || this.get_avatar(stack)!=0)
 					{
 						armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
+					}
+					else if (this.get_alter(stack)!=0)
+					{
+						armorModel.wings=new ItemStack(alter[this.get_alter(stack)]);
 					}
 					else
 					{
@@ -280,6 +285,28 @@ public class item_don_blaster extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 
+										if (this.get_alter(armor)!=0)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SMALL,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+										}
+										
+										if (this.get_lock(armor)=="_goldon_armor")
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 5,true,false));
+										}
+										
 										if (this.get_avatar(armor)==0)
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
@@ -361,8 +388,181 @@ public class item_don_blaster extends item_sentai_changer
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										}
-										if (this.get_avatar(armor)==1)
+										if (this.get_avatar(armor)==16)
 										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==17)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==18)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==19)
+										{
+											//Ohranger
+										}
+										if (this.get_avatar(armor)==20)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
+										}
+										if (this.get_avatar(armor)==21)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==22)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==23)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==24)
+										{
+											//Timeranger
+										}
+										if (this.get_avatar(armor)==25)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==26)
+										{
+											//Hurricaneger
+										}
+										if (this.get_avatar(armor)==27)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==28)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==29)
+										{
+											//Magiranger
+										}
+										if (this.get_avatar(armor)==30)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==31)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==32)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==33)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2, true, false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_SLASH, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==34)
+										{
+											//Goseiger
+										}
+										if (this.get_avatar(armor)==35)
+										{
+											//Gokaiger
+										}
+										if (this.get_avatar(armor)==36)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+											
+											if (item_morphin_brace.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) > 45)
+											{
+												player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 4,true,false));
+											}
+										}
+										if (this.get_avatar(armor)==37)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==38)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==39)
+										{
+											//Ninninger
+										}
+										if (this.get_avatar(armor)==40)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==41)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.LUCK,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==42)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==43)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
+										}
+										if (this.get_avatar(armor)==44)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 2,true,false));
+										}
+										if (this.get_avatar(armor)==45)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==46)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
 										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.saru_don_blaster)
@@ -450,11 +650,179 @@ public class item_don_blaster extends item_sentai_changer
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										}
+										if (this.get_avatar(armor)==16)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==17)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==18)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_WATERBOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==19)
+										{
+											//Ohranger
+										}
+										if (this.get_avatar(armor)==20)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
+										}
+										if (this.get_avatar(armor)==21)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==22)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==23)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==24)
+										{
+											//Timeranger
+										}
+										if (this.get_avatar(armor)==25)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==26)
+										{
+											//Hurricaneger
+										}
+										if (this.get_avatar(armor)==27)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==28)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==29)
+										{
+											//Magiranger
+										}
+										if (this.get_avatar(armor)==30)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==31)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==32)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==33)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 20, 2, true, false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==34)
+										{
+											//Goseiger
+										}
+										if (this.get_avatar(armor)==35)
+										{
+											//Gokaiger
+										}
+										if (this.get_avatar(armor)==36)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==37)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==38)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==39)
+										{
+											//Ninninger
+										}
+										if (this.get_avatar(armor)==40)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_WATERBOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==41)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+										}
+										if (this.get_avatar(armor)==42)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==44)
+										{
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==45)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
+										}
 									}
-									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.oni_don_blaster)
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.oni_don_blaster || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.future_don_blaster)
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										
+										if (this.get_lock(armor)=="_goldon_armor")
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 5,true,false));
+										}
 										
 										if (this.get_avatar(armor)==0)
 										{
@@ -524,6 +892,150 @@ public class item_don_blaster extends item_sentai_changer
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										}
+										if (this.get_avatar(armor)==16)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==17)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==18)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_PUNCH_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==19)
+										{
+											//Ohranger
+										}
+										if (this.get_avatar(armor)==20)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
+										}
+										if (this.get_avatar(armor)==21)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+										}
+										if (this.get_avatar(armor)==22)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==23)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==24)
+										{
+											//Timeranger
+										}
+										if (this.get_avatar(armor)==25)
+										{
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==26)
+										{
+											//Hurricaneger
+										}
+										if (this.get_avatar(armor)==27)
+										{
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==28)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==29)
+										{
+											//Magiranger
+										}
+										if (this.get_avatar(armor)==30)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==31)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==32)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==33)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==34)
+										{
+											//Goseiger
+										}
+										if (this.get_avatar(armor)==35)
+										{
+											//Gokaiger
+										}
+										if (this.get_avatar(armor)==36)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==38)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==39)
+										{
+											//Ninninger
+										}
+										if (this.get_avatar(armor)==40)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+										}
+										if (this.get_avatar(armor)==41)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==42)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==45)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
+										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.inu_don_blaster)
 									{
@@ -578,6 +1090,66 @@ public class item_don_blaster extends item_sentai_changer
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==16)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==18)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==21)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==25)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										}
+										if (this.get_avatar(armor)==27)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==30)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+										}
+										if (this.get_avatar(armor)==34)
+										{
+											//Goseiger
+										}
+										if (this.get_avatar(armor)==37)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==41)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==44)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.kiji_don_blaster)
@@ -653,6 +1225,298 @@ public class item_don_blaster extends item_sentai_changer
 										{
 											//Fiveman
 										}
+										if (this.get_avatar(armor)==16)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==17)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==19)
+										{
+											//Ohranger
+										}
+										if (this.get_avatar(armor)==20)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
+										}
+										if (this.get_avatar(armor)==21)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==22)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==23)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==24)
+										{
+											//Timeranger
+										}
+										if (this.get_avatar(armor)==28)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
+										}
+										if (this.get_avatar(armor)==29)
+										{
+											//Magiranger
+										}
+										if (this.get_avatar(armor)==30)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_WATERBOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==33)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2, true, false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==34)
+										{
+											//Goseiger
+										}
+										if (this.get_avatar(armor)==35)
+										{
+											//Gokaiger
+										}
+										if (this.get_avatar(armor)==37)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==38)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==39)
+										{
+											//Ninninger
+										}
+										if (this.get_avatar(armor)==41)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+										}
+										if (this.get_avatar(armor)==43)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
+										}
+										if (this.get_avatar(armor)==44)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+										}
+										if (this.get_avatar(armor)==45)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.toradora_ryuko_no_geki)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+
+										if (this.get_alter(armor)!=0)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SMALL,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+										}
+
+										if (this.get_core(armor)==0 | this.get_core(armor)==1)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+										}
+										if (this.get_core(armor)==2)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										}
+										if (this.get_core(armor)==3)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FIRE_PUNCH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										}
+										if (this.get_core(armor)==4)
+										{
+											//Gokai Silver
+										}
+										if (this.get_core(armor)==5)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										}
+										if (this.get_core(armor)==6)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
+										}
+										if (this.get_core(armor)==7)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										}
+										if (this.get_core(armor)==8)
+										{
+											//Star Ninger
+										}
+										if (this.get_core(armor)==9)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+										}
+										if (this.get_core(armor)==10)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										}
+										if (this.get_core(armor)==11)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+										}
+										if (this.get_core(armor)==12)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
+										}
+										if (this.get_core(armor)==13)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+										}
+										if (this.get_core(armor)==14)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
+										}
+										if (this.get_core(armor)==15)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.murasame_ninjark_sword || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.future_ninjark_sword)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+
+										if (this.get_alter(armor)!=0)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SMALL,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 2,true,false));
+										}
+
+										if (this.get_avatar(armor)==0)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
+										}
+										if (this.get_avatar(armor)==27)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.black_geartlinger)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.sonoi_nouto_brace)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 2,true,false));
+										
+										if (this.get_core(armor)==1)
+										{
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST,20, 4,true,false));
+										}
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.sononi_nouto_brace)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
+									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.sonoza_nouto_brace)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 									}
 								}
 							}
@@ -703,7 +1567,7 @@ public class item_don_blaster extends item_sentai_changer
 					{
 						return Refercence.MODID+":textures/armor/"+rider+Momotarou[item_don_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
 					}
-					else if (rider=="oni_sister")
+					else if (rider=="oni_sister" & this.get_avatar(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==0)
 					{
 						return Refercence.MODID+":textures/armor/"+rider+Oni[item_don_blaster.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))]+ext;
 					}

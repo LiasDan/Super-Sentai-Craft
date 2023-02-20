@@ -96,7 +96,9 @@ public class model_belt_plus extends ModelBiped
 			
 			GL11.glTranslatef((float) (0f),-0.05f,-0.2f);
 			
+			if (wings.getItem()!=SentaiItems20.blanknoitem){
 			Minecraft.getMinecraft().getItemRenderer().renderItem(living,wings,null);
+			}
 			GL11.glPopMatrix();
 			GL11.glPushMatrix();
 
@@ -142,9 +144,13 @@ public class model_belt_plus extends ModelBiped
 			GL11.glScaled(0.5, 0.5,0.5);
 			GL11.glTranslatef((float) (0f+dri),-1.3f,0.4f);
 			
+			if (belt3.getItem()!=SentaiItems20.blanknoitem){
 			Minecraft.getMinecraft().getItemRenderer().renderItem(living,belt2,null);
+			}if (belt3.getItem()!=SentaiItems20.blanknoitem){
 			Minecraft.getMinecraft().getItemRenderer().renderItem(living,belt3,null);
+			}if (belt3.getItem()!=SentaiItems20.blanknoitem){
 			Minecraft.getMinecraft().getItemRenderer().renderItem(living,belt4,null);
+			}
 			GL11.glPopMatrix();
 			GL11.glPopMatrix();
 			

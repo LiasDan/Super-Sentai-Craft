@@ -6,6 +6,10 @@ effect.slash_boost=スラッシュブースト
 effect.fire_slash=ファイヤースラッシュ
 effect.fire_shot=ファイヤーショット
 effect.shot_boost=ショットブースト
+effect.inubrother=イヌブラザー
+effect.kijibrother=キジブラザー
+effect.sneakboost=スニークブースト
+effect.waterboost=ウォーターブースト
 
 entity.ZoldersMob.name=ゾルダー
 entity.CrimersMob.name=クライマー
@@ -78,6 +82,9 @@ entity.StacaesarMob.name=ステイシーザー
 entity.HakaizerMob.name=ハカイザー
 entity.MechaDarkGearMob.name=贋戦隊ロボ(ダーク戦隊ギア)
 entity.DonMomotarouMob.name=ドンモモタロウ
+entity.AnounisMob.name=アノーニ
+entity.NoutoMob.name=脳人
+entity.DonMurasameMob.name=ドンムラサメ
 
 item.super_sentai_logo.name=スーパー戦隊ロゴ
 
@@ -124,6 +131,8 @@ item.batsu_sword.name=バツソード
 item.iga_sword.name=イガソード
 item.zorin_gun.name=ゾリンガン
 item.plug_lancer.name=プラグランサー
+
+item.ano_hammer.name=アノハンマー
 
 //01 Goranger
 itemGroup.tabGoranger=秘密戦隊ゴレンジャー
@@ -1732,8 +1741,7 @@ item.ichigou_vs_changer.name=VSチェンジャー(パトレン1号)
 item.nigou_vs_changer.name=VSチェンジャー(パトレン2号)
 item.sangou_vs_changer.name=VSチェンジャー(パトレン3号)
 
-item.lupin_x_changer.name=Xチェンジャー(ルパンX)
-item.patran_x_changer.name=Xチェンジャー(パトレンX)
+item.lupin_x_changer.name=Xチェンジャー(ルパンX/パトレンX)
 
 item.ichigou_girl_vs_changer.name=VSチェンジャー(パトレン1号｜少女)
 item.nigou_girl_vs_changer.name=VSチェンジャー(パトレン2号｜少女)

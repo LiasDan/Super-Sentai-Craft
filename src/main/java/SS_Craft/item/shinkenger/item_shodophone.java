@@ -198,15 +198,15 @@ public class item_shodophone extends item_sentai_changer
 									}
 									if (this.get_lock(armor)=="shinken_super"||this.get_lock(armor)=="shinken_gedou")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 3,true,false));
-									}
-									if (this.get_lock(armor)=="shinken_hyper")
-									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 4,true,false));
+									}
+									if (this.get_lock(armor)=="shinken_hyper")
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SLASH_BOOST, 20, 5,true,false));
 									}
 								}
 							}

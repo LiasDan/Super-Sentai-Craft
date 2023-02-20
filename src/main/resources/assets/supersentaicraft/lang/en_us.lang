@@ -6,6 +6,10 @@ effect.slash_boost=Slash Boost
 effect.fire_slash=Fire Slash
 effect.fire_shot=Fire Shot
 effect.shot_boost=Shot Boost
+effect.inubrother=InuBrother
+effect.kijibrother=KijiBrother
+effect.sneakboost=Sneak Boost
+effect.waterboost=Water Boost
 
 entity.ZoldersMob.name=Zolders
 entity.CrimersMob.name=Crimers
@@ -78,6 +82,9 @@ entity.StacaesarMob.name=Stacaesar
 entity.HakaizerMob.name=Hakaizer
 entity.MechaDarkGearMob.name=Fake Sentai Robo （Dark Sentai Gear）
 entity.DonMomotarouMob.name=DonMomotarou
+entity.AnounisMob.name=Anouni
+entity.NoutoMob.name=Nouto
+entity.DonMurasameMob.name=Don Murasame
 
 item.super_sentai_logo.name=Super Sentai Logo
 
@@ -124,6 +131,8 @@ item.batsu_sword.name=BatsuSword
 item.iga_sword.name=IgaSword
 item.zorin_gun.name=ZorinGun
 item.plug_lancer.name=Plug Lancer
+
+item.ano_hammer.name=AnoHammer
 
 //01 Goranger
 itemGroup.tabGoranger=Himitsu Sentai Goranger

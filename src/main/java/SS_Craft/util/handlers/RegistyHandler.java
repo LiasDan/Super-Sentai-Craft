@@ -127,6 +127,40 @@ public class RegistyHandler {
 		
 			}
 		}
+		
+		if(event.player.isPotionActive(PotionCore.SS_SNEAKBOOST)) {
+			if (event.player.isSneaking()){
+
+				Vec3d look = event.player.getLookVec();
+				event.player.motionX=look.x*(1+event.player.getActivePotionEffect(PotionCore.SS_SNEAKBOOST).getAmplifier());
+				event.player.motionZ=look.z*(1+event.player.getActivePotionEffect(PotionCore.SS_SNEAKBOOST).getAmplifier());
+				
+				event.player.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL,event.player.posX,event.player.posY, event.player.posZ, 0.0D, 0.0D, 0.0D);
+				event.player.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL,event.player.posX,event.player.posY+1, event.player.posZ, 0.0D, 0.0D, 0.0D);
+				event.player.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL,event.player.posX,event.player.posY+0.5, event.player.posZ, 0.0D, 0.0D, 0.0D);
+		
+			}
+		}
+		
+		if(event.player.isPotionActive(PotionCore.SS_WATERBOOST)) {
+
+			if (event.player.isInWater()) 
+			{
+				if (event.player.isSneaking())
+				{
+					event.player.fallDistance = 0.0f;
+					Vec3d look = event.player.getLookVec();
+					event.player.motionX=look.x*(1+event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier());
+					event.player.motionY=look.y*(0.5*(1+event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier()));
+					event.player.motionZ=look.z*(1+event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier());
+					event.player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,event.player.getActivePotionEffect(PotionCore.SS_PUNCH_BOOST).getAmplifier(), 4,true,false));
+				
+					event.player.world.spawnParticle(EnumParticleTypes.WATER_SPLASH,event.player.posX,event.player.posY, event.player.posZ, 0.0D, 0.0D, 0.0D);
+					event.player.world.spawnParticle(EnumParticleTypes.WATER_SPLASH,event.player.posX,event.player.posY+1, event.player.posZ, 0.0D, 0.0D, 0.0D);
+					event.player.world.spawnParticle(EnumParticleTypes.WATER_SPLASH,event.player.posX,event.player.posY+0.5, event.player.posZ, 0.0D, 0.0D, 0.0D);
+				}
+			}
+		}
 	}
 
 	@SubscribeEvent

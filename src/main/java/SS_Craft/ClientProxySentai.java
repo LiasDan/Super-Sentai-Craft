@@ -21,9 +21,7 @@ import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
 import SS_Craft.mobs.Boss.entity_neo_deka_red;
 import SS_Craft.mobs.Boss.entity_neo_deka_yellow;
 import SS_Craft.mobs.Boss.entity_rouki;
-import SS_Craft.mobs.Boss.entity_sonoi;
-import SS_Craft.mobs.Boss.entity_sononi;
-import SS_Craft.mobs.Boss.entity_sonoza;
+import SS_Craft.mobs.Boss.entity_nouto;
 import SS_Craft.mobs.Boss.entity_stacaesar;
 import SS_Craft.mobs.Boss.entity_yami_0gou;
 import SS_Craft.mobs.Henchmen.entity_anaroids;
@@ -256,9 +254,7 @@ public class ClientProxySentai extends CommonProxySentai
 		//46 DonBrothers
 		RenderingRegistry.registerEntityRenderingHandler(entity_anounis.class, new RenderRiderMob2(new tokuMobModel("anouni_2"), 0.5F,"textures/entities/anouni_1.png"));
 
-		RenderingRegistry.registerEntityRenderingHandler(entity_sonoi.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_sonoi.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_sononi.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_sononi.png"));
-		RenderingRegistry.registerEntityRenderingHandler(entity_sonoza.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_sonoza.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_nouto.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_sonoi.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_don_murasame.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_don_murasame.png"));
 	}
 

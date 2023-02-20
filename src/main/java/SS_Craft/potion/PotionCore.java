@@ -20,6 +20,8 @@ public class PotionCore {
 	public static final Potion SS_BOOST = new PotionBoost();
 	public static final Potion SS_KIJIBROTHER = new PotionKijiBrother();
 	public static final Potion SS_INUBROTHER = new PotionInuBrother();
+	public static final Potion SS_SNEAKBOOST = new PotionSneakBoost();
+	public static final Potion SS_WATERBOOST = new PotionWaterBoost();
 	
 	public static void init(FMLInitializationEvent event) {
 		ForgeRegistries.POTIONS.register(SS_FLY_POTION);
@@ -33,6 +35,8 @@ public class PotionCore {
 		ForgeRegistries.POTIONS.register(SS_BOOST);
 		ForgeRegistries.POTIONS.register(SS_KIJIBROTHER);
 		ForgeRegistries.POTIONS.register(SS_INUBROTHER);
+		ForgeRegistries.POTIONS.register(SS_SNEAKBOOST);
+		ForgeRegistries.POTIONS.register(SS_WATERBOOST);
 	}
 	
 }

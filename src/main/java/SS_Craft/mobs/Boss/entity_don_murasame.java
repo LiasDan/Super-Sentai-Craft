@@ -13,6 +13,7 @@ import com.google.common.collect.Sets;
 
 import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems60;
+import SS_Craft.item.don_brothers.item_don_blaster;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -110,6 +111,19 @@ public class entity_don_murasame extends EntityBossBase
 			case 2:
 				this.dropItem(SentaiItems60.future_ninjark_sword, 1);
 				break;
+			}
+			
+			if (item_don_blaster.get_alter(this.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+			{
+				switch (this.rand.nextInt(5))
+				{   		   	    		
+				case 0:
+					this.dropItem(SentaiItems60.don_momotarou_avatarou_gear_alter, 1);
+					break;   		   	    		
+				case 1:
+					this.dropItem(SentaiItems60.don_doragoku_avatarou_gear_alter, 1);
+					break; 	
+				}
 			}
 		}
 	}

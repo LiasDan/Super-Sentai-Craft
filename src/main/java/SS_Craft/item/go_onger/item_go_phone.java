@@ -207,7 +207,6 @@ public class item_go_phone extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
-										player.fallDistance=0; 
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST, 20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.silver_wing_trigger)
@@ -217,13 +216,12 @@ public class item_go_phone extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 20, 2,true,false));
-										player.fallDistance=0; 
 										player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST, 20, 2,true,false));
 									}
 									if (this.get_lock(armor)=="shinken_hyper_mode")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 4,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 5,true,false));
 									}
 								}
 							}

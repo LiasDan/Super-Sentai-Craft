@@ -210,15 +210,16 @@ public class item_seiza_blaster extends item_sentai_changer
 									{
 										if (this.get_core(armor)==2)
 										{
-											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 4,true,false));
-											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 4,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 5,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.LUCK,20, 5,true,false));
 										}
 										else
 										{
@@ -226,6 +227,7 @@ public class item_seiza_blaster extends item_sentai_changer
 											player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 											player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+											player.addPotionEffect(new PotionEffect(MobEffects.LUCK,20, 2,true,false));
 										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.orange_seiza_blaster)
@@ -250,8 +252,8 @@ public class item_seiza_blaster extends item_sentai_changer
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.black_seiza_blaster)
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 									}

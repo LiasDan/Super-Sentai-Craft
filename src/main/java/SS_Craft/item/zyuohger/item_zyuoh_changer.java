@@ -262,18 +262,8 @@ public class item_zyuoh_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING,20, 2,true,false));
-										if (player.isInWater())
-										{
-											player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
-											
-											if (player.isSneaking())
-											{
-											Vec3d look = player.getLookVec();
-											player.motionX=look.x/2;
-											player.motionY=look.y/2;
-											player.motionZ=look.z/2;
-											}
-										}
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_WATERBOOST,20, 2,true,false));
+										
 										if (this.get_lock(armor)=="yasei_kaihou")
 										{
 											player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 4,true,false));
@@ -282,8 +272,8 @@ public class item_zyuoh_changer extends item_sentai_changer
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.lion_zyuoh_changer)
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
 										
 										if (this.get_lock(armor)=="yasei_kaihou")
@@ -321,8 +311,8 @@ public class item_zyuoh_changer extends item_sentai_changer
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.zyuoh_the_light)
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 										
 										if (this.get_core(armor)==0)

@@ -161,14 +161,7 @@ public class item_morphin_brace extends item_sentai_changer
 										
 										if (item_morphin_brace.get_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET)) > 45)
 										{
-											if (player.isSneaking())
-											{
-												Vec3d look = player.getLookVec();
-												player.motionX=look.x*5;
-												player.motionY=look.y;
-												player.motionZ=look.z*5;
-												item_morphin_brace.set_eftTime(player.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
-											}
+											player.addPotionEffect(new PotionEffect(PotionCore.SS_SNEAKBOOST,20, 4,true,false));
 										}
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.blue_morphin_brace || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.gorilla_morphin_brace)
@@ -193,8 +186,8 @@ public class item_morphin_brace extends item_sentai_changer
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.beet_morphin_blaster || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.beetle_morphin_blaster || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.beet_enter_morphin_blaster)
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.stag_morphin_blaster)

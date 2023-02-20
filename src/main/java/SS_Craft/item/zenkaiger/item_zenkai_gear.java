@@ -4,6 +4,7 @@ package SS_Craft.item.zenkaiger;
 import SS_Craft.SentaiItems40;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.don_brothers.item_don_blaster;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.lupatranger.item_vs_changer;
 import SS_Craft.item.zyuohger.item_zyuoh_changer;
@@ -188,6 +189,25 @@ public class item_zenkai_gear extends Item implements IHasModel
 					if (this == SentaiItems60.stacaesar_gear)
 					{
 						playerIn.setItemStackToSlot(EntityEquipmentSlot.FEET,  new ItemStack(SentaiItems60.stacaeser_geartozinger));
+					}
+				}
+			}
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_don_blaster)
+			{
+				if (this == SentaiItems60.zenkaizer_gear)
+				{
+					playerIn.dropItem(SentaiItems60.zenkaiger_avatarou_gear, 1);
+				}
+
+				if (!playerIn.capabilities.isCreativeMode)
+				{
+					if(handIn==EnumHand.MAIN_HAND)
+					{
+						playerIn.getHeldItemMainhand().shrink(1);			
+					}
+					else
+					{
+						playerIn.getHeldItemOffhand().shrink(1);	
 					}
 				}
 			}

@@ -9,6 +9,7 @@ import SS_Craft.SentaiItems20;
 import SS_Craft.SentaiItems40;
 import SS_Craft.SentaiItems60;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.don_brothers.item_don_blaster;
 import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.ninninger.item_ninja_ichibantou;
@@ -66,6 +67,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class item_sentai_gear extends Item implements IHasModel
 {
 	public int num;
+	public boolean avatarou = false;
 	
 	public item_sentai_gear(int effect,String name)
 	{
@@ -91,6 +93,27 @@ public class item_sentai_gear extends Item implements IHasModel
 		}else{
 			return !true;
 		}
+	}
+	
+	public item_sentai_gear avatarou()
+	{
+		avatarou=true;
+		return this;
+	}
+	
+	public Item avatarou_gear()
+	{
+		Item[] AvatarouGear = new Item[] {SentaiItems20.blanknoitem,
+				SentaiItems60.goranger_avatarou_gear,SentaiItems60.jakq_avatarou_gear,SentaiItems60.battle_fever_avatarou_gear,SentaiItems60.denziman_avatarou_gear,SentaiItems60.sun_vulcan_avatarou_gear,
+				SentaiItems60.goggle_v_avatarou_gear,SentaiItems60.dynaman_avatarou_gear,SentaiItems60.bioman_avatarou_gear,SentaiItems60.changeman_avatarou_gear,SentaiItems60.flashman_avatarou_gear,
+				SentaiItems60.maskman_avatarou_gear,SentaiItems60.liveman_avatarou_gear,SentaiItems60.turboranger_avatarou_gear,SentaiItems60.fiveman_avatarou_gear,SentaiItems60.jetman_avatarou_gear,
+				SentaiItems60.zyuranger_avatarou_gear,SentaiItems60.dairanger_avatarou_gear,SentaiItems60.kakuranger_avatarou_gear,SentaiItems60.ohranger_avatarou_gear,SentaiItems60.carranger_avatarou_gear,
+				SentaiItems60.megaranger_avatarou_gear,SentaiItems60.gingaman_avatarou_gear,SentaiItems60.gogo_v_avatarou_gear,SentaiItems60.timeranger_avatarou_gear,SentaiItems60.gaoranger_avatarou_gear,
+				SentaiItems60.hurricaneger_avatarou_gear,SentaiItems60.abaranger_avatarou_gear,SentaiItems60.dekaranger_avatarou_gear,SentaiItems60.magiranger_avatarou_gear,SentaiItems60.boukenger_avatarou_gear,
+				SentaiItems60.gekiranger_avatarou_gear,SentaiItems60.go_onger_avatarou_gear,SentaiItems60.shinkenger_avatarou_gear,SentaiItems60.goseiger_avatarou_gear,SentaiItems60.gokaiger_avatarou_gear,
+				SentaiItems60.go_busters_avatarou_gear,SentaiItems60.kyoryuger_avatarou_gear,SentaiItems60.toqger_avatarou_gear,SentaiItems60.ninninger_avatarou_gear,SentaiItems60.zyuohger_avatarou_gear,
+				SentaiItems60.kyuranger_avatarou_gear,SentaiItems60.lupinranger_avatarou_gear,SentaiItems60.ryusoulger_avatarou_gear,SentaiItems60.kirameiger_avatarou_gear,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem,SentaiItems20.blanknoitem};
+		return AvatarouGear[num];
 	}
 
 	/**
@@ -575,6 +598,32 @@ public class item_sentai_gear extends Item implements IHasModel
 					}
 				}
 				this.set_ammo(playerIn.getHeldItem(handIn),0);
+			}
+			if (playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_don_blaster)
+			{
+				if (avatarou==true)
+				{
+					if (this == SentaiItems60.patranger_gear)
+					{
+						playerIn.dropItem(SentaiItems60.patranger_avatarou_gear, 1);
+					}
+					else
+					{
+						playerIn.dropItem(avatarou_gear(), 1);
+					}
+
+					if (!playerIn.capabilities.isCreativeMode)
+					{
+						if(handIn==EnumHand.MAIN_HAND)
+						{
+							playerIn.getHeldItemMainhand().shrink(1);			
+						}
+						else
+						{
+							playerIn.getHeldItemOffhand().shrink(1);	
+						}
+					}
+				}
 			}
 			this.set_ammo(playerIn.getHeldItem(handIn),0);
 		}

@@ -138,11 +138,12 @@ public class item_geki_changer extends item_sentai_changer
 								{
 									if (this.get_core(armor)==1)
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems40.red_geki_changer)
 									{

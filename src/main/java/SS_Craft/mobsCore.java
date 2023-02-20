@@ -16,9 +16,7 @@ import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
 import SS_Craft.mobs.Boss.entity_neo_deka_red;
 import SS_Craft.mobs.Boss.entity_neo_deka_yellow;
 import SS_Craft.mobs.Boss.entity_rouki;
-import SS_Craft.mobs.Boss.entity_sonoi;
-import SS_Craft.mobs.Boss.entity_sononi;
-import SS_Craft.mobs.Boss.entity_sonoza;
+import SS_Craft.mobs.Boss.entity_nouto;
 import SS_Craft.mobs.Boss.entity_stacaesar;
 import SS_Craft.mobs.Boss.entity_yami_0gou;
 import SS_Craft.mobs.Henchmen.entity_anaroids;
@@ -295,9 +293,7 @@ public class mobsCore
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":AnounisMob"),entity_anounis.class, "AnounisMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x8c8375, 0xffd500);
 		EntityRegistry.addSpawn(entity_anounis.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(4),Biome.getBiome(18),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(129),Biome.getBiome(132),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157),Biome.getBiome(3),Biome.getBiome(5),Biome.getBiome(12),Biome.getBiome(13),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(131),Biome.getBiome(133),Biome.getBiome(140),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162),Biome.getBiome(6),Biome.getBiome(134),Biome.getBiome(2),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(130),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
 
-		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":SonoiMob"),entity_sonoi.class, "SonoiMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x000539, 0x0d0d83);
-		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":SononiMob"),entity_sononi.class, "SononiMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xffffff, 0xde8d32);
-		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":SonozaMob"),entity_sonoza.class, "SonozaMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x7b3900, 0xa84d00);
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":NoutoMob"),entity_nouto.class, "NoutoMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x000539, 0x0d0d83);
 		
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":DonMurasameMob"),entity_don_murasame.class, "DonMurasameMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x9800c6, 0xab1608);
 	}
