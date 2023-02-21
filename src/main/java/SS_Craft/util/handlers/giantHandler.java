@@ -92,6 +92,7 @@ public class giantHandler
 		}
 	}
 	
+	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
 	public void onEntityRenderPre(RenderLivingEvent.Pre event)
 	{
@@ -150,6 +151,7 @@ public class giantHandler
 			}		
 		}
 		
+	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
 	public void onLivingRenderPost(RenderLivingEvent.Post event)
 	{
