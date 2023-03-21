@@ -200,11 +200,11 @@ public class SentaiItems40
 	public static Item kiba_claw = new ItemBaseSword("kiba_claw", Tabs.sword,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
 	public static Item kiba_knife = new ItemBaseSword("kiba_knife", Tabs.sword,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
 	public static Item kiba_arrow = new Item_gun("kiba_arrow", Tabs.bow,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
-	public static Item beast_attack_rod_red = new Item_gun("beast_attack_rod_red", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
-	public static Item beast_attack_rod_green = new Item_gun("beast_attack_rod_green", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
-	public static Item beast_attack_rod_blue = new Item_gun("beast_attack_rod_blue", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
-	public static Item beast_attack_rod_yellow = new Item_gun("beast_attack_rod_yellow", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
-	public static Item beast_attack_rod_pink = new Item_gun("beast_attack_rod_pink", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
+	public static Item beast_attack_rod_red = new Item_sword_gun("beast_attack_rod_red", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
+	public static Item beast_attack_rod_green = new Item_sword_gun("beast_attack_rod_green", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
+	public static Item beast_attack_rod_blue = new Item_sword_gun("beast_attack_rod_blue", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
+	public static Item beast_attack_rod_yellow = new Item_sword_gun("beast_attack_rod_yellow", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
+	public static Item beast_attack_rod_pink = new Item_sword_gun("beast_attack_rod_pink", Tabs.bazooka,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
 	public static Item bull_riot = new item_sword_gun_changer("bull_riot", Tabs.sword_gun,SentaiItems40.gingaman_logo).setMaxStackSize(1).setCreativeTab(Tabs.tabGingaman);
 	
 	//23 Kyukyu Sentai GoGo-V

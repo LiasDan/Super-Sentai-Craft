@@ -323,6 +323,13 @@ public class item_ryusoul_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
 									}
+									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.moria_ryusoul_changer)
+									{
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20 , 2,true,false));
+									}
 									if(this.get_lock(armor)=="ryusoul_tsuyo_soul")
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 4,true,false));
@@ -345,7 +352,7 @@ public class item_ryusoul_changer extends item_sentai_changer
 									}
 									if(this.get_lock(armor)=="ryusoul_kata_soul")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20 , 1,true,false));
 									}
@@ -619,21 +626,21 @@ public class item_ryusoul_changer extends item_sentai_changer
 									}
 									if (this.get_soul(armor)=="victory")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 5,true,false));
 									}
 									if (this.get_soul(armor)=="pat_siren")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
 									}
 									if (this.get_soul(armor)=="ryusoul_kiramei") 
 									{
@@ -716,6 +723,10 @@ public class item_ryusoul_changer extends item_sentai_changer
 					else if (rider == "gaisorg" | rider == "ryusoul_brown")
 					{
 						return "blank";
+					}
+					else if (rider == "ryusoul_moria")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+"_armor"+ext;
 					}
 					else
 					{

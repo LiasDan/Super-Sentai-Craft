@@ -16,6 +16,7 @@ import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
 import SS_Craft.mobs.Boss.entity_neo_deka_red;
 import SS_Craft.mobs.Boss.entity_neo_deka_yellow;
 import SS_Craft.mobs.Boss.entity_rouki;
+import SS_Craft.mobs.Boss.entity_ryusoul_moria;
 import SS_Craft.mobs.Boss.entity_nouto;
 import SS_Craft.mobs.Boss.entity_stacaesar;
 import SS_Craft.mobs.Boss.entity_yami_0gou;
@@ -272,6 +273,7 @@ public class mobsCore
 		EntityRegistry.addSpawn(entity_drunns.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(3),Biome.getBiome(5),Biome.getBiome(12),Biome.getBiome(13),Biome.getBiome(19),Biome.getBiome(20),Biome.getBiome(30),Biome.getBiome(31),Biome.getBiome(32),Biome.getBiome(33),Biome.getBiome(34),Biome.getBiome(131),Biome.getBiome(133),Biome.getBiome(140),Biome.getBiome(158),Biome.getBiome(160),Biome.getBiome(161),Biome.getBiome(162));
 		
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":GaisorgMob"),entity_gaisorg.class, "GaisorgMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x56007f, 0x9c9c9c);
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":RyusoulMoriaMob"),entity_ryusoul_moria.class, "RyusoulMoriaMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xccca97, 0x303030);
 		
 		//44 Kirameiger
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":BechatsMob"),entity_bechats.class, "BechatsMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x795548, 0x416e26);

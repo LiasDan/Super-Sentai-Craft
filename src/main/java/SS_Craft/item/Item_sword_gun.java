@@ -9,9 +9,11 @@ import javax.annotation.Nullable;
 import com.google.common.collect.Multimap;
 
 import SS_Craft.SentaiItems20;
+import SS_Craft.SentaiItems40;
 import SS_Craft.SentaiItems60;
 import SS_Craft.Tabs;
 import SS_Craft.TokuCraft_core;
+import SS_Craft.item.gingaman.item_ginga_brace;
 import SS_Craft.item.kyuranger.item_seiza_blaster;
 import SS_Craft.item.zenkaiger.item_geartlinger;
 import SS_Craft.potion.PotionCore;
@@ -102,6 +104,29 @@ public class Item_sword_gun extends ItemBow  implements IHasModel
 						return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : 1.0F;
 					}
 				}
+        		if (stack.getItem() == SentaiItems40.beast_attack_rod_red || stack.getItem() == SentaiItems40.beast_attack_rod_blue || stack.getItem() == SentaiItems40.beast_attack_rod_yellow || stack.getItem() == SentaiItems40.beast_attack_rod_pink || stack.getItem() == SentaiItems40.beast_attack_rod_green)
+        		{
+        			if (entityIn == null)
+	                {
+	                    return 0.0F;
+	                }
+        			else if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)!= null)
+					{
+						if (entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof item_ginga_brace)
+						{
+							if (item_ginga_brace.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "beast_armor_shine")
+								return entityIn.getActiveItemStack().getItem() != stack.getItem()? 2.0F : 3.0F;
+							else
+								return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : 1.0F;
+						}
+						else
+						{
+							return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : 1.0F;
+						}
+					}
+
+					return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : 1.0F;
+	            }
             	else
             	{
             		if (entityIn == null)
@@ -113,7 +138,6 @@ public class Item_sword_gun extends ItemBow  implements IHasModel
             			return entityIn.getActiveItemStack().getItem() != stack.getItem()? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 1.0F;
             		}
             	}
-				return 0.0F;
             }
         });
 	}

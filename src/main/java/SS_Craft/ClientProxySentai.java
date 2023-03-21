@@ -21,6 +21,7 @@ import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
 import SS_Craft.mobs.Boss.entity_neo_deka_red;
 import SS_Craft.mobs.Boss.entity_neo_deka_yellow;
 import SS_Craft.mobs.Boss.entity_rouki;
+import SS_Craft.mobs.Boss.entity_ryusoul_moria;
 import SS_Craft.mobs.Boss.entity_nouto;
 import SS_Craft.mobs.Boss.entity_stacaesar;
 import SS_Craft.mobs.Boss.entity_yami_0gou;
@@ -236,6 +237,7 @@ public class ClientProxySentai extends CommonProxySentai
 		RenderingRegistry.registerEntityRenderingHandler(entity_drunns.class, new RenderRiderMob2(new tokuMobModel("drunn_2"), 0.5F,"textures/entities/drunn_1.png"));
 
 		RenderingRegistry.registerEntityRenderingHandler(entity_gaisorg.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_gaisorg.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_ryusoul_moria.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_ryusoul_moria.png"));
 		
 		//44 Kirameiger
 		RenderingRegistry.registerEntityRenderingHandler(entity_bechats.class, new RenderRiderMob2(new tokuMobModel("bechat_2"), 0.5F,"textures/entities/bechat_1.png"));

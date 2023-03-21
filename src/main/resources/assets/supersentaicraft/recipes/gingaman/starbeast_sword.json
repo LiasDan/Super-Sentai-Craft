@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "ginga_red",
+  "group": "gingaman",
   "pattern": [
     "aaa",
     "acb",
@@ -10,9 +10,23 @@
     "a": {
       "item": "supersentaicraft:gingaman_logo"
     },
-	"b": {
-      "item": "supersentaicraft:red_ginga_medal"
-    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_ginga_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:green_ginga_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_ginga_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_ginga_medal"
+	  },
+	  {
+	    "item": "supersentaicraft:pink_ginga_medal"
+	  }
+	],
 	"c": {
       "item": "minecraft:iron_sword"
     }

@@ -87,6 +87,7 @@ public class entity_don_momotarou extends EntityGolem
 	{
 		super(par1World);
 
+		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.zanglas_sword));
 		this.setItemStackToSlot(EntityEquipmentSlot.HEAD,new ItemStack(SentaiItems60.zenkaiger_head));
         this.setItemStackToSlot(EntityEquipmentSlot.CHEST,new ItemStack(SentaiItems60.zenkaiger_torso));
         this.setItemStackToSlot(EntityEquipmentSlot.LEGS,new ItemStack(SentaiItems60.zenkaiger_legs));   

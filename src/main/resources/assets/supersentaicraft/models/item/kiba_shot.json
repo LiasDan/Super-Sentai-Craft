@@ -3,5 +3,27 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:items/kiba_shot"
-  }
+  },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ -90, 0, -60 ],
+            "translation": [ 2, 2, 2 ],
+            "scale": [ 2, 2, 2 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ -90, 0, 30 ],
+            "translation": [ 2, 2, 2 ],
+            "scale": [ 2, 2, 2 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ -90, 0, -55 ],
+            "translation": [ 1.13, 3.2, 1],
+            "scale": [ 2, 2, 2 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ -90, 0, 35 ],
+            "translation": [ 1.13, 3.2, 1],
+            "scale": [ 2, 2, 2 ]
+        }
+    }
 }

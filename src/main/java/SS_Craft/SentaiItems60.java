@@ -381,6 +381,7 @@ public class SentaiItems60
 	public static Item gold_mosa_changer = new item_ryusoul_changer("gold_mosa_changer", ArmorMaterial.DIAMOND, 4, "ryusoul_gold").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	public static Item gaisorg_changer = new item_ryusoul_changer("gaisorg_changer", ArmorMaterial.DIAMOND, 4, "gaisorg").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	public static Item brown_changer = new item_ryusoul_changer("brown_changer", ArmorMaterial.DIAMOND, 4, "ryusoul_brown").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item moria_ryusoul_changer = new item_ryusoul_changer("moria_ryusoul_changer", ArmorMaterial.DIAMOND, 4, "ryusoul_moria").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	
 	public static Item ryusoul_buckle = new Item_ore("ryusoul_buckle");
 	public static Item ryusoul_gold_buckle = new Item_ore("ryusoul_gold_buckle");

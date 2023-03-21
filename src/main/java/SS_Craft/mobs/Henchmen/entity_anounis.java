@@ -39,44 +39,60 @@ public class entity_anounis extends Entity_base_henchmen
 				EntityBossBase entityboss = new entity_nouto(world);
 				EntityBossBase entityboss1 = new entity_don_murasame(world);
 				
-				switch (this.rand.nextInt(15))
+				switch (this.rand.nextInt(5))
 				{
 				case 0:
-					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					world.spawnEntity(entityboss);
+					switch (this.rand.nextInt(4))
+					{
+						case 0:
+							entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							world.spawnEntity(entityboss);
+							break;
+						case 1:
+							entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							item_don_blaster.set_lock(entityboss.getItemStackFromSlot(EntityEquipmentSlot.FEET), 3);
+							entityboss.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(SentaiItems60.sono_shield));
+							world.spawnEntity(entityboss);
+							break;
+						case 2:
+							entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							entityboss.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.sononi_nouto_brace));
+							entityboss.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.condor_arrow));
+							world.spawnEntity(entityboss);
+							break;
+						case 3:
+							entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							entityboss.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.sonoza_nouto_brace));
+							entityboss.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.condor_sword));
+							world.spawnEntity(entityboss);
+							break;
+					}
 					break;
 				case 1:
-					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					item_don_blaster.set_lock(entityboss.getItemStackFromSlot(EntityEquipmentSlot.FEET), 3);
-					entityboss.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(SentaiItems60.sono_shield));
-					world.spawnEntity(entityboss);
-					break;
-				case 2:
-					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					entityboss.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.sononi_nouto_brace));
-					entityboss.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.condor_arrow));
-					world.spawnEntity(entityboss);
-					break;
-				case 3:
-					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					entityboss.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.sonoza_nouto_brace));
-					entityboss.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.condor_sword));
-					world.spawnEntity(entityboss);
-					break;
-				case 4:
-					entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					world.spawnEntity(entityboss1);
-					break;
-				case 5:
-					entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					item_don_blaster.set_alter(entityboss1.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
-					entityboss1.addPotionEffect(new PotionEffect(PotionCore.SS_SMALL, 5, 0,true,false));
-					world.spawnEntity(entityboss1);
-					break;
-				case 6:
-					entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					entityboss1.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.future_ninjark_sword));
-					world.spawnEntity(entityboss1);
+					switch (this.rand.nextInt(3))
+					{
+						case 0:
+							playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"What's Up?! Don Murasame! Kirisute Sorry!"));
+							
+							entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							world.spawnEntity(entityboss1);
+							break;
+						case 5:
+							playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"Ark! Dark! Jark! Shark! Ah! Don Murasame Alter! Wow! Same Ninja!"));
+							
+							entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							item_don_blaster.set_alter(entityboss1.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+							entityboss1.addPotionEffect(new PotionEffect(PotionCore.SS_SMALL, 5, 0,true,false));
+							world.spawnEntity(entityboss1);
+							break;
+						case 6:
+							playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"What's Up?! Don Murasame! Kirisute Sorry!"));
+							
+							entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							entityboss1.setItemStackToSlot(EntityEquipmentSlot.FEET,new ItemStack(SentaiItems60.future_ninjark_sword));
+							world.spawnEntity(entityboss1);
+							break;
+					}
 					break;
 				}
 			}

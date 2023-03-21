@@ -5,6 +5,7 @@ import SS_Craft.SentaiItems60;
 import SS_Craft.mobs.Boss.EntityBossBase;
 import SS_Craft.mobs.Boss.entity_gaisorg;
 import SS_Craft.mobs.Boss.entity_hebitsukai_metal;
+import SS_Craft.mobs.Boss.entity_ryusoul_moria;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
@@ -32,6 +33,7 @@ public class entity_drunns extends Entity_base_henchmen
 			{
 				EntityPlayer playerIn =	(EntityPlayer) this.getAttackTarget();
 				EntityBossBase entityboss = new entity_gaisorg(world);
+				EntityBossBase entityboss1 = new entity_ryusoul_moria(world);
 				
 				switch (this.rand.nextInt(5))
 				{
@@ -40,6 +42,10 @@ public class entity_drunns extends Entity_base_henchmen
 					
 					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
 					world.spawnEntity(entityboss);
+					break;
+				case 1:
+					entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+					world.spawnEntity(entityboss1);
 					break;
 				}
 			}

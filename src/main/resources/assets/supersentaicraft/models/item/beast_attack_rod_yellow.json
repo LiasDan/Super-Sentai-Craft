@@ -4,13 +4,60 @@
   "textures": {
     "layer0": "supersentaicraft:items/beast_attack_rod_yellow"
   },
+    "display": {
+"ground": {
+"rotation": [ 0, 0, 0 ],
+"translation": [ 0, 2, 0],
+"scale":[ 0.5, 0.5, 0.5 ]
+},
+"head": {
+"rotation": [ 0, 0, 0 ],
+"translation": [ 0, 13, 7],
+"scale":[ 1, 1, 1]
+},
+"thirdperson_lefthand": {    
+ "rotation": [ 0, 90, -55 ],
+           "translation": [ 0, 1, 1 ],
+            "scale": [ 3.4, 3.4, 0.85 ]
+
+},
+"thirdperson_righthand": {    
+ "rotation": [ 0, -90, 55 ],
+           "translation": [ 0, 1, 1 ],
+            "scale": [ 3.4, 3.4, 0.85 ]
+
+},
+"firstperson_righthand": {
+            "rotation": [  -25.5, -85, 0 ],
+            "translation": [ 0, 3, 1 ],
+            "scale": [ 2.5, 2.5, 0.75 ]
+},
+"firstperson_lefthand": {    
+ "rotation": [  -25.5, 85, 0 ],
+           "translation": [ 0, 3, 1 ],
+            "scale": [ 2.5, 2.5, 0.75 ]
+
+}
+},
     "overrides": [
        
         {
             "predicate": {
                 "pull": 1
             },
+            "model": "supersentaicraft:item/beast_attack_rod_yellow_gun"
+        },
+        {
+            "predicate": {
+                "pull": 2
+            },
             "model": "supersentaicraft:item/flashing_beast_attack_rod_yellow"
+        },
+        {
+            "predicate": {
+                "pull": 3
+            },
+            "model": "supersentaicraft:item/flashing_beast_attack_rod_yellow_gun"
         }
     ]
   }

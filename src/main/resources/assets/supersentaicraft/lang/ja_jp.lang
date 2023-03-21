@@ -75,6 +75,7 @@ entity.ExAidMob.name=仮面ライダーエグゼイド
 entity.PordermenMob.name=ポーダマン
 entity.DrunnsMob.name=ドルン兵
 entity.GaisorgMob.name=ガイソーグ
+entity.RyusoulMoriaMob.name=リュウソウモーリア
 entity.BechatsMob.name=ベチャット
 entity.DarkKirameiSilverMob.name=ダークキラメイシルバー
 entity.KudakksMob.name=クダック
@@ -1799,6 +1800,7 @@ item.black_ryusoul_changer.name=リュウソウチェンジャー(リュウソ�
 item.gold_mosa_changer.name=モザチェンジャー(リュウソウゴールド)
 item.gaisorg_changer.name=ガイソーケン(ガイソーグ)
 item.brown_changer.name=ブラウンリュウソウケン(リュウソウブラウン)
+item.moria_ryusoul_changer.name=リュウソウチェンジャー(リュウソウモーリア)
 
 item.red_ryusoul.name=レッドリュウソウル
 item.blue_ryusoul.name=ブルーリュウソウル

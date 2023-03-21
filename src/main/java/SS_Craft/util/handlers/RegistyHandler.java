@@ -67,7 +67,7 @@ public class RegistyHandler {
 		if(event.player.isPotionActive(PotionCore.SS_PUNCH_BOOST)){
 			if(event.player.getHeldItemMainhand().isEmpty())
 			{
-				event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,event.player.getActivePotionEffect(PotionCore.SS_PUNCH_BOOST).getAmplifier(), 4,true,false));
+				event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 4,event.player.getActivePotionEffect(PotionCore.SS_PUNCH_BOOST).getAmplifier(),true,false));
 			}
 		}
 
@@ -90,7 +90,7 @@ public class RegistyHandler {
 			{
 				if(event.player.isSwingInProgress)
 				{
-					event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,event.player.getActivePotionEffect(PotionCore.SS_SLASH_BOOST).getAmplifier(), 4,true,false));
+					event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,event.player.getActivePotionEffect(PotionCore.SS_SLASH_BOOST).getAmplifier(),true,false));
 				}
 			}
 		}
@@ -132,8 +132,8 @@ public class RegistyHandler {
 			if (event.player.isSneaking()){
 
 				Vec3d look = event.player.getLookVec();
-				event.player.motionX=look.x*(1+event.player.getActivePotionEffect(PotionCore.SS_SNEAKBOOST).getAmplifier());
-				event.player.motionZ=look.z*(1+event.player.getActivePotionEffect(PotionCore.SS_SNEAKBOOST).getAmplifier());
+				event.player.motionX=look.x*(1+event.player.getActivePotionEffect(PotionCore.SS_SNEAKBOOST).getAmplifier()-2);
+				event.player.motionZ=look.z*(1+event.player.getActivePotionEffect(PotionCore.SS_SNEAKBOOST).getAmplifier()-2);
 				
 				event.player.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL,event.player.posX,event.player.posY, event.player.posZ, 0.0D, 0.0D, 0.0D);
 				event.player.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL,event.player.posX,event.player.posY+1, event.player.posZ, 0.0D, 0.0D, 0.0D);
@@ -150,10 +150,10 @@ public class RegistyHandler {
 				{
 					event.player.fallDistance = 0.0f;
 					Vec3d look = event.player.getLookVec();
-					event.player.motionX=look.x*(1+event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier());
-					event.player.motionY=look.y*(0.5*(1+event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier()));
-					event.player.motionZ=look.z*(1+event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier());
-					event.player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,event.player.getActivePotionEffect(PotionCore.SS_PUNCH_BOOST).getAmplifier(), 4,true,false));
+					event.player.motionX=look.x*(1+event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier()-2);
+					event.player.motionY=look.y*(0.5*(1+event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier()-2));
+					event.player.motionZ=look.z*(1+event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier()-2);
+					event.player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 250, event.player.getActivePotionEffect(PotionCore.SS_WATERBOOST).getAmplifier(),true,false));
 				
 					event.player.world.spawnParticle(EnumParticleTypes.WATER_SPLASH,event.player.posX,event.player.posY, event.player.posZ, 0.0D, 0.0D, 0.0D);
 					event.player.world.spawnParticle(EnumParticleTypes.WATER_SPLASH,event.player.posX,event.player.posY+1, event.player.posZ, 0.0D, 0.0D, 0.0D);

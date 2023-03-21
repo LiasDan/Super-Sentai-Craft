@@ -95,7 +95,7 @@ public class item_ryusoul extends Item implements IHasModel
 				}
 				else if (this == SentaiItems60.kirameiger_soul)
 				{
-					if (belt != SentaiItems60.gold_mosa_changer & belt != SentaiItems60.gaisorg_changer & belt != SentaiItems60.brown_changer)
+					if (belt != SentaiItems60.gold_mosa_changer & belt != SentaiItems60.gaisorg_changer & belt != SentaiItems60.brown_changer & belt != SentaiItems60.moria_ryusoul_changer)
 					{
 						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()==SentaiItems60.ryusoul_ken)
 						{

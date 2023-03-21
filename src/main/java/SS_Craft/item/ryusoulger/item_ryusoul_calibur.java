@@ -72,11 +72,15 @@ public class item_ryusoul_calibur extends ItemSword implements IHasModel
     				{
     					if (playerIn.isSneaking()&&item_ryusoul_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))!=9)
     					{
-    						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 9);
+							item_ryusoul_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+    						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),9);
     					}
     					else if (playerIn.isSneaking()&&item_ryusoul_changer.get_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET))==9)
     					{
-    						item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET), 0);
+							item_ryusoul_changer.set_core(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							item_ryusoul_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
+							item_ryusoul_changer.set_soul(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),0);
     					}
     				}
     			}

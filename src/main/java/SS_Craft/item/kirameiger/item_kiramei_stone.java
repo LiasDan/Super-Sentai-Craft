@@ -75,7 +75,7 @@ public class item_kiramei_stone extends Item implements IHasModel
 				}
 				else if (num == 0)
 				{
-					if (belt != SentaiItems60.red_kiramei_changer)
+					if (belt != SentaiItems60.red_kiramei_changer || belt != SentaiItems60.shiny_kiramei_changer)
 					{
 						if (playerIn.getHeldItem(EnumHand.OFF_HAND).getItem()== SentaiItems60.kiraful_go_arrow)
 						{

@@ -75,6 +75,7 @@ entity.ExAidMob.name=Kamen Rider Ex-Aid
 entity.PordermenMob.name=Porderman
 entity.DrunnsMob.name=Drunn Soldiers
 entity.GaisorgMob.name=Gaisoulg
+entity.RyusoulMoriaMob.name=Ryusoul Moria
 entity.BechatsMob.name=Bechats
 entity.DarkKirameiSilverMob.name=Dark Kiramei Silver
 entity.KudakksMob.name=Kudakks
@@ -1799,6 +1800,7 @@ item.black_ryusoul_changer.name=Ryusoul Changer (Ryusoul Black)
 item.gold_mosa_changer.name=Mosa Changer (Ryusoul Gold)
 item.gaisorg_changer.name=Gaisoul Ken (Gaisoulg)
 item.brown_changer.name=Brown Ryusoul Ken (RyusoulBrown)
+item.moria_ryusoul_changer.name=Ryusoul Changer (Ryusoul Moria)
 
 item.red_ryusoul.name=Red RyuSoul
 item.blue_ryusoul.name=Blue RyuSoul
