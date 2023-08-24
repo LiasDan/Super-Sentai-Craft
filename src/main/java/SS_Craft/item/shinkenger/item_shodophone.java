@@ -245,7 +245,14 @@ public class item_shodophone extends item_sentai_changer
 				
 				if (num==1||num==2||num==5||num==7||num==3||num==6||num==8)
 				{
-					return Refercence.MODID+":textures/armor/"+rider+ext;
+					if (this.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="shinken_gedou_mode")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+"_gedou"+ext;
+					}
+					else
+					{
+						return Refercence.MODID+":textures/armor/"+rider+ext;
+					}
 				}
 				else if (num==4||num==9||num==10||num==11||num==12||num==13||num==14)
 				{

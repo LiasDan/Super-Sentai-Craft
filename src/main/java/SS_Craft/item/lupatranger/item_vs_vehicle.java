@@ -20,7 +20,7 @@ import net.minecraft.world.World;
 public class item_vs_vehicle extends Item implements IHasModel
 {
 	public int num;
-	public static String[] ARMOR= new String[] {"blank","lupin_tricolor","patran_ugou","lupin_scissor","pat_crane","lupin_magic","pat_splash","victory","pat_siren","pat_gold"};
+	public static String[] ARMOR= new String[] {"blank","lupin_tricolor","patran_ugou","scissor","crane","magic","splash","victory","pat_siren","gold"};
 
 	public item_vs_vehicle(int armor,String name)
 	{

@@ -3,7 +3,9 @@
   "rewards": {
     "recipes": [
       "supersentaicraft:goranger/midoranger_belt",
-      "supersentaicraft:goranger/midomerang"
+      "supersentaicraft:goranger/mido_puncher",
+      "supersentaicraft:goranger/midomerang",
+      "supersentaicraft:goranger/new_midomerang"
     ]
   },
   "criteria": {

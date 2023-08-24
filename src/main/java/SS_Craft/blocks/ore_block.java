@@ -604,7 +604,7 @@ public class ore_block extends Block implements IHasModel
 		//45 Zenkaiger
 		if (CRYSTAL==SentaiItems60.blank_sentai_gear)
 		{
-			int rand = generator.nextInt(518);
+			int rand = generator.nextInt(508);
 			if (rand<25) return SentaiItems60.zenkaizer_gear;
 			if (rand<50) return SentaiItems60.zenkai_juran_gear;
 			if (rand<75) return SentaiItems60.zenkai_gaon_gear;
@@ -615,26 +615,25 @@ public class ore_block extends Block implements IHasModel
 			if (rand<175) return SentaiItems60.twokai_ricky_gear;
 			if (rand<185) return SentaiItems60.zenkai_red_gear;
 			if (rand<195) return SentaiItems60.twokai_flint_gear;
-			if (rand<200) return SentaiItems20.liveman_logo;
-			if (rand<205) return SentaiItems20.ohranger_logo;
-			if (rand<210) return SentaiItems40.timeranger_logo;
-			if (rand<215) return SentaiItems40.magiranger_logo;
-			if (rand<220) return SentaiItems40.goseiger_logo;
-			if (rand<225) return SentaiItems20.dynaman_logo;
-			if (rand<230) return SentaiItems20.changeman_logo;
-			if (rand<235) return SentaiItems20.fiveman_logo;
-			if (rand<240) return SentaiItems40.hurricaneger_logo;
-			if (rand<245) return SentaiItems40.ninninger_logo;
-			if (rand<250) return SentaiItems40.gokaiger_logo;
-			if (rand<251) return SentaiItems60.metallic_zenkaizer_gear;
-			if (rand<252) return SentaiItems60.metallic_zenkai_juran_gear;
-			if (rand<253) return SentaiItems60.metallic_zenkai_gaon_gear;
-			if (rand<254) return SentaiItems60.metallic_zenkai_magine_gear;
-			if (rand<255) return SentaiItems60.metallic_zenkai_vroon_gear;
-			if (rand<256) return SentaiItems60.metallic_twokaizer_gear;
-			if (rand<257) return SentaiItems60.zenkai_zyu_gear;
-			if (rand<258) return SentaiItems60.new_zenkaizer_gear;
-			if (rand<259) return SentaiItems60.don_brothers_gear;
+			if (rand<200) return SentaiItems20.ohranger_logo;
+			if (rand<205) return SentaiItems40.timeranger_logo;
+			if (rand<210) return SentaiItems40.magiranger_logo;
+			if (rand<215) return SentaiItems40.goseiger_logo;
+			if (rand<220) return SentaiItems20.dynaman_logo;
+			if (rand<225) return SentaiItems20.changeman_logo;
+			if (rand<230) return SentaiItems20.fiveman_logo;
+			if (rand<235) return SentaiItems40.hurricaneger_logo;
+			if (rand<240) return SentaiItems40.ninninger_logo;
+			if (rand<245) return SentaiItems40.gokaiger_logo;
+			if (rand<246) return SentaiItems60.metallic_zenkaizer_gear;
+			if (rand<247) return SentaiItems60.metallic_zenkai_juran_gear;
+			if (rand<248) return SentaiItems60.metallic_zenkai_gaon_gear;
+			if (rand<249) return SentaiItems60.metallic_zenkai_magine_gear;
+			if (rand<250) return SentaiItems60.metallic_zenkai_vroon_gear;
+			if (rand<251) return SentaiItems60.metallic_twokaizer_gear;
+			if (rand<252) return SentaiItems60.zenkai_zyu_gear;
+			if (rand<253) return SentaiItems60.new_zenkaizer_gear;
+			if (rand<254) return SentaiItems60.don_brothers_gear;
 			
 			return CRYSTAL;
 		}

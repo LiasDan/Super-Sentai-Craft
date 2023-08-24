@@ -1,0 +1,22 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:items/ki_sticker_short"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/ki_sticker_short_paper"
+        },
+		{
+            "predicate": {
+                "pull": 2
+            },
+            "model": "supersentaicraft:item/ki_sticker_short_scissors"
+        }
+    ]
+}

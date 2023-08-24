@@ -329,6 +329,8 @@ public class SentaiItems40
 	public static Item bison_beast_king_sword = new ItemBaseSword("bison_beast_king_sword", Tabs.sword,SentaiItems40.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item tiger_beast_king_sword = new ItemBaseSword("tiger_beast_king_sword", Tabs.sword,SentaiItems40.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item evil_crushing_hundred_beast_sword = new item_cannon("evil_crushing_hundred_beast_sword", Tabs.mecha_sword,SentaiItems40.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
+	public static Item lion_fang_claw = new ItemBaseSword("lion_fang_claw", Tabs.tonfa,SentaiItems40.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
+	public static Item lion_fang_claw1 = new ItemBaseSword("lion_fang_claw1", Tabs.tonfa,SentaiItems40.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item lion_fang = new ItemBaseSword("lion_fang", Tabs.tonfa,SentaiItems40.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item gao_mane_buster = new item_charge_gun("gao_mane_buster", Tabs.gun,SentaiItems40.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item eagle_sword = new ItemBaseSword("eagle_sword", Tabs.sword,SentaiItems40.empty_gao_jewel).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
@@ -357,6 +359,7 @@ public class SentaiItems40
 	public static Item fin_blade = new ItemBaseSword("fin_blade", Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item elephant_sword = new ItemBaseSword("elephant_sword", Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item elephant_shield = new ItemBaseShield("elephant_shield",SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
+	public static Item muscle_anchor = new ItemBaseSword("muscle_anchor", Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item ligator_blade = new ItemBaseSword("ligator_blade", Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item ligator_blade_blue_moon = new ItemBaseSword("ligator_blade_blue_moon", Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	

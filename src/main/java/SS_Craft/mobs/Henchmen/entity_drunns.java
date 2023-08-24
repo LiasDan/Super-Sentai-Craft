@@ -38,14 +38,19 @@ public class entity_drunns extends Entity_base_henchmen
 				switch (this.rand.nextInt(5))
 				{
 				case 0:
-					playerIn.sendStatusMessage(new TextComponentString(TextFormatting.DARK_PURPLE+"Gaisoul Change!"), true);
-					
-					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					world.spawnEntity(entityboss);
-					break;
-				case 1:
-					entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					world.spawnEntity(entityboss1);
+					switch (this.rand.nextInt(2))
+					{
+					case 0:
+						playerIn.sendStatusMessage(new TextComponentString(TextFormatting.DARK_PURPLE+"Gaisoul Change!"), true);
+						
+						entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+						world.spawnEntity(entityboss);
+						break;
+					case 1:
+						entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+						world.spawnEntity(entityboss1);
+						break;
+					}
 					break;
 				}
 			}

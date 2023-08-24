@@ -134,9 +134,9 @@ public class SentaiItems60
 	public static Block kyuranger_ore = new ore_block("kyuranger_ore", Material.ROCK, blank_kyutama, 2).setHardness(9.9F).setCreativeTab(Tabs.tabKyuranger);
 	public static Block kyuranger_nether_ore = new ore_block("kyuranger_nether_ore", Material.ROCK, blank_kyutama, 3).setHardness(9.9F).setCreativeTab(Tabs.tabKyuranger);
 	
-	public static Item kyuranger_head = new item_sentai_armor("kyuranger_head", item_seiza_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blank_kyutama).setMaxStackSize(1).setCreativeTab(Tabs.tabKyuranger);
-	public static Item kyuranger_torso = new item_sentai_armor("kyuranger_torso", item_seiza_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blank_kyutama).setMaxStackSize(1).setCreativeTab(Tabs.tabKyuranger);
-	public static Item kyuranger_legs = new item_sentai_armor("kyuranger_legs", item_seiza_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blank_kyutama).setMaxStackSize(1).setCreativeTab(Tabs.tabKyuranger);
+	public static Item kyuranger_head = new item_sentai_armor("kyuranger_head", item_seiza_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, SentaiItems60.blank_kyutama).setMaxStackSize(1).setCreativeTab(Tabs.tabKyuranger);
+	public static Item kyuranger_torso = new item_sentai_armor("kyuranger_torso", item_seiza_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, SentaiItems60.blank_kyutama).setMaxStackSize(1).setCreativeTab(Tabs.tabKyuranger);
+	public static Item kyuranger_legs = new item_sentai_armor("kyuranger_legs", item_seiza_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, SentaiItems60.blank_kyutama).setMaxStackSize(1).setCreativeTab(Tabs.tabKyuranger);
 
 	public static Item red_seiza_blaster = new item_seiza_blaster("red_seiza_blaster", ArmorMaterial.DIAMOND, 4,"shishi_red").setMaxStackSize(1).setCreativeTab(Tabs.tabKyuranger);
 	public static Item orange_seiza_blaster = new item_seiza_blaster("orange_seiza_blaster", ArmorMaterial.DIAMOND, 4,"sasori_orange").setMaxStackSize(1).setCreativeTab(Tabs.tabKyuranger);
@@ -305,9 +305,9 @@ public class SentaiItems60
 	public static Item blank_striker = new Item_ore("blank_striker").setCreativeTab(Tabs.tabLupat);
 	public static Block vs_vehicle_ore = new ore_block("vs_vehicle_ore", Material.ROCK, blank_striker, 2).setHardness(9.9F).setCreativeTab(Tabs.tabLupat);
 	
-	public static Item lupat_head = new item_sentai_armor("lupat_head", item_vs_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
-	public static Item lupat_torso = new item_sentai_armor("lupat_torso", item_vs_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
-	public static Item lupat_legs = new item_sentai_armor("lupat_legs", item_vs_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
+	public static Item lupat_head = new item_sentai_armor("lupat_head", item_vs_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, SentaiItems60.blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
+	public static Item lupat_torso = new item_sentai_armor("lupat_torso", item_vs_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, SentaiItems60.blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
+	public static Item lupat_legs = new item_sentai_armor("lupat_legs", item_vs_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, SentaiItems60.blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
 	
 	public static Item red_vs_changer = new item_vs_changer("red_vs_changer", ArmorMaterial.DIAMOND, 4, "lupin_red").setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
 	public static Item blue_vs_changer = new item_vs_changer("blue_vs_changer", ArmorMaterial.DIAMOND, 4, "lupin_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
@@ -357,7 +357,7 @@ public class SentaiItems60
 	public static Item lupin_sword = new item_dual_sword("lupin_sword", Tabs.sword,SentaiItems60.blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
 	public static Item lupin_magnum = new Item_gun("lupin_magnum", Tabs.super_gun,SentaiItems60.blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
 	
-	public static Item pat_megabo = new ItemBaseSword("pat_megabo", Tabs.sword,SentaiItems60.blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
+	public static Item pat_megabo = new item_dual_sword("pat_megabo", Tabs.sword,SentaiItems60.blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
 	
 	public static Item x_rod_sword = new item_dual_sword("x_rod_sword", Tabs.sword,SentaiItems60.blank_striker).setMaxStackSize(1).setCreativeTab(Tabs.tabLupat);
 	
@@ -369,9 +369,9 @@ public class SentaiItems60
 	public static Item blank_ryusoul = new Item_ore("blank_ryusoul").setCreativeTab(Tabs.tabRyusoulger);
 	public static Block ryusoulger_ore = new ore_block("ryusoulger_ore", Material.ROCK, blank_ryusoul, 2).setHardness(9.9F).setCreativeTab(Tabs.tabRyusoulger);
 	
-	public static Item ryusoulger_head = new item_sentai_armor("ryusoulger_head", item_ryusoul_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blank_ryusoul).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
-	public static Item ryusoulger_torso = new item_sentai_armor("ryusoulger_torso", item_ryusoul_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blank_ryusoul).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
-	public static Item ryusoulger_legs = new item_sentai_armor("ryusoulger_legs", item_ryusoul_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blank_ryusoul).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item ryusoulger_head = new item_sentai_armor("ryusoulger_head", item_ryusoul_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, SentaiItems60.blank_ryusoul).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item ryusoulger_torso = new item_sentai_armor("ryusoulger_torso", item_ryusoul_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, SentaiItems60.blank_ryusoul).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
+	public static Item ryusoulger_legs = new item_sentai_armor("ryusoulger_legs", item_ryusoul_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, SentaiItems60.blank_ryusoul).setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	
 	public static Item red_ryusoul_changer = new item_ryusoul_changer("red_ryusoul_changer", ArmorMaterial.DIAMOND, 4, "ryusoul_red").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
 	public static Item blue_ryusoul_changer = new item_ryusoul_changer("blue_ryusoul_changer", ArmorMaterial.DIAMOND, 4, "ryusoul_blue").setMaxStackSize(1).setCreativeTab(Tabs.tabRyusoulger);
@@ -456,9 +456,9 @@ public class SentaiItems60
 	public static Item blue_diamond = new Item_ore("blue_diamond").setCreativeTab(Tabs.tabKirameiger);
 	public static Block kirameiger_ore = new ore_block("kirameiger_ore", Material.ROCK, blue_diamond, 2).setHardness(9.9F).setCreativeTab(Tabs.tabKirameiger);
 		
-	public static Item kirameiger_head = new item_sentai_armor("kirameiger_head", item_kiramei_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blue_diamond).setMaxStackSize(1).setCreativeTab(Tabs.tabKirameiger);
-	public static Item kirameiger_torso = new item_sentai_armor("kirameiger_torso", item_kiramei_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blue_diamond).setMaxStackSize(1).setCreativeTab(Tabs.tabKirameiger);
-	public static Item kirameiger_legs = new item_sentai_armor("kirameiger_legs", item_kiramei_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blue_diamond).setMaxStackSize(1).setCreativeTab(Tabs.tabKirameiger);
+	public static Item kirameiger_head = new item_sentai_armor("kirameiger_head", item_kiramei_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, SentaiItems60.blue_diamond).setMaxStackSize(1).setCreativeTab(Tabs.tabKirameiger);
+	public static Item kirameiger_torso = new item_sentai_armor("kirameiger_torso", item_kiramei_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, SentaiItems60.blue_diamond).setMaxStackSize(1).setCreativeTab(Tabs.tabKirameiger);
+	public static Item kirameiger_legs = new item_sentai_armor("kirameiger_legs", item_kiramei_changer.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, SentaiItems60.blue_diamond).setMaxStackSize(1).setCreativeTab(Tabs.tabKirameiger);
 	
 	public static Item red_kiramei_changer = new item_kiramei_changer("red_kiramei_changer", ArmorMaterial.DIAMOND, 4, "kiramei_red").setMaxStackSize(1).setCreativeTab(Tabs.tabKirameiger);
 	public static Item yellow_kiramei_changer = new item_kiramei_changer("yellow_kiramei_changer", ArmorMaterial.DIAMOND, 4, "kiramei_yellow").setMaxStackSize(1).setCreativeTab(Tabs.tabKirameiger);
@@ -506,9 +506,9 @@ public class SentaiItems60
 	public static Item tojiru_gear = new item_zenkai_gear(1,"tojiru_gear").setCreativeTab(Tabs.tabZenkaiger);
 	public static Block zenkaiger_ore = new ore_block("zenkaiger_ore", Material.ROCK, blank_sentai_gear, 2).setHardness(9.9F).setCreativeTab(Tabs.tabZenkaiger);
 	
-	public static Item zenkaiger_head = new item_sentai_armor("zenkaiger_head", item_geartlinger.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
-	public static Item zenkaiger_torso = new item_sentai_armor("zenkaiger_torso", item_geartlinger.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
-	public static Item zenkaiger_legs = new item_sentai_armor("zenkaiger_legs", item_geartlinger.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
+	public static Item zenkaiger_head = new item_sentai_armor("zenkaiger_head", item_geartlinger.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, SentaiItems60.blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
+	public static Item zenkaiger_torso = new item_sentai_armor("zenkaiger_torso", item_geartlinger.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, SentaiItems60.blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
+	public static Item zenkaiger_legs = new item_sentai_armor("zenkaiger_legs", item_geartlinger.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, SentaiItems60.blank_sentai_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
 	
 	public static Item zenkaizer_geartlinger = new item_geartlinger("zenkaizer_geartlinger", ArmorMaterial.DIAMOND, 4, "zenkaizer").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
 	public static Item juran_geartlinger = new item_geartlinger("juran_geartlinger", ArmorMaterial.DIAMOND, 4, "zenkai_juran").setMaxStackSize(1).setCreativeTab(Tabs.tabZenkaiger);
@@ -744,9 +744,9 @@ public class SentaiItems60
 	public static Item don_brothers_logo = new Item_ore("don_brothers_logo").setCreativeTab(Tabs.tabDonBrothers);
 	public static Item blank_avatarou_gear = new Item_ore("blank_avatarou_gear").setCreativeTab(Tabs.tabDonBrothers);
 	
-	public static Item don_brothers_head = new item_sentai_armor("don_brothers_head", item_don_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
-	public static Item don_brothers_torso = new item_sentai_armor("don_brothers_torso", item_don_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
-	public static Item don_brothers_legs = new item_sentai_armor("don_brothers_legs", item_don_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_brothers_head = new item_sentai_armor("don_brothers_head", item_don_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.HEAD, SentaiItems60.blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_brothers_torso = new item_sentai_armor("don_brothers_torso", item_don_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.CHEST, SentaiItems60.blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
+	public static Item don_brothers_legs = new item_sentai_armor("don_brothers_legs", item_don_blaster.class, ArmorMaterial.DIAMOND, 4, EntityEquipmentSlot.LEGS, SentaiItems60.blank_avatarou_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
 	
 	public static Item momotarou_don_blaster = new item_don_blaster("momotarou_don_blaster", ArmorMaterial.DIAMOND, 4, "don_momotarou").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);
 	public static Item saru_don_blaster = new item_don_blaster("saru_don_blaster", ArmorMaterial.DIAMOND, 4, "saru_brother").setMaxStackSize(1).setCreativeTab(Tabs.tabDonBrothers);

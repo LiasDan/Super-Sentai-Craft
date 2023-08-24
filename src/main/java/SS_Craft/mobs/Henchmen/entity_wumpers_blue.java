@@ -1,6 +1,9 @@
 package SS_Craft.mobs.Henchmen;
 
 import SS_Craft.SentaiItems20;
+import SS_Craft.mobs.Boss.EntityBossBase;
+import SS_Craft.mobs.Boss.entity_signalman_evil;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
@@ -19,6 +22,21 @@ public class entity_wumpers_blue extends Entity_base_henchmen
 		if (!this.world.isRemote){   
 
 			this.dropItem(SentaiItems20.carranger_logo, 1);
+			
+			if (this.getAttackTarget() instanceof EntityPlayer)
+			{
+				EntityPlayer playerIn =	(EntityPlayer) this.getAttackTarget();
+				EntityBossBase entityboss = new entity_signalman_evil(world);
+				
+				switch (this.rand.nextInt(5))
+				{
+				case 0:
+					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+					world.spawnEntity(entityboss);
+					break;
+				}
+			}
+			
 			switch (this.rand.nextInt(6))
 			{   		   	    		
 			case 0:
@@ -42,7 +60,7 @@ public class entity_wumpers_blue extends Entity_base_henchmen
 				break;
 				
 			case 5:
-				switch (this.rand.nextInt(7))
+				switch (this.rand.nextInt(8))
 				{
 					case 0:
 						this.dropItem(SentaiItems20.white_racer_badge, 1);
@@ -53,7 +71,7 @@ public class entity_wumpers_blue extends Entity_base_henchmen
 						break;
 
 					case 2:
-						this.dropItem(SentaiItems20.carranger_logo, 2);
+						this.dropItem(SentaiItems20.vrv_master_badge, 1);
 						break;
 
 					case 3:
@@ -69,6 +87,10 @@ public class entity_wumpers_blue extends Entity_base_henchmen
 						break;
 
 					case 6:
+						this.dropItem(SentaiItems20.carranger_logo, 2);
+						break;
+
+					case 7:
 						this.dropItem(SentaiItems20.carranger_logo, 2);
 						break;
 				}

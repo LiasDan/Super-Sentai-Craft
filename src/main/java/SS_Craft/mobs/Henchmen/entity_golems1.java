@@ -35,20 +35,25 @@ public class entity_golems1 extends Entity_base_henchmen
 				
 				 switch (this.rand.nextInt(5))
 				 {
-			 			case 1:
-			 			entitymob.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-			 			world.spawnEntity(entitymob);
+			 			case 0:
+							 switch (this.rand.nextInt(3))
+							 {
+						 			case 0:
+						 			entitymob.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+						 			world.spawnEntity(entitymob);
+						 			break;
+						 			
+							 		case 1:
+									entitymob1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+									world.spawnEntity(entitymob1);
+									break;
+									
+							 		case 2:
+							 		entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+									world.spawnEntity(entityboss);
+									break;
+							 }
 			 			break;
-			 			
-				 		case 2:
-						entitymob1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-						world.spawnEntity(entitymob1);
-						break;
-						
-				 		case 3:
-				 		entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-						world.spawnEntity(entityboss);
-						break;
 				 }
 			}
 			

@@ -83,7 +83,7 @@ public class item_vs_changer extends item_sentai_changer
 				
 				armorModel.belt=new ItemStack(SentaiItems60.lupat_belt);
 				
-				if (item_vs_changer.get_lock(stack)=="lupin_scissor")
+				if (item_vs_changer.get_lock(stack)=="scissor")
 				{
 					if (living.getHeldItem(EnumHand.OFF_HAND).getItem()==SentaiItems60.blade_boomerang || living.getHeldItem(EnumHand.MAIN_HAND).getItem()==SentaiItems60.blade_boomerang)
 					{
@@ -195,6 +195,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.blue_vs_changer)
 									{
@@ -202,6 +203,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.yellow_vs_changer)
 									{
@@ -209,6 +211,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.lupin_x_changer)
 									{
@@ -216,6 +219,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 3,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.ichigou_vs_changer || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.ichigou_girl_vs_changer)
 									{
@@ -223,6 +227,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.nigou_vs_changer || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.nigou_girl_vs_changer)
 									{
@@ -230,6 +235,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
 									if (player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.sangou_vs_changer || player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() == SentaiItems60.sangou_guy_vs_changer)
 									{
@@ -237,6 +243,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
 									if (this.get_core(armor)==1)
 									{
@@ -244,6 +251,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 2,true,false));
 									}
 									if (this.get_lock(armor)=="lupin_tricolor")
 									{
@@ -251,6 +259,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 2,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 3,true,false));
 									}
 									if (this.get_lock(armor)=="patran_ugou")
 									{
@@ -258,6 +267,7 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 1,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 3,true,false));
 									}
 									if (this.get_lock(armor)=="lupin_scissor")
 									{
@@ -266,37 +276,40 @@ public class item_vs_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 										player.removePotionEffect(MobEffects.SPEED);
 									}
-									if (this.get_lock(armor)=="pat_crane")
+									if (this.get_lock(armor)=="crane")
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20, 4,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 									}
-									if (this.get_lock(armor)=="lupin_magic")
+									if (this.get_lock(armor)=="magic")
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
 									}
-									if (this.get_lock(armor)=="pat_splash")
+									if (this.get_lock(armor)=="splash")
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,20, 2,true,false));
 									}
 									if (this.get_lock(armor)=="victory")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 2,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.SPEED,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 5,true,false));
 									}
 									if (this.get_lock(armor)=="pat_siren")
 									{
-										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 3,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 5,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 3,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 5,true,false));
 									}
 									if(this.get_soul(armor)=="ryusoul_tsuyo_soul")
 									{
@@ -479,24 +492,36 @@ public class item_vs_changer extends item_sentai_changer
 					{
 						return Refercence.MODID+":textures/armor/"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+ext;
 					}
-					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_tricolor" || item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="patran_ugou" || item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_scissor")
+					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="lupin_tricolor")
 					{
-						return "blank";
+						return Refercence.MODID+":textures/armor/lupin_tricolor_base"+ext;
+					}
+					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="patran_ugou")
+					{
+						return Refercence.MODID+":textures/armor/patran_ugou_base"+ext;
+					}
+					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))=="scissor")
+					{
+						return Refercence.MODID+":textures/armor/"+rider+"_base"+ext;
+					}
+					else if(item_vs_changer.get_core(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))==1)
+					{
+						return Refercence.MODID+":textures/armor/patran_x_base"+ext;
 					}
 					else if (item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))!="blank")
 					{
 						if (num==4)
 						{
-							return "blank";
+							return Refercence.MODID+":textures/armor/"+rider+"_base"+ext;
 						}
 						else 
 						{
-							return Refercence.MODID+":textures/armor/"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
+							return Refercence.MODID+":textures/armor/"+rider+"_"+item_vs_changer.get_lock(player.getItemStackFromSlot(EntityEquipmentSlot.FEET))+".png";
 						}
 					}
 					else
 					{
-						return "blank";
+						return Refercence.MODID+":textures/armor/"+rider+"_base"+ext;
 					}
 				}
 				else

@@ -1,7 +1,33 @@
 {
-  "_comment": "Generated using MiningMark48's JSON Generator.",
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "supersentaicraft:items/shark_cutter"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "supersentaicraft:items/shark_cutter"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-135, 90, 0],
+			"translation": [0, -8, 1.25],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-135, -90, 0],
+			"translation": [0, -8, 1.25],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 70, -55],
+			"translation": [0.63, 4.7, 0.13],
+			"scale": [1.7, 1.7, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-180, -70, -125],
+			"translation": [0.63, 4.7, 0.13],
+			"scale": [1.7, 1.7, 0.68]
+		},
+		"gui": {
+			"translation": [-1.25, 0.25, 0]
+		}
+	},
+	"_comment": "Generated using MiningMark48's JSON Generator."
 }

@@ -68,7 +68,7 @@ public class item_accel_changer extends item_sentai_changer
 			{
 				model_belt armorModel = new model_belt();
 				
-				if (this==SentaiItems20.signal_whistle)
+				if (this==SentaiItems20.signal_whistle||this==SentaiItems20.signal_whistle_evil||this==SentaiItems20.vrv_module)
 				{
 					armorModel.belt=new ItemStack(SentaiItems20.blanknoitem);
 				}

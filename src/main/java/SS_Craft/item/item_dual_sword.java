@@ -1,6 +1,8 @@
 package SS_Craft.item;
 
 import javax.annotation.Nullable;
+
+import SS_Craft.SentaiItems20;
 import SS_Craft.TokuCraft_core;
 import SS_Craft.util.IHasModel;
 import SS_Craft.util.Refercence;
@@ -93,13 +95,31 @@ public class item_dual_sword extends ItemSword implements IHasModel
 			{
 				if (playerIn.isSneaking())
 				{
-					if (get_core(playerIn.getHeldItem(handIn))==1)
+					if (this == SentaiItems20.red_bute | this == SentaiItems20.ki_sticker | this == SentaiItems20.ki_sticker_short)
 					{
-						set_core(playerIn.getHeldItem(handIn),0);
+						if (get_core(playerIn.getHeldItem(handIn))==1)
+						{
+							set_core(playerIn.getHeldItem(handIn),2);
+						}
+						else if (get_core(playerIn.getHeldItem(handIn))==2)
+						{
+							set_core(playerIn.getHeldItem(handIn),0);
+						}
+						else
+						{
+							set_core(playerIn.getHeldItem(handIn),1);
+						}
 					}
 					else
 					{
-						set_core(playerIn.getHeldItem(handIn),1);
+						if (get_core(playerIn.getHeldItem(handIn))==1)
+						{
+							set_core(playerIn.getHeldItem(handIn),0);
+						}
+						else
+						{
+							set_core(playerIn.getHeldItem(handIn),1);
+						}
 					}
 					
 					playerIn.setActiveHand(handIn);

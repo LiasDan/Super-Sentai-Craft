@@ -35,34 +35,39 @@ public class entity_kudakks extends Entity_base_henchmen
 				EntityPlayer playerIn =	(EntityPlayer) this.getAttackTarget();
 				EntityBossBase entityboss = new entity_stacaesar(world);
 				EntityBossBase entityboss1 = new entity_hakaizer(world);
-				
-				switch (this.rand.nextInt(10))
+
+				switch (this.rand.nextInt(5))
 				{
 				case 0:
-					playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"Ja-BAN! Stacaesar!"));
-					playerIn.sendStatusMessage(new TextComponentString(TextFormatting.DARK_PURPLE+"Ankoku Change!"), true);
-					
-					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					world.spawnEntity(entityboss);
-					break;
-				case 1:
-					playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"Fe-BAN! Stacaesar!"));
-					playerIn.sendStatusMessage(new TextComponentString(TextFormatting.DARK_PURPLE+"Ankoku Change!"), true);
-					item_geartlinger.set_core(entityboss.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
-					entityboss.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(SentaiItems60.sta_shield));
-					entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					world.spawnEntity(entityboss);
-					break;
-				case 2:
-					playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_RED+"KIKAI NO POWER! HAKAIZER!"));
-					entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					world.spawnEntity(entityboss1);
-					break;
-				case 3:
-					playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_RED+"Zenryoku de Hakai!"));
-					item_geartlinger.set_core(entityboss1.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
-					entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-					world.spawnEntity(entityboss1);
+					switch (this.rand.nextInt(4))
+					{
+					case 0:
+						playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"Ja-BAN! Stacaesar!"));
+						playerIn.sendStatusMessage(new TextComponentString(TextFormatting.DARK_PURPLE+"Ankoku Change!"), true);
+						
+						entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+						world.spawnEntity(entityboss);
+						break;
+					case 1:
+						playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"Fe-BAN! Stacaesar!"));
+						playerIn.sendStatusMessage(new TextComponentString(TextFormatting.DARK_PURPLE+"Ankoku Change!"), true);
+						item_geartlinger.set_core(entityboss.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+						entityboss.setItemStackToSlot(EntityEquipmentSlot.OFFHAND,new ItemStack(SentaiItems60.sta_shield));
+						entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+						world.spawnEntity(entityboss);
+						break;
+					case 2:
+						playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_RED+"KIKAI NO POWER! HAKAIZER!"));
+						entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+						world.spawnEntity(entityboss1);
+						break;
+					case 3:
+						playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_RED+"Zenryoku de Hakai!"));
+						item_geartlinger.set_core(entityboss1.getItemStackFromSlot(EntityEquipmentSlot.FEET), 1);
+						entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+						world.spawnEntity(entityboss1);
+						break;
+					}
 					break;
 				}
 			}

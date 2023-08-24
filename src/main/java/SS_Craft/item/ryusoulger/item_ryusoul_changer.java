@@ -633,14 +633,17 @@ public class item_ryusoul_changer extends item_sentai_changer
 										player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST,20, 5,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,250, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_FLY_POTION,20, 5,true,false));
 									}
 									if (this.get_soul(armor)=="pat_siren")
 									{
 										player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 20, 5,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 20, 5,true,false));
-										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(MobEffects.HASTE,20, 3,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS,20, 2,true,false));
 										player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,20, 5,true,false));
+										player.addPotionEffect(new PotionEffect(PotionCore.SS_SHOT_BOOST,20, 5,true,false));
 									}
 									if (this.get_soul(armor)=="ryusoul_kiramei") 
 									{

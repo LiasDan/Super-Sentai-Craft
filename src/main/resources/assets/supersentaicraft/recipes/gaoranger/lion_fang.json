@@ -1,22 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "gao_red",
-  "pattern": [
-    "aaa",
-    "aba",
-	"aca"
-  ],
-  "key": {
-    "a": {
-      "item": "supersentaicraft:empty_gao_jewel"
+  "ingredients": [
+	{
+      "item": "supersentaicraft:lion_fang_claw"
     },
-	"b": {
-	  "item": "supersentaicraft:gao_lion_jewel"
-	},
-	"c": {
-      "item": "minecraft:iron_sword"
+	{
+      "item": "supersentaicraft:lion_fang_claw1"
     }
-  },
+  ],
   "result": {
     "item": "supersentaicraft:lion_fang"
   }

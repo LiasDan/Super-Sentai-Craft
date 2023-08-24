@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "liveman",
+  "pattern": [
+    "aaa",
+    "acb",
+	"aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:liveman_circuit"
+    },
+	"b": [
+	  {
+	    "item": "supersentaicraft:red_falcon_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:yellow_lion_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:blue_dolphin_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:black_bison_logo"
+	  },
+	  {
+	    "item": "supersentaicraft:green_sai_logo"
+	  }
+	],
+	"c": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:librastar"
+  }
+}

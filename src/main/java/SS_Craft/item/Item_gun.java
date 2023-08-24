@@ -222,19 +222,19 @@ public class Item_gun extends ItemBow  implements IHasModel
 									return 7;
 								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "patran_ugou")
 									return 8;
-								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "lupin_scissor")
+								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "scissor")
 									return 9;
-								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "pat_crane")
+								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "crane")
 									return 10;
-								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "lupin_magic")
+								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "magic")
 									return 11;
-								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "pat_splash")
+								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "splash")
 									return 12;
 								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "victory")
 									return 13;
 								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "pat_siren")
 									return 14;
-								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "pat_gold")
+								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "gold")
 									return 15;
 								else if (item_vs_changer.get_lock(entityIn.getItemStackFromSlot(EntityEquipmentSlot.FEET)) == "blank")
 								{

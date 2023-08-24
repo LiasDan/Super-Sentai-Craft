@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "akaranger",
+  "pattern": [
+    "aaa",
+    "aba",
+	"aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:goranger_logo"
+    },
+	"b": {
+      "item": "supersentaicraft:aka_star"
+    },
+	"c": {
+      "item": "minecraft:iron_pickaxe"
+    }
+  },
+  "result": {
+    "item": "supersentaicraft:drill_bute"
+  }
+}

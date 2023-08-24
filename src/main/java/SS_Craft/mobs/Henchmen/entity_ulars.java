@@ -29,7 +29,7 @@ public class entity_ulars extends Entity_base_henchmen
 				
 				 switch (this.rand.nextInt(5))
 				 {
-				 		case 1:
+				 		case 0:
 						entitymob.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
 						world.spawnEntity(entitymob);
 						break;

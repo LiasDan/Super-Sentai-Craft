@@ -3,7 +3,9 @@
   "rewards": {
     "recipes": [
       "supersentaicraft:goranger/kiranger_belt",
-      "supersentaicraft:goranger/ki_sticker"
+      "supersentaicraft:goranger/ytc",
+      "supersentaicraft:goranger/ki_sticker",
+      "supersentaicraft:goranger/ki_sticker_short"
     ]
   },
   "criteria": {

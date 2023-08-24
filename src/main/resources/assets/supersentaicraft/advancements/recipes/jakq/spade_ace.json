@@ -3,7 +3,8 @@
   "rewards": {
     "recipes": [
       "supersentaicraft:jakq/ace_powered_capsule",
-      "supersentaicraft:jakq/spade_arts"
+      "supersentaicraft:jakq/spade_arts",
+      "supersentaicraft:jakq/spade_arts_whip"
     ]
   },
   "criteria": {

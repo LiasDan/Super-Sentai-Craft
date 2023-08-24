@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "midoranger",
+  "ingredients": [
+    {
+	  "item": "supersentaicraft:midomerang"
+	},
+	{
+      "item": "supersentaicraft:mido_star"
+    },
+	{
+      "item": "supersentaicraft:mido_star"
+    },
+	{
+      "item": "supersentaicraft:mido_star"
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:new_midomerang"
+  }
+}

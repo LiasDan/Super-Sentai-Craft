@@ -7,7 +7,9 @@
       "supersentaicraft:sun_vulcan/mecha/sun_vulcan_robo_legs",
       "supersentaicraft:sun_vulcan/mecha/sun_vulcan_robo_boots",
       "supersentaicraft:sun_vulcan/mecha/taiyo_ken",
-      "supersentaicraft:sun_vulcan/mecha/vul_shield"
+      "supersentaicraft:sun_vulcan/mecha/vul_shield",
+      "supersentaicraft:sun_vulcan/mecha/vul_tonfa",
+      "supersentaicraft:sun_vulcan/mecha/vul_hand"
     ]
   },
   "criteria": {

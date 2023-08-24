@@ -90,20 +90,25 @@ public class entity_zorimas extends Entity_base_henchmen
 					switch (this.rand.nextInt(5))
 					{
 					case 0:
-						playerIn.sendMessage( new TextComponentString(TextFormatting.GOLD+"HOW IRRITATING!!!"));
-						
-						entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-						world.spawnEntity(entityboss);
-						break;
-					case 1:
-						playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"Deboth In!"));
-						
-						entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-						world.spawnEntity(entityboss1);
-						break;
-					case 2:
-						entityboss2.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-						world.spawnEntity(entityboss2);
+						switch (this.rand.nextInt(3))
+						{
+						case 0:
+							playerIn.sendMessage( new TextComponentString(TextFormatting.GOLD+"HOW IRRITATING!!!"));
+							
+							entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							world.spawnEntity(entityboss);
+							break;
+						case 1:
+							playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"Deboth In!"));
+							
+							entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							world.spawnEntity(entityboss1);
+							break;
+						case 2:
+							entityboss2.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+							world.spawnEntity(entityboss2);
+							break;
+						}
 						break;
 					}
 				}

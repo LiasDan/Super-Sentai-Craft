@@ -11,6 +11,9 @@ import SS_Craft.mobs.Boss.entity_chaos_ryuger;
 import SS_Craft.mobs.Boss.entity_dark_kiramei_silver;
 import SS_Craft.mobs.Boss.entity_dark_shishi_red;
 import SS_Craft.mobs.Boss.entity_death_ryuger;
+import SS_Craft.mobs.Boss.entity_doctor_kemp;
+import SS_Craft.mobs.Boss.entity_doctor_mazenda;
+import SS_Craft.mobs.Boss.entity_doctor_obular;
 import SS_Craft.mobs.Boss.entity_dogold;
 import SS_Craft.mobs.Boss.entity_don_murasame;
 import SS_Craft.mobs.Boss.entity_dragon_ranger;
@@ -22,6 +25,7 @@ import SS_Craft.mobs.Boss.entity_neo_deka_red;
 import SS_Craft.mobs.Boss.entity_neo_deka_yellow;
 import SS_Craft.mobs.Boss.entity_rouki;
 import SS_Craft.mobs.Boss.entity_ryusoul_moria;
+import SS_Craft.mobs.Boss.entity_signalman_evil;
 import SS_Craft.mobs.Boss.entity_nouto;
 import SS_Craft.mobs.Boss.entity_stacaesar;
 import SS_Craft.mobs.Boss.entity_yami_0gou;
@@ -46,6 +50,7 @@ import SS_Craft.mobs.Henchmen.entity_imps;
 import SS_Craft.mobs.Henchmen.entity_indavers_blue;
 import SS_Craft.mobs.Henchmen.entity_indavers_green;
 import SS_Craft.mobs.Henchmen.entity_indavers_white;
+import SS_Craft.mobs.Henchmen.entity_jimmers;
 import SS_Craft.mobs.Henchmen.entity_karths;
 import SS_Craft.mobs.Henchmen.entity_kudakks;
 import SS_Craft.mobs.Henchmen.entity_kunekunes;
@@ -125,7 +130,14 @@ public class ClientProxySentai extends CommonProxySentai
 		
 		//11 Maskman
 		RenderingRegistry.registerEntityRenderingHandler(entity_unglers.class, new RenderRiderMob2(new tokuMobModel("ungler_2"), 0.5F,"textures/entities/ungler_1.png"));
+		
+		//12 Liveman
+		RenderingRegistry.registerEntityRenderingHandler(entity_jimmers.class, new RenderRiderMob2(new tokuMobModel("jimmer_2"), 0.5F,"textures/entities/jimmer_1.png"));
 
+		RenderingRegistry.registerEntityRenderingHandler(entity_doctor_kemp.class, new RenderRiderMob2(new tokuMobModel("doctor_kemp_2"), 0.5F,"textures/entities/doctor_kemp_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_doctor_mazenda.class, new RenderRiderMob2(new tokuMobModel("doctor_mazenda_2"), 0.5F,"textures/entities/doctor_mazenda_1.png"));
+		RenderingRegistry.registerEntityRenderingHandler(entity_doctor_obular.class, new RenderRiderMob2(new tokuMobModel("doctor_obular_2"), 0.5F,"textures/entities/doctor_obular_1.png"));
+		
 		//13 Turboranger
 		RenderingRegistry.registerEntityRenderingHandler(entity_ulars.class, new RenderRiderMob2(new tokuMobModel("ular_2"), 0.5F,"textures/entities/ular_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_ular_captain.class, new RenderRiderMob2(new tokuMobModel("ular_captain_2"), 0.5F,"textures/entities/ular_captain_1.png"));
@@ -153,6 +165,8 @@ public class ClientProxySentai extends CommonProxySentai
 		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_green.class, new RenderRiderMob2(new tokuMobModel("wumper_green_2"), 0.5F,"textures/entities/wumper_green_1.png"));
 		RenderingRegistry.registerEntityRenderingHandler(entity_wumpers_white.class, new RenderRiderMob2(new tokuMobModel("wumper_white_2"), 0.5F,"textures/entities/wumper_white_1.png"));
 
+		RenderingRegistry.registerEntityRenderingHandler(entity_signalman_evil.class, new RenderRiderMob2(new ModelBiped(), 0.5F,"textures/entities/ld_signalman.png"));
+		
 		//21 Megaranger
 		RenderingRegistry.registerEntityRenderingHandler(entity_kunekunes.class, new RenderRiderMob2(new tokuMobModel("kunekune_2"), 0.5F,"textures/entities/kunekune_1.png"));
 

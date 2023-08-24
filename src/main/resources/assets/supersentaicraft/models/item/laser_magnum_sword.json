@@ -3,15 +3,5 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:items/laser_magnum_sword"
-  },
-    "overrides": [
-       
-        {
-            "predicate": {
-                "pull": 1
-            },
-            "model": "supersentaicraft:item/laser_magnum_gun"
-        }
-    ]
   }
 }

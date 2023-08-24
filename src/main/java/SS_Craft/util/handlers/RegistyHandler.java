@@ -67,7 +67,7 @@ public class RegistyHandler {
 		if(event.player.isPotionActive(PotionCore.SS_PUNCH_BOOST)){
 			if(event.player.getHeldItemMainhand().isEmpty())
 			{
-				event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 4,event.player.getActivePotionEffect(PotionCore.SS_PUNCH_BOOST).getAmplifier(),true,false));
+				event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 4,event.player.getActivePotionEffect(PotionCore.SS_PUNCH_BOOST).getAmplifier()*2,true,false));
 			}
 		}
 
@@ -90,7 +90,7 @@ public class RegistyHandler {
 			{
 				if(event.player.isSwingInProgress)
 				{
-					event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 5,event.player.getActivePotionEffect(PotionCore.SS_SLASH_BOOST).getAmplifier(),true,false));
+					event.player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 4,event.player.getActivePotionEffect(PotionCore.SS_SLASH_BOOST).getAmplifier()*2,true,false));
 				}
 			}
 		}

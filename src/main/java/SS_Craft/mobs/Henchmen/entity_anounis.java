@@ -42,7 +42,7 @@ public class entity_anounis extends Entity_base_henchmen
 				switch (this.rand.nextInt(5))
 				{
 				case 0:
-					switch (this.rand.nextInt(4))
+					switch (this.rand.nextInt(7))
 					{
 						case 0:
 							entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
@@ -66,12 +66,7 @@ public class entity_anounis extends Entity_base_henchmen
 							entityboss.setItemStackToSlot(EntityEquipmentSlot.MAINHAND,new ItemStack(SentaiItems60.condor_sword));
 							world.spawnEntity(entityboss);
 							break;
-					}
-					break;
-				case 1:
-					switch (this.rand.nextInt(3))
-					{
-						case 0:
+						case 4:
 							playerIn.sendMessage( new TextComponentString(TextFormatting.DARK_PURPLE+"What's Up?! Don Murasame! Kirisute Sorry!"));
 							
 							entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);

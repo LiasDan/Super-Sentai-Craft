@@ -3,6 +3,8 @@
   "rewards": {
     "recipes": [
       "supersentaicraft:goranger/momoranger_belt",
+      "supersentaicraft:goranger/momo_mirror",
+      "supersentaicraft:goranger/momo_card",
       "supersentaicraft:goranger/earring_bomb"
     ]
   },

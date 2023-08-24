@@ -6,6 +6,9 @@ import SS_Craft.mobs.Boss.entity_chaos_ryuger;
 import SS_Craft.mobs.Boss.entity_dark_kiramei_silver;
 import SS_Craft.mobs.Boss.entity_dark_shishi_red;
 import SS_Craft.mobs.Boss.entity_death_ryuger;
+import SS_Craft.mobs.Boss.entity_doctor_kemp;
+import SS_Craft.mobs.Boss.entity_doctor_mazenda;
+import SS_Craft.mobs.Boss.entity_doctor_obular;
 import SS_Craft.mobs.Boss.entity_dogold;
 import SS_Craft.mobs.Boss.entity_don_murasame;
 import SS_Craft.mobs.Boss.entity_dragon_ranger;
@@ -17,6 +20,7 @@ import SS_Craft.mobs.Boss.entity_neo_deka_red;
 import SS_Craft.mobs.Boss.entity_neo_deka_yellow;
 import SS_Craft.mobs.Boss.entity_rouki;
 import SS_Craft.mobs.Boss.entity_ryusoul_moria;
+import SS_Craft.mobs.Boss.entity_signalman_evil;
 import SS_Craft.mobs.Boss.entity_nouto;
 import SS_Craft.mobs.Boss.entity_stacaesar;
 import SS_Craft.mobs.Boss.entity_yami_0gou;
@@ -41,6 +45,7 @@ import SS_Craft.mobs.Henchmen.entity_imps;
 import SS_Craft.mobs.Henchmen.entity_indavers_blue;
 import SS_Craft.mobs.Henchmen.entity_indavers_green;
 import SS_Craft.mobs.Henchmen.entity_indavers_white;
+import SS_Craft.mobs.Henchmen.entity_jimmers;
 import SS_Craft.mobs.Henchmen.entity_karths;
 import SS_Craft.mobs.Henchmen.entity_kudakks;
 import SS_Craft.mobs.Henchmen.entity_kunekunes;
@@ -129,6 +134,14 @@ public class mobsCore
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":UnglersMob"),entity_unglers.class, "UnglersMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x121212, 0xdcc568);
 		EntityRegistry.addSpawn(entity_unglers.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(6),Biome.getBiome(134));
 		
+		//12 Liveman
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":JimmersMob"),entity_jimmers.class, "JimmersMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x5d8c20, 0xf5ebb8);
+		EntityRegistry.addSpawn(entity_jimmers.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(2),Biome.getBiome(16),Biome.getBiome(17),Biome.getBiome(25),Biome.getBiome(26),Biome.getBiome(35),Biome.getBiome(36),Biome.getBiome(37),Biome.getBiome(38),Biome.getBiome(39),Biome.getBiome(130),Biome.getBiome(163),Biome.getBiome(164),Biome.getBiome(165),Biome.getBiome(166),Biome.getBiome(167));
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":DoctorKempMob"),entity_doctor_kemp.class, "DoctorKempMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x38c7fa, 0x0093c9);
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":DoctorMazendaMob"),entity_doctor_mazenda.class, "DoctorMazendaMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x0d0d0d, 0xba0000);
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":DoctorObularMob"),entity_doctor_obular.class, "DoctorObularMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x212121, 0x0f0f0f);
+
 		//13 Turboranger
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":UlarsMob"),entity_ulars.class, "UlarsMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x121212, 0xcccccc);
 		EntityRegistry.addSpawn(entity_ulars.class,  15, 1, 4, EnumCreatureType.MONSTER,Biome.getBiome(6),Biome.getBiome(134));
@@ -166,6 +179,8 @@ public class mobsCore
 		EntityRegistry.addSpawn(entity_wumpers_pink.class,  15, 1, 2, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(4),Biome.getBiome(18),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(129),Biome.getBiome(132),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157));
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":WumpersWhiteMob"),entity_wumpers_white.class, "WumpersWhiteMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xffffff, 0xbd66a6);
 		EntityRegistry.addSpawn(entity_wumpers_white.class,  15, 1, 1, EnumCreatureType.MONSTER,Biome.getBiome(1),Biome.getBiome(4),Biome.getBiome(18),Biome.getBiome(21),Biome.getBiome(22),Biome.getBiome(23),Biome.getBiome(27),Biome.getBiome(28),Biome.getBiome(29),Biome.getBiome(129),Biome.getBiome(132),Biome.getBiome(149),Biome.getBiome(151),Biome.getBiome(155),Biome.getBiome(156),Biome.getBiome(157));
+		
+		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":SignalmanEvilMob"),entity_signalman_evil.class, "SignalmanEvilMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0x1323af, 0xffffff);
 		
 		//21 Megaranger
 		EntityRegistry.registerModEntity(new  ResourceLocation(Refercence.MODID+":KunekunesMob"),entity_kunekunes.class, "KunekunesMob", newMobID(), TokuCraft_core.instance, 80, 3, false, 0xd500f9, 0xd9a702);

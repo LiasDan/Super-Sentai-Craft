@@ -153,6 +153,19 @@ public class Tabs
 			return new ItemStack(SentaiItems20.maskman_head);
 		}
 	};
+	//12
+	public static CreativeTabs tabLiveman= new CreativeTabs("tabLiveman")
+	{
+		@SideOnly(Side.CLIENT)
+	    public net.minecraft.util.ResourceLocation getBackgroundImage()
+	    {
+	        return new net.minecraft.util.ResourceLocation(Refercence.MODID,"textures/gui/tab_liveman_items.png");
+	    }
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(SentaiItems20.liveman_head);
+		}
+	};
 	//13
 	public static CreativeTabs tabTurboranger= new CreativeTabs("tabTurboranger")
 	{

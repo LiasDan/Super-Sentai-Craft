@@ -36,16 +36,21 @@ public class entity_igaroids extends Entity_base_henchmen
 				
 				 switch (this.rand.nextInt(5))
 				 {
-				 		case 1:
-				 		entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-						playerIn.sendStatusMessage(new TextComponentString(TextFormatting.RED+"Emergency! Dekaranger!"), true);
-						world.spawnEntity(entityboss);
-						break;
-						
-				 		case 2:
-					 	entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
-						playerIn.sendStatusMessage(new TextComponentString(TextFormatting.YELLOW+"Emergency! Dekaranger!"), true);
-						world.spawnEntity(entityboss1);
+				 		case 0:
+				 			switch (this.rand.nextInt(2))
+							 {
+							 		case 0:
+							 		entityboss.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+									playerIn.sendStatusMessage(new TextComponentString(TextFormatting.RED+"Emergency! Dekaranger!"), true);
+									world.spawnEntity(entityboss);
+									break;
+									
+							 		case 1:
+								 	entityboss1.setLocationAndAngles(this.posX, this.posY, this.posZ, 0, 0.0F);
+									playerIn.sendStatusMessage(new TextComponentString(TextFormatting.YELLOW+"Emergency! Dekaranger!"), true);
+									world.spawnEntity(entityboss1);
+									break;
+							 }
 						break;
 				 }
 			}

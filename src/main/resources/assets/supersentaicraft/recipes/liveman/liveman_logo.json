@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "liveman",
+  "ingredients": [
+	{
+      "item": "supersentaicraft:liveman_circuit"
+    },
+	{
+      "item": "minecraft:paper",
+	  "data": 0
+    }
+  ],
+  "result": {
+    "item": "supersentaicraft:liveman_logo"
+  }
+}

@@ -21,6 +21,10 @@ entity.MechaclonesMob.name=メカクローン
 entity.BioHunterSilvaMob.name=バイオハンターシルバ
 entity.ZolohsMob.name=ゾロー
 entity.UnglersMob.name=アングラー兵
+entity.JimmersMob.name=ジンマー
+entity.DoctorKempMob.name=ドクター・ケンプ
+entity.DoctorMazendaMob.name=ドクター・マゼンダ
+entity.DoctorObularMob.name=ドクター・オブラー
 entity.UlarsMob.name=ウーラー兵
 entity.UlarCaptainMob.name=ウーラー隊長
 entity.GrinamsMob.name=グリナム兵
@@ -35,6 +39,7 @@ entity.WumpersBlueMob.name=戦闘員ワンパー(青)
 entity.WumpersGreenMob.name=戦闘員ワンパー(緑)
 entity.WumpersPinkMob.name=戦闘員ワンパー(桃)
 entity.WumpersWhiteMob.name=戦闘員ワンパー(白)
+entity.SignalmanEvil.name=シグナルマン(悪)
 entity.KunekunesMob.name=兵士クネクネ
 entity.YartotsMob.name=賊兵ヤートット
 entity.ImpsMob.name=使い魔インプ
@@ -133,6 +138,7 @@ item.iga_sword.name=イガソード
 item.zorin_gun.name=ゾリンガン
 item.plug_lancer.name=プラグランサー
 
+item.jimmers_hatchet.name=ジンマーハチェット
 item.ano_hammer.name=アノハンマー
 
 //01 Goranger
@@ -160,12 +166,19 @@ item.mido_star.name=ミドスター
 item.goranger_manga.name=ゴレンジャー漫画
 
 item.red_bute.name=レッドビュート
+item.drill_bute.name=ドリルビュート
 item.silver_shot.name=シルバーショット
 item.blue_cherry.name=ブルーチェリー
 item.ultra_blue_cherry.name=ウルトラブルーチェリー
+item.ytc.name=YTC
 item.ki_sticker.name=キーステッカー
+item.ki_sticker_short.name=キーステッカー
+item.momo_mirror.name=モモミラー
+item.momo_card.name=モモカード
 item.earring_bomb.name=ピアス爆弾
+item.mido_puncher.name=ミドパンチャー
 item.midomerang.name=ミドメラン
+item.new_midomerang.name=ニューミドメラン
 
 //02 JAKQ
 itemGroup.tabJakq=ジャッカー電撃隊
@@ -191,6 +204,7 @@ item.king_card.name=キングカード
 item.big_one_card.name=ビッグワンカード
 
 item.spade_arts.name=スペードアーツ
+item.spade_arts_whip.name=スペードアーツ(ホイップ)
 item.dia_sword.name=ダイヤソード
 item.heart_cute.name=ハートキュート
 item.club_megaton.name=クラブメガトン
@@ -292,9 +306,9 @@ item.eagle_vulcan_brace.name=バルカンブレス(バルイーグル)
 item.shark_vulcan_brace.name=バルカンブレス(バルシャーク)
 item.panther_vulcan_brace.name=バルカンブレス(バルパンサー)
 
-item.vul_eagle_medal.name=バルイーグルメダル
-item.vul_shark_medal.name=バルシャークメダル
-item.vul_panther_medal.name=バルパンサーメダル
+item.vul_eagle_medal.name=バルイーグルシンボル
+item.vul_shark_medal.name=バルシャークシンボル
+item.vul_panther_medal.name=バルパンサーシンボル
 
 item.vulcan_stick.name=バルカンスティック
 item.vulcan_stick_eagle.name=バルカンスティック(バルイーグル)
@@ -307,6 +321,8 @@ item.sun_vulcan_robo_boots.name=サンバルカンロボブーツ
 
 item.taiyo_ken.name=太陽剣
 item.vul_shield.name=バルシールド
+item.vul_tonfa.name=バルトンファ
+item.vul_hand.name=バルハンド
 
 //06 Goggle V
 itemGroup.tabGoggleV=大戦隊ゴーグルファイブ
@@ -438,7 +454,8 @@ item.yellow_aura_power.name=イエローオーラパワー
 item.pink_aura_power.name=ピンクオーラパワー
 item.x1_aura_power.name=X1オーラパワー
 
-item.laser_magnum_sword.name=レーザーマグナム
+item.laser_magnum.name=レーザーマグナム
+item.laser_magnum_sword.name=レーザーマグナム(ソード)
 item.masky_blade.name=マスキーブレード
 item.masky_rod.name=マスキーロッド
 item.masky_tonfa.name=マスキートンファー
@@ -446,9 +463,35 @@ item.masky_rotor.name=マスキーローター
 item.masky_ribbon.name=マスキーリボン
 
 //12 Liveman
-item.liveman_logo.name=ライブマンロゴ
+itemGroup.tabLiveman=超獣戦隊ライブマン
 
-item.falcon_saber.name=ファルコンソード
+item.liveman_logo.name=ライブマンロゴ
+item.liveman_circuit.name=ライブマンサーキット
+
+item.liveman_head.name=ライブマンヘルメット
+item.liveman_torso.name=ライブマンチェストプレート
+item.liveman_legs.name=ライブマンレギンス
+
+item.red_twin_brace.name=ツインブレス(レッドファルコン)
+item.yellow_twin_brace.name=ツインブレス(イエローライオン)
+item.blue_twin_brace.name=ツインブレス(ブルードルフィン)
+item.black_twin_brace.name=ツインブレス(ブラックバイソン)
+item.green_twin_brace.name=ツインブレス(グリーンサイ)
+
+item.red_falcon_logo.name=レッドファルコンロゴ
+item.yellow_lion_logo.name=イエローライオンロゴ
+item.blue_dolphin_logo.name=ブルードルフィンロゴ
+item.black_bison_logo.name=ブラックバイソンロゴ
+item.green_sai_logo.name=グリーンサイロゴ
+
+item.librastar.name=ライブラスター
+item.falcon_sword.name=ファルコンソード
+item.falcon_saber.name=ファルコンセイバー
+item.lion_punch.name=ライオンパンチ
+item.lion_bazooka.name=ライオンバズーカ
+item.dolphin_arrow.name=ドルフィンアロー
+item.bison_rod.name=バイソンロッド
+item.sai_cutter.name=サイカッター
 
 //13 Turboranger
 itemGroup.tabTurboranger=高速戦隊ターボレンジャー
@@ -652,8 +695,10 @@ item.blue_accel_changer.name=アクセルチェンジャー(ブルーレーサ�
 item.green_accel_changer.name=アクセルチェンジャー(グリーンレーサー)
 item.yellow_accel_changer.name=アクセルチェンジャー(イエローレーサー)
 item.pink_accel_changer.name=アクセルチェンジャー(ピンクレーサー)
-item.signal_whistle.name=シグナルホイッスル(シグナルマン)
 item.white_racer_changer.name=ホワイトレーサーチェンジャー(ホワイトレーサー)
+item.signal_whistle.name=シグナルホイッスル(シグナルマン)
+item.signal_whistle_evil.name=シグナルホイッスル(シグナルマン悪)
+item.vrv_module.name=VRVモジュール(VRVマスター)
 
 item.red_racer_badge.name=レッドレーサーバッジ
 item.blue_racer_badge.name=ブルーレーサーバッジ
@@ -662,6 +707,7 @@ item.yellow_racer_badge.name=イエローレーサーバッジ
 item.pink_racer_badge.name=ピンクレーサーバッジ
 item.white_racer_badge.name=ホワイトレーサーバッジ
 item.signalman_badge.name=シグナルマンバッジ
+item.vrv_master_badge.name=VRVマスターバッジ
 
 item.auto_blaster.name=オートブラスター
 item.auto_punisher.name=オートパニッシャー
@@ -903,6 +949,7 @@ item.gao_knight_head.name=ガオナイトヘルメット
 item.fin_blade.name=フィンブレード
 item.elephant_sword.name=エレファントソード
 item.elephant_shield.name=エレファントシールド
+item.muscle_anchor.name=マッスルアンカー
 item.ligator_blade.name=リゲーターブレード
 item.ligator_blade_blue_moon.name=リゲーターブレード(ブルームーン)
 
