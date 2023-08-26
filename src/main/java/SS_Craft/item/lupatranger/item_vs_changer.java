@@ -470,6 +470,14 @@ public class item_vs_changer extends item_sentai_changer
 					{
 						return Refercence.MODID+":textures/armor/patran_x"+ext;
 					}
+					else if(this==SentaiItems60.ichigou_girl_vs_changer || this==SentaiItems60.nigou_girl_vs_changer)
+					{
+						return Refercence.MODID+":textures/armor/"+rider+"_girl"+ext;
+					}
+					else if(this==SentaiItems60.sangou_guy_vs_changer)
+					{
+						return Refercence.MODID+":textures/armor/"+rider+"_guy"+ext;
+					}
 					else
 					{
 						return Refercence.MODID+":textures/armor/"+rider+ext;

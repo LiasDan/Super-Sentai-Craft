@@ -83,6 +83,10 @@ public class item_vs_vehicle extends Item implements IHasModel
 					{
 						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}
+					else if (belt == SentaiItems60.ichigou_girl_vs_changer || belt == SentaiItems60.nigou_girl_vs_changer || belt == SentaiItems60.sangou_guy_vs_changer)
+					{
+						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+					}
 				}
 				else if (this == SentaiItems60.victory_striker)
 				{
@@ -102,6 +106,10 @@ public class item_vs_vehicle extends Item implements IHasModel
 				else if (this == SentaiItems60.siren_striker)
 				{
 					if (belt == SentaiItems60.ichigou_vs_changer || belt == SentaiItems60.nigou_vs_changer || belt == SentaiItems60.sangou_vs_changer)
+					{
+						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
+					}
+					else if (belt == SentaiItems60.ichigou_girl_vs_changer || belt == SentaiItems60.nigou_girl_vs_changer || belt == SentaiItems60.sangou_guy_vs_changer)
 					{
 						item_vs_changer.set_lock(playerIn.getItemStackFromSlot(EntityEquipmentSlot.FEET),num);
 					}

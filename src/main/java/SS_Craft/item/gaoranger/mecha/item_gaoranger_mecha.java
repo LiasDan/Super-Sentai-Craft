@@ -82,6 +82,15 @@ public class item_gaoranger_mecha extends item_mecha
 				
 				armorModel.belt=new ItemStack(SentaiItems20.blanknoitem);
 				
+				if (this == SentaiItems40.gao_icarus_head)
+				{
+					armorModel.wings=new ItemStack(SentaiItems40.gao_icarus_wings);
+				}
+				else
+				{
+					armorModel.wings=new ItemStack(SentaiItems20.blanknoitem);
+				}
+				
 				//armorModel.bipedRightLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				//armorModel.bipedLeftLeg.showModel = slot == EntityEquipmentSlot.FEET;
 				

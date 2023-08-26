@@ -355,6 +355,8 @@ public class SentaiItems40
 	public static Item gao_icarus_head = new item_gaoranger_mecha("gao_icarus_head", Tabs.mecha, 4, "gao_icarus").setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item gao_god_head = new item_gaoranger_mecha("gao_god_head", Tabs.mecha, 4, "gao_god").setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item gao_knight_head = new item_gaoranger_mecha("gao_knight_head", Tabs.mecha, 4, "gao_knight").setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
+
+	public static Item gao_icarus_wings = new Item_ore("gao_icarus_wings");
 	
 	public static Item fin_blade = new ItemBaseSword("fin_blade", Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
 	public static Item elephant_sword = new ItemBaseSword("elephant_sword", Tabs.mecha_sword,SentaiItems20.mecha_gear).setMaxStackSize(1).setCreativeTab(Tabs.tabGaoranger);
