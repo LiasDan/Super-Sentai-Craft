@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "supersentaicraft:items/masky_rod"
+		"layer0": "supersentaicraft:item/masky_rod"
 	},
 	"overrides": [
 		{"predicate": {"pull": 1}, "model": "supersentaicraft:item/masky_rod_staff"}

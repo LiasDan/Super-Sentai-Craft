@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "supersentaicraft:items/red_bute"
+		"layer0": "supersentaicraft:item/red_bute"
 	},
 	"overrides": [
 		{"predicate": {"pull": 1}, "model": "supersentaicraft:item/spear_bute"},

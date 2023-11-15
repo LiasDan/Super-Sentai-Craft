@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "supersentaicraft:items/starbeast_sword"
+		"layer0": "supersentaicraft:item/starbeast_sword"
 	},
 	"display": {
 		"thirdperson_righthand": {

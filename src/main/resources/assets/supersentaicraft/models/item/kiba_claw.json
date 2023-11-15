@@ -2,6 +2,6 @@
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "parent": "item/handheld",
   "textures": {
-    "layer0": "supersentaicraft:items/kiba_claw"
+    "layer0": "supersentaicraft:item/kiba_claw"
   }
 }

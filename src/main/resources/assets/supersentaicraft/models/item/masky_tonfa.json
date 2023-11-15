@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "supersentaicraft:items/masky_tonfa"
+		"layer0": "supersentaicraft:item/masky_tonfa"
 	},
 	"display": {
 		"thirdperson_righthand": {

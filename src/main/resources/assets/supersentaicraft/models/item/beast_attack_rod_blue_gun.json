@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "supersentaicraft:items/beast_attack_rod_blue_gun"
+		"layer0": "supersentaicraft:item/beast_attack_rod_blue_gun"
 	},
 	"display": {
 		"thirdperson_righthand": {

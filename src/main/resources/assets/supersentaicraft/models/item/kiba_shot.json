@@ -2,28 +2,28 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "supersentaicraft:items/kiba_shot"
+		"layer0": "supersentaicraft:item/kiba_shot"
 	},
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [-90, 0, -60],
-			"translation": [2, 2, 2],
-			"scale": [2, 2, 2]
+			"translation": [0, 1, 2],
+			"scale": [1.7, 1.7, 1.7]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [-90, 0, 30],
-			"translation": [2, 2, 2],
-			"scale": [2, 2, 2]
+			"translation": [0, 1, 2],
+			"scale": [1.7, 1.7, 1.7]
 		},
 		"firstperson_righthand": {
-			"rotation": [-60, -5, -5],
-			"translation": [1, 1, 1],
-			"scale": [2, 2, 2]
+			"rotation": [-60, -20, -20],
+			"translation": [1.13, 1.7, 1.5],
+			"scale": [1.36, 1.36, 1.36]
 		},
 		"firstperson_lefthand": {
-			"rotation": [-60, -5, 85],
-			"translation": [1, 1, 1],
-			"scale": [2, 2, 2]
+			"rotation": [120, 20, -160],
+			"translation": [1.13, 1.7, 1.5],
+			"scale": [1.36, 1.36, 1.36]
 		}
 	},
 	"_comment": "Generated using MiningMark48's JSON Generator."

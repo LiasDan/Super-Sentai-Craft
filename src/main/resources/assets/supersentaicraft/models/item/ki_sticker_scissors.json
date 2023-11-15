@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "supersentaicraft:items/ki_sticker_scissors"
+		"layer0": "supersentaicraft:item/ki_sticker_scissors"
 	},
 	"display": {
 		"thirdperson_righthand": {

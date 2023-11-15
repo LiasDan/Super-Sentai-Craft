@@ -2,6 +2,6 @@
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "parent": "item/generated",
   "textures": {
-    "layer0": "supersentaicraft:items/lights_of_ginga"
+    "layer0": "supersentaicraft:item/lights_of_ginga"
   }
 }

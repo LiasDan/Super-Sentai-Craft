@@ -2,6 +2,6 @@
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "parent": "item/handheld",
   "textures": {
-    "layer0": "supersentaicraft:items/mido_puncher"
+    "layer0": "supersentaicraft:item/mido_puncher"
   }
 }

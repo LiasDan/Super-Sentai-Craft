@@ -2,7 +2,7 @@
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "parent": "item/handheld",
   "textures": {
-    "layer0": "supersentaicraft:items/flashing_beast_attack_rod_red"
+    "layer0": "supersentaicraft:item/flashing_beast_attack_rod_red"
   },
 	"display": {
 		"thirdperson_righthand": {

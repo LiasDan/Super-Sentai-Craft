@@ -1,9 +1,0 @@
-{
-  "_comment": "Generated using MiningMark48's JSON Generator.",
-  "parent": "block/orientable",
-  "textures": {
-    "top": "supersentaicraft:blocks/zyudenchi_charger_top",
-    "front": "supersentaicraft:blocks/zyudenchi_charger_side",
-    "side": "supersentaicraft:blocks/zyudenchi_charger_side"
-  }
-}

@@ -2,6 +2,6 @@
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "parent": "item/generated",
   "textures": {
-    "layer0": "supersentaicraft:items/shishi_disk"
+    "layer0": "supersentaicraft:item/shishi_disk"
   }
 }

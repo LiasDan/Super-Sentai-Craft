@@ -2,6 +2,6 @@
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "parent": "item/generated",
   "textures": {
-    "layer0": "supersentaicraft:items/goranger_manga"
+    "layer0": "supersentaicraft:item/goranger_manga"
   }
 }

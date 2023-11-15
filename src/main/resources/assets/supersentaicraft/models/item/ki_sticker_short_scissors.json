@@ -2,6 +2,6 @@
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "parent": "item/handheld",
   "textures": {
-    "layer0": "supersentaicraft:items/ki_sticker_short_scissors"
+    "layer0": "supersentaicraft:item/ki_sticker_short_scissors"
   }
 }
