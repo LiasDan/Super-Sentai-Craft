@@ -13,7 +13,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:green_ginga_medal"
+            "items": [
+            	"supersentaicraft:green_ginga_medal"
+            ]
           }
         ]
       }

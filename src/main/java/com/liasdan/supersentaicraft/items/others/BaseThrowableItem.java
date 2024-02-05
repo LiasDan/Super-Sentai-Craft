@@ -2,9 +2,9 @@ package com.liasdan.supersentaicraft.items.others;
 
 import java.util.List;
 
-import com.liasdan.supersentaicraft.entity.custom.ExplosiveProjectileEntity;
-import com.liasdan.supersentaicraft.entity.custom.ShurikenProjectileEntity;
-import com.liasdan.supersentaicraft.entity.custom.WeaponProjectileEntity;
+import com.liasdan.supersentaicraft.entity.projectile.ExplosiveProjectileEntity;
+import com.liasdan.supersentaicraft.entity.projectile.ShurikenProjectileEntity;
+import com.liasdan.supersentaicraft.entity.projectile.WeaponProjectileEntity;
 import com.liasdan.supersentaicraft.events.ModClientEvents;
 import com.liasdan.supersentaicraft.items.GorangerItems;
 import com.liasdan.supersentaicraft.items.others.RangerArmorItem;

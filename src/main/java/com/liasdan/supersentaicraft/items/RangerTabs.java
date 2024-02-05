@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.liasdan.supersentaicraft.SuperSentaiCraftCore;
+import com.liasdan.supersentaicraft.blocks.RangerBlocks;
 import com.liasdan.supersentaicraft.entity.MobsCore;
 
 import net.minecraft.core.registries.Registries;
@@ -26,9 +27,11 @@ public class RangerTabs {
     /*public static RegistryObject<CreativeModeTab> RiderMiscTab = CREATIVE_MODE_TABS.register("ssc999", () -> 
     		CreativeModeTab.builder().icon(() -> new ItemStack(OtherItems.RIDER_CIRCUIT.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+":textures/gui/tab_iichigo_items.png"))
     		.title(Component.literal("Misc Rider Items")).build());
+    		
     public static RegistryObject<CreativeModeTab> RiderblockTab = CREATIVE_MODE_TABS.register("krc_999_blocks_tab", () -> 
 			CreativeModeTab.builder().icon(() -> new ItemStack(Rider_Blocks.PURE_GAIA_MEMORY_BLOCK.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+":textures/gui/tab_iichigo_items.png"))
 			.title(Component.literal("Rider Blocks")).build());*/
+	
     public static RegistryObject<CreativeModeTab> GorangerTab = CREATIVE_MODE_TABS.register("ssc001", () -> 
 			CreativeModeTab.builder().icon(() -> new ItemStack(GorangerItems.GORANGER_HELMET.get())).withBackgroundLocation(new ResourceLocation(SuperSentaiCraftCore.MODID+":textures/gui/tab_goranger_items.png"))
 			.title(Component.literal("Himistsu Sentai Goranger")).build());
@@ -45,9 +48,17 @@ public class RangerTabs {
 			CreativeModeTab.builder().icon(() -> new ItemStack(ShinkengerItems.SHINKENGER_HELMET.get())).withBackgroundLocation(new ResourceLocation(SuperSentaiCraftCore.MODID+":textures/gui/tab_shinkenger_items.png"))
 			.title(Component.literal("Samurai Sentai Shinkenger")).build());
     
-    public static RegistryObject<CreativeModeTab> MiscTab = CREATIVE_MODE_TABS.register("ssc999", () -> 
+    public static RegistryObject<CreativeModeTab> RyusoulgerTab = CREATIVE_MODE_TABS.register("ssc044", () -> 
+			CreativeModeTab.builder().icon(() -> new ItemStack(RyusoulgerItems.RYUSOULGER_HELMET.get())).withBackgroundLocation(new ResourceLocation(SuperSentaiCraftCore.MODID+":textures/gui/tab_ryusoulger_items.png"))
+			.title(Component.literal("Kishiryu Sentai Ryusoulger")).build());
+
+    public static RegistryObject<CreativeModeTab> MiscTab = CREATIVE_MODE_TABS.register("ssc900", () -> 
     		CreativeModeTab.builder().icon(() -> new ItemStack(OtherItems.SUPER_SENTAI_LOGO.get())).withBackgroundLocation(new ResourceLocation(SuperSentaiCraftCore.MODID+":textures/gui/tab_misc_items.png"))
     		.title(Component.literal("Misc Sentai Items")).build());
+    
+    public static RegistryObject<CreativeModeTab> BlockTab = CREATIVE_MODE_TABS.register("ssc901", () ->
+    		CreativeModeTab.builder().icon(() -> new ItemStack(RangerBlocks.RYUSOULGER_ORE.get())).withBackgroundLocation(new ResourceLocation(SuperSentaiCraftCore.MODID+":textures/gui/tab_misc_items.png"))
+    		.title(Component.literal("Misc Sentai Blocks")).build());
     
     public static List<Item> GORANGER= new ArrayList<Item>();
 
@@ -57,9 +68,11 @@ public class RangerTabs {
     
     public static List<Item> SHINKENGER= new ArrayList<Item>();
     
-    public static List<Block> RIDER_BLOCK= new ArrayList<Block>();
+    public static List<Item> RYUSOULGER= new ArrayList<Item>();
     
     public static List<Item> MISC= new ArrayList<Item>();
+    
+    public static List<Block> BLOCKS= new ArrayList<Block>();
     
     public static void register(IEventBus eventBus) {
     	CREATIVE_MODE_TABS.register(eventBus);
@@ -95,22 +108,40 @@ public class RangerTabs {
 			}
 
 		}
+		else if(event.getTab() == RangerTabs.RyusoulgerTab.get()) {
+			for (int i = 0; i < RangerTabs.RYUSOULGER.size(); i++)
+			{
+				event.accept( RangerTabs.RYUSOULGER.get(i));
+			}
+
+		}
 		else if(event.getTab() == RangerTabs.MiscTab.get()) {
 
 			event.accept(MobsCore.ZOLDERS_SPAWN_EGG);
+
+			event.accept(MobsCore.UNGLERS_SPAWN_EGG);
+
+			event.accept(MobsCore.YARTOTS_SPAWN_EGG);
+
+			event.accept(MobsCore.NANASHIS_SPAWN_EGG);
+			event.accept(MobsCore.GEDOU_SHINKEN_RED_SPAWN_EGG);
+
+			event.accept(MobsCore.DRUNNS_SPAWN_EGG);
+			event.accept(MobsCore.GAISOULG_SPAWN_EGG);
+			event.accept(MobsCore.RYUSOUL_MORIA_SPAWN_EGG);
 			
 			for (int i = 0; i < RangerTabs.MISC.size(); i++)
 			{
 				event.accept( RangerTabs.MISC.get(i));
 			}
-		}/*
-		else if(event.getTab() == RangerTabs.RiderblockTab.get()) {
-			for (int i = 0; i < RangerTabs.RIDER_BLOCK.size(); i++)
+		}
+		else if(event.getTab() == RangerTabs.BlockTab.get()) {
+			for (int i = 0; i < RangerTabs.BLOCKS.size(); i++)
 			{
-				event.accept( RangerTabs.RIDER_BLOCK.get(i));
+				event.accept( RangerTabs.BLOCKS.get(i));
 			}
 
-		}*/
+		}
 
 
     	

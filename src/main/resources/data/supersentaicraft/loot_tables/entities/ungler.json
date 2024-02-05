@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:red_aura_power",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:black_aura_power",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:blue_aura_power",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:yellow_aura_power",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:pink_aura_power",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:x1_aura_power"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "supersentaicraft:maskman_logo",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:maskman_logo"
+        }
+      ]
+    }
+  ]
+}

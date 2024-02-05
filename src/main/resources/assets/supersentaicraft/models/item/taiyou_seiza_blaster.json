@@ -1,0 +1,30 @@
+{
+  "_comment": "handheld using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:item/taiyou_seiza_blaster"
+  },  "display": {
+    
+        "thirdperson_righthand": {
+            "rotation": [ 180, -270, 0],
+            "translation": [ 4, -1, 1 ],
+            "scale": [ 0.8, 0.8, 2]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 270, -30, -110],
+            "translation": [3, 2, -5 ],
+            "scale": [ 0.8, 0.8, 2]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 180, 270, 0],
+            "translation": [ 4, -1, 1 ],
+            "scale": [ 0.8, 0.8, 2]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ -90, 150, 110],
+            "translation": [3, 2, -5 ],
+            "scale": [ 0.8, 0.8, 2]
+        }
+    
+    }
+}

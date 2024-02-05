@@ -14,7 +14,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:hyper_disk"
+            "items": [
+            	"supersentaicraft:hyper_disk"
+            ]
           }
         ]
       }

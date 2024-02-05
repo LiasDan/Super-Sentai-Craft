@@ -1,0 +1,40 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "supersentaicraft:item/gaisoul_shield"
+	},
+	"overrides": [
+		{"predicate": {"blocking": 1}, "model": "supersentaicraft:item/gaisoul_shield_blocking"}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 30],
+			"translation": [4.5, 0, 2],
+			"scale": [1.6, 1.6, 2.2]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, 30],
+			"translation": [4.5, 0, 2],
+			"scale": [1.6, 1.6, 2.2]
+		},
+		"firstperson_righthand": {
+			"rotation": [20, -90, 10],
+			"translation": [0, 1, 3],
+			"scale": [1.6, 1.6, 1.9]
+		},
+		"firstperson_lefthand": {
+			"rotation": [20, -90, 10],
+			"translation": [0, 1, 3],
+			"scale": [1.6, 1.6, 1.9]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"head": {
+			"translation": [0, 13, 7]
+		}
+	},
+	"_comment": "Generated using MiningMark48's JSON Generator."
+}

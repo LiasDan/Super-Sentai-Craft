@@ -96,25 +96,25 @@ public class MaskmanItems {
     		() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"x1_mask",X1_AURA_POWER,MASKMAN_HELMET,MASKMAN_CHESTPLATE,MASKMAN_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
     
     public static final RegistryObject<BaseBlasterItem> LASER_MAGNUM = ITEMS.register("laser_magnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, 3.5f, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
 	
     public static final RegistryObject<SwordItem> LASER_MAGNUM_SWORD = ITEMS.register("laser_magnum_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, 3.5f, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
     
     public static final RegistryObject<SwordItem> MASKY_BLADE = ITEMS.register("masky_blade",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, 3.5f, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
     
     public static final RegistryObject<SwordItem> MASKY_ROD = ITEMS.register("masky_rod",
-			() -> new BaseDualSwordItem(Tiers.DIAMOND, 5, 3.5f, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
+			() -> new BaseDualSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
 	
     public static final RegistryObject<SwordItem> MASKY_TONFA = ITEMS.register("masky_tonfa",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, 3.5f, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
     
     public static final RegistryObject<BaseThrowableItem> MASKY_ROTOR = ITEMS.register("masky_rotor",
-			() -> new BaseThrowableItem(Tiers.DIAMOND, 5, 3.5f, new Item.Properties()).IsShuriken().AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
+			() -> new BaseThrowableItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsShuriken().AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
     
     public static final RegistryObject<SwordItem> MASKY_RIBBON = ITEMS.register("masky_ribbon",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, 3.5f, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MASKMAN).ChangeRepairItem(MASKMAN_LOGO.get()));
     
     
 	public static void register(IEventBus eventBus) {

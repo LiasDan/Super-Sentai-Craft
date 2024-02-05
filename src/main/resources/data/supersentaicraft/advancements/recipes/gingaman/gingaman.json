@@ -14,7 +14,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:gingaman_logo"
+            "items": [
+            	"supersentaicraft:gingaman_logo"
+            ]
           }
         ]
       }

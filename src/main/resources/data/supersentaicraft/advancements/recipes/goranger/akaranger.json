@@ -14,15 +14,11 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:aka_star"
+            "items": [
+            	"supersentaicraft:aka_star"
+            ]
           }
         ]
-      }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "supersentaicraft:goranger/akaranger_belt"
       }
     }
   },

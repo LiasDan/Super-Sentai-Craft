@@ -20,21 +20,28 @@ import net.minecraft.world.level.Level;
 public class RangerFormChangeItem extends BaseItem {
 
 	private String FORM_NAME;
-	private int Slot =1;
+	public int Slot =1;
 	private List<MobEffectInstance> potionEffectList;
 	private int BELT;
 	private List<Item> NEEDITEM = new ArrayList<Item>();
-	protected String RIDER_NAME;
+	public String RIDER_NAME;
 	private String BELT_TEX;
 	private String UPDATED_MODEL;
 	private String UPDATED_BELT;
 	private String FLYING_MODEL;
 	private Boolean FLYING_TEXT = false;
-	private Item SHIFT_ITEM = Items.APPLE;
-	private Item SWITCH_ITEM;
-	private List<RangerFormChangeItem> alternative = new ArrayList<RangerFormChangeItem>();
-	private RangerFormChangeItem alsoChange2ndSlot;
+	public Item SHIFT_ITEM = Items.APPLE;
+	public Item SWITCH_ITEM;
+	public List<RangerFormChangeItem> alternative = new ArrayList<RangerFormChangeItem>();
+	public RangerFormChangeItem alsoChange2ndSlot;
 	public String[] compatibilityList= new String[] {""};
+	private Boolean HAS_NEED_ITEM_LIST = false;
+	public List<Item> needItemList;
+
+	private RangerFormChangeItem NEED_FORM_SLOT_1;
+	private RangerFormChangeItem NEED_FORM_SLOT_2;
+	private RangerFormChangeItem NEED_FORM_SLOT_3;
+	private RangerFormChangeItem NEED_FORM_SLOT_4;
 
 
 	public RangerFormChangeItem( Properties properties,int belt,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
@@ -112,6 +119,14 @@ public class RangerFormChangeItem extends BaseItem {
 		alternative.add((RangerFormChangeItem) item);
 		return this;
 	}
+
+	public RangerFormChangeItem addNeedForm(Item  item, int slot) {
+		if (slot==1)NEED_FORM_SLOT_1=((RangerFormChangeItem)item);
+		else if (slot==2)NEED_FORM_SLOT_2=((RangerFormChangeItem)item);
+		else if (slot==3)NEED_FORM_SLOT_3=((RangerFormChangeItem)item);
+		else if (slot==4)NEED_FORM_SLOT_4=((RangerFormChangeItem)item);
+		return this;
+	}
 	
 	public RangerFormChangeItem addNeedItem( Item item) {
 		NEEDITEM.add(item);
@@ -125,6 +140,12 @@ public class RangerFormChangeItem extends BaseItem {
 	
 	public RangerFormChangeItem addSwitchForm(Item item) {
 		SWITCH_ITEM=item;
+		return this;
+	}
+
+	public BaseItem AddNeedItemList(List<Item> needChangerItem) {
+		needItemList=needChangerItem;
+		HAS_NEED_ITEM_LIST=true;
 		return this;
 	}
 	
@@ -145,7 +166,7 @@ public class RangerFormChangeItem extends BaseItem {
 		return false;
 	}
 	
-	public Boolean CanChange(Player player,RangerChangerItem belt) {
+	public Boolean CanChange(Player player,RangerChangerItem belt, ItemStack stack) {
 
 		if (this == OtherItems.BLANK_FORM.get()) {
 			return true;
@@ -153,10 +174,23 @@ public class RangerFormChangeItem extends BaseItem {
 		else if(belt.Rider!=RIDER_NAME&!iscompatible(belt.Rider)) {
 			return false;
 		}
-		if (!NEEDITEM.isEmpty()) {
+		if ( !NEEDITEM.isEmpty()) {
 			for (int i = 0; i < NEEDITEM.size(); i++)
 			{
 				if (player.getInventory().countItem(NEEDITEM.get(i))==0){
+					return false;
+				}
+			}
+		}
+		if (NEED_FORM_SLOT_1!=null )if (RangerChangerItem.get_Form_Item(stack, 1)!=NEED_FORM_SLOT_1)return false;
+		if (NEED_FORM_SLOT_2!=null )if (RangerChangerItem.get_Form_Item(stack, 2)!=NEED_FORM_SLOT_1)return false;
+		if (NEED_FORM_SLOT_3!=null )if (RangerChangerItem.get_Form_Item(stack, 3)!=NEED_FORM_SLOT_1)return false;
+		if (NEED_FORM_SLOT_4!=null )if (RangerChangerItem.get_Form_Item(stack, 4)!=NEED_FORM_SLOT_1)return false;
+		
+		if  (HAS_NEED_ITEM_LIST) {
+			for (int i = 0; i < needItemList.size(); i++)
+			{
+				if (player.getInventory().countItem(needItemList.get(i))==0){
 					return false;
 				}
 			}
@@ -175,7 +209,7 @@ public class RangerFormChangeItem extends BaseItem {
 			if (SHIFT_ITEM instanceof RangerFormChangeItem& p_41129_.isShiftKeyDown()) {
 				((RangerFormChangeItem)SHIFT_ITEM).use(p_41128_, p_41129_, p_41130_);
 			}
-			else if (CanChange(p_41129_,belt)) {
+			else if (CanChange(p_41129_,belt,BELT)) {
 				if (alsoChange2ndSlot !=null)RangerChangerItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),alsoChange2ndSlot, 2);
 
 				if (SWITCH_ITEM!=null&RangerChangerItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET), Slot)==this) RangerChangerItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),SWITCH_ITEM, Slot);

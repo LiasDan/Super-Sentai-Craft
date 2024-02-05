@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.liasdan.supersentaicraft.effect.EffectCore;
 import com.liasdan.supersentaicraft.events.ModClientEvents;
 import com.liasdan.supersentaicraft.items.GorangerItems;
 
@@ -153,7 +154,15 @@ public class BaseBlasterItem extends BowItem {
 							abstractarrow.setKnockback(k);
 						}
 
+						if (player.hasEffect(EffectCore.SHOTBOOST.get())) {
+							abstractarrow.setKnockback(3);
+						}
+
 						if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FLAMING_ARROWS, p_40667_) > 0) {
+							abstractarrow.setSecondsOnFire(100);
+						}
+						
+						if (player.hasEffect(EffectCore.FIRESLASH.get())) {
 							abstractarrow.setSecondsOnFire(100);
 						}
 

@@ -13,7 +13,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:goranger_logo"
+            "items": [
+            	"supersentaicraft:goranger_logo"
+            ]
           }
         ]
       }

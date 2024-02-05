@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:shishi_disk",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:ryuu_disk",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:kame_disk",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:kuma_disk",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:saru_disk",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:sushi_disk"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "supersentaicraft:common_disk",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:common_disk"
+        }
+      ]
+    }
+  ]
+}

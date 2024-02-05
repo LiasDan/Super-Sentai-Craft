@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:red_ryusoul",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:blue_ryusoul",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:pink_ryusoul",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:green_ryusoul",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:black_ryusoul",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:gold_ryusoul"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "supersentaicraft:blank_ryusoul",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:blank_ryusoul"
+        }
+      ]
+    }
+  ]
+}

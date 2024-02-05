@@ -11,7 +11,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:unfinished_ryusoul_calibur"
+            "items": [
+            	"supersentaicraft:unfinished_ryusoul_calibur"
+            ]
           }
         ]
       }

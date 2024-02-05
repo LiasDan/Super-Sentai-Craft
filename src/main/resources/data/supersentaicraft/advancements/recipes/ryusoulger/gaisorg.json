@@ -12,7 +12,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:gai_soul"
+            "items": [
+            	"supersentaicraft:gai_soul"
+            ]
           }
         ]
       }

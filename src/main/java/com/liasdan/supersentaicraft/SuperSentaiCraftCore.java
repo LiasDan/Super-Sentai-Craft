@@ -1,5 +1,6 @@
 package com.liasdan.supersentaicraft;
 
+import com.liasdan.supersentaicraft.blocks.RangerBlocks;
 import com.liasdan.supersentaicraft.effect.EffectCore;
 import com.liasdan.supersentaicraft.entity.MobsCore;
 import com.liasdan.supersentaicraft.items.GingamanItems;
@@ -8,7 +9,9 @@ import com.liasdan.supersentaicraft.items.MaskmanItems;
 import com.liasdan.supersentaicraft.items.MobsItems;
 import com.liasdan.supersentaicraft.items.OtherItems;
 import com.liasdan.supersentaicraft.items.RangerTabs;
+import com.liasdan.supersentaicraft.items.RyusoulgerItems;
 import com.liasdan.supersentaicraft.items.ShinkengerItems;
+import com.liasdan.supersentaicraft.loot.ModLootModifiers;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -33,15 +36,15 @@ public class SuperSentaiCraftCore {
 		MaskmanItems.register(modEventBus);
 		GingamanItems.register(modEventBus);
 		ShinkengerItems.register(modEventBus);
-		//RyusoulgerItems.register(modEventBus);
+		RyusoulgerItems.register(modEventBus);
 		MobsItems.register(modEventBus);
+		RangerBlocks.register(modEventBus);
 		MobsCore.register(modEventBus);
 		MobsCore.MOBLIST.register(modEventBus);
 		EffectCore.register(modEventBus);
 		//PotionCore.register(modEventBus);
-		//RangerBlocks.register(modEventBus);
+		ModLootModifiers.register(modEventBus);
 		MinecraftForge.EVENT_BUS.register(this);
-		//ModLootModifiers.register(modEventBus);
 		modEventBus.addListener(this::addCreative);
 		//modEventBus.addListener(this::commonSetup);
 	}

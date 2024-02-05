@@ -1,0 +1,29 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:item/gaburichanger"
+  },  "display": {
+    
+        "thirdperson_righthand": {
+            "rotation": [ -120, 90, 0],
+            "translation": [ 4, -1, 1 ],
+            "scale": [ 0.8, 0.8, 2]
+        },
+        "firstperson_righthand": {
+            "rotation": [ -120, 90, 0],
+            "translation": [3, 3, -5 ],
+            "scale": [ 0.8, 0.8, 2]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ -30, 90, 0],
+            "translation": [ 4, -1, 1 ],
+            "scale": [ 0.8, 0.8, 2]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ -30, 90, 0],
+            "translation": [3, 3, -5 ],
+            "scale": [ 0.8, 0.8, 2]
+        }
+    }
+}

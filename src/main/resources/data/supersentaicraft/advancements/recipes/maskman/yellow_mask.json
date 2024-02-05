@@ -12,7 +12,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:yellow_aura_power"
+            "items": [
+            	"supersentaicraft:yellow_aura_power"
+            ]
           }
         ]
       }

@@ -2,7 +2,7 @@ package com.liasdan.supersentaicraft.items.others;
 
 import java.util.List;
 
-import com.liasdan.supersentaicraft.entity.custom.ExplosiveProjectileEntity;
+import com.liasdan.supersentaicraft.entity.projectile.ExplosiveProjectileEntity;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;

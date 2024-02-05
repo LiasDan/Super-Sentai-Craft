@@ -1,0 +1,143 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:item/seiza_blaster"
+  },  "display": {
+    
+        "thirdperson_righthand": {
+            "rotation": [ 180, -270, 0],
+            "translation": [ 4, -1, 1 ],
+            "scale": [ 0.8, 0.8, 2]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 270, -30, -110],
+            "translation": [3, 2, -5 ],
+            "scale": [ 0.8, 0.8, 2]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 180, 270, 0],
+            "translation": [ 4, -1, 1 ],
+            "scale": [ 0.8, 0.8, 2]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ -90, 150, 110],
+            "translation": [3, 2, -5 ],
+            "scale": [ 0.8, 0.8, 2]
+        }
+    
+    },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/red_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 2
+            },
+            "model": "supersentaicraft:item/orange_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 3
+            },
+            "model": "supersentaicraft:item/blue_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 4
+            },
+            "model": "supersentaicraft:item/gold_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 5
+            },
+            "model": "supersentaicraft:item/black_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 6
+            },
+            "model": "supersentaicraft:item/silver_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 7
+            },
+            "model": "supersentaicraft:item/green_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 8
+            },
+            "model": "supersentaicraft:item/pink_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 9
+            },
+            "model": "supersentaicraft:item/yellow_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 10
+            },
+            "model": "supersentaicraft:item/sky_blue_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 11
+            },
+            "model": "supersentaicraft:item/ikkakuju_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 12
+            },
+            "model": "supersentaicraft:item/pegasus_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 13
+            },
+            "model": "supersentaicraft:item/ya_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 14
+            },
+            "model": "supersentaicraft:item/taiyou_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 15
+            },
+            "model": "supersentaicraft:item/tsuki_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 16
+            },
+            "model": "supersentaicraft:item/saiko_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 17
+            },
+            "model": "supersentaicraft:item/dark_silver_seiza_blaster"
+        },
+        {
+            "predicate": {
+                "pull": 18
+            },
+            "model": "supersentaicraft:item/dark_red_seiza_blaster"
+        }
+    ]
+  }
+}
+}

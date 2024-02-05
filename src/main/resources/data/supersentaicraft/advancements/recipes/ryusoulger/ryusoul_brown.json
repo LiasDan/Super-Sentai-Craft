@@ -12,7 +12,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:brown_ryusoul"
+            "items": [
+            	"supersentaicraft:brown_ryusoul"
+            ]
           }
         ]
       }

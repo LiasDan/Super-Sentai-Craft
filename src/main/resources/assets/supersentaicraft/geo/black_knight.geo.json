@@ -4,8 +4,8 @@
 		{
 			"description": {
 				"identifier": "geometry.unknown",
-				"texture_width": 96,
-				"texture_height": 64,
+				"texture_width": 64,
+				"texture_height": 96,
 				"visible_bounds_width": 3,
 				"visible_bounds_height": 3.5,
 				"visible_bounds_offset": [0, 1.25, 0]
@@ -35,7 +35,7 @@
 					"cubes": [
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.55, "uv": [16, 16]},
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 1, "uv": [16, 32]},
-						{"origin": [-8, 0, 4], "size": [16, 24, -2], "inflate": 1, "uv": [68, 2]}
+						{"origin": [-8, 0, -2], "size": [16, 24, 4], "inflate": 1, "uv": [24, 68]}
 					]
 				},
 				{

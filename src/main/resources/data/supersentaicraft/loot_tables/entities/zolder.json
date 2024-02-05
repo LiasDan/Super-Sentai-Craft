@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:aka_star"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:ao_star"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:ki_star"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:momo_star"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:mido_star"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:goranger_logo",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:goranger_logo"
+        }
+      ]
+    }
+  ]
+}

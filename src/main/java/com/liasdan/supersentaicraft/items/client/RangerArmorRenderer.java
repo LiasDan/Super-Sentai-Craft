@@ -32,6 +32,7 @@ public class RangerArmorRenderer extends GeoArmorRenderer<RangerArmorItem> {
 				setBoneVisible(this.rightLeg,  BELT.getPartsForSlot(currentSlot,"rightLeg"));
 				setBoneVisible(this.leftLeg,  BELT.getPartsForSlot(currentSlot,"leftLeg"));
 				setBoneVisible(this.body, true);
+				setBoneVisible(this.leftArm, true);
 
 			
 		}else {
@@ -51,6 +52,7 @@ public class RangerArmorRenderer extends GeoArmorRenderer<RangerArmorItem> {
 			}
 			case FEET -> {
 				setBoneVisible(this.body, true);
+				setBoneVisible(this.leftArm, true);
 			}
 			default -> {}
 		}

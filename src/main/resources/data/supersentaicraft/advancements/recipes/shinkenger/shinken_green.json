@@ -12,7 +12,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:kuma_disk"
+            "items": [
+            	"supersentaicraft:kuma_disk"
+            ]
           }
         ]
       }

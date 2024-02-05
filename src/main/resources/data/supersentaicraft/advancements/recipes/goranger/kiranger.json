@@ -14,7 +14,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:ki_star"
+            "items": [
+            	"supersentaicraft:ki_star"
+            ]
           }
         ]
       }

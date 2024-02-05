@@ -14,7 +14,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:mido_star"
+            "items": [
+            	"supersentaicraft:mido_star"
+            ]
           }
         ]
       }

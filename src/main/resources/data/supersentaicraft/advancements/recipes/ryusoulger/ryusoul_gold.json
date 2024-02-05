@@ -14,7 +14,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:gold_ryusoul"
+            "items": [
+            	"supersentaicraft:gold_ryusoul"
+            ]
           }
         ]
       }

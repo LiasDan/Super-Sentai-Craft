@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:red_ginga_medal",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:green_ginga_medal",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:blue_ginga_medal",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:yellow_ginga_medal",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:pink_ginga_medal",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:black_knight_core"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "supersentaicraft:gingaman_logo",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:gingaman_logo"
+        }
+      ]
+    }
+  ]
+}

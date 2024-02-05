@@ -17,7 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:blank_ryusoul"
+            "items": [
+            	"supersentaicraft:blank_ryusoul"
+            ]
           }
         ]
       }

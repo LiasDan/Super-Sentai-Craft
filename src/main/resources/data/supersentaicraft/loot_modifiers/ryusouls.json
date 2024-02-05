@@ -1,0 +1,10 @@
+{
+	"type": "supersentaicraft:add_sus_items",
+	"conditions": [
+		{
+			"condition": "forge:loot_table_id",
+			"loot_table_id": "minecraft:archaeology/desert_pyramid"
+		}
+	],
+	"item": "supersentaicraft:ryusoul"
+}

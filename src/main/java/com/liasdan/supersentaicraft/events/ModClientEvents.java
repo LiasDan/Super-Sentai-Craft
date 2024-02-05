@@ -6,8 +6,11 @@ import com.liasdan.supersentaicraft.client.renderer.ThrownShurikenRenderer;
 import com.liasdan.supersentaicraft.client.renderer.ThrownWeaponRenderer;
 import com.liasdan.supersentaicraft.entity.MobsCore;
 import com.liasdan.supersentaicraft.items.GingamanItems;
+import com.liasdan.supersentaicraft.items.RyusoulgerItems;
 import com.liasdan.supersentaicraft.items.gingaman.GingaBraceItem;
 import com.liasdan.supersentaicraft.items.others.BaseDualSwordItem;
+import com.liasdan.supersentaicraft.items.ryusoulger.MosaChangerItem;
+import com.liasdan.supersentaicraft.items.ryusoulger.RyusoulChangerItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,14 +74,30 @@ public class ModClientEvents {
 						return 0.0F;
 					}
 					else if (p_174637_.getItemBySlot(EquipmentSlot.FEET)!= null) {
-						if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GingaBraceItem) {
 							ItemStack belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
+						if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GingaBraceItem) {
 							if (p_174635_.getItem() == GingamanItems.JUUGEKIBOU_RED.get()||p_174635_.getItem() == GingamanItems.JUUGEKIBOU_GREEN.get()||p_174635_.getItem() == GingamanItems.JUUGEKIBOU_BLUE.get()||p_174635_.getItem() == GingamanItems.JUUGEKIBOU_YELLOW.get()||p_174635_.getItem() == GingamanItems.JUUGEKIBOU_PINK.get()) {
 								if (GingaBraceItem.get_Form_Item(belt, 1).getBeltTex()=="beast_armor_shine_belt") return p_174637_.getUseItem() != p_174635_ ? 2.0F : 3.0F;
 								else return p_174637_.getUseItem() != p_174635_ ? 0.0F : 1.0F;
 							}
-							else if (p_174635_.getItem() == GingamanItems.SEIJUUKEN.get()) {
+							if (p_174635_.getItem() == GingamanItems.SEIJUUKEN.get()) {
 								if (GingaBraceItem.get_Form_Item(belt, 1).getBeltTex()=="beast_armor_shine_belt") return 1;
+								else return 0;
+							}
+						}
+						if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RyusoulChangerItem) {
+							if (p_174635_.getItem() == RyusoulgerItems.MAX_RYUSOUL_CHANGER.get()) {
+								if (RyusoulChangerItem.get_Form_Item(belt, 2).getFormName(false)=="_max") return 1;
+								else return 0;
+							}
+						}
+						if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof MosaChangerItem) {
+							
+							if (p_174635_.getItem() == RyusoulgerItems.MOSA_CHANGER.get()) {
+								if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem()==RyusoulgerItems.GOLD_MOSA_CHANGER.get()){
+									if (MosaChangerItem.get_Form_Item(belt, 2).getFormName(false)!="") return 2;
+									else return 1;
+								}
 								else return 0;
 							}
 						}
@@ -98,6 +117,17 @@ public class ModClientEvents {
 	@SubscribeEvent
 	public static void entityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(MobsCore.ZOLDERS.get(), BasicEntityRenderer::new);
+		
+		event.registerEntityRenderer(MobsCore.UNGLERS.get(), BasicEntityRenderer::new);
+
+		event.registerEntityRenderer(MobsCore.YARTOTS.get(), BasicEntityRenderer::new);
+
+		event.registerEntityRenderer(MobsCore.NANASHIS.get(), BasicEntityRenderer::new);
+		event.registerEntityRenderer(MobsCore.GEDOU_SHINKEN_RED.get(), BasicEntityRenderer::new);
+
+		event.registerEntityRenderer(MobsCore.DRUNNS.get(), BasicEntityRenderer::new);
+		event.registerEntityRenderer(MobsCore.GAISOULG.get(), BasicEntityRenderer::new);
+		event.registerEntityRenderer(MobsCore.RYUSOUL_MORIA.get(), BasicEntityRenderer::new);
 		
 		event.registerEntityRenderer(MobsCore.EXPLOSIVE_PROJECTILE.get(), ThrownItemRenderer::new);	   
 		event.registerEntityRenderer(MobsCore.WEAPON_PROJECTILE.get(), ThrownWeaponRenderer::new);	

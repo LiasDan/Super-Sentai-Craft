@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#supersentaicraft:cold",
+  "spawners": {
+    "type": "supersentaicraft:yartots",
+    "weight": 15,
+    "minCount": 3,
+    "maxCount": 5
+  }
+}

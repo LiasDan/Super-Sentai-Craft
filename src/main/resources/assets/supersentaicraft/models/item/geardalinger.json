@@ -1,0 +1,29 @@
+{
+  "_comment": "Generated using MiningMark48's JSON Generator.",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:item/geardalinger"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "supersentaicraft:item/geardalinger_gun"
+        },
+        {
+            "predicate": {
+                "pull": 2
+            },
+            "model": "supersentaicraft:item/geardalinger_super"
+        },
+        {
+            "predicate": {
+                "pull": 3
+            },
+            "model": "supersentaicraft:item/geardalinger_gun_super"
+        }
+    ]
+  }
+}

@@ -12,7 +12,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:ryuu_disk"
+            "items": [
+            	"supersentaicraft:ryuu_disk"
+          	]
           }
         ]
       }

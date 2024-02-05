@@ -1,9 +1,9 @@
 {
-"effect.supersentaicraft.fly":"Flying",
+"effect.supersentaicraft.flying":"Flying",
 "effect.supersentaicraft.fire_punch":"Fire Punch",
-"effect.supersentaicraft.punch_boost":"Punch Boost",
+"effect.supersentaicraft.punch":"Punch Boost",
 "effect.supersentaicraft.big":"Big",
-"effect.supersentaicraft.slash_boost":"Slash Boost",
+"effect.supersentaicraft.slash":"Slash Boost",
 "effect.supersentaicraft.fire_slash":"Fire Slash",
 "effect.supersentaicraft.fire_shot":"Fire Shot",
 "effect.supersentaicraft.shot_boost":"Shot Boost",
@@ -11,55 +11,90 @@
 "effect.supersentaicraft.kijibrother":"KijiBrother",
 "effect.supersentaicraft.sneakboost":"Sneak Boost",
 "effect.supersentaicraft.waterboost":"Water Boost",
+"effect.supersentaicraft.frost_walker":"Frost Walker",
 
-"entity.supersentaicraft.ZoldersMob":"Zolders",
+"entity.supersentaicraft.zolder":"Zolders",
+"item.supersentaicraft.zolder_spawn_egg":"Zolders Spawn Egg",
+
 "entity.supersentaicraft.CrimersMob":"Crimers",
+
 "entity.supersentaicraft.CutmenMob":"Cutmen",
+
 "entity.supersentaicraft.DustlersMob":"Dustlers",
+
 "entity.supersentaicraft.MachinemenMob":"Machinemen",
+
 "entity.supersentaicraft.SpotmenMob":"Spotmen",
+
 "entity.supersentaicraft.MechaclonesMob":"Mechaclones",
+
 "entity.supersentaicraft.BioHunterSilvaMob":"Bio Hunter Silva",
+
 "entity.supersentaicraft.ZolohsMob":"Zolohs",
-"entity.supersentaicraft.UnglersMob":"Ungler Soldiers",
+
+"entity.supersentaicraft.ungler":"Ungler Soldiers",
+"item.supersentaicraft.ungler_spawn_egg":"Ungler Soldiers Spawn Egg",
+
 "entity.supersentaicraft.JimmersMob":"Jimmers",
 "entity.supersentaicraft.DoctorKempMob":"Doctor Kemp",
 "entity.supersentaicraft.DoctorMazendaMob":"Doctor Mazenda",
 "entity.supersentaicraft.DoctorObularMob":"Doctor Obular",
+
 "entity.supersentaicraft.UlarsMob":"Ular Soldiers",
 "entity.supersentaicraft.UlarCaptainMob":"Ular Captain",
+
 "entity.supersentaicraft.GrinamsMob":"Grinam Soldiers",
+
 "entity.supersentaicraft.GolemsMob1":"Golem Soldiers",
 "entity.supersentaicraft.GolemsMob2":"Golem Soldiers",
 "entity.supersentaicraft.DoraSphinxMob":"Dora Sphinx",
 "entity.supersentaicraft.PumpkinRapperMob":"Pumpkin Rapper",
 "entity.supersentaicraft.DragonRangerMob":"Dragon Ranger",
+
 "entity.supersentaicraft.CotpotrosMob":"Cotpotros",
+
 "entity.supersentaicraft.DorodorosMob":"Dorodoros",
+
 "entity.supersentaicraft.WumpersBlueMob":"Combatant Wumpers (Blue)",
 "entity.supersentaicraft.WumpersGreenMob":"Combatant Wumpers (Green)",
 "entity.supersentaicraft.WumpersPinkMob":"Combatant Wumpers (Pink)",
 "entity.supersentaicraft.WumpersWhiteMob":"Combatant Wumpers (White)",
 "entity.supersentaicraft.SignalmanEvilMob":"Signalman (Evil)",
+
 "entity.supersentaicraft.KunekunesMob":"Soldiers Kunekune",
-"entity.supersentaicraft.YartotsMob":"Seamen Yartots",
+
+"entity.supersentaicraft.yartots":"Seamen Yartots",
+"item.supersentaicraft.yartots_spawn_egg":"Seamen Yartots Spawn Egg",
+
 "entity.supersentaicraft.ImpsMob":"Familiars Imps",
+
 "entity.supersentaicraft.OrgettesMob":"Orgettes",
 "entity.supersentaicraft.RoukiMob":"Duke Org Rouki",
+
 "entity.supersentaicraft.BarmiasBlackMob":"Barmia Soldiers (Black)",
 "entity.supersentaicraft.BarmiasWhiteMob":"Barmia Soldiers (White)",
+
 "entity.supersentaicraft.AnaroidsMob":"Anaroids",
 "entity.supersentaicraft.BatsuroidsMob":"Batsuroids",
 "entity.supersentaicraft.IgaroidsMob":"Igaroids",
 "entity.supersentaicraft.NeoDekaRedMob":"Neo DekaRed",
 "entity.supersentaicraft.NeoDekaYellowMob":"Neo DekaYellow",
+
 "entity.supersentaicraft.KarthsMob":"Combatant Karths",
+
 "entity.supersentaicraft.RinshisMob":"Rinshis",
+
 "entity.supersentaicraft.UgatzMob":"Barbaric Machine Soldiers Ugatz",
-"entity.supersentaicraft.NanashisMob":"Nanashi Companies",
-"entity.supersentaicraft.GedouShinkenRedMob":"Gedou Shinken Red",
+
+"entity.supersentaicraft.nanashi":"Nanashi Companies",
+"entity.supersentaicraft.gedou_shinken_red":"Gedou Shinken Red",
+"item.supersentaicraft.nanashi_spawn_egg":"Nanashi Companies Spawn Egg",
+"item.supersentaicraft.gedou_shinken_red_spawn_egg":"Gedou Shinken Red Spawn Egg",
+
 "entity.supersentaicraft.BuglarsMob":"Buglars",
+
 "entity.supersentaicraft.DroansMob":"Droans",
+
 "entity.supersentaicraft.ZorimasMob":"Zorimas",
 "entity.supersentaicraft.DogoldMob":"Raging Knight Dogold",
 "entity.supersentaicraft.DeathRyugerMob":"Deathryuger",
@@ -67,9 +102,12 @@
 "entity.supersentaicraft.ChaosRyugerMob":"Chaosryuger",
 "entity.supersentaicraft.DeinochaserMob":"Deinochaser",
 "entity.supersentaicraft.KyoryugerMob":"Kyoryuger (Futabain Zyudenchi)",
+
 "entity.supersentaicraft.KurosMob":"Combatant Kuros",
 "entity.supersentaicraft.Yami0gouMob":"Yami no 0gou",
+
 "entity.supersentaicraft.MoebasMob":"Moebas",
+
 "entity.supersentaicraft.IndaversBlueMob":"Indavers (Blue)",
 "entity.supersentaicraft.IndaversGreenMob":"Indavers (Green)",
 "entity.supersentaicraft.IndaversWhiteMob":"Indavers (White)",
@@ -78,17 +116,25 @@
 "entity.supersentaicraft.KyurangersMob":"Kyuranger (Futago Kyutama)",
 "entity.supersentaicraft.GaruBikeMob":"Garu Bike",
 "entity.supersentaicraft.ExAidMob":"Kamen Rider Ex-Aid",
+
 "entity.supersentaicraft.PordermenMob":"Porderman",
-"entity.supersentaicraft.DrunnsMob":"Drunn Soldiers",
-"entity.supersentaicraft.GaisorgMob":"Gaisoulg",
-"entity.supersentaicraft.RyusoulMoriaMob":"Ryusoul Moria",
+
+"entity.supersentaicraft.drunn":"Drunn Soldiers",
+"entity.supersentaicraft.gaisoulg":"Gaisoulg",
+"entity.supersentaicraft.ryusoul_moria":"Ryusoul Moria",
+"item.supersentaicraft.drunn_spawn_egg":"Drunn Soldiers Spawn Egg",
+"item.supersentaicraft.gaisoulg_spawn_egg":"Gaisoulg Spawn Egg",
+"item.supersentaicraft.ryusoul_moria_spawn_egg":"Ryusoul Moria Spawn Egg",
+
 "entity.supersentaicraft.BechatsMob":"Bechats",
 "entity.supersentaicraft.DarkKirameiSilverMob":"Dark Kiramei Silver",
+
 "entity.supersentaicraft.KudakksMob":"Kudakks",
 "entity.supersentaicraft.StacaesarMob":"Stacaesar",
 "entity.supersentaicraft.HakaizerMob":"Hakaizer",
 "entity.supersentaicraft.MechaDarkGearMob":"Fake Sentai Robo （Dark Sentai Gear）",
 "entity.supersentaicraft.DonMomotarouMob":"DonMomotarou",
+
 "entity.supersentaicraft.AnounisMob":"Anouni",
 "entity.supersentaicraft.NoutoMob":"Nouto",
 "entity.supersentaicraft.DonMurasameMob":"Don Murasame",
@@ -163,6 +209,10 @@
 "item.supersentaicraft.mido_star":"Mido Star",
 
 "item.supersentaicraft.goranger_manga":"Goranger Manga",
+"item.supersentaicraft.aoranger_manga":"Goranger Manga",
+"item.supersentaicraft.kiranger_manga":"Goranger Manga",
+"item.supersentaicraft.momoranger_manga":"Goranger Manga",
+"item.supersentaicraft.midoranger_manga":"Goranger Manga",
 
 "item.supersentaicraft.red_bute":"Red Bute",
 "item.supersentaicraft.drill_bute":"Drill Bute",
@@ -732,6 +782,7 @@
 //22 Gingaman
 "item.supersentaicraft.gingaman_logo":"Gingaman Logo",
 "block.supersentaicraft.gingaman_ore":"Gingaman Ore",
+"block.supersentaicraft.deepslate_gingaman_ore":"Deepslate Gingaman Ore",
 
 "item.supersentaicraft.gingaman_head":"Gingaman Helmet",
 "item.supersentaicraft.gingaman_torso":"Gingaman Chestplate",
@@ -1197,6 +1248,7 @@
 "item.supersentaicraft.common_disk":"Kyoutsu (Common) Disk",
 "item.supersentaicraft.shinkenger_logo":"Shinkenger Logo",
 "block.supersentaicraft.shinkenger_ore":"Shinkenger Ore",
+"block.supersentaicraft.deepslate_shinkenger_ore":"Deepslate Shinkenger Ore",
 
 "item.supersentaicraft.shinkenger_head":"Shinkenger Helmet",
 "item.supersentaicraft.shinkenger_torso":"Shinkenger Chestplate",
@@ -1767,8 +1819,10 @@
 
 //43 Ryusoulger
 "item.supersentaicraft.blank_ryusoul":"Blank Ryusoul",
+"item.supersentaicraft.ryusoul":"Blank Ryusoul",
 "item.supersentaicraft.ryusoulger_logo":"Ryusoulger Logo",
 "block.supersentaicraft.ryusoulger_ore":"Ryusoulger Ore",
+"block.supersentaicraft.deepslate_ryusoulger_ore":"Deepslate Ryusoulger Ore",
 
 "item.supersentaicraft.ryusoulger_head":"Ryusoulger Helmet",
 "item.supersentaicraft.ryusoulger_torso":"Ryusoulger Chestplate",

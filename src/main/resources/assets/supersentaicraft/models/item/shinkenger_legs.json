@@ -2,6 +2,6 @@
   "_comment": "Generated using MiningMark48's JSON Generator.",
   "parent": "item/generated",
   "textures": {
-    "layer0": "supersentaicraft:items/shinkenger_legs"
+    "layer0": "supersentaicraft:item/shinkenger_legs"
   }
 }

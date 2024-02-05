@@ -11,7 +11,9 @@
       "conditions": {
         "items": [
           {
-            "item": "supersentaicraft:max_ryusoul"
+            "items": [
+            	"supersentaicraft:max_ryusoul"
+            ]
           }
         ]
       }
