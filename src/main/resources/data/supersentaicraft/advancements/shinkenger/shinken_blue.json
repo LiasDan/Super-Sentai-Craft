@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:blue_shodophone"
+    },
+    "title": "Shinken Blue! Ikenami Ryunosuke",
+    "description": "Change into Shinken Blue",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:shinkenger/shinken_red",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:shinkenger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:shinkenger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:shinkenger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:blue_shodophone"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

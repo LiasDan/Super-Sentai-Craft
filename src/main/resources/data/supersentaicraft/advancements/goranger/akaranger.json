@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:akaranger_belt"
+    },
+    "title": "Akaranger!",
+    "description": "Change into Akaranger",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:goranger/goranger",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goranger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goranger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goranger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:akaranger_belt"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

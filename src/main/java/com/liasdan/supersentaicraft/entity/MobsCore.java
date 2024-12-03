@@ -4,6 +4,7 @@ import com.liasdan.supersentaicraft.SuperSentaiCraftCore;
 import com.liasdan.supersentaicraft.entity.boss.GaisoulgEntity;
 import com.liasdan.supersentaicraft.entity.boss.GedouShinkenRedEntity;
 import com.liasdan.supersentaicraft.entity.boss.RyusoulMoriaEntity;
+import com.liasdan.supersentaicraft.entity.footsoldier.CrimersEntity;
 import com.liasdan.supersentaicraft.entity.footsoldier.DrunnsEntity;
 import com.liasdan.supersentaicraft.entity.footsoldier.NanashisEntity;
 import com.liasdan.supersentaicraft.entity.footsoldier.UnglersEntity;
@@ -33,6 +34,13 @@ public class MobsCore {
     public static final RegistryObject<ForgeSpawnEggItem> ZOLDERS_SPAWN_EGG = ITEMS.register("zolder_spawn_egg",
             () -> new ForgeSpawnEggItem(ZOLDERS, 0x121212, 0xa1a1a1, new Item.Properties()));
 
+    //02 JAKQ
+	public static final RegistryObject<EntityType<CrimersEntity>> CRIMERS = MOBLIST.register("crimer",
+            () -> EntityType.Builder.of(CrimersEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(SuperSentaiCraftCore.MODID + ":crimer"));
+    
+    public static final RegistryObject<ForgeSpawnEggItem> CRIMERS_SPAWN_EGG = ITEMS.register("crimer_spawn_egg",
+            () -> new ForgeSpawnEggItem(CRIMERS, 0x878583, 0x121212, new Item.Properties()));
+    
     //11 Maskman
 	public static final RegistryObject<EntityType<UnglersEntity>> UNGLERS = MOBLIST.register("ungler",
             () -> EntityType.Builder.of(UnglersEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(SuperSentaiCraftCore.MODID + ":ungler"));

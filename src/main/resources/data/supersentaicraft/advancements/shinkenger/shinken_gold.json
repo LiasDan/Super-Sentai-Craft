@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:sushi_changer"
+    },
+    "title": "Shinken Gold! Umemori Genta",
+    "description": "Change into Shinken Gold",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:shinkenger/shinken_yellow",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:shinkenger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:shinkenger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:shinkenger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:sushi_changer"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

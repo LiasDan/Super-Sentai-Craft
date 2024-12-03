@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:princess_red_shodophone"
+    },
+    "title": "Shinken Red! Shiba Kaoru",
+    "description": "Change into Princess Shinken Red",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:shinkenger/shinken_gold",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:shinkenger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:shinkenger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:shinkenger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:princess_red_shodophone"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

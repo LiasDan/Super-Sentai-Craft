@@ -1,0 +1,85 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:red_ryusoul_changer"
+    },
+    "title": "Ryusoul Change!",
+    "description": "Obtain any Ryusoul Changer",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:ryusoulger/ryusoulger",
+  "criteria": {
+    "ryusoul_red": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:red_ryusoul_changer"
+            ]
+          }
+        ]
+      }
+    },
+    "ryusoul_blue": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:blue_ryusoul_changer"
+            ]
+          }
+        ]
+      }
+    },
+    "ryusoul_pink": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:pink_ryusoul_changer"
+            ]
+          }
+        ]
+      }
+    },
+    "ryusoul_green": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:green_ryusoul_changer"
+            ]
+          }
+        ]
+      }
+    },
+    "ryusoul_black": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:black_ryusoul_changer"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ryusoul_red",
+      "ryusoul_blue",
+      "ryusoul_pink",
+      "ryusoul_green",
+      "ryusoul_black"
+    ]
+  ]
+}

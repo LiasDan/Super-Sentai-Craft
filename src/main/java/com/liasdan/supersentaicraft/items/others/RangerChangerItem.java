@@ -155,6 +155,7 @@ public class RangerChangerItem extends RangerArmorItem{
 		if (itemstack.getItem() instanceof RangerChangerItem) {
 			((RangerChangerItem)itemstack.getItem()).Extra_set_Form_Item(itemstack, ITEM, SLOT);
 
+			itemstack.getTag().putString("slot_tex"+SLOT, ITEM.toString());
 			itemstack.getTag().putInt("slot"+SLOT, Item.getId(ITEM));
 		}
 	}

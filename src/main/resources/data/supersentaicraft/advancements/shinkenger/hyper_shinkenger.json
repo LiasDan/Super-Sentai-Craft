@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:hyper_disk"
+    },
+    "title": "The Fateful War",
+    "description": "Change into Hyper Shinkenger",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "supersentaicraft:shinkenger/super_shinkenger",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:shinkenger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:shinkenger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:shinkenger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_shodophone",
+                "supersentaicraft:blue_shodophone",
+                "supersentaicraft:pink_shodophone",
+                "supersentaicraft:green_shodophone",
+                "supersentaicraft:yellow_shodophone",
+                "supersentaicraft:sushi_changer",
+                "supersentaicraft:princess_red_shodophone"
+              ],
+              "nbt": "{slot_tex2:\"hyper_disk\"}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

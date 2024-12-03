@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:goranger_manga"
+    },
+    "title": "The Classic Manga",
+    "description": "Obtain Goranger's Manga",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:goranger/goranger",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:goranger_manga"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

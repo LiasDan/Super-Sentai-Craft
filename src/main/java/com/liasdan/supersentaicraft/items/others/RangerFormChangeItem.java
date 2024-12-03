@@ -198,11 +198,44 @@ public class RangerFormChangeItem extends BaseItem {
 		return true;
 	}
 	
+	public Boolean CanChangeMecha(Player player,MechaGattaiItem belt, ItemStack stack) {
+
+		if (this == OtherItems.BLANK_FORM.get()) {
+			return true;
+		}
+		else if(belt.Rider!=RIDER_NAME&!iscompatible(belt.Rider)) {
+			return false;
+		}
+		if ( !NEEDITEM.isEmpty()) {
+			for (int i = 0; i < NEEDITEM.size(); i++)
+			{
+				if (player.getInventory().countItem(NEEDITEM.get(i))==0){
+					return false;
+				}
+			}
+		}
+		if (NEED_FORM_SLOT_1!=null )if (MechaGattaiItem.get_Form_Item(stack, 1)!=NEED_FORM_SLOT_1)return false;
+		if (NEED_FORM_SLOT_2!=null )if (MechaGattaiItem.get_Form_Item(stack, 2)!=NEED_FORM_SLOT_1)return false;
+		if (NEED_FORM_SLOT_3!=null )if (MechaGattaiItem.get_Form_Item(stack, 3)!=NEED_FORM_SLOT_1)return false;
+		if (NEED_FORM_SLOT_4!=null )if (MechaGattaiItem.get_Form_Item(stack, 4)!=NEED_FORM_SLOT_1)return false;
+		
+		if  (HAS_NEED_ITEM_LIST) {
+			for (int i = 0; i < needItemList.size(); i++)
+			{
+				if (player.getInventory().countItem(needItemList.get(i))==0){
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
 
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
 
 		ItemStack BELT = p_41129_.getItemBySlot(EquipmentSlot.FEET);
+		ItemStack MECHA = p_41129_.getItemBySlot(EquipmentSlot.HEAD);
 
 		if (BELT.getItem() instanceof RangerChangerItem belt) {
 
@@ -214,6 +247,26 @@ public class RangerFormChangeItem extends BaseItem {
 
 				if (SWITCH_ITEM!=null&RangerChangerItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET), Slot)==this) RangerChangerItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),SWITCH_ITEM, Slot);
 					else RangerChangerItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),this, Slot);
+			
+			}else if(!alternative.isEmpty()){
+
+				for (int i = 0; i < alternative.size(); i++)
+				{
+					RangerFormChangeItem alternativeItem_form_change = alternative.get(i);
+					alternativeItem_form_change.use(p_41128_, p_41129_, p_41130_);
+				}
+			}
+		}
+		if (MECHA.getItem() instanceof MechaGattaiItem belt) {
+
+			if (SHIFT_ITEM instanceof RangerFormChangeItem& p_41129_.isShiftKeyDown()) {
+				((RangerFormChangeItem)SHIFT_ITEM).use(p_41128_, p_41129_, p_41130_);
+			}
+			else if (CanChangeMecha(p_41129_,belt,MECHA)) {
+				if (alsoChange2ndSlot !=null)MechaGattaiItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.HEAD),alsoChange2ndSlot, 2);
+
+				if (SWITCH_ITEM!=null&MechaGattaiItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.HEAD), Slot)==this) MechaGattaiItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.HEAD),SWITCH_ITEM, Slot);
+					else MechaGattaiItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.HEAD),this, Slot);
 			
 			}else if(!alternative.isEmpty()){
 

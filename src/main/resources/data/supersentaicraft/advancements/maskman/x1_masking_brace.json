@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:x1_masking_brace"
+    },
+    "title": "Change Power!",
+    "description": "Obtain X1's Masking Brace",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:maskman/masking_brace",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:x1_masking_brace"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

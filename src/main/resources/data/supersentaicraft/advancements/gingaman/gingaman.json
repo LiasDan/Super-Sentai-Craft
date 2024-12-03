@@ -1,0 +1,190 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:gingaman_logo"
+    },
+    "title": "Seijuu Sentai Gingaman",
+    "description": "Change into each member of Gingaman",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:root",
+  "criteria": {
+    "ginga_red": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:gingaman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:gingaman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:gingaman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ginga_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ginga_green": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:gingaman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:gingaman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:gingaman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:green_ginga_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ginga_blue": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:gingaman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:gingaman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:gingaman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:blue_ginga_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ginga_yellow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:gingaman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:gingaman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:gingaman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:yellow_ginga_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ginga_pink": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:gingaman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:gingaman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:gingaman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:pink_ginga_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "black_knight": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:gingaman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:gingaman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:gingaman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:black_knight_bull_riot"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

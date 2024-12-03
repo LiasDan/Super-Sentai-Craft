@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:moria_ryusoul_changer"
+    },
+    "title": "Call me Ryusoul Moria",
+    "description": "Change into Ryusoul Moria",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:ryusoulger/ryusoul_brown",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:moria_ryusoul_changer"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

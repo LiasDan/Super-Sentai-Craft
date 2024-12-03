@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:blue_ryusoul_changer"
+    },
+    "title": "Eichi no Kishi! Ryusoul Blue!",
+    "description": "Change into Ryusoul Blue",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:ryusoulger/ryusoul_red",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:blue_ryusoul_changer"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

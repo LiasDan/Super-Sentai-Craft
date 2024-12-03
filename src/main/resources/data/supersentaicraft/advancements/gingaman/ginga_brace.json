@@ -1,0 +1,85 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:red_ginga_brace"
+    },
+    "title": "Ginga Tensei!",
+    "description": "Obtain any Ginga Brace",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:gingaman/gingaman",
+  "criteria": {
+    "ginga_red": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:red_ginga_brace"
+            ]
+          }
+        ]
+      }
+    },
+    "ginga_green": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:green_ginga_brace"
+            ]
+          }
+        ]
+      }
+    },
+    "ginga_blue": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:blue_ginga_brace"
+            ]
+          }
+        ]
+      }
+    },
+    "ginga_yellow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:yellow_ginga_brace"
+            ]
+          }
+        ]
+      }
+    },
+    "ginga_pink": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:pink_ginga_brace"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ginga_red",
+      "ginga_green",
+      "ginga_blue",
+      "ginga_yellow",
+      "ginga_pink"
+    ]
+  ]
+}

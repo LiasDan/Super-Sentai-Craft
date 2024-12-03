@@ -1,0 +1,161 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:jakq_logo"
+    },
+    "title": "J.A.K.Q. Dengekitai",
+    "description": "Change into each member of J.A.K.Q.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:root",
+  "criteria": {
+    "spade_ace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:jakq_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:jakq_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:jakq_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:ace_powered_capsule"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "dia_jack": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:jakq_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:jakq_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:jakq_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:jack_powered_capsule"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "heart_queen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:jakq_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:jakq_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:jakq_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:queen_powered_capsule"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "clover_king": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:jakq_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:jakq_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:jakq_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:king_powered_capsule"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "big_one": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:jakq_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:jakq_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:jakq_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:big_one_red_rose"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

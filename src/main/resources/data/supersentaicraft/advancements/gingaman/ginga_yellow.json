@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:yellow_ginga_brace"
+    },
+    "title": "Ginga Yellow! Hikaru!",
+    "description": "Change into Ginga Yellow",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:gingaman/ginga_blue",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:gingaman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:gingaman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:gingaman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:yellow_ginga_brace"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

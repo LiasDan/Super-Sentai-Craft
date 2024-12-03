@@ -1,0 +1,19 @@
+{
+  "display": {
+	"icon": {
+	  "item": "supersentaicraft:super_sentai_logo"
+	},
+	"title": "Super Sentai Craft",
+	"description": "This is the moment where your story begins!",
+	"background": "minecraft:textures/block/polished_andesite.png",
+	"frame": "task",
+	"show_toast": false,
+	"announce_to_chat": false,
+	"hidden": false
+  },
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:tick"
+	}
+  }
+}

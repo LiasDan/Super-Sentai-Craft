@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:yellow_shodophone"
+    },
+    "title": "Shinken Yellow! Hanaori Kotoha",
+    "description": "Change into Shinken Yellow",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:shinkenger/shinken_green",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:shinkenger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:shinkenger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:shinkenger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:yellow_shodophone"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

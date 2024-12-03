@@ -28,9 +28,21 @@ import net.minecraftforge.registries.RegistryObject;
 public class OtherItems {
 
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SuperSentaiCraftCore.MODID);
+	
+	public static String[] SentaiRobo = new String[] {"sun_vulcan_robo"};
+    
+	public static final RegistryObject<Item> MECHA_GEAR = ITEMS.register("mecha_gear",
+			() -> new RangerFormChangeItem(new Item.Properties(),0,"","","blank",
+            		new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 2,true,false),
+            		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+            		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+            		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).AddToTabList(RangerTabs.MISC));
     
 	public static final RegistryObject<Item> SUPER_SENTAI_LOGO = ITEMS.register("super_sentai_logo",
-    		() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.MISC));
+    		() -> new RangerFormChangeItem(new Item.Properties(), 0, "", "", "blank",
+            		new MobEffectInstance(EffectCore.BIG.get(), 40, 2,true,false))
+    		.ChangeSlot(2).addSwitchForm(MECHA_GEAR.get()).AddCompatibilityList(SentaiRobo).AddToTabList(RangerTabs.MISC));
     
 	public static final RegistryObject<Item> BLANK_FORM = ITEMS.register("blank_form",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"","",""));

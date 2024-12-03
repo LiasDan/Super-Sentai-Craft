@@ -31,6 +31,9 @@ public class MobsItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SuperSentaiCraftCore.MODID);
     
 	public static final RegistryObject<SwordItem> ZOLDERS_SWORD = ITEMS.register("zolders_sword",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MISC).ChangeRepairItem(OtherItems.BLANK_FORM.get())); 
+	
+	public static final RegistryObject<SwordItem> CRIMERS_SWORD = ITEMS.register("crimers_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MISC).ChangeRepairItem(OtherItems.BLANK_FORM.get()));
     
 	public static final RegistryObject<SwordItem> UNGLER_LANCE = ITEMS.register("ungler_lance",

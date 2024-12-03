@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:sushi_changer"
+    },
+    "title": "Ikkan Kenjou!",
+    "description": "Obtain Shinken Gold's Sushi Changer",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:shinkenger/shodophone",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:sushi_changer"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

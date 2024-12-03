@@ -1,0 +1,191 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:maskman_logo",
+      "nbt": "{Damage:0}"
+    },
+    "title": "Hikari Sentai Maskman",
+    "description": "Change into each member of Maskman",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:root",
+  "criteria": {
+    "red_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:maskman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:maskman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:maskman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_masking_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "black_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:maskman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:maskman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:maskman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:black_masking_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "blue_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:maskman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:maskman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:maskman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:blue_masking_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "yellow_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:maskman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:maskman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:maskman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:yellow_masking_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "pink_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:maskman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:maskman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:maskman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:pink_masking_brace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "x1_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:maskman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:maskman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:maskman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:x1_masking_brace"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

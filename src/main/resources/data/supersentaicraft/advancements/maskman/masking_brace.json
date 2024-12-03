@@ -1,0 +1,85 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:red_masking_brace"
+    },
+    "title": "Aura Mask!",
+    "description": "Obtain any Masking Brace",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:maskman/maskman",
+  "criteria": {
+    "red_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:red_masking_brace"
+            ]
+          }
+        ]
+      }
+    },
+    "black_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:black_masking_brace"
+            ]
+          }
+        ]
+      }
+    },
+    "blue_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:blue_masking_brace"
+            ]
+          }
+        ]
+      }
+    },
+    "yellow_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:yellow_masking_brace"
+            ]
+          }
+        ]
+      }
+    },
+    "pink_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:pink_masking_brace"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "red_mask",
+      "black_mask",
+      "blue_mask",
+      "yellow_mask",
+      "pink_mask"
+    ]
+  ]
+}

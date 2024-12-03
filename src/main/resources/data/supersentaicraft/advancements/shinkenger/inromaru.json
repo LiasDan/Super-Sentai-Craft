@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:inromaru"
+    },
+    "title": "Super Disk!",
+    "description": "Obtain Inroumaru",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:shinkenger/sushi_changer",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:inromaru"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

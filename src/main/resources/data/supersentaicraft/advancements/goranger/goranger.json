@@ -1,0 +1,162 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:goranger_logo",
+      "nbt": "{Damage:0}"
+    },
+    "title": "Himitsu Sentai Goranger",
+    "description": "Change into each member of Goranger",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:root",
+  "criteria": {
+    "akaranger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goranger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goranger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goranger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:akaranger_belt"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "aoranger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goranger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goranger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goranger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:aoranger_belt"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "kiranger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goranger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goranger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goranger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:kiranger_belt"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "momoranger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goranger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goranger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goranger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:momoranger_belt"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "midoranger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goranger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goranger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goranger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:midoranger_belt"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

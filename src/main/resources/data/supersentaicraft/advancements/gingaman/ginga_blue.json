@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:blue_ginga_brace"
+    },
+    "title": "Ginga Blue! Gouki!",
+    "description": "Change into Ginga Blue",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:gingaman/ginga_green",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:gingaman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:gingaman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:gingaman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:blue_ginga_brace"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

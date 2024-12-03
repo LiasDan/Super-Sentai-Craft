@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:hyper_disk"
+    },
+    "title": "The Founding Hiden Disk",
+    "description": "Obtain Hyper Disk",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:shinkenger/inromaru",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:hyper_disk"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

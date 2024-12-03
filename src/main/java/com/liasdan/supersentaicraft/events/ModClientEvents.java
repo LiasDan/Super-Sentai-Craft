@@ -31,7 +31,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 @Mod.EventBusSubscriber(modid = SuperSentaiCraftCore.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModClientEvents {
 
-	private static ResourceLocation BLOCKING_PROPERTY_RESLOC = new ResourceLocation(SuperSentaiCraftCore.MODID, "blocking");
+	private static ResourceLocation BLOCKING_PROPERTY_RESLOC = new ResourceLocation("blocking");
 
 	public static List<Item> SWORD_GUN_ITEM= new ArrayList<Item>();
 
@@ -117,6 +117,8 @@ public class ModClientEvents {
 	@SubscribeEvent
 	public static void entityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(MobsCore.ZOLDERS.get(), BasicEntityRenderer::new);
+		
+		event.registerEntityRenderer(MobsCore.CRIMERS.get(), BasicEntityRenderer::new);
 		
 		event.registerEntityRenderer(MobsCore.UNGLERS.get(), BasicEntityRenderer::new);
 

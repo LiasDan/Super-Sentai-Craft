@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:lights_of_ginga"
+    },
+    "title": "Chapter 23: End of the Contest",
+    "description": "Change into Juusoukou Gingaman",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "supersentaicraft:gingaman/gingaman",
+  "criteria": {
+    "ginga_red": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:gingaman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:gingaman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:gingaman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ginga_brace",
+                "supersentaicraft:green_ginga_brace",
+                "supersentaicraft:blue_ginga_brace",
+                "supersentaicraft:yellow_ginga_brace",
+                "supersentaicraft:pink_ginga_brace"
+              ],
+              "nbt": "{slot_tex2:\"lights_of_ginga\"}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

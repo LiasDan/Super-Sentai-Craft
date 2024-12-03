@@ -1,0 +1,831 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:tsuyo_soul"
+    },
+    "title": "Ryu-sou-sou-soul! Kono Kanji!",
+    "description": "Use every RyuSouls",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "supersentaicraft:ryusoulger/ryusoulger",
+  "criteria": {
+    "tsuyo_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"tsuyo_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "nobi_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"nobi_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "omo_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"omo_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "haya_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"haya_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "kata_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"kata_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "kike_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"kike_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "kusa_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"kusa_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "mie_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"mie_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "mukimuki_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"mukimuki_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "chiisa_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"chiisa_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "mabushi_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"mabushi_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "mist_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"mist_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "karu_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"karu_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "gyaku_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"gyaku_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "kotae_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"kotae_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "migake_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"migake_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "kunkun_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"kunkun_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "pukupuku_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"pukupuku_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "kakure_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"kakure_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "fue_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"fue_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "nemu_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"nemu_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "mawari_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"mawari_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "kawaki_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"kawaki_soul\"}"
+            }
+          }
+        }
+      }
+    },
+    "yawaraka_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"yawaraka_soul\"}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:black_ryusoul_changer"
+    },
+    "title": "Ifuu no Kishi! Ryusoul Black!",
+    "description": "Change into Ryusoul Black",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:ryusoulger/ryusoul_green",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:black_ryusoul_changer"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

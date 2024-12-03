@@ -36,6 +36,14 @@ public class RangerTabs {
 			CreativeModeTab.builder().icon(() -> new ItemStack(GorangerItems.GORANGER_HELMET.get())).withBackgroundLocation(new ResourceLocation(SuperSentaiCraftCore.MODID+":textures/gui/tab_goranger_items.png"))
 			.title(Component.literal("Himistsu Sentai Goranger")).build());
     
+    public static RegistryObject<CreativeModeTab> JAKQTab = CREATIVE_MODE_TABS.register("ssc002", () -> 
+			CreativeModeTab.builder().icon(() -> new ItemStack(JAKQItems.JAKQ_HELMET.get())).withBackgroundLocation(new ResourceLocation(SuperSentaiCraftCore.MODID+":textures/gui/tab_jakq_items.png"))
+			.title(Component.literal("J.A.K.Q. Dengekitai")).build());
+    
+    public static RegistryObject<CreativeModeTab> SunVulcanTab = CREATIVE_MODE_TABS.register("ssc005", () -> 
+			CreativeModeTab.builder().icon(() -> new ItemStack(SunVulcanItems.SUN_VULCAN_HELMET.get())).withBackgroundLocation(new ResourceLocation(SuperSentaiCraftCore.MODID+":textures/gui/tab_sun_vulcan_items.png"))
+			.title(Component.literal("Taiyou Sentai Sun Vulcan")).build());
+
     public static RegistryObject<CreativeModeTab> MaskmanTab = CREATIVE_MODE_TABS.register("ssc011", () -> 
 			CreativeModeTab.builder().icon(() -> new ItemStack(MaskmanItems.MASKMAN_HELMET.get())).withBackgroundLocation(new ResourceLocation(SuperSentaiCraftCore.MODID+":textures/gui/tab_maskman_items.png"))
 			.title(Component.literal("Hikari Sentai Maskman")).build());
@@ -61,6 +69,9 @@ public class RangerTabs {
     		.title(Component.literal("Misc Sentai Blocks")).build());
     
     public static List<Item> GORANGER= new ArrayList<Item>();
+    public static List<Item> JAKQ= new ArrayList<Item>();
+    
+    public static List<Item> SUN_VULCAN= new ArrayList<Item>();
 
     public static List<Item> MASKMAN= new ArrayList<Item>();
     
@@ -84,6 +95,20 @@ public class RangerTabs {
 			for (int i = 0; i < RangerTabs.GORANGER.size(); i++)
 			{
 				event.accept( RangerTabs.GORANGER.get(i));
+			}
+
+		}
+		else if(event.getTab() == RangerTabs.JAKQTab.get()) {
+			for (int i = 0; i < RangerTabs.JAKQ.size(); i++)
+			{
+				event.accept( RangerTabs.JAKQ.get(i));
+			}
+
+		}
+		else if(event.getTab() == RangerTabs.SunVulcanTab.get()) {
+			for (int i = 0; i < RangerTabs.SUN_VULCAN.size(); i++)
+			{
+				event.accept( RangerTabs.SUN_VULCAN.get(i));
 			}
 
 		}
@@ -118,6 +143,8 @@ public class RangerTabs {
 		else if(event.getTab() == RangerTabs.MiscTab.get()) {
 
 			event.accept(MobsCore.ZOLDERS_SPAWN_EGG);
+			
+			event.accept(MobsCore.CRIMERS_SPAWN_EGG);
 
 			event.accept(MobsCore.UNGLERS_SPAWN_EGG);
 

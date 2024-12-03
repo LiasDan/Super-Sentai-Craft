@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:gold_mosa_changer"
+    },
+    "title": "Ryusoul Change!",
+    "description": "Obtain Ryusoul Gold's Mosa Changer",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:ryusoulger/ryusoul_changer",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:gold_mosa_changer"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

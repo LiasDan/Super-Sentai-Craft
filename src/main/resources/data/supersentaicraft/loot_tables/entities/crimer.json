@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:ace_card"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:jack_card"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:queen_card"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:king_card"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:big_one_card"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:blank_card",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:blank_card"
+        }
+      ]
+    }
+  ]
+}

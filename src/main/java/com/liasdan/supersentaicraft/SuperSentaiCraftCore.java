@@ -5,12 +5,14 @@ import com.liasdan.supersentaicraft.effect.EffectCore;
 import com.liasdan.supersentaicraft.entity.MobsCore;
 import com.liasdan.supersentaicraft.items.GingamanItems;
 import com.liasdan.supersentaicraft.items.GorangerItems;
+import com.liasdan.supersentaicraft.items.JAKQItems;
 import com.liasdan.supersentaicraft.items.MaskmanItems;
 import com.liasdan.supersentaicraft.items.MobsItems;
 import com.liasdan.supersentaicraft.items.OtherItems;
 import com.liasdan.supersentaicraft.items.RangerTabs;
 import com.liasdan.supersentaicraft.items.RyusoulgerItems;
 import com.liasdan.supersentaicraft.items.ShinkengerItems;
+import com.liasdan.supersentaicraft.items.SunVulcanItems;
 import com.liasdan.supersentaicraft.loot.ModLootModifiers;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -33,6 +35,8 @@ public class SuperSentaiCraftCore {
 		RangerTabs.register(modEventBus);
 		OtherItems.register(modEventBus);
 		GorangerItems.register(modEventBus);
+		JAKQItems.register(modEventBus);
+		SunVulcanItems.register(modEventBus);
 		MaskmanItems.register(modEventBus);
 		GingamanItems.register(modEventBus);
 		ShinkengerItems.register(modEventBus);

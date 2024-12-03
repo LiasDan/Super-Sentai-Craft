@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:gaisorg_changer"
+    },
+    "title": "Gaisoul Change!",
+    "description": "Obtain Gaisoulg's Gaisoul Ken",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:ryusoulger/mosa_changer",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:gaisorg_changer"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:kata_soul"
+    },
+    "title": "KataSoul! Kachin!",
+    "description": "Use KataSoul",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "supersentaicraft:ryusoulger/haya_soul",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer"
+              ],
+              "nbt": "{slot_tex2:\"kata_soul\"}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

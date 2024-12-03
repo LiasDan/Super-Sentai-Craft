@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:red_masking_brace"
+    },
+    "title": "Red Mask!",
+    "description": "Change into Red Mask",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:maskman/maskman",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:maskman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:maskman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:maskman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_masking_brace"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

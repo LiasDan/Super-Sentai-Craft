@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:ace_powered_capsule"
+    },
+    "title": "Heart Queen!",
+    "description": "Change into Heart Queen",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:jakq/dia_jack",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:jakq_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:jakq_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:jakq_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:queen_powered_capsule"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

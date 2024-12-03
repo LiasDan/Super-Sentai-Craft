@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:lights_of_ginga"
+    },
+    "title": "Unari! Ginga no Hikari!",
+    "description": "Obtain Lights of Ginga",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:gingaman/bull_riot",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:lights_of_ginga"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

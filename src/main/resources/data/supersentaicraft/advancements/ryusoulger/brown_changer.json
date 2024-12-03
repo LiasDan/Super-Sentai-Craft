@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:brown_changer"
+    },
+    "title": "Ryusoul Change!",
+    "description": "Obtain Ryusoul Brown's Brown Ryusoul Ken",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:ryusoulger/gaisoul_changer",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:brown_changer"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

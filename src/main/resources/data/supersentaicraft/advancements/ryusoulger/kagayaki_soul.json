@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:kagayaki_soul"
+    },
+    "title": "Ep26: Seventh Knight",
+    "description": "Use KagayakiSoul",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "supersentaicraft:ryusoulger/kurayami_soul",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:ryusoulger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:ryusoulger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:ryusoulger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_ryusoul_changer",
+                "supersentaicraft:blue_ryusoul_changer",
+                "supersentaicraft:pink_ryusoul_changer",
+                "supersentaicraft:green_ryusoul_changer",
+                "supersentaicraft:black_ryusoul_changer",
+                "supersentaicraft:gold_mosa_changer"
+              ],
+              "nbt": "{slot_tex2:\"kagayaki_soul\"}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

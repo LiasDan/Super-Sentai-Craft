@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:red_shodophone"
+    },
+    "title": "Ippitsu Soujou!",
+    "description": "Obtain any Shodophone",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:shinkenger/shinkenger",
+  "criteria": {
+    "shinken_red": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:red_shodophone",
+              "supersentaicraft:blue_shodophone",
+              "supersentaicraft:pink_shodophone",
+              "supersentaicraft:green_shodophone",
+              "supersentaicraft:yellow_shodophone",
+              "supersentaicraft:princess_red_shodophone"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

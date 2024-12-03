@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "supersentaicraft:black_knight_bull_riot"
+    },
+    "title": "Kishi Tensei!",
+    "description": "Obtain Black Knight's Bull Riot",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:gingaman/ginga_brace",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:black_knight_bull_riot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
