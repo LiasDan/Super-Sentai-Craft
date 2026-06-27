@@ -68,15 +68,10 @@ public class SuperSentaiCraftCore {
 	private static final Logger LOGGER = LogUtils.getLogger();
 
 	public static List<Item> SWORD_GUN_ITEM= new ArrayList<Item>();
-
 	public static List<Item> SHIELD_ITEM= new ArrayList<Item>();
-
 	public static List<Item> MULTI_WEAPON_ITEM= new ArrayList<Item>();
-
 	public static List<Item> CHARGED_WEAPON= new ArrayList<Item>();
-
 	public static List<Item> FORM_WEAPON_ITEM= new ArrayList<Item>();
-
 	public static List<Item> CHANGE_CHANGER_TEXTURE= new ArrayList<Item>();
 
 	public SuperSentaiCraftCore(IEventBus modEventBus, ModContainer modContainer) {

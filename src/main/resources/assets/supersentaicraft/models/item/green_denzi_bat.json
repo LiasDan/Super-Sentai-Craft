@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "supersentaicraft:item/green_denzi_bat"
+  }
+}

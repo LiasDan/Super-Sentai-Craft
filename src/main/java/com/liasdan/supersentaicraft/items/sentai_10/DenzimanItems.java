@@ -5,6 +5,7 @@ import com.liasdan.supersentaicraft.effect.EffectCore;
 import com.liasdan.supersentaicraft.items.OtherItems;
 import com.liasdan.supersentaicraft.items.RangerTabs;
 import com.liasdan.supersentaicraft.items.others.*;
+import com.liasdan.supersentaicraft.items.sentai_10.denziman.DenziPunchItem;
 import com.liasdan.supersentaicraft.items.sentai_10.denziman.DenziRingItem;
 import com.liasdan.supersentaicraft.items.sentai_10.sun_vulcan.VulcanBraceItem;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -91,6 +92,28 @@ public class DenzimanItems {
 	public static final DeferredItem<SwordItem> GREEN_DENZI_STICK = ITEMS.register("green_denzi_stick",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
 	public static final DeferredItem<SwordItem> PINK_DENZI_STICK = ITEMS.register("pink_denzi_stick",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
+
+	public static final DeferredItem<SwordItem> DENZI_PUNCH = ITEMS.register("denzi_punch",
+			() -> new DenziPunchItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
+	public static final DeferredItem<SwordItem> DENZI_PUNCH1 = ITEMS.register("denzi_punch1",
+			() -> new DenziPunchItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
+
+	public static final DeferredItem<SwordItem> RED_DENZI_BAT = ITEMS.register("red_denzi_bat",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
+	public static final DeferredItem<SwordItem> BLUE_DENZI_BAT = ITEMS.register("blue_denzi_bat",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
+	public static final DeferredItem<SwordItem> YELLOW_DENZI_BAT = ITEMS.register("yellow_denzi_bat",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
+	public static final DeferredItem<SwordItem> GREEN_DENZI_BAT = ITEMS.register("green_denzi_bat",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
+	public static final DeferredItem<SwordItem> PINK_DENZI_BAT = ITEMS.register("pink_denzi_bat",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
+
+	public static final DeferredItem<BaseBlasterItem> DENZI_SHOCK_GUN = ITEMS.register("denzi_shock_gun",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
+
+	public static final DeferredItem<SwordItem> DENZI_PINK_SWORD = ITEMS.register("denzi_pink_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
 
 //	public static final DeferredItem<Item> SUN_VULCAN_ROBO = ITEMS.register("sun_vulcan_robo",

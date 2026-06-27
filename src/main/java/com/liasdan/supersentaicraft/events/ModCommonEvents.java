@@ -12,6 +12,7 @@ import com.liasdan.supersentaicraft.entity.footsoldier.*;
 
 import com.liasdan.supersentaicraft.items.OtherItems;
 import com.liasdan.supersentaicraft.items.others.RangerChangerItem;
+import com.liasdan.supersentaicraft.items.sentai_10.denziman.DenziPunchItem;
 import com.liasdan.supersentaicraft.network.payload.AbilityKeyPayload;
 import com.liasdan.supersentaicraft.network.payload.PoseKeyPayload;
 import com.liasdan.supersentaicraft.world.attribute.AttributeRegistry;
@@ -95,12 +96,16 @@ public class ModCommonEvents {
 					}
 
 					if (_livEnt.hasEffect(EffectCore.THUNDERPUNCH)) {
+						if (_livEnt.getMainHandItem().getItem() instanceof DenziPunchItem) {
+							LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,_livEnt.level());
+							thunder.setPos(   event.getEntity().getX(),   event.getEntity().getY(),   event.getEntity().getZ());
+							event.getEntity().level().addFreshEntity(thunder);
+						}
 						if (_livEnt.getMainHandItem().isEmpty()) {
 							LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,_livEnt.level());
 							thunder.setPos(   event.getEntity().getX(),   event.getEntity().getY(),   event.getEntity().getZ());
 							event.getEntity().level().addFreshEntity(thunder);
 						}
-
 					}
 
 					if (_livEnt.hasEffect(EffectCore.EXPLOSIONPUNCH)) {
