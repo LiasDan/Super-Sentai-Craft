@@ -1,5 +1,6 @@
 package com.liasdan.supersentaicraft.mixin.livingentity;
 
+import com.liasdan.supersentaicraft.items.others.MechaGattaiItem;
 import com.liasdan.supersentaicraft.items.others.RangerChangerItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.server.level.ServerLevel;
@@ -47,6 +48,11 @@ public class LivingEntityMixin {
         if (!(rider instanceof Player)) {
             if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RangerChangerItem belt) {
                 belt.beltTick(rider.getItemBySlot(EquipmentSlot.FEET), rider.level(), rider, 36);
+//              belt.riderKickTick(rider.getItemBySlot(EquipmentSlot.FEET), rider.level(), rider, 36);
+                belt.giveEffects(rider);
+            }
+            if (rider.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof MechaGattaiItem belt) {
+                belt.beltTick(rider.getItemBySlot(EquipmentSlot.HEAD), rider.level(), rider, 39);
 //              belt.riderKickTick(rider.getItemBySlot(EquipmentSlot.FEET), rider.level(), rider, 36);
                 belt.giveEffects(rider);
             }

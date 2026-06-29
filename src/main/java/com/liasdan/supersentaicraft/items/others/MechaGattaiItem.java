@@ -33,7 +33,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import software.bernie.geckolib.animation.AnimationState;
 
-public class MechaGattaiItem extends MechaArmorItem{
+public class MechaGattaiItem extends MechaArmorItem {
 
 	public String armorNamePrefix;
 	public RangerFormChangeItem Base_Form_Item;
@@ -84,16 +84,10 @@ public class MechaGattaiItem extends MechaArmorItem{
 	public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
 		if (stack.has(DataComponents.CUSTOM_DATA)) {
 			CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-			if (tag.getBoolean("Update_form") && slotId == 36) OnformChange(stack, player, tag);
-			if (!isTransformed(player) || slotId != 36) tag.putBoolean("Update_form", true);
+			if (tag.getBoolean("Update_form") && slotId == 39) OnformChange(stack, player, tag);
+			if (!isTransformed(player) || slotId != 39) tag.putBoolean("Update_form", true);
 			if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
 			if (!isTransformed(player)) tag.putDouble("render_type", 0);
-
-			if (!level.isClientSide) {
-				if (tag.getDouble("is_transforming") != 0)
-					tag.putDouble("is_transforming", tag.getDouble("is_transforming") - 1);
-				if (tag.getDouble("is_transforming") < 0) tag.putDouble("is_transforming", 0);
-			}
 
 		} else {
 			set_Update_Form(stack);
@@ -125,13 +119,17 @@ public class MechaGattaiItem extends MechaArmorItem{
 
 	@Override
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-		if (entity instanceof LivingEntity player) {
-			this.beltTick(stack,level,player,slotId);
-			this.giveEffects(player);
-
+		if (entity instanceof LivingEntity livingEntity && stack == livingEntity.getItemBySlot(EquipmentSlot.HEAD)) {
+			this.beltTick(stack, level, livingEntity, slotId);
+			this.giveEffects(livingEntity);
+		} else if (entity instanceof
+				LivingEntity player) {
 			if (stack.has(DataComponents.CUSTOM_DATA)) {
-				if (!isTransformed(player) || slotId != 36) {
+				if (!isTransformed(player) || slotId != 39) {
 					Consumer<CompoundTag> data = form -> {
+						form.putBoolean("rider_kicking", false);
+						form.putDouble("rider_kick_cooldown", 200);
+						form.putDouble("rider_kick_tick", 0);
 						form.putBoolean("Update_form", true);
 					};
 					CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
@@ -141,16 +139,18 @@ public class MechaGattaiItem extends MechaArmorItem{
 	}
 
 	public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
-		if(isTransformed(player)) {
-			OnTransformation(itemstack,player);
+		if (isTransformed(player)) {
+			OnTransformation(itemstack, player);
 			Consumer<CompoundTag> data = form -> {
 				form.putBoolean("Update_form", false);
-				form.putDouble("is_transforming",30);
+				form.putDouble("render_type", getRenderType(itemstack));
 			};
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
 			player.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(30);
+			player.getAttribute(AttributeRegistry.CAPE_ROT).setBaseValue(0);
+			player.getAttribute(AttributeRegistry.WHEEL_ROT).setBaseValue(0);
+			player.getAttribute(AttributeRegistry.BALL_ROT).setBaseValue(0);
 		}
-
 	}
 
 	public void OnTransformation(ItemStack itemstack, LivingEntity player) {
@@ -193,8 +193,7 @@ public class MechaGattaiItem extends MechaArmorItem{
 
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)
 	{
-
-		boolean fly = !rider.onGround();
+		boolean fly = rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue() == 1;
 
 		if (equipmentSlot == EquipmentSlot.HEAD) {
 			String belt = ((MechaGattaiItem)itemstack.getItem()).BELT_TEXT;
@@ -203,7 +202,7 @@ public class MechaGattaiItem extends MechaArmorItem{
 			}
 			return belt;
 		}
-		else return riderName+get_Form_Item(itemstack,1).getFormName(fly);
+		else return get_Form_Item(itemstack,1).getRangerName(riderName)+get_Form_Item(itemstack,1).getFormName(fly);
 
 	}
 
@@ -213,6 +212,9 @@ public class MechaGattaiItem extends MechaArmorItem{
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack,MechaArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+		if (get_Form_Item(itemstack, 1).HasWingsIfFlying() && rider.getAttribute(AttributeRegistry.WINGS_OUT).getBaseValue()==1){
+			return ResourceLocation.fromNamespaceAndPath(SuperSentaiCraftCore.MODID, "geo/"+get_Form_Item(itemstack, 1).get_FlyingModel(this.Rider));
+		}
 		return ResourceLocation.fromNamespaceAndPath(SuperSentaiCraftCore.MODID, "geo/"+get_Form_Item(itemstack, 1).get_Model(this.Rider));
 	}
 	
@@ -229,22 +231,8 @@ public class MechaGattaiItem extends MechaArmorItem{
 	}
 
 	public boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-
-		if (isTransformed(livingEntity)){
-			switch (currentSlot) {
-				case FEET ->{
-					return get_Form_Item(itemstack, 1).get_Is_Glowing();
-				}
-				case CHEST -> {
-					return get_Form_Item(itemstack, 1).get_Is_Glowing();
-				}
-				case LEGS -> {
-					return get_Form_Item(itemstack, 1).get_Is_Glowing();
-				}
-				default -> {}
-			}
-			return false;
-		}
+		if (currentSlot == EquipmentSlot.HEAD) return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
+		else if (isTransformed(livingEntity)) return get_Form_Item(itemstack, 1).get_Is_Glowing();
 		return false;
 	}
 
@@ -289,7 +277,7 @@ public class MechaGattaiItem extends MechaArmorItem{
 
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
 		switch (currentSlot) {
-			case HEAD ->{
+			case FEET ->{
 				return true;
 			}case LEGS,CHEST ->{
 				return false;

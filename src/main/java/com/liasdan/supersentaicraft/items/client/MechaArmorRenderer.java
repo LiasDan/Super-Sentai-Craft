@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
@@ -114,17 +115,17 @@ public class MechaArmorRenderer extends GeoArmorRenderer<MechaArmorItem> {
 	protected void applyBoneVisibilityBySlot(EquipmentSlot currentSlot) {
 		setAllVisible(false);
 		if (GetEntity()!=null){
-			if (!GetEntity().isInvisible()) {
+			if (!GetEntity().isInvisible()||GetEntity() instanceof ArmorStand) {
 				if (currentSlot == EquipmentSlot.HEAD) {
 					setBoneVisible(this.body, true);
 					setBoneVisible(this.leftArm, true);
 				} else if (GetEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof MechaGattaiItem BELT && BELT.isTransformed(GetEntity())) {
-					setBoneVisible(this.head, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.HEAD),currentSlot,"head"));
-					setBoneVisible(this.body, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.HEAD),currentSlot,"body"));
-					setBoneVisible(this.rightArm, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.HEAD),currentSlot,"rightArm"));
-					setBoneVisible(this.leftArm, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.HEAD),currentSlot,"leftArm"));
-					setBoneVisible(this.rightLeg, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.HEAD),currentSlot,"rightLeg"));
-					setBoneVisible(this.leftLeg, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.HEAD),currentSlot,"leftLeg"));
+					setBoneVisible(this.head, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"head"));
+					setBoneVisible(this.body, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"body"));
+					setBoneVisible(this.rightArm, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"rightArm"));
+					setBoneVisible(this.leftArm, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"leftArm"));
+					setBoneVisible(this.rightLeg, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"rightLeg"));
+					setBoneVisible(this.leftLeg, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"leftLeg"));
 				}
 			}
 		}

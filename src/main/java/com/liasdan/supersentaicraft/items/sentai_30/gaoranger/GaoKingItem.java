@@ -1,4 +1,4 @@
-package com.liasdan.supersentaicraft.items.sentai_20.gaoranger;
+package com.liasdan.supersentaicraft.items.sentai_30.gaoranger;
 
 import com.liasdan.supersentaicraft.items.sentai_30.GaorangerItems;
 import com.liasdan.supersentaicraft.items.others.MechaGattaiItem;

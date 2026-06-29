@@ -116,33 +116,31 @@ public class DenzimanItems {
 	public static final DeferredItem<SwordItem> DENZI_PINK_SWORD = ITEMS.register("denzi_pink_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(EMPTY_DENZI_RING.get()));
 
-//	public static final DeferredItem<Item> SUN_VULCAN_ROBO = ITEMS.register("sun_vulcan_robo",
-//			() -> new RangerFormChangeItem(new Item.Properties(),0,"","sun_vulcan_robo", "blank",
-//					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 2,true,false),
-//					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
-//					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
-//					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-//					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)));
-//
-//	public static final DeferredItem<Item> SUN_VULCAN_ROBO_BOOTS = ITEMS.register("sun_vulcan_robo_boots",
-//            () -> new MechaArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties()).AddToTabList(RangerTabs.SUN_VULCAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
-//    public static final DeferredItem<Item> SUN_VULCAN_ROBO_LEGGINGS = ITEMS.register("sun_vulcan_robo_legs",
-//            () -> new MechaArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RangerTabs.SUN_VULCAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
-//    public static final DeferredItem<Item> SUN_VULCAN_ROBO_CHESTPLATE = ITEMS.register("sun_vulcan_robo_torso",
-//            () -> new MechaArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RangerTabs.SUN_VULCAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
-//
-//    public static final DeferredItem<Item> SUN_VULCAN_ROBO_HELMET = ITEMS.register("sun_vulcan_robo_head",
-//            () -> new MechaGattaiItem(ArmorMaterials.NETHERITE,"sun_vulcan_robo",SUN_VULCAN_ROBO,SUN_VULCAN_ROBO_CHESTPLATE,SUN_VULCAN_ROBO_LEGGINGS,SUN_VULCAN_ROBO_BOOTS, new Item.Properties())
-//					.Add_Extra_Base_Form_Items(OtherItems.BLANK_FORM).AddToTabList(RangerTabs.SUN_VULCAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
-//
-//    public static final DeferredItem<SwordItem> TAIYO_KEN = ITEMS.register("taiyo_ken",
-//			() -> new BaseSwordItem(Tiers.NETHERITE, 30, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.SUN_VULCAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
-//    public static final DeferredItem<Item> VUL_SHIELD = ITEMS.register("vul_shield",
-//			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RangerTabs.SUN_VULCAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
-//    public static final DeferredItem<SwordItem> VUL_TONFA = ITEMS.register("vul_tonfa",
-//			() -> new BaseSwordItem(Tiers.NETHERITE, 30, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.SUN_VULCAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
-//    public static final DeferredItem<SwordItem> VUL_HAND = ITEMS.register("vul_hand",
-//			() -> new BaseSwordItem(Tiers.NETHERITE, 30, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.SUN_VULCAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
+	public static final DeferredItem<Item> DAI_DENZIN = ITEMS.register("dai_denzin",
+			() -> new RangerFormChangeItem(new Item.Properties(),0,"","dai_denzin", "blank",
+					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)));
+
+	public static final DeferredItem<Item> DAI_DENZIN_BOOTS = ITEMS.register("dai_denzin_boots",
+            () -> new MechaArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
+    public static final DeferredItem<Item> DAI_DENZIN_LEGGINGS = ITEMS.register("dai_denzin_legs",
+            () -> new MechaArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
+    public static final DeferredItem<Item> DAI_DENZIN_CHESTPLATE = ITEMS.register("dai_denzin_torso",
+            () -> new MechaArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
+
+    public static final DeferredItem<Item> DAI_DENZIN_HELMET = ITEMS.register("dai_denzin_head",
+            () -> new MechaGattaiItem(ArmorMaterials.NETHERITE,"dai_denzin",DAI_DENZIN,DAI_DENZIN_CHESTPLATE,DAI_DENZIN_LEGGINGS,DAI_DENZIN_BOOTS, new Item.Properties())
+					.Add_Extra_Base_Form_Items(OtherItems.BLANK_FORM).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
+
+    public static final DeferredItem<SwordItem> DENZI_KEN = ITEMS.register("denzi_ken",
+			() -> new BaseSwordItem(Tiers.NETHERITE, 30, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
+    public static final DeferredItem<SwordItem> DENZI_BALL = ITEMS.register("denzi_ball",
+			() -> new BaseSwordItem(Tiers.NETHERITE, 30, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
+    public static final DeferredItem<SwordItem> DAI_DENZIN_BOOMERANG = ITEMS.register("dai_denzin_boomerang",
+			() -> new BaseThrowableItem(Tiers.NETHERITE, 30, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.DENZIMAN).ChangeRepairItem(OtherItems.MECHA_GEAR.get()));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
