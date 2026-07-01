@@ -1,0 +1,39 @@
+{
+  "parent": "supersentaicraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:denziman/mecha/dai_denzin_head",
+      "supersentaicraft:denziman/mecha/dai_denzin_torso",
+      "supersentaicraft:denziman/mecha/dai_denzin_legs",
+      "supersentaicraft:denziman/mecha/dai_denzin_boots"
+    ]
+  },
+  "criteria": {
+    "has_logo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:mecha_gear"
+          }
+        ]
+      }
+    },
+    "has_logo2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:empty_denzi_ring"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_logo",
+      "has_logo2"
+    ]
+  ]
+}

@@ -51,6 +51,7 @@
   "item.supersentaicraft.cutman_spawn_egg": "Cutmen Spawn Egg",
 
   "entity.supersentaicraft.dustler": "Dustlers",
+  "item.supersentaicraft.dustler_spawn_egg": "Dustlers Spawn Egg",
 
   "entity.supersentaicraft.machineman": "Machinemen",
   "item.supersentaicraft.machineman_spawn_egg": "Machinemen Spawn Egg",
@@ -402,7 +403,6 @@
 
   "item.supersentaicraft.empty_denzi_ring": "Empty Denzi Ring",
   "item.supersentaicraft.denziman_logo": "Denziman Logo",
-  "block.supersentaicraft.denziman_ore": "Denziman Ore",
 
   "item.supersentaicraft.denziman_head": "Denziman Helmet",
   "item.supersentaicraft.denziman_torso": "Denziman Chestplate",
@@ -420,12 +420,26 @@
   "item.supersentaicraft.green_denzi_gem": "Green Denzi Gem",
   "item.supersentaicraft.pink_denzi_gem": "Pink Denzi Gem",
 
+  "supersentaicraft:red_denzi_gem.form": "Ranger: §cDenzi Red",
+  "supersentaicraft:blue_denzi_gem.form": "Ranger: §9Denzi Blue",
+  "supersentaicraft:yellow_denzi_gem.form": "Ranger: §eDenzi Yellow",
+  "supersentaicraft:green_denzi_gem.form": "Ranger: §aDenzi Green",
+  "supersentaicraft:pink_denzi_gem.form": "Ranger: §dDenzi Pink",
+
   "item.supersentaicraft.red_denzi_stick": "Denzi Stick (DenziRed)",
   "item.supersentaicraft.blue_denzi_stick": "Denzi Stick (DenziBlue)",
   "item.supersentaicraft.yellow_denzi_stick": "Denzi Stick (DenziYellow)",
   "item.supersentaicraft.green_denzi_stick": "Denzi Stick (DenziGreen)",
   "item.supersentaicraft.pink_denzi_stick": "Denzi Stick (DenziPink)",
   "item.supersentaicraft.denzi_punch": "Denzi Punch",
+  "item.supersentaicraft.denzi_punch1": "Denzi Punch",
+  "item.supersentaicraft.red_denzi_bat": "Baseball Bat (DenziRed)",
+  "item.supersentaicraft.blue_denzi_bat": "Baseball Bat (DenziBlue)",
+  "item.supersentaicraft.yellow_denzi_bat": "Baseball Bat (DenziYellow)",
+  "item.supersentaicraft.green_denzi_bat": "Baseball Bat (DenziGreen)",
+  "item.supersentaicraft.pink_denzi_bat": "Baseball Bat (DenziPink)",
+  "item.supersentaicraft.denzi_shock_gun": "Denzi Shock Gun",
+  "item.supersentaicraft.denzi_pink_sword": "Sword (Denzi Pink)",
 
   "item.supersentaicraft.dai_denzin_head": "DaiDenzin Helmet",
   "item.supersentaicraft.dai_denzin_torso": "DaiDenzin Chestplate",
@@ -3130,6 +3144,26 @@
 
   "advancements.supersentaicraft.goranger_manga.desc": "Obtain Goranger's Manga",
   "advancements.supersentaicraft.goranger_manga.title": "The Classic Manga",
+
+  "advancements.supersentaicraft.denziman.desc": "Change into each member of Denziman",
+  "advancements.supersentaicraft.denziman.title": "Denshi Sentai Denziman",
+
+  "advancements.supersentaicraft.denzi_red.desc": "Change into Denzi Red",
+  "advancements.supersentaicraft.denzi_red.title": "Denzi Red!",
+  "advancements.supersentaicraft.denzi_blue.desc": "Change into Denzi Blue",
+  "advancements.supersentaicraft.denzi_blue.title": "Denzi Blue!",
+  "advancements.supersentaicraft.denzi_yellow.desc": "Change into Denzi Yellow",
+  "advancements.supersentaicraft.denzi_yellow.title": "Denzi Yellow!",
+  "advancements.supersentaicraft.denzi_green.desc": "Change into Denzi Green",
+  "advancements.supersentaicraft.denzi_green.title": "Denzi Green!",
+  "advancements.supersentaicraft.denzi_pink.desc": "Change into Denzi Pink",
+  "advancements.supersentaicraft.denzi_pink.title": "Denzi Pink!",
+
+  "advancements.supersentaicraft.denzi_ring.desc": "Obtain any Denzi Ring",
+  "advancements.supersentaicraft.denzi_ring.title": "Denzi Spark!",
+
+  "advancements.supersentaicraft.dai_denzin.desc": "Combine into DaiDenzin",
+  "advancements.supersentaicraft.dai_denzin.title": "Denzi Fighter, shutsudou!",
 
   "advancements.supersentaicraft.boukenger.desc": "Change into each member of Boukenger",
   "advancements.supersentaicraft.boukenger.title": "GoGo Sentai Boukenger",

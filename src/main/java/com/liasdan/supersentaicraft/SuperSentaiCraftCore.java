@@ -218,6 +218,8 @@ public class SuperSentaiCraftCore {
 
 			event.registerEntityRenderer(MobsCore.CUTMEN.get(), BasicEntityRenderer::new);
 
+			event.registerEntityRenderer(MobsCore.DUSTLERS.get(), BasicEntityRenderer::new);
+
 			event.registerEntityRenderer(MobsCore.MACHINEMEN.get(), BasicEntityRenderer::new);
 
 			event.registerEntityRenderer(MobsCore.UNGLERS.get(), BasicEntityRenderer::new);

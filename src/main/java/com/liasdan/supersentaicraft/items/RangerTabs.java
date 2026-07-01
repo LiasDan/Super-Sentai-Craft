@@ -312,6 +312,8 @@ public class RangerTabs {
 
 			event.accept(MobsCore.CUTMEN_SPAWN_EGG);
 
+			event.accept(MobsCore.DUSTLERS_SPAWN_EGG);
+
 			event.accept(MobsCore.MACHINEMEN_SPAWN_EGG);
 
 			event.accept(MobsCore.UNGLERS_SPAWN_EGG);

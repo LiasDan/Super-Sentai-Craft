@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:red_denzi_gem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:blue_denzi_gem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:yellow_denzi_gem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:green_denzi_gem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:pink_denzi_gem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:empty_denzi_ring",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:empty_denzi_ring"
+        }
+      ]
+    }
+  ]
+}

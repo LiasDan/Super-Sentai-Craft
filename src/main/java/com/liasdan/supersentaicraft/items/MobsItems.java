@@ -19,6 +19,9 @@ public class MobsItems {
 	public static final DeferredItem<SwordItem> CRIMERS_SWORD = ITEMS.register("crimers_sword",
 			() -> new BaseSwordItem(Tiers.IRON, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MISC).ChangeRepairItem(Items.IRON_INGOT));
 
+	public static final DeferredItem<SwordItem> DUSTLERS_SICKLE = ITEMS.register("dustlers_sickle",
+			() -> new BaseSwordItem(Tiers.IRON, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MISC).ChangeRepairItem(Items.IRON_INGOT));
+
 	public static final DeferredItem<SwordItem> CUTMEN_SWORD = ITEMS.register("cutmen_sword",
 			() -> new BaseSwordItem(Tiers.IRON, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.MISC).ChangeRepairItem(Items.IRON_INGOT));
 

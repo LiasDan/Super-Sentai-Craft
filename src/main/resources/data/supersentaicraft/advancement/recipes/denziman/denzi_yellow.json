@@ -1,0 +1,28 @@
+{
+  "parent": "supersentaicraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:denziman/yellow_denzi_ring",
+      "supersentaicraft:denziman/yellow_denzi_stick",
+      "supersentaicraft:denziman/yellow_denzi_bat",
+      "supersentaicraft:denziman/denzi_shock_gun"
+    ]
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:yellow_denzi_gem"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ]
+}

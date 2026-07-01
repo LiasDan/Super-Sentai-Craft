@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "id": "supersentaicraft:green_denzi_ring"
+    },
+    "title": {
+      "translate": "advancements.supersentaicraft.denzi_green.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.denzi_green.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:denziman/denzi_yellow",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:denziman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:denziman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:denziman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:green_denzi_ring"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

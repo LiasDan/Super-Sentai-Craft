@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "id": "supersentaicraft:dai_denzin_head"
+    },
+    "title": {
+      "translate": "advancements.supersentaicraft.dai_denzin.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.dai_denzin.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:denziman/denziman",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:dai_denzin_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:dai_denzin_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:dai_denzin_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:dai_denzin_boots"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

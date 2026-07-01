@@ -5,6 +5,7 @@
 	"textures": {
 		"layer0": "supersentaicraft:item/denzi_ball"
 	},
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, -90, 55],
@@ -30,8 +31,17 @@
 			"translation": [0, 2, 0],
 			"scale": [0.5, 0.5, 0.5]
 		},
+		"gui": {
+			"translation": [-2.66, -2.66, 0],
+			"scale": [1.335, 1.335, 1]
+		},
 		"head": {
 			"translation": [0, 13, 7]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [2.66, -2.66, 0],
+			"scale": [1.335, 1.335, 1]
 		}
 	}
 }

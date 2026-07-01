@@ -1,0 +1,165 @@
+{
+  "display": {
+    "icon": {
+      "id": "supersentaicraft:denziman_logo"
+    },
+    "title": {
+      "translate": "advancements.supersentaicraft.denziman.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.denziman.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:root",
+  "criteria": {
+    "ranger1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:denziman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:denziman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:denziman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_denzi_ring"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:denziman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:denziman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:denziman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:blue_denzi_ring"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:denziman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:denziman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:denziman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:yellow_denzi_ring"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:denziman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:denziman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:denziman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:green_denzi_ring"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:denziman_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:denziman_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:denziman_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:pink_denzi_ring"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

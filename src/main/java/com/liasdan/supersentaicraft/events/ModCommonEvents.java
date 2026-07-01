@@ -175,6 +175,8 @@ public class ModCommonEvents {
 
 		event.put(MobsCore.CUTMEN.get(), CutmenEntity.setAttributes().build());
 
+		event.put(MobsCore.DUSTLERS.get(), DustlersEntity.setAttributes().build());
+
 		event.put(MobsCore.MACHINEMEN.get(), MachinemenEntity.setAttributes().build());
 
 		event.put(MobsCore.UNGLERS.get(), UnglersEntity.setAttributes().build());
@@ -223,6 +225,8 @@ public class ModCommonEvents {
 		event.register(MobsCore.CRIMERS.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.CUTMEN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
+		event.register(MobsCore.DUSTLERS.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.MACHINEMEN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 

@@ -1,0 +1,30 @@
+{
+  "parent": "supersentaicraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:denziman/denziman_head",
+      "supersentaicraft:denziman/denziman_torso",
+      "supersentaicraft:denziman/denziman_legs",
+      "supersentaicraft:denziman/denziman_logo",
+      "supersentaicraft:denziman/denzi_punch",
+      "supersentaicraft:denziman/denzi_punch1"
+    ]
+  },
+  "criteria": {
+    "has_logo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:empty_denzi_ring"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_logo"
+    ]
+  ]
+}
