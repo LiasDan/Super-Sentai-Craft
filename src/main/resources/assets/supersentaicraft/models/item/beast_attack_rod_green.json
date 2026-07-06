@@ -1,8 +1,31 @@
 {
+  "format_version": "1.21.11",
+  "credit": "Made with Blockbench",
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:item/beast_attack_rod_green"
   },
+  "gui_light": "front",
+  "overrides": [
+    {
+      "predicate": {
+        "change": 1
+      },
+      "model": "supersentaicraft:item/beast_attack_rod_green_gun"
+    },
+    {
+      "predicate": {
+        "change": 2
+      },
+      "model": "supersentaicraft:item/flashing_beast_attack_rod_green"
+    },
+    {
+      "predicate": {
+        "change": 3
+      },
+      "model": "supersentaicraft:item/flashing_beast_attack_rod_green_gun"
+    }
+  ],
   "display": {
     "thirdperson_righthand": {
       "rotation": [
@@ -84,32 +107,31 @@
         0.5
       ]
     },
+    "gui": {
+      "scale": [
+        1.335,
+        1.335,
+        1
+      ]
+    },
     "head": {
       "translation": [
         0,
         13,
         7
       ]
-    }
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "change": 1
-      },
-      "model": "supersentaicraft:item/beast_attack_rod_green_gun"
     },
-    {
-      "predicate": {
-        "change": 2
-      },
-      "model": "supersentaicraft:item/flashing_beast_attack_rod_green"
-    },
-    {
-      "predicate": {
-        "change": 3
-      },
-      "model": "supersentaicraft:item/flashing_beast_attack_rod_green_gun"
+    "fixed": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "scale": [
+        1.335,
+        1.335,
+        1
+      ]
     }
-  ]
+  }
 }

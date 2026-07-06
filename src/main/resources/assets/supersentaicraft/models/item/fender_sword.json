@@ -1,9 +1,11 @@
 {
+  "format_version": "1.21.11",
   "credit": "Made with Blockbench",
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:item/fender_sword"
   },
+  "gui_light": "front",
   "display": {
     "thirdperson_righthand": {
       "rotation": [
@@ -13,7 +15,7 @@
       ],
       "translation": [
         0,
-        1,
+        2.75,
         1
       ],
       "scale": [
@@ -30,7 +32,7 @@
       ],
       "translation": [
         0,
-        1,
+        2.75,
         1
       ],
       "scale": [
@@ -85,6 +87,18 @@
         0.5
       ]
     },
+    "gui": {
+      "translation": [
+        -2.66,
+        -2.66,
+        0
+      ],
+      "scale": [
+        1.335,
+        1.335,
+        1
+      ]
+    },
     "head": {
       "translation": [
         0,
@@ -95,8 +109,18 @@
     "fixed": {
       "rotation": [
         0,
-        180,
+        -180,
         0
+      ],
+      "translation": [
+        2.66,
+        -2.66,
+        0
+      ],
+      "scale": [
+        1.335,
+        1.335,
+        1
       ]
     }
   }

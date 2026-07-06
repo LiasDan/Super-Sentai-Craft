@@ -5,6 +5,7 @@
 	"textures": {
 		"layer0": "supersentaicraft:item/five_laser_pink"
 	},
+  "gui_light": "front",
 	"overrides": [
 		{"predicate": {"change": 1}, "model": "supersentaicraft:item/five_laser_gun_pink"}
 	],
@@ -33,11 +34,37 @@
 			"translation": [0, 2, 0],
 			"scale": [0.5, 0.5, 0.5]
 		},
+      "gui": {
+        "translation": [
+          -2.25,
+          -2.25,
+          0
+        ],
+        "scale": [
+          1.28,
+          1.28,
+          1
+        ]
+      },
 		"head": {
 			"translation": [0, 13, 7]
 		},
 		"fixed": {
-			"rotation": [0, -180, 0]
+          "rotation": [
+            0,
+            -180,
+            0
+          ],
+          "translation": [
+            2.25,
+            -2.25,
+            0
+          ],
+          "scale": [
+            1.28,
+            1.28,
+            1
+          ]
 		}
 	}
 }

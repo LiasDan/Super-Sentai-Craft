@@ -1,9 +1,30 @@
 {
+  "format_version": "1.21.11",
   "credit": "Made with Blockbench",
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:item/beast_attack_rod_blue"
   },
+  "overrides": [
+    {
+      "predicate": {
+        "change": 1
+      },
+      "model": "supersentaicraft:item/beast_attack_rod_blue_gun"
+    },
+    {
+      "predicate": {
+        "change": 2
+      },
+      "model": "supersentaicraft:item/flashing_beast_attack_rod_blue"
+    },
+    {
+      "predicate": {
+        "change": 3
+      },
+      "model": "supersentaicraft:item/flashing_beast_attack_rod_blue_gun"
+    }
+  ],
   "display": {
     "thirdperson_righthand": {
       "rotation": [
@@ -92,25 +113,5 @@
         7
       ]
     }
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "change": 1
-      },
-      "model": "supersentaicraft:item/beast_attack_rod_blue_gun"
-    },
-    {
-      "predicate": {
-        "change": 2
-      },
-      "model": "supersentaicraft:item/flashing_beast_attack_rod_blue"
-    },
-    {
-      "predicate": {
-        "change": 3
-      },
-      "model": "supersentaicraft:item/flashing_beast_attack_rod_blue_gun"
-    }
-  ]
+  }
 }

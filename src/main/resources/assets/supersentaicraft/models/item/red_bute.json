@@ -43,7 +43,11 @@
 			"translation": [0, 13, 7]
 		},
 		"fixed": {
-			"rotation": [0, 180, 0],
+          "rotation": [
+            0,
+            -180,
+            0
+          ],
 			"translation": [2.66, -2.66, 0],
 			"scale": [1.335, 1.335, 1]
 		}

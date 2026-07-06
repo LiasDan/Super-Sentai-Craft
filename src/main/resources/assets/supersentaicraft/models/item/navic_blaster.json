@@ -1,20 +1,22 @@
 {
+  "format_version": "1.21.11",
   "credit": "Made with Blockbench",
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:item/navic_blaster"
   },
+  "gui_light": "front",
   "display": {
     "thirdperson_righthand": {
       "rotation": [
         0,
         -90,
-        55
+        45
       ],
       "translation": [
         0,
-        5,
-        6.5
+        1.5,
+        6.75
       ],
       "scale": [
         1.7,
@@ -26,12 +28,12 @@
       "rotation": [
         0,
         90,
-        -55
+        -45
       ],
       "translation": [
         0,
-        5,
-        6.5
+        1.5,
+        6.75
       ],
       "scale": [
         1.7,
@@ -85,11 +87,40 @@
         0.5
       ]
     },
+    "gui": {
+      "translation": [
+        0.85,
+        -0.85,
+        0
+      ],
+      "scale": [
+        1.105,
+        1.105,
+        1
+      ]
+    },
     "head": {
       "translation": [
         0,
         13,
         7
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "translation": [
+        -0.85,
+        -0.85,
+        0
+      ],
+      "scale": [
+        1.105,
+        1.105,
+        1
       ]
     }
   }

@@ -1,9 +1,11 @@
 {
+  "format_version": "1.21.11",
   "credit": "Made with Blockbench",
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:item/bumper_bow"
   },
+  "gui_light": "front",
   "display": {
     "thirdperson_righthand": {
       "rotation": [
@@ -85,11 +87,30 @@
         0.5
       ]
     },
+    "gui": {
+      "scale": [
+        1.14,
+        1.14,
+        1
+      ]
+    },
     "head": {
       "translation": [
         0,
         13,
         7
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "scale": [
+        1.14,
+        1.14,
+        1
       ]
     }
   }

@@ -32,16 +32,32 @@
 			"scale": [1, 1, 0.5]
 		},
 		"gui": {
-			"translation": [2.5, -2, 0],
-			"scale": [1.5, 1.5, 1]
+          "translation": [
+            2.17,
+            -1.67,
+            0
+          ],
+          "scale": [
+            1.455,
+            1.455,
+            1
+          ]
 		},
 		"head": {
 			"translation": [0, 13, 7]
 		},
 		"fixed": {
 			"rotation": [0, -180, 0],
-			"translation": [-2.5, -2, 0],
-			"scale": [1.5, 1.5, 1]
+          "translation": [
+            -2.17,
+            -1.67,
+            0
+          ],
+          "scale": [
+            1.455,
+            1.455,
+            1
+          ]
 		}
 	}
 }

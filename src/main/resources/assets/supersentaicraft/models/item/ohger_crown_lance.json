@@ -5,6 +5,14 @@
 	"textures": {
 		"layer0": "supersentaicraft:item/ohger_lance"
 	},
+  "overrides": [
+    {
+      "predicate": {
+        "change": 1
+      },
+      "model": "supersentaicraft:item/ohger_lance"
+    }
+  ],
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, -90, 55],
@@ -37,13 +45,5 @@
 			"rotation": [45, 90, 0],
 			"scale": [1.31, 1.31, 1.31]
 		}
-	},
-	"overrides": [
-		{
-			"predicate": {
-				"change": 1
-			},
-			"model": "supersentaicraft:item/ohger_lance"
-		}
-	]
+    }
 }

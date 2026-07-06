@@ -1,9 +1,11 @@
 {
+  "format_version": "1.21.11",
   "credit": "Made with Blockbench",
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:item/kiba_shot"
   },
+  "gui_light": "front",
   "display": {
     "thirdperson_righthand": {
       "rotation": [
@@ -71,6 +73,35 @@
         1.36,
         1.36,
         1.36
+      ]
+    },
+    "gui": {
+      "translation": [
+        -0.7,
+        0.7,
+        0
+      ],
+      "scale": [
+        1.457,
+        1.457,
+        1
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "translation": [
+        0.7,
+        0.7,
+        0
+      ],
+      "scale": [
+        1.457,
+        1.457,
+        1
       ]
     }
   }

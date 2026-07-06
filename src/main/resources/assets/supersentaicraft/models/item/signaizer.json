@@ -1,9 +1,19 @@
 {
+  "format_version": "1.21.11",
   "credit": "Made with Blockbench",
   "parent": "item/handheld",
   "textures": {
     "layer0": "supersentaicraft:item/signaizer"
   },
+  "gui_light": "front",
+  "overrides": [
+    {
+      "predicate": {
+        "change": 1
+      },
+      "model": "supersentaicraft:item/signaizer_gun"
+    }
+  ],
   "display": {
     "thirdperson_righthand": {
       "rotation": [
@@ -13,7 +23,7 @@
       ],
       "translation": [
         0,
-        4.5,
+        3.5,
         1
       ],
       "scale": [
@@ -30,7 +40,7 @@
       ],
       "translation": [
         0,
-        4.5,
+        3.5,
         1
       ],
       "scale": [
@@ -85,20 +95,41 @@
         0.5
       ]
     },
+    "gui": {
+      "translation": [
+        -2.66,
+        -2.66,
+        0
+      ],
+      "scale": [
+        1.335,
+        1.335,
+        1
+      ]
+    },
     "head": {
       "translation": [
         0,
         13,
         7
       ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "translation": [
+        2.66,
+        -2.66,
+        0
+      ],
+      "scale": [
+        1.335,
+        1.335,
+        1
+      ]
     }
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "change": 1
-      },
-      "model": "supersentaicraft:item/signaizer_gun"
-    }
-  ]
+  }
 }

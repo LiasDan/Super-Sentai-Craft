@@ -6,6 +6,14 @@
 		"layer0": "supersentaicraft:item/kings_weapon_shield"
 	},
 	"gui_light": "front",
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "supersentaicraft:item/kings_weapon_shield_blocking"
+    }
+  ],
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [-45, -90, 0],
@@ -41,13 +49,5 @@
 			"rotation": [45, 90, 0],
 			"scale": [1.31, 1.31, 1.31]
 		}
-	},
-	"overrides": [
-		{
-			"predicate": {
-				"blocking": 1
-			},
-			"model": "supersentaicraft:item/kings_weapon_shield_blocking"
-		}
-	]
+    }
 }
