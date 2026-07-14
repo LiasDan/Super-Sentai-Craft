@@ -23,6 +23,7 @@ import com.liasdan.supersentaicraft.items.sentai_30.GaorangerItems;
 import com.liasdan.supersentaicraft.items.sentai_30.GingamanItems;
 import com.liasdan.supersentaicraft.items.sentai_30.GoGoVItems;
 import com.liasdan.supersentaicraft.items.sentai_40.GoBustersItems;
+import com.liasdan.supersentaicraft.items.sentai_40.GoseigerItems;
 import com.liasdan.supersentaicraft.items.sentai_40.ShinkengerItems;
 import com.liasdan.supersentaicraft.items.sentai_50.*;
 import com.liasdan.supersentaicraft.loot.ModLootModifiers;
@@ -106,6 +107,7 @@ public class SuperSentaiCraftCore {
 
         BoukengerItems.register(modEventBus);
 		ShinkengerItems.register(modEventBus);
+		GoseigerItems.register(modEventBus);
 
 		GoBustersItems.register(modEventBus);
 

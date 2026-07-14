@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "supersentaicraft:item/red_miracle_gosei_power_card"
+  }
+}
