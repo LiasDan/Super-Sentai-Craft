@@ -1,6 +1,8 @@
 package com.liasdan.supersentaicraft.util;
 
 import com.liasdan.supersentaicraft.items.sentai_30.GingamanItems;
+import com.liasdan.supersentaicraft.items.sentai_40.GoseigerItems;
+import com.liasdan.supersentaicraft.items.sentai_40.goseiger.TensouderItem;
 import com.liasdan.supersentaicraft.items.sentai_50.KingOhgerItems;
 import com.liasdan.supersentaicraft.items.sentai_50.LuPatRangerItems;
 import com.liasdan.supersentaicraft.items.sentai_50.RyusoulgerItems;

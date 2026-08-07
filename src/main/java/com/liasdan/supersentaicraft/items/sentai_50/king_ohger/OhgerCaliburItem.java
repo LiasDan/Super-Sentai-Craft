@@ -25,15 +25,19 @@ public class OhgerCaliburItem extends RangerChangerItem {
 		boolean fly = !rider.onGround();
 		
 		if (equipmentSlot == EquipmentSlot.FEET) {
-				if (rider.getMainHandItem().getItem()== KingOhgerItems.OHGER_CALIBUR.get()|
-						rider.getMainHandItem().getItem()== KingOhgerItems.KINGS_WEAPON_NAGINATA.get()|
-						rider.getMainHandItem().getItem()== KingOhgerItems.KINGS_WEAPON_SCYTHE.get()) {
-					belt = get_Form_Item(itemstack,1).getBeltTex()+"_empty";
+			if (!isTransformed(rider)) {
+				return "blank";
+			}
+			else {
+				if (rider.getMainHandItem().getItem() == KingOhgerItems.OHGER_CALIBUR.get() |
+						rider.getMainHandItem().getItem() == KingOhgerItems.KINGS_WEAPON_NAGINATA.get() |
+						rider.getMainHandItem().getItem() == KingOhgerItems.KINGS_WEAPON_SCYTHE.get()) {
+					belt = get_Form_Item(itemstack, 1).getBeltTex() + "_empty";
+				} else if (((RangerChangerItem) itemstack.getItem()).BELT_TEXT == null) {
+					belt = get_Form_Item(itemstack, 1).getBeltTex();
 				}
-				else if (((RangerChangerItem)itemstack.getItem()).BELT_TEXT==null) {
-					belt = get_Form_Item(itemstack,1).getBeltTex();
-				}
-				return "belts/"+belt;
+				return "belts/" + belt;
+			}
 		}
 		else return rangerName+get_Form_Item(itemstack,1).getFormName(fly);
 	}

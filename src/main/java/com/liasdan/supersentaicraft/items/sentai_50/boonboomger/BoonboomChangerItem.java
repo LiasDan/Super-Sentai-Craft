@@ -34,8 +34,10 @@ public class BoonboomChangerItem extends RangerChangerItem{
 				if (get_Form_Item(itemstack, 1).getBeltTex()=="boonboomger_belt") belt = "boonboom_changer";
 				else belt = "blank";
 			}
-			if (((RangerChangerItem)itemstack.getItem()).BELT_TEXT==null) {
-				belt = get_Form_Item(itemstack,1).getBeltTex();
+			else {
+				if (((RangerChangerItem)itemstack.getItem()).BELT_TEXT==null) {
+					belt = get_Form_Item(itemstack,1).getBeltTex();
+				}
 			}
 			return "belts/"+belt;
 		}

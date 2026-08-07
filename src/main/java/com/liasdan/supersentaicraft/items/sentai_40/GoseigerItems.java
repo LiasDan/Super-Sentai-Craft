@@ -121,6 +121,46 @@ public class GoseigerItems {
 	public static final DeferredItem<Item> GREEN_TENSOUDER = ITEMS.register("green_tensouder",
 			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gosei_green",GOSEI_GREEN_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 
+	public static final DeferredItem<BaseBlasterItem> GOSEI_BLASTER = ITEMS.register("gosei_blaster",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+
+	public static final DeferredItem<BaseBlasterItem> GOSEI_BLASTER_DRAGON = ITEMS.register("gosei_blaster_dragon",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<BaseBlasterItem> GOSEI_BLASTER_PHOENIX = ITEMS.register("gosei_blaster_phoenix",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<BaseBlasterItem> GOSEI_BLASTER_SNAKE = ITEMS.register("gosei_blaster_snake",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<BaseBlasterItem> GOSEI_BLASTER_TIGER = ITEMS.register("gosei_blaster_tiger",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<BaseBlasterItem> GOSEI_BLASTER_SHARK = ITEMS.register("gosei_blaster_shark",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+
+	public static final DeferredItem<SwordItem> SKICK_SWORD = ITEMS.register("skick_sword",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<BaseBlasterItem> SKICK_SHOT = ITEMS.register("skick_shot",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<SwordItem> LANDICK_AXE = ITEMS.register("landick_axe",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<SwordItem> LANDICK_CLAW = ITEMS.register("landick_claw",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<BaseBlasterItem> SEAICK_BOWGUN = ITEMS.register("seaick_bowgun",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+
+	public static final DeferredItem<BaseBlasterItem> SKY_BUSTER = ITEMS.register("sky_buster",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<BaseBlasterItem> LAND_SEA_BUSTER = ITEMS.register("land_sea_buster",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<BaseBlasterItem> GOSEI_BUSTER = ITEMS.register("gosei_buster",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+
+	public static final DeferredItem<BaseBlasterItem> LEON_LASER = ITEMS.register("leon_laser_sword",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<BaseBlasterItem> DYNAMIC_LEON_LASER = ITEMS.register("dynamic_leon_laser",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).IsSuperGun().AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+
+	public static final DeferredItem<SwordItem> GOSEI_TENSWORD = ITEMS.register("gosei_tensword",
+			() -> new BaseDualSwordItem(Tiers.DIAMOND, 16, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).IsDualWeapon().AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

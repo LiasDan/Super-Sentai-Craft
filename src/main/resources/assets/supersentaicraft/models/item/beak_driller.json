@@ -183,8 +183,9 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [90, 25, -90],
-			"translation": [-1.75, -1.75, 0]
+			"rotation": [30, 135, 0],
+			"translation": [0, -1.75, 0],
+			"scale": [0.98, 0.98, 0.98]
 		},
 		"fixed": {
 			"rotation": [90, -20, 90],
@@ -195,12 +196,14 @@
 		{
 			"name": "beak_driller",
 			"origin": [5, 5, 7],
+			"scope": 0,
 			"color": 0,
 			"children": [0, 1, 2, 3, 4, 5, 6, 7]
 		},
 		{
 			"name": "laser_grip",
 			"origin": [0, 0, 0],
+			"scope": 0,
 			"color": 0,
 			"children": [8, 9, 10, 11]
 		}

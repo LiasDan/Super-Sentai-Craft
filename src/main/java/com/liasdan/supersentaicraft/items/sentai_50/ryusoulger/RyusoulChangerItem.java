@@ -64,14 +64,18 @@ public class RyusoulChangerItem extends RangerChangerItem{
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		
 		if (equipmentSlot == EquipmentSlot.FEET) {
-				if (rider.getMainHandItem().getItem()==RyusoulgerItems.RYUSOUL_KEN.get()) {
-					if (get_Form_Item(itemstack,1).getBeltTex()=="lupinranger_belt") belt = "lupinranger_belt";
-					else belt = get_Form_Item(itemstack,1).getBeltTex()+"_empty";
+			if (!isTransformed(rider)) {
+				return "belts/ryusoul_changer";
+			}
+			else {
+				if (rider.getMainHandItem().getItem() == RyusoulgerItems.RYUSOUL_KEN.get()) {
+					if (get_Form_Item(itemstack, 1).getBeltTex() == "lupinranger_belt") belt = "lupinranger_belt";
+					else belt = get_Form_Item(itemstack, 1).getBeltTex() + "_empty";
+				} else if (((RangerChangerItem) itemstack.getItem()).BELT_TEXT == null) {
+					belt = get_Form_Item(itemstack, 1).getBeltTex();
 				}
-				else if (((RangerChangerItem)itemstack.getItem()).BELT_TEXT==null) {
-					belt = get_Form_Item(itemstack,1).getBeltTex();
-				}
-				return "belts/"+belt;
+				return "belts/" + belt;
+			}
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD) {
 			if (get_Form_Item(itemstack,2).getFormName(fly)=="") return "blank";
@@ -94,6 +98,12 @@ public class RyusoulChangerItem extends RangerChangerItem{
 		}else   
 			return ResourceLocation.fromNamespaceAndPath(SuperSentaiCraftCore.MODID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 
+	}
+
+	@Override
+	public ResourceLocation getBeltModelResource(ItemStack itemstack, RangerArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+		if (!isTransformed(rider)) return ResourceLocation.fromNamespaceAndPath(SuperSentaiCraftCore.MODID, "geo/rangerbelt.geo.json");
+		return ResourceLocation.fromNamespaceAndPath(SuperSentaiCraftCore.MODID, "geo/"+get_Form_Item(itemstack, 1).getBeltModel());
 	}
 	
 	public  boolean getPartsForSlot(ItemStack itemBySlot, EquipmentSlot currentSlot, String  part) {

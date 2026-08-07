@@ -120,6 +120,7 @@ public class RangerArmorRenderer extends GeoArmorRenderer<RangerArmorItem> {
 				if (currentSlot == EquipmentSlot.FEET) {
 					setBoneVisible(this.body, true);
 					setBoneVisible(this.leftArm, true);
+					setBoneVisible(this.rightArm, true);
 				} else if (GetEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RangerChangerItem BELT && BELT.isTransformed(GetEntity())) {
 					setBoneVisible(this.head, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"head"));
 					setBoneVisible(this.body, BELT.getPartsForSlot(GetEntity().getItemBySlot(EquipmentSlot.FEET),currentSlot,"body"));

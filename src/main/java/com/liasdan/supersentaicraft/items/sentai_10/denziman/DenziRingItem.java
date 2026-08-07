@@ -26,17 +26,21 @@ public class DenziRingItem extends RangerChangerItem{
 		boolean fly = !rider.onGround();
 		
 		if (equipmentSlot == EquipmentSlot.FEET) {
-				if (rider.getMainHandItem().getItem()== DenzimanItems.RED_DENZI_STICK.get()|
-						rider.getMainHandItem().getItem()== DenzimanItems.BLUE_DENZI_STICK.get()|
-						rider.getMainHandItem().getItem()== DenzimanItems.YELLOW_DENZI_STICK.get()|
-						rider.getMainHandItem().getItem()== DenzimanItems.GREEN_DENZI_STICK.get()|
-						rider.getMainHandItem().getItem()== DenzimanItems.PINK_DENZI_STICK.get()) {
-					belt = get_Form_Item(itemstack,1).getBeltTex()+"_empty";
+			if (!isTransformed(rider)) {
+				return "blank";
+			}
+			else {
+				if (rider.getMainHandItem().getItem() == DenzimanItems.RED_DENZI_STICK.get() |
+						rider.getMainHandItem().getItem() == DenzimanItems.BLUE_DENZI_STICK.get() |
+						rider.getMainHandItem().getItem() == DenzimanItems.YELLOW_DENZI_STICK.get() |
+						rider.getMainHandItem().getItem() == DenzimanItems.GREEN_DENZI_STICK.get() |
+						rider.getMainHandItem().getItem() == DenzimanItems.PINK_DENZI_STICK.get()) {
+					belt = get_Form_Item(itemstack, 1).getBeltTex() + "_empty";
+				} else if (((RangerChangerItem) itemstack.getItem()).BELT_TEXT == null) {
+					belt = get_Form_Item(itemstack, 1).getBeltTex();
 				}
-				else if (((RangerChangerItem)itemstack.getItem()).BELT_TEXT==null) {
-					belt = get_Form_Item(itemstack,1).getBeltTex();
-				}
-				return "belts/"+belt;
+				return "belts/" + belt;
+			}
 		}
 		else return rangerName+get_Form_Item(itemstack,1).getFormName(fly);
 	}

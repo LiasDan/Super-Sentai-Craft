@@ -25,13 +25,17 @@ public class OhgerCaliburZeroItem extends RangerChangerItem {
 		boolean fly = !rider.onGround();
 		
 		if (equipmentSlot == EquipmentSlot.FEET) {
-				if (rider.getMainHandItem().getItem()== KingOhgerItems.OHGER_CALIBUR_ZERO.get()) {
+			if (!isTransformed(rider)) {
+				return "blank";
+			}
+			else {
+				if (rider.getMainHandItem().getItem() == KingOhgerItems.OHGER_CALIBUR_ZERO.get()) {
 					belt = "king_ohger_belt_empty";
+				} else if (((RangerChangerItem) itemstack.getItem()).BELT_TEXT == null) {
+					belt = get_Form_Item(itemstack, 1).getBeltTex();
 				}
-				else if (((RangerChangerItem)itemstack.getItem()).BELT_TEXT==null) {
-					belt = get_Form_Item(itemstack,1).getBeltTex();
-				}
-				return "belts/"+belt;
+				return "belts/" + belt;
+			}
 		}
 		else return rangerName+get_Form_Item(itemstack,1).getFormName(fly);
 	}
