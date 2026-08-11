@@ -49,22 +49,24 @@ public class GingaBraceItem extends RangerChangerItem{
 		boolean fly = !rider.onGround();
 		
 		if (equipmentSlot == EquipmentSlot.FEET) {
-			if (get_Form_Item(itemstack,2).getFormName(fly)=="_beast_armor_shine") {
-				if (rider.getMainHandItem().getItem()==GingamanItems.SEIJUUKEN.get() |
-						rider.getOffhandItem().getItem()==GingamanItems.SEIJUUKEN.get()) {
-					belt = get_Form_Item(itemstack,2).getBeltTex()+"_empty";
-				}
-				else if (((RangerChangerItem)itemstack.getItem()).BELT_TEXT==null) {
-					belt = get_Form_Item(itemstack,2).getBeltTex();
-				}
+			if (!isTransformed(rider)) {
+				return "belts/ginga_brace";
 			}
 			else {
-				if (rider.getMainHandItem().getItem()==GingamanItems.SEIJUUKEN.get() |
-						rider.getOffhandItem().getItem()==GingamanItems.SEIJUUKEN.get()) {
-					belt = get_Form_Item(itemstack,1).getBeltTex()+"_empty";
-				}
-				else if (((RangerChangerItem)itemstack.getItem()).BELT_TEXT==null) {
-					belt = get_Form_Item(itemstack,1).getBeltTex();
+				if (get_Form_Item(itemstack, 2).getFormName(fly) == "_beast_armor_shine") {
+					if (rider.getMainHandItem().getItem() == GingamanItems.SEIJUUKEN.get() |
+							rider.getOffhandItem().getItem() == GingamanItems.SEIJUUKEN.get()) {
+						belt = get_Form_Item(itemstack, 2).getBeltTex() + "_empty";
+					} else if (((RangerChangerItem) itemstack.getItem()).BELT_TEXT == null) {
+						belt = get_Form_Item(itemstack, 2).getBeltTex();
+					}
+				} else {
+					if (rider.getMainHandItem().getItem() == GingamanItems.SEIJUUKEN.get() |
+							rider.getOffhandItem().getItem() == GingamanItems.SEIJUUKEN.get()) {
+						belt = get_Form_Item(itemstack, 1).getBeltTex() + "_empty";
+					} else if (((RangerChangerItem) itemstack.getItem()).BELT_TEXT == null) {
+						belt = get_Form_Item(itemstack, 1).getBeltTex();
+					}
 				}
 			}
 			return "belts/"+belt;
@@ -79,6 +81,12 @@ public class GingaBraceItem extends RangerChangerItem{
 		if (slot == EquipmentSlot.HEAD)num=2;
 
 		return ResourceLocation.fromNamespaceAndPath(SuperSentaiCraftCore.MODID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
+	}
+
+	@Override
+	public ResourceLocation getBeltModelResource(ItemStack itemstack, RangerArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+		if (!isTransformed(rider)) return ResourceLocation.fromNamespaceAndPath(SuperSentaiCraftCore.MODID, "geo/left_brace.geo.json");
+		return ResourceLocation.fromNamespaceAndPath(SuperSentaiCraftCore.MODID, "geo/"+get_Form_Item(itemstack, 1).getBeltModel());
 	}
 	
 	public  boolean getPartsForSlot(ItemStack itemBySlot, EquipmentSlot currentSlot, String  part) {

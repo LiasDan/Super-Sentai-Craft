@@ -6,6 +6,7 @@ import com.liasdan.supersentaicraft.effect.EffectCore;
 import com.liasdan.supersentaicraft.items.RangerTabs;
 import com.liasdan.supersentaicraft.items.sentai_40.go_busters.MorphinBlasterItem;
 import com.liasdan.supersentaicraft.items.others.*;
+import com.liasdan.supersentaicraft.items.sentai_40.go_busters.MorphinBraceItem;
 import com.liasdan.supersentaicraft.particle.ModParticles;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -377,11 +378,11 @@ public class GoBustersItems {
             () -> new RangerArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 
    	public static final DeferredItem<Item> RED_MORPHIN_BRACE = ITEMS.register("red_morphin_brace",
-   		() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"red_buster",RED_ENETRON,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
+   		() -> new MorphinBraceItem(ArmorMaterials.DIAMOND,"red_buster",RED_ENETRON,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 	public static final DeferredItem<Item> BLUE_MORPHIN_BRACE = ITEMS.register("blue_morphin_brace",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"blue_buster",BLUE_ENETRON,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
+			() -> new MorphinBraceItem(ArmorMaterials.DIAMOND,"blue_buster",BLUE_ENETRON,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 	public static final DeferredItem<Item> YELLOW_MORPHIN_BRACE = ITEMS.register("yellow_morphin_brace",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"yellow_buster",YELLOW_ENETRON,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
+			() -> new MorphinBraceItem(ArmorMaterials.DIAMOND,"yellow_buster",YELLOW_ENETRON,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 	public static final DeferredItem<Item> BEET_MORPHIN_BLASTER = ITEMS.register("beet_morphin_blaster",
 			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"beet_buster",GOLD_ENETRON,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 	public static final DeferredItem<Item> STAG_MORPHIN_BLASTER = ITEMS.register("stag_morphin_blaster",
@@ -393,17 +394,17 @@ public class GoBustersItems {
 			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"dark_buster",VAGLASS_LOGO,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 
 	public static final DeferredItem<Item> CHEETAH_MORPHIN_BRACE = ITEMS.register("cheetah_morphin_brace",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"red_cheetah",CHEETAH_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
+			() -> new MorphinBraceItem(ArmorMaterials.DIAMOND,"red_cheetah",CHEETAH_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 	public static final DeferredItem<Item> GORILLA_MORPHIN_BRACE = ITEMS.register("gorilla_morphin_brace",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"blue_gorilla",GORILLA_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
+			() -> new MorphinBraceItem(ArmorMaterials.DIAMOND,"blue_gorilla",GORILLA_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 	public static final DeferredItem<Item> RABBIT_MORPHIN_BRACE = ITEMS.register("rabbit_morphin_brace",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"yellow_rabbit",RABBIT_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
+			() -> new MorphinBraceItem(ArmorMaterials.DIAMOND,"yellow_rabbit",RABBIT_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 	public static final DeferredItem<Item> BEETLE_MORPHIN_BLASTER = ITEMS.register("beetle_morphin_blaster",
 			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gold_beetle",BEETLE_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 	public static final DeferredItem<Item> HIPPOPOTAMUS_MORPHIN_BRACE = ITEMS.register("hippopotamus_morphin_brace",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"green_hippopotamus",HIPPOPOTAMUS_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
+			() -> new MorphinBraceItem(ArmorMaterials.DIAMOND,"green_hippopotamus",HIPPOPOTAMUS_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 	public static final DeferredItem<Item> PUMA_MORPHIN_BRACE = ITEMS.register("puma_morphin_brace",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"black_puma",PUMA_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
+			() -> new MorphinBraceItem(ArmorMaterials.DIAMOND,"black_puma",PUMA_ANIMAL_DISK,GO_BUSTERS_HELMET,GO_BUSTERS_CHESTPLATE,GO_BUSTERS_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));
 
 	public static final DeferredItem<SwordItem> SOUGAN_BLADE = ITEMS.register("sougan_blade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GO_BUSTERS).ChangeRepairItem(ENETRON.get()));

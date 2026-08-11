@@ -4,8 +4,8 @@
 		{
 			"description": {
 				"identifier": "geometry.unknown",
-				"texture_width": 128,
-				"texture_height": 32,
+				"texture_width": 40,
+				"texture_height": 16,
 				"visible_bounds_width": 3,
 				"visible_bounds_height": 3.5,
 				"visible_bounds_offset": [0, 1.25, 0]
@@ -41,53 +41,7 @@
 				{
 					"name": "armorBody",
 					"parent": "bipedBody",
-					"pivot": [0, 24, 0],
-					"cubes": [
-						{
-							"origin": [-8, 5.5, -14.91],
-							"size": [16, 16, 7],
-							"inflate": -5,
-							"pivot": [0, 0, -8],
-							"rotation": [0, 180, 0],
-							"uv": {
-								"north": {"uv": [2, 2], "uv_size": [0, 0]},
-								"east": {"uv": [3, 2], "uv_size": [0, 0]},
-								"south": {"uv": [48, 16], "uv_size": [16, 16]},
-								"west": {"uv": [2, 3], "uv_size": [0, 0]},
-								"up": {"uv": [3, 3], "uv_size": [0, 0]},
-								"down": {"uv": [4, 3], "uv_size": [0, 0]}
-							}
-						},
-						{"origin": [-5, 12, -3], "size": [10, 3, 6], "inflate": -0.4, "uv": [0, 0]},
-						{
-							"origin": [0, -2.7, -16],
-							"size": [0, 32, 32],
-							"inflate": -5,
-							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [0, 0]},
-								"east": {"uv": [128, 0], "uv_size": [-32, 32]},
-								"south": {"uv": [0, 0], "uv_size": [0, 0]},
-								"west": {"uv": [96, 0], "uv_size": [-32, 32]},
-								"up": {"uv": [0, 0], "uv_size": [0, 0]},
-								"down": {"uv": [0, 0], "uv_size": [0, 0]}
-							}
-						},
-						{
-							"origin": [-18, 5.5, -6.91],
-							"size": [16, 16, 7],
-							"inflate": -5,
-							"pivot": [-10, 0, 0],
-							"rotation": [0, -90, 0],
-							"uv": {
-								"north": {"uv": [2, 2], "uv_size": [0, 0]},
-								"east": {"uv": [3, 2], "uv_size": [0, 0]},
-								"south": {"uv": [0, 16], "uv_size": [16, 16]},
-								"west": {"uv": [2, 3], "uv_size": [0, 0]},
-								"up": {"uv": [3, 3], "uv_size": [0, 0]},
-								"down": {"uv": [4, 3], "uv_size": [0, 0]}
-							}
-						}
-					]
+					"pivot": [0, 24, 0]
 				},
 				{
 					"name": "bipedRightArm",
@@ -107,13 +61,16 @@
 					"parent": "bipedLeftArm",
 					"pivot": [4, 22, 0],
 					"cubes": [
+						{"origin": [3, 12.5, -3], "size": [6, 3, 6], "inflate": -0.4, "uv": [0, 0]},
 						{
 							"origin": [3.95, 6, -8],
 							"size": [7, 16, 16],
 							"inflate": -5,
+							"pivot": [9, 14, 0],
+							"rotation": [45, 0, 0],
 							"uv": {
 								"north": {"uv": [3, 3], "uv_size": [0, 0]},
-								"east": {"uv": [48, 16], "uv_size": [16, -16]},
+								"east": {"uv": [24, 16], "uv_size": [16, -16]},
 								"south": {"uv": [3, 3], "uv_size": [0, 0]},
 								"west": {"uv": [3, 3], "uv_size": [0, 0]},
 								"up": {"uv": [4, 3], "uv_size": [0, 0]},

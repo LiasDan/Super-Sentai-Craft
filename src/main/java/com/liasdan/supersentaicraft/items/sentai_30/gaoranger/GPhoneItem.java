@@ -25,18 +25,22 @@ public class GPhoneItem extends RangerChangerItem{
 		boolean fly = !rider.onGround();
 		
 		if (equipmentSlot == EquipmentSlot.FEET) {
-				if (rider.getMainHandItem().getItem()== GaorangerItems.JUUOUKEN.get()
-						||rider.getMainHandItem().getItem()== GaorangerItems.JUUOUKEN_LION.get()
-						||rider.getMainHandItem().getItem()== GaorangerItems.JUUOUKEN_EAGLE.get()
-						||rider.getMainHandItem().getItem()== GaorangerItems.JUUOUKEN_SHARK.get()
-						||rider.getMainHandItem().getItem()== GaorangerItems.JUUOUKEN_BISON.get()
-						||rider.getMainHandItem().getItem()== GaorangerItems.JUUOUKEN_TIGER.get()) {
-					belt = get_Form_Item(itemstack,1).getBeltTex()+"_empty";
+			if (!isTransformed(rider)) {
+				return "blank";
+			}
+			else {
+				if (rider.getMainHandItem().getItem() == GaorangerItems.JUUOUKEN.get()
+						|| rider.getMainHandItem().getItem() == GaorangerItems.JUUOUKEN_LION.get()
+						|| rider.getMainHandItem().getItem() == GaorangerItems.JUUOUKEN_EAGLE.get()
+						|| rider.getMainHandItem().getItem() == GaorangerItems.JUUOUKEN_SHARK.get()
+						|| rider.getMainHandItem().getItem() == GaorangerItems.JUUOUKEN_BISON.get()
+						|| rider.getMainHandItem().getItem() == GaorangerItems.JUUOUKEN_TIGER.get()) {
+					belt = get_Form_Item(itemstack, 1).getBeltTex() + "_empty";
+				} else if (((RangerChangerItem) itemstack.getItem()).BELT_TEXT == null) {
+					belt = get_Form_Item(itemstack, 1).getBeltTex();
 				}
-				else if (((RangerChangerItem)itemstack.getItem()).BELT_TEXT==null) {
-					belt = get_Form_Item(itemstack,1).getBeltTex();
-				}
-				return "belts/"+belt;
+				return "belts/" + belt;
+			}
 		}
 		else return rangerName+get_Form_Item(itemstack,1).getFormName(fly);
 	}
