@@ -248,6 +248,9 @@ public class SuperSentaiCraftCore {
 			event.registerEntityRenderer(MobsCore.NANASHIS.get(), BasicEntityRenderer::new);
 			event.registerEntityRenderer(MobsCore.GEDOU_SHINKEN_RED.get(), BasicEntityRenderer::new);
 
+			event.registerEntityRenderer(MobsCore.BEEBES.get(), BasicEntityRenderer::new);
+			event.registerEntityRenderer(MobsCore.DARK_GOSEI_KNIGHT.get(), BasicEntityRenderer::new);
+
 			event.registerEntityRenderer(MobsCore.BUGLERS.get(), BasicEntityRenderer::new);
 			event.registerEntityRenderer(MobsCore.DARK_BUSTER.get(), BasicEntityRenderer::new);
 

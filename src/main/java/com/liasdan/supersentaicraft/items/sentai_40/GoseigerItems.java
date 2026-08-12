@@ -6,6 +6,7 @@ import com.liasdan.supersentaicraft.effect.EffectCore;
 import com.liasdan.supersentaicraft.items.RangerTabs;
 import com.liasdan.supersentaicraft.items.others.*;
 import com.liasdan.supersentaicraft.items.sentai_40.go_busters.MorphinBlasterItem;
+import com.liasdan.supersentaicraft.items.sentai_40.goseiger.TensouderItem;
 import com.liasdan.supersentaicraft.particle.ModParticles;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -29,72 +30,108 @@ public class GoseigerItems {
 	public static final DeferredItem<Item> GOSEI_RED_CARD = ITEMS.register("gosei_red_card",
             () -> new RangerFormChangeItem(new Item.Properties(),0,"","gosei_red","goseiger_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 			.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> GOSEI_PINK_CARD = ITEMS.register("gosei_pink_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"","gosei_pink","goseiger_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> GOSEI_BLACK_CARD = ITEMS.register("gosei_black_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"","gosei_black","goseiger_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> GOSEI_YELLOW_CARD = ITEMS.register("gosei_yellow_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"","gosei_yellow","goseiger_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> GOSEI_BLUE_CARD = ITEMS.register("gosei_blue_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"","gosei_blue","goseiger_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> GOSEI_KNIGHT_CARD = ITEMS.register("gosei_knight_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"","gosei_knight","gosei_knight_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToTabList(RangerTabs.GOSEIGER));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.SHOTBOOST, 40, 2,true,false)).AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> GOSEI_GREEN_CARD = ITEMS.register("gosei_green_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"","gosei_green","goseiger_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> RED_MIRACLE_GOSEI_POWER_CARD = ITEMS.register("red_miracle_gosei_power_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"_super","gosei_red","goseiger_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> PINK_MIRACLE_GOSEI_POWER_CARD = ITEMS.register("pink_miracle_gosei_power_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"_super","gosei_pink","goseiger_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> BLACK_MIRACLE_GOSEI_POWER_CARD = ITEMS.register("black_miracle_gosei_power_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"_super","gosei_black","goseiger_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> YELLOW_MIRACLE_GOSEI_POWER_CARD = ITEMS.register("yellow_miracle_gosei_power_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"_super","gosei_yellow","goseiger_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> BLUE_MIRACLE_GOSEI_POWER_CARD = ITEMS.register("blue_miracle_gosei_power_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"_super","gosei_blue","goseiger_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
 					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> GOSEIGER_HELMET = ITEMS.register("goseiger_head",
@@ -105,21 +142,23 @@ public class GoseigerItems {
             () -> new RangerArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 
    	public static final DeferredItem<Item> RED_TENSOUDER = ITEMS.register("red_tensouder",
-   		() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gosei_red",GOSEI_RED_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+   			() -> new TensouderItem(ArmorMaterials.DIAMOND,"gosei_red",GOSEI_RED_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 	public static final DeferredItem<Item> PINK_TENSOUDER = ITEMS.register("pink_tensouder",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gosei_pink",GOSEI_PINK_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+			() -> new TensouderItem(ArmorMaterials.DIAMOND,"gosei_pink",GOSEI_PINK_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 	public static final DeferredItem<Item> BLACK_TENSOUDER = ITEMS.register("black_tensouder",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gosei_black",GOSEI_BLACK_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+			() -> new TensouderItem(ArmorMaterials.DIAMOND,"gosei_black",GOSEI_BLACK_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 	public static final DeferredItem<Item> YELLOW_TENSOUDER = ITEMS.register("yellow_tensouder",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gosei_yellow",GOSEI_YELLOW_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+			() -> new TensouderItem(ArmorMaterials.DIAMOND,"gosei_yellow",GOSEI_YELLOW_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 	public static final DeferredItem<Item> BLUE_TENSOUDER = ITEMS.register("blue_tensouder",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gosei_blue",GOSEI_BLUE_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+			() -> new TensouderItem(ArmorMaterials.DIAMOND,"gosei_blue",GOSEI_BLUE_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 
 	public static final DeferredItem<Item> LEON_CELLULAR = ITEMS.register("leon_cellular",
 			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gosei_knight",GOSEI_KNIGHT_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<Item> LEON_CELLULAR_DARK = ITEMS.register("leon_cellular_dark",
+			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gosei_knight_dark",GOSEI_KNIGHT_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 
 	public static final DeferredItem<Item> GREEN_TENSOUDER = ITEMS.register("green_tensouder",
-			() -> new RangerChangerItem(ArmorMaterials.DIAMOND,"gosei_green",GOSEI_GREEN_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+			() -> new TensouderItem(ArmorMaterials.DIAMOND,"gosei_green",GOSEI_GREEN_CARD,GOSEIGER_HELMET,GOSEIGER_CHESTPLATE,GOSEIGER_LEGGINGS,new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 
 	public static final DeferredItem<BaseBlasterItem> GOSEI_BLASTER = ITEMS.register("gosei_blaster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
