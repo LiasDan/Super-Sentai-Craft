@@ -1,6 +1,7 @@
 package com.liasdan.supersentaicraft.entity;
 
 import com.liasdan.supersentaicraft.SuperSentaiCraftCore;
+import com.liasdan.supersentaicraft.entity.ally.DatasEntity;
 import com.liasdan.supersentaicraft.entity.ally.ZubaanEntity;
 import com.liasdan.supersentaicraft.entity.boss.*;
 import com.liasdan.supersentaicraft.entity.footsoldier.*;
@@ -161,7 +162,7 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> GEDOU_SHINKEN_RED_SPAWN_EGG = ITEMS.register("gedou_shinken_red_spawn_egg",
 			() -> new DeferredSpawnEggItem(GEDOU_SHINKEN_RED,0xffffff, 0x151515, new Item.Properties()));
 
-	//33 Shinkenger
+	//34 Goseiger
 	public static final DeferredHolder<EntityType<?>, EntityType<BeebesEntity>> BEEBES = MOBLIST.register("beebe",
 			() -> EntityType.Builder.of(BeebesEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(SuperSentaiCraftCore.MODID + ":beebe"));
 
@@ -173,6 +174,9 @@ public class MobsCore {
 
 	public static final DeferredItem<DeferredSpawnEggItem> DARK_GOSEI_KNIGHT_SPAWN_EGG = ITEMS.register("dark_gosei_knight_spawn_egg",
 			() -> new DeferredSpawnEggItem(DARK_GOSEI_KNIGHT,0xffffff, 0x151515, new Item.Properties()));
+
+	public static final DeferredHolder<EntityType<?>, EntityType<DatasEntity>> DATAS = MOBLIST.register("datas",
+			() -> EntityType.Builder.of(DatasEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(SuperSentaiCraftCore.MODID + ":datas"));
 
 	//36 Go-Busters
 	public static final DeferredHolder<EntityType<?>, EntityType<BuglersEntity>> BUGLERS = MOBLIST.register("bugler",

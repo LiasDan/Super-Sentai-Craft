@@ -1,10 +1,7 @@
 package com.liasdan.supersentaicraft;
 
 import com.liasdan.supersentaicraft.client.KeyBindings;
-import com.liasdan.supersentaicraft.client.renderer.AllyEntityRenderer;
-import com.liasdan.supersentaicraft.client.renderer.BasicEntityRenderer;
-import com.liasdan.supersentaicraft.client.renderer.ThrownShurikenRenderer;
-import com.liasdan.supersentaicraft.client.renderer.ThrownWeaponRenderer;
+import com.liasdan.supersentaicraft.client.renderer.*;
 import com.liasdan.supersentaicraft.entity.footsoldier.BaseFootsoldierEntity;
 import com.liasdan.supersentaicraft.blocks.RangerBlocks;
 import com.liasdan.supersentaicraft.effect.EffectCore;
@@ -250,6 +247,7 @@ public class SuperSentaiCraftCore {
 
 			event.registerEntityRenderer(MobsCore.BEEBES.get(), BasicEntityRenderer::new);
 			event.registerEntityRenderer(MobsCore.DARK_GOSEI_KNIGHT.get(), BasicEntityRenderer::new);
+			event.registerEntityRenderer(MobsCore.DATAS.get(), DatasRenderer::new);
 
 			event.registerEntityRenderer(MobsCore.BUGLERS.get(), BasicEntityRenderer::new);
 			event.registerEntityRenderer(MobsCore.DARK_BUSTER.get(), BasicEntityRenderer::new);

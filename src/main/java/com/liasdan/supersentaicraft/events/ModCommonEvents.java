@@ -6,6 +6,7 @@ import java.util.Objects;
 import com.liasdan.supersentaicraft.client.KeyBindings;
 import com.liasdan.supersentaicraft.effect.EffectCore;
 import com.liasdan.supersentaicraft.entity.MobsCore;
+import com.liasdan.supersentaicraft.entity.ally.DatasEntity;
 import com.liasdan.supersentaicraft.entity.ally.ZubaanEntity;
 import com.liasdan.supersentaicraft.entity.boss.*;
 import com.liasdan.supersentaicraft.entity.footsoldier.*;
@@ -206,6 +207,7 @@ public class ModCommonEvents {
 
 		event.put(MobsCore.BEEBES.get(), BeebesEntity.setAttributes().build());
 		event.put(MobsCore.DARK_GOSEI_KNIGHT.get(), DarkGoseiKnightEntity.setAttributes().build());
+		event.put(MobsCore.DATAS.get(), DatasEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGLERS.get(), BuglersEntity.setAttributes().build());
 		event.put(MobsCore.DARK_BUSTER.get(), DarkBusterEntity.setAttributes().build());

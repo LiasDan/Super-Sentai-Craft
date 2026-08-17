@@ -1,0 +1,106 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.datas.idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"bipedRightArm": {
+					"rotation": [0, 0, 0]
+				},
+				"armorRightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 10],
+						"2.0": [0, 0, 0]
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, -10],
+						"2.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.datas.walk": {
+			"loop": true,
+			"animation_length": 0.6667,
+			"bones": {
+				"armorRightArm": {
+					"rotation": {
+						"0.0": [-20, 0, 0],
+						"0.3333": [20, 0, 0],
+						"0.6667": [-20, 0, 0]
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"0.0": [20, 0, 0],
+						"0.3333": [-20, 0, 0],
+						"0.6667": [20, 0, 0]
+					}
+				},
+				"armorLeftLeg": {
+					"rotation": {
+						"0.0": [-20, 0, 0],
+						"0.3333": [20, 0, 0],
+						"0.6667": [-20, 0, 0]
+					}
+				},
+				"armorRightLeg": {
+					"rotation": {
+						"0.0": [20, 0, 0],
+						"0.3333": [-20, 0, 0],
+						"0.6667": [20, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.datas.sit": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"armorRightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 90, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [4.5, 0, 4.5]
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -90, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [-4.5, 0, 4.5]
+					}
+				},
+				"armorLeftLeg": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 5.5, 0]
+					}
+				},
+				"armorRightLeg": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 5.5, 0]
+					}
+				},
+				"bone": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -5.5, 0]
+					}
+				}
+			}
+		}
+	}
+}
