@@ -70,7 +70,7 @@ public class ShinkengerItems {
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
             		new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false))
 			.alsoChange2ndSlot(OtherItems.BLANK_FORM.get()).ChangeBeltModel("rangerbeltweapon.geo.json").AddToTabList(RangerTabs.SHINKENGER));
-    
+
 	public static final DeferredItem<Item> SUSHI_DISK = ITEMS.register("sushi_disk",
             () -> new SecretDiskItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","shinken_gold","shinken_gold_belt",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -81,7 +81,7 @@ public class ShinkengerItems {
     
 	public static final DeferredItem<Item> INROMARU = ITEMS.register("inromaru",
     		() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RangerTabs.SHINKENGER));
-	
+
 	public static final DeferredItem<Item> SUPER_DISK = ITEMS.register("super_disk",
             () -> new SecretDiskItem(new Item.Properties().rarity(Rarity.RARE),0,"shinken_super_mode","","shinkenger_belt",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
@@ -90,7 +90,16 @@ public class ShinkengerItems {
             		new MobEffectInstance(EffectCore.SLASH, 40, 4,true,false),
             		new MobEffectInstance(EffectCore.FLYING, 40, 4,true,false))
             .ChangeSlot(2).BackToBase().addNeedItem(INROMARU.get()).AddCompatibilityList(SHINKENGER).AddToTabList(RangerTabs.SHINKENGER));
-    
+
+	public static final DeferredItem<Item> SUPER_DISK_GOSEI = ITEMS.register("super_disk_gosei",
+			() -> new SecretDiskItem(new Item.Properties().rarity(Rarity.RARE),0,"shinken_super_mode","","shinkenger_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 4,true,false),
+					new MobEffectInstance(EffectCore.FLYING, 40, 4,true,false))
+					.ChangeSlot(2).BackToBase().AddCompatibilityList(SHINKENGER));
+
 	public static final DeferredItem<Item> HYPER_DISK = ITEMS.register("hyper_disk",
             () -> new SecretDiskItem(new Item.Properties().rarity(Rarity.EPIC),0,"shinken_hyper_mode","","shinkenger_belt",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 5,true,false),

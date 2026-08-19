@@ -8,7 +8,9 @@ import com.liasdan.supersentaicraft.entity.ally.DatasEntity;
 import com.liasdan.supersentaicraft.items.RangerTabs;
 import com.liasdan.supersentaicraft.items.others.*;
 import com.liasdan.supersentaicraft.items.sentai_40.go_busters.MorphinBlasterItem;
+import com.liasdan.supersentaicraft.items.sentai_40.goseiger.GoseiCardItem;
 import com.liasdan.supersentaicraft.items.sentai_40.goseiger.HyperChangeCardItem;
+import com.liasdan.supersentaicraft.items.sentai_40.goseiger.SuperChangeCardItem;
 import com.liasdan.supersentaicraft.items.sentai_40.goseiger.TensouderItem;
 import com.liasdan.supersentaicraft.particle.ModParticles;
 import net.minecraft.server.level.ServerLevel;
@@ -95,7 +97,7 @@ public class GoseigerItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
-					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.RED_CARD,1));
+					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> PINK_MIRACLE_GOSEI_POWER_CARD = ITEMS.register("pink_miracle_gosei_power_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"_super","gosei_pink","goseiger_belt",
@@ -105,7 +107,7 @@ public class GoseigerItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
-					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.PINK_CARD,1));
+					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> BLACK_MIRACLE_GOSEI_POWER_CARD = ITEMS.register("black_miracle_gosei_power_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"_super","gosei_black","goseiger_belt",
@@ -115,7 +117,7 @@ public class GoseigerItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
-					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.BLACK_CARD,1));
+					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> YELLOW_MIRACLE_GOSEI_POWER_CARD = ITEMS.register("yellow_miracle_gosei_power_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"_super","gosei_yellow","goseiger_belt",
@@ -125,7 +127,7 @@ public class GoseigerItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
-					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.YELLOW_CARD,1));
+					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> BLUE_MIRACLE_GOSEI_POWER_CARD = ITEMS.register("blue_miracle_gosei_power_card",
 			() -> new RangerFormChangeItem(new Item.Properties(),0,"_super","gosei_blue","goseiger_belt",
@@ -135,10 +137,63 @@ public class GoseigerItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
-					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.BLUE_CARD,1));
+					.ChangeBeltModel("rangerbeltextra.geo.json").AddToTabList(RangerTabs.GOSEIGER));
 
-	public static final DeferredItem<Item> HYPER_CHANGE_GOSEI_CARD = ITEMS.register("hyper_change_gosei_card",
+	public static final DeferredItem<Item> SKICK_SWORD_CARD = ITEMS.register("skick_sword_card",
+			() -> new GoseiCardItem(new Item.Properties(),"gosei_red","skick_sword").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.RED_CARD,10));
+	public static final DeferredItem<Item> SKICK_SHOT_CARD = ITEMS.register("skick_shot_card",
+			() -> new GoseiCardItem(new Item.Properties(),"gosei_pink","skick_shot").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.PINK_CARD,10));
+	public static final DeferredItem<Item> LANDICK_AXE_CARD = ITEMS.register("landick_axe_card",
+			() -> new GoseiCardItem(new Item.Properties(),"gosei_black","landick_axe").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.BLACK_CARD,10));
+	public static final DeferredItem<Item> LANDICK_CLAW_CARD = ITEMS.register("landick_claw_card",
+			() -> new GoseiCardItem(new Item.Properties(),"gosei_pink","landick_claw").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.YELLOW_CARD,10));
+	public static final DeferredItem<Item> SEAICK_BOWGUN_CARD = ITEMS.register("seaick_bowgun_card",
+			() -> new GoseiCardItem(new Item.Properties(),"gosei_blue","seaick_bowgun").AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.BLUE_CARD,10));
+
+	public static final DeferredItem<Item> DRAGON_HEADDER_CARD = ITEMS.register("dragon_headder_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.RED_CARD,10));
+	public static final DeferredItem<Item> PHOENIX_HEADDER_CARD = ITEMS.register("phoenix_headder_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.PINK_CARD,10));
+	public static final DeferredItem<Item> SNAKE_HEADDER_CARD = ITEMS.register("snake_headder_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.BLACK_CARD,10));
+	public static final DeferredItem<Item> TIGER_HEADDER_CARD = ITEMS.register("tiger_headder_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.YELLOW_CARD,10));
+	public static final DeferredItem<Item> SHARK_HEADDER_CARD = ITEMS.register("shark_headder_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.BLUE_CARD,10));
+	public static final DeferredItem<Item> VULCAN_HEADDER_CARD = ITEMS.register("vulcan_headder_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.KNIGHT_CARD,10));
+
+	public static final DeferredItem<Item> SKICK_BROTHER_CARD = ITEMS.register("skick_brother_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.RED_CARD,5).AddToList(DatasEntity.PINK_CARD,5));
+	public static final DeferredItem<Item> LANDICK_BROTHER_CARD = ITEMS.register("landick_brother_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.BLACK_CARD,5).AddToList(DatasEntity.YELLOW_CARD,5));
+	public static final DeferredItem<Item> SEAICK_BROTHER_CARD = ITEMS.register("seaick_brother_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.BLUE_CARD,5));
+	public static final DeferredItem<Item> MYTHIC_BROTHER_CARD = ITEMS.register("mythic_brother_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.RED_CARD,5).AddToList(DatasEntity.PINK_CARD,5)
+					.AddToList(DatasEntity.BLACK_CARD,5).AddToList(DatasEntity.YELLOW_CARD,5).AddToList(DatasEntity.BLUE_CARD,5));
+	public static final DeferredItem<Item> EXOTIC_BROTHER_CARD = ITEMS.register("exotic_brother_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).AddToList(DatasEntity.RED_CARD,5).AddToList(DatasEntity.PINK_CARD,5));
+	public static final DeferredItem<Item> HYPER_CHANGE_HEADDER_CARD = ITEMS.register("hyper_change_headder_card",
 			() -> new HyperChangeCardItem(new Item.Properties(),MobsCore.DATAS).AddToTabList(RangerTabs.GOSEIGER));
+
+	public static final DeferredItem<Item> GOSEI_WONDER_CARD = ITEMS.register("gosei_wonder_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER));
+	public static final DeferredItem<Item> GOSEI_ULTIMATE_CARD = ITEMS.register("gosei_ultimate_card",
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER));
+
+	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_RED_CARD = ITEMS.register("super_change_shinken_red_card",
+			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_red").AddToTabList(RangerTabs.GOSEIGER));
+	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_PINK_CARD = ITEMS.register("super_change_shinken_pink_card",
+			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_pink").AddToTabList(RangerTabs.GOSEIGER));
+	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_BLUE_CARD = ITEMS.register("super_change_shinken_blue_card",
+			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_blue").AddToTabList(RangerTabs.GOSEIGER));
+	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_GREEN_CARD = ITEMS.register("super_change_shinken_green_card",
+			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_green").AddToTabList(RangerTabs.GOSEIGER));
+	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_YELLOW_CARD = ITEMS.register("super_change_shinken_yellow_card",
+			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_yellow").AddToTabList(RangerTabs.GOSEIGER));
+	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_GOLD_CARD = ITEMS.register("super_change_shinken_gold_card",
+			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_gold").AddToTabList(RangerTabs.GOSEIGER));
 
 	public static final DeferredItem<Item> GOSEIGER_HELMET = ITEMS.register("goseiger_head",
             () -> new RangerArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
