@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:yellow_masking_brace"
     },
-    "title": "Yellow Mask!",
-    "description": "Change into Yellow Mask",
+    "title": {
+      "translate": "advancements.supersentaicraft.yellow_mask.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.yellow_mask.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

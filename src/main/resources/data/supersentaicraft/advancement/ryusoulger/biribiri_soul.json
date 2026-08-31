@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:biribiri_soul"
     },
-    "title": "Ep14: The Golden Knight",
-    "description": "Use BiriBiriSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.biribiri_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.biribiri_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

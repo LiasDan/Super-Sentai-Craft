@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:hyper_disk"
     },
-    "title": "The Founding Hiden Disk",
-    "description": "Obtain Hyper Disk",
+    "title": {
+      "translate": "advancements.supersentaicraft.hyper_disk.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.hyper_disk.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

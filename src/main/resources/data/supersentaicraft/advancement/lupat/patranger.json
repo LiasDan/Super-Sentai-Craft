@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:patranger_logo"
     },
-    "title": "Keisatsu Sentai Patranger",
-    "description": "Change into each member of Patranger",
+    "title": {
+      "translate": "advancements.supersentaicraft.patranger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.patranger.desc"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

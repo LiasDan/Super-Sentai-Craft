@@ -1,0 +1,29 @@
+{
+  "parent": "supersentaicraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:goseiger/red_miracle_gosei_power_card",
+      "supersentaicraft:goseiger/pink_miracle_gosei_power_card",
+      "supersentaicraft:goseiger/black_miracle_gosei_power_card",
+      "supersentaicraft:goseiger/yellow_miracle_gosei_power_card",
+      "supersentaicraft:goseiger/blue_miracle_gosei_power_card"
+    ]
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:gosei_ultimate_card"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ]
+}

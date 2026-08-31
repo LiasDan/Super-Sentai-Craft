@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:max_ryusoul"
     },
-    "title": "Ep33: New Assassin",
-    "description": "Change into Max Ryusoul Red",
+    "title": {
+      "translate": "advancements.supersentaicraft.max_ryusoul_red.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.max_ryusoul_red.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true

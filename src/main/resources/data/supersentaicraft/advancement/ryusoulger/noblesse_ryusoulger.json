@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:ryusoul_calibur"
     },
-    "title": "Ep38: Temple of the Sky",
-    "description": "Change into Noblesse Ryusoulger",
+    "title": {
+      "translate": "advancements.supersentaicraft.noblesse_ryusoulger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.noblesse_ryusoulger.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

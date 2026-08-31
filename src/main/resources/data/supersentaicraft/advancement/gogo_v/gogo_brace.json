@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:red_gogo_brace"
     },
-    "title": "Chakusou!",
-    "description": "Obtain any GoGo Brace",
+    "title": {
+      "translate": "advancements.supersentaicraft.gogo_brace.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.gogo_brace.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

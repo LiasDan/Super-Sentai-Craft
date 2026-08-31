@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:gao_icarus_head"
     },
-    "title": "Hyakujuu Gattai! GaoIcarus!",
-    "description": "Combine into GaoIcarus",
+    "title": {
+      "translate": "advancements.supersentaicraft.gao_icarus.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.gao_icarus.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

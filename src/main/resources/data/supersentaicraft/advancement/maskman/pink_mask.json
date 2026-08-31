@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:pink_masking_brace"
     },
-    "title": "Pink Mask!",
-    "description": "Change into Pink Mask",
+    "title": {
+      "translate": "advancements.supersentaicraft.pink_mask.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.pink_mask.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

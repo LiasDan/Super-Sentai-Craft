@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:mawari_soul"
     },
-    "title": "MawariSoul! Gyuin!",
-    "description": "Use MawariSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.mawari_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.mawari_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

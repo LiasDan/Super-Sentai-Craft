@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:black_ryusoul_changer"
     },
-    "title": "Ifuu no Kishi! Ryusoul Black!",
-    "description": "Change into Ryusoul Black",
+    "title": {
+      "translate": "advancements.supersentaicraft.ryusoul_black.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.ryusoul_black.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

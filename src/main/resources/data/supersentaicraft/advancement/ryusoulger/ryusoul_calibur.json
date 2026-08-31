@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:ryusoul_calibur"
     },
-    "title": "Soul wo tokihanate!",
-    "description": "Obtain Ryusoul Calibur",
+    "title": {
+      "translate": "advancements.supersentaicraft.ryusoul_calibur.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.ryusoul_calibur.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:moria_ryusoul_changer"
     },
-    "title": "Call me Ryusoul Moria",
-    "description": "Change into Ryusoul Moria",
+    "title": {
+      "translate": "advancements.supersentaicraft.ryusoul_moria.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.ryusoul_moria.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

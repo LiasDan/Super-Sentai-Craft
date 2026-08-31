@@ -1,10 +1,14 @@
 {
   "display": {
     "icon": {
-      "id": "supersentaicraft:zeek_crystal"
+      "id": "supersentaicraft:red_gogo_brace"
     },
-    "title": "Ep45: The Year's First Dream is a Saima Melody",
-    "description": "Change into Go Red (Kyoko Hayase)",
+    "title": {
+      "translate": "advancements.supersentaicraft.go_red_kyoko.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.go_red_kyoko.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

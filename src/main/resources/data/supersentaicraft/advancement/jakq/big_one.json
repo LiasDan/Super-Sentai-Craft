@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:big_one_red_rose"
     },
-    "title": "Big One!",
-    "description": "Change into Big One",
+    "title": {
+      "translate": "advancements.supersentaicraft.big_one.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.big_one.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

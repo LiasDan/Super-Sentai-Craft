@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "goseiger",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_gosei_card"
+    }
+  },
+  "result": {
+    "id": "supersentaicraft:goseiger_head"
+  }
+}

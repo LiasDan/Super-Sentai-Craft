@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:gao_muscle_head"
     },
-    "title": "Hyakujuu Gattai! GaoMuscle!",
-    "description": "Combine into GaoMuscle",
+    "title": {
+      "translate": "advancements.supersentaicraft.gao_muscle.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.gao_muscle.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

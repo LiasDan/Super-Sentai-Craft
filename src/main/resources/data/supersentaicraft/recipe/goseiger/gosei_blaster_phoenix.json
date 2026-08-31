@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gosei_pink",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:gosei_blaster"
+    },
+    {
+      "item": "supersentaicraft:phoenix_headder_card"
+    }
+  ],
+  "result": {
+    "id": "supersentaicraft:gosei_blaster_phoenix"
+  }
+}

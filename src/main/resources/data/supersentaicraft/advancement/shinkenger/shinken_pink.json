@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:pink_shodophone"
     },
-    "title": "Shinken Pink! Shiraishi Mako",
-    "description": "Change into Shinken Pink",
+    "title": {
+      "translate": "advancements.supersentaicraft.shinken_pink.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.shinken_pink.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

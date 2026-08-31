@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:blue_shodophone"
     },
-    "title": "Shinken Blue! Ikenami Ryunosuke",
-    "description": "Change into Shinken Blue",
+    "title": {
+      "translate": "advancements.supersentaicraft.shinken_blue.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.shinken_blue.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

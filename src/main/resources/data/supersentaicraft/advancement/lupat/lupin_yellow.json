@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:yellow_vs_changer"
     },
-    "title": "Lupin Yellow!",
-    "description": "Change into Lupin Yellow",
+    "title": {
+      "translate": "advancements.supersentaicraft.lupin_yellow.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.lupin_yellow.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

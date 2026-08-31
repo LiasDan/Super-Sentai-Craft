@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:red_accel_changer"
     },
-    "title": "Pink Racer!",
-    "description": "Change into Pink Racer",
+    "title": {
+      "translate": "advancements.supersentaicraft.pink_racer.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.pink_racer.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

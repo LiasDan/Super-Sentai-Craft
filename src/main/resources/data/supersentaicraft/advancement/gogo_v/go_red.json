@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:red_gogo_brace"
     },
-    "title": "Go Red!",
-    "description": "Change into Go Red",
+    "title": {
+      "translate": "advancements.supersentaicraft.go_red.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.go_red.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

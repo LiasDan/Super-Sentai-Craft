@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:lights_of_ginga"
     },
-    "title": "Unari! Ginga no Hikari!",
-    "description": "Obtain Lights of Ginga",
+    "title": {
+      "translate": "advancements.supersentaicraft.lights_of_ginga.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.lights_of_ginga.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

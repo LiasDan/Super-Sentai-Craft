@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#supersentaicraft:super_sentai_topia",
+  "biomes": "#supersentaicraft:just_super_sentai_topia",
   "features": "supersentaicraft:mecha_ore_placed",
   "step": "underground_ores"
 }

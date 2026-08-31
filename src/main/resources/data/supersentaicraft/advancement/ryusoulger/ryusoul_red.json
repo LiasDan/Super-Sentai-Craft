@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:red_ryusoul_changer"
     },
-    "title": "Yuumou no Kishi! Ryusoul Red!",
-    "description": "Change into Ryusoul Red",
+    "title": {
+      "translate": "advancements.supersentaicraft.ryusoul_red.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.ryusoul_red.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

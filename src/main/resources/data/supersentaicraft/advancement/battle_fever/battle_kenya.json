@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:japan_battleceiver"
     },
-    "title": "Battle Kenya!",
-    "description": "Change into Battle Kenya",
+    "title": {
+      "translate": "advancements.supersentaicraft.battle_kenya.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.battle_kenya.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

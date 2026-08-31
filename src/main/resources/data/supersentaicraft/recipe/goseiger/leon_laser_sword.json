@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gosei_knight",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_gosei_card"
+    },
+    "b": {
+      "item": "supersentaicraft:gosei_knight_card"
+    },
+    "c": {
+      "item": "supersentaicraft:base_sword"
+    }
+  },
+  "result": {
+    "id": "supersentaicraft:leon_laser_sword"
+  }
+}

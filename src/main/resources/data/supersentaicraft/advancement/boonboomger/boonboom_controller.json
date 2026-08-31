@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:violet_boonboom_controller"
     },
-    "title": "Boonboom Change!",
-    "description": "Obtain Bun Violet's Boonboom Controller",
+    "title": {
+      "translate": "advancements.supersentaicraft.boonboom_controller.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.boonboom_controller.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

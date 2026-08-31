@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:kusa_soul"
     },
-    "title": "KusaSoul! Mowa-mowa!",
-    "description": "Use KusaSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.kusa_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.kusa_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

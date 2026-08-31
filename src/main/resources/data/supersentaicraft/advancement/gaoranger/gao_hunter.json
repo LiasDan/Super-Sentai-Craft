@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:gao_hunter_head"
     },
-    "title": "Hyakujuu Gattai! GaoHunter Justice!",
-    "description": "Combine into GaoHunter",
+    "title": {
+      "translate": "advancements.supersentaicraft.gao_hunter.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.gao_hunter.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

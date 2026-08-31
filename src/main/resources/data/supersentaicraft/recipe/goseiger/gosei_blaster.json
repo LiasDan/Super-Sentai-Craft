@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "goseiger",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "supersentaicraft:blank_gosei_card"
+    },
+    "b": [
+      {
+        "item": "supersentaicraft:gosei_red_card"
+      },
+      {
+        "item": "supersentaicraft:gosei_pink_card"
+      },
+      {
+        "item": "supersentaicraft:gosei_black_card"
+      },
+      {
+        "item": "supersentaicraft:gosei_yellow_card"
+      },
+      {
+        "item": "supersentaicraft:gosei_pink_card"
+      }
+    ],
+    "c": {
+      "item": "supersentaicraft:base_sword"
+    }
+  },
+  "result": {
+    "id": "supersentaicraft:gosei_blaster"
+  }
+}

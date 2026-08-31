@@ -184,10 +184,10 @@ public class GoseigerItems {
 
 	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_RED_CARD = ITEMS.register("super_change_shinken_red_card",
 			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_red").AddToTabList(RangerTabs.GOSEIGER));
-	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_PINK_CARD = ITEMS.register("super_change_shinken_pink_card",
-			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_pink").AddToTabList(RangerTabs.GOSEIGER));
 	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_BLUE_CARD = ITEMS.register("super_change_shinken_blue_card",
 			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_blue").AddToTabList(RangerTabs.GOSEIGER));
+	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_PINK_CARD = ITEMS.register("super_change_shinken_pink_card",
+			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_pink").AddToTabList(RangerTabs.GOSEIGER));
 	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_GREEN_CARD = ITEMS.register("super_change_shinken_green_card",
 			() -> new SuperChangeCardItem(new Item.Properties(),"shinken_green").AddToTabList(RangerTabs.GOSEIGER));
 	public static final DeferredItem<Item> SUPER_CHANGE_SHINKEN_YELLOW_CARD = ITEMS.register("super_change_shinken_yellow_card",
@@ -259,6 +259,8 @@ public class GoseigerItems {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).IsSuperGun().AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 
 	public static final DeferredItem<SwordItem> GOSEI_TENSWORD = ITEMS.register("gosei_tensword",
+			() -> new BaseDualSwordItem(Tiers.DIAMOND, 16, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).IsDualWeapon().AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
+	public static final DeferredItem<SwordItem> SUPER_GOSEI_TENSWORD = ITEMS.register("super_gosei_tensword",
 			() -> new BaseDualSwordItem(Tiers.DIAMOND, 16, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).IsDualWeapon().AddToTabList(RangerTabs.GOSEIGER).ChangeRepairItem(BLANK_GOSEI_CARD.get()));
 
 	public static void register(IEventBus eventBus) {

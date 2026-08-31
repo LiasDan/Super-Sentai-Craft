@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:goseiger/super_change_shinken_red_card",
+      "supersentaicraft:goseiger/super_change_shinken_blue_card",
+      "supersentaicraft:goseiger/super_change_shinken_pink_card",
+      "supersentaicraft:goseiger/super_change_shinken_green_card",
+      "supersentaicraft:goseiger/super_change_shinken_yellow_card",
+      "supersentaicraft:goseiger/super_change_shinken_gold_card",
+      "supersentaicraft:goseiger/gosei_tensword",
+      "supersentaicraft:goseiger/super_gosei_tensword"
+    ]
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:red_miracle_gosei_power_card"
+          }
+        ]
+      }
+    },
+    "has_item1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:pink_miracle_gosei_power_card"
+          }
+        ]
+      }
+    },
+    "has_item2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:black_miracle_gosei_power_card"
+          }
+        ]
+      }
+    },
+    "has_item3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:yellow_miracle_gosei_power_card"
+          }
+        ]
+      }
+    },
+    "has_item4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:blue_miracle_gosei_power_card"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item",
+      "has_item1",
+      "has_item2",
+      "has_item3",
+      "has_item4"
+    ]
+  ]
+}

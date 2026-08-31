@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:eagle_vulcan_brace"
     },
-    "title": "Vul Eagle!",
-    "description": "Change into Vul Eagle",
+    "title": {
+      "translate": "advancements.supersentaicraft.vul_eagle.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.vul_eagle.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

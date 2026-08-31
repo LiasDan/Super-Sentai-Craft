@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:red_vs_changer"
     },
-    "title": "Kaitou Change!",
-    "description": "Obtain any Lupinranger's VS Changer",
+    "title": {
+      "translate": "advancements.supersentaicraft.lupin_vs_changer.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.lupin_vs_changer.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

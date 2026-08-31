@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:gaoranger_logo"
     },
-    "title": "Hyakujuu Sentai Gaoranger",
-    "description": "Change into each member of Gaoranger",
+    "title": {
+      "translate": "advancements.supersentaicraft.gaoranger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.gaoranger.desc"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

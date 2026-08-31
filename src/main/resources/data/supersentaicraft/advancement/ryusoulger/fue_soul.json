@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:fue_soul"
     },
-    "title": "FueSoul! Po-po-po-pon!",
-    "description": "Use FueSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.fue_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.fue_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

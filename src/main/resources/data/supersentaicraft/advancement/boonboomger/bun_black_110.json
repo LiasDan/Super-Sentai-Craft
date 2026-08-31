@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:zoonzoom_shoka_blaster"
     },
-    "title": "Bakuage 22: Lion's Flaming Fury",
-    "description": "Change into Bun Black 110",
+    "title": {
+      "translate": "advancements.supersentaicraft.bun_black_110.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.bun_black_110.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

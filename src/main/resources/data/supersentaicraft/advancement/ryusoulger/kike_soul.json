@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:kike_soul"
     },
-    "title": "KikeSoul! Kin!",
-    "description": "Use KikeSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.kike_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.kike_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

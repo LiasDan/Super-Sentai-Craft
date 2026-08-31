@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gosei_black",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:gosei_blaster"
+    },
+    {
+      "item": "supersentaicraft:snake_headder_card"
+    }
+  ],
+  "result": {
+    "id": "supersentaicraft:gosei_blaster_snake"
+  }
+}

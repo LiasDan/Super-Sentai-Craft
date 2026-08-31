@@ -29,7 +29,7 @@ public class SuperChangeCardItem extends BaseItem {
 
         if (!level.isClientSide() && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RangerChangerItem belt && belt.isTransformed(player)) {
             if (ranger.equals(((RangerChangerItem) player.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider)) {
-                if (player.getInventory().countItem(GoseigerItems.GOSEI_TENSWORD.get())!=0) {
+                if (player.getInventory().countItem(GoseigerItems.SUPER_GOSEI_TENSWORD.get())!=0) {
                     ((RangerFormChangeItem) ShinkengerItems.SUPER_DISK_GOSEI.get()).use(level,player,usedHand);
                 }
             }

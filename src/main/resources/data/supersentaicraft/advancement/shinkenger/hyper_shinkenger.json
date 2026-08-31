@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:hyper_disk"
     },
-    "title": "The Fateful War",
-    "description": "Change into Hyper Shinkenger",
+    "title": {
+      "translate": "advancements.supersentaicraft.hyper_shinkenger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.hyper_shinkenger.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true

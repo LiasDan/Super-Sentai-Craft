@@ -1,0 +1,29 @@
+{
+  "parent": "supersentaicraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "supersentaicraft:goseiger/goseiger_head",
+      "supersentaicraft:goseiger/goseiger_torso",
+      "supersentaicraft:goseiger/goseiger_legs",
+      "supersentaicraft:goseiger/goseiger_logo",
+      "supersentaicraft:goseiger/gosei_blaster"
+    ]
+  },
+  "criteria": {
+    "has_logo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "supersentaicraft:blank_gosei_card"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_logo"
+    ]
+  ]
+}

@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:battle_fever_robo_head"
     },
-    "title": "The first Sentai Robo",
-    "description": "Change into Battle Fever Robo",
+    "title": {
+      "translate": "advancements.supersentaicraft.battle_fever_robo.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.battle_fever_robo.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

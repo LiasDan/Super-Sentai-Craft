@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:good_striker"
     },
-    "title": "#2: Global Police, Give Chase",
-    "description": "Change into Patren Ugou",
+    "title": {
+      "translate": "advancements.supersentaicraft.patren_ugou.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.patren_ugou.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

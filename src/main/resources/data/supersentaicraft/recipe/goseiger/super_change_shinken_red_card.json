@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_shinkenger",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:red_miracle_gosei_power_card"
+    },
+    {
+      "item": "supersentaicraft:super_disk"
+    },
+    {
+      "item": "supersentaicraft:shishi_disk"
+    }
+  ],
+  "result": {
+    "id": "supersentaicraft:super_change_shinken_red_card"
+  }
+}

@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:boonboomger_logo"
     },
-    "title": "Bakuage Sentai Boonboomger",
-    "description": "Change into each member of Boonboomger",
+    "title": {
+      "translate": "advancements.supersentaicraft.boonboomger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.boonboomger.desc"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

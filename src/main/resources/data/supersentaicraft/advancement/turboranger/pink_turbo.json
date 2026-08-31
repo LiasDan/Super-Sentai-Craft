@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:red_turbo_brace"
     },
-    "title": "Pink Turbo!",
-    "description": "Change into Pink Turbo",
+    "title": {
+      "translate": "advancements.supersentaicraft.pink_turbo.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.pink_turbo.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

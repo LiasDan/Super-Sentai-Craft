@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_goseiger",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:gosei_tensword"
+    },
+    [
+      {
+        "item": "supersentaicraft:red_tensouder"
+      },
+      {
+        "item": "supersentaicraft:pink_tensouder"
+      },
+      {
+        "item": "supersentaicraft:black_tensouder"
+      },
+      {
+        "item": "supersentaicraft:yellow_tensouder"
+      },
+      {
+        "item": "supersentaicraft:blue_tensouder"
+      }
+    ]
+  ],
+  "result": {
+    "id": "supersentaicraft:super_gosei_tensword"
+  }
+}

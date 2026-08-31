@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:champion_changer"
     },
-    "title": "Bakuage 33: The Procurer Won't Give In",
-    "description": "Change into Champion Boonboomger",
+    "title": {
+      "translate": "advancements.supersentaicraft.champion_boonboomger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.champion_boonboomger.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

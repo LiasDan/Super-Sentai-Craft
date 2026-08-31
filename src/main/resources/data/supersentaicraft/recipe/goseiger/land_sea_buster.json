@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "goseiger",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:landick_axe"
+    },
+    {
+      "item": "supersentaicraft:landick_claw"
+    },
+    {
+      "item": "supersentaicraft:seaick_bowgun"
+    }
+  ],
+  "result": {
+    "id": "supersentaicraft:land_sea_buster"
+  }
+}

@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:signal_whistle"
     },
-    "title": "Ep35: The Traitorous Signalman",
-    "description": "Change into Signalman (Evil)",
+    "title": {
+      "translate": "advancements.supersentaicraft.signalman_evil.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.signalman_evil.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

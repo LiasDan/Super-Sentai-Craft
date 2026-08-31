@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:japan_battleceiver"
     },
-    "title": "Miss America!",
-    "description": "Change into Miss America",
+    "title": {
+      "translate": "advancements.supersentaicraft.miss_america.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.miss_america.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

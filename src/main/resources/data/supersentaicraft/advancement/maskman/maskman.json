@@ -4,8 +4,12 @@
       "id": "supersentaicraft:maskman_logo",
       "nbt": "{Damage:0}"
     },
-    "title": "Hikari Sentai Maskman",
-    "description": "Change into each member of Maskman",
+    "title": {
+      "translate": "advancements.supersentaicraft.maskman.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.maskman.desc"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

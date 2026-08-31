@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:carranger_logo"
     },
-    "title": "Gekisou Sentai Carranger",
-    "description": "Change into each member of Carranger",
+    "title": {
+      "translate": "advancements.supersentaicraft.carranger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.carranger.desc"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

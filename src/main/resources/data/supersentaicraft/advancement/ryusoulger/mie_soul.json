@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:mie_soul"
     },
-    "title": "MieSoul! Suke-suke!",
-    "description": "Use MieSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.mie_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.mie_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:kata_soul"
     },
-    "title": "KataSoul! Kachin!",
-    "description": "Use KataSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.kata_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.kata_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

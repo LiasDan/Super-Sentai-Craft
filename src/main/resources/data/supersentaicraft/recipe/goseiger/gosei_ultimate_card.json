@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_goseiger",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:skick_brother_card"
+    },
+    {
+      "item": "supersentaicraft:landick_brother_card"
+    },
+    {
+      "item": "supersentaicraft:seaick_brother_card"
+    },
+    {
+      "item": "supersentaicraft:exotic_brother_card"
+    },
+    {
+      "item": "supersentaicraft:mythic_brother_card"
+    },
+    {
+      "item": "supersentaicraft:hyper_change_headder_card"
+    },
+    {
+      "item": "supersentaicraft:vulcan_headder_card"
+    }
+  ],
+  "result": {
+    "id": "supersentaicraft:gosei_ultimate_card"
+  }
+}

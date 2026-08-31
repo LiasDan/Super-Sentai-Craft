@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "super_goseiger",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:gosei_ultimate_card"
+    },
+    {
+      "item": "supersentaicraft:snake_headder_card"
+    }
+  ],
+  "result": {
+    "id": "supersentaicraft:black_miracle_gosei_power_card"
+  }
+}

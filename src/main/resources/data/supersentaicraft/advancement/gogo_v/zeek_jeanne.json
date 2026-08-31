@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:zeek_crystal"
     },
-    "title": "Kyoko, my life will protect you.",
-    "description": "Change into Zeek-Jeanne",
+    "title": {
+      "translate": "advancements.supersentaicraft.zeek_jeanne.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.zeek_jeanne.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:x1_masking_brace"
     },
-    "title": "X1 Mask!",
-    "description": "Change into X1 Mask",
+    "title": {
+      "translate": "advancements.supersentaicraft.x1_mask.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.x1_mask.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

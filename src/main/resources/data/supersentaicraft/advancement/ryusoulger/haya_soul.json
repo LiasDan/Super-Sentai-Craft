@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:haya_soul"
     },
-    "title": "HayaSoul! Byun!",
-    "description": "Use HayaSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.haya_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.haya_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

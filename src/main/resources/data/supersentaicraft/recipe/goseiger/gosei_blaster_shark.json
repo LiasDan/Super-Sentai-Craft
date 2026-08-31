@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gosei_blue",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:gosei_blaster"
+    },
+    {
+      "item": "supersentaicraft:shark_headder_card"
+    }
+  ],
+  "result": {
+    "id": "supersentaicraft:gosei_blaster_shark"
+  }
+}

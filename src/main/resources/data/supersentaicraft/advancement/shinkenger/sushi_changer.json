@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:sushi_changer"
     },
-    "title": "Ikkan Kenjou!",
-    "description": "Obtain Shinken Gold's Sushi Changer",
+    "title": {
+      "translate": "advancements.supersentaicraft.sushi_changer.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.sushi_changer.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

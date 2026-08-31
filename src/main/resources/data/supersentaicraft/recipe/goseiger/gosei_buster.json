@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "goseiger",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:skick_sword"
+    },
+    {
+      "item": "supersentaicraft:skick_shot"
+    },
+    {
+      "item": "supersentaicraft:landick_axe"
+    },
+    {
+      "item": "supersentaicraft:landick_claw"
+    },
+    {
+      "item": "supersentaicraft:seaick_bowgun"
+    }
+  ],
+  "result": {
+    "id": "supersentaicraft:gosei_buster"
+  }
+}

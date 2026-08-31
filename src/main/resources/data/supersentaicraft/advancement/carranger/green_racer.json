@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:red_accel_changer"
     },
-    "title": "Green Racer!",
-    "description": "Change into Green Racer",
+    "title": {
+      "translate": "advancements.supersentaicraft.green_racer.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.green_racer.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

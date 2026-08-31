@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:super_disk"
     },
-    "title": "Act 24: Shin Samurai Gattai",
-    "description": "Change into Super Shinkenger",
+    "title": {
+      "translate": "advancements.supersentaicraft.super_shinkenger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.super_shinkenger.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true

@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:vrv_module"
     },
-    "title": "Uchuu no ippiki ookami... VRV Master",
-    "description": "Change into VRV Master",
+    "title": {
+      "translate": "advancements.supersentaicraft.vrv_master.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.vrv_master.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

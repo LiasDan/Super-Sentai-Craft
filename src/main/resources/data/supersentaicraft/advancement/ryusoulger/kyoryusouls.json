@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:meramera_soul"
     },
-    "title": "Kyo-ryu-sou-soul! Kono Kanji!",
-    "description": "Use every KyoRyuSouls",
+    "title": {
+      "translate": "advancements.supersentaicraft.kyoryusouls.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.kyoryusouls.desc"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true

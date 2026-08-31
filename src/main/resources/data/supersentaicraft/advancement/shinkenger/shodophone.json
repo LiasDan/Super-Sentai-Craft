@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:red_shodophone"
     },
-    "title": "Ippitsu Soujou!",
-    "description": "Obtain any Shodophone",
+    "title": {
+      "translate": "advancements.supersentaicraft.shodophone.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.shodophone.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

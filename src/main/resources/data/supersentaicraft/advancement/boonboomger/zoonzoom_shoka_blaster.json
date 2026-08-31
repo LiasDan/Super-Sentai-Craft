@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:zoonzoom_shoka_blaster"
     },
-    "title": "Zoonzoom Change!",
-    "description": "Obtain Zoonzoom Shoka Blaster",
+    "title": {
+      "translate": "advancements.supersentaicraft.zoonzoom_shoka_blaster.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.zoonzoom_shoka_blaster.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

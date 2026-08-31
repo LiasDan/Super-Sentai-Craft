@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:violet_boonboom_controller"
     },
-    "title": "Bun Violet!",
-    "description": "Change into Bun Violet",
+    "title": {
+      "translate": "advancements.supersentaicraft.bun_violet.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.bun_violet.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

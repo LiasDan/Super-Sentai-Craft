@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:princess_red_shodophone"
     },
-    "title": "Shinken Red! Shiba Kaoru",
-    "description": "Change into Princess Shinken Red",
+    "title": {
+      "translate": "advancements.supersentaicraft.princess_shinken_red.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.princess_shinken_red.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gosei_yellow",
+  "ingredients": [
+    {
+      "item": "supersentaicraft:gosei_blaster"
+    },
+    {
+      "item": "supersentaicraft:tiger_headder_card"
+    }
+  ],
+  "result": {
+    "id": "supersentaicraft:gosei_blaster_tiger"
+  }
+}

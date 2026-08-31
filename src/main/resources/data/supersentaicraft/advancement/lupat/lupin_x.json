@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:lupin_x_changer"
     },
-    "title": "Kokou ni kirameki Kaitou! Lupin X!",
-    "description": "Change into Lupin X",
+    "title": {
+      "translate": "advancements.supersentaicraft.lupin_x.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.lupin_x.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

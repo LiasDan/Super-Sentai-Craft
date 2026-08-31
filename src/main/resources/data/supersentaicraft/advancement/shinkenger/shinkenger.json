@@ -4,8 +4,12 @@
       "id": "supersentaicraft:shinkenger_logo",
       "nbt": "{Damage:0}"
     },
-    "title": "Samurai Sentai Shinkenger",
-    "description": "Change into each member of Shinkenger",
+    "title": {
+      "translate": "advancements.supersentaicraft.shinkenger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.shinkenger.desc"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

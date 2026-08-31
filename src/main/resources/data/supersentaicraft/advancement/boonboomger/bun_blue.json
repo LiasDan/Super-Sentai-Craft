@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:red_boonboom_changer"
     },
-    "title": "Bun Blue!",
-    "description": "Change into Bun Blue",
+    "title": {
+      "translate": "advancements.supersentaicraft.bun_blue.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.bun_blue.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

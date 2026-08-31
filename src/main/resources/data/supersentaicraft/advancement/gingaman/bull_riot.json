@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:black_knight_bull_riot"
     },
-    "title": "Kishi Tensei!",
-    "description": "Obtain Black Knight's Bull Riot",
+    "title": {
+      "translate": "advancements.supersentaicraft.bull_riot.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.bull_riot.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

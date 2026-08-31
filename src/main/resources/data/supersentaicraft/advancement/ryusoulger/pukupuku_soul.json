@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:pukupuku_soul"
     },
-    "title": "PukupukuSoul! Mukkumuku!",
-    "description": "Use PukupukuSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.pukupuku_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.pukupuku_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

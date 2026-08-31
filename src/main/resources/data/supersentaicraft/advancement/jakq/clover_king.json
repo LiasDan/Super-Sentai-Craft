@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:ace_powered_capsule"
     },
-    "title": "Clover King!",
-    "description": "Change into Clover King",
+    "title": {
+      "translate": "advancements.supersentaicraft.clover_king.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.clover_king.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

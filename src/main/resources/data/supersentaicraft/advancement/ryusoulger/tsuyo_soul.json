@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:tsuyo_soul"
     },
-    "title": "TsuyoSoul! Ora-ora!",
-    "description": "Use TsuyoSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.tsuyo_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.tsuyo_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

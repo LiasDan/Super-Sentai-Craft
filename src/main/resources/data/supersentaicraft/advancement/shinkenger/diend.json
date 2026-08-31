@@ -3,8 +3,12 @@
     "icon": {
       "id": "kamenridercraft:diend_belt"
     },
-    "title": "Kamen Rider? The heck is that?",
-    "description": "Transform into Diend in Super Sentai Topia",
+    "title": {
+      "translate": "advancements.supersentaicraft.diend.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.diend.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

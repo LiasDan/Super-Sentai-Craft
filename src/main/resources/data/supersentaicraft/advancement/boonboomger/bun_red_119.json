@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:zoonzoom_shoka_blaster"
     },
-    "title": "Bakuage 21: Flaming Delivery",
-    "description": "Change into Bun Red 119",
+    "title": {
+      "translate": "advancements.supersentaicraft.bun_red_119.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.bun_red_119.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

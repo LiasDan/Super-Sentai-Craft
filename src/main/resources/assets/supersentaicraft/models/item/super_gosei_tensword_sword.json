@@ -1,0 +1,49 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "supersentaicraft:item/super_gosei_tensword"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [180, 90, 55],
+			"translation": [0, -3.25, 1.25],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-180, -90, -55],
+			"translation": [0, -3.25, 1.25],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [60, 90, -180],
+			"translation": [0, 3, 1],
+			"scale": [1.25, 1.25, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [60, -90, -180],
+			"translation": [0, 3, 1],
+			"scale": [1.25, 1.25, 0.75]
+		},
+		"ground": {
+			"rotation": [0, 0, 180],
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [180, 0, 90],
+			"translation": [-0.85, -0.85, 0],
+			"scale": [1.105, 1.105, 1]
+		},
+		"head": {
+			"translation": [0, 13, 7]
+		},
+		"fixed": {
+			"rotation": [-180, 180, 90],
+			"translation": [0.85, -0.85, 0],
+			"scale": [1.105, 1.105, 1]
+		}
+	}
+}

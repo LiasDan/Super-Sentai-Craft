@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:yellow_ginga_brace"
     },
-    "title": "Ginga Yellow! Hikaru!",
-    "description": "Change into Ginga Yellow",
+    "title": {
+      "translate": "advancements.supersentaicraft.ginga_yellow.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.ginga_yellow.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

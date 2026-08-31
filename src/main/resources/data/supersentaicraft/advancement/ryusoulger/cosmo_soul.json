@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:cosmo_soul"
     },
-    "title": "Ep22: The Life of the Dead!?",
-    "description": "Use CosmoSoul",
+    "title": {
+      "translate": "advancements.supersentaicraft.cosmo_soul.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.cosmo_soul.desc"
+    },
     "show_toast": true,
     "announce_to_chat": true
   },

@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:white_racer_changer"
     },
-    "title": "Tiramisu, Konjac, Mille-Feuille!",
-    "description": "Obtain White Racer Changer",
+    "title": {
+      "translate": "advancements.supersentaicraft.white_racer_changer.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.white_racer_changer.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

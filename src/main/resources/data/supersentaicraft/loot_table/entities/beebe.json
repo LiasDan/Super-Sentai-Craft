@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:gosei_red_card",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:gosei_pink_card",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:gosei_black_card",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:gosei_yellow_card",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:gosei_blue_card",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:hyper_change_headder_card"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:blank_gosei_card",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "supersentaicraft:blank_gosei_card"
+        }
+      ]
+    }
+  ]
+}

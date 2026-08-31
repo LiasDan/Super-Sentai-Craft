@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:shark_vulcan_brace"
     },
-    "title": "Vul Shark!",
-    "description": "Change into Vul Shark",
+    "title": {
+      "translate": "advancements.supersentaicraft.vul_shark.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.vul_shark.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

@@ -3,8 +3,12 @@
     "icon": {
       "id": "supersentaicraft:yellow_shodophone"
     },
-    "title": "Shinken Yellow! Hanaori Kotoha",
-    "description": "Change into Shinken Yellow",
+    "title": {
+      "translate": "advancements.supersentaicraft.shinken_yellow.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.shinken_yellow.desc"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
