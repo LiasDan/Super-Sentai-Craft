@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "id": "supersentaicraft:red_tensouder"
+    },
+    "title": {
+      "translate": "advancements.supersentaicraft.gosei_red.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.gosei_red.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:goseiger/goseiger",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_tensouder"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "display": {
+    "icon": {
+      "id": "supersentaicraft:red_miracle_gosei_power_card"
+    },
+    "title": {
+      "translate": "advancements.supersentaicraft.super_goseiger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.super_goseiger.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "supersentaicraft:goseiger/goseiger",
+  "criteria": {
+    "ranger1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_tensouder"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"supersentaicraft:red_miracle_gosei_power_card\"}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ranger2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:pink_tensouder"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"supersentaicraft:pink_miracle_gosei_power_card\"}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ranger3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:black_tensouder"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"supersentaicraft:black_miracle_gosei_power_card\"}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ranger4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:yellow_tensouder"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"supersentaicraft:yellow_miracle_gosei_power_card\"}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ranger5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:pink_tensouder"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"supersentaicraft:pink_miracle_gosei_power_card\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ranger1",
+      "ranger2",
+      "ranger3",
+      "ranger4",
+      "ranger5"
+    ]
+  ]
+}

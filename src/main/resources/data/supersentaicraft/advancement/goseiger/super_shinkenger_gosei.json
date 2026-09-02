@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "id": "supersentaicraft:super_change_shinken_red_card"
+    },
+    "title": {
+      "translate": "advancements.supersentaicraft.super_shinkenger_gosei.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.super_shinkenger_gosei.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "supersentaicraft:goseiger/super_goseiger",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:shinkenger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:shinkenger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:shinkenger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_shodophone",
+                "supersentaicraft:blue_shodophone",
+                "supersentaicraft:pink_shodophone",
+                "supersentaicraft:green_shodophone",
+                "supersentaicraft:yellow_shodophone",
+                "supersentaicraft:sushi_changer"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"supersentaicraft:super_disk_gosei\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

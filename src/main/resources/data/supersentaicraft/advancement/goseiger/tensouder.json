@@ -1,0 +1,89 @@
+{
+  "display": {
+    "icon": {
+      "id": "supersentaicraft:red_tensouder"
+    },
+    "title": {
+      "translate": "advancements.supersentaicraft.tensouder.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.tensouder.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:goseiger/goseiger",
+  "criteria": {
+    "ranger1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:red_tensouder"
+            ]
+          }
+        ]
+      }
+    },
+    "ranger2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:pink_tensouder"
+            ]
+          }
+        ]
+      }
+    },
+    "ranger3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:black_tensouder"
+            ]
+          }
+        ]
+      }
+    },
+    "ranger4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:yellow_tensouder"
+            ]
+          }
+        ]
+      }
+    },
+    "ranger5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "supersentaicraft:blue_tensouder"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ranger1",
+      "ranger2",
+      "ranger3",
+      "ranger4",
+      "ranger5"
+    ]
+  ]
+}

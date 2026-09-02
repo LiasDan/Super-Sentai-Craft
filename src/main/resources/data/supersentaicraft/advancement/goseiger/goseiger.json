@@ -1,0 +1,252 @@
+{
+  "display": {
+    "icon": {
+      "id": "supersentaicraft:goseiger_logo"
+    },
+    "title": {
+      "translate": "advancements.supersentaicraft.goseiger.title"
+    },
+    "description": {
+      "translate": "advancements.supersentaicraft.goseiger.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "supersentaicraft:root",
+  "criteria": {
+    "ranger1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:red_tensouder"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:pink_tensouder"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:black_tensouder"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:yellow_tensouder"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:blue_tensouder"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:leon_cellular"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:leon_cellular_dark"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ranger8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "supersentaicraft:goseiger_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "supersentaicraft:goseiger_torso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "supersentaicraft:goseiger_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "supersentaicraft:green_tensouder"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
